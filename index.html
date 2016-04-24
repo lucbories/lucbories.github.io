@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lucbories.GitHub.io by lucbories</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Lucbories.GitHub.io</h1>
+      <h2 class="project-tagline">Devapt web site.</h2>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="devapt" class="anchor" href="#devapt" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Devapt</h1>
+
+<p>Current version: 0.9.0 (do not use in production environment)</p>
+
+<p>NPM module isn't available yet, please download devapt source insteed.</p>
+
+<p>Module would be available before version 1.0.0 final.</p>
+
+<h2>
+<a id="what-is-it" class="anchor" href="#what-is-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is it?</h2>
+
+<p>The Developpers Application Toolkit is a usefull package for developers:
+create quickly and securely a complex distributed set of applications or a simple alone application. </p>
+
+<p>This project is based on Javascript (ECMAscript 6 transpiled in ES5) and nodejs.
+Devapt contains a server runtime and a set of client features.
+Devapt help you to write less code and to use easily more features.</p>
+
+<p>The principle is simple: you write some configuration files for distributed nodes, models, views and menus and the you start the application.
+The framework will automatically generates the RESTfull server.
+Simply launch index.html and your application is up a rich user interface and many features.</p>
+
+<p>See <a href="https://github.com/lucbories/Devapt/tree/master/docs/FEATURES.md">FEATURES</a></p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>USAGE</h2>
+
+<p>See <a href="https://github.com/lucbories/Devapt/tree/master/docs/GETTING_STARTED.md">GETTING_STARTED</a></p>
+
+<p>Devapt library offers a "runtime" instance which delivers this features:</p>
+
+<ul>
+<li>main rendering wrapper (Render instance)</li>
+<li>rendering base class (Component class)</li>
+<li>Redux store wrapper</li>
+<li>configuration settings wrapper</li>
+<li>main logging wrapper</li>
+</ul>
+
+<h2>
+<a id="licence" class="anchor" href="#licence" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LICENCE</h2>
+
+<p>Copyright Luc BORIES 2015-2016</p>
+
+<p>Apache Version 2 license.</p>
+
+<p>See <a href="https://github.com/lucbories/Devapt/tree/master/LICENSE">LICENSE</a></p>
+
+<h2>
+<a id="roadmap" class="anchor" href="#roadmap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ROADMAP</h2>
+
+<p>0.9.0   initial release (not ready for production)
+1.0.0   first stable release
+1.1.0   add features and tests</p>
+
+<p>See <a href="https://github.com/lucbories/Devapt/tree/master/docs/ROADMAP.md">ROADMAP</a></p>
+
+<h2>
+<a id="bugs" class="anchor" href="#bugs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BUGS</h2>
+
+<p>See <a href="https://github.com/lucbories/Devapt/issues">LICENSE</a> TO CHECK</p>
+
+<h2>
+<a id="technical-details" class="anchor" href="#technical-details" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technical details</h2>
+
+<p>With Devapt you define </p>
+
+<ul>
+<li>A topology, simple (one application, one server, one service) or complex (many services distributed for many applications on many distributed servers).</li>
+<li>Some resources (models, views, menubars, menus)</li>
+<li>Security rules</li>
+</ul>
+
+<p>A topology contains:</p>
+
+<ul>
+<li>nodes: A node is a nodejs process with a unique name. You can have many nodes on the same machine.
+Each node communicates with other node through a couple (host, port).
+A node can have one or many servers.</li>
+<li>servers: A server provides one or more services and listen client connections through a couple (host, port).
+A server has a unique name and can be one of types: restify, express, socket.io, message bus...</li>
+<li>services: A service offer one feature to clients. A service can be one of: static assets providers, middleware provider, model RESTfull access...</li>
+<li>applications: An application contains some services and is provided through nodes and servers.
+An application can have one service on one server on one node.
+Or many services on many servers on many nodes.</li>
+<li>modules: functional features for applications (a set of preconfigured UI for example).</li>
+<li>plugins: technical fearures for applications (a rendering provider for example).</li>
+<li>security: defines authentication and authorization rules.</li>
+</ul>
+
+<p>The rendering engines are plugins and rendering classes are stateless: state is stored in a Redux store.
+See <a href="https://egghead.io/series/getting-started-with-redux">Getting Started with Redux</a> for flow concepts.</p>
+
+<h2>
+<a id="devapt-is-a-glue-between-many-usefull-projects" class="anchor" href="#devapt-is-a-glue-between-many-usefull-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Devapt is a glue between many usefull projects</h2>
+
+<p>Thanks for all projects leaders and contributers.</p>
+
+<p>The given list is an extract of all used or inspired projects.</p>
+
+<p>Main dependancies:</p>
+
+<p>NodeJS: <a href="https://nodejs.org">https://nodejs.org</a></p>
+
+<p>Servers and datas access:</p>
+
+<ul>
+<li>Express: <a href="http://expressjs.com/">http://expressjs.com/</a>
+</li>
+<li>Restify: <a href="http://restify.com/">http://restify.com/</a>
+</li>
+<li>Epilogue: <a href="https://github.com/dchester/epilogue">https://github.com/dchester/epilogue</a>
+</li>
+<li>Sequelize: <a href="http://sequelizejs.com">http://sequelizejs.com</a>
+</li>
+<li>Socket.io: <a href="http://socket.io/">http://socket.io/</a>
+</li>
+</ul>
+
+<p>Security:</p>
+
+<ul>
+<li>Passport: <a href="http://passportjs.org">http://passportjs.org</a>
+</li>
+<li>Node ACL: <a href="https://github.com/OptimalBits/node_acl">https://github.com/OptimalBits/node_acl</a>
+</li>
+</ul>
+
+<p>Foundations</p>
+
+<ul>
+<li>SimpleBus: <a href="https://github.com/ajlopez/SimpleBus">https://github.com/ajlopez/SimpleBus</a>
+</li>
+<li>jQuery: <a href="https://jquery.com">https://jquery.com</a>
+</li>
+<li>Immutable: <a href="https://facebook.github.io/immutable-js/docs/#/">https://facebook.github.io/immutable-js/docs/#/</a>
+</li>
+<li>Redux: <a href="http://redux.js.org/docs/introduction/Motivation.html">http://redux.js.org/docs/introduction/Motivation.html</a>
+</li>
+<li>Moment: <a href="http://momentjs.com/">http://momentjs.com/</a>
+</li>
+<li>Vantage: <a href="https://github.com/dthree/vantage">https://github.com/dthree/vantage</a>
+</li>
+<li>Bunyan: <a href="https://github.com/trentm/node-bunyan">https://github.com/trentm/node-bunyan</a>
+</li>
+<li>Winston: <a href="https://github.com/winstonjs/winston">https://github.com/winstonjs/winston</a>
+</li>
+<li>Circuit breaker: <a href="https://www.npmjs.com/package/circuit-breaker">https://www.npmjs.com/package/circuit-breaker</a> or <a href="https://github.com/yammer/circuit-breaker-js">https://github.com/yammer/circuit-breaker-js</a>
+</li>
+</ul>
+
+<p>Rendering:</p>
+
+<ul>
+<li>Foundation by ZURB: <a href="http://foundation.zurb.com/sites.html">http://foundation.zurb.com/sites.html</a>
+</li>
+<li>Mustache: <a href="https://github.com/janl/mustache.js">https://github.com/janl/mustache.js</a>
+</li>
+<li>React: <a href="http://facebook.github.io/react/docs/tutorial.html">http://facebook.github.io/react/docs/tutorial.html</a>
+</li>
+</ul>
+
+<p>Dev and build dependancies: (coming soon.)</p>
+
+<ul>
+<li>Babel:</li>
+<li>Chai:</li>
+<li>Gulp</li>
+<li>Mocha</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Please see the file called INSTALL.md.</p>
+
+<h2>
+<a id="contacts" class="anchor" href="#contacts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contacts</h2>
+
+<p>To subscribe to news or report a bug or contribute to the project, use the project website at <a href="https://github.com/lucbories/DevApt">https://github.com/lucbories/DevApt</a>.</p>
+
+      <footer class="site-footer">
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
