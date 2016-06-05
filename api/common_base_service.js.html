@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Source: common/base/service.js</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cerulean.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="Application.html">Application</a></li><li><a href="AuthenticationManager.html">AuthenticationManager</a></li><li><a href="AuthenticationPlugin.html">AuthenticationPlugin</a></li><li><a href="AuthenticationPluginPassport.html">AuthenticationPluginPassport</a></li><li><a href="AuthenticationPluginPassportLocal.html">AuthenticationPluginPassportLocal</a></li><li><a href="AuthenticationPluginPassportLocalDb.html">AuthenticationPluginPassportLocalDb</a></li><li><a href="AuthenticationPluginPassportLocalFile.html">AuthenticationPluginPassportLocalFile</a></li><li><a href="AuthenticationPluginURL.html">AuthenticationPluginURL</a></li><li><a href="AuthorizationManager.html">AuthorizationManager</a></li><li><a href="BaseService.html">BaseService</a></li><li><a href="BusClientInstance.html">BusClientInstance</a></li><li><a href="BusServerInstance.html">BusServerInstance</a></li><li><a href="Collection.html">Collection</a></li><li><a href="Component.html">Component</a></li><li><a href="Context.html">Context</a></li><li><a href="CrudService.html">CrudService</a></li><li><a href="CrudSvcConsumer.html">CrudSvcConsumer</a></li><li><a href="CrudSvcProvider.html">CrudSvcProvider</a></li><li><a href="Errorable.html">Errorable</a></li><li><a href="Executable.html">Executable</a></li><li><a href="ExecutableRoute.html">ExecutableRoute</a></li><li><a href="ExecutableRouteAssets.html">ExecutableRouteAssets</a></li><li><a href="ExecutableRouteGetResources.html">ExecutableRouteGetResources</a></li><li><a href="ExecutableRouteMiddleware.html">ExecutableRouteMiddleware</a></li><li><a href="ExecutableRouteModelCrud.html">ExecutableRouteModelCrud</a></li><li><a href="Instance.html">Instance</a></li><li><a href="JsonFileRecordProvider.html">JsonFileRecordProvider</a></li><li><a href="JsonProvider.html">JsonProvider</a></li><li><a href="Loggable.html">Loggable</a></li><li><a href="Metric.html">Metric</a></li><li><a href="MetricDuration.html">MetricDuration</a></li><li><a href="MetricHost.html">MetricHost</a></li><li><a href="MetricHttp.html">MetricHttp</a></li><li><a href="MiddlewareSvcConsumer.html">MiddlewareSvcConsumer</a></li><li><a href="MiddlewareSvcProvider.html">MiddlewareSvcProvider</a></li><li><a href="MidlewareService.html">MidlewareService</a></li><li><a href="Module.html">Module</a></li><li><a href="module.exports.html">module.exports</a></li><li><a href="Node.html">Node</a></li><li><a href="Plugin.html">Plugin</a></li><li><a href="PluginsManager.html">PluginsManager</a></li><li><a href="RecordProvider.html">RecordProvider</a></li><li><a href="RegisteredService.html">RegisteredService</a></li><li><a href="Render.html">Render</a></li><li><a href="RenderingManager.html">RenderingManager</a></li><li><a href="RenderingPlugin.html">RenderingPlugin</a></li><li><a href="RenderStack.html">RenderStack</a></li><li><a href="Resource.html">Resource</a></li><li><a href="ResourcesService.html">ResourcesService</a></li><li><a href="ResourcesSvcProvider.html">ResourcesSvcProvider</a></li><li><a href="RoutesSvcConsumer.html">RoutesSvcConsumer</a></li><li><a href="Runtime.html">Runtime</a></li><li><a href="Security.html">Security</a></li><li><a href="SequelizeRecordProvider.html">SequelizeRecordProvider</a></li><li><a href="Server.html">Server</a></li><li><a href="Service.html">Service</a></li><li><a href="ServiceConsumer.html">ServiceConsumer</a></li><li><a href="ServiceProvider.html">ServiceProvider</a></li><li><a href="Settingsable.html">Settingsable</a></li><li><a href="Transaction.html">Transaction</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="global.html#default_settings">default_settings</a></li><li><a href="global.html#get_default_settings">get_default_settings</a></li><li><a href="global.html#get_initial_state">get_initial_state</a></li><li><a href="global.html#load_config">load_config</a></li><li><a href="global.html#load_config_apps">load_config_apps</a></li><li><a href="global.html#load_config_apps_app">load_config_apps_app</a></li><li><a href="global.html#load_runtime">load_runtime</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+		<div class="col-sm-3 col-md-3">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-12">
+	
+		<div id="main">
+			
+
+		<h1 class="page-title">Source: common/base/service.js</h1>
+    
+<section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript linenums">
+import T from 'typr'
+import assert from 'assert'
+
+import { is_browser, is_server } from '../utils/is_browser'
+import { config } from '../store/index'
+
+import Instance from './instance'
+import Collection from './collection'
+import runtime from './runtime'
+
+import ServiceConsumer from '../services/service_consumer'
+import ProducerConsumer from '../services/service_provider'
+
+
+
+let context = 'common/base/service'
+
+
+// STATUS CONSTANTS
+// unknow -> created -> enabled -> disabled -> enabled
+const STATUS_UNKNOW = 'unknow'
+const STATUS_ERROR = 'error'
+const STATUS_CREATED = 'created'
+const STATUS_ENABLED = 'enabled'
+const STATUS_DISABLED = 'disabled'
+
+
+/**
+ * Service base class.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class Service extends Instance
+{
+	// STATIC CONST ACCESSORS
+	static STATUS_UNKNOW()   { return STATUS_UNKNOW }
+	static STATUS_ERROR()	{ return STATUS_ERROR }
+	static STATUS_CREATED()  { return STATUS_CREATED }
+	static STATUS_ENABLED()  { return STATUS_ENABLED }
+	static STATUS_DISABLED() { return STATUS_DISABLED }
+	
+	
+	
+	/**
+	 * Create a service instance.
+	 * @param {string} arg_name - plugin name
+	 * @param {object} arg_settings - plugin settings map
+	 * @param {string} arg_log_context - trace context string.
+	 * @returns {nothing}
+	 */
+	constructor(arg_svc_name, arg_locale_exec, arg_remote_exec, arg_log_context)
+	{
+		assert( config.has_collection('services'), context + ':not found config.services')
+		let settings = config().hasIn(['services', arg_svc_name]) ? config().getIn(['services', arg_svc_name]) : {}
+		
+		super('services', 'Service', arg_svc_name, settings, arg_log_context ? arg_log_context : context)
+		
+		this.status = STATUS_UNKNOW
+		
+		// CHECK EXECUTABLES
+		// assert( T.isObject(arg_locale_exec) &amp;&amp; arg_locale_exec.is_executable, context + ':bad locale executable')
+		// assert( T.isObject(arg_remote_exec) &amp;&amp; arg_remote_exec.is_executable, context + ':bad remote executable')
+		
+		this.is_service = true
+		
+		this.status = Service.STATUS_CREATED
+		this.registered_nodes = new Collection()
+		
+		this.locale_exec = arg_locale_exec
+		this.remote_exec = arg_remote_exec
+		
+		this.providers = new Collection()
+	}
+	
+	
+	// STATUS TEST
+	is_unknow()   { return this.status === STATUS_UNKNOW }
+	is_error()	{ return this.status === STATUS_ERROR }
+	is_created()  { return this.status === STATUS_CREATED }
+	is_enabled()  { return this.status === STATUS_ENABLED }
+	is_disabled() { return this.status === STATUS_DISABLED }
+	
+	
+	
+	/**
+	 * Enable service.
+	 * @returns {boolean}
+	 */
+	enable()
+	{
+		if (this.is_unknow() || this.is_error() || this.is_enabled())
+		{
+			return false
+		}
+		
+		this.status = Service.STATUS_ENABLED
+		return true
+	}
+	
+	
+	
+	/**
+	 * Disable service.
+	 * @returns {boolean}
+	 */
+	disable()
+	{
+		if (this.is_unknow() || this.is_error() || this.is_disabled())
+		{
+			return false
+		}
+		
+		this.status = Service.STATUS_DISABLED
+		return true
+	}
+	
+	
+	
+	/**
+	 * Activate a service feature for an application.
+	 * @param {Application} arg_application - Application instance.
+	 * @param {object} arg_app_svc_cfg - service configuration on application.
+	 * @returns {nothing}
+	 */
+	activate(arg_application, arg_app_svc_cfg)
+	{
+		// console.log(arg_app_svc_cfg, context + ':arg_app_svc_cfg')
+		assert( T.isObject(arg_application) &amp;&amp; arg_application.is_application , context + ':bad application object')
+		assert( T.isObject(arg_app_svc_cfg) , context + ':bad app svc settings object')
+		assert( T.isArray(arg_app_svc_cfg.servers), context + ':bad app svc servers array')
+		// this.info('servers ' + arg_app_svc_cfg.servers.length)
+		
+		for(let i in arg_app_svc_cfg.servers)
+		{
+			const server_name = arg_app_svc_cfg.servers[i]
+			assert(T.isString(server_name), context + ':bad server name string')
+			// this.info('server_name ' + server_name)
+			
+			const server = runtime.node.servers.find_by_name(server_name)
+			if ( T.isObject(server) )
+			{
+				this.activate_on_server(arg_application, server, arg_app_svc_cfg)
+			}
+			else
+			{
+				this.info('server_name not found ' + server_name)
+			}
+		}
+	}
+	
+	
+	/**
+	 * Activate a service feature for an application on a server.
+	 * @param {Application} arg_application - Application instance.
+	 * @param {Server} arg_server - Server instance.
+	 * @param {object} arg_app_svc_cfg - service configuration on application.
+	 * @returns {nothing}
+	 */
+	activate_on_server(arg_application, arg_server, arg_app_svc_cfg)
+	{
+		assert( T.isObject(arg_application) &amp;&amp; arg_application.is_application , context + ':bad application object')
+		assert( T.isObject(arg_server) &amp;&amp; arg_server.is_server , context + ':bad server object')
+		this.info('activate_on_server [' + arg_server.get_name() + '] for application [' + arg_application.get_name() + ']')
+		
+		const exec_cfg = this.get_settings().toJS()
+		exec_cfg.server = arg_server
+		// console.log(exec_cfg, context + ':exec_cfg')
+		
+		if (is_browser())
+		{
+			this.locale_exec.prepare(exec_cfg)
+			this.locale_exec.execute(arg_application)
+		}
+		else if (is_server())
+		{
+			this.remote_exec.prepare(exec_cfg)
+			this.remote_exec.execute(arg_application)
+		}
+		
+		let provider = this.get_provider_by_app_server(arg_application.get_name(), arg_server.get_name())
+		
+		provider.activate(arg_application, arg_server, arg_app_svc_cfg)
+	}
+	
+	
+	/**
+	 * Get service providers.
+	 * @returns {Collection}
+	 */
+	get_providers()
+	{
+		return this.providers
+	}
+	
+	
+	/**
+	 * Get one service provider corresponding to the given strategy.
+	 * @param {object} arg_strategy - search stratgey (TODO).
+	 * @returns {ServiceProvider|null} - found service provider or null
+	 */
+	get_a_provider(arg_strategy)
+	{
+		let provider = null
+		
+		if (! arg_strategy)
+		{
+			// USE THE FIRST ITEM OF THE LIST OR THE WEAKED LIST IF ENABLED
+			provider = this.providers.get_first()
+		}
+		
+		// TODO: define metrics on the provider and update the weak at each turn
+		// TODO: define Strategy class with: bablance, round
+		
+		if (! provider)
+		{
+			// const key = 'app' + '-' + 'name'
+			// provider = this.create_provider(this.get_name() + '_provider_for_' + key, this)
+			// this.providers.add(provider)
+		}
+		
+		return provider
+	}
+	
+	
+	/**
+	 * Get one service provider corresponding to the given application and server.
+	 * @param {string} arg_app_name - application name.
+	 * @param {string} arg_server_name - server name.
+	 * @returns {ServiceProvider|null} - found service provider or null
+	 */
+	get_provider_by_app_server(arg_app_name, arg_server_name)
+	{
+		const key = arg_app_name + '-' + arg_server_name
+		let provider = this.providers.find_by_attr('application_server', key)
+		assert(! provider, context + ':service provider already activated')
+		
+		if (! provider)
+		{
+			provider = this.create_provider(this.get_name() + '_provider_for_' + key, this)
+			this.providers.add(provider)
+		}
+		
+		return provider
+	}
+	
+	
+	/**
+	 * Create a new ServiceProvider instance for this service.
+	 * @param {string} arg_name - instance name.
+	 * @param {Service} arg_service - service instance.
+	 * @returns {ServiceProvider} - created service provider.
+	 */
+	create_provider(arg_name, arg_service)
+	{
+		// this.error('create_provider is not implemented')
+		return new ProducerConsumer(arg_name, arg_service)
+	}
+	
+	
+	/**
+	 * Create a new ServiceConsumer instance.
+	 * @returns {ServiceConsumer} - created service consumer.
+	 */
+	create_consumer()
+	{
+		// this.error('create_consumer is not implemented')
+		return new ServiceConsumer(this.get_name() + '_consumer_' + this.get_id(), this)
+	}
+}
+
+
+/*
+Loading:
+	create rt = new Runtime()
+	rt.load()
+		load_config
+			fill config.*
+		load_runtime
+			create instances and fill runtime.*
+			1 create servers
+			2 create services
+			3 create applications
+
+EXAMPLES
+	'rest_api_models_query':['*'],
+	'rest_api_models_modifier':['*'],
+	'rest_api_resources_query':['*'],
+	'rest_api_resources_modifier':['*'],
+	'html_assets':false,
+	'html_app':false
+*/</pre>
+    </article>
+</section>
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+
+</div>
+</div>
+
+<div class="modal fade" id="searchResults">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Search results</h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+	
+		on March 17th 2016, 10:38:45 am
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+<script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			var id = $( heading ).attr( "id" );
+			return id && id.replace(/\~/g, '-inner-').replace(/\./g, '-static-') || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		SearcherDisplay.init();
+	});
+</script>
+
+</body>
+</html>

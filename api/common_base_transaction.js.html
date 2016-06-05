@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Source: common/base/transaction.js</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cerulean.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="Application.html">Application</a></li><li><a href="AssetsService.html">AssetsService</a></li><li><a href="AssetsSvcConsumer.html">AssetsSvcConsumer</a></li><li><a href="AssetsSvcProvider.html">AssetsSvcProvider</a></li><li><a href="AuthenticationLowDbPlugin.html">AuthenticationLowDbPlugin</a></li><li><a href="AuthenticationManager.html">AuthenticationManager</a></li><li><a href="AuthenticationPlugin.html">AuthenticationPlugin</a></li><li><a href="AuthenticationPluginPassport.html">AuthenticationPluginPassport</a></li><li><a href="AuthenticationPluginPassportLocal.html">AuthenticationPluginPassportLocal</a></li><li><a href="AuthenticationPluginPassportLocalDb.html">AuthenticationPluginPassportLocalDb</a></li><li><a href="AuthenticationPluginPassportLocalFile.html">AuthenticationPluginPassportLocalFile</a></li><li><a href="AuthenticationWrapper.html">AuthenticationWrapper</a></li><li><a href="AuthorizationManager.html">AuthorizationManager</a></li><li><a href="BaseService.html">BaseService</a></li><li><a href="Bindable.html">Bindable</a></li><li><a href="Bus.html">Bus</a></li><li><a href="BusClient.html">BusClient</a></li><li><a href="BusClientInstance.html">BusClientInstance</a></li><li><a href="BusGateway.html">BusGateway</a></li><li><a href="BusServer.html">BusServer</a></li><li><a href="BusServerInstance.html">BusServerInstance</a></li><li><a href="ClientRuntime.html">ClientRuntime</a></li><li><a href="Collection.html">Collection</a></li><li><a href="Component.html">Component</a></li><li><a href="ComponentBase.html">ComponentBase</a></li><li><a href="ConsoleLogger.html">ConsoleLogger</a></li><li><a href="Container.html">Container</a></li><li><a href="Context.html">Context</a></li><li><a href="CrudService.html">CrudService</a></li><li><a href="CrudSvcConsumer.html">CrudSvcConsumer</a></li><li><a href="CrudSvcProvider.html">CrudSvcProvider</a></li><li><a href="Errorable.html">Errorable</a></li><li><a href="Executable.html">Executable</a></li><li><a href="ExecutableRoute.html">ExecutableRoute</a></li><li><a href="ExecutableRouteAssets.html">ExecutableRouteAssets</a></li><li><a href="ExecutableRouteGetResources.html">ExecutableRouteGetResources</a></li><li><a href="ExecutableRouteMiddleware.html">ExecutableRouteMiddleware</a></li><li><a href="ExecutableRouteModelCrud.html">ExecutableRouteModelCrud</a></li><li><a href="FeaturesManager.html">FeaturesManager</a></li><li><a href="FeaturesPlugin.html">FeaturesPlugin</a></li><li><a href="Instance.html">Instance</a></li><li><a href="JsonFileRecordProvider.html">JsonFileRecordProvider</a></li><li><a href="JsonProvider.html">JsonProvider</a></li><li><a href="Loggable.html">Loggable</a></li><li><a href="Logger.html">Logger</a></li><li><a href="LoggerConsole.html">LoggerConsole</a></li><li><a href="LoggerManager.html">LoggerManager</a></li><li><a href="LoggerMessagePost.html">LoggerMessagePost</a></li><li><a href="LoggerWinston.html">LoggerWinston</a></li><li><a href="LogsService.html">LogsService</a></li><li><a href="LogsSvcConsumer.html">LogsSvcConsumer</a></li><li><a href="LogsSvcProvider.html">LogsSvcProvider</a></li><li><a href="MessagesService.html">MessagesService</a></li><li><a href="MessagesSvcConsumer.html">MessagesSvcConsumer</a></li><li><a href="MessagesSvcProvider.html">MessagesSvcProvider</a></li><li><a href="MetricBusState.html">MetricBusState</a></li><li><a href="MetricDuration.html">MetricDuration</a></li><li><a href="MetricHostState.html">MetricHostState</a></li><li><a href="MetricHttpReducer.html">MetricHttpReducer</a></li><li><a href="MetricNodeJsState.html">MetricNodeJsState</a></li><li><a href="MetricsBusCollector.html">MetricsBusCollector</a></li><li><a href="MetricsBusRecord.html">MetricsBusRecord</a></li><li><a href="MetricsBusReducer.html">MetricsBusReducer</a></li><li><a href="MetricsBusService.html">MetricsBusService</a></li><li><a href="MetricsBusSvcProvider.html">MetricsBusSvcProvider</a></li><li><a href="MetricsCollector.html">MetricsCollector</a></li><li><a href="MetricsHostCollector.html">MetricsHostCollector</a></li><li><a href="MetricsHostRecord.html">MetricsHostRecord</a></li><li><a href="MetricsHostReducer.html">MetricsHostReducer</a></li><li><a href="MetricsHostService.html">MetricsHostService</a></li><li><a href="MetricsHostSvcProvider.html">MetricsHostSvcProvider</a></li><li><a href="MetricsHttpCollector.html">MetricsHttpCollector</a></li><li><a href="MetricsHttpRecord.html">MetricsHttpRecord</a></li><li><a href="MetricsHttpState.html">MetricsHttpState</a></li><li><a href="MetricsNodeJsCollector.html">MetricsNodeJsCollector</a></li><li><a href="MetricsNodeJsRecord.html">MetricsNodeJsRecord</a></li><li><a href="MetricsNodeJsService.html">MetricsNodeJsService</a></li><li><a href="MetricsNodeJsSvcProvider.html">MetricsNodeJsSvcProvider</a></li><li><a href="MetricsNodeReducer.html">MetricsNodeReducer</a></li><li><a href="MetricsRecord.html">MetricsRecord</a></li><li><a href="MetricsReducer.html">MetricsReducer</a></li><li><a href="MetricsServer.html">MetricsServer</a></li><li><a href="MetricsService.html">MetricsService</a></li><li><a href="MetricsState.html">MetricsState</a></li><li><a href="MetricsSvcBusConsumer.html">MetricsSvcBusConsumer</a></li><li><a href="MetricsSvcConsumer.html">MetricsSvcConsumer</a></li><li><a href="MetricsSvcHostConsumer.html">MetricsSvcHostConsumer</a></li><li><a href="MetricsSvcNodeJsConsumer.html">MetricsSvcNodeJsConsumer</a></li><li><a href="MetricsSvcProvider.html">MetricsSvcProvider</a></li><li><a href="MiddlewareSvcConsumer.html">MiddlewareSvcConsumer</a></li><li><a href="MiddlewareSvcProvider.html">MiddlewareSvcProvider</a></li><li><a href="MidlewareService.html">MidlewareService</a></li><li><a href="Module.html">Module</a></li><li><a href="module.exports.html">module.exports</a></li><li><a href="Node.html">Node</a></li><li><a href="NodeMessaging.html">NodeMessaging</a></li><li><a href="Plugin.html">Plugin</a></li><li><a href="PluginsFactory.html">PluginsFactory</a></li><li><a href="PluginsManager.html">PluginsManager</a></li><li><a href="RecordProvider.html">RecordProvider</a></li><li><a href="RecordsTable.html">RecordsTable</a></li><li><a href="RegisteredService.html">RegisteredService</a></li><li><a href="Render.html">Render</a></li><li><a href="RenderingManager.html">RenderingManager</a></li><li><a href="RenderingPlugin.html">RenderingPlugin</a></li><li><a href="RenderStack.html">RenderStack</a></li><li><a href="Resource.html">Resource</a></li><li><a href="ResourcesService.html">ResourcesService</a></li><li><a href="ResourcesSvcConsumer.html">ResourcesSvcConsumer</a></li><li><a href="ResourcesSvcProvider.html">ResourcesSvcProvider</a></li><li><a href="RoutesSvcConsumer.html">RoutesSvcConsumer</a></li><li><a href="Runtime.html">Runtime</a></li><li><a href="RuntimeExecutable.html">RuntimeExecutable</a></li><li><a href="Security.html">Security</a></li><li><a href="SequelizeRecordProvider.html">SequelizeRecordProvider</a></li><li><a href="Server.html">Server</a></li><li><a href="ServersManager.html">ServersManager</a></li><li><a href="ServersPlugin.html">ServersPlugin</a></li><li><a href="Service.html">Service</a></li><li><a href="ServiceConsumer.html">ServiceConsumer</a></li><li><a href="ServiceExecProvider.html">ServiceExecProvider</a></li><li><a href="ServiceProvider.html">ServiceProvider</a></li><li><a href="ServicesManager.html">ServicesManager</a></li><li><a href="ServicesPlugin.html">ServicesPlugin</a></li><li><a href="Settingsable.html">Settingsable</a></li><li><a href="SimpleBusClient.html">SimpleBusClient</a></li><li><a href="SimpleBusServer.html">SimpleBusServer</a></li><li><a href="SocketIOServiceProvider.html">SocketIOServiceProvider</a></li><li><a href="Stateable.html">Stateable</a></li><li><a href="Stream.html">Stream</a></li><li><a href="StreamLogger.html">StreamLogger</a></li><li><a href="Subscription.html">Subscription</a></li><li><a href="Table.html">Table</a></li><li><a href="Topology.html">Topology</a></li><li><a href="TopologyService.html">TopologyService</a></li><li><a href="TopologySvcHostConsumer.html">TopologySvcHostConsumer</a></li><li><a href="TopologySvcProvider.html">TopologySvcProvider</a></li><li><a href="Transaction.html">Transaction</a></li><li><a href="UI.html">UI</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="global.html#debug_self">debug_self</a></li><li><a href="global.html#DEFAULT_OPS">DEFAULT_OPS</a></li><li><a href="global.html#default_settings">default_settings</a></li><li><a href="global.html#diff">diff</a></li><li><a href="global.html#error_self">error_self</a></li><li><a href="global.html#extract">extract</a></li><li><a href="global.html#flat">flat</a></li><li><a href="global.html#get_default_settings">get_default_settings</a></li><li><a href="global.html#get_initial_state">get_initial_state</a></li><li><a href="global.html#has_remote_target">has_remote_target</a></li><li><a href="global.html#info_self">info_self</a></li><li><a href="global.html#load_config">load_config</a></li><li><a href="global.html#load_config_apps">load_config_apps</a></li><li><a href="global.html#load_config_apps_app">load_config_apps_app</a></li><li><a href="global.html#load_runtime">load_runtime</a></li><li><a href="global.html#out">out</a></li><li><a href="global.html#plugin_is_valid">plugin_is_valid</a></li><li><a href="global.html#post_to_remote">post_to_remote</a></li><li><a href="global.html#ServerTypes">ServerTypes</a></li><li><a href="global.html#STATUS_CREATED">STATUS_CREATED</a></li><li><a href="global.html#transform">transform</a></li><li><a href="global.html#warn_self">warn_self</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+		<div class="col-sm-3 col-md-3">
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-12">
+	
+		<div id="main">
+			
+
+		<h1 class="page-title">Source: common/base/transaction.js</h1>
+    
+<section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript linenums">
+import T from 'typr'
+import assert from 'assert'
+
+import { store, config } from '../store/index'
+
+import Instance from './instance'
+import MetricDuration from '../metrics/metric_duration'
+import MetricHost from '../metrics/metric_host'
+
+
+let context = 'common/base/transaction'
+
+
+
+const TYPE_SEQUENCE  = 'SEQUENCE'
+const TYPE_EVERY  = 'EVERY'
+const TYPE_ONE  = 'ONE'
+
+const STATUS_CREATED  = 'CREATED'
+const STATUS_PREPARED = 'PREPARED'
+const STATUS_EXEC_OK  = 'EXEC_OK'
+const STATUS_EXEC_KO  = 'EXEC_KO'
+
+
+
+/**
+ * @file Transaction class to manage grouped executions with commit/rollback features.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class Transaction extends Instance
+{
+	/**
+	 * Create a Transaction. Set status to CREATED.
+	 * @extends Instance
+	 * @param {string} arg_app_name - application name.
+	 * @param {string} arg_svc_name - service name.
+	 * @param {string} arg_tx_name - transaction name.
+	 * @param {object} arg_settings - settings
+	 * @param {Array} arg_executables - executables array (optional)
+	 * @param {string} arg_type - transaction type (optional)
+	 * @returns {nothing}
+	 */
+	constructor(arg_app_name, arg_svc_name, arg_tx_name, arg_settings, arg_executables, arg_type)
+	{
+		super('transactions', 'Transaction', arg_tx_name, arg_settings, context)
+		
+		this.is_transaction = true
+		
+		if (arg_executables)
+		{
+			this.set_executables(arg_executables)
+		}
+		
+		this.set_type(arg_type)
+		
+		this.metric_duration = new MetricDuration() 
+		this.metrics = [this.metric_duration, new MetricHost()]
+		
+		this.status = STATUS_CREATED
+	}
+	
+	
+	/**
+	 * Set transaction executables.
+	 * @param {Array} arg_executables - executables instances array.
+	 * @returns {nothing}
+	 */
+	set_executables(arg_executables)
+	{
+		// ASSUME AN ARRAY
+		this.executables = T.isArray(arg_executables) ? arg_executables : [arg_executables]
+		
+		// CHECK ARRAY ITEMS
+		this.executables.forEach(
+			(executable, index) => {
+				assert( T.isObject(executable) &amp;&amp; executable.is_executable, context + ':bad executable type at [' + index + ']')
+			}
+		)
+	}
+	
+	
+	/**
+	 * Set the transaction type. Value should be choosen from the list:EVERY,SEQUENCE,ONE
+	 *	  * EVERY: transaction is finished when all executables are finished without order.
+	 *	  * SEQUENCE: transaction is finished when all executables are finished in a ordered sequence.
+	 *	  * ONE: transaction is finished when an executable finished without waiting other executables.
+	 * @param {string} arg_type - transaction type value.
+	 * @returns {nothing}
+	 */
+	set_type(arg_type)
+	{
+		if ( ! T.isString(arg_type) )
+		{
+			arg_type = TYPE_EVERY
+		}
+		
+		switch(arg_type)
+		{
+			case TYPE_EVERY:	this.tx_type = TYPE_EVERY; return
+			case TYPE_ONE:	    this.tx_type = TYPE_ONE; return
+			case TYPE_SEQUENCE: this.tx_type = TYPE_SEQUENCE; return
+		}
+		
+		this.tx_type = TYPE_EVERY
+	}
+	
+	
+	/**
+	 * Prepare transaction executables. Change status to PREPARED.
+	 * @param {object} arg_context - executables context.
+	 * @returns {nothing}
+	 */
+	prepare(arg_context)
+	{
+		this.metrics.forEach( (metric)=>{ metric.before() } )
+		
+		this.executables.forEach(
+			(executable) => {
+				executable.prepare(arg_context)
+			}
+		)
+		
+		this.results = []
+		this.status = STATUS_PREPARED
+	}
+	
+	
+	/**
+	 * Execute all executables regarding the transaction type.
+	 * @param {anything} arg_data - any parameter
+	 * @returns {Promise} - a promise of executables results array
+	 */
+	execute(arg_data)
+	{
+		switch(this.tx_type)
+		{
+			case TYPE_EVERY:
+			{
+				return this.execute_every(arg_data)
+			}
+			case TYPE_ONE:
+			{
+				return this.execute_one(arg_data)
+			}
+			case TYPE_SEQUENCE:
+			{
+				return this.execute_sequence(arg_data)
+			}
+		}
+		
+		return Promise.resolve(false)
+		// return Promise.reject('bad transaction type')
+	}
+	
+	
+	/**
+	 * Execute every executables without order and fails if one failure appears.
+	 * @param {anything} arg_data - any parameter
+	 * @returns {Promise} - a promise of executables results array
+	 */
+	execute_every(arg_data)
+	{
+		const self = this
+		let index = 0
+		this.metric_duration.before()
+		
+		try
+		{
+			let tx_promises = []
+			this.executables.forEach(
+				(executable) => {
+					let exec_promise = executable.execute(arg_data)
+					tx_promises.push(exec_promise)
+					
+					exec_promise.then(
+						function(value)
+						{
+							let has_error = executable.has_error()
+							
+							this.results.push(
+								{
+									index:index,
+									result:value,
+									has_error:has_error,
+									error_msg:executable.get_error_msg()
+								}
+							)
+							
+							this.metrics.forEach( (metric)=>{ metric.iteration() } )
+							
+							if (has_error)
+							{
+								return false
+							}
+							
+							return true
+						}
+					)
+					
+					index++
+				}
+			)
+			
+			let all_promise = Promise.all(tx_promises).then(
+				function(results)
+				{
+					let all_result = true
+					results.forEach(
+						function(value, index, arr)
+						{
+							if (! value)
+							{
+								all_result = false
+							}
+						}
+					)
+					
+					this.metric_duration.after()
+					
+					if (! all_result)
+					{
+						self.rollback()
+						return false
+					}
+					
+					self.commit()
+					return true
+				}
+			)
+			
+			return all_promise
+		}
+		catch(e)
+		{
+			this.rollback()
+		}
+		
+		return Promise.resolve(false)
+	}
+	
+	
+	/**
+	 * Execute every executables without order and fulfill on first resolved, fails if one failure appears.
+	 * @param {anything} arg_data - any parameter
+	 * @returns {Promise} - a promise of executables results array
+	 */
+	execute_one(arg_data)
+	{
+		const self = this
+		let index = 0
+		this.metric_duration.before()
+		
+		try
+		{
+			let tx_promises = []
+			this.executables.forEach(
+				(executable) => {
+					let exec_promise = executable.execute(arg_data)
+					tx_promises.push(exec_promise)
+					
+					exec_promise.then(
+						function(value)
+						{
+							let has_error = executable.has_error()
+							
+							this.results.push(
+								{
+									index:index,
+									result:value,
+									has_error:has_error,
+									error_msg:executable.get_error_msg()
+								}
+							)
+							
+							this.metrics.forEach( (metric)=>{ metric.iteration() } )
+							
+							if (has_error)
+							{
+								return false
+							}
+							
+							return true
+						}
+					)
+					
+					index++
+				}
+			)
+			
+			let all_promise = Promise.race(tx_promises).then(
+				function(result)
+				{
+					this.metric_duration.after()
+					
+					if (! result)
+					{
+						self.rollback()
+						return false
+					}
+					
+					self.commit()
+					return true
+				}
+			)
+			
+			return all_promise
+		}
+		catch(e)
+		{
+			this.rollback()
+		}
+		
+		return Promise.resolve(false)
+	}
+	
+	
+	/**
+	 * Execute every executables in a fixed order and stop on failure.
+	 * @param {anything} arg_data - any parameter
+	 * @returns {Promise} - a promise of executables results array
+	 */
+	execute_sequence(arg_data)
+	{
+		this.enter_group('execute a sequence of executables')
+		
+		const self = this
+		this.metric_duration.before()
+		
+		try
+		{
+			let tx_promise = Promise.resolve(true)
+			this.executables.forEach(
+				(executable, index) => {
+					// console.log('loop on executable', index, executable.$name)
+					
+					if ( tx_promise &amp;&amp; tx_promise.then )
+					{
+						// console.log('promise exists')
+						tx_promise = tx_promise.then(
+							function(value)
+							{
+								// console.log('previous is resolved')
+								if(!value)
+								{
+									console.log('previous executable error', index, executable.$name)
+									return false
+								}
+								
+								let exec_promise = executable.execute(arg_data)
+								
+								// EXECUTION WITHOUT EXCEPTION
+								exec_promise = exec_promise.then(
+									function(exec_value)
+									{
+										let has_error = executable.has_error()
+										
+										console.info('current executable [%s] [%s] without exception', index, executable.$name)
+										if (has_error)
+										{
+											console.error('current executable [%s] [%s] with error', index, executable.$name)
+										}
+										
+										self.results.push(
+											{
+												index:index,
+												result:exec_value,
+												has_error:has_error,
+												error_msg:executable.get_error_msg()
+											}
+										)
+										self.metrics.forEach( (metric)=>{ metric.iteration() } )
+										
+										return ! has_error
+									}
+								)
+								
+								// EXECUTION FAILURE WITH AN EXCEPTION
+								exec_promise.catch(
+									(reason)=>{
+										console.log('current executable exception', index, executable.$name)
+										self.results.push(
+											{
+												index:index,
+												result:null,
+												has_error:true,
+												error_msg:reason
+											}
+										)
+									}
+								)
+								
+								return exec_promise
+							}
+						)
+					}
+				}
+			)
+			
+			// TRANSACTION WITHOUT EXCEPTION
+			tx_promise = tx_promise.then(
+				function(result)
+				{
+					console.log('executable success')
+					
+					self.metric_duration.after()
+					
+					if (! result)
+					{
+						self.rollback()
+						return false
+					}
+					
+					console.log('runtime loading parts duration', self.metric_duration.get_values().iterations)
+					
+					self.commit()
+					return true
+				}
+			)
+			
+			// TRANSACTION FAILURE WITH EXCEPTION
+			tx_promise = tx_promise.catch(
+				(reason)=>{
+					console.log('executable failure')
+					self.metric_duration.after()
+					
+					console.error('tx failure', reason)
+					self.rollback()
+					return false
+				}
+			)
+			
+			this.leave_group('execute a sequence of executables (OK) (async)')
+			return tx_promise
+		}
+		catch(e)
+		{
+			console.error(context + ':exception:' + e)
+			this.rollback()
+		}
+		
+		this.leave_group('execute a sequence of executables (KO) (async)')
+		return Promise.resolve(false)
+	}
+	
+	
+	/**
+	 * Commit transaction execution on executables success. Change status to EXEC_OK.
+	 * @returns {nothing}
+	 */
+	commit()
+	{
+		this.executables.forEach(
+			(executable) => {
+				executable.exec_ack()
+			}
+		)
+		this.status = STATUS_EXEC_OK
+	}
+	
+	
+	/**
+	 * Rollback transaction execution on executables failure. Change status to EXEC_KO.
+	 * @returns {nothing}
+	 */
+	rollback()
+	{
+		this.executables.forEach(
+			(executable) => {
+				executable.exec_fail()
+			}
+		)
+		
+		this.status = STATUS_EXEC_KO
+		
+		this.results.forEach(
+			(value, index)=>console.log('result at executable [' + index + ']', value)
+		)
+	}
+	
+	
+	/**
+	 * Finish all executables.
+	 * @returns {nothing}
+	 */
+	finish()
+	{
+		this.executables.forEach(
+			(executable) => {
+				executable.finish()
+			}
+		)
+		
+		this.metrics.forEach( (metric)=>{ metric.after() } )
+	}
+	
+	
+	/**
+	 * Get instance description: {$type:..., $class:..., $id:..., $name:...}.
+	 * @returns {object} - instance object description
+	 */
+	get_descriptor()
+	{
+		// TODO: delete this method ? Same as its parent!
+		let parent_desc = super.get_descriptor()
+		return parent_desc
+	}
+	
+	
+	/**
+	 * Get transaction metrics: {id:..., status:..., metrics:...}.
+	 * @returns {object} - transaction metrics plain object
+	 */
+	get_metrics()
+	{
+		let values = []
+		this.metrics.forEach( (metric)=>{ values.push( metric.getvalues() ) } )
+		return { $id:this.$id, $status:this.status, metrics:values }
+	}
+	
+	
+	/**
+	 * Get executables results array: {index:..., result:..., has_error:..., error_msg:...}.
+	 * @returns {Array} - all executed executables results.
+	 */
+	get_results()
+	{
+		return this.results
+	}
+	
+	
+	/**
+	 * Get result of the first ended executable.
+	 * @returns {object} - result object.
+	 */
+	get_first_result()
+	{
+		return this.results &amp;&amp; this.results.length > 0 ? this.results[0] : null
+	}
+	
+	
+	/**
+	 * Get result of the first ended executable which failed.
+	 * @returns {object} - error object.
+	 */
+	get_first_error()
+	{
+		if ( this.results &amp;&amp; this.results.length > 0 )
+		{
+			return this.results.find( (result) => { return result.has_error } )
+		}
+		
+		return undefined
+	}
+}
+
+
+/**
+ * Transaction type SEQUENCE: all executables are run one at a time in the registered order.
+ */
+Transaction.SEQUENCE = TYPE_SEQUENCE
+
+/**
+ * Transaction type ONE: all executables are run at the same time without order and transaction ends when a run finish.
+ */
+Transaction.ONE = TYPE_ONE
+
+/**
+ * Transaction type EVERY: all executables are run at the same time without order.
+ */
+Transaction.EVERY = TYPE_EVERY
+</pre>
+    </article>
+</section>
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+
+</div>
+</div>
+
+<div class="modal fade" id="searchResults">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Search results</h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+	
+		on June 5th 2016, 10:02:58 pm
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+<script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			var id = $( heading ).attr( "id" );
+			return id && id.replace(/\~/g, '-inner-').replace(/\./g, '-static-') || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		SearcherDisplay.init();
+	});
+</script>
+
+</body>
+</html>
