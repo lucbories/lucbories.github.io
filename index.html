@@ -1,63 +1,90 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Lucbories.GitHub.io by lucbories</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Welcome on Devapt home page</h1>
-      <h2 class="project-tagline">Devapt is a wonderfull toolkit for javascript developpers.</h2>
-    </section>
+<html>
 
-    <section class="main-content">
-      <h1>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Lucbories.GitHub.io : Devapt web site.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Lucbories.GitHub.io</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/lucbories">View on GitHub</a>
+
+          <h1 id="project_title">Lucbories.GitHub.io</h1>
+          <h2 id="project_tagline">Devapt web site.</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
 <a id="devapt" class="anchor" href="#devapt" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Devapt</h1>
 
-<p>Current version: 0.9.0 (do not use in production environment)</p>
+<p>With DEVAPT you can easily develop powerfull application.
+Built-in features cover many important subjects as: authentication, restfull, http server, distributed services, logs, metrics...
+Main characteristics of DEVAPT architecture is dynamic behaviors, reactive programming, object oriented ES6 javascript, gulp build chain
+All of this on NodeJS.</p>
 
-<p>NPM module isn't available yet, please download devapt source insteed.</p>
+<p>A usefull application is DEVTOOLS which actualy display settings, logs, buses messages, metrics and topology.
+<a href="https://github.com/lucbories/devapt-devtools/">DEVTOOLS project</a></p>
+
+<p>In a near futur, DEVTOOLS will act as a configurable application builder for DEVAPT applications.</p>
+
+<p>devapt and devapt-* github repositories have the same structure: a master branch with the last tagged tree, a develop branch with latest comited updates and tags.</p>
+
+<p>Versionning use standard method: M.m.p with M is a major change, m a minor change, p a patch.</p>
+
+<p>Current version: 0.9.5 (do not use in production environment)</p>
+
+<p>NPM module isn't available yet, please download devapt source insteed and make a NPM link (npm -l).</p>
 
 <p>Module would be available before version 1.0.0 final.</p>
 
 <h2>
-<a id="what-is-it" class="anchor" href="#what-is-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is it?</h2>
+<a id="what-is-it" class="anchor" href="#what-is-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>WHAT IS IT?</h2>
 
 <p>The Developpers Application Toolkit is a usefull package for developers:
-create quickly and securely a complex distributed set of applications or a simple alone application. </p>
+create quickly and securely a complex distributed set of applications or a simple alone application into one or more nodejs.</p>
 
 <p>This project is based on Javascript (ECMAscript 6 transpiled in ES5) and nodejs.
 Devapt contains a server runtime and a set of client features.
 Devapt help you to write less code and to use easily more features.</p>
 
 <p>The principle is simple: you write some configuration files for distributed nodes, models, views and menus and the you start the application.
-The framework will automatically generates the RESTfull server.
+The framework will automatically generates the server and manages common features (logges, traces, metrics, restful, security...).
 Simply launch index.html and your application is up a rich user interface and many features.</p>
 
-<p>See <a href="https://github.com/lucbories/Devapt/tree/master/docs/FEATURES.md">FEATURES</a></p>
+<p>See <a href="https://github.com/lucbories/devapt/blob/develop/docs/FEATURES.md">FEATURES</a></p>
 
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>USAGE</h2>
 
-<p>See <a href="https://github.com/lucbories/Devapt/tree/master/docs/GETTING_STARTED.md">GETTING_STARTED</a></p>
-
+<p>See <a href="https://github.com/lucbories/devapt/blob/develop/docs/GETTING_STARTED.md">GETTING_STARTED</a></p>
 
 <p>Documentation: <a href="https://lucbories.github.io/api/index.html">API</a></p>
-
 
 <p>Devapt library offers a "runtime" instance which delivers this features:</p>
 
 <ul>
-<li>main rendering wrapper (Render instance)</li>
-<li>rendering base class (Component class)</li>
-<li>Redux store wrapper</li>
-<li>configuration settings wrapper</li>
-<li>main logging wrapper</li>
+<li>browser or server rendering (Render instance)</li>
+<li>rendering base class for custom widgets or views (Component class)</li>
+<li>Redux store on client side</li>
+<li>distributed servers</li>
+<li>master configuration settings (distributed on each nodes)</li>
+<li>loggers engines and traces configuration (for instances, classes, modules)</li>
+<li>datas abstraction</li>
+<li>reactive programming (thanks BaconJS)</li>
+<li>documentation (wotrk in progress)</li>
 </ul>
 
 <h2>
@@ -67,7 +94,7 @@ Simply launch index.html and your application is up a rich user interface and ma
 
 <p>Apache Version 2 license.</p>
 
-<p>See <a href="https://github.com/lucbories/Devapt/tree/master/LICENSE">LICENSE</a></p>
+<p>See <a href="LICENSE">LICENSE</a></p>
 
 <h2>
 <a id="roadmap" class="anchor" href="#roadmap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ROADMAP</h2>
@@ -76,7 +103,7 @@ Simply launch index.html and your application is up a rich user interface and ma
 1.0.0   first stable release
 1.1.0   add features and tests</p>
 
-<p>See <a href="https://github.com/lucbories/Devapt/tree/master/docs/ROADMAP.md">ROADMAP</a></p>
+<p>See <a href="https://github.com/lucbories/devapt/blob/develop/docs/ROADMAP.md">ROADMAP</a></p>
 
 <h2>
 <a id="bugs" class="anchor" href="#bugs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BUGS</h2>
@@ -97,25 +124,42 @@ Simply launch index.html and your application is up a rich user interface and ma
 <p>A topology contains:</p>
 
 <ul>
-<li>nodes: A node is a nodejs process with a unique name. You can have many nodes on the same machine.
-Each node communicates with other node through a couple (host, port).
-A node can have one or many servers.</li>
-<li>servers: A server provides one or more services and listen client connections through a couple (host, port).
-A server has a unique name and can be one of types: restify, express, socket.io, message bus...</li>
-<li>services: A service offer one feature to clients. A service can be one of: static assets providers, middleware provider, model RESTfull access...</li>
+<li>nodes: A node is a nodejs process with an unique name. You can have many nodes on the same machine.
+Each node communicates with other node through messaging buses (messages, metrics, logs).</li>
+</ul>
+
+<p><img src="https://github.com/lucbories/devapt/blob/develop/docs/features/buses.png" alt="Messaging"></p>
+
+<p>A node can have one or many servers.</p>
+
+<ul>
+<li>servers: A server provides one or more services and listen client connections through a couple (host, port).</li>
+</ul>
+
+<p>A server has a unique name and can be one of types: restify, express, socket.io (coming soon)...</p>
+
+<ul>
+<li>services: A service offers one feature to clients. A service can be one of: static assets providers, generic middleware provider, RESTfull provider, resources provider...</li>
 <li>applications: An application contains some services and is provided through nodes and servers.
 An application can have one service on one server on one node.
 Or many services on many servers on many nodes.</li>
+</ul>
+
+<p>An application contains:</p>
+
+<ul>
 <li>modules: functional features for applications (a set of preconfigured UI for example).</li>
 <li>plugins: technical fearures for applications (a rendering provider for example).</li>
 <li>security: defines authentication and authorization rules.</li>
 </ul>
 
+<p><img src="https://github.com/lucbories/devapt/blob/develop/docs/features/host.png" alt="Distributed"></p>
+
 <p>The rendering engines are plugins and rendering classes are stateless: state is stored in a Redux store.
 See <a href="https://egghead.io/series/getting-started-with-redux">Getting Started with Redux</a> for flow concepts.</p>
 
 <h2>
-<a id="devapt-is-a-glue-between-many-usefull-projects" class="anchor" href="#devapt-is-a-glue-between-many-usefull-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Devapt is a glue between many usefull projects</h2>
+<a id="devapt-is-a-glue-between-many-powerfull-projects" class="anchor" href="#devapt-is-a-glue-between-many-powerfull-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Devapt is a glue between many powerfull projects</h2>
 
 <p>Thanks for all projects leaders and contributers.</p>
 
@@ -152,6 +196,8 @@ See <a href="https://egghead.io/series/getting-started-with-redux">Getting Start
 <p>Foundations</p>
 
 <ul>
+<li>BaconJS: <a href="https://baconjs.github.io/">https://baconjs.github.io/</a>
+</li>
 <li>SimpleBus: <a href="https://github.com/ajlopez/SimpleBus">https://github.com/ajlopez/SimpleBus</a>
 </li>
 <li>jQuery: <a href="https://jquery.com">https://jquery.com</a>
@@ -170,6 +216,8 @@ See <a href="https://egghead.io/series/getting-started-with-redux">Getting Start
 </li>
 <li>Circuit breaker: <a href="https://www.npmjs.com/package/circuit-breaker">https://www.npmjs.com/package/circuit-breaker</a> or <a href="https://github.com/yammer/circuit-breaker-js">https://github.com/yammer/circuit-breaker-js</a>
 </li>
+<li>LowDb: <a href="https://github.com/typicode/lowdb">https://github.com/typicode/lowdb</a>
+</li>
 </ul>
 
 <p>Rendering:</p>
@@ -186,10 +234,16 @@ See <a href="https://egghead.io/series/getting-started-with-redux">Getting Start
 <p>Dev and build dependancies: (coming soon.)</p>
 
 <ul>
-<li>Babel:</li>
-<li>Chai:</li>
-<li>Gulp</li>
-<li>Mocha</li>
+<li>Babel: <a href="https://babeljs.io">https://babeljs.io</a>
+</li>
+<li>Chai: <a href="http://chaijs.com/">http://chaijs.com/</a>
+</li>
+<li>Gulp: <a href="http://gulpjs.com/">http://gulpjs.com/</a>
+</li>
+<li>Mocha: <a href="https://mochajs.org/">https://mochajs.org/</a>
+</li>
+<li>JSDoc: <a href="http://usejsdoc.org/">http://usejsdoc.org/</a>
+</li>
 </ul>
 
 <h2>
@@ -201,14 +255,17 @@ See <a href="https://egghead.io/series/getting-started-with-redux">Getting Start
 <a id="contacts" class="anchor" href="#contacts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contacts</h2>
 
 <p>To subscribe to news or report a bug or contribute to the project, use the project website at <a href="https://github.com/lucbories/DevApt">https://github.com/lucbories/DevApt</a>.</p>
+      </section>
+    </div>
 
-      <footer class="site-footer">
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
+    </div>
 
-    </section>
+    
 
-  
   </body>
 </html>
