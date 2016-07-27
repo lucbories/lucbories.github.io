@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Index</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="./api/styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="./api/styles/site.cerulean.css">
+
+</head>
+
+
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top ">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Devapt Doc</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="topNavigation">
+            <ul class="nav navbar-nav">
+                <li><a href="README.html">Readme</a></li>
+                <li><a href="GETTING_STARTED.html">Getting started</a></li>
+                <li><a href="INSTALL.html">Install</a></li>
+                <li><a href="api/index.html">API</a></li>
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features<b class="caret"></b></a>
+					<ul class="dropdown-menu inline">
+						<li><a href="CONFIGURABLE.html">Configurable</a></li>
+						<li><a href="DISTRIBUTED.html">Distributed</a></li>
+						<li><a href="MESSAGING.html">Messaging</a></li>
+						<li><a href="METRICS.html">Metrics</a></li>
+						<li><a href="RENDERING.html">Rendering</a></li>
+						<li><a href="SECURITY.html">Security</a></li>
+						<li><a href="SERVERS.html">Servers</a></li>
+						<li><a href="SERVICES.html">Services</a></li>
+					</ul>
+				</li>
+				
+                <li><a href="ROADMAP.html">Roadmap</a></li>
+                <li><a href="CONTRIBUTING.html">Contributing</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="toc-content">
+	<div class="row">
+		<div class="col-md-8">
+			<div id="main"><h1 id="devaptfeaturesservers">Devapt - Features - Servers</h1>
+
+<h2 id="description">Description</h2>
+
+<p>Servers provide featured services.</p>
+
+<h2 id="status">Status</h2>
+
+<p>Express server: make middlewares use configurables.</p>
+
+<p>Restify server: make middlewares use configurables, check authorizations.</p>
+
+<p>Need Test, Optimization and code review.</p>
+
+<h2 id="builtinservers">Builtin servers</h2>
+
+<p>Devapt provides builtin servers for common usages.
+But you can code your own server.</p>
+
+<h3 id="express">EXPRESS</h3>
+
+<p>Serve static pages or middleware generated content.</p>
+
+<h3 id="restify">RESTIFY</h3>
+
+<p>Serve RESTfull content.</p>
+
+<h3 id="fordevaptusers">For Devapt users:</h3>
+
+<p>Configure servers in nodes.json
+A JSON nodes servers declaration:</p>
+
+<pre><code>{
+    "nodes":{
+        "NodeA":{
+            "host":"localhost",
+            "is_master":true,
+            "servers":{
+                "NodeALocal8080":{
+                    "type":"express",
+                    "port":8080,
+                    "protocole":"http",
+                    "middlewares":[],
+                    "use_socketio":true,
+
+                    "security": {
+                        "authentication": {
+                            "enabled":true,
+                            "plugins":["file_users"]
+                        }
+                    }
+                },
+                "NodeALocal8081":{
+                    "type":"restify",
+                    "port":8081,
+                    "protocole":"http",
+                    "middlewares":[],
+                    "use_socketio":true,
+
+                    "security": {
+                        "authentication": {
+                            "enabled":true,
+                            "plugins":["file_users"]
+                        }
+                    }
+                }
+            }
+        },
+
+        "NodeB":{
+            "host":"localhost",
+            "is_master":false,
+            "servers":{
+                "NodeBLocal8080":{
+                    "type":"express",
+                    "port":8080,
+                    "protocole":"http",
+                    "middlewares":[],
+                    "use_socketio":true,
+
+                    "security": {
+                        "authentication": {
+                            "enabled":true,
+                            "plugins":["file_users"]
+                        }
+                    }
+                },
+                "NodeBLocal8081":{
+                    "type":"restify",
+                    "port":8081,
+                    "protocole":"http",
+                    "middlewares":[],
+                    "use_socketio":true,
+
+                    "security": {
+                        "authentication": {
+                            "enabled":true,
+                            "plugins":["file_users"]
+                        }
+                    }
+                },
+                "NodeBLocal8082":{
+                    "type":"express",
+                    "port":8082,
+                    "protocole":"http",
+                    "middlewares":[],
+                    "use_socketio":true,
+
+                    "security": {
+                        "authentication": {
+                            "enabled":true,
+                            "plugins":["file_users"]
+                        }
+                    }
+                },
+            }
+        }
+    }
+}
+</code></pre>
+
+<p>Each node contains one or more servers.</p>
+
+<p>A server declaration:</p>
+
+<pre><code>"serverA2":{
+    "type":"express",
+    "port":8082,
+    "protocole":"http",
+    "middlewares":[],
+    "use_socketio":true,
+
+    "security": {
+        "authentication": {
+            "enabled":true,
+            "plugins":["file_users"]
+        }
+    }
+}
+</code></pre>
+
+<p>A server has 
+* a name string, the key of the server record ("serverA2"), should be unique on a node and between all distributed nodes.
+* a type string: express, restify, socket.io ("express"), "cluster" and "bus" are coming soon.
+* a port integer (8081), should be unique on a node.
+* a protocole string ("http"), others will arrive later.
+* a middlewares array ([]), not used yet but it will give configurable middleware uses.
+* a flag: use or not socketio between browser and server.
+* a security record.</p>
+
+<h2 id="fordevaptcontributers">For Devapt contributers:</h2>
+
+<h2 id="thanks">Thanks</h2>
+
+<h3 id="express">Express</h3>
+
+<p>Strongloop provides a wonderfull de facto standard library, Express.
+It's a very popular project, used by many people.</p>
+
+<p><a href="https://github.com/strongloop/express">Express</a></p>
+
+<h3 id="restify">Restify</h3>
+
+<p>Restify helps to easily provides a RESTfull server.</p>
+
+<p><a href="https://github.com/.../restify">Express</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="searchResults">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Search results</h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+
+
+<footer>
+	<span class="jsdoc-message">
+		GitHub Repo <a href="https://github.com/lucbories/devapt">Devapt</a>
+		
+		<a href="https://github.com/lucbories/devapt">Devtools</a>
+
+		<a href="https://github.com/lucbories/devapt">Devtools application</a>
+
+		<a href="https://github.com/lucbories">All devapt relative repositories (plugins, apps)</a>
+		
+		<a href="https://www.npmjs.com/search?q=devapt">Devapt npm packages</a>.
+	</span>
+</footer>
+
+
+<script src="./api/scripts/docstrap.lib.js"></script>
+<script src="./api/scripts/toc.js"></script>
+<script type="text/javascript" src="./api/scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			var id = $( heading ).attr( "id" );
+			return id && id.replace(/\~/g, '-inner-').replace(/\./g, '-static-') || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+</body>
+</html>

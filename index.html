@@ -1,271 +1,177 @@
 <!DOCTYPE html>
-<html>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Lucbories.GitHub.io : Devapt web site.">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Index</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="./api/styles/sunlight.default.css">
 
-    <title>Lucbories.GitHub.io</title>
-  </head>
+	<link type="text/css" rel="stylesheet" href="./api/styles/site.cerulean.css">
 
-  <body>
+</head>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/lucbories">View on GitHub</a>
 
-          <h1 id="project_title">Lucbories.GitHub.io</h1>
-          <h2 id="project_tagline">Devapt web site.</h2>
+<body>
 
-        </header>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Devapt Doc</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="topNavigation">
+            <ul class="nav navbar-nav">
+                <li><a href="README.html">Readme</a></li>
+                <li><a href="GETTING_STARTED.html">Getting started</a></li>
+                <li><a href="INSTALL.html">Install</a></li>
+                <li><a href="api/index.html" target="_blank">API</a></li>
+
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features<b class="caret"></b></a>
+					<ul class="dropdown-menu inline">
+						<li><a href="CONFIGURABLE.html">Configurable</a></li>
+						<li><a href="DISTRIBUTED.html">Distributed</a></li>
+						<li><a href="MESSAGING.html">Messaging</a></li>
+						<li><a href="METRICS.html">Metrics</a></li>
+						<li><a href="RENDERING.html">Rendering</a></li>
+						<li><a href="SECURITY.html">Security</a></li>
+						<li><a href="SERVERS.html">Servers</a></li>
+						<li><a href="SERVICES.html">Services</a></li>
+					</ul>
+				</li>
+				
+                <li><a href="ROADMAP.html">Roadmap</a></li>
+                <li><a href="CONTRIBUTING.html">Contributing</a></li>
+            </ul>
+        </div>
     </div>
+</div>
+
+
+<div class="container" id="toc-content">
+	<div class="row">
+		<div class="col-md-8">
+			<div id="main"><h1 id="welcomeondevaptprojectdocumentation">Welcome on Devapt project documentation</h1>
+
+<p>Please enjoy using devapt projects and let me know if they are usefull for you.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="searchResults">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Search results</h4>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div>
+
+
+<footer>
+	<p style="text-align:center;">...</p>
+	<span class="jsdoc-message">
+		GitHub Repos: <a href="https://github.com/lucbories/devapt">Devapt</a>
+		
+		 - <a href="https://github.com/lucbories/devapt-devtools">Devtools</a>
+
+		 - <a href="https://github.com/lucbories/devapt-app-devtools">Devtools application</a>
+
+		 - <a href="https://github.com/lucbories">All devapt relative repositories (plugins, apps)</a>
+		
+		 - <a href="https://www.npmjs.com/search?q=devapt">Devapt npm packages</a>.
+	</span>
+	<p style="text-align:center;">...</p>
+</footer>
+
+
+<script src="./api/scripts/docstrap.lib.js"></script>
+<script src="./api/scripts/toc.js"></script>
+<script type="text/javascript" src="./api/scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			var id = $( heading ).attr( "id" );
+			return id && id.replace(/\~/g, '-inner-').replace(/\./g, '-static-') || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a id="devapt" class="anchor" href="#devapt" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Devapt</h1>
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
 
-<p>With DEVAPT you can easily develop powerfull application.
-Built-in features cover many important subjects as: authentication, restfull, http server, distributed services, logs, metrics...
-Main characteristics of DEVAPT architecture is dynamic behaviors, reactive programming, object oriented ES6 javascript, gulp build chain
-All of this on NodeJS.</p>
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
 
-<p>A usefull application is DEVTOOLS which actualy display settings, logs, buses messages, metrics and topology.
-<a href="https://github.com/lucbories/devapt-devtools/">DEVTOOLS project</a></p>
+} );
+</script>
 
-<p>In a near futur, DEVTOOLS will act as a configurable application builder for DEVAPT applications.</p>
 
-<p>devapt and devapt-* github repositories have the same structure: a master branch with the last tagged tree, a develop branch with latest comited updates and tags.</p>
-
-<p>Versionning use standard method: M.m.p with M is a major change, m a minor change, p a patch.</p>
-
-<p>Current version: 0.9.5 (do not use in production environment)</p>
-
-<p>NPM module isn't available yet, please download devapt source insteed and make a NPM link (npm -l).</p>
-
-<p>Module would be available before version 1.0.0 final.</p>
-
-<h2>
-<a id="what-is-it" class="anchor" href="#what-is-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>WHAT IS IT?</h2>
-
-<p>The Developpers Application Toolkit is a usefull package for developers:
-create quickly and securely a complex distributed set of applications or a simple alone application into one or more nodejs.</p>
-
-<p>This project is based on Javascript (ECMAscript 6 transpiled in ES5) and nodejs.
-Devapt contains a server runtime and a set of client features.
-Devapt help you to write less code and to use easily more features.</p>
-
-<p>The principle is simple: you write some configuration files for distributed nodes, models, views and menus and the you start the application.
-The framework will automatically generates the server and manages common features (logges, traces, metrics, restful, security...).
-Simply launch index.html and your application is up a rich user interface and many features.</p>
-
-<p>See <a href="docs/FEATURES.md">FEATURES</a></p>
-
-<h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>USAGE</h2>
-
-<p>See <a href="docs/GETTING_STARTED.md">GETTING_STARTED</a></p>
-
-<p>Documentation: <a href="https://lucbories.github.io/api/index.html">API</a></p>
-
-<p>Devapt library offers a "runtime" instance which delivers this features:</p>
-
-<ul>
-<li>browser or server rendering (Render instance)</li>
-<li>rendering base class for custom widgets or views (Component class)</li>
-<li>Redux store on client side</li>
-<li>distributed servers</li>
-<li>master configuration settings (distributed on each nodes)</li>
-<li>loggers engines and traces configuration (for instances, classes, modules)</li>
-<li>datas abstraction</li>
-<li>reactive programming (thanks BaconJS)</li>
-<li>documentation (wotrk in progress)</li>
-</ul>
-
-<h2>
-<a id="licence" class="anchor" href="#licence" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LICENCE</h2>
-
-<p>Copyright Luc BORIES 2015-2016</p>
-
-<p>Apache Version 2 license.</p>
-
-<p>See <a href="LICENSE">LICENSE</a></p>
-
-<h2>
-<a id="roadmap" class="anchor" href="#roadmap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ROADMAP</h2>
-
-<p>0.9.0   initial release (not ready for production)
-1.0.0   first stable release
-1.1.0   add features and tests</p>
-
-<p>See <a href="docs/ROADMAP.md">ROADMAP</a></p>
-
-<h2>
-<a id="bugs" class="anchor" href="#bugs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BUGS</h2>
-
-<p>See <a href="https://github.com/lucbories/Devapt/issues">BUGS</a></p>
-
-<h2>
-<a id="technical-details" class="anchor" href="#technical-details" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technical details</h2>
-
-<p>With Devapt you define </p>
-
-<ul>
-<li>A topology, simple (one application, one server, one service) or complex (many services distributed for many applications on many distributed servers).</li>
-<li>Some resources (models, views, menubars, menus)</li>
-<li>Security rules</li>
-</ul>
-
-<p>A topology contains:</p>
-
-<ul>
-<li>nodes: A node is a nodejs process with an unique name. You can have many nodes on the same machine.
-Each node communicates with other node through messaging buses (messages, metrics, logs).</li>
-</ul>
-
-<p><img src="docs/features/Buses.png" alt="Messaging"></p>
-
-<p>A node can have one or many servers.</p>
-
-<ul>
-<li>servers: A server provides one or more services and listen client connections through a couple (host, port).</li>
-</ul>
-
-<p>A server has a unique name and can be one of types: restify, express, socket.io (coming soon)...</p>
-
-<ul>
-<li>services: A service offers one feature to clients. A service can be one of: static assets providers, generic middleware provider, RESTfull provider, resources provider...</li>
-<li>applications: An application contains some services and is provided through nodes and servers.
-An application can have one service on one server on one node.
-Or many services on many servers on many nodes.</li>
-</ul>
-
-<p>An application contains:</p>
-
-<ul>
-<li>modules: functional features for applications (a set of preconfigured UI for example).</li>
-<li>plugins: technical fearures for applications (a rendering provider for example).</li>
-<li>security: defines authentication and authorization rules.</li>
-</ul>
-
-<p><img src="docs/features/Host.png" alt="Distributed"></p>
-
-<p>The rendering engines are plugins and rendering classes are stateless: state is stored in a Redux store.
-See <a href="https://egghead.io/series/getting-started-with-redux">Getting Started with Redux</a> for flow concepts.</p>
-
-<h2>
-<a id="devapt-is-a-glue-between-many-powerfull-projects" class="anchor" href="#devapt-is-a-glue-between-many-powerfull-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Devapt is a glue between many powerfull projects</h2>
-
-<p>Thanks for all projects leaders and contributers.</p>
-
-<p>The given list is an extract of all used or inspired projects.</p>
-
-<p>Main dependancies:</p>
-
-<p>NodeJS: <a href="https://nodejs.org">https://nodejs.org</a></p>
-
-<p>Servers and datas access:</p>
-
-<ul>
-<li>Express: <a href="http://expressjs.com/">http://expressjs.com/</a>
-</li>
-<li>Restify: <a href="http://restify.com/">http://restify.com/</a>
-</li>
-<li>Epilogue: <a href="https://github.com/dchester/epilogue">https://github.com/dchester/epilogue</a>
-</li>
-<li>Sequelize: <a href="http://sequelizejs.com">http://sequelizejs.com</a>
-</li>
-<li>Socket.io: <a href="http://socket.io/">http://socket.io/</a>
-</li>
-</ul>
-
-<p>Security:</p>
-
-<ul>
-<li>Passport: <a href="http://passportjs.org">http://passportjs.org</a>
-</li>
-<li>Node ACL: <a href="https://github.com/OptimalBits/node_acl">https://github.com/OptimalBits/node_acl</a>
-</li>
-</ul>
-
-<p>Foundations</p>
-
-<ul>
-<li>BaconJS: <a href="https://baconjs.github.io/">https://baconjs.github.io/</a>
-</li>
-<li>SimpleBus: <a href="https://github.com/ajlopez/SimpleBus">https://github.com/ajlopez/SimpleBus</a>
-</li>
-<li>jQuery: <a href="https://jquery.com">https://jquery.com</a>
-</li>
-<li>Immutable: <a href="https://facebook.github.io/immutable-js/docs/#/">https://facebook.github.io/immutable-js/docs/#/</a>
-</li>
-<li>Redux: <a href="http://redux.js.org/docs/introduction/Motivation.html">http://redux.js.org/docs/introduction/Motivation.html</a>
-</li>
-<li>Moment: <a href="http://momentjs.com/">http://momentjs.com/</a>
-</li>
-<li>Vantage: <a href="https://github.com/dthree/vantage">https://github.com/dthree/vantage</a>
-</li>
-<li>Bunyan: <a href="https://github.com/trentm/node-bunyan">https://github.com/trentm/node-bunyan</a>
-</li>
-<li>Winston: <a href="https://github.com/winstonjs/winston">https://github.com/winstonjs/winston</a>
-</li>
-<li>Circuit breaker: <a href="https://www.npmjs.com/package/circuit-breaker">https://www.npmjs.com/package/circuit-breaker</a> or <a href="https://github.com/yammer/circuit-breaker-js">https://github.com/yammer/circuit-breaker-js</a>
-</li>
-<li>LowDb: <a href="https://github.com/typicode/lowdb">https://github.com/typicode/lowdb</a>
-</li>
-</ul>
-
-<p>Rendering:</p>
-
-<ul>
-<li>Foundation by ZURB: <a href="http://foundation.zurb.com/sites.html">http://foundation.zurb.com/sites.html</a>
-</li>
-<li>Mustache: <a href="https://github.com/janl/mustache.js">https://github.com/janl/mustache.js</a>
-</li>
-<li>React: <a href="http://facebook.github.io/react/docs/tutorial.html">http://facebook.github.io/react/docs/tutorial.html</a>
-</li>
-</ul>
-
-<p>Dev and build dependancies: (coming soon.)</p>
-
-<ul>
-<li>Babel: <a href="https://babeljs.io">https://babeljs.io</a>
-</li>
-<li>Chai: <a href="http://chaijs.com/">http://chaijs.com/</a>
-</li>
-<li>Gulp: <a href="http://gulpjs.com/">http://gulpjs.com/</a>
-</li>
-<li>Mocha: <a href="https://mochajs.org/">https://mochajs.org/</a>
-</li>
-<li>JSDoc: <a href="http://usejsdoc.org/">http://usejsdoc.org/</a>
-</li>
-</ul>
-
-<h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
-
-<p>Please see the file called INSTALL.md.</p>
-
-<h2>
-<a id="contacts" class="anchor" href="#contacts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contacts</h2>
-
-<p>To subscribe to news or report a bug or contribute to the project, use the project website at <a href="https://github.com/lucbories/DevApt">https://github.com/lucbories/DevApt</a>.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+</body>
 </html>
