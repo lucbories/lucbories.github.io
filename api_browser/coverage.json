@@ -1,0 +1,522 @@
+{
+  "coverage": "61.38%",
+  "expectCount": 681,
+  "actualCount": 418,
+  "files": {
+    "js/base/binding/bindings_loader.js": {
+      "expectCount": 5,
+      "actualCount": 4,
+      "undocumentLines": [
+        16
+      ]
+    },
+    "js/base/binding/binding_service.js": {
+      "expectCount": 6,
+      "actualCount": 4,
+      "undocumentLines": [
+        13,
+        40
+      ]
+    },
+    "js/base/binding/binding_service_timeline.js": {
+      "expectCount": 9,
+      "actualCount": 4,
+      "undocumentLines": [
+        14,
+        41,
+        65,
+        75,
+        157
+      ]
+    },
+    "js/base/binding/binding_stream.js": {
+      "expectCount": 32,
+      "actualCount": 5,
+      "undocumentLines": [
+        11,
+        35,
+        37,
+        38,
+        39,
+        41,
+        42,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        58,
+        64,
+        70,
+        76,
+        82,
+        88,
+        94,
+        100,
+        106,
+        112
+      ]
+    },
+    "js/base/component/bound_dom.js": {
+      "expectCount": 10,
+      "actualCount": 5,
+      "undocumentLines": [
+        14,
+        47,
+        49,
+        50,
+        82
+      ]
+    },
+    "js/base/component/dom.js": {
+      "expectCount": 34,
+      "actualCount": 27,
+      "undocumentLines": [
+        14,
+        77,
+        80,
+        86,
+        87,
+        89,
+        334
+      ]
+    },
+    "js/base/component/rendered_dom.js": {
+      "expectCount": 20,
+      "actualCount": 11,
+      "undocumentLines": [
+        12,
+        49,
+        50,
+        51,
+        53,
+        54,
+        55,
+        90,
+        145
+      ]
+    },
+    "js/base/component/rendering.js": {
+      "expectCount": 21,
+      "actualCount": 13,
+      "undocumentLines": [
+        16,
+        39,
+        41,
+        53,
+        54,
+        56,
+        96,
+        181
+      ]
+    },
+    "js/base/component/stated_dom.js": {
+      "expectCount": 18,
+      "actualCount": 12,
+      "undocumentLines": [
+        13,
+        52,
+        55,
+        75,
+        86,
+        108
+      ]
+    },
+    "js/base/component/unused_component.js": {
+      "expectCount": 49,
+      "actualCount": 33,
+      "undocumentLines": [
+        14,
+        68,
+        69,
+        70,
+        73,
+        75,
+        76,
+        78,
+        79,
+        80,
+        110,
+        165,
+        206,
+        228,
+        330,
+        973
+      ]
+    },
+    "js/base/component.js": {
+      "expectCount": 11,
+      "actualCount": 9,
+      "undocumentLines": [
+        12,
+        52
+      ]
+    },
+    "js/base/container.js": {
+      "expectCount": 39,
+      "actualCount": 29,
+      "undocumentLines": [
+        13,
+        93,
+        95,
+        97,
+        98,
+        99,
+        100,
+        102,
+        136,
+        247
+      ]
+    },
+    "js/base/feature.js": {
+      "expectCount": 10,
+      "actualCount": 8,
+      "undocumentLines": [
+        11,
+        58
+      ]
+    },
+    "js/base/layout/layout.js": {
+      "expectCount": 6,
+      "actualCount": 4,
+      "undocumentLines": [
+        10,
+        52
+      ]
+    },
+    "js/base/layout/layout_simple.js": {
+      "expectCount": 15,
+      "actualCount": 8,
+      "undocumentLines": [
+        5,
+        15,
+        63,
+        65,
+        66,
+        149,
+        150
+      ]
+    },
+    "js/base/name_type_settings_loggable.js": {
+      "expectCount": 15,
+      "actualCount": 10,
+      "undocumentLines": [
+        11,
+        54,
+        56,
+        57,
+        58
+      ]
+    },
+    "js/base/web_worker.js": {
+      "expectCount": 13,
+      "actualCount": 8,
+      "undocumentLines": [
+        10,
+        52,
+        53,
+        55,
+        56
+      ]
+    },
+    "js/commands/command.js": {
+      "expectCount": 8,
+      "actualCount": 6,
+      "undocumentLines": [
+        10,
+        53
+      ]
+    },
+    "js/commands/display_command.js": {
+      "expectCount": 9,
+      "actualCount": 7,
+      "undocumentLines": [
+        11,
+        59
+      ]
+    },
+    "js/commands/worker_command.js": {
+      "expectCount": 12,
+      "actualCount": 7,
+      "undocumentLines": [
+        11,
+        53,
+        54,
+        56,
+        57
+      ]
+    },
+    "js/components/attributes_table.js": {
+      "expectCount": 12,
+      "actualCount": 9,
+      "undocumentLines": [
+        12,
+        40,
+        74
+      ]
+    },
+    "js/components/dock.js": {
+      "expectCount": 12,
+      "actualCount": 7,
+      "undocumentLines": [
+        14,
+        18,
+        34,
+        36,
+        41
+      ]
+    },
+    "js/components/dock_item.js": {
+      "expectCount": 10,
+      "actualCount": 6,
+      "undocumentLines": [
+        12,
+        16,
+        31,
+        153
+      ]
+    },
+    "js/components/input-field.js": {
+      "expectCount": 6,
+      "actualCount": 2,
+      "undocumentLines": [
+        11,
+        15,
+        31,
+        60
+      ]
+    },
+    "js/components/logs_table.js": {
+      "expectCount": 14,
+      "actualCount": 8,
+      "undocumentLines": [
+        14,
+        40,
+        44,
+        45,
+        124,
+        135
+      ]
+    },
+    "js/components/page.js": {
+      "expectCount": 11,
+      "actualCount": 4,
+      "undocumentLines": [
+        14,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    "js/components/records_table.js": {
+      "expectCount": 13,
+      "actualCount": 6,
+      "undocumentLines": [
+        11,
+        38,
+        41,
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    "js/components/table.js": {
+      "expectCount": 21,
+      "actualCount": 18,
+      "undocumentLines": [
+        12,
+        56,
+        73
+      ]
+    },
+    "js/components/table_tree.js": {
+      "expectCount": 22,
+      "actualCount": 17,
+      "undocumentLines": [
+        12,
+        40,
+        188,
+        189,
+        194
+      ]
+    },
+    "js/components/tabs.js": {
+      "expectCount": 8,
+      "actualCount": 4,
+      "undocumentLines": [
+        11,
+        37,
+        52,
+        68
+      ]
+    },
+    "js/components/topology.js": {
+      "expectCount": 18,
+      "actualCount": 13,
+      "undocumentLines": [
+        11,
+        39,
+        142,
+        143,
+        176
+      ]
+    },
+    "js/components/tree.js": {
+      "expectCount": 18,
+      "actualCount": 15,
+      "undocumentLines": [
+        11,
+        37,
+        161
+      ]
+    },
+    "js/loggers/console_logger.js": {
+      "expectCount": 7,
+      "actualCount": 6,
+      "undocumentLines": [
+        25
+      ]
+    },
+    "js/loggers/stream_logger.js": {
+      "expectCount": 11,
+      "actualCount": 8,
+      "undocumentLines": [
+        9,
+        32,
+        34
+      ]
+    },
+    "js/runtime/client_runtime.js": {
+      "expectCount": 35,
+      "actualCount": 19,
+      "undocumentLines": [
+        26,
+        92,
+        94,
+        96,
+        102,
+        103,
+        105,
+        106,
+        107,
+        108,
+        109,
+        346,
+        351,
+        363,
+        364,
+        389
+      ]
+    },
+    "js/runtime/router.js": {
+      "expectCount": 10,
+      "actualCount": 6,
+      "undocumentLines": [
+        13,
+        53,
+        55,
+        56
+      ]
+    },
+    "js/runtime/router_state.js": {
+      "expectCount": 18,
+      "actualCount": 15,
+      "undocumentLines": [
+        13,
+        70,
+        71
+      ]
+    },
+    "js/runtime/service.js": {
+      "expectCount": 14,
+      "actualCount": 7,
+      "undocumentLines": [
+        14,
+        36,
+        37,
+        38,
+        41,
+        95,
+        241
+      ]
+    },
+    "js/runtime/service_operation.js": {
+      "expectCount": 9,
+      "actualCount": 5,
+      "undocumentLines": [
+        9,
+        30,
+        31,
+        32
+      ]
+    },
+    "js/runtime/ui.js": {
+      "expectCount": 34,
+      "actualCount": 16,
+      "undocumentLines": [
+        22,
+        67,
+        69,
+        70,
+        72,
+        76,
+        77,
+        78,
+        80,
+        83,
+        84,
+        85,
+        86,
+        88,
+        96,
+        98,
+        99,
+        100
+      ]
+    },
+    "js/runtime/ui_factory.js": {
+      "expectCount": 19,
+      "actualCount": 11,
+      "undocumentLines": [
+        27,
+        28,
+        57,
+        59,
+        60,
+        61,
+        62,
+        484
+      ]
+    },
+    "js/runtime/ui_rendering.js": {
+      "expectCount": 17,
+      "actualCount": 2,
+      "undocumentLines": [
+        16,
+        54,
+        56,
+        57,
+        59,
+        60,
+        72,
+        76,
+        86,
+        102,
+        141,
+        176,
+        196,
+        224,
+        260
+      ]
+    }
+  }
+}

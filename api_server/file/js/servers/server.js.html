@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/servers/server.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/runtime.js~Runtime.html">Runtime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/security.js~Security.html">Security</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/transaction.js~Transaction.html">Transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-runtime_singleton">runtime_singleton</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics">metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/metric_duration.js~MetricDuration.html">MetricDuration</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-base">metrics/base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_collector.js~MetricsCollector.html">MetricsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_record.js~MetricsRecord.html">MetricsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_reducer.js~MetricsReducer.html">MetricsReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_state.js~MetricsState.html">MetricsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-bus">metrics/bus</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_collector.js~MetricsBusCollector.html">MetricsBusCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_record.js~MetricsBusRecord.html">MetricsBusRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_reducer.js~MetricsBusReducer.html">MetricsBusReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_state.js~MetricBusState.html">MetricBusState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-host">metrics/host</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_collector.js~MetricsHostCollector.html">MetricsHostCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_record.js~MetricsHostRecord.html">MetricsHostRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_reducer.js~MetricsHostReducer.html">MetricsHostReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_state.js~MetricHostState.html">MetricHostState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-http">metrics/http</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_collector.js~MetricsHttpCollector.html">MetricsHttpCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_record.js~MetricsHttpRecord.html">MetricsHttpRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_reducer.js~MetricHttpReducer.html">MetricHttpReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_state.js~MetricsHttpState.html">MetricsHttpState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-nodejs">metrics/nodejs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_collector.js~MetricsNodeJsCollector.html">MetricsNodeJsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_record.js~MetricsNodeJsRecord.html">MetricsNodeJsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_reducer.js~MetricsNodeReducer.html">MetricsNodeReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_state.js~MetricNodeJsState.html">MetricNodeJsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#nodes">nodes</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/bus_node_feature.js~BusNodeFeature.html">BusNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/metrics_node_feature.js~MetricsNodeFeature.html">MetricsNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node.js~Node.html">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_feature.js~NodeFeature.html">NodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_messaging.js~NodeMessaging.html">NodeMessaging</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/servers_node_feature.js~ServersNodeFeature.html">ServersNodeFeature</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#plugins">plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/features_manager.js~FeaturesManager.html">FeaturesManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_factory.js~PluginsFactory.html">PluginsFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_manager.js~PluginsManager.html">PluginsManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/rendering_manager.js~RenderingManager.html">RenderingManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_manager.js~ServersManager.html">ServersManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_plugin.js~ServersPlugin.html">ServersPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/services_manager.js~ServicesManager.html">ServicesManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/runtime_executable.js~RuntimeExecutable.html">RuntimeExecutable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage0_create_local_node_executable.js~RuntimeStage0Executable.html">RuntimeStage0Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage1_define_topology_executable.js~RuntimeStage1Executable.html">RuntimeStage1Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage2_load_local_topology_executable.js~RuntimeStage2Executable.html">RuntimeStage2Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage3_start_local_node_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage3_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage4_executable.js~RuntimeStage4Executable.html">RuntimeStage4Executable</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security">security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_manager.js~AuthenticationManager.html">AuthenticationManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin.js~AuthenticationPlugin.html">AuthenticationPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin_lowdb.js~AuthenticationLowDbPlugin.html">AuthenticationLowDbPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_wrapper.js~AuthenticationWrapper.html">AuthenticationWrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authorization_manager.js~AuthorizationManager.html">AuthorizationManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security-todo">security/todo</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport.js~AuthenticationPluginPassport.html">AuthenticationPluginPassport</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local.js~AuthenticationPluginPassportLocal.html">AuthenticationPluginPassportLocal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_db.js~AuthenticationPluginPassportLocalDb.html">AuthenticationPluginPassportLocalDb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_file.js~AuthenticationPluginPassportLocalFile.html">AuthenticationPluginPassportLocalFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#servers">servers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/express_server.js~ExpressServer.html">ExpressServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/logs_server.js~LogsServer.html">LogsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/metrics_server.js~MetricsServer.html">MetricsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/restify_server.js~RestifyServer.html">RestifyServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/routable_server.js~RoutableServer.html">RoutableServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/server.js~Server.html">Server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServerTypes">ServerTypes</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">services</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/routes_svc_consumer.js~RoutesSvcConsumer.html">RoutesSvcConsumer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-uused-base">services/uused_base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_service_exec_provider.js~ServiceExecProvider.html">ServiceExecProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_socketio_service_provider.js~SocketIOServiceProvider.html">SocketIOServiceProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/servers/server.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+import { fromJS } from &apos;immutable&apos;
+
+// COMMON IMPORTS
+import T                   from &apos;devapt-core-common/dist/js/utils/types&apos;
+import DistributedInstance from &apos;devapt-core-common/dist/js/base/distributed_instance&apos;
+
+// SERVER IMPORTS
+import runtime from &apos;../base/runtime&apos;
+import AuthenticationWrapper from &apos;../security/authentication_wrapper&apos;
+
+
+const context = &apos;server/servers/server&apos;
+
+
+
+/**
+ * Type of servers.
+ * @public
+ */
+export const ServerTypes = {
+	SERVER_TYPE_EXPRESS : &apos;express&apos;,
+	SERVER_TYPE_RESTIFY : &apos;restify&apos;,
+	SERVER_TYPE_SOCKETIO : &apos;socketio&apos;,
+	SERVER_TYPE_FEATHER : &apos;feather&apos;,
+	SERVER_TYPE_CLUSTER : &apos;cluster&apos;,
+	SERVER_TYPE_LOGS : &apos;logs&apos;,
+	SERVER_TYPE_METRICS : &apos;metrics&apos;
+}
+
+
+/**
+ * @file Server base class.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class Server extends DistributedInstance
+{
+	/**
+	 * Create a server instance.
+	 * @extends DistributedInstance
+	 * 
+	 * 	API:
+	 * 		-&gt;constructor(arg_name, arg_class, arg_settings, arg_log_context=context)
+	 * 
+	 * 		-&gt;use_service_on_loading(arg_application, arg_service, arg_app_svc_cfg = {}):nothing - Add a service to use before or after security check.
+	 * 		
+	 * 		-&gt;get_server_security_settings():object - Get security settings object into the server.
+	 * 		-&gt;get_security_settings():Immutable.Map - Get security settings from server or runtime.
+	 * 
+	 * 		-&gt;load():nothing - Load server settings.
+	 * 
+	 * 		-&gt;enable():nothing - Enable server (start it).
+	 * 		-&gt;disable():nothing - Disable server (stop it).
+	 * 
+	 * 		-&gt;get_topology_info(arg_deep=true, arg_visited={}):object - Get topology item informations.
+	 * 
+	 * @param {string} arg_name - server name.
+	 * @param {string} arg_class - server class name.
+	 * @param {object} arg_settings - plugin settings map.
+	 * @param {string} arg_log_context - trace context string.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_name, arg_class, arg_settings, arg_log_context=context)
+	{
+		
+		// DEBUG STORE
+		// console.log(store, &apos;store&apos;)
+		// console.log(config, &apos;config&apos;)
+		
+		if (! T.isObject(arg_settings))
+		{
+			console.error(arg_class, arg_name, arg_settings, arg_log_context, &apos;arg_class, arg_name, arg_settings, arg_context&apos;)
+		}
+		super(&apos;servers&apos;, arg_name, (arg_class ? arg_class.toString() : &apos;Server&apos;), arg_settings, arg_log_context)
+		
+		this.is_server = true
+		this.is_build = false
+		
+		this.server_host = undefined
+		this.server_port = undefined
+		this.server_protocole = undefined
+		this.server_type = undefined
+		
+		this.server = undefined
+		this.server_http = undefined
+		this.serverio = undefined
+		
+		this.services_without_security = [] // STORE PLAIN OBJECTS WITH THIS FORMAT: { app:application instance, svc:service instance, cfg:application service config }
+		this.services_with_security = [] // STORE PLAIN OBJECTS WITH THIS FORMAT: { app:application instance, svc:service instance, cfg:application service config }
+		
+		this.authentication = new AuthenticationWrapper(arg_log_context, this.get_logger_manager())
+		// this.authorization = new AuthorizationWrapper(arg_log_context ? arg_log_context : context)
+	}
+
+
+
+	/**
+	 * Add a service to use before or after security check.
+	 * 
+	 * @param {Application}	arg_application
+	 * @param {Service}		arg_service
+	 * @param {object}		arg_app_svc_cfg (default:{})
+	 * 
+	 * @returns {nothing}
+	 */
+	use_service_on_loading(arg_application, arg_service, arg_app_svc_cfg = {})
+	{
+		assert( T.isObject(arg_application) &amp;&amp; arg_application.is_topology_define_application, context + &apos;:bad application object&apos;)
+		assert( T.isObject(arg_service) &amp;&amp; arg_service.is_service, context + &apos;:bad service object&apos;)
+		assert( T.isObject(arg_app_svc_cfg) , context + &apos;:bad application service config object&apos;)
+
+		this.info(&apos;use_service_on_loading:service=&apos; + arg_service.get_name())
+
+		const security_enabled = arg_service.get_setting([&apos;security&apos;, &apos;enabled&apos;], true)
+		const authentication_enabled = arg_service.get_setting([&apos;security&apos;, &apos;authentication&apos;, &apos;enabled&apos;], true)
+		const authorization_enabled = arg_service.get_setting([&apos;security&apos;, &apos;authorization&apos;, &apos;enabled&apos;], true)
+		const use_security_check = security_enabled ? (authentication_enabled || authorization_enabled) : false
+
+		const record = {
+			app:arg_application,
+			svc:arg_service,
+			cfg:arg_app_svc_cfg
+		}
+
+		if (use_security_check)
+		{
+			this.services_with_security.push(record)
+			return
+		}
+
+		this.services_without_security.push(record)
+	}
+
+	
+	
+	/**
+	 * Get security settings object into the server.
+	 * 
+	 * @returns {object} - security settings.
+	 */
+	get_server_security_settings()
+	{
+		this.enter_group(&apos;get_server_security_settings&apos;)
+		
+		const security_settings = this.get_setting(&apos;security&apos;, null)
+		
+		this.leave_group(&apos;get_server_security_settings&apos;)
+		return security_settings
+	}
+	
+	
+	
+	/**
+	 * Get security settings from server or runtime.
+	 * 
+	 * @returns {Immutable.Map} - security settings.
+	 */
+	get_security_settings()
+	{
+		const self = this
+		self.enter_group(&apos;get_security_settings&apos;)
+		
+		// DEFAULT SECURITY SETTINGS
+		const default_security = {
+			&apos;authentication&apos;: {
+				&apos;enabled&apos;: true,
+				&apos;plugins&apos;: []
+			},
+			&apos;authorization&apos;: {
+				&apos;enabled&apos;: true,
+				&apos;plugins&apos;: []
+			}
+		}
+		
+		// TARGET SECURITY SETTINGS
+		let security_settings = fromJS(default_security)
+		
+		// GET SERVER SECURITY SETTINGS
+		// console.log(context + &apos;.get_security_settings&apos;, this.get_name(), this.$settings)
+		let srv_security_settings = self.get_setting(&apos;security&apos;, null)
+		// console.log(context + &apos;.get_security_settings:srv_security_settings&apos;, srv_security_settings)
+		// assert( T.isObject(srv_security_settings), context + &apos;:bad srv_security_settings object&apos;)
+		
+		if ( srv_security_settings &amp;&amp; ! T.isFunction(srv_security_settings.has) )
+		{
+			srv_security_settings = fromJS(srv_security_settings)
+		}
+		
+		if ( srv_security_settings &amp;&amp; srv_security_settings.has(&apos;authentication&apos;) )
+		{
+			// AUTHENTICATION IS ENABLED ?
+			const auth_is_enabled = srv_security_settings.getIn([&apos;authentication&apos;, &apos;enabled&apos;], false)
+			if (! auth_is_enabled)
+			{
+				// self.error(&apos;get_security_settings:bad server.settings.security.authentication.enabled&apos;)
+				// self.leave_group(&apos;get_security_settings:from server with error&apos;)
+				self.leave_group(&apos;get_security_settings:from server with disabled authentication&apos;)
+				return security_settings
+			}
+			security_settings = security_settings.setIn([&apos;authentication&apos;, &apos;enabled&apos;], auth_is_enabled)
+			
+			/*if ( srv_security_settings.hasIn([&apos;authentication&apos;, &apos;enabled&apos;]) )
+			{
+				const enabled = srv_security_settings.getIn([&apos;authentication&apos;, &apos;enabled&apos;])
+				security_settings = security_settings.setIn([&apos;authentication&apos;, &apos;enabled&apos;], enabled)
+			}
+			else
+			{
+				// self.error(&apos;get_security_settings:bad server.settings.security.authentication.enabled&apos;)
+				// self.leave_group(&apos;get_security_settings:from server with error&apos;)
+				self.leave_group(&apos;get_security_settings:from server with disabled authentication&apos;)
+				return security_settings
+			}*/
+			
+			// AUTHENTICATION PLUGINS
+			if ( srv_security_settings.hasIn([&apos;authentication&apos;, &apos;plugins&apos;]) )
+			{
+				const plugins = srv_security_settings.getIn([&apos;authentication&apos;, &apos;plugins&apos;])
+				security_settings = security_settings.setIn([&apos;authentication&apos;, &apos;plugins&apos;], plugins.toArray())
+				if (plugins.size == 0)
+				{
+					self.error(&apos;bad server.settings.security.authentication.plugins.size&apos;)
+					self.leave_group(&apos;get_security_settings:from server with error&apos;)
+					return security_settings
+				}
+			}
+			else
+			{
+				self.error(&apos;get_security_settings:bad server.settings.security.authentication.plugins&apos;)
+				self.leave_group(&apos;get_security_settings:from server with error&apos;)
+				return security_settings
+			}
+			
+			// console.log(context + &apos;.get_security_settings:from server:security_settings&apos;, security_settings)
+			self.leave_group(&apos;get_security_settings:from server&apos;)
+			return security_settings
+		}
+		
+		
+		
+		// GET RUNTIME SECURITY SETTINGS
+		const rt_security_settings = runtime.get_registry().root.get(&apos;security&apos;)
+		assert( T.isObject(rt_security_settings) &amp;&amp; rt_security_settings.has, context + &apos;:bad rt_security_settings object&apos;)
+		
+		if ( rt_security_settings.has(&apos;enabled&apos;) )
+		{
+			const enabled = rt_security_settings.get(&apos;enabled&apos;)
+			security_settings = security_settings.set(&apos;enabled&apos;, enabled)
+		} else {
+			security_settings = security_settings.setIn([&apos;authentication&apos;, &apos;enabled&apos;], false)
+			self.warn(&apos;get_security_settings:security is disabled&apos;)
+			self.leave_group(&apos;get_security_settings:security is disabled&apos;)
+			return security_settings
+		}
+		// else
+		// {
+		// 	self.error(&apos;get_security_settings:bad runtime.settings.security.enabled&apos;)
+		// 	self.leave_group(&apos;get_security_settings:from runtime with error&apos;)
+		// 	return security_settings
+		// }
+		
+		// GET RUNTIME AUTHENTICATION SECURITY SETTINGS
+		if ( rt_security_settings &amp;&amp; rt_security_settings.has(&apos;authentication&apos;) )
+		{
+			// AUTHENTICATION IS ENABLED ?
+			if ( rt_security_settings.hasIn([&apos;authentication&apos;, &apos;enabled&apos;]) )
+			{
+				const enabled = rt_security_settings.getIn([&apos;authentication&apos;, &apos;enabled&apos;])
+				security_settings = security_settings.setIn([&apos;authentication&apos;, &apos;enabled&apos;], enabled)
+			}
+			else
+			{
+				self.error(&apos;get_security_settings:bad runtime.settings.security.authentication.enabled&apos;)
+				self.leave_group(&apos;get_security_settings:from runtime with error&apos;)
+				return security_settings
+			}
+			
+			// AUTHENTICATION PLUGINS
+			if ( rt_security_settings.hasIn([&apos;authentication&apos;, &apos;default_plugins&apos;]) )
+			{
+				const plugins = rt_security_settings.getIn([&apos;authentication&apos;, &apos;default_plugins&apos;])
+				security_settings = security_settings.setIn([&apos;authentication&apos;, &apos;plugins&apos;], plugins.toArray())
+				if (plugins.size == 0)
+				{
+					self.error(&apos;bad runtime.settings.security.authentication.plugins.size&apos;)
+					self.leave_group(&apos;get_security_settings:from runtime with error&apos;)
+					return security_settings
+				}
+			}
+			else
+			{
+				self.error(&apos;get_security_settings:bad runtime.settings.security.authentication.default_plugins&apos;)
+				self.leave_group(&apos;get_security_settings:from runtime with error&apos;)
+				return security_settings
+			}
+			
+			self.leave_group(&apos;get_security_settings:from runtime&apos;)
+			return security_settings
+		}
+		
+		
+		// console.error(context + &apos;:no security settings found&apos;)
+		self.error(context + &apos;:no security settings found&apos;)
+		self.leave_group(&apos;get_security_settings:not found&apos;)
+		return null
+	}
+	
+	
+	
+	/**
+	 * Load server settings.
+	 * 
+	 * @returns {nothing}
+	 */
+	load()
+	{
+		this.enter_group(&apos;load&apos;)
+		
+		// DEBUG
+		// debugger
+
+		assert( T.isObject(this.$settings) &amp;&amp; T.isFunction(this.$settings.has), context + &apos;:bad settings object&apos;)
+		
+		const cfg = runtime.get_registry().root
+		
+		// SET SERVER HOST
+		this.server_host = this.$settings.has(&apos;host&apos;) ? this.$settings.get(&apos;host&apos;) : null
+		if ( ! this.server_host &amp;&amp; cfg.hasIn([&apos;servers&apos;, &apos;default&apos;, &apos;host&apos;]) )
+		{
+			this.server_host = cfg.getIn([&apos;servers&apos;, &apos;default&apos;, &apos;host&apos;])
+		}
+		assert( T.isString(this.server_host), context + &apos;:bad server host string:[&apos; + this.server_host + &apos;]&apos;)
+		
+		// SET SERVER PORT
+		this.server_port = this.$settings.has(&apos;port&apos;) ? this.$settings.get(&apos;port&apos;) : null
+		if ( ! this.server_port &amp;&amp; cfg.hasIn([&apos;servers&apos;, &apos;default&apos;, &apos;port&apos;]) )
+		{
+			this.server_port = cfg.getIn([&apos;servers&apos;, &apos;default&apos;, &apos;port&apos;])
+		}
+		assert( T.isString(this.server_port) || T.isNumber(this.server_port), context + &apos;:bad server port string|number:[&apos; + this.server_port + &apos;]&apos;)
+		
+		// SET SERVER PROTOCOLE
+		this.server_protocole = this.$settings.has(&apos;protocole&apos;) ? this.$settings.get(&apos;protocole&apos;) : null
+		if ( ! this.server_protocole &amp;&amp; cfg.hasIn([&apos;servers&apos;, &apos;default&apos;, &apos;protocole&apos;]) )
+		{
+			this.server_protocole = cfg.getIn([&apos;servers&apos;, &apos;default&apos;, &apos;protocole&apos;])
+		}
+		assert( T.isString(this.server_protocole), context + &apos;:bad server protocole string:[&apos; + this.server_protocole + &apos;]&apos;)
+		
+		// SET SERVER TYPE
+		this.server_type = this.$settings.has(&apos;type&apos;) ? this.$settings.get(&apos;type&apos;) : null
+		if ( ! this.server_type &amp;&amp; cfg.hasIn([&apos;servers&apos;, &apos;default&apos;, &apos;type&apos;]) )
+		{
+			this.server_type = cfg.getIn([&apos;servers&apos;, &apos;default&apos;, &apos;type&apos;])
+		}
+		assert( T.isString(this.server_type), context + &apos;:bad server type string:[&apos; + this.server_type + &apos;]&apos;)
+		
+		// SECURITY (could be null for Bus Server...)
+		const security_settings = this.get_security_settings()
+		// console.log(context + &apos;.load:security_settings&apos;, security_settings)
+		
+		// DEBUG
+		// debugger
+
+		// AUTHENTICATION
+		if ( security_settings &amp;&amp; security_settings.hasIn([&apos;authentication&apos;, &apos;enabled&apos;]) &amp;&amp; security_settings.hasIn([&apos;authentication&apos;, &apos;plugins&apos;]) )
+		{
+			let auth_settings = security_settings.get(&apos;authentication&apos;)
+			auth_settings = auth_settings.set(&apos;runtime&apos;, this.get_runtime())
+			auth_settings = auth_settings.set(&apos;logger_manager&apos;, this.get_logger_manager())
+			this.authentication.load(auth_settings)
+		}
+		
+		// AUTHORIZATION
+		// TODO
+		
+		// PARENT CLASS LOADING
+		super.load()
+		
+		// SUBSCRIBE TO MESSAGES BUS
+		this.enable_msg()
+
+		this.leave_group(&apos;load&apos;)
+	}
+
+
+
+	/**
+	 * Build private server instance.
+	 * 
+	 * @returns {nothing}
+	 */
+	build_server()
+	{
+		// NOTHING TO DO HERE
+	}
+
+	
+	
+	/**
+	 * Enable server (start it).
+	 * 
+	 * @returns {nothing}
+	 */
+	enable()
+	{
+		// BUILD SERVER
+		if ( ! this.is_build)
+		{
+			assert( T.isFunction(this.build_server), context + &apos;:bad build_server function&apos;)
+			this.build_server()
+			this.is_build = true
+		}
+
+		// ENABLE LISTENER
+		const name = this.$name
+		const host = this.server_host
+		const port = this.server_port
+		
+		let should_listen = true
+		
+		// ENABLE LAST LOADING/ACTIONS: ERROR HANDLING...
+		if ( T.isFunction(this.finaly) )
+		{
+			this.finaly()
+		}
+		
+		// ENABLE LISTENER TRACE
+		if (should_listen)
+		{
+			const srv = this.server_http ? this.server_http : this.server
+			if ( srv &amp;&amp; T.isFunction(srv.listen) )
+			{
+				srv.listen(this.server_port,
+					function()
+					{
+						console.info(&apos;%s listening at %s : %s&apos;, name, host, port)
+					}
+				)
+			}
+		}
+	}
+	
+	
+	
+	/**
+	 * Disable server (stop it).
+	 * 
+	 * @returns {nothing}
+	 */
+	disable()
+	{
+		// NOTHING TO DO HERE
+	}
+
+
+
+	/**
+	 * Get topology item informations.
+	 * 
+	 * @param {boolean} arg_deep - get deep sub items information on true (default:false).
+	 * @param {object} arg_visited - visited items plain object map.
+	 * 
+	 * @returns {object} - topology informations (plain object).
+	 */
+	get_topology_info(arg_deep=true, arg_visited={})
+	{
+		const info = {
+			name:this.get_name(),
+			uid_desc:&apos;N/A&apos;,
+			uid:&apos;N/A&apos;,
+
+			tenant:&apos;N/A&apos;,
+			package:&apos;N/A&apos;,
+			version:&apos;N/A&apos;,
+			
+			type:&apos;server&apos;,
+			security:&apos;N/A&apos;,
+			
+			children:[&apos;N/A&apos;]
+		}
+
+		if ( arg_visited &amp;&amp; (this.topology_uid in arg_visited) )
+		{
+			return Object.assign(info, { note:&apos;already dumped&apos; } )
+		}
+
+		arg_visited[this.topology_uid] = info
+
+		return info
+	}
+}
+
+/*
+https://engineering.gosquared.com/making-dashboard-faster
+function parallel(middlewares) {
+  return function (req, res, next) {
+    async.each(middlewares, function (mw, cb) {
+      mw(req, res, cb);
+    }, next);
+  };
+}
+
+app.use(parallel([
+  getUser,
+  getSiteList,
+  getCurrentSite,
+  getSubscription
+]));
+
+
+		const has_cluster = this.$settings.has(&apos;workers&apos;)
+		
+		// CLUSTER
+		if (has_cluster)
+		{
+			var cluster = require(&apos;cluster&apos;);
+			var numCPUs = require(&apos;os&apos;).cpus().length;
+			
+			// const workers = this.$settings.get(&apos;workers&apos;)
+			// const min_workers = this.workers.min || 1;
+			// const max_workers = this.workers.max || 3;
+			// const method_workers = this.workers.method || &apos;roundrobin&apos;;
+			
+			should_listen = ! cluster.isMaster
+			
+			if (cluster.isMaster)
+			{
+				// Fork workers.
+				for(var i = 0; i &lt; numCPUs; i++)
+				{
+					cluster.fork()
+				}
+				
+				cluster.on(&apos;exit&apos;,
+					function(worker, code, signal)
+					{
+						console.log(&apos;worker &apos; + worker.process.pid + &apos; died&apos;)
+					}
+				)
+			}
+		}
+*/</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

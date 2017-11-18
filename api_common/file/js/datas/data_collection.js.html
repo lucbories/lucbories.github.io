@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/datas/data_collection.js | Devapt (Developper Application Toolkit) Core Common documentation</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Core features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common documentation"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common documentation"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Core features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common documentation"><meta property="twitter:description" content="Core features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/collection.js~Collection.html">Collection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/collection_base.js~CollectionBase.html">CollectionBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/collection_version.js~CollectionVersion.html">CollectionVersion</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/context.js~Context.html">Context</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/credentials.js~Credentials.html">Credentials</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/distributed_instance.js~DistributedInstance.html">DistributedInstance</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/distributed_logs.js~DistributedLogs.html">DistributedLogs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/distributed_message.js~DistributedMessage.html">DistributedMessage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/distributed_metrics.js~DistributedMetrics.html">DistributedMetrics</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/errorable.js~Errorable.html">Errorable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/executable.js~Executable.html">Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/instance.js~Instance.html">Instance</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/introspectable.js~Introspectable.html">Introspectable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/loggable.js~Loggable.html">Loggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/registered_service.js~RegisteredService.html">RegisteredService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/runtime_base.js~RuntimeBase.html">RuntimeBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/settingsable.js~Settingsable.html">Settingsable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/stateable.js~Stateable.html">Stateable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-get_runtime">get_runtime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-register_runtime">register_runtime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-_runtime_instance">_runtime_instance</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cache">cache</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/cache/cache_adapter.js~CacheAdapter.html">CacheAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/cache/cache_adapter_cache_manager.js~CacheAdapterCacheManager.html">CacheAdapterCacheManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/cache/cache_adapter_node_cache.js~CacheAdapterNodecache.html">CacheAdapterNodecache</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/cache/cache_manager.js~CacheManager.html">CacheManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#datas">datas</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/data_adapter.js~DataAdapter.html">DataAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/data_collection.js~DataCollection.html">DataCollection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/data_model.js~DataModel.html">DataModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/data_record.js~DataRecord.html">DataRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/data_store.js~DataStore.html">DataStore</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#datas-providers">datas/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/providers/json_provider.js~JsonProvider.html">JsonProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/providers/jsonfile_record_provider.js~JsonFileRecordProvider.html">JsonFileRecordProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/providers/record_provider.js~RecordProvider.html">RecordProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/providers/sequelize_record_provider.js~SequelizeRecordProvider.html">SequelizeRecordProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_LOCAL_FILE">SOURCE_LOCAL_FILE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_MASTER">SOURCE_MASTER</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_MSG_BUS">SOURCE_MSG_BUS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_NOSQL_DATABASE">SOURCE_NOSQL_DATABASE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_REMOTE_URL">SOURCE_REMOTE_URL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_SQL_DATABASE">SOURCE_SQL_DATABASE</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#datas-todo">datas/todo</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/todo/data_query.js~DataQuery.html">DataQuery</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#default-plugins">default_plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/default_plugins/rendering_default_plugin.js~DefaultDefaultRendering.html">DefaultDefaultRendering</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#json-provider">json_provider</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/json_provider/file_json_provider.js~FileJsonProvider.html">FileJsonProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/json_provider/json_provider.js~JsonProvider.html">JsonProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/json_provider/json_provider_factory.js~JsonProviderFactory.html">JsonProviderFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/json_provider/master_json_provider.js~MasterJsonProvider.html">MasterJsonProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/json_provider/redis_json_provider.js~RedisJsonProvider.html">RedisJsonProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCES">SOURCES</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_LOCAL_FILE">SOURCE_LOCAL_FILE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_MASTER">SOURCE_MASTER</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_MONGODB_DATABASE">SOURCE_MONGODB_DATABASE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_MSG_BUS">SOURCE_MSG_BUS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_REDIS_DATABASE">SOURCE_REDIS_DATABASE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_REMOTE_URL">SOURCE_REMOTE_URL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_SQL_DATABASE">SOURCE_SQL_DATABASE</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/logger.js~Logger.html">Logger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/logger_console.js~LoggerConsole.html">LoggerConsole</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/logger_console_standalone.js~LoggerConsoleStandalone.html">LoggerConsoleStandalone</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/logger_manager.js~LoggerManager.html">LoggerManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/logger_msg_post.js~LoggerMessagePost.html">LoggerMessagePost</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/logger_winston.js~LoggerWinston.html">LoggerWinston</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#messaging">messaging</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/messaging/bus_engine.js~BusEngine.html">BusEngine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/messaging/message_bus.js~MessageBus.html">MessageBus</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/messaging/socketio_bus_engine.js~SocketIOBusEngine.html">SocketIOBusEngine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/messaging/stream.js~Stream.html">Stream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/messaging/stream_bus_engine.js~StreamBusEngine.html">StreamBusEngine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/messaging/streams_provider.js~SteamsProvider.html">SteamsProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#plugins">plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/features_plugin.js~FeaturesPlugin.html">FeaturesPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugin.js~Plugin.html">Plugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/rendering_plugin.js~RenderingPlugin.html">RenderingPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/services_plugin.js~ServicesPlugin.html">ServicesPlugin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#rendering">rendering</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/rendering/rendering_builder.js~RenderingBuilder.html">RenderingBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/rendering/rendering_builder_assets.js~RenderingBuilderAssets.html">RenderingBuilderAssets</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/rendering/rendering_resolver.js~RenderingResolverBuilder.html">RenderingResolverBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/rendering/rendering_result.js~RenderingResult.html">RenderingResult</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-anchor">anchor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-button">button</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-canvas">canvas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-component">component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-container">container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dock">dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hbox">hbox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-image">image</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-input_field">input_field</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-label">label</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-list">list</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-menubar">menubar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-page">page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-page_body">page_body</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-page_content">page_content</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rendering_factory">rendering_factory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rendering_function">rendering_function</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rendering_normalize">rendering_normalize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-script">script</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-table">table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tabs">tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-textarea">textarea</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-vbox">vbox</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">services</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_activator.js~ServiceActivator.html">ServiceActivator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_consumer.js~ServiceConsumer.html">ServiceConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_consumer_base.js~ServiceConsumerBase.html">ServiceConsumerBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_consumer_by_url.js~ServiceConsumerByUrl.html">ServiceConsumerByUrl</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_provider.js~ServiceProvider.html">ServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_request.js~ServiceRequest.html">ServiceRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_response.js~ServiceResponse.html">ServiceResponse</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#state-store">state_store</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/state_store/map_store.js~MapStore.html">MapStore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/state_store/redux_store.js~ReduxStore.html">ReduxStore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/state_store/state_store.js~StateStore.html">StateStore</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#tasks">tasks</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/tasks/command_task.js~CommandTask.html">CommandTask</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/tasks/executable_task.js~ExecutableTask.html">ExecutableTask</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/tasks/task.js~Task.html">Task</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/tasks/task_manager.js~TaskManager.html">TaskManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#topology-define">topology/define</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_application.js~TopologyDefineApplication.html">TopologyDefineApplication</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_command.js~TopologyDefineCommand.html">TopologyDefineCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_datasource.js~TopologyDefineDatasource.html">TopologyDefineDatasource</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_field.js~TopologyDefineField.html">TopologyDefineField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_item.js~TopologyDefineItem.html">TopologyDefineItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_menu.js~TopologyDefineMenu.html">TopologyDefineMenu</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_menubar.js~TopologyDefineMenubar.html">TopologyDefineMenubar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_model.js~TopologyDefineModel.html">TopologyDefineModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_node.js~TopologyDefineNode.html">TopologyDefineNode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_package.js~TopologyDefinePackage.html">TopologyDefinePackage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_plugin.js~TopologyDefinePlugin.html">TopologyDefinePlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_server.js~TopologyDefineServer.html">TopologyDefineServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_service.js~TopologyDefineService.html">TopologyDefineService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_tenant.js~TopologyDefineTenant.html">TopologyDefineTenant</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_view.js~TopologyDefineView.html">TopologyDefineView</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_world.js~TopologyDefineWorld.html">TopologyDefineWorld</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#topology-deploy">topology/deploy</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/deploy/topology_deploy_item.js~TopologyDeployItem.html">TopologyDeployItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/deploy/topology_deploy_local_node.js~TopologyDeployLocalNode.html">TopologyDeployLocalNode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#topology-registry">topology/registry</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/registry/registry_store.js~RegistryStore.html">RegistryStore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/registry/topology_registry.js~TopologyRegistry.html">TopologyRegistry</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-store">store</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#topology-registry-loaders">topology/registry/loaders</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_application">load_application</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_applications">load_applications</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_config">load_config</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_deployments">load_deployments</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_nodes">load_nodes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_packages">load_packages</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_plugins">load_plugins</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_security">load_security</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_security_authentication">load_security_authentication</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_security_authorization">load_security_authorization</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_tenants">load_tenants</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-default_config">default_config</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/utils/digest.js~Digest.html">Digest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/utils/encode_decode.js~EncodeDecode.html">EncodeDecode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/utils/encrypt_decrypt.js~EncryptDecrypt.html">EncryptDecrypt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/utils/tri_state.js~TriState.html">TriState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-iterator_fn">iterator_fn</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-diff">diff</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-is_browser">is_browser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-is_server">is_server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-is_locale">is_locale</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-is_remote">is_remote</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-diff">diff</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-get_absolute_path">get_absolute_path</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-get_base_dir">get_base_dir</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-to_boolean">to_boolean</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-extract">extract</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-flat">flat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-out">out</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-transform">transform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-uid">uid</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-API">API</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-types_fn">types_fn</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils-parser">utils/parser</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-parser">parser</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/datas/data_collection.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+
+// COMMON IMPORTS
+import T from &apos;../utils/types&apos;
+import Loggable from &apos;../base/loggable&apos;
+
+
+/**
+ * Contextual constant for this file logs.
+ * @private
+ */
+let context = &apos;common/data/data_collection&apos;
+
+
+
+/**
+ * DataCollection class.
+ * 
+ * @author Luc BORIES
+ * @license Apache-2.0
+ * 
+ * @example
+* 	API:
+* 		-&gt;constructor(arg_cache_manager,arg_data_adapter,arg_model_schema)
+* 		
+* 		-&gt;get_name():string - get tenant to use inside this datastore.
+* 		-&gt;get_cache_manager():CacheManager - get cache manager instance.
+* 		-&gt;get_adapter():DataAdapter - get data adapter instance.
+* 		-&gt;get_model():DataModel - get collection model instance.
+* 
+*		-&gt;validate_record(arg_record):Promise(boolean) - test if given datas are valid for collection model.
+*		-&gt;new_record(arg_record_datas, arg_record_id) - create a new record instance.
+* 		-&gt;create_record(arg_record):Promise(DataRecord) - create an existing unsaved data record.
+* 		-&gt;delete_record(arg_record):Promise(boolean) - delete an existing data record.
+* 		-&gt;update_record(arg_record):Promise(DataRecord) - update an existing data record.
+* 		-&gt;reload_record(arg_record):Promise(DataRecord) - reload an existing data record.
+* 		-&gt;has_record(arg_record_id):Promise(boolean) - test if a data record exists with an id.
+* 		
+* 		-&gt;find_one_record(arg_record_id):Promise(DataRecord) - find an existing data record with an id.
+* 		-&gt;find_records(arg_query):Promise(DataRecordArray) - find existing data records with a query.
+* 		-&gt;find_all_records():Promise(DataRecordArray) - find all xisting data records.
+* 
+* 	PRIVATE:
+* 		-&gt;_emit(arg_event, arg_datas=undefined):nothing
+* 		-&gt;_trigger(arg_event, arg_datas):nothing
+* 		-&gt;_has_cached_record_by_id(arg_id):Promise(boolean)
+* 		-&gt;_get_cached_record_by_id(arg_id):Promise(DataRecord)
+* 		-&gt;_set_cached_record_by_id(arg_record):Promise(boolean)
+* 		-&gt;_remove_cached_record_by_id(arg_id):Promise(boolean)
+* 
+* 
+* 	USAGE ON BROWSER:
+* 		// ds is a DataStore instance
+* 		var cars = ds.get_collection(&apos;cars&apos;)
+* 		var car_12 = cars.find_one_record(&apos;12&apos;)
+* 
+* 
+ */
+export default class DataCollection extends Loggable
+{
+	/**
+	 * DataCollection class is responsible to manage one model records from one adapter:
+	 *  all records operations, cached records, model logic (field value validation, triggers).
+	 * DataCollection instances are managed by a DataStore instance.
+	 * 
+	 * @param {CacheManager} arg_cache_manager - cache manager instance.
+	 * @param {DataAdapter} arg_data_adapter - collection data adapter.
+	 * @param {array} arg_model_schema - topology model schema.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_cache_manager, arg_data_adapter, arg_model_schema)
+	{
+		assert( T.isObject(arg_cache_manager) &amp;&amp; arg_cache_manager.is_cache_manager, context + &apos;:constructor:bad cache manager object&apos;)
+		assert( T.isObject(arg_data_adapter) &amp;&amp; arg_data_adapter.is_data_adapter, context + &apos;:constructor:bad data adapter object&apos;)
+		assert( T.isObject(arg_model_schema) &amp;&amp; arg_model_schema.is_topology_model, context + &apos;:constructor:bad model schema object&apos;)
+		
+		const model_plural_name = arg_model_schema.get_plural_name()
+		assert( T.isString(model_plural_name) &amp;&amp; model_plural_name.length &gt; 0, context + &apos;:constructor:bad collection name string&apos;)
+
+		super(context)
+
+		/**
+		 * Class type flag.
+		 * @type {boolean}
+		 */
+		this.is_data_collection = true
+		
+		/**
+		 * CacheManager instance.
+		 * @type {CacheManager}
+		 */
+		this._cache_manager = arg_cache_manager
+		
+		/**
+		 * Datas adapter instance.
+		 * @type {DataAdapter}
+		 */
+		this._adapter = arg_data_adapter
+		
+		/**
+		 * Topology model schema instance.
+		 * @type {array}
+		 */
+		this._schema = arg_model_schema
+		
+		/**
+		 * Datas collection prefix.
+		 * @type {string}
+		 */
+		this._cache_prefix = model_plural_name
+		
+		/**
+		 * Datas collection name.
+		 * @type {string}
+		 */
+		this._name = model_plural_name
+	}
+
+
+
+	/**
+	 * Emit on event.
+	 * @private
+	 * 
+	 * @param {string} arg_event - event name.
+	 * @param {any} arg_datas - event datas (optional, default:undefined).
+	 * 
+	 * @returns {nothing}
+	 */
+	_emit(arg_event, arg_datas=undefined) // TODO
+	{
+		this.debug(context + &apos;:emit:&apos; + arg_event)
+
+		// if ( this._schema.has_rules_agenda() )
+		// {
+		// 	this._schema.push_on_rule_agenda(arg_event, arg_datas)
+		// }
+	}
+
+
+
+	/**
+	 * Call event triggers.
+	 * @private
+	 * 
+	 * @param {string} arg_event - event name.
+	 * @param {any} arg_datas - event datas (optional, default:undefined).
+	 * 
+	 * @returns {nothing}
+	 */
+	_trigger(arg_event, arg_datas=undefined) // TODO
+	{
+		this.debug(context + &apos;:trigger:&apos; + arg_event)
+
+		// this._schema._trigger(arg_event, arg_datas)
+		this._emit(arg_event, arg_datas)
+
+		// TODO: UPDATE METRICS
+	}
+
+
+
+	/**
+	 * Test if a record is cached.
+	 * @private
+	 * 
+	 * @param {string} arg_id - record id.
+	 * 
+	 * @returns {Promise} - Promise of boolean value: found (true) or not found (false).
+	 */
+	_has_cached_record_by_id(arg_id)
+	{
+		const key = this._cache_prefix + &apos;:&apos; + arg_id
+		return this._cache_manager.has(key)
+	}
+
+
+
+	/**
+	 * Test if a record array is cached.
+	 * @private
+	 * 
+	 * @param {DataQuery} arg_query - data query.
+	 * 
+	 * @returns {Promise} - Promise of boolean value: found (true) or not found (false).
+	 */
+	_has_cached_record_by_query(arg_query)
+	{
+		const key = this._cache_prefix + &apos;:query:&apos; + arg_query.hash()
+		return this._cache_manager.has(key)
+	}
+
+
+
+	/**
+	 * Get a cached record.
+	 * @private
+	 * 
+	 * @param {string} arg_id - record id.
+	 * 
+	 * @returns {Promise} - Promise of a DataRecord instance.
+	 */
+	_get_cached_record_by_id(arg_id)
+	{
+		const key = this._cache_prefix + &apos;:&apos; + arg_id
+		return this._cache_manager.get(key, undefined)
+	}
+
+
+
+	/**
+	 * Get a cached record array.
+	 * @private
+	 * 
+	 * @param {DataQuery} arg_query - data query.
+	 * 
+	 * @returns {Promise} - Promise of a DataRecordArray instance.
+	 */
+	_get_cached_record_by_query(arg_query)
+	{
+		const key = this._cache_prefix + &apos;:query:&apos; + arg_query.hash()
+		return this._cache_manager.get(key, undefined)
+	}
+
+
+
+	/**
+	 * Add a record to cache.
+	 * @private
+	 * 
+	 * @param {DataRecord} arg_record - record
+	 * 
+	 * @returns {Promise} - Promise of boolean value: success (true) or failure (false).
+	 */
+	_set_cached_record_by_id(arg_record)
+	{
+		assert( T.isObject(arg_record) &amp;&amp; arg_record.is_data_record, context + &apos;:_set_cached_record_by_id:bad data record object&apos;)
+		
+		const key = this._cache_prefix + &apos;:&apos; + arg_record.get_id()
+		return this._cache_manager.set(key, arg_record, this._schema.get_ttl())
+	}
+
+
+
+	/**
+	 * Add a record array to cache.
+	 * @private
+	 * 
+	 * @param {DataQuery} arg_query - data query.
+	 * @param {DataRecordArray} arg_record_array - record array.
+	 * 
+	 * @returns {Promise} - Promise of boolean value: success (true) or failure (false).
+	 */
+	_set_cached_record_by_query(arg_query, arg_record_array)
+	{
+		assert( T.isObject(arg_query) &amp;&amp; arg_query.is_data_query, context + &apos;:_set_cached_record_by_query:bad data query object&apos;)
+		assert( T.isObject(arg_record_array) &amp;&amp; arg_record_array.is_data_record_array, context + &apos;:_set_cached_record_by_query:bad data record object&apos;)
+		
+		const promises = []
+
+		// CACHE RECORD ARRAY
+		const key = this._cache_prefix + &apos;:query:&apos; + arg_query.hash()
+		promises.push( this._cache_manager.set(key, arg_record_array, this._schema.get_ttl()) )
+
+		// CACHE ALL ARRAY RECORDS
+		arg_record_array._records.forEach(
+			(record)=&gt;{
+				promises.push( this._set_cached_record_by_id(record) )
+			}
+		)
+
+		return Promise.all(promises)
+	}
+
+
+
+	/**
+	 * Remove a cached record.
+	 * @private
+	 * 
+	 * @param {string} arg_id - record id.
+	 * 
+	 * @returns {Promise} - Promise of boolean value: success (true) or failure (false).
+	 */
+	_remove_cached_record_by_id(arg_id)
+	{
+		const key = this._cache_prefix + &apos;:&apos; + arg_id
+		
+		return this._cache_manager.remove(key)
+	}
+
+
+
+	/**
+	 * Get collection name.
+	 * 
+	 * @returns {string}
+	 */
+	get_name()
+	{
+		return this._name
+	}
+
+
+
+	/**
+	 * Get cache manager.
+	 * 
+	 * @returns {DataAdapter}
+	 */
+	get_cache_manager()
+	{
+		assert( T.isObject(this._cache_manager) &amp;&amp; this._cache_manager.is_cache_manager, context + &apos;:get_cache_manager:bad cache manager object&apos;)
+		
+		return this._cache_manager
+	}
+
+
+
+	/**
+	 * Get data adapter.
+	 * 
+	 * @returns {DataAdapter}
+	 */
+	get_adapter()
+	{
+		assert( T.isObject(this._adapter) &amp;&amp; this._adapter.is_data_adapter, context + &apos;:get_adapter:bad data adapter object&apos;)
+		
+		return this._adapter
+	}
+
+
+
+	/**
+	 * Get data model.
+	 * 
+	 * @returns {DataModel}
+	 */
+	get_model()
+	{
+		assert( T.isObject(this._schema) &amp;&amp; this._schema.is_topology_model, context + &apos;:get_model:bad data model object&apos;)
+		
+		return this._schema
+	}
+
+
+
+	/**
+	 * Get data model.
+	 * 
+	 * @returns {DataModel}
+	 */
+	get_schema()
+	{
+		assert( T.isObject(this._schema) &amp;&amp; this._schema.is_topology_model, context + &apos;:get_model:bad data model object&apos;)
+		
+		return this._schema
+	}
+
+
+
+	/**
+	 * Validate data record values.
+	 * 1-Call &apos;before_validate&apos; triggers.
+	 * 2-Check all fields values.
+	 * 3-Call &apos;after_validate_ok&apos; triggers on success.
+	 *   Call &apos;after_validate_ko&apos; triggers on failure.
+	 * 4-Return success (true) or failure (false)
+	 * 
+	 * @param {DataRecord} arg_record - data record instance.
+	 * 
+	 * @returns {Promise} - Promise of a boolean.
+	 */
+	validate_record(arg_record) // TODO
+	{
+		assert( T.isObject(arg_record) &amp;&amp; arg_record.is_data_record, context + &apos;:validate_record:bad data record object&apos;)
+		
+		this._trigger(&apos;before_validate&apos;, { record:arg_record })
+		const result = this._schema.validate(arg_record.get_attributes_object())
+		this._trigger(result.is_valid ? &apos;after_validate_ok&apos; : &apos;after_validate_ko&apos;, { record:arg_record })
+
+		return Promise.resolve(result)
+	}
+
+
+
+	/**
+	 * Create a new data record instance, not saved.
+	 * 
+	 * @param {object} arg_record_datas - new record attributes.
+	 * @param {string} arg_record_id - new record unique id (optional).
+	 * 
+	 * @returns {Promise} - Promise(DataRecord)
+	 */
+	new_record(arg_record_datas, arg_record_id)
+	{
+		// const is_cached_promise = this._has_cached_record_by_id(arg_record_id)
+		// if (is_cached)
+		// {
+		// 	console.log(&apos;collection:is cached&apos;)
+		// 	return this._get_cached_record_by_id(arg_record_id)
+		// }
+		return this._adapter.new_record(this._schema.get_name(), arg_record_datas, arg_record_id)
+	}
+
+
+
+	/**
+	 * Create a data collection record.
+	 * 1-Call &apos;before_create&apos; triggers.
+	 * 2-Check existing record id within cached records.
+	 * 3-Validate record datas: reject on failure
+	 * 4-Create a DataRecord instance with adapter.new_record.
+	 * 5-Add record to cache.
+	 * 6-Call record.save()
+	 * 7-Call &apos;after_create&apos; triggers.
+	 * 
+	 * @param {DataRecord} arg_record - data record instance.
+	 * 
+	 * @returns {Promise} - Promise of a DataRecord object.
+	 */
+	create_record(arg_record)
+	{
+		assert( T.isObject(arg_record) &amp;&amp; arg_record.is_data_record, context + &apos;:create_record:bad data record object&apos;)
+		
+		this._trigger(&apos;before_create&apos;, { has_error:false, error_msg:undefined, record:arg_record})
+		
+		return this._has_cached_record_by_id(arg_record.get_id())
+		.then(
+			(is_cached)=&gt;{
+				if (is_cached)
+				{
+					this._trigger(&apos;after_create&apos;, { has_error:true, error_msg:&apos;already_exists&apos;, record:arg_record })
+					return Promise.reject(&apos;already_exists&apos;)
+				}
+			}
+		)
+		.then(
+			()=&gt;{
+				const is_valid = this.validate_record(arg_record)
+				if ( ! is_valid)
+				{
+					this._trigger(&apos;after_create&apos;, { has_error:true, error_msg:&apos;not_valid&apos;, record:arg_record })
+					return Promise.reject(&apos;not_valid&apos;)
+				}
+			}
+		)
+		.then(
+			()=&gt;{
+				return this._adapter.create_record(this._schema.get_name(), arg_record.get_attributes_object())
+			}
+		)
+		.then(
+			(record)=&gt;{
+				this._trigger(&apos;after_create&apos;, { has_error:false, error_msg:undefined, record:record})
+				return record
+			}
+		)
+		.catch(
+			(e)=&gt;{
+				this._trigger(&apos;after_create&apos;, { has_error:true, error_msg:e, record:arg_record})
+				console.error(context + &apos;:create_record:&apos;, e)
+				return undefined
+			}
+		)
+	}
+
+
+
+	/**
+	 * Delete a data collection record.
+	 * 1-Call &apos;before_delete&apos; triggers.
+	 * 2-Remove cached record.
+	 * 3-Call record.delete()
+	 * 4-Call &apos;after_delete&apos; triggers.
+	 * 
+	 * @param {DataRecord} arg_record - data record instance.
+	 * 
+	 * @returns {Promise} - Promise of boolean success.
+	 */
+	delete_record(arg_record)
+	{
+		assert( T.isObject(arg_record) &amp;&amp; arg_record.is_data_record, context + &apos;:delete_record:bad data record object&apos;)
+
+		this._trigger(&apos;before_delete&apos;, { has_error:false, error_msg:undefined, record:arg_record})
+		
+		return this._remove_cached_record_by_id(arg_record.get_id())
+		.then(
+			()=&gt;{
+				return this._adapter.delete_record(this._schema.get_name(), arg_record.get_id())
+				.then( (record)=&gt; { return record.set_removed() } )
+			}
+		).then(
+			()=&gt;{
+				this._trigger(&apos;after_delete&apos;, { has_error:false, error_msg:undefined, record:arg_record})
+				return true
+			}
+		).catch(
+			(e)=&gt;{
+				this._trigger(&apos;after_delete&apos;, { has_error:true, error_msg:e, record:arg_record})
+				return false
+			}
+		)
+	}
+
+
+
+	/**
+	 * Update a data collection record.
+	 * 1-Call &apos;before_update&apos; triggers.
+	 * 2-Update cached record.
+	 * 3-Call record.update()
+	 * 4-Call &apos;after_update&apos; triggers.
+	 * 
+	 * @param {DataRecord} arg_record - data record instance.
+	 * 
+	 * @returns {Promise} - Promise of boolean success.
+	 */
+	update_record(arg_record)
+	{
+		assert( T.isObject(arg_record) &amp;&amp; arg_record.is_data_record, context + &apos;:update_record:bad data record object&apos;)
+		
+		this._trigger(&apos;before_update&apos;, { has_error:false, error_msg:undefined, record:arg_record})
+		
+		return this._adapter.update_record(this._schema.get_name(), arg_record)
+		.then(
+			(record)=&gt;{
+				console.log(context + &apos;:update_record:record&apos;, record)
+				return this._set_cached_record_by_id(arg_record.get_id(), record)
+			}
+		)
+		.then(
+			()=&gt;{
+				this._trigger(&apos;after_update&apos;, { has_error:false, error_msg:undefined, record:arg_record})
+				console.log(context + &apos;:update_record:true&apos;)
+				return true
+			}
+		)
+		.catch(
+			(e)=&gt;{
+				this._trigger(&apos;after_update&apos;, { has_error:true, error_msg:e, record:arg_record})
+				return false
+			}
+		)
+	}
+
+
+
+	/**
+	 * Update a data collection record.
+	 * 1-Search record into cache
+	 * 2-Search record into adapter
+	 * 
+	 * @param {string} arg_record_id - data record id.
+	 * 
+	 * @returns {Promise} - Promise of boolean found:true, not found:false.
+	 */
+	has_record(arg_record_id)
+	{
+		assert( T.isString(arg_record_id) &amp;&amp; arg_record_id.length &gt; 0, context + &apos;:has_record:bad record id string&apos;)
+		
+		return this._has_cached_record_by_id(arg_record_id)
+		.then(
+			(found)=&gt;{
+				if (found)
+				{
+					return true
+				}
+				return this._adapter.has_record(this._schema.get_name(), arg_record_id)
+			}
+		).catch(
+			(e)=&gt;{
+				this._trigger(&apos;has_record&apos;, { has_error:true, error_msg:e, id:arg_record_id} )
+				return false
+			}
+		)
+	}
+
+
+
+	/**
+	 * Find an existing data record with an id.
+	 * 1-Search record into cache
+	 * 2-Search record into adapter
+	 * 3-Save record into cache
+	 * 
+	 * @param {string} arg_record_id - data record id.
+	 * 
+	 * @returns {Promise} - Promise of DataRecord.
+	 */
+	find_one_record(arg_record_id)
+	{
+		assert( T.isString(arg_record_id) &amp;&amp; arg_record_id.length &gt; 0, context + &apos;:find_one_record:bad record id string&apos;)
+		
+		return this._get_cached_record_by_id(arg_record_id)
+		.then(
+			(record)=&gt;{
+				if ( T.isObject(record) &amp;&amp; record.is_data_record )
+				{
+					this._trigger(&apos;find_one_record&apos;, { has_error:false, error_msg:undefined, id:arg_record_id, from:&apos;cache&apos;})
+					return record
+				}
+				return this._adapter.find_one_record(this._schema.get_name(), arg_record_id)
+				.then(
+					(attributes)=&gt;{
+						// console.log(context + &apos;:find_one_record:adapter:attributes&apos;, attributes)
+						return this.new_record(attributes, arg_record_id)
+					}
+				)
+				.then(
+					(record)=&gt;{
+						if ( T.isObject(record) &amp;&amp; record.is_data_record )
+						{
+							this._trigger(&apos;find_one_record&apos;, { has_error:false, error_msg:undefined, id:arg_record_id, record:record, from:&apos;adapter&apos;})
+							// console.log(context + &apos;:find_one_record:adapter:good record&apos;, record)
+							return record
+						}
+
+						console.error(context + &apos;:find_one_record:adapter:bad record&apos;, record)
+						this._trigger(&apos;find_one_record&apos;, { has_error:false, error_msg:undefined, id:arg_record_id, from:&apos;notfound&apos;})
+						return undefined
+					}
+				)
+			}
+		)
+		.catch(
+			(e)=&gt;{
+				this._trigger(&apos;find_one_record&apos;, { has_error:true, error_msg:e, id:arg_record_id} )
+				console.error(context + &apos;:find_one_record:error&apos;, e)
+				return undefined
+			}
+		)
+	}
+
+
+
+	/**
+	 * Find existing data records with a query.
+	 * 1-Search records into cache
+	 * 2-Search records into adapter
+	 * 3-Save records into cache
+	 * 
+	 * @param {DataQuery} arg_query - data query.
+	 * 
+	 * @returns {Promise} - Promise of DataRecordArray.
+	 */
+	find_records(arg_query)
+	{
+		assert( T.isObject(arg_query) &amp;&amp; arg_query.is_data_query, context + &apos;:find_records:bad query object&apos;)
+		
+		return this._get_cached_record_by_query(arg_query)
+		.then(
+			(record_array)=&gt;{
+				if ( T.isObject(record_array) &amp;&amp; record_array.is_data_record_array )
+				{
+					this._trigger(&apos;find_records&apos;, { has_error:false, error_msg:undefined, query:arg_query, from:&apos;cache&apos;})
+					return record_array
+				}
+				return this._adapter.find_records(this._schema.get_name(), arg_query)
+				.then(
+					(attributes_array)=&gt;{
+						if ( T.isArray(attributes_array) )
+						{
+							return this.new_record_array(attributes_array)
+						}
+
+						this._trigger(&apos;find_records&apos;, { has_error:true, error_msg:&apos;bad attributes array&apos;, query:arg_query, from:&apos;notfound&apos;})
+						return undefined
+					}
+				)
+				.then(
+					(record_array)=&gt;{
+						if ( T.isObject(record_array) &amp;&amp; record_array.is_data_record_array )
+						{
+							return this._set_cached_record_by_query(arg_query, record_array).then(
+								()=&gt;{
+									this._trigger(&apos;find_records&apos;, { has_error:false, error_msg:undefined, query:arg_query, records:record_array, from:&apos;adapter&apos;})
+									return record_array
+								}
+							)
+						}
+
+						this._trigger(&apos;find_records&apos;, { has_error:false, error_msg:&apos;bad DataRecordArray&apos;, query:arg_query, from:&apos;notfound&apos;})
+						return undefined
+					}
+				)
+			}
+		).catch(
+			(e)=&gt;{
+				this._trigger(&apos;find_one_record&apos;, { has_error:true, error_msg:e, query:arg_query} )
+				return undefined
+			}
+		)
+	}
+
+
+
+	/**
+	 * Find all existing data records from adapter.
+	 * 
+	 * @returns {Promise} - Promise of DataRecordArray.
+	 */
+	find_all_records() // TODO use a query and cache: calling find_records(query) with query.select_all()
+	{
+		return this._adapter.find_all_records(this._schema.get_name())
+		.then(
+			(record_array)=&gt;{
+				if ( T.isObject(record_array) &amp;&amp; record_array.is_data_record_array )
+				{
+					this._trigger(&apos;find_all_records&apos;, { has_error:false, error_msg:undefined, from:&apos;adapter&apos;})
+					return record_array
+				}
+
+				this._trigger(&apos;find_all_records&apos;, { has_error:true, error_msg:&apos;bad DataRecordArray&apos;} )
+				return undefined
+			}
+		)
+		.catch(
+			(e)=&gt;{
+				this._trigger(&apos;find_all_records&apos;, { has_error:true, error_msg:e } )
+				return undefined
+			}
+		)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

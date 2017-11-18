@@ -1,0 +1,144 @@
+{
+  "coverage": "94.53%",
+  "expectCount": 183,
+  "actualCount": 173,
+  "files": {
+    "js/default_plugins/services_default_plugin.js": {
+      "expectCount": 8,
+      "actualCount": 8,
+      "undocumentLines": []
+    },
+    "js/executables/executable_command.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "js/executables/executable_route.js": {
+      "expectCount": 11,
+      "actualCount": 11,
+      "undocumentLines": []
+    },
+    "js/services/assets/assets_svc_provider.js": {
+      "expectCount": 8,
+      "actualCount": 8,
+      "undocumentLines": []
+    },
+    "js/services/assets/executable_route_assets.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "js/services/logs/logs_svc_provider.js": {
+      "expectCount": 8,
+      "actualCount": 8,
+      "undocumentLines": []
+    },
+    "js/services/messages/messages_svc_provider.js": {
+      "expectCount": 12,
+      "actualCount": 12,
+      "undocumentLines": []
+    },
+    "js/services/metrics/metrics_svc_provider.js": {
+      "expectCount": 11,
+      "actualCount": 11,
+      "undocumentLines": []
+    },
+    "js/services/middlewares/executable_route_middleware.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "js/services/middlewares/middlewares_svc_provider.js": {
+      "expectCount": 10,
+      "actualCount": 10,
+      "undocumentLines": []
+    },
+    "js/services/ping/ping_svc_provider.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "js/services/resources/executable_route_get_resource.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "js/services/resources/resources_svc_provider.js": {
+      "expectCount": 9,
+      "actualCount": 9,
+      "undocumentLines": []
+    },
+    "js/services/security/security_service.js": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
+    "js/services/security/security_svc_consumer.js": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
+    "js/services/security/security_svc_provider.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "js/services/todo_crud/crud_service.js": {
+      "expectCount": 6,
+      "actualCount": 4,
+      "undocumentLines": [
+        7,
+        29
+      ]
+    },
+    "js/services/todo_crud/crud_svc_consumer.js": {
+      "expectCount": 3,
+      "actualCount": 2,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "js/services/todo_crud/crud_svc_provider.js": {
+      "expectCount": 5,
+      "actualCount": 3,
+      "undocumentLines": [
+        9,
+        33
+      ]
+    },
+    "js/services/todo_crud/executable_route_model_crud.js": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "js/services/topology/topology_svc_provider.js": {
+      "expectCount": 22,
+      "actualCount": 22,
+      "undocumentLines": []
+    },
+    "js/services/topology/unused_topology_service.js": {
+      "expectCount": 6,
+      "actualCount": 4,
+      "undocumentLines": [
+        7,
+        29
+      ]
+    },
+    "js/services/topology/unused_topology_svc_consumer.js": {
+      "expectCount": 6,
+      "actualCount": 5,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "js/services/topology/unused_topology_svc_provider.js": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        10
+      ]
+    }
+  }
+}

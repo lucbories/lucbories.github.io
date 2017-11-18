@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="./">
+  <title data-ice="title">Manual | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container manual-root manual-index" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div class="manual-toc-root">
+  
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/overview.html"><a href="manual/overview.html" data-ice="link">Overview</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/overview.html"><a href="manual/overview.html#projects-structure" data-ice="link">Projects structure</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/overview.html"><a href="manual/overview.html#development" data-ice="link">Development</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/overview.html"><a href="manual/overview.html#contribution" data-ice="link">Contribution</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/installation.html"><a href="manual/installation.html" data-ice="link">Installation</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/usage.html"><a href="manual/usage.html" data-ice="link">Usage</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/design.html"><a href="manual/design.html" data-ice="link">Design</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/design.html"><a href="manual/design.html#main-devapt-concepts-are-" data-ice="link">Main devapt concepts are:</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/design.html"><a href="manual/design.html#how-an-application-work" data-ice="link">How an application work</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/design.html"><a href="manual/design.html#features" data-ice="link">Features</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#design---configurable-without-code-feature" data-ice="link">Design - Configurable without code feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#source" data-ice="link">Source</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#fisrt-level-format-" data-ice="link">Fisrt level format:</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#second-level-settings-" data-ice="link">Second level settings:</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_deployments.html"><a href="manual/design_configuration_for_deployments.html#design---configuration-for-deployments" data-ice="link">Design - Configuration for Deployments</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_deployments.html"><a href="manual/design_configuration_for_deployments.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_deployments.html"><a href="manual/design_configuration_for_deployments.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_deployments.html"><a href="manual/design_configuration_for_deployments.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_loggers.html"><a href="manual/design_configuration_for_loggers.html#design---configuration-for-loggers" data-ice="link">Design - Configuration for Loggers</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_loggers.html"><a href="manual/design_configuration_for_loggers.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_loggers.html"><a href="manual/design_configuration_for_loggers.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_loggers.html"><a href="manual/design_configuration_for_loggers.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_nodes.html"><a href="manual/design_configuration_for_nodes.html#design---configuration-for-nodes" data-ice="link">Design - Configuration for Nodes</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_nodes.html"><a href="manual/design_configuration_for_nodes.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_nodes.html"><a href="manual/design_configuration_for_nodes.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_nodes.html"><a href="manual/design_configuration_for_nodes.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_plugins.html"><a href="manual/design_configuration_for_plugins.html#design---configuration-for-plugins" data-ice="link">Design - Configuration for Plugins</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_plugins.html"><a href="manual/design_configuration_for_plugins.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_plugins.html"><a href="manual/design_configuration_for_plugins.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_plugins.html"><a href="manual/design_configuration_for_plugins.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_security.html"><a href="manual/design_configuration_for_security.html#design---configuration-for-security" data-ice="link">Design - Configuration for Security</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_security.html"><a href="manual/design_configuration_for_security.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_security.html"><a href="manual/design_configuration_for_security.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_security.html"><a href="manual/design_configuration_for_security.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_tenants.html"><a href="manual/design_configuration_for_tenants.html#design---configuration-for-tenants" data-ice="link">Design - Configuration for Tenants</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_tenants.html"><a href="manual/design_configuration_for_tenants.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_tenants.html"><a href="manual/design_configuration_for_tenants.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_tenants.html"><a href="manual/design_configuration_for_tenants.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_traces.html"><a href="manual/design_configuration_for_traces.html#design---configuration-for-traces" data-ice="link">Design - Configuration for Traces</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_traces.html"><a href="manual/design_configuration_for_traces.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_traces.html"><a href="manual/design_configuration_for_traces.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_traces.html"><a href="manual/design_configuration_for_traces.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_distributed.html"><a href="manual/design_distributed.html#design---distributed-feature" data-ice="link">Design - Distributed feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_distributed.html"><a href="manual/design_distributed.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_distributed.html"><a href="manual/design_distributed.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_distributed.html"><a href="manual/design_distributed.html#for-devapt-users-" data-ice="link">For Devapt users:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_distributed.html"><a href="manual/design_distributed.html#for-devapt-contributers-" data-ice="link">For Devapt contributers:</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#design---messaging-feature" data-ice="link">Design - Messaging feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#for-devapt-users-" data-ice="link">For Devapt users:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#for-devapt-contributers-" data-ice="link">For Devapt contributers:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#thanks" data-ice="link">Thanks</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#simplebus" data-ice="link">SimpleBus</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_metrics.html"><a href="manual/design_metrics.html#design---metrics-feature" data-ice="link">Design - Metrics feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_metrics.html"><a href="manual/design_metrics.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_metrics.html"><a href="manual/design_metrics.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_metrics.html"><a href="manual/design_metrics.html#for-devapt-users-" data-ice="link">For Devapt users:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_metrics.html"><a href="manual/design_metrics.html#for-devapt-contributers-" data-ice="link">For Devapt contributers:</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#design---rendering-feature" data-ice="link">Design - Rendering feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#at-startup" data-ice="link">At startup</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#rendering-result-process" data-ice="link">Rendering result process</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#rendering-component" data-ice="link">Rendering component</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#example" data-ice="link">Example</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#for-devapt-users-" data-ice="link">For Devapt users:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#for-devapt-contributers-" data-ice="link">For Devapt contributers:</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_security.html"><a href="manual/design_security.html#design---security-feature" data-ice="link">Design - Security feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_security.html"><a href="manual/design_security.html#description" data-ice="link">Description</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_servers.html"><a href="manual/design_servers.html#design---servers-feature" data-ice="link">Design - Servers feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_servers.html"><a href="manual/design_servers.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_servers.html"><a href="manual/design_servers.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_servers.html"><a href="manual/design_servers.html#builtin-servers" data-ice="link">Builtin servers</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_servers.html"><a href="manual/design_servers.html#express" data-ice="link">EXPRESS</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_servers.html"><a href="manual/design_servers.html#restify" data-ice="link">RESTIFY</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_servers.html"><a href="manual/design_servers.html#for-devapt-users-" data-ice="link">For Devapt users:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_servers.html"><a href="manual/design_servers.html#for-devapt-contributers-" data-ice="link">For Devapt contributers:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_servers.html"><a href="manual/design_servers.html#thanks" data-ice="link">Thanks</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_servers.html"><a href="manual/design_servers.html#express" data-ice="link">Express</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_servers.html"><a href="manual/design_servers.html#restify" data-ice="link">Restify</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_services.html"><a href="manual/design_services.html#design---services-feature" data-ice="link">Design - Services feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_services.html"><a href="manual/design_services.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/design_services.html"><a href="manual/design_services.html" data-ice="link">Examples</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#design---runtime-starting-process" data-ice="link">Design - runtime starting process</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#starting-code" data-ice="link">Starting code</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#starting-sequence-brief" data-ice="link">Starting sequence brief</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#import-runtime-from---39-devapt-base-runtime--39-" data-ice="link">import runtime from &apos;devapt/base/runtime&apos;</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-load" data-ice="link">runtime.load</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#starting-sequence-details" data-ice="link">Starting sequence details</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-loading-stage-0---runtimestage0executable" data-ice="link">Runtime loading stage 0 - RuntimeStage0Executable</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-loading-stage-1---runtimestage1executable" data-ice="link">Runtime loading stage 1 - RuntimeStage1Executable</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-loading-stage-2---runtimestage2executable" data-ice="link">Runtime loading stage 2 - RuntimeStage2Executable</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-loading-stage-3---runtimestage3executable" data-ice="link">Runtime loading stage 3 - RuntimeStage3Executable</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-loading-stage-4---runtimestage4executable" data-ice="link">Runtime loading stage 4 - RuntimeStage4Executable</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-loading-stage-5---runtimestage5executable" data-ice="link">Runtime loading stage 5 - RuntimeStage5Executable</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/tutorials.html"><a href="manual/tutorials.html" data-ice="link">Tutorials</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/projects.html"><a href="manual/projects.html" data-ice="link">Projects map</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#development-map" data-ice="link">Development Map</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/projects.html"><a href="manual/projects.html#projects-core-dependencies--package-json-" data-ice="link">Projects core dependencies (package.json)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/projects.html"><a href="manual/projects.html#projects-features-dependencies--package-json-" data-ice="link">Projects features dependencies (package.json)</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-core-doc" data-ice="link">devapt-core-doc</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-core-common" data-ice="link">devapt-core-common</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-core-services" data-ice="link">devapt-core-services</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-core-server" data-ice="link">devapt-core-server</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-core-browser" data-ice="link">devapt-core-browser</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-app-testbus" data-ice="link">devapt-app-testbus</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-app-testui" data-ice="link">devapt-app-testui</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-features-foundation6" data-ice="link">devapt-features-foundation6</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-features-cytoscape" data-ice="link">devapt-features-cytoscape</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-features-sparklines" data-ice="link">devapt-features-sparklines</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-features-labs" data-ice="link">devapt-features-labs</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-app-labs" data-ice="link">devapt-app-labs</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-devtools" data-ice="link">devapt-devtools</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-app-devtools" data-ice="link">devapt-app-devtools</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/roadmap.html"><a href="manual/roadmap.html" data-ice="link">Roadmap</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/roadmap.html"><a href="manual/roadmap.html#2-0-x---breaking-changes-and-new-features--current-" data-ice="link">2.0.x   breaking changes and new features (CURRENT)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#main-goals" data-ice="link">MAIN GOALS</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#enhance-core-features--architecture-and-stability--previous-1-1-x-" data-ice="link">enhance core features, architecture and stability (previous 1.1.x)</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/roadmap.html"><a href="manual/roadmap.html#project" data-ice="link">PROJECT</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/roadmap.html"><a href="manual/roadmap.html#features" data-ice="link">FEATURES</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#enhance-datas-access-features--previous-1-3-x-" data-ice="link">enhance datas access features (previous 1.3.x)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#project" data-ice="link">PROJECT</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#features" data-ice="link">FEATURES</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/roadmap.html"><a href="manual/roadmap.html#2-1-x----enhance-distributed-features-and-documentatioon--later-" data-ice="link">2.1.x    enhance distributed features and documentatioon (LATER)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#project" data-ice="link">PROJECT</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#features" data-ice="link">FEATURES</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/roadmap.html"><a href="manual/roadmap.html#2-2-x----enhance-security-features--later-" data-ice="link">2.2.x    enhance security features (LATER)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#project" data-ice="link">PROJECT</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#features" data-ice="link">FEATURES</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/roadmap.html"><a href="manual/roadmap.html#2-3-x----implement-cloud-features--later-" data-ice="link">2.3.x    implement Cloud features (LATER)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#project" data-ice="link">PROJECT</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#features" data-ice="link">FEATURES</a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="github-markdown">
+  <div class="manual-user-index" data-ice="manualUserIndex"><h1 id="welcome-on-devapt-project-documentation--v2-or-more-">Welcome on Devapt project documentation (v2 or more)</h1><p>With Devapt you can easily develop powerfull application.</p>
+<p>Devapt libraries are usefull to quickly develop applications with more JSON configuration and less code.</p>
+<h2 id="what-is-devapt--">What is Devapt ?</h2><p>The Developpers Application Toolkit (Devapt) is a usefull package for developers:
+create quickly and securely a complex distributed set of applications or a simple alone application into one or more nodejs.</p>
+<p>This project is based on Javascript (ECMAscript 6 transpiled in ES5) and nodejs.
+Devapt contains a server runtime and a set of client features.
+Devapt help you to write less code and to use easily more features.</p>
+<p>The principle is simple: you write some configuration files for distributed nodes, models, views and menus and the you start the application.
+The framework will automatically generates the server and manages common features (logges, traces, metrics, restful, security...).
+Simply launch index.html and your application is up a rich user interface and many features.</p>
+<p>Built-in features cover many important subjects as: authentication, restfull, http server, distributed services, logs, metrics...
+Main characteristics of DEVAPT architecture is dynamic behaviors, reactive programming, object oriented ES6 javascript, gulp build chain
+All of this on NodeJS.</p>
+<h2 id="where-to-find-devapt--">Where to find Devapt ?</h2><p>Devapt is a set of core libraries to help producing applications:</p>
+<ul>
+<li><a href="https://github.com/lucbories/devapt-core-common">devapt-core-common project</a></li>
+<li><a href="https://github.com/lucbories/devapt-core-server">devapt-core-server project</a></li>
+<li><a href="https://github.com/lucbories/devapt-core-services">devapt-core-services project</a></li>
+<li><a href="https://github.com/lucbories/devapt-core-browser">devapt-core-browser project</a></li>
+</ul>
+<p>Projects API:</p>
+<ul>
+<li><a href="https://lucbories.github.io/api_common/index.html">devapt-core-common documentation</a></li>
+<li><a href="https://lucbories.github.io/api_server/index.html">devapt-core-server documentation</a></li>
+<li><a href="https://lucbories.github.io/api_services/index.html">devapt-core-services documentation</a></li>
+<li><a href="https://lucbories.github.io/api_browser/index.html">devapt-core-browser documentation</a></li>
+</ul>
+<p>Others libraries provides usefull features.</p>
+<p><a href="https://github.com/lucbories/devapt-core-common">GitHub project</a></p>
+<p><a href="https://www.npmjs.com/package/devapt-core-common">NPM package</a></p>
+<p><a href="https://lucbories.github.io">API</a></p>
+<p><a href="https://lucbories.github.io">MANUAL</a></p>
+<h2 id="what-does-devapt-offer-for-developpers--">What does Devapt offer for developpers ?</h2><p>Devapt library offers a &quot;runtime&quot; instance which delivers this features:</p>
+<ul>
+<li>browser or server rendering (Render instance)</li>
+<li>rendering base class for custom widgets or views (Component class)</li>
+<li>Redux store on client side</li>
+<li>distributed servers</li>
+<li>master configuration settings (distributed on each nodes)</li>
+<li>loggers engines and traces configuration (for instances, classes, modules)</li>
+<li>datas abstraction</li>
+<li>reactive programming (thanks BaconJS)</li>
+<li>documentation (wotrk in progress)</li>
+</ul>
+<h2 id="how-does-devapt-work--">How does Devapt work ?</h2><p>With Devapt you define:</p>
+<ul>
+<li>A topology, simple (one application, one server, one service) or complex (many services distributed for many applications on many distributed servers).</li>
+<li>Some resources (models, views, menubars, menus)</li>
+<li>Security rules</li>
+</ul>
+<p>A topology contains:</p>
+<ul>
+<li>nodes: A node is a nodejs process with an unique name. You can have many nodes on the same machine.
+Each node communicates with other node through messaging buses (messages, metrics, logs).</li>
+</ul>
+<p><img src="./manual/asset/Buses.png" width="80%"></p>
+<p>A node can have one or many servers.</p>
+<ul>
+<li>servers: A server provides one or more services and listen client connections through a couple (host, port).</li>
+</ul>
+<p>A server has a unique name and can be one of types: restify, express, socket.io (coming soon)...</p>
+<ul>
+<li>services: A service offers one feature to clients. A service can be one of: static assets providers, generic middleware provider, RESTfull provider, resources provider...</li>
+<li>applications: An application contains some services and is provided through nodes and servers.</li>
+</ul>
+<p>An application can have one service on one server on one node.
+Or many services on many servers on many nodes.</p>
+<p>An application contains:</p>
+<ul>
+<li>modules: functional features for applications (a set of preconfigured UI for example).</li>
+<li>plugins: technical fearures for applications (a rendering provider for example).</li>
+<li>security: defines authentication and authorization rules.</li>
+</ul>
+<p><img src="./manual/asset/Host.png" width="80%"></p>
+<p>The rendering engines are plugins and rendering classes are stateless: state is stored in a Redux store.
+See <a href="https://egghead.io/series/getting-started-with-redux">Getting Started with Redux</a> for flow concepts.</p>
+<h2 id="devapt-is-a-smart-glue-between-many-powerfull-projects">Devapt is a smart glue between many powerfull projects</h2><p>Thanks for all projects leaders and contributers.</p>
+<p>The given list is an extract of all used or inspired projects.</p>
+<p>Main dependancies:</p>
+<p><a href="https://nodejs.org">NodeJS: https://nodejs.org</a></p>
+<p>Servers and datas access:</p>
+<ul>
+<li><a href="http://expressjs.com/">Express: http://expressjs.com/</a></li>
+<li><a href="http://restify.com/">Restify: http://restify.com/</a></li>
+<li><a href="https://github.com/dchester/epilogue">Epilogue: https://github.com/dchester/epilogue</a></li>
+<li><a href="http://sequelizejs.com">Sequelize: http://sequelizejs.com</a></li>
+<li><a href="http://socket.io/">Socket.io: http://socket.io/</a></li>
+</ul>
+<p>Security:</p>
+<ul>
+<li><a href="http://passportjs.org">Passport: http://passportjs.org</a></li>
+<li><a href="https://github.com/OptimalBits/node_acl">Node ACL: https://github.com/OptimalBits/node_acl</a></li>
+</ul>
+<p>Foundations:</p>
+<ul>
+<li><a href="https://baconjs.github.io/">BaconJS: https://baconjs.github.io/</a></li>
+<li><a href="https://github.com/ajlopez/SimpleBus">SimpleBus: https://github.com/ajlopez/SimpleBus</a></li>
+<li><a href="https://jquery.com">jQuery: https://jquery.com</a></li>
+<li><a href="https://facebook.github.io/immutable-js/docs/#/">Immutable: https://facebook.gith)ub.io/immutable-js/docs/#/</a></li>
+<li><a href="http://redux.js.org/docs/introduction/Motivation.html">Redux: http://redux.js.org/docs/introduction/Motivation.html</a></li>
+<li><a href="http://momentjs.com/">Moment: http://momentjs.com/</a></li>
+<li><a href="https://github.com/dthree/vantage">Vantage: https://github.com/dthree/vantage</a></li>
+<li><a href="https://github.com/trentm/node-bunyan">Bunyan: https://github.com/trentm/node-bunyan</a></li>
+<li><a href="https://github.com/winstonjs/winston">Winston: https://github.com/winstonjs/winston</a></li>
+<li><a href="https://www.npmjs.com/package/circuit-breaker">Circuit breaker: https://www.npmjs.com/package/circuit-breaker</a> <a href="https://github.com/yammer/circuit-breaker-js">or https://github.com/yammer/circuit-breaker-js</a></li>
+<li><a href="https://github.com/typicode/lowdb">LowDb: https://github.com/typicode/lowdb</a></li>
+</ul>
+<p>Rendering:</p>
+<ul>
+<li><a href="http://foundation.zurb.com/sites.html">Foundation by ZURB: http://foundation.zurb.com/sites.html</a></li>
+<li><a href="https://github.com/janl/mustache.js">Mustache: https://github.com/janl/mustache.js</a></li>
+<li><a href="http://facebook.github.io/react/docs/tutorial.html">React (coming soon): http://facebook.github.io/react/docs/tutorial.html</a></li>
+</ul>
+<p>Dev and build dependancies: (coming soon.)</p>
+<ul>
+<li><a href="https://babeljs.io">Babel: https://babeljs.io</a></li>
+<li><a href="http://chaijs.com/">Chai: http://chaijs.com/</a></li>
+<li><a href="http://gulpjs.com/">Gulp: http://gulpjs.com/</a></li>
+<li><a href="https://mochajs.org/">Mocha: https://mochajs.org/</a></li>
+<li><a href="http://usejsdoc.org/">JSDoc: http://usejsdoc.org/</a></li>
+</ul>
+<h2 id="version">Version</h2><p>Current active version is 2.x.x</p>
+<p>Versionning use standard method: M.m.p with M is a major change, m a minor change, p a patch.</p>
+<h2 id="license">License</h2><p>Copyright Luc BORIES 2015-2016</p>
+<p>Apache Version 2 license.</p>
+<p>See <a href="https://github.com/lucbories/devapt-core-common/blob/master/LICENSE">LICENSE on GitHub</a></p>
+<p>Please enjoy using devapt projects and let me know if they are usefull for you.</p>
+<p><a href="https://lucbories.github.io">Next</a></p>
+</div>
+
+  
+
+  <div class="manual-cards">
+    
+  <div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>Overview</h1><p>With DEVAPT you can easily develop powerfull application.
+Built-in features cover many important subjects as: authentication, restfull, http server, distributed services, logs, metrics...
+Main characteristics of DEVAPT architecture is dynamic behaviors, reactive programming, object oriented ES6 javascript, gulp build chain
+All of this on NodeJS.</p><h2>Projects structure</h2><p>All devapt-* github repositories have the same structure: a master branch with the last tagged tree, a develop branch with latest comited updates and tags.</p><p>All devapt-* projects have a common folders tree:
+project root\</p><ul>
+<li>bower_components (only for browser features)</li>
+<li>build: building scripts</li>
+<li>dist: build codes and resources<ul>
+<li>dist/js: build javascript codes</li>
+<li>dist/resources: build resources configuration</li>
+</ul>
+</li>
+<li>node_modules: nodes packages</li>
+<li>public: shared assets for browsers<ul>
+<li>public/app_name/css: CSS assets</li>
+<li>public/app_name/html: HTML assets</li>
+<li>public/app_name/img: images assets</li>
+<li>public/app_name/js: javascript assets</li>
+</ul>
+</li>
+<li>public/favico.png: browser project icon</li>
+<li>src: project sources<ul>
+<li>src/js: javascript sources</li>
+<li>src/resources: resources configuration sources</li>
+</ul>
+</li>
+<li>tmp: temporary application files (logs)</li>
+<li>bower.json: browser packages configuration</li>
+<li>gulpfile.js: main build script</li>
+<li>LICENSE: project license</li>
+<li>package.json: nodes packages configuration</li>
+<li>README.md: project description</li>
+</ul><p>Some differences appears between library and application folder.</p><p>Versionning use standard method: M.m.p with M is a major change, m a minor change, p a patch.</p><h2>Development</h2><pre><code><code class="source-code prettyprint">git clone git://github.com/lucbories/devapt-core-common.git
+cd devapt-core-common
+npm install
+npm test</code>
+</code></pre><p>Same commands for devapt-core-browser, devapt-core-server, devapt-core-services</p><h2>Contribution</h2><p>Feel free to contribute, you&apos;re welcome.</p><p>Check issues and solve it:</p><ul>
+<li><a href="https://github.com/lucbories/devapt-core-common/issues">common file issues</a></li>
+<li><a href="https://github.com/lucbories/devapt-core-server/issues">server file issues</a></li>
+<li><a href="https://github.com/lucbories/devapt-core-services/issues">services file issues</a></li>
+<li><a href="https://github.com/lucbories/devapt-core-browser/issues">browser file issues</a></li>
+</ul><p>Submit your work:</p><ul>
+<li><a href="https://github.com/lucbories/devapt-core-common/pulls">common pull requests</a></li>
+<li><a href="https://github.com/lucbories/devapt-core-server/pulls">server pull requests</a></li>
+<li><a href="https://github.com/lucbories/devapt-core-services/pulls">services pull requests</a></li>
+<li><a href="https://github.com/lucbories/devapt-core-browser/pulls">browser pull requests</a></li>
+</ul><p>If you submit a pull request, please be sure to add or update corresponding
+test cases, and ensure that <code>npm test</code> continues to pass.</p></div>
+        <a data-ice="link" href="manual/overview.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>Installation</h1><p>Via npm on Node:</p><pre><code><code class="source-code prettyprint">cd my_project/
+npm init
+npm install devapt-core-common --save
+npm install devapt-core-browser --save
+npm install devapt-core-serices --save
+npm install devapt-core-server --save</code>
+</code></pre><p>To install and launch TestBus applicaton :</p><pre><code><code class="source-code prettyprint">cd apps/
+git clone git://github.com/lucbories/devapt-app-testbus.git
+cd devapt-app-testbus
+
+npm install --save-prod
+or yarn install -- production
+
+npm run nodeA
+or yarn run nodeA
+
+or
+npm run nodeA
+npm run nodeB
+
+or
+npm run nodeA
+npm run nodeB
+npm run nodeC</code>
+</code></pre><p>open a browser on <a href="http://my_domain:8080/assets/html/index.html">http://my_domain:8080/assets/html/index.html</a></p></div>
+        <a data-ice="link" href="manual/installation.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>Usage</h1><p>To install a devapt application, follow:</p><pre><code><code class="source-code prettyprint">cd apps/
+git clone git://github.com/lucbories/devapt-app-testbus.git
+cd devapt-app-testbus
+
+npm install --save-prod</code>
+</code></pre><p>To create an empty application from scratch (not recommended for devapt newbies):</p><pre><code><code class="source-code prettyprint">cd my_app
+npm init
+npm install devapt-core-common --save
+npm install devapt-core-browser --save
+npm install devapt-core-services --save
+npm install devapt-core-server --save</code>
+</code></pre><p>Create folders tree:</p><pre><code><code class="source-code prettyprint">-build
+-dist
+-public
+-public/assets
+-public/assets/css
+-public/assets/html
+-public/assets/img
+-public/assets/js
+-src/js
+-src/resources
+-tmp</code>
+</code></pre><p>Create your first Devapt based HTML page in public/assets/html/mypage.html:</p><pre><code class="lang-html"><code class="source-code prettyprint">&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta charSet=&quot;utf8&quot;/&gt;
+    &lt;title&gt;Devapt TestBus Home&lt;/title&gt;
+
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;/assets/img/favico.png&quot;/&gt;
+
+    &lt;link type=&apos;text/css&apos;  rel=&quot;stylesheet&quot; href=&quot;/assets/css/normalize.css&quot; media=&quot;all&quot; /&gt;
+
+    &lt;style type=&apos;text/css&apos;&gt;
+        ... your styles
+    &lt;/style&gt;
+&lt;/head&gt;
+
+
+&lt;body&gt;
+
+&lt;header&gt;
+    &lt;center&gt;
+        &lt;h1&gt;MY FIRST APP&lt;/h1&gt;
+        &lt;h8&gt;&lt;a href=&quot;/assets/html/mypage.html&quot;&gt;Home&lt;/a&gt;&lt;/h8&gt;
+    &lt;/center&gt;
+&lt;/header&gt;
+
+&lt;hr&gt;
+
+&lt;script&gt;window.__INITIAL_STATE__ = {
+    &quot;credentials&quot;:{
+        &quot;tenant&quot;:&quot;tenantA&quot;,
+        &quot;env&quot;:&quot;dev&quot;,
+        &quot;application&quot;:&quot;testbus&quot;,
+
+        &quot;token&quot;:&quot;&quot;,
+        &quot;user_name&quot;:&quot;&quot;,
+        &quot;user_pass_digest&quot;:&quot;&quot;,
+
+        &quot;ts_login&quot;:0,
+        &quot;ts_expiration&quot;:0,
+
+        &quot;errors_count&quot;:0,
+        &quot;renew_count&quot;:0,
+
+        &quot;hash&quot;:undefined
+    },
+    &quot;commands&quot;:{}
+}
+&lt;/script&gt;
+
+&lt;div id=&quot;content&quot;&gt;
+... your HTML code
+&lt;/div&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/socket.io/socket.io.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/vendor/browser.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/devapt-core-browser.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/devapt-bootstrap.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/js/app.js&quot;&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code>
+</code></pre><p>Now you can write your Javascript code in public/assets/js/app.js:</p><pre><code class="lang-js"><code class="source-code prettyprint">window.devapt().on_runtime_created(
+    function()
+    {
+        console.log(&apos;runtime ready for application script&apos;)
+
+        write your code here: devapt init is finished and you can use Devapt function:
+
+        window.devapt(): Devapt bootstrap root with some helpers
+        window.devapt().runtime():main Devapt client runtime
+        window.devapt().ui(): main Devapt user interface manager
+
+        Example: get client session unique id
+        var session_uid = window.devapt().runtime().get_session_uid()
+
+        Example: ping master node
+        var target_name = &apos;master&apos; (target is a node or a node part, node is server host or remote host or remote browser session)
+        var ping_svc_cfg = undefined (reserved for later)
+        var ping_svc_promise = window.devapt().get_service(&apos;pingpong&apos;, ping_svc_cfg)
+        var on_response_callback = function() {
+            console.log(&apos;pong received&apos;)
+        }
+        window.devapt().request_service(ping_svc_promise, &apos;devapt-ping&apos;, target_name, on_response_callback)
+    }
+)</code>
+</code></pre><p>Devapt use configuration files to discover and build a runtime of dynamic resources.</p><p>First we declare our unique node called &quot;nodeA&quot;, this node is the topology master and the application provider:
+File: dist/resources/nodes/nodeA.json</p><pre><code class="lang-js"><code class="source-code prettyprint">{
+    &quot;is_master&quot;:true,
+    &quot;name&quot;:&quot;NodeA&quot;,
+
+    &quot;master&quot;:{
+        &quot;name&quot;:&quot;NodeA&quot;,
+
+        &quot;msg_bus&quot;:{
+            &quot;package&quot;:&quot;socketio&quot;,
+            &quot;protocole&quot;:&quot;ws&quot;,
+            &quot;type&quot;:&quot;Server&quot;,
+            &quot;host&quot;:&quot;localhost&quot;,
+            &quot;port&quot;:5000
+        },
+        &quot;logs_bus&quot;:{
+            &quot;package&quot;:&quot;socketio&quot;,
+            &quot;protocole&quot;:&quot;ws&quot;,
+            &quot;type&quot;:&quot;Server&quot;,
+            &quot;host&quot;:&quot;localhost&quot;,
+            &quot;port&quot;:5001
+        },
+        &quot;metrics_bus&quot;:{
+            &quot;package&quot;:&quot;socketio&quot;,
+            &quot;protocole&quot;:&quot;ws&quot;,
+            &quot;type&quot;:&quot;Server&quot;,
+            &quot;host&quot;:&quot;localhost&quot;,
+            &quot;port&quot;:5002
+        }
+    },
+
+    &quot;settings_provider&quot;: {
+        &quot;source&quot;:&quot;local_file&quot;,
+        &quot;relative_path&quot;:&quot;world.json&quot;
+    }
+}</code>
+</code></pre><p>Secondly we describe our application features topology:
+File: dist/resources/world/world.json</p><pre><code class="lang-js"><code class="source-code prettyprint">{
+    &quot;nodes&quot;:&quot;nodes&quot;:{
+        &quot;NodeA&quot;:{
+            &quot;host&quot;:&quot;localhost&quot;,
+            &quot;is_master&quot;:true,
+            &quot;servers&quot;:{
+                &quot;NodeALocal8080&quot;:{
+                    &quot;type&quot;:&quot;express&quot;,
+                    &quot;port&quot;:8080,
+                    &quot;protocole&quot;:&quot;http&quot;,
+                    &quot;middlewares&quot;:[],
+                    &quot;use_socketio&quot;:true,
+
+                    &quot;security&quot;: {
+                        &quot;authentication&quot;: {
+                            &quot;enabled&quot;:false,
+                            &quot;plugins&quot;:[]
+                        }
+                    }
+                },
+                &quot;NodeALocalLogs&quot;:{
+                    &quot;type&quot;:&quot;logs&quot;,
+                    &quot;port&quot;:&quot;N/A&quot;,
+                    &quot;protocole&quot;:&quot;bus&quot;,
+                    &quot;middlewares&quot;:[],
+                    &quot;use_socketio&quot;:false,
+
+                    &quot;security&quot;: {
+                        &quot;authentication&quot;: {
+                            &quot;enabled&quot;:false,
+                            &quot;plugins&quot;:[]
+                        }
+                    }
+                }
+            }
+        }
+    },
+
+    &quot;tenants&quot;:{
+        &quot;tenantA&quot;:{
+            &quot;applications&quot;:{
+                &quot;assets&quot;:{
+                    &quot;title&quot;:&quot;Assets provider&quot;,
+                    &quot;url&quot;:&quot;assets&quot;,
+                    &quot;license&quot;:&quot;APACHE-LICENSE-2.0&quot;,
+
+                    &quot;provided_services&quot;:[],
+                    &quot;used_services&quot;:[],
+
+                    &quot;used_packages&quot;: [&quot;my_app_pkg&quot;],
+                    &quot;used_plugins&quot;:[&quot;DefaultRendering&quot;],
+
+                    &quot;assets&quot;:{
+                        &quot;css&quot;:[],
+                        &quot;js&quot;:[],
+                        &quot;img&quot;:[],
+                        &quot;index&quot;:&quot;&quot;
+                    }
+                }
+            },
+            &quot;packages&quot;:{
+                &quot;my_app_pkg&quot;:{
+                    &quot;base_dir&quot;:null,
+                    &quot;resources&quot;:[],
+                    &quot;templates&quot;:[],
+                    &quot;includes&quot;:[],
+                    &quot;commands&quot;:[],
+                    &quot;services&quot;:{
+                        &quot;pingpong&quot;:{
+                            &quot;type&quot;:&quot;ping_svc&quot;
+                        },
+                        &quot;html_assets&quot;:{
+                            &quot;type&quot;:&quot;html_assets_svc&quot;,
+                            &quot;routes&quot;:[
+                                {
+                                    &quot;route&quot;:&quot;/&quot;,
+                                    &quot;directory&quot;:&quot;../../public/assets/&quot;,
+                                    &quot;required_prefixes&quot;:[],
+                                    &quot;required_suffixes&quot;:[&quot;.js&quot;, &quot;.js.map&quot;, &quot;.css&quot;, &quot;.html&quot;, &quot;.png&quot;, &quot;.jpg&quot;]
+                                }
+                            ],
+                            &quot;security&quot;:{
+                                &quot;enabled&quot;:false,
+                                &quot;authentication&quot;:{
+                                    &quot;enabled&quot;:false,
+                                    &quot;engines&quot;:[]
+                                },
+                                &quot;authorization&quot;:{
+                                    &quot;enabled&quot;:false,
+                                    &quot;engines&quot;:[],
+                                    &quot;permissions&quot;:{
+                                        &quot;*&quot;:[&quot;*&quot;]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            &quot;security&quot;:{}
+        }
+    },
+
+    &quot;deployments&quot;:{
+        &quot;tenantA&quot;:{
+            &quot;assets&quot;:{
+                &quot;assets&quot;:{},
+                &quot;services&quot;:{
+                    &quot;topology&quot;:{ &quot;servers&quot;:[&quot;NodeALocal8080&quot;], &quot;filters&quot;:[&quot;*&quot;] },
+                    &quot;html_assets&quot;:{ &quot;servers&quot;:[&quot;NodeALocal8080&quot;], &quot;filters&quot;:[&quot;*&quot;] },
+                    &quot;pingpong&quot;:{ &quot;servers&quot;:[&quot;NodeALocal8080&quot;], &quot;filters&quot;:[&quot;*&quot;] }
+                }
+            }
+        }
+    },
+
+    &quot;security&quot;:{
+        &quot;is_readonly&quot;:false,
+
+        &quot;datasources&quot;:[],
+
+        &quot;authentication&quot;: {
+            &quot;enabled&quot;:false,
+
+            &quot;plugins&quot;:{},
+
+            &quot;default_plugins&quot;: []
+        },
+
+        &quot;authorization&quot;: {
+            &quot;enabled&quot;:false
+        }
+    },
+
+    &quot;plugins&quot;:{
+        &quot;DefaultRendering&quot;:{
+            &quot;type&quot;:&quot;rendering&quot;,
+            &quot;file&quot;:&quot;../../../node_modules/devapt-core-common/dist/js/default_plugins/rendering_default_plugin&quot;
+        },
+        &quot;DefaultServices&quot;:{
+            &quot;type&quot;:&quot;services&quot;,
+            &quot;file&quot;:&quot;../../../node_modules/devapt-core-services/dist/js/default_plugins/services_default_plugin&quot;
+        }
+    },
+
+    &quot;loggers&quot;:{},
+
+    &quot;traces&quot;:{}
+}</code>
+</code></pre><p>Launch your runtime nodes and servers:</p><pre><code><code class="source-code prettyprint">cd my_app
+node node_modules/devapt-core-server/dist/js/start_node.js -n NodeA -t dist/resources/world -b node_modules/devapt-core-server/dist/js -s NodeA:NodeALocal8081</code>
+</code></pre><p>Example with settings in many files:</p><pre><code class="lang-js"><code class="source-code prettyprint">&quot;resources//worldworld.json&quot;:
+
+{
+    &quot;nodes&quot;:&quot;nodes.json&quot;,
+
+    &quot;tenants&quot;:{
+        &quot;tenantA&quot;:{
+            &quot;applications&quot;:&quot;applications.json&quot;,
+            &quot;packages&quot;:&quot;tenantA_packages.json&quot;,
+            &quot;security&quot;:{}
+        }
+    },
+
+    &quot;deployments&quot;:&quot;deployments.json&quot;,
+
+    &quot;security&quot;:&quot;security.json&quot;,
+
+    &quot;plugins&quot;:&quot;plugins.json&quot;,
+
+    &quot;loggers&quot;:&quot;loggers.json&quot;,
+
+    &quot;traces&quot;:&quot;traces.json&quot;
+}
+
+&quot;nodes.json&quot;:
+{
+    &quot;nodes&quot;:{ same settings than above }
+}
+
+&quot;services.json&quot;:
+{
+    &quot;services&quot;:{ same settings than above }
+}
+
+Repeat on each files on the same manner.</code>
+</code></pre></div>
+        <a data-ice="link" href="manual/usage.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>Design</h1><p>Devapt is full stack solution. So it&apos;s usefull to provide an integrated framework to build your application with configuration files.
+On the other hands it&apos;s difficult to have an overview of all parts and undestand how all this parts work together.</p><p>First, devapt is provided throught specialized core projects and addon features. If you write an application you don&apos;t need to know all details. But if you want to add features, you should understand on what starting to build your feature.
+<a href="https://lucbories.github.io/projects.md">Details of projects</a></p><h2>Main devapt concepts are:</h2><ul>
+<li>Node: each application can be distributed on one or many nodes. Each node run on a NodeJS instance with some inter node communication channels. One or many nodes can run on one NodeJS instance. One or many NodeJS instance can run on one hostnames.</li>
+<li>Node settings: JSON file which describe one or many nodes with their names, security, debug trace and communication channels.</li>
+<li>Application settings or configuration or description: main JSON file which define application features, packages, resources (UI components...), debug traces and security.</li>
+<li>Bus: all nodes communicate together with messages throught a communication bus. An application can have one or more buses, one for metrics, one for logs and one between components.</li>
+<li>Tenant: a tenant is a set of applications and packages with its own security access. for example, we can have one tenant per company on a shared server (SaaS).</li>
+<li>Service: a service provide a feature which responds some datas on a request. For example, a ping pong service responds a &apos;pong&apos; on each &apos;ping&apos; request.</li>
+<li>Server: a server (not a hostname) is an engine which provides services and others features. For example, a logs server exists to process received logs.</li>
+<li>Metric: metrics are collected datas from a node, an application, a server, a service... which help to monitors system health.</li>
+<li>Rendering: it&apos;s the process of producing DOM content for the browser page.</li>
+<li>Virtual DOM: it&apos;s a technology which can produce DOM content outside of browser and to apply differential changes on a page. It enhance performance and decrease browser load.</li>
+<li>Security: security is an important need for all usages. Security is everywhere in devapt apps but all parts aren&apos;t finished yet. (TODO)</li>
+</ul><h2>How an application work</h2><p>An application has one directory but two targets: server and browser. On server side, an application launches nodes and services. On browser side, the page receive its content from the server: it&apos;s a lightweight HTML page with two scripts: a credentials record and an initial application state. Each user action on the interface call some scripts and request server if needed.</p><h2>Features</h2><p><a href="./manual/./design_distributed.html">Distributed</a></p><p><a href="./manual/./design_messaging.html">Messaging</a></p><p><a href="./manual/./design_metrics.html">Metrics</a></p><p><a href="./manual/./design_rendering.html">Rendering</a></p><p><a href="./manual/./design_security.html">Security</a></p><p><a href="./manual/./design_servers.html">Servers</a></p><p><a href="./manual/./design_services.html">Services</a></p><p><a href="./manual/./design_starting_process.html">Starting process</a></p></div>
+        <a data-ice="link" href="manual/design.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>Examples</h1><p>Define two routes to serve static files:</p><ul>
+<li><a href="http://myserver/">http://myserver/</a> with files read from an absolute path /.../devapt-app-devtools/dist/assets</li>
+<li><a href="http://myserver/myapp/css/*.css">http://myserver/myapp/css/*.css</a> with files read from a project relative path ./public/.</li>
+</ul><pre><code class="lang-js"><code class="source-code prettyprint">    &quot;html_assets_1&quot;:{
+        &quot;type&quot;:&quot;html_assets&quot;,
+        &quot;routes&quot;:[
+            {
+                &quot;is_global&quot;:true,
+                &quot;route&quot;:&quot;/&quot;,
+                &quot;directory&quot;:&quot;/.../devapt-app-devtools/dist/assets&quot;,
+                &quot;default&quot;:&quot;index.html&quot;
+            },
+
+            {
+                &quot;route&quot;:&quot;/css/.*.css&quot;,
+                &quot;directory&quot;:&quot;./public&quot;
+            }
+        ]
+    }</code>
+</code></pre></div>
+        <a data-ice="link" href="manual/design_services.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>Tutorials</h1><p>Some usefull applications are:</p><ul>
+<li>DEVTOOLS which actualy display settings, logs, buses messages, metrics and topology. <a href="https://github.com/lucbories/devapt-app-devtools/">DEVTOOLS app project</a></li>
+<li>TESTBUS wich helps to test distributed features: basic ping/pong communication, messaging, logs, topology. <a href="https://github.com/lucbories/devapt-app-testbus/">TESTBUS app project</a></li>
+<li>TESTUI wich helps to test user interface features. (coming soon) <a href="https://github.com/lucbories/devapt-app-testui/">TESTUI app project</a></li>
+</ul></div>
+        <a data-ice="link" href="manual/tutorials.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>Projects map</h1><p>Devapt projects refcard.</p><h2>Development Map</h2><h3>Projects core dependencies (package.json)</h3><table>
+<thead>
+<tr>
+<th>Project</th>
+<th>devapt-core-common</th>
+<th>devapt-core-browser</th>
+<th>devapt-core-services</th>
+<th>devapt-core-server</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>devapt-app-testbus</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>devapt-app-testui</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>devapt-app-devtools</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>devapt-core-doc</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+<tr>
+<td>devapt-core-common</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-core-browser</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-core-services</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-core-server</td>
+<td>x</td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-features-foundation6</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-features-cytoscape</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-features-sparklines</td>
+<td></td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-features-labs</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devtools</td>
+<td>x</td>
+<td></td>
+<td>x</td>
+</tr>
+</tbody>
+</table><h3>Projects features dependencies (package.json)</h3><table>
+<thead>
+<tr>
+<th>Project</th>
+<th>devapt-features-foundation6</th>
+<th>devapt-features-cytoscape</th>
+<th>devapt-features-sparklines</th>
+<th>devapt-features-labs</th>
+<th>devtools</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>devapt-app-testbus</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-app-testui</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-app-devtools</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>x</td>
+</tr>
+<tr>
+<td>devapt-core-common</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-core-browser</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-core-services</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-core-server</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-features-labs</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>devapt-app-labs</td>
+<td>x</td>
+<td></td>
+<td></td>
+<td>x</td>
+<td></td>
+</tr>
+<tr>
+<td>devtools</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+</tr>
+</tbody>
+</table><h2>devapt-core-doc</h2><p><a href="https://github.com/lucbories/devapt-core-doc/">DEVAPT CORE DOC project</a></p><p>Purpose: generate core projects documentation (API, manuals, tutorials)</p><p>Devapt projects dependencies:</p><ul>
+<li>devapt-core-browser</li>
+<li>devapt-core-common</li>
+<li>devapt-core-server</li>
+<li>devapt-core-services</li>
+</ul><h2>devapt-core-common</h2><p><a href="https://github.com/lucbories/devapt-core-common/">DEVAPT CORE COMMON project</a></p><p>Purpose: common features for all others projects.</p><p>Devapt projects dependencies:</p><ul>
+<li>none</li>
+</ul><h2>devapt-core-services</h2><p><a href="https://github.com/lucbories/devapt-core-services/">DEVAPT CORE SERVICES project</a></p><p>Purpose: services implementation for browser/server projects.</p><p>Devapt projects dependencies:</p><ul>
+<li>devapt-core-common</li>
+</ul><p>Provided services:</p><ul>
+<li>assets routes</li>
+<li>logs stream provider</li>
+<li>messages/logs/metrics stream provider and dispatching</li>
+<li>filtered metrics stream provider</li>
+<li>middleware based routes provider</li>
+<li>ping/pong provider</li>
+<li>resources configuration provider</li>
+<li>security login/signup/logout/... provider (coming soon)</li>
+<li>topology description provider</li>
+</ul><h2>devapt-core-server</h2><p><a href="https://github.com/lucbories/devapt-core-server/">DEVAPT CORE SERVER project</a></p><p>Purpose: server features. Provides assets, resources, services, security, plugins, server runtime and metrics.</p><p>Devapt projects dependencies:</p><ul>
+<li>devapt-core-common</li>
+<li>devapt-core-services</li>
+</ul><h2>devapt-core-browser</h2><p><a href="https://github.com/lucbories/devapt-core-browser/">DEVAPT CORE BROWSER project</a></p><p>Purpose: browser features. Provides commands, client runtime and components.</p><p>Devapt projects dependencies:</p><ul>
+<li>devapt-core-common</li>
+</ul><h2>devapt-app-testbus</h2><p><a href="https://github.com/lucbories/devapt-app-testbus/">TESTBUS app project</a></p><p>Purpose: messages bus testing application.</p><p>Devapt projects dependencies:</p><ul>
+<li>devapt-core-common</li>
+<li>devapt-core-browser</li>
+<li>devapt-core-server</li>
+<li>devapt-core-services</li>
+</ul><h2>devapt-app-testui</h2><p><a href="https://github.com/lucbories/devapt-app-testui/">TESTUI app project</a></p><p>Purpose: user interface testing application.</p><p>Devapt projects dependencies:</p><ul>
+<li>devapt-core-common</li>
+<li>devapt-core-browser</li>
+<li>devapt-core-server</li>
+<li>devapt-core-services</li>
+</ul><h2>devapt-features-foundation6</h2><p><a href="https://github.com/lucbories/devapt-features-foundation6/">DEVAPT FOUNDATION 6 features project</a></p><p>Purpose: Foundation 6 rendering features.</p><p>Devapt projects dependencies:</p><ul>
+<li>devapt-core-common</li>
+</ul><h2>devapt-features-cytoscape</h2><p><a href="https://github.com/lucbories/devapt-features-cytoscape/">DEVAPT CYTOSCAPE features project</a></p><p>Purpose: Cytoscape rendering features.</p><p>Devapt projects dependencies:</p><ul>
+<li>devapt-core-common</li>
+<li>devapt-core-browser</li>
+</ul><h2>devapt-features-sparklines</h2><p><a href="https://github.com/lucbories/devapt-features-sparklines/">DEVAPT SPARKLINES features project</a></p><p>Purpose: Sparklines rendering features.</p><p>Devapt projects dependencies:</p><ul>
+<li>devapt-core-common</li>
+<li>devapt-core-browser</li>
+</ul><h2>devapt-features-labs</h2><p><a href="https://github.com/lucbories/devapt-features-labs/">DEVAPT LABS features project</a></p><p>Purpose: labs features. Provides calculus and plots.</p><p>Devapt projects dependencies:</p><ul>
+<li>devapt-core-common</li>
+<li>devapt-core-browser</li>
+</ul><h2>devapt-app-labs</h2><p><a href="https://github.com/lucbories/devapt-app-labs/">DEVAPT LABS app project</a></p><p>Purpose: Amazing labs application.</p><p>Devapt projects dependencies:</p><ul>
+<li>devapt-core-common</li>
+<li>devapt-core-server</li>
+<li>devapt-core-services</li>
+<li>devapt-features-foundation6</li>
+<li>devapt-features-labs</li>
+</ul><h2>devapt-devtools</h2><p><a href="https://github.com/lucbories/devapt-devtools/">DEVTOOLS project</a></p><p>Purpose: development tools features.</p><p>Devapt projects dependencies:</p><ul>
+<li>devapt-core-common</li>
+<li>devapt-features-cytoscape</li>
+<li>devapt-features-foundation6</li>
+<li>devapt-features-sparklines</li>
+</ul><h2>devapt-app-devtools</h2><p><a href="https://github.com/lucbories/devapt-app-devtools/">DEVTOOLS app project</a></p><p>Purpose: development tools application.</p><p>Devapt projects dependencies:</p><ul>
+<li>devapt-core-common</li>
+<li>devapt-core-server</li>
+<li>devapt-core-services</li>
+<li>devapt-devtools</li>
+<li>devapt-features-cytoscape</li>
+<li>devapt-features-foundation6</li>
+<li>devapt-features-sparklines</li>
+</ul></div>
+        <a data-ice="link" href="manual/projects.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <div class="manual-card">
+        <div data-ice="card"><h1>Roadmap</h1><h2>2.0.x   breaking changes and new features (CURRENT)</h2><h3>MAIN GOALS</h3><p>When I was working on devtools features with devapt 1.0.x, I meet some trouble with missing features.
+An other problem was to deal with topology definition and deployment information previously stored in many pieces of code.
+It was difficult to obtain a global view of defined or deployed topology.
+So I pull out deployment information from topology definition.</p><p>One missing feature for fine deployment was the lake of customer and version of defined items.</p><p>Main added features:</p><ul>
+<li>isomorphic Credentials class to deal with session information on browser or on server (tenant, application, username, token...). (DONE)</li>
+<li>isomorphic data management classes: DataStore, DataRecord, DataCollection...</li>
+<li>topology management classes: TopologyDefineItem...(DONE)</li>
+<li>topology deployment classes: TopologyDeployLocalNode... (DONE)</li>
+<li>browser router (for single page application and more) (DONE)</li>
+<li>isomorphic cache management (DONE)</li>
+<li>versionned Collection to register versionned items (CURRENT)</li>
+</ul><p>Main breaking changes:</p><ul>
+<li>settings json format has evolved</li>
+<li>module was renamed to package</li>
+<li>change Collection.$items from [] to {}, use lodash as collection backend</li>
+</ul><p>New topology tree is now:</p><pre><code><code class="source-code prettyprint">world: the root of the topology
+
+-nodes
+--nodeA
+---serverA1
+---serverA2
+
+-tenants
+--tenantA
+---applications
+----applicationA
+-----url
+-----license
+-----provided_services
+-----used_services
+-----used_packages
+-----used_plugins
+-----assets
+---packages
+----packageA
+-----base_dir
+-----resources
+-----services
+---security
+
+-plugins
+--pluginA
+---type
+---file or package
+
+-deployments
+--tenantA
+---applicationA
+----assets
+----services
+
+-security
+-loggers
+-traces</code>
+</code></pre><p>That&apos;s why previous roadmap is outdated, sorry for the changes.</p><h3>enhance core features, architecture and stability (previous 1.1.x)</h3><h4>PROJECT</h4><ul>
+<li>refactor directories into common/, browser/, server/ (DONE)</li>
+<li>implement Unit tests for base classes (CURRENT)</li>
+<li>use babel-register to debug without build to dist/ directory (DONE)</li>
+<li>test on nodejs 4.4, 5.1, 6.x (DONE)</li>
+</ul><h4>FEATURES</h4><ul>
+<li>implement browser router for single page application (DONE)</li>
+<li>enhance devapt-devtools: runtime registry viewing (DONE)</li>
+<li>enhance devapt-devtools: runtime topology viewing (DONE)</li>
+<li>enhance devapt-devtools: metrics on topology (TODO)</li>
+<li>enhance devapt-devtools: application Redux state viewing (TODO)</li>
+<li>enhance devapt-devtools: application Redux state history player (TODO)</li>
+<li>implement unit test for instances, traces, loggers... (CURRENT)</li>
+<li>implement topology registry (DONE)</li>
+<li>implement topology runtime (DONE)</li>
+<li>implement generic api for state storing (Redux, Map) (DONE)</li>
+<li>implement cache management classes for browser and server (DONE)</li>
+</ul><h3>enhance datas access features (previous 1.3.x)</h3><h3>PROJECT</h3><ul>
+<li>document datas access layers (TODO)</li>
+<li>write Unit tests for datas access classes (TODO)</li>
+</ul><h3>FEATURES</h3><ul>
+<li>enhance devapt-devtools: create datas access dashboard (TODO)</li>
+<li>enhance devapt-devtools: create datas admin backend (TODO)</li>
+<li>implement homogeneous datas access for all datasources (DONE)</li>
+<li>enhance sequelize datasource for SQL databases:MySQL, MariaDb, PostgreSQL, SQLite, MSSQL (DONE)</li>
+<li>implement waterline ORM layer (TODO)</li>
+<li>implement Redis datasource for caching, messaging, NoSQL database (TODO)</li>
+<li>implement datas management classes for browser and server (DONE)</li>
+<li>implement datas cache on distributed nodes (TODO)</li>
+</ul><h2>2.1.x    enhance distributed features and documentatioon (LATER)</h2><h3>PROJECT</h3><ul>
+<li>update web site on github with project/, technical/... (TODO)</li>
+<li>document build process (TODO)</li>
+</ul><h3>FEATURES</h3><ul>
+<li>implement distributed services consumers (TODO)</li>
+<li>implement master configuration changes: receive and propagate complete/add/remove/update (TODO)</li>
+<li>implement master node revocation and promotion (TODO)</li>
+<li>implement node settings filter (TODO)</li>
+<li>implement swagger API player (TODO)</li>
+<li>implement circuit breaker on browser (TODO)</li>
+</ul><h2>2.2.x    enhance security features (LATER)</h2><h3>PROJECT</h3><ul>
+<li>document security process (TODO)</li>
+<li>write Unit tests for security classes (TODO)</li>
+</ul><h3>FEATURES</h3><ul>
+<li>enhance devapt-devtools: create security dashboard (TODO)</li>
+<li>enhance devapt-devtools: create security admin backend (TODO)</li>
+<li>implement security routes /login, /signup, /logout (TODO)</li>
+<li>implement Passport security plugin (TODO)</li>
+<li>implement authorization with ACL (TODO)</li>
+<li>implement security token (TODO)</li>
+<li>implement registry setting validation with a json schema (TODO)</li>
+</ul><h2>2.3.x    implement Cloud features (LATER)</h2><h3>PROJECT</h3><ul>
+<li>document Cloud integration process (TODO)</li>
+<li>write Unit tests for Cloud integration classes (TODO)</li>
+</ul><h3>FEATURES</h3><ul>
+<li>implement AWS DynamoDB datasource (TODO)</li>
+<li>implement AWS Lambda integration (TODO)</li>
+<li>implement AWS Security integration (TODO)</li>
+</ul></div>
+        <a data-ice="link" href="manual/roadmap.html"></a>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

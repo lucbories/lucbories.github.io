@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">js/base/binding/bindings_loader.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/base/binding/bindings_loader.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+import { format } from &apos;util&apos;
+import _ from &apos;lodash&apos;
+
+// COMMON IMPORTS
+import T      from &apos;devapt-core-common/dist/js/utils/types&apos;
+import Stream from &apos;devapt-core-common/dist/js/messaging/stream&apos;
+
+// BROWSER IMPORTS
+import BindingStream          from &apos;./binding_stream&apos;
+import BindingServiceTimeline from &apos;./binding_service_timeline&apos;
+import BindingService         from &apos;./binding_service&apos;
+
+
+const context = &apos;browser/base/binding/binding_Loader&apos;
+
+
+
+/**
+ * @file UI component binding loader class.
+ * 
+ * @author Luc BORIES
+ * 
+ * @license Apache-2.0
+ */
+export default class BindingLoader
+{
+	/**
+	 * Creates an instance of BindingLoader.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor()
+	{
+	}
+
+
+
+	/**
+	 * Normalize an array of objects selectors in an array of objects.
+	 * @static
+	 * 
+	 * @param {RuntimeBase} arg_runtime - client runtime.
+	 * @param {Component} arg_component - component instance.
+	 * @param {array} arg_selectors - selectors strings array.
+	 * @param {array|string} arg_dom_types - selected items types strings array or single string (default &quot;dom&quot;).
+	 * 
+	 * @returns {array} - objects|strings array.
+	 */
+	static normalize_objects(arg_runtime, arg_component, arg_selectors, arg_types = &apos;dom&apos;)
+	{
+		arg_component.enter_group(&apos;normalize_objects&apos;)
+
+		if ( ! T.isArray(arg_selectors) )
+		{
+			arg_component.leave_group(&apos;normalize_objects:bad selectors array&apos;)
+			return []
+		}
+
+		const objects = []
+		arg_selectors.forEach(
+			(selector, index)=&gt;{
+				if ( ! T.isString(selector) )
+				{
+					console.warn(&apos;normalize_objects:component=%s:bad selector type=%s&apos;, arg_component.get_name(), typeof selector)
+					return
+				}
+
+				// DEBUG
+				// console.log(context + &apos;:normalize_objects:component=%s:binding target dom selector=%s&apos;, arg_component.get_name(), dom_selector)
+
+				const object_type = T.isString(arg_types) ? arg_types : ( T.isArray(arg_types) &amp;&amp; arg_types.length &gt; index ? arg_types[index] : arg_types[arg_types.length - 1])
+
+				if (object_type == &apos;view&apos;)
+				{
+					if (selector == &apos;this&apos;)
+					{
+						arg_component.debug(&apos;normalize_objects:view:this is found&apos;)
+						objects.push( arg_component)
+						return
+					}
+
+					arg_component.debug(&apos;normalize_objects:view:&apos; + selector)
+					const target_object = arg_runtime._ui.get(selector)
+					if (target_object)
+					{
+						objects.push(target_object)
+						return
+					}
+
+					console.warn(context + &apos;:normalize_objects:component=%s:bad view selector=%s&apos;, arg_component.get_name(), selector)
+					return
+				}
+
+				if (object_type == &apos;jquery&apos;)
+				{
+					if (selector == &apos;this&apos;)
+					{
+						arg_component.debug(&apos;normalize_objects:jquery:this is found&apos;)
+						objects.push( $( arg_component.get_dom_id() ) )
+						return
+					}
+					
+					arg_component.debug(&apos;normalize_objects:jquery:&apos; + selector)
+					const jqo = $(selector)
+					if (jqo &amp;&amp; jqo.length &gt; 0)
+					{
+						objects.push(jqo)
+						return
+					}
+
+					console.warn(context + &apos;:normalize_objects:component=%s:bad jquery selector=%s&apos;, arg_component.get_name(), selector, jqo)
+					return
+				}
+
+				if (object_type == &apos;dom&apos;)
+				{
+					if (selector == &apos;this&apos;)
+					{
+						arg_component.debug(&apos;normalize_objects:dom:this is found&apos;)
+						objects.push( arg_component.get_dom_element() )
+						return
+					}
+
+					arg_component.debug(&apos;normalize_objects:dom:&apos; + selector)
+					const element = document.getElementById(selector)
+					if (element)
+					{
+						objects.push(element)
+						return
+					}
+
+					const selection = document.querySelector(selector)
+					if (selection)
+					{
+						objects.push(selection)
+						return
+					}
+
+					console.warn(context + &apos;:normalize_objects:component=%s:bad dom selector=%s&apos;, arg_component.get_name(), selector)
+					return
+				}
+
+				if (object_type == &apos;delegate&apos;)
+				{
+					objects.push(selector)
+					return
+				}
+
+				console.warn(context + &apos;:normalize_objects:component=%s:bad selector type=%s for selector=%s&apos;, arg_component.get_name(), object_type, selector)
+			}
+		)
+		
+		arg_component.leave_group(&apos;normalize_objects&apos;)
+		return objects
+	}
+	
+	
+
+	/**
+	 * Load and apply a component binding configuration.
+	 * 
+	 * @param {string} arg_id - binding identifier.
+	 * @param {RuntimeBase} arg_runtime - client runtime.
+	 * @param {Component} arg_component - component instance.
+	 * @param {Immutable.Map|undefined} arg_binding_cfg - component binding configuration.
+	 * 
+	 * @returns {BindingStream|array} 
+	 */
+	static load(arg_id, arg_runtime, arg_component, arg_binding_cfg)
+	{
+		// console.info(context + &apos;:load:loading binding for component &apos; + arg_component.get_name(), arg_binding_cfg)
+		
+		// CHECK BINDING CONFIGURATION
+		if (! T.isObject(arg_binding_cfg) )
+		{
+			return
+		}
+		
+		// GET CONFIGURATION ATTRIBUTES
+		const type = (&apos;type&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;type&apos;] : undefined
+		const state_path = (&apos;state_path&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;state_path&apos;] : [&apos;bindings_values&apos;, arg_id]
+		let xform = (&apos;transform&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;transform&apos;] : undefined
+		const options = (&apos;options&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;options&apos;] : undefined
+		
+		const source_svc_name   = (&apos;service&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;service&apos;] : undefined
+		const source_svc_method = (&apos;method&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;method&apos;] : undefined
+		const source_timeline   = (&apos;timeline&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;timeline&apos;] : undefined
+		const source_stream     = (&apos;source_stream&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;source_stream&apos;] : undefined
+		// const source_event      = (&apos;event&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;event&apos;] : undefined
+		const source_dom_event = (&apos;dom_event&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;dom_event&apos;] : undefined
+		
+		// SOURCES
+		const source_type = (&apos;source_type&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;source_type&apos;] : undefined
+		const source_types = (&apos;source_types&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;source_types&apos;] : (source_type ? [source_type] : undefined)
+
+		const source_selector = (&apos;source_selector&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;source_selector&apos;] : undefined
+		const source_selectors = (&apos;source_selectors&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;source_selectors&apos;] : (source_selector ? [source_selector] : undefined)
+
+		// TARGETS
+		const target_type = (&apos;target_type&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;target_type&apos;] : undefined
+		const target_types = (&apos;target_types&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;target_types&apos;] : (target_type ? [target_type] : undefined)
+
+		const target_selector = (&apos;target_selector&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;target_selector&apos;] : undefined
+		const target_selectors = (&apos;target_selectors&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;target_selectors&apos;] : (target_selector ? [target_selector] : undefined)
+
+		// METHOD
+		const target_method  = (&apos;target_method&apos; in arg_binding_cfg)  ? arg_binding_cfg[&apos;target_method&apos;]  : undefined
+		const target_methods = (&apos;target_methods&apos; in arg_binding_cfg) ? arg_binding_cfg[&apos;target_methods&apos;] : undefined
+		
+		// NORMALIZE SOURCES
+		// console.log(context + &apos;:load:component=%s:binding type=%s:source_selectors&amp;source_types=&apos;, arg_component.get_name(), type, source_selectors, source_types)
+		const sources = source_selectors ? this.normalize_objects(arg_runtime, arg_component, source_selectors, source_types) : undefined
+
+		// NORMALIZE TARGETS
+		// console.log(context + &apos;:load:component=%s:binding type=%s:target_selectors&amp;target_types=&apos;, arg_component.get_name(), type, target_selectors, target_types)
+		const targets = target_selectors ? this.normalize_objects(arg_runtime, arg_component, target_selectors, target_types) : undefined
+
+		// GET STARTING VALUE
+		let starting_value = undefined
+		if ( T.isArray(state_path) &amp;&amp; state_path.length &gt; 0 )
+		{
+			starting_value = arg_component.get_state_value(state_path, undefined)
+			if (! starting_value)
+			{
+				starting_value = arg_runtime.get_state_store().get_state().getIn(state_path, undefined)
+				if (starting_value &amp;&amp; starting_value.toJS)
+				{
+					starting_value = starting_value.toJS()
+				}
+			}
+		}
+
+
+		// BIND SOURCES AND TARGETS
+		console.log(context + &apos;:load:component=%s:binding type=%s&apos;, arg_component.get_name(), type)
+		switch(type)
+		{
+			case &apos;timeline&apos;: {
+				assert( T.isString(source_timeline),       context + format(&apos;:load:component=%s:bad timeline name=%s&apos;,            arg_component.get_name(), source_timeline) )
+				assert( T.isString(source_svc_name),       context + format(&apos;:load:component=%s:bad service name=%s,timeline=%s&apos;, arg_component.get_name(), source_timeline, source_svc_name) )
+				assert( T.isString(source_svc_method),     context + format(&apos;:load:component=%s:bad service name=%s,timeline=%s&apos;, arg_component.get_name(), source_timeline, source_svc_method) )
+				assert( T.isArray(targets) &amp;&amp; targets.length &gt; 0, context + format(&apos;:load:component=%s,timeline=%s:bad targets&apos;,  arg_component.get_name(), source_timeline, source_svc_method) )
+				assert( T.isString(target_method),  context + format(&apos;:load:component=%s,timeline=%s:bad target method=%s&apos;,       arg_component.get_name(), source_timeline, target_method) )
+				
+				return new BindingServiceTimeline(arg_id, arg_runtime, arg_component)
+					.set_state_path(state_path)
+					.set_starting_value(starting_value)
+					.set_source_service_name(source_svc_name)
+					.set_source_service_method(source_svc_method)
+					.set_source_timeline_name(source_timeline)
+					.set_targets_instances_array(targets)
+					.set_target_method_name(target_method)
+					.set_options(options)
+					.build()
+			}
+
+			case &apos;service&apos;: {
+				assert( T.isString(source_svc_name),       context + format(&apos;:load:component=%s:bad service name=%s&apos;,  arg_component.get_name(), source_svc_name) )
+				assert( T.isString(source_svc_method),     context + format(&apos;:load:component=%s:bad method name=%s&apos;,   arg_component.get_name(), source_svc_method) )
+				assert( T.isArray(targets) &amp;&amp; targets.length &gt; 0, context + format(&apos;:load:component=%s:bad targets&apos;,   arg_component.get_name()) )
+				assert( T.isString(target_method),  context + format(&apos;:load:component=%s:bad target method=%s&apos;,        arg_component.get_name(), target_method) )
+
+				return new BindingService(arg_id, arg_runtime, arg_component)
+					.set_state_path(state_path)
+					.set_starting_value(starting_value)
+					.set_source_service_name(source_svc_name)
+					.set_source_service_method(source_svc_method)
+					.set_source_transformation(xform)
+					.set_targets_instances_array(targets)
+					.set_target_method_name(target_method)
+					.set_options(options)
+					.build()
+			}
+
+			case &apos;emitter_jquery&apos;: {
+				assert( T.isArray(sources),         context + format(&apos;:load:component=%s:bad sources array=%s&apos;,       arg_component.get_name()) )
+				assert( T.isArray(targets) &amp;&amp; targets.length &gt; 0, context + format(&apos;:load:component=%s:bad targets&apos;,  arg_component.get_name()) )
+				assert( T.isString(source_dom_event),  context + format(&apos;:load:component=%s:bad source event=%s&apos;,     arg_component.get_name(), source_dom_event) )
+				assert( T.isString(target_method),  context + format(&apos;:load:component=%s:bad target method=%s&apos;,       arg_component.get_name(), target_method) )
+				
+				const streams = []
+				sources.forEach(
+					(jqo)=&gt;{
+						const stream = new Stream( jqo.asEventStream(source_dom_event) )
+						streams.push(stream)
+					}
+				)
+				
+				console.log(context + &apos;:load:component=%s:binding type=%s:event=%s:sources=&apos;, arg_component.get_name(), type, source_dom_event, sources)
+				
+				if (!xform)
+				{
+					xform = (event)=&gt;{
+						const method_cfg = T.isObject(options) ? options.method : undefined
+						const operands   = T.isObject(method_cfg) ? method_cfg.operands : undefined
+						
+						console.log(context + &apos;:load:component=%s:binding type=%s:event=%s:on handler:data=&apos;, arg_component.get_name(), type, source_dom_event, operands)
+						
+						return {
+							is_event_handler:true,
+							component_name:undefined,
+							event_name:source_dom_event,
+							dom_selector:undefined,
+							target:event.target,
+							data:operands
+						}
+					}
+				}
+
+				return new BindingStream(arg_id, arg_runtime, arg_component)
+					.set_stream(streams)
+					.set_state_path(state_path)
+					.set_source_transformation(xform)
+					.set_targets_instances_array(targets)
+					.set_target_method_name(target_method)
+					.set_options(options)
+					.build()
+			}
+
+			case &apos;emitter_dom&apos;: {
+				assert( T.isArray(sources), context + format(&apos;:load:component=%s:bad sources array=%s&apos;,               arg_component.get_name()) )
+				assert( T.isArray(targets) &amp;&amp; targets.length &gt; 0, context + format(&apos;:load:component=%s:bad targets&apos;,  arg_component.get_name()) )
+				assert( T.isString(source_dom_event),  context + format(&apos;:load:component=%s:bad source event=%s&apos;,     arg_component.get_name(), source_dom_event) )
+				assert( T.isString(target_method) || T.isNotEmptyArray(target_methods),  context + format(&apos;:load:component=%s:bad target method=%s:methods=%s&apos;, arg_component.get_name(), target_method, target_methods) )
+				
+				const data = options &amp;&amp; options.method &amp;&amp; options.method.operands ? options.method.operands : undefined
+				const trace_enabled = false
+
+				if ( T.isString(target_method) )
+				{
+					const streams = []
+					sources.forEach(
+						(arg_dom_selector)=&gt;{
+							const stream = new Stream()
+							const handler = (component, dom_event_name, arg_selector, dom_event, dom_event_target, arg_data)=&gt;{
+								const data = {
+									is_event_handler:true,
+									component_name:component.get_name(),
+									event_name:dom_event_name,
+									dom_selector:arg_selector,
+									target:dom_event_target,
+									data:arg_data
+								}
+								
+								console.log(context + &apos;:load:component=%s:binding type=%s:event=%s:on handler:data=&apos;, arg_component.get_name(), type, source_dom_event, data)
+
+								stream.push(data)
+							}
+
+							console.log(context + &apos;:load:component=%s:binding type=%s:event=%s:selector=%s&apos;, arg_component.get_name(), type, source_dom_event, arg_dom_selector)
+							
+							arg_component.on_dom_event(source_dom_event, arg_dom_selector, handler, data, trace_enabled)
+							streams.push(stream)
+						}
+					)
+					
+					// console.log(context + &apos;:load:component=%s:binding type=%s:event=%s:sources=&apos;, arg_component.get_name(), type, source_dom_event, sources)
+					
+					return new BindingStream(arg_id, arg_runtime, arg_component)
+						.set_stream(streams)
+						.set_state_path(state_path)
+						.set_source_transformation(xform)
+						.set_targets_instances_array(targets)
+						.set_target_method_name(target_method)
+						.set_options(options)
+						.build()
+				}
+
+				if ( T.isNotEmptyArray(target_methods) )
+				{
+					const binding_streams = []
+					sources.forEach(
+						(arg_dom_selector)=&gt;{
+							console.log(context + &apos;:load:component=%s:target_methods binding type=%s:event=%s:selector=%s:methods=&apos;, arg_component.get_name(), type, source_dom_event, arg_dom_selector, target_methods)
+							
+							const stream = new Stream()
+							const handler = (component, dom_event_name, arg_selector, dom_event, dom_event_target, arg_data)=&gt;{
+								const data = {
+									is_event_handler:true,
+									component_name:component.get_name(),
+									event_name:dom_event_name,
+									dom_selector:arg_selector,
+									target:dom_event_target,
+									data:arg_data
+								}
+								
+								console.log(context + &apos;:load:component=%s:target_methods binding type=%s:event=%s:on handler:data=&apos;, arg_component.get_name(), type, source_dom_event, data)
+
+								stream.push(data)
+							}
+
+							arg_component.on_dom_event(source_dom_event, arg_dom_selector, handler, data, trace_enabled)
+							
+							_.forEach(targets,
+								(target, index)=&gt;{
+									const method = index &lt; target_methods.length ? target_methods[index] : target_methods[target_methods.length - 1]
+									let method_name = undefined
+									let method_operands = undefined
+									if ( T.isObject(method) )
+									{
+										method_name = method.method
+										method_operands = method.operands
+									}
+									else if ( T.isString(method) )
+									{
+										method_name = method
+										if (data)
+										{
+											method_operands = {
+												method:{
+													operands:data
+												}
+											}
+										}
+									} else {
+										console.warn(context + &apos;:load:component=%s:error bad method:binding type=%s:event=%s:selector=%s:methods=%s&apos;, arg_component.get_name(), type, source_dom_event, arg_dom_selector, target_methods)
+										return
+									}
+
+									console.log(context + &apos;:load:component=%s:target_methods binding type=%s:method_name=%s:method_operands=&apos;, arg_component.get_name(), type, method_name, method_operands)
+
+									const binding_stream = new BindingStream(arg_id, arg_runtime, arg_component)
+										.set_stream(stream)
+										.set_state_path(state_path)
+										.set_source_transformation(xform)
+										.set_targets_instances_array([target])
+										.set_target_method_name(method_name)
+										.set_options(method_operands)
+										.build()
+									binding_streams.push(binding_stream)
+								}
+							)
+						}
+					)
+
+					return binding_streams
+				}
+
+				break
+			}
+
+			case &apos;stream&apos;: {
+				assert( T.isObject(source_stream) &amp;&amp; source_stream.is_stream, context + format(&apos;:load:component=%s:bad source stream&apos;, arg_component.get_name()) )
+				assert( T.isArray(targets) &amp;&amp; targets.length &gt; 0, context + format(&apos;:load:component=%s:bad targets&apos;,  arg_component.get_name()) )
+				assert( T.isString(target_method) || T.isNotEmptyArray(target_methods),  context + format(&apos;:load:component=%s:bad target method=%s&apos;,       arg_component.get_name(), target_method) )
+				
+				console.log(context + &apos;:load:component=%s:target_methods binding type=%s:method_name=%s:method_operands=&apos;, arg_component.get_name(), type, target_method, options)
+				
+				return new BindingStream(arg_id, arg_runtime, arg_component)
+					.set_stream(source_stream)
+					.set_state_path(state_path)
+					.set_source_transformation(xform)
+					.set_targets_instances_array(targets)
+					.set_target_method_name(target_methods ? target_methods : target_method)
+					.set_options(options)
+					.build()
+			}
+
+			default:{
+				console.warn(context + &apos;:load:component=%s:binding type=%s:type not found&apos;, arg_component.get_name(), type)
+			}
+		}
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

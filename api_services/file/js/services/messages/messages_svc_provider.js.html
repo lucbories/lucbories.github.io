@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">js/services/messages/messages_svc_provider.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#default-plugins">default_plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/default_plugins/services_default_plugin.js~DefaultServicesPlugin.html">DefaultServicesPlugin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_route.js~ExecutableRoute.html">ExecutableRoute</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-assets">services/assets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/assets_svc_provider.js~AssetsSvcProvider.html">AssetsSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/executable_route_assets.js~ExecutableRouteAssets.html">ExecutableRouteAssets</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-logs">services/logs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/logs/logs_svc_provider.js~LogsSvcProvider.html">LogsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-messages">services/messages</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/messages/messages_svc_provider.js~MessagesSvcProvider.html">MessagesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-metrics">services/metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics/metrics_svc_provider.js~MetricsSvcProvider.html">MetricsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-middlewares">services/middlewares</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/executable_route_middleware.js~ExecutableRouteMiddleware.html">ExecutableRouteMiddleware</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/middlewares_svc_provider.js~MiddlewaresSvcProvider.html">MiddlewaresSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-ping">services/ping</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/ping/ping_svc_provider.js~PingSvcProvider.html">PingSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-resources">services/resources</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/executable_route_get_resource.js~ExecutableRouteGetResources.html">ExecutableRouteGetResources</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/resources_svc_provider.js~ResourcesSvcProvider.html">ResourcesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-security">services/security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_service.js~SecurityService.html">SecurityService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_consumer.js~SecuritySvcConsumer.html">SecuritySvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_provider.js~SecuritySvcProvider.html">SecuritySvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-todo-crud">services/todo_crud</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_service.js~CrudService.html">CrudService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_consumer.js~CrudSvcConsumer.html">CrudSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_provider.js~CrudSvcProvider.html">CrudSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/executable_route_model_crud.js~ExecutableRouteModelCrud.html">ExecutableRouteModelCrud</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-topology">services/topology</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_service.js~TopologyService.html">TopologyService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_consumer.js~TopologySvcHostConsumer.html">TopologySvcHostConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/services/messages/messages_svc_provider.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import _ from &apos;lodash&apos;
+
+// COMMON IMPORTS
+import T                  from &apos;devapt-core-common/dist/js/utils/types&apos;
+import ServiceProvider    from &apos;devapt-core-common/dist/js/services/service_provider&apos;
+import ServiceResponse    from &apos;devapt-core-common/dist/js/services/service_response&apos;
+import DistributedMessage from &apos;devapt-core-common/dist/js/base/distributed_message&apos;
+import DistributedLogs    from &apos;devapt-core-common/dist/js/base/distributed_logs&apos;
+import DistributedMetrics from &apos;devapt-core-common/dist/js/base/distributed_metrics&apos;
+
+// SERVICES IMPORTS
+
+
+/**
+ * Contextual constant for this file logs.
+ * @private
+ */
+const context = &apos;services/messages/messages_svc_provider&apos;
+
+
+
+/**
+ * Messages service provider class.
+ * 
+ * @author Luc BORIES
+ * @license Apache-2.0
+ * 
+ * @example
+* 	API:
+* 		this._msg_subscriptions = {
+* 			sender name:{
+* 				bus name:{
+* 					channel name:{
+* 						socket: server/browser socket,
+* 						unsubscribe: function
+* 					}
+* 				}
+* 			}
+* 		}
+ */
+export default class MessagesSvcProvider extends ServiceProvider
+{
+	/**
+	 * Create a messages gateway service provider.
+	 * 
+	 * @param {string} arg_provider_name - consumer name.
+	 * @param {Service} arg_service_instance - service instance.
+	 * @param {string} arg_context - logging context label.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_provider_name, arg_service_instance, arg_context=context)
+	{
+		super(arg_provider_name, arg_service_instance, arg_context)
+		
+		/**
+		 * Class test flag.
+		 * @type {boolean}
+		 */
+		this.is_messages_svc_provider = true
+
+		/**
+		 * Messages subscriptions.
+		 * @private
+		 * @type {object}
+		 */
+		this._msg_subscriptions = {}
+	}
+
+
+
+	/**
+	 * Get provider operations names.
+	 * @abstract
+	 * 
+	 * @returns {array}
+	 */
+	get_operations_names()
+	{
+		return [
+			&apos;devapt-msg-describe&apos;, &apos;devapt-msg-recipients&apos;,
+			&apos;devapt-msg-send&apos;,
+			&apos;devapt-msg-subscribe&apos;, &apos;devapt-msg-unsubscribe&apos;, &apos;devapt-msg-subscription&apos;
+		].concat( super.get_operations_names() )
+	}
+
+
+	
+	/**
+	 * Produce service datas on request.
+	 * 
+	 * @param {ServiceRequest} arg_request - service request instance.
+	 * 
+	 * @returns {Promise} - promise of ServiceResponse instance.
+	 */
+	produce(arg_request)
+	{
+		this.enter_group(&apos;produce&apos;)
+
+		if ( ! T.isObject(arg_request) || ! arg_request.is_service_request)
+		{
+			this.leave_group(&apos;produce:error:bad request object.&apos;)
+			return Promise.resolve({error:&apos;bad request object&apos;})
+		}
+
+		const response = new ServiceResponse(arg_request)
+		const operation = arg_request.get_operation()
+		const operands = arg_request.get_operands()
+
+		// DEBUG
+		this.debug(&apos;produce:request for service=&apos; + this.service.get_name() + &apos;:operation=&apos; + operation)
+		// console.log(context + &apos;:produce:request for service=&apos; + this.service.get_name() + &apos;:operation=&apos; + operation)
+
+		// GET BUSES
+		const node = this.get_runtime().get_node()
+		const msg_bus = node.get_msg_bus()
+		const logs_bus = node.get_logs_bus()
+		const metrics_bus = node.get_metrics_bus()
+		const msg_engine = msg_bus.get_bus_engine()
+		const logs_engine = logs_bus.get_bus_engine()
+		const metrics_engine = metrics_bus.get_bus_engine()
+
+
+		if (operation == &apos;devapt-msg-recipients&apos;)
+		{
+			const bus        = operands.length &gt; 0 ? operands[0] : undefined
+			const page_size  = operands.length &gt; 1 ? operands[1] : 99
+			const page_index = operands.length &gt; 2 ? operands[2] : 0
+
+			if (bus == &apos;messages&apos;)
+			{
+				const paged_result = msg_bus.msg_recipients(page_size, page_index)
+				response.set_results(paged_result)
+				this.leave_group(&apos;produce:operation[&apos; + operation + &apos;] for bus [&apos; + bus + &apos;]&apos;)
+				return Promise.resolve(response)
+			}
+
+			if (bus == &apos;logs&apos;)
+			{
+				const paged_result = logs_bus.msg_recipients(page_size, page_index)
+				response.set_results(paged_result)
+				this.leave_group(&apos;produce:operation[&apos; + operation + &apos;] for bus [&apos; + bus + &apos;]&apos;)
+				return Promise.resolve(response)
+			}
+
+			if (bus == &apos;metrics&apos;)
+			{
+				const paged_result = metrics_bus.msg_recipients(page_size, page_index)
+				response.set_results(paged_result)
+				this.leave_group(&apos;produce:operation[&apos; + operation + &apos;] for bus [&apos; + bus + &apos;]&apos;)
+				return Promise.resolve(response)
+			}
+
+			// ERROR: BAD BUS NAME
+			response.set_has_error(true)
+			response.set_error(&apos;bad operands bus [&apos; + bus + &apos;] for operation [&apos; + operation + &apos;]&apos;)
+			response.set_results(operands)
+
+			this.leave_group(&apos;produce:error:operation failure [&apos; + operation + &apos;]:bad operands bus [&apos; + bus + &apos;].&apos;)
+			return Promise.resolve(response)
+		}
+	
+		if (operation == &apos;devapt-msg-describe&apos;)
+		{
+			const buses = {}
+
+			buses[&apos;messages&apos;] = {
+				name:msg_bus.get_name(),
+				type:&apos;messages&apos;,
+				engine:msg_engine.get_name(),
+				channels:msg_engine.channel_list(),
+				recipients:node.get_msg_bus().msg_recipients(99, 0)
+			}
+			
+			buses[&apos;logs&apos;] = {
+				name:logs_bus.get_name(),
+				type:&apos;logs&apos;,
+				engine:logs_engine.get_name(),
+				channels:logs_engine.channel_list(),
+				recipients:node.get_logs_bus().msg_recipients(99, 0)
+			}
+			
+			buses[&apos;metrics&apos;] = {
+				name:metrics_bus.get_name(),
+				type:&apos;metrics&apos;,
+				engine:metrics_engine.get_name(),
+				channels:metrics_engine.channel_list(),
+				recipients:node.get_metrics_bus().msg_recipients(99, 0)
+			}
+
+			response.set_results(buses)
+
+			// DEBUG
+			this.debug(&apos;produce:reply for service=&apos; + this.service.get_name() + &apos;:operation=&apos; + operation, response.get_properties_values())
+			// console.log(context + &apos;:produce:reply for service=&apos; + this.service.get_name() + &apos;:operation=&apos; + operation, response.get_properties_values())
+
+			this.leave_group(&apos;produce:operation[&apos; + operation + &apos;]&apos;)
+			return Promise.resolve(response)
+		}
+
+
+		if (operation == &apos;devapt-msg-send&apos;)
+		{
+			const response_promise = this.produce_send(arg_request)
+			this.leave_group(&apos;produce:[&apos; + operation + &apos;]&apos;)
+			return response_promise
+		}
+
+
+		if (operation == &apos;devapt-msg-subscribe&apos;)
+		{
+			const response_promise = this.produce_subscribe(arg_request)
+			this.leave_group(&apos;produce:[&apos; + operation + &apos;]&apos;)
+			return response_promise
+		}
+
+
+		if (operation == &apos;devapt-msg-unsubscribe&apos;)
+		{
+			const response_promise = this.produce_unsubscribe(arg_request)
+			this.leave_group(&apos;produce:[&apos; + operation + &apos;]&apos;)
+			return response_promise
+		}
+
+
+		if (operation == &apos;devapt-msg-subscription&apos;)
+		{
+			response.set_results([])
+
+			this.leave_group(&apos;produce:[&apos; + operation + &apos;]&apos;)
+			return Promise.resolve(response)
+		}
+
+		this.leave_group(&apos;produce:super.&apos;)
+		return super.produce(arg_request)
+	}
+
+
+	/**
+	 * Produce service datas on send request.
+	 * 
+	 * @param {ServiceRequest} arg_request - service request instance.
+	 * 
+	 * @returns {Promise} - promise of ServiceResponse instance.
+	 */
+	produce_send(arg_request)
+	{
+		this.enter_group(&apos;produce_send&apos;)
+
+		const response = new ServiceResponse(arg_request)
+		const operation = arg_request.get_operation()
+		const operands = arg_request.get_operands()
+		const node = this.get_runtime().get_node()
+
+		// GET REQUEST OPERANDS
+		const sender  = arg_request.get_session_uid()
+		const bus     = operands.length &gt; 0 ? operands[0] : undefined
+		const channel = operands.length &gt; 1 ? operands[1] : &apos;default&apos;
+		const target  = operands.length &gt; 2 ? operands[2] : undefined
+		const payload = operands.length &gt; 3 ? operands[3] : undefined
+
+		if (bus == &apos;messages&apos;)
+		{
+			// CHECK REQUEST OPERANDS
+			if ( ! T.isString(channel) || ! T.isString(target) || ! T.isObject(payload) )
+			{
+				response.set_has_error(true)
+				response.set_error(&apos;bad operands to send a message.&apos;)
+				response.set_results(operands)
+
+				this.leave_group(&apos;produce_send:error:operation failure [&apos; + operation + &apos;]:bad operands to send a message.&apos;)
+				return Promise.resolve(response)
+			}
+
+			const msg = new DistributedMessage(sender, target, payload, channel)
+			node.get_msg_bus().msg_post(msg)
+
+			this.leave_group(&apos;produce_send:operation[&apos; + operation + &apos;] for bus=[&apos; + bus + &apos;], channel=[&apos; + channel + &apos;], target=[&apos; + target + &apos;]&apos;)
+			return Promise.resolve(response)
+		}
+
+		if (bus == &apos;logs&apos;)
+		{
+			// CHECK REQUEST OPERANDS
+			if ( ! T.isString(channel) || ! T.isString(target) || ! T.isObject(payload) )
+			{
+				response.set_has_error(true)
+				response.set_error(&apos;bad operands to send logs.&apos;)
+				response.set_results(operands)
+
+				this.leave_group(&apos;produce_send:error:operation failure [&apos; + operation + &apos;]:bad operands to send logs.&apos;)
+				return Promise.resolve(response)
+			}
+
+			// CHECK LOGS CONTENT
+			if ( ! T.isString(payload.timestamp) || ! T.isString(payload.level) || ! T.isArray(payload.values) )
+			{
+				response.set_has_error(true)
+				response.set_error(&apos;bad operands payload to send logs: {timestamp:&quot;&quot;, level:&quot;&quot;, values:[]}.&apos;)
+				response.set_results(operands)
+
+				this.leave_group(&apos;produce_send:error:operation failure [&apos; + operation + &apos;]:bad operands payload to send logs: {timestamp:&quot;&quot;, level:&quot;&quot;, values:[]}.&apos;)
+				return Promise.resolve(response)
+			}
+
+			const msg = new DistributedLogs(sender, target, payload.timestamp, payload.level, payload.values)
+			node.get_logs_bus().msg_post(msg)
+			
+			this.leave_group(&apos;produce_send:operation[&apos; + operation + &apos;] for bus=[logs]&apos;)
+			return Promise.resolve(response)
+		}
+
+		if (bus == &apos;metrics&apos;)
+		{
+			// CHECK REQUEST OPERANDS
+			if ( ! T.isString(channel) || ! T.isString(target) || ! T.isObject(payload) )
+			{
+				response.set_has_error(true)
+				response.set_error(&apos;bad operands to send metrics.&apos;)
+				response.set_results(operands)
+
+				this.leave_group(&apos;produce_send:error:operation failure [&apos; + operation + &apos;]:bad operands to send metrics.&apos;)
+				return Promise.resolve(response)
+			}
+
+			// CHECK METRICS CONTENT
+			if ( ! T.isString(payload.type) || ! T.isArray(payload.values) )
+			{
+				response.set_has_error(true)
+				response.set_error(&apos;bad operands payload to send metrics: {type:&quot;&quot;, values:[]}.&apos;)
+				response.set_results(operands)
+
+				this.leave_group(&apos;produce_send:error:operation failure [&apos; + operation + &apos;]:bad operands payload to send metrics: {type:&quot;&quot;, values:[]}.&apos;)
+				return Promise.resolve(response)
+			}
+
+			const msg = new DistributedMetrics(sender, target, payload.type, payload.values)
+			node.get_metrics_bus().msg_post(msg)
+			
+			this.leave_group(&apos;produce_send:operation[&apos; + operation + &apos;] for bus=[metrics]&apos;)
+			return Promise.resolve(response)
+		}
+
+		// ERROR: BAD BUS NAME
+		response.set_has_error(true)
+		response.set_error(&apos;bad operands bus [&apos; + bus + &apos;] for operation [&apos; + operation + &apos;]&apos;)
+		response.set_results(operands)
+
+		this.leave_group(&apos;produce_send:error:operation failure [&apos; + operation + &apos;]:bad operands bus [&apos; + bus + &apos;].&apos;)
+		return Promise.resolve(response)
+	}
+
+
+
+	/**
+	 * Produce service datas on subscribe request.
+	 * 
+	 * @param {ServiceRequest} arg_request - service request instance.
+	 * 
+	 * @returns {Promise} - promise of ServiceResponse instance.
+	 */
+	produce_subscribe(arg_request)
+	{
+		this.enter_group(&apos;produce_subscribe&apos;)
+
+		const response = new ServiceResponse(arg_request)
+		const operation = arg_request.get_operation()
+		const operands = arg_request.get_operands()
+		const node = this.get_runtime().get_node()
+
+		// // GET REQUEST OPERANDS
+		const sender  = arg_request.get_session_uid()
+		const bus     = operands.length &gt; 0 ? operands[0] : undefined
+		const channel = operands.length &gt; 1 ? operands[1] : &apos;default&apos;
+		
+		if (bus == &apos;messages&apos;)
+		{
+			// CHECK REQUEST OPERANDS
+			if ( ! T.isString(channel) )
+			{
+				response.set_has_error(true)
+				response.set_error(&apos;bad operands channel to subscribe on messages.&apos;)
+				response.set_results(operands)
+
+				this.leave_group(&apos;produce_subscribe:error:operation failure [&apos; + operation + &apos;]:bad operands channel to subscribe on messages.&apos;)
+				return Promise.resolve(response)
+			}
+
+			// SUBSCRIPTION EXISTS
+			if ( this.has_subscription(sender, bus, channel) )
+			{
+				response.set_has_error(true)
+				response.set_error(&apos;messages subscription already exists for sender [&apos; + sender + &apos;].&apos;)
+				response.set_results(operands)
+
+				this.leave_group(&apos;produce_subscribe:error:operation failure [&apos; + operation + &apos;]:messages subscription already exists for sender [&apos; + sender + &apos;].&apos;)
+				return Promise.resolve(response)
+			}
+
+
+			// CREATE SESSION STREAM
+			const socket = arg_request.get_socket()
+			this._msg_subscriptions[sender] = this.init_subscription(sender, bus, channel, socket)
+
+			const handler = (arg_msg)=&gt;{
+				if (arg_msg.get_target() == sender)
+				{
+					const msg_payload = arg_msg.get_payload()
+					const socket_id = msg_payload.socket_id//.split(&apos;#&apos;)[1]
+					
+					// SERVICE RESPONSE TRANSPORT
+					if ( T.isNotEmptyString(msg_payload.service) &amp;&amp; T.isNotEmptyString(msg_payload.operation) &amp;&amp; T.isArray(msg_payload.results) )
+					{
+						// DEBUG
+						// console.log(context + &apos;:produce_subscribe:handler for service response:socket_id=[%s] service=[%s] operation=[%s] results=[%a]&apos;, socket_id, msg_payload.service, msg_payload.operation, msg_payload.results)
+						
+						const iosrvs = this.get_runtime().socketio_servers
+						const svc_path = &apos;/&apos; + msg_payload.service
+
+						_.forEach(iosrvs,
+							(iosrv)=&gt;{
+								// DEBUG
+								// console.log(&apos;svc_path=[%s],socket_id=[%s], iosrv.of(svc_path)=&apos;, svc_path, socket_id, iosrv.of(svc_path))
+								
+								if (svc_path in iosrv.nsps)
+								{
+									// DEBUG
+									// console.log(&apos;iosrv.of(...).connected&apos;, iosrv.of(svc_path).connected)
+
+									if (socket_id in iosrv.of(svc_path).connected)
+									{
+										// DEBUG
+										// console.log(&apos;iosrv.of(...).connected[socket_id]&apos;, iosrv.of(svc_path).connected[socket_id])
+
+										iosrv.of(svc_path).connected[socket_id].emit(msg_payload.operation, msg_payload)
+									}
+								}
+							}
+						)
+
+						return
+					}
+
+					// OTHERS CASES
+					const payload = { service:this.service.get_name(), operation:&apos;devapt-msg-subscription&apos;, results:[&apos;done&apos;, arg_msg] }
+					
+					// DEBUG
+					// console.log(context + &apos;:produce_subscribe:default handler:socket_id=[%s] service=[%s] operation=[%s] results=[%a]&apos;, socket_id, payload.service, payload.operation, payload.results)
+
+					socket.emit(&apos;devapt-msg-subscription&apos;, payload)
+				}
+			}
+
+			node.get_msg_bus().msg_add_recipient(sender, &apos;browser&apos;)
+			
+			this._msg_subscriptions[sender][bus][channel].unsubscribe = node.get_msg_bus().msg_subscribe(channel, handler, sender)
+			
+			// UNSUBSCRIBE ON SOCKET CLOSE
+			socket.on(&apos;disconnect&apos;, ()=&gt;{
+				if ( this.has_subscription(sender, bus, channel) &amp;&amp; this._msg_subscriptions[sender][bus][channel].unsubscribe )
+				{
+					this._msg_subscriptions[sender][bus][channel].unsubscribe()
+				}
+				node.get_msg_bus().msg_remove_recipient(sender)
+			})
+			socket.on(&apos;end&apos;, ()=&gt;{
+				if ( this.has_subscription(sender, bus, channel) &amp;&amp; this._msg_subscriptions[sender][bus][channel].unsubscribe )
+				{
+					this._msg_subscriptions[sender][bus][channel].unsubscribe()
+				}
+				node.get_msg_bus().msg_remove_recipient(sender)
+			})
+
+			response.set_results([])
+
+			this.leave_group(&apos;produce_subscribe:operation[&apos; + operation + &apos;] for bus=[messages] for sender [&apos; + sender + &apos;]&apos;)
+			return Promise.resolve(response)
+		}
+
+		// ERROR: BAD BUS NAME
+		response.set_has_error(true)
+		response.set_error(&apos;bad operands bus [&apos; + bus + &apos;] for operation [&apos; + operation + &apos;]&apos;)
+		response.set_results(operands)
+
+		this.leave_group(&apos;produce_subscribe:error:operation failure [&apos; + operation + &apos;]:bad operands bus [&apos; + bus + &apos;].&apos;)
+		return Promise.resolve(response)
+	}
+
+
+
+	/**
+	 * Test if a message subscription exists.
+	 * 
+	 * @param {string} arg_sender  - message sender name.
+	 * @param {string} arg_bus     - message bus name.
+	 * @param {string} arg_channel - message channel name.
+	 * 
+	 * @returns {boolean}
+	 */
+	has_subscription(arg_sender, arg_bus, arg_channel)
+	{
+		if (arg_sender in this._msg_subscriptions)
+		{
+			const subscription = this._msg_subscriptions[arg_sender]
+			if (arg_bus in subscription)
+			{
+				if (arg_channel in subscription[arg_bus])
+				{
+					return true
+				}
+			}
+		}
+
+		return false
+	}
+	
+	
+	
+	/**
+	 * Test if a message subscription exists.
+	 * 
+	 * @param {string} arg_sender  - message sender name.
+	 * @param {string} arg_bus     - message bus name.
+	 * @param {string} arg_channel - message channel name.
+	 * @param {Socket} arg_socket  - subscription socket.
+	 * 
+	 * @returns {boolean}
+	 */
+	init_subscription(arg_sender, arg_bus, arg_channel, arg_socket)
+	{
+		let subscription = this._msg_subscriptions[arg_sender]
+		if ( ! subscription)
+		{
+			subscription = {}
+		}
+
+		if ( !(arg_bus in subscription) )
+		{
+			subscription[arg_bus] = {}
+		}
+
+		if ( ! (arg_channel in subscription[arg_bus]) )
+		{
+			subscription[arg_bus][arg_channel] = {
+				socket:arg_socket,
+				unsubscribe: undefined
+			}
+		}
+
+		return subscription
+	}
+	
+	
+	
+	/**
+	 * Produce service datas on unsubscribe request.
+	 * 
+	 * @param {ServiceRequest} arg_request - service request instance.
+	 * 
+	 * @returns {Promise} - promise of ServiceResponse instance.
+	 */
+	produce_unsubscribe(arg_request)
+	{
+		this.enter_group(&apos;produce_unsubscribe&apos;)
+
+		const response = new ServiceResponse(arg_request)
+		const operation = arg_request.get_operation()
+		const operands = arg_request.get_operands()
+
+		// // GET REQUEST OPERANDS
+		const sender  = arg_request.get_session_uid()
+		const bus     = operands.length &gt; 0 ? operands[0] : undefined
+		const channel = operands.length &gt; 1 ? operands[1] : &apos;default&apos;
+		
+		if (bus == &apos;messages&apos;)
+		{
+			// CHECK REQUEST OPERANDS
+			if ( ! T.isString(channel) )
+			{
+				response.set_has_error(true)
+				response.set_error(&apos;bad operands channel to unsubscribe for messages.&apos;)
+				response.set_results(operands)
+
+				this.leave_group(&apos;produce_unsubscribe:error:operation failure [&apos; + operation + &apos;]:bad operands channel to unsubscribe for messages.&apos;)
+				return Promise.resolve(response)
+			}
+
+			// CHECK SUBSCRIPTION
+			if ( ! this.has_subscription(sender, bus, channel) )
+			{
+				response.set_has_error(true)
+				response.set_error(&apos;messages subscription doesn t exists for sender [&apos; + sender + &apos;].&apos;)
+				response.set_results(operands)
+
+				this.leave_group(&apos;produce_unsubscribe:error:operation failure [&apos; + operation + &apos;]:messages subscription doesn t exists for sender [&apos; + sender + &apos;].&apos;)
+				return Promise.resolve(response)
+			}
+			const subscription = this._msg_subscriptions[sender][bus][channel]
+
+			// REMOVE SESSION STREAM
+			const unsubscribe_fn = subscription.unsubscribe
+			if (unsubscribe_fn)
+			{
+				unsubscribe_fn()
+			}
+			delete this._msg_subscriptions[sender][bus][channel]
+
+			this.leave_group(&apos;produce_unsubscribe:operation[&apos; + operation + &apos;] for bus=[messages] for sender [&apos; + sender + &apos;]&apos;)
+			return Promise.resolve(response)
+		}
+
+		// ERROR: BAD BUS NAME
+		response.set_has_error(true)
+		response.set_error(&apos;bad operands bus [&apos; + bus + &apos;] for operation [&apos; + operation + &apos;]&apos;)
+		response.set_results(operands)
+
+		this.leave_group(&apos;produce_unsubscribe:error:operation failure [&apos; + operation + &apos;]:bad operands bus [&apos; + bus + &apos;].&apos;)
+		return Promise.resolve(response)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

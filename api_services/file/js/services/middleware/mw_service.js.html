@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">js/services/middleware/mw_service.js | API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <a data-ice="repoURL" href="https://github.com/lucbories/devapt-core-doc" class="repo-url-github">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">default_plugins</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/default_plugins/services_default_plugin.js~DefaultServicesPlugin.html">DefaultServicesPlugin</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">executables</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_route.js~ExecutableRoute.html">ExecutableRoute</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">services/assets</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/assets_svc_provider.js~AssetsSvcProvider.html">AssetsSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/executable_route_assets.js~ExecutableRouteAssets.html">ExecutableRouteAssets</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/unused_assets_service.js~AssetsService.html">AssetsService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/unused_assets_svc_consumer.js~AssetsSvcConsumer.html">AssetsSvcConsumer</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">services/crud</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/crud/crud_service.js~CrudService.html">CrudService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/crud/crud_svc_consumer.js~CrudSvcConsumer.html">CrudSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/crud/crud_svc_provider.js~CrudSvcProvider.html">CrudSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/crud/executable_route_model_crud.js~ExecutableRouteModelCrud.html">ExecutableRouteModelCrud</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">services/logs</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/logs/logs_svc_provider.js~LogsSvcProvider.html">LogsSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/logs/unused_logs_service.js~LogsService.html">LogsService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/logs/unused_logs_svc_consumer.js~LogsSvcConsumer.html">LogsSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/logs/unused_logs_svc_provider.js~LogsSvcProvider.html">LogsSvcProvider</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">services/messages</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/messages/messages_svc_provider.js~MessagesSvcProvider.html">MessagesSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/messages/unused_messages_service.js~MessagesService.html">MessagesService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/messages/unused_messages_svc_consumer.js~MessagesSvcConsumer.html">MessagesSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/messages/unused_messages_svc_provider.js~MessagesSvcProvider.html">MessagesSvcProvider</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">services/metrics_bus</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics_bus/metrics_service.js~MetricsBusService.html">MetricsBusService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics_bus/metrics_svc_consumer.js~MetricsSvcBusConsumer.html">MetricsSvcBusConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics_bus/metrics_svc_provider.js~MetricsBusSvcProvider.html">MetricsBusSvcProvider</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">services/metrics_host</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics_host/metrics_service.js~MetricsHostService.html">MetricsHostService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics_host/metrics_svc_consumer.js~MetricsSvcHostConsumer.html">MetricsSvcHostConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics_host/metrics_svc_provider.js~MetricsHostSvcProvider.html">MetricsHostSvcProvider</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">services/metrics_http</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics_http/metrics_service.js~MetricsService.html">MetricsService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics_http/metrics_svc_consumer.js~MetricsSvcConsumer.html">MetricsSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics_http/metrics_svc_provider.js~MetricsSvcProvider.html">MetricsSvcProvider</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">services/metrics_nodejs</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics_nodejs/metrics_service.js~MetricsNodeJsService.html">MetricsNodeJsService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics_nodejs/metrics_svc_consumer.js~MetricsSvcNodeJsConsumer.html">MetricsSvcNodeJsConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics_nodejs/metrics_svc_provider.js~MetricsNodeJsSvcProvider.html">MetricsNodeJsSvcProvider</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">services/middleware</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middleware/executable_route_middleware.js~ExecutableRouteMiddleware.html">ExecutableRouteMiddleware</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middleware/mw_service.js~MidlewareService.html">MidlewareService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middleware/mw_svc_consumer.js~MiddlewareSvcConsumer.html">MiddlewareSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middleware/mw_svc_provider.js~MiddlewareSvcProvider.html">MiddlewareSvcProvider</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">services/ping</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/ping/ping_svc_provider.js~PingSvcProvider.html">PingSvcProvider</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">services/resource</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resource/executable_route_get_resource.js~ExecutableRouteGetResources.html">ExecutableRouteGetResources</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resource/resources_service.js~ResourcesService.html">ResourcesService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resource/resources_svc_consumer.js~ResourcesSvcConsumer.html">ResourcesSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resource/resources_svc_provider.js~ResourcesSvcProvider.html">ResourcesSvcProvider</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">services/security</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_service.js~SecurityService.html">SecurityService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_consumer.js~SecuritySvcConsumer.html">SecuritySvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_provider.js~SecuritySvcProvider.html">SecuritySvcProvider</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">services/topology</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_service.js~TopologyService.html">TopologyService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_consumer.js~TopologySvcHostConsumer.html">TopologySvcHostConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/services/middleware/mw_service.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// SERVER IMPORTS
+import BaseService from &apos;../base/base_service&apos;
+import MidlewareSvcProvider from &apos;./mw_svc_provider&apos;
+import MidlewareSvcConsumer from &apos;./mw_svc_consumer&apos;
+
+
+let context = &apos;server/services/middleware/mw_service&apos;
+
+
+
+/**
+ * Midleware service class for middleware routes.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class MidlewareService extends BaseService
+{
+	/**
+	 * Create a middleware service.
+	 * @param {string} arg_svc_name - service name
+	 * @param {object} arg_service_settings - service settings
+	 * @param {string} arg_context - logging context label
+	 * @returns {nothing}
+	 */
+	constructor(arg_svc_name, arg_service_settings, arg_context)
+	{
+		super(arg_svc_name, arg_service_settings, arg_context ? arg_context : context)
+		
+		this.is_mw_service = true
+	}
+	
+	
+	/**
+	 * Create a service provider.
+	 * @param {string} arg_name - provider name
+	 * @param {Service} arg_service - service instance
+	 * @returns {ServiceProvider} - service provider instance
+	 */
+	create_provider(arg_name, arg_service)
+	{
+		// TODO: why not this in place of arg_service
+		return new MidlewareSvcProvider(arg_name, arg_service)
+	}
+	
+	
+	/**
+	 * Create a service consumer.
+	 * @returns {ServiceConsumer} - service consumer instance
+	 */
+	create_consumer()
+	{
+		return new MidlewareSvcConsumer(this.get_name() + &apos;_consumer_&apos; + this.get_id(), this)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.5.2)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

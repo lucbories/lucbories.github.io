@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/security/authentication_plugin_lowdb.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/runtime.js~Runtime.html">Runtime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/security.js~Security.html">Security</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/transaction.js~Transaction.html">Transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-runtime_singleton">runtime_singleton</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics">metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/metric_duration.js~MetricDuration.html">MetricDuration</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-base">metrics/base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_collector.js~MetricsCollector.html">MetricsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_record.js~MetricsRecord.html">MetricsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_reducer.js~MetricsReducer.html">MetricsReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_state.js~MetricsState.html">MetricsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-bus">metrics/bus</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_collector.js~MetricsBusCollector.html">MetricsBusCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_record.js~MetricsBusRecord.html">MetricsBusRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_reducer.js~MetricsBusReducer.html">MetricsBusReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_state.js~MetricBusState.html">MetricBusState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-host">metrics/host</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_collector.js~MetricsHostCollector.html">MetricsHostCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_record.js~MetricsHostRecord.html">MetricsHostRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_reducer.js~MetricsHostReducer.html">MetricsHostReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_state.js~MetricHostState.html">MetricHostState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-http">metrics/http</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_collector.js~MetricsHttpCollector.html">MetricsHttpCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_record.js~MetricsHttpRecord.html">MetricsHttpRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_reducer.js~MetricHttpReducer.html">MetricHttpReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_state.js~MetricsHttpState.html">MetricsHttpState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-nodejs">metrics/nodejs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_collector.js~MetricsNodeJsCollector.html">MetricsNodeJsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_record.js~MetricsNodeJsRecord.html">MetricsNodeJsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_reducer.js~MetricsNodeReducer.html">MetricsNodeReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_state.js~MetricNodeJsState.html">MetricNodeJsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#nodes">nodes</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/bus_node_feature.js~BusNodeFeature.html">BusNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/metrics_node_feature.js~MetricsNodeFeature.html">MetricsNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node.js~Node.html">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_feature.js~NodeFeature.html">NodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_messaging.js~NodeMessaging.html">NodeMessaging</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/servers_node_feature.js~ServersNodeFeature.html">ServersNodeFeature</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#plugins">plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/features_manager.js~FeaturesManager.html">FeaturesManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_factory.js~PluginsFactory.html">PluginsFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_manager.js~PluginsManager.html">PluginsManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/rendering_manager.js~RenderingManager.html">RenderingManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_manager.js~ServersManager.html">ServersManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_plugin.js~ServersPlugin.html">ServersPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/services_manager.js~ServicesManager.html">ServicesManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/runtime_executable.js~RuntimeExecutable.html">RuntimeExecutable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage0_create_local_node_executable.js~RuntimeStage0Executable.html">RuntimeStage0Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage1_define_topology_executable.js~RuntimeStage1Executable.html">RuntimeStage1Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage2_load_local_topology_executable.js~RuntimeStage2Executable.html">RuntimeStage2Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage3_start_local_node_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage3_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage4_executable.js~RuntimeStage4Executable.html">RuntimeStage4Executable</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security">security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_manager.js~AuthenticationManager.html">AuthenticationManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin.js~AuthenticationPlugin.html">AuthenticationPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin_lowdb.js~AuthenticationLowDbPlugin.html">AuthenticationLowDbPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_wrapper.js~AuthenticationWrapper.html">AuthenticationWrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authorization_manager.js~AuthorizationManager.html">AuthorizationManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security-todo">security/todo</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport.js~AuthenticationPluginPassport.html">AuthenticationPluginPassport</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local.js~AuthenticationPluginPassportLocal.html">AuthenticationPluginPassportLocal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_db.js~AuthenticationPluginPassportLocalDb.html">AuthenticationPluginPassportLocalDb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_file.js~AuthenticationPluginPassportLocalFile.html">AuthenticationPluginPassportLocalFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#servers">servers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/express_server.js~ExpressServer.html">ExpressServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/logs_server.js~LogsServer.html">LogsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/metrics_server.js~MetricsServer.html">MetricsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/restify_server.js~RestifyServer.html">RestifyServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/routable_server.js~RoutableServer.html">RoutableServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/server.js~Server.html">Server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServerTypes">ServerTypes</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">services</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/routes_svc_consumer.js~RoutesSvcConsumer.html">RoutesSvcConsumer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-uused-base">services/uused_base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_service_exec_provider.js~ServiceExecProvider.html">ServiceExecProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_socketio_service_provider.js~SocketIOServiceProvider.html">SocketIOServiceProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/security/authentication_plugin_lowdb.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert   from &apos;assert&apos;
+import lowdb    from &apos;lowdb&apos;
+import FileSync  from &apos;lowdb/adapters/FileSync&apos;
+import path     from &apos;path&apos;
+
+// COMMON IMPORTS
+import T from &apos;devapt-core-common/dist/js/utils/types&apos;
+
+// SERVER IMPORTS
+import runtime from &apos;../base/runtime&apos;
+import AuthenticationPlugin from &apos;./authentication_plugin&apos;
+
+
+let context = &apos;server/security/authentication_lowdb_plugin&apos;
+
+
+
+/**
+ * Authentication class with a LowDb user/login database.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class AuthenticationLowDbPlugin extends AuthenticationPlugin
+{
+	/**
+	 * Create an Authentication plugin class based on query parameters.
+	 * 
+	 * @param {AuhtenticationManager} arg_manager - authentication plugins manager.
+	 * @param {string} arg_name - plugin name.
+	 * @param {string|undefined} arg_log_context - optional.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_manager, arg_name, arg_log_context)
+	{
+		super(runtime, arg_manager, arg_name, &apos;AuthenticationLowDbPlugin&apos;, arg_log_context ? arg_log_context : context)
+		
+		this.is_authentication_lowdb_plugin = true
+		
+		// this.is_trace_enabled = true
+	}
+	
+	
+	
+	/**
+	 * Enable authentication plugin with contextual informations.
+	 * 
+	 * @param {object|undefined} arg_settings - optional contextual settings.
+	 * 
+	 * @returns {object} - a promise object of a boolean result (success:true, failure:false)
+	 */
+	enable(arg_settings)
+	{
+		this.enter_group(&apos;enable&apos;)
+		
+		const self = this
+		
+		// console.log(arg_settings, &apos;arg_settings&apos;)
+		
+		// GET SETTINGS PLAIN OBJECT
+		arg_settings = T.isFunction(arg_settings.toJS) ? arg_settings.toJS() : arg_settings
+		
+		// CALL BASE CLASS METHOD
+		let resolved_promise = super.enable(arg_settings)
+		
+		// SET FIELD NAMES FOR USER NAME
+		if (arg_settings &amp;&amp; T.isString(arg_settings.username_fieldname) )
+		{
+			this.username_fieldname = arg_settings.username_fieldname
+		}
+		
+		// SET FIELD NAMES FOR PASSWORD
+		if (arg_settings &amp;&amp; T.isString(arg_settings.password_fieldname) )
+		{
+			this.password_fieldname = arg_settings.password_fieldname
+		}
+		
+		// SET FIELD NAMES FOR ID
+		if (arg_settings &amp;&amp; T.isString(arg_settings.id_fieldname) )
+		{
+			this.id_fieldname = arg_settings.id_fieldname
+		}
+		
+		// SET REDIRECTION ROUTE ON SUCCESS
+		if (arg_settings &amp;&amp; T.isString(arg_settings.success_redirect) )
+		{
+			this.success_redirect = arg_settings.success_redirect
+		}
+		
+		// SET REDIRECTION ROUTE ON FAILURE
+		if (arg_settings &amp;&amp; T.isString(arg_settings.failure_redirect) )
+		{
+			this.failure_redirect = arg_settings.failure_redirect
+		}
+		
+		// SET USE OF SESSION FLAG
+		if (arg_settings &amp;&amp; T.isBoolean(arg_settings.use_session) )
+		{
+			this.use_session = arg_settings.use_session
+		}
+		
+		// SET FILE NAME
+		this.file_name = null
+		if (arg_settings &amp;&amp; T.isString(arg_settings.file_name) )
+		{
+			this.file_name = arg_settings.file_name
+		}
+		
+		// LOAD FILE DB
+		this.file_db = null
+		if (this.file_name)
+		{
+			resolved_promise = resolved_promise.then(
+				function()
+				{
+					const base_dir = runtime.get_setting(&apos;base_dir&apos;, null)
+					assert( T.isString(base_dir), context + &apos;:enable:bad base dir string&apos;)
+					
+					const json_full_path = path.join(base_dir, &apos;../resources&apos;, self.file_name)
+					// console.log(json_full_path, &apos;json_full_path&apos;)
+					
+					self.file_adapter = new FileSync(json_full_path)
+					self.file_db = lowdb(self.file_adapter)
+					
+					// console.log(self.file_db.object, &apos;self.file_db.object&apos;)
+					// console.log( require(json_full_path), &apos;self.file_db JSON file&apos;)
+					
+					self.leave_group(&apos;enable (async:resolved)&apos;)
+				}
+			)
+			resolved_promise.catch(
+				(reason) =&gt; {
+					self.leave_group(&apos;enable (async:error)&apos;)
+					self.error(&apos;failed to load db file:&apos; + reason)
+					console.error(&apos;failed to load db file:&apos; + reason)
+				}
+			)
+		}
+		
+		this.leave_group(&apos;enable (async:waiting)&apos;)
+		return resolved_promise
+	}
+	
+	
+	
+	/**
+	 * Disable authentication plugin with contextual informations.
+	 * 
+	 * @param {object|undefined} arg_settings - optional contextual settings.
+	 * 
+	 * @returns {object} - a promise object of a boolean result (success:true, failure:false)
+	 */
+	disable(arg_settings)
+	{
+		const resolved_promise = super.disable(arg_settings)
+		return resolved_promise
+	}
+	
+	
+	
+	/**
+	 * Get a authentication middleware to use on servers (see Connect/Express middleware signature).
+	 * 
+	 * @param {boolean} arg_should_401 - should send an 401 error on authentication failure.
+	 * @param {Function} arg_next_auth_mw - next authentication middleware.
+	 * 
+	 * @returns {Function} - function(request,response,next){...}
+	 */
+	create_middleware(arg_should_401, arg_next_auth_mw)
+	{
+		const self = this
+		self.debug(&apos;create_middleware&apos;)
+		// console.log(&apos;auth_lowdb_plugin.create_middleware&apos;)
+		
+		const auth_mgr = runtime.security().get_authentication_manager()
+		
+		return (req, res, next) =&gt; {
+			let credentials = undefined
+			try{
+				credentials = auth_mgr.get_credentials(req)
+			} catch(e)
+			{
+				console.error(context + &apos;:create_middleware:middleware:exception&apos;, e)
+				self.error(context + &apos;:create_middleware:middleware:exception&apos;, e)
+				next(&apos;Authentication failure(exception)&apos;)
+				return
+			}
+			
+			// DEBUG
+			// console.log(&apos;auth_lowdb_plugin.create_middleware:credential=&apos;, credentials)
+			
+			if ( auth_mgr.check_request_authentication(req) )
+			{
+				// console.log(context + &apos;:auth_lowdb_plugin.create_middleware.request is already authenticated&apos;)
+				self.debug(&apos;auth_lowdb_plugin.create_middleware.request is already authenticated&apos;)
+				next()
+				return
+			}
+			else
+			{
+				// console.log(context + &apos;:auth_lowdb_plugin.create_middleware:not authenticated with credentials&apos;/*, credentials*/)
+				self.debug(&apos;auth_lowdb_plugin.create_middleware:not authenticated with credentials&apos;/*, credentials*/)
+			}
+			
+			
+			this.authenticate(credentials)
+			.then(
+				(result) =&gt; {
+					// console.log(context + &apos;:auth_lowdb_plugin.create_middleware.authenticate then&apos;)
+					self.debug(&apos;auth_lowdb_plugin.create_middleware.authenticate then&apos;)
+					
+					// SUCCESS
+					if (result)
+					{
+						// console.log(context + &apos;:auth_lowdb_plugin.create_middleware.authenticate then:next&apos;)
+						self.debug(&apos;auth_lowdb_plugin.create_middleware.authenticate then:next&apos;)
+						
+						req.is_authenticated = true
+						next()
+						return
+					}
+					
+					// FAILURE WITH ERROR
+					if (arg_should_401)
+					{
+						// SEND OUTPUT
+						res.status(401)
+						res.contentType = &apos;json&apos;
+						res.send({ message: &apos;Authentication failure&apos; })
+						
+						// console.log(context + &apos;:auth_lowdb_plugin.create_middleware.authenticate then:auth failure&apos;)
+						self.debug(&apos;auth_lowdb_plugin.create_middleware.authenticate then:auth failure&apos;)
+						
+						next(&apos;Authentication failure&apos;)
+						return
+					}
+					
+					// FAILURE WITHOUT ERROR
+					// console.log(context + &apos;:auth_lowdb_plugin.create_middleware.authenticate failure without error:next&apos;)
+					self.debug(&apos;auth_lowdb_plugin.create_middleware.authenticate failure without error:next&apos;)
+					
+					if (arg_next_auth_mw)
+					{
+						arg_next_auth_mw(req, res, next)
+						return
+					}
+					next()
+					return
+				}
+			)
+			.catch(
+				(reason) =&gt; {
+					// console.log(context + &apos;:auth_lowdb_plugin.create_middleware.authenticate exception&apos;, reason)
+					self.debug(&apos;auth_lowdb_plugin.create_middleware.authenticate exception&apos;, reason)
+					
+					// SEND OUTPUT
+					res.status(401)
+					res.contentType = &apos;json&apos;
+					res.send({ message: reason })
+					
+					next(reason)
+				}
+			)
+		}
+	}
+	
+	
+	
+	/**
+	 * Authenticate a user with a file giving request credentials.
+	 * 
+	 * @param {Credentials|undefined} arg_credentials - request credentials object.
+	 * 
+	 * @returns {object} - a promise of boolean.
+	 */
+	authenticate(arg_credentials)
+	{
+		this.debug(&apos;authenticate&apos;)
+		// console.log(arg_credentials, context + &apos;:authenticate:arg_credentials&apos;)
+		
+		if (! this.file_db)
+		{
+			this.debug(&apos;authenticate:failure:bad db&apos;)
+			return Promise.resolve(false)
+		}
+		// assert( T.isFunction(this.file_db), context + &apos;:authenticate:bad db object&apos;)
+		assert( T.isObject(arg_credentials) &amp;&amp; arg_credentials.is_credentials, context + &apos;:authenticate:bad credentials object&apos;)
+		arg_credentials = arg_credentials.get_credentials()
+
+		// HAS AUTHENTICATION INFORMATIONS
+		if ( !(T.isString(arg_credentials.user_name) &amp;&amp; T.isString(arg_credentials.user_pass_digest)) )
+		{
+			this.debug(&apos;authenticate:failure:no credentials&apos;, arg_credentials)
+			return Promise.resolve(false)
+		}
+		// assert( T.isString(arg_credentials.user_name), context + &apos;:authenticate:bad credentials.user_name string&apos;)
+		// assert( T.isString(arg_credentials.user_pass_digest), context + &apos;:authenticate:bad credentials.user_pass_digest string&apos;)
+		
+		// CREATE QUERY
+		const username_field = this.username_fieldname ? this.username_fieldname : &apos;username&apos;
+		const password_field = this.id_password_fieldnamefieldname ? this.password_fieldname : &apos;password&apos;
+		let query = {}
+		query[username_field] = arg_credentials.user_name
+		query[password_field] = arg_credentials.user_pass_digest
+		
+		// EXECUTE QUERY
+		try{
+			// console.log(context + &apos;.authenticate:db&apos;, this.file_db)
+			// console.log(context + &apos;.authenticate:db&apos;, this.file_db.object)
+			// console.log(context + &apos;.authenticate:query&apos;, query)
+			
+			const users = this.file_db.get(&apos;users&apos;).find(query).value()
+			if (users)
+			{
+				// const first_user = (T.isArray(users) &amp;&amp; users.length &gt; 0) ? users[0] : (T.isObject(users) ? users : null)
+				const first_user = users
+				if ( T.isFunction(arg_credentials.done_cb) )
+				{
+					arg_credentials.done_cb(first_user)
+				}
+				// console.log(&apos;authenticate user found&apos;)
+				
+				this.debug(&apos;authenticate:success&apos;)
+				return Promise.resolve(true)
+			}
+		}
+		catch(e)
+		{
+			console.error(&apos;authenticate user error&apos;, e)
+		}
+		
+		// console.log(&apos;authenticate user NOT found&apos;)
+		
+		this.debug(&apos;authenticate:failure for&apos;, arg_credentials)
+		return Promise.resolve(false)
+	}
+	
+	
+	
+	/**
+	 * Get user id from a user record.
+	 * 
+	 * @param {object} arg_user_record - user record object.
+	 * 
+	 * @returns {string} - user id.
+	 */
+	get_user_id(arg_user_record)
+	{
+		const id_field = this.id_fieldname ? this.id_fieldname : &apos;id&apos;
+		return ( T.isObject(arg_user_record) &amp;&amp; (id_field in arg_user_record) ) ? arg_user_record[id_field] : null
+	}
+	
+	
+	
+	/**
+	 * Get user record by its id.
+	 * 
+	 * @param {string} arg_user_id - user id.
+	 * 
+	 * @returns {string} - user id.
+	 */
+	get_user_by_id(arg_user_id)
+	{
+		assert( T.isFunction(this.file_db), context + &apos;:get_user_by_id:bad db object&apos;)
+		
+		// CREATE QUERY
+		const id_field = this.id_fieldname ? this.id_fieldname : &apos;id&apos;
+		let query = {}
+		query[id_field] = arg_user_id
+		
+		// EXECUTE QUERY
+		try{
+			let users = this.file_db(&apos;users&apos;).find(query)
+			if (users)
+			{
+				return (T.isArray(users) &amp;&amp; users.length &gt; 0) ? users[0] : (T.isObject(users) ? users : null)
+			}
+		}
+		catch(e)
+		{
+		}
+		
+		return null
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

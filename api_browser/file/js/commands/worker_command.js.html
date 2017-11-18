@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/commands/worker_command.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/commands/worker_command.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+// import assert from &apos;assert&apos;
+
+// COMMON IMPORTS
+import T from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+
+// BROWSER IMPORTS
+import Command from &apos;./command&apos;
+
+
+const context = &apos;browser/commands/worker_command&apos;
+
+
+
+/**
+ * Web worker command class.
+ * 
+ * @author Luc BORIES
+ * @license Apache-2.0
+ * 
+ * @example
+ * 
+ * 	API:
+ * 		-&gt;do():Promise - do display.
+ * 		-&gt;undo():Promise - undo display and display history previous content.
+ * 		-&gt;start()
+ * 		-&gt;stop()
+ */
+export default class WorkerCommand extends Command
+{
+	/**
+	 * Creates a web worker command instance.
+	 * 
+	 * Command configuration is a simple object with:
+	 * 		- url: local script url
+	 * 
+	 * @param {object} arg_runtime - client runtime.
+	 * @param {object} arg_settings - command settings.
+	 * @param {string} arg_log_context - context of traces of this instance (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_settings, arg_log_context=context)
+	{
+		super(arg_runtime, arg_settings, arg_log_context)
+		
+		/**
+		 * Class type flag.
+		 * @type {boolean}
+		 */
+		this.is_worker_command = true
+
+		this._worker = undefined
+		this._worker_promise = undefined
+
+		this._script_url = T.isObject(this._settings) &amp;&amp; T.isNotEmptyString(this._settings.script_url) ? this._settings.script_url : undefined
+		this._script_operands = T.isObject(this._settings) &amp;&amp; this._settings.script_operands ? this._settings.script_operands : undefined
+		
+		// this.enable_trace()
+		// this.update_trace_enabled()
+	}
+
+
+
+	/**
+	 * Check if command settings is valid.
+	 * 
+	 * @returns {boolean}
+	 */
+	is_valid()
+	{
+		const has_url  = T.isNotEmptyString(this._script_url) || this._script_operands == undefined
+		
+		return has_url
+	}
+
+
+
+	/**
+	 * Do command.
+	 * 
+	 * @returns {Promise}
+	 */
+	_do()
+	{
+		// WORKER NOT SUPPORTED
+		if (typeof(Worker) === &quot;undefined&quot;)
+		{
+			return Promise.reject(context + &apos;:do:worker is not supported&apos;)
+		}
+
+		// WORKER ALREADY EXISTS
+		if (typeof(this._worker) !== &quot;undefined&quot;)
+		{
+			return this._worker_promise &amp;&amp; this._worker_promise.then ? this._worker_promise : Promise.reject(context + &apos;:&apos; + this.get_name() + &apos;:bad worker promise&apos;)
+		}
+
+		// CREATE WORKER
+		const resolve_fn = (results)=&gt;{
+			return results
+		}
+
+		const reject_fn = (err)=&gt;{
+			return err
+		}
+
+		if ( ! this.is_valid() )
+		{
+			return Promise.reject(context + &apos;:do:bad settings&apos;)
+		}
+
+		this._worker = new Worker(this._script_url)
+		this._worker.onmessage = function(event){
+			resolve_fn(event.data)
+		}
+		
+		this._worker.onerror = function(error){
+			reject_fn(error)
+		}
+
+		this._worker_promise = new Promise(resolve_fn, reject_fn)
+		this._worker_promise.then(
+			(results)=&gt;{
+				this.stop()
+				return results
+			}
+		)
+
+		// START
+		this._worker.postMessage(this._script_operands)
+
+		return this._worker_promise
+	}
+
+
+
+	/**
+	 * Undo command.
+	 * 
+	 * @returns {Promise}
+	 */
+	_undo()
+	{
+		if (typeof(Worker) === &quot;undefined&quot;)
+		{
+			return Promise.reject(context + &apos;:undo:worker is not supported&apos;)
+		}
+
+		return Promise.reject(context + &apos;:undo:not yet implemented&apos;)
+	}
+
+
+
+	/**
+	 * Stop worker.
+	 */
+	stop()
+	{
+		if (typeof(this._worker) !== &quot;undefined&quot;)
+		{
+			this._worker.terminate()
+			this._worker = undefined
+			// this._worker_promise = undefined // DO NOT DELETE RESULTS PROMISE
+		}
+	}
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

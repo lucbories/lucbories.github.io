@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/runtime/ui_factory.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/runtime/ui_factory.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+// import _ from &apos;lodash&apos;
+import { fromJS } from &apos;immutable&apos;
+
+// COMMON IMPORTS
+import T        from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+import Loggable from &apos;../../../node_modules/devapt-core-common/dist/js/base/loggable&apos;
+
+// BROWSER IMPORTS
+import Component       from &apos;../base/component&apos;
+import Container       from &apos;../base/container&apos;
+import Table           from &apos;../components/table&apos;
+import LogsTable       from &apos;../components/logs_table&apos;
+import AttributesTable from &apos;../components/attributes_table&apos;
+import Dock            from &apos;../components/dock&apos;
+import DockItem        from &apos;../components/dock_item&apos;
+import Tabs            from &apos;../components/tabs&apos;
+import Tree            from &apos;../components/tree&apos;
+import TableTree       from &apos;../components/table_tree&apos;
+import Topology        from &apos;../components/topology&apos;
+import RecordsTable    from &apos;../components/records_table&apos;
+import InputField      from &apos;../components/input-field&apos;
+
+
+
+const context = &apos;browser/runtime/ui_factory&apos;
+const DEBUG_TRACE_FIND_STATE=false
+
+
+
+/**
+ * @file UI factory class.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class UIFactory extends Loggable
+{
+	/**
+	 * Create a UI factory instance.
+	 * 
+	 * 	API:
+	 * 		-&gt;constructor(arg_runtime, arg_store)
+	 * 		-&gt;get(arg_name):Component - Get a UI component by its name.
+	 * 		-&gt;create(arg_name):Component - Create a UI component.
+	 * 		-&gt;find_component_desc(arg_state, arg_name, arg_state_path = []):Immutable.Map|undefined - Find a UI component state.
+	 * 
+	 * @param {object} arg_runtime - client runtime.
+	 * @param {object} arg_store - UI components state store.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_store)
+	{
+		super(context, arg_runtime.get_logger_manager())
+
+		this.is_ui_factory = true
+
+		this._runtime = arg_runtime
+		this._store = arg_store
+		this._cache = {}
+		this._state_by_path = {}
+		
+		// this.update_trace_enabled()
+	}
+	
+	
+	
+	/**
+	 * Get a UI component by its name.
+	 * 
+	 * @param {string} arg_name - component name.
+	 * 
+	 * @returns {Component}
+	 */
+	get(arg_name)
+	{
+		if (arg_name in this._cache)
+		{
+			return this._cache[arg_name]
+		}
+		
+		return this.create_local(arg_name)
+	}
+	
+	
+	
+	/**
+	 * Test a UI component by its name.
+	 * 
+	 * @param {string} arg_name - component name.
+	 * 
+	 * @returns {boolean}
+	 */
+	has(arg_name)
+	{
+		return (arg_name in this._cache)
+	}
+	
+	
+	
+	/**
+	 * Create a UI component with local cache and state.
+	 * 
+	 * @param {string} arg_component_name - component name.
+	 * @param {object} arg_component_desc - component description (optional, default:undefined).
+	 * 
+	 * @returns {Component} - Component instance
+	 */
+	create_local(arg_component_name, arg_component_desc=undefined)
+	{
+		this.enter_group(&apos;create_local:component name=&apos; + arg_component_name)
+
+		let state_path = undefined
+		let component_desc = arg_component_desc ? ( arg_component_desc.toJS ? arg_component_desc : fromJS(arg_component_desc) ) : undefined
+
+		// SEARCH DESCRIPTION INTO CACHE
+		if (! component_desc)
+		{
+			// GET APPLICATION STATE AND INIT APPLICATION STATE PATH
+			const current_app_state = this._store.get_state()
+			state_path = [&apos;views&apos;]
+			this.debug(&apos;create_local:search in views for &apos; + arg_component_name)
+			
+			component_desc = this.find_component_desc(current_app_state, arg_component_name, state_path)
+			if (! component_desc)
+			{
+				this.debug(&apos;create_local:search in menubars for &apos; + arg_component_name)
+				state_path = [&apos;menubars&apos;]
+				component_desc = this.find_component_desc(current_app_state, arg_component_name, state_path)
+
+				if (! component_desc)
+				{
+					this.debug(&apos;create_local:state not found in views/menubars for &apos; + arg_component_name)
+					this.debug(&apos;create_local:state_path&apos;, state_path)
+
+					this.leave_group(&apos;create_local:component description not found name=&apos; + arg_component_name)
+					return undefined
+				}
+			}
+		}
+
+		const component = this.create_instance(arg_component_name, component_desc, state_path)
+
+		this.leave_group(&apos;create_local:component created for name=&apos; + arg_component_name)
+		return component
+	}
+
+	
+	
+	/**
+	 * Create a UI component.
+	 * 
+	 * @param {string} arg_component_name - component name.
+	 * @param {object} arg_component_desc - component description.
+	 * @param {array}  arg_state_path     - component state path.
+	 * 
+	 * @returns {Component|undefined} - Component instance
+	 */
+	create_instance(arg_component_name, arg_component_desc, arg_state_path)
+	{
+		this.enter_group(&apos;create_instance:component name=&apos; + arg_component_name)
+
+		const mix = this.create_instance_mix(arg_component_name, arg_component_desc, arg_state_path)
+
+		this.leave_group(&apos;create_instance:component created for name=&apos; + arg_component_name)
+		return mix.component
+	}
+
+	
+	
+	/**
+	 * Create a UI component.
+	 * 
+	 * @param {string} arg_component_name - component name.
+	 * @param {object} arg_component_desc - component description.
+	 * @param {array}  arg_state_path     - component state path.
+	 * 
+	 * @returns {Promise} - Component instance
+	 */
+	create_instance_promise(arg_component_name, arg_component_desc, arg_state_path)
+	{
+		this.enter_group(&apos;create_instance_promise:component name=&apos; + arg_component_name)
+
+		const mix = this.create_instance_mix(arg_component_name, arg_component_desc, arg_state_path)
+
+		this.leave_group(&apos;create_instance_promise:component created for name=&apos; + arg_component_name)
+		return mix.promise
+	}
+
+
+	
+	/**
+	 * Create a UI component.
+	 * 
+	 * @param {string} arg_component_name - component name.
+	 * @param {object} arg_component_desc - component description.
+	 * @param {array}  arg_state_path     - component state path.
+	 * 
+	 * @returns {object} - { component:Component, promise:Promise}
+	 */
+	create_instance_mix(arg_component_name, arg_component_desc, arg_state_path)
+	{
+		this.enter_group(&apos;create_instance_mix:component name=&apos; + arg_component_name)
+
+		// REGISTER COMPONENT APPLICATION STATE PATH
+		const state_path = arg_state_path ? arg_state_path : ( arg_component_desc.get(&apos;type&apos;) == &apos;menubar&apos; ? [&apos;menubars&apos;, arg_component_name] : [&apos;views&apos;, arg_component_name] )
+		this._state_by_path[arg_component_name] = state_path
+		this._state_by_path[arg_component_name].push(&apos;state&apos;)
+
+		// GET COMPONENT TYPE
+		const type = arg_component_desc.has(&apos;browser_type&apos;) ? arg_component_desc.get(&apos;browser_type&apos;) : arg_component_desc.get(&apos;type&apos;)
+		assert( T.isString(type), context + &apos;:create:bad component desctription type string for &apos; + arg_component_name)
+		
+		// GET COMPONENT STATE
+		let comp_state = arg_component_desc.get(&apos;state&apos;)
+		comp_state = comp_state.set(&apos;name&apos;, arg_component_name)
+		comp_state = comp_state.set(&apos;type&apos;, type)
+		comp_state = comp_state.set(&apos;state_path&apos;, fromJS(state_path) )
+		// console.log(&apos;ui:create:path,state:&apos;, state_path, comp_state)
+		
+		// CREATE COMPONENT INSTANCE
+		let component_class = this._runtime.ui().get_rendering_class_resolver()(type)
+		if (!component_class)
+		{
+			component_class = this.get_component_class(type)
+		}
+		if ( ! component_class)
+		{
+			const msg = &apos;create:error:bad found component class for &apos; + arg_component_name + &apos; type=&apos; + type
+			this.error(msg)
+			this.leave_group(msg)
+			return { component:undefined, promise:Promise.reject(context + msg) }
+		}
+
+		// CREATE COMPONENT
+		const component = new component_class(this._runtime, comp_state)
+		this._cache[arg_component_name] = component
+
+		// LOAD COMPONENT AND INIT BINDINGS
+		let promise = component.render()
+		.then(
+			()=&gt;{
+				return component.load()
+			},
+			(reason)=&gt;{
+				this.error(reason)
+			}
+		)
+		.then(
+			()=&gt;{
+				component.init_bindings()
+			},
+
+			(reason)=&gt;{
+				this.error(reason)
+			}
+		)
+
+		this.leave_group(&apos;create_instance_mix:component created for name=&apos; + arg_component_name)
+		return { component:component, promise:promise }
+	}
+
+	
+	
+	/**
+	 * Create a UI component.
+	 * 
+	 * @param {string} arg_component_name - component name.
+	 * 
+	 * @returns {Promise} - promise of Component instance
+	 */
+	create(arg_component_name, arg_component_desc=undefined)
+	{
+		this.enter_group(&apos;create:component name=&apos; + arg_component_name)
+
+		// SEARCH DESCRIPTION INTO CACHE
+		const component = this.create_local(arg_component_name, arg_component_desc)
+		if (component)
+		{
+			this.leave_group(&apos;create:async:found:component name=&apos; + arg_component_name)
+			return Promise.resolve(component)
+		}
+
+
+		let component_desc_promise = arg_component_desc ? Promise.resolve(arg_component_desc) : undefined
+
+		// REQUEST DESCRIPTION FROM SERVER
+		if (! component_desc_promise)
+		{
+			component_desc_promise = this.request_component_desc(arg_component_name)
+		}
+
+		// DESCRIPTION PROMISE NOT FOUND
+		if (! component_desc_promise)
+		{
+			this.leave_group(&apos;create:error:bad promise for component name=&apos; + arg_component_name)
+			return Promise.reject(context + &apos;:create:bad promise&apos;)
+		}
+
+		const component_promise = component_desc_promise.then(
+			(component_desc)=&gt;{
+				this.debug(&apos;create:found:component description for &apos; + arg_component_name)
+
+				// CHECK COMPONENT DESCRIPTION
+				if ( ! (T.isObject(component_desc) &amp;&amp; component_desc.has &amp;&amp; component_desc.get) )
+				{
+					this.error(&apos;create:found:bad Immutable component description for &apos; + arg_component_name)
+					this.leave_group(&apos;create:error bad description for &apos; + arg_component_name)
+					return Promise.reject(context + &apos;create:found:bad Immutable component description for &apos; + arg_component_name)
+				}
+				
+				const promise = this.create_instance_promise(arg_component_name, component_desc)
+				return promise
+			},
+
+			(reason)=&gt;{
+				this.error(&apos;create:error:promise exception for &apos; + arg_component_name + &apos; reason=&apos; + reason)
+				this.leave_group(&apos;create:error promise exception for &apos; + arg_component_name + &apos; reason=&apos; + reason)
+				return Promise.reject(context + &apos;create:error promise exception for &apos; + arg_component_name + &apos; reason=&apos; + reason)
+			}
+		)
+
+		this.leave_group(&apos;create:async:component name=&apos; + arg_component_name)
+		return component_promise
+	}
+
+	
+	
+	/**
+	 * Create a UI component.
+	 * 
+	 * @param {string} arg_name - component name.
+	 * 
+	 * @returns {Component}
+	 */
+	get_component_class(arg_type)
+	{
+		switch(arg_type.toLocaleLowerCase())
+		{
+			case &apos;component&apos;:		return Component
+
+			case &apos;container&apos;:		return Container
+			case &apos;dock&apos;:			return Dock
+			case &apos;dockitem&apos;:
+			case &apos;dock_item&apos;:
+			case &apos;dock-item&apos;:		return DockItem
+
+			case &apos;input-field&apos;:
+			case &apos;inputfield&apos;:		return InputField
+			
+			case &apos;logstable&apos;:       return LogsTable
+			case &apos;attributestable&apos;: return AttributesTable
+			case &apos;table&apos;:           return Table
+			case &apos;tabs&apos;:            return Tabs
+			
+			case &apos;tabletree&apos;:    	return TableTree
+			case &apos;topology&apos;:     	return Topology
+			case &apos;recordstable&apos;:	 return RecordsTable
+			case &apos;tree&apos;:         	return Tree
+
+			case &apos;button&apos;:
+			case &apos;script&apos;:
+			case &apos;menubar&apos;:
+			case &apos;hbox&apos;:
+			case &apos;vbox&apos;:
+			case &apos;list&apos;:
+			case &apos;page&apos;:
+			default:             return Component
+		}
+		
+		// return undefined
+	}
+	
+	
+	
+	/**
+	 * Find UI component description.
+	 * 
+	 * @param {Immutable.Map} arg_state - registry global state object.
+	 * @param {string} arg_name - component name.
+	 * @param {array} arg_state_path - state path (optional, default=[])
+	 * 
+	 * @returns {Immutable.Map|undefined} - component state object.
+	 */
+	find_component_desc(arg_state, arg_name, arg_state_path = [])
+	{
+		const js_state = arg_state &amp;&amp; arg_state.toJS ? arg_state.toJS() : arg_state
+		DEBUG_TRACE_FIND_STATE &amp;&amp; this.debug(&apos;ui.find_component_desc for &apos; + arg_name, arg_state_path, js_state)
+		
+		if (! arg_state)
+		{
+			console.error(&apos;state is undefined for &apos; + arg_name)
+			return undefined
+		}
+
+		if (! T.isFunction(arg_state.get) )
+		{
+			// GLOBAL STATE IS NOT AN IMMUTABLE.MAP
+			console.error(context + &apos;:find_component_desc:state is not an Immutable for &apos; + arg_name, arg_state)
+			this.error(context + &apos;:find_component_desc:state is not an Immutable for &apos; + arg_name, arg_state)
+			return undefined
+		}
+		
+		// FOUND ON ROOT
+		if ( arg_state.has(&apos;name&apos;) )
+		{
+			const name = arg_state.get(&apos;name&apos;).toString()
+			// arg_state_path.push(name)
+			if ( name == arg_name )
+			{
+				DEBUG_TRACE_FIND_STATE &amp;&amp; this.debug(&apos;ui.find_component_desc FOUND 1 for &apos; + arg_name, [])
+				return arg_state
+			}
+		}
+		
+		// LOOKUP ON VIEWS CHILDREN
+		let children_key = &apos;children&apos;
+		if (arg_state_path.length == 1 &amp;&amp; arg_state_path[0] == &apos;views&apos;)
+		{
+			children_key = &apos;views&apos;
+			arg_state_path.pop()
+		}
+		if (arg_state_path.length == 1 &amp;&amp; arg_state_path[0] == &apos;menubars&apos;)
+		{
+			children_key = &apos;menubars&apos;
+			arg_state_path.pop()
+		}
+		if (arg_state_path.length == 1 &amp;&amp; arg_state_path[0] == &apos;menus&apos;)
+		{
+			children_key = &apos;menus&apos;
+			arg_state_path.pop()
+		}
+		if (arg_state_path.length == 1 &amp;&amp; arg_state_path[0] == &apos;models&apos;)
+		{
+			children_key = &apos;models&apos;
+			arg_state_path.pop()
+		}
+		if ( arg_state.has(children_key) )
+		{
+			arg_state_path.push(children_key)
+			
+			if ( arg_state.hasIn( [children_key, arg_name] ) )
+			{
+				arg_state_path.push(arg_name)
+				DEBUG_TRACE_FIND_STATE &amp;&amp; this.debug(&apos;ui.find_component_desc FOUND 2 for &apos; + arg_name, arg_state_path)
+				return arg_state.getIn( [children_key, arg_name] )
+			}
+			
+			let result = undefined
+			arg_state.get(children_key).forEach(
+				(child_state, key) =&gt; {
+					if (! result)
+					{
+						DEBUG_TRACE_FIND_STATE &amp;&amp; this.debug(&apos;ui.find_component_desc loop on child &apos; + key + &apos; for &apos; + arg_name, arg_state_path)
+						result = this.find_component_desc(child_state, arg_name, arg_state_path)
+						if (result)
+						{
+							DEBUG_TRACE_FIND_STATE &amp;&amp; this.debug(&apos;ui.find_component_desc FOUND 3 for &apos; + arg_name, arg_state_path)
+							return result
+						}
+					}
+				}
+			)
+			if (result)
+			{
+				DEBUG_TRACE_FIND_STATE &amp;&amp; this.debug(&apos;ui.find_component_desc FOUND 4 for &apos; + arg_name, arg_state_path, result &amp;&amp; result.toJS ? result.toJS() : result)
+				return result
+			}
+			
+			arg_state_path.pop() // CHILDREN
+		}
+		
+		if ( arg_state.has(&apos;name&apos;) )
+		{
+			arg_state_path.pop() // NAME
+		}
+
+		// console.error(&apos;state not found for &apos; + arg_name)
+		return undefined
+	}
+
+
+	request_component_desc(arg_component_name)
+	{
+		this.enter_group(&apos;request_component_desc&apos;)
+
+		this.leave_group(&apos;request_component_desc:async&apos;)
+		
+		// TODO SET RESOURCES SVC NAME IN SETTINGS OR FIND IT BY ITS TYPE
+		return this._runtime.register_service(&apos;resources_svc&apos;)
+		.then(
+			(service)=&gt;{
+				// console.log(context + &apos;:request_component_desc:get service for &apos; + arg_view_name)
+				return service.get( {collection:&apos;*&apos;, &apos;resource&apos;:arg_component_name} )
+			},
+			
+			(reason)=&gt;{
+				console.error(context + &apos;:request_component_desc:error 1 for &apos; + arg_component_name, reason)
+			}
+		)
+		.then(
+			(stream)=&gt;{
+				// console.log(context + &apos;:request_component_desc:get listen stream for &apos; + arg_view_name)
+				return new Promise(
+					function(resolve, reject)
+					{
+						stream.subscribe(
+							(response)=&gt;{
+								resolve(response)
+							}
+						)
+						stream.on_error(
+							(reason)=&gt;{
+								reject(reason)
+							}
+						)
+					}
+				)
+			},
+			
+			(reason)=&gt;{
+				console.error(context + &apos;:request_component_desc:error 2 for &apos; + arg_component_name, reason)
+			}
+		)
+		.then(
+			(response)=&gt;{
+				// console.log(context + &apos;:request_component_desc:get response for &apos; + arg_view_name, response)
+
+				if (response.result == &apos;done&apos;)
+				{
+					// console.log(context + &apos;:request_component_desc:dispatch ADD_JSON_RESOURCE action for &apos; + arg_view_name)
+					const action = { type:&apos;ADD_JSON_RESOURCE&apos;, resource:arg_component_name, collection:&apos;views&apos;, json:response.datas }
+					this._store.dispatch(action)
+					return response.datas
+				}
+
+				return undefined
+			},
+			
+			(reason)=&gt;{
+				console.error(context + &apos;:request_component_desc:error 3 for &apos; + arg_component_name, reason)
+			}
+		)
+		.catch(
+			(reason)=&gt;{
+				console.error(context + &apos;:request_component_desc:an error occured [&apos; + reason + &apos;]&apos;)
+				return undefined
+			}
+		)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

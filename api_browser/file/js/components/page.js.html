@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/components/page.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/components/page.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+// import assert from &apos;assert&apos;
+import vdom_parser    from &apos;vdom-parser&apos;
+import diff           from &apos;virtual-dom/diff&apos;
+import patch          from &apos;virtual-dom/patch&apos;
+import create_element from &apos;virtual-dom/create-element&apos;
+import VNode          from &apos;virtual-dom/vnode/vnode&apos;
+import VText          from &apos;virtual-dom/vnode/vtext&apos;
+import html_to_vdom   from &apos;html-to-vdom&apos;
+
+// COMMON IMPORTS
+
+
+const convertHTML = html_to_vdom({
+	VNode: VNode,
+	VText: VText
+})
+
+
+// let context = &apos;browser/components/page&apos;
+
+
+
+/**
+ * @file client page class.
+ * 
+ * @author Luc BORIES
+ * 
+ * @license Apache-2.0
+ */
+export default class Page
+{
+	/**
+	 * Create a Page instance.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor()
+	{
+		this.target_elem_head = window.document.head
+		this.target_elem_body = window.document.body
+		this.target_tree_head = undefined
+		this.target_tree_body = undefined
+		this.target_node_head = undefined
+		this.target_node_body = undefined
+	}
+
+
+	/**
+	 * Render a page.
+	 */
+	render_html(arg_html)
+	{
+		console.log(&apos;Page.render_html&apos;)
+		$(document.body).html(arg_html)
+		// this.render_html_with_vdom(arg_html)
+	}
+
+
+
+	/**
+	 * Render a page.
+	 */
+	render_html_with_vdom(arg_html)
+	{
+		console.log(&apos;Page.render_html_with_vdom&apos;)
+
+		if (! this.target_tree)
+		{
+			console.log(&apos;Page.render_html_with_vdom:init&apos;)
+
+			this.target_tree_head = vdom_parser(this.target_elem_head)
+			this.target_tree_body = vdom_parser(this.target_elem_body)
+
+			this.target_node_head = create_element(this.target_tree_head)
+			this.target_node_body = create_element(this.target_tree_body)
+
+			// console.log(&apos;Page.render_html:init:target_node&apos;, this.target_node)
+			// console.log(&apos;Page.render_html:init:target_node&apos;, this.target_node)
+		}
+
+		const new_tree = convertHTML(arg_html)
+
+		const new_tree_head = new_tree.children[0]
+		const new_tree_body = new_tree.children[2]
+
+		const patches_head = diff(this.target_tree_head, new_tree_head)
+		const patches_body = diff(this.target_tree_body, new_tree_body)
+
+		console.log(&apos;Page.render_html:new_tree_body&apos;, new_tree_body)
+		console.log(&apos;Page.render_html:patches_body&apos;, patches_body)
+
+		this.target_node_head = patch(this.target_node_head, patches_head)
+		this.target_node_body = patch(this.target_node_body, patches_body)
+
+		this.target_tree_head = new_tree_head
+		this.target_tree_body = new_tree_body
+
+		console.log(&apos;Page.render_html:target_node_body&apos;, this.target_node_body)
+		// console.log(&apos;Page.render_html:target_tree_body&apos;, this.target_tree_body)
+		
+		// $(document.body).html(arg_html)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

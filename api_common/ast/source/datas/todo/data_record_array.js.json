@@ -1,0 +1,114 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 1905,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 61,
+      "column": 2
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 1905,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 61,
+        "column": 2
+      }
+    },
+    "sourceType": "module",
+    "body": [],
+    "directives": [],
+    "leadingComments": null,
+    "innerComments": [
+      {
+        "type": "CommentBlock",
+        "value": "save\r\nupdate()\r\n\r\n\r\nAPI:\r\n *                  ->constructor(object)     : nothing\r\n *  \r\n *                  ->get_records()   \t\t  : array of Records objects\r\n *                  ->get_count()             : integer (records count)\r\n *  \r\n *                  ->new_record()            : \r\n *                  ->free_record()           : \r\n *                  \r\n *                  ->update_records_map()    : Reload all query model records\r\n *                  ->get_record_by_id(id)    : Lookup a record with its id\r\n *                  ->get_first_record_by_field(n,v): Lookup a record with a field name and a field value\r\n *                  ->get_first_record_by_object(o) : Lookup a record with its values\r\n *                  \r\n *                  ->load(datas)             : Fill the Recordset with given datas records\r\n *                  ->read()                  : Read records from the model with the owned query\r\n *                  ->read_all()              : Read all available records from the model\r\n *  \r\n *                  ->save()                  : Save all dirty records into the model\r\n *                  ->erase()                 : Remove all records and update the model\r\n * \r\n\r\n\r\n\r\nResultSet\r\n\r\n API:\r\n *                  ->constructor(object)     : nothing\r\n *  \t\t\t\t\r\n *                  ->get_records()     \t  : array\r\n *                  ->get_count()             : integer\r\n\r\n\r\n\r\n\r\nDS.RECORDARRAYMANAGER CLASS ADDON/-PRIVATE/SYSTEM/RECORD-ARRAY-MANAGER.JS:15\r\nPRIVATE\r\n\r\nEXTENDS: EMBER.OBJECT\r\nDEFINED IN: addon/-private/system/record-array-manager.js:15\r\nMODULE: ember-data\r\nIndex\r\nMethods\r\nShow:   Inherited   Protected   Private   Deprecated\r\nMETHODS\r\n\r\ncreateAdapterPopulatedRecordArray\r\ncreateFilteredRecordArray\r\ncreateRecordArray\r\nliveRecordArrayFor\r\nregisterFilteredRecordArray\r\nunregisterRecordArray\r\nupdateFilter\r\nupdateFilterRecordArray\r\nupdateRecordArrays\r\n\r\n",
+        "start": 0,
+        "end": 1905,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 61,
+            "column": 2
+          }
+        }
+      }
+    ]
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "save\r\nupdate()\r\n\r\n\r\nAPI:\r\n *                  ->constructor(object)     : nothing\r\n *  \r\n *                  ->get_records()   \t\t  : array of Records objects\r\n *                  ->get_count()             : integer (records count)\r\n *  \r\n *                  ->new_record()            : \r\n *                  ->free_record()           : \r\n *                  \r\n *                  ->update_records_map()    : Reload all query model records\r\n *                  ->get_record_by_id(id)    : Lookup a record with its id\r\n *                  ->get_first_record_by_field(n,v): Lookup a record with a field name and a field value\r\n *                  ->get_first_record_by_object(o) : Lookup a record with its values\r\n *                  \r\n *                  ->load(datas)             : Fill the Recordset with given datas records\r\n *                  ->read()                  : Read records from the model with the owned query\r\n *                  ->read_all()              : Read all available records from the model\r\n *  \r\n *                  ->save()                  : Save all dirty records into the model\r\n *                  ->erase()                 : Remove all records and update the model\r\n * \r\n\r\n\r\n\r\nResultSet\r\n\r\n API:\r\n *                  ->constructor(object)     : nothing\r\n *  \t\t\t\t\r\n *                  ->get_records()     \t  : array\r\n *                  ->get_count()             : integer\r\n\r\n\r\n\r\n\r\nDS.RECORDARRAYMANAGER CLASS ADDON/-PRIVATE/SYSTEM/RECORD-ARRAY-MANAGER.JS:15\r\nPRIVATE\r\n\r\nEXTENDS: EMBER.OBJECT\r\nDEFINED IN: addon/-private/system/record-array-manager.js:15\r\nMODULE: ember-data\r\nIndex\r\nMethods\r\nShow:   Inherited   Protected   Private   Deprecated\r\nMETHODS\r\n\r\ncreateAdapterPopulatedRecordArray\r\ncreateFilteredRecordArray\r\ncreateRecordArray\r\nliveRecordArrayFor\r\nregisterFilteredRecordArray\r\nunregisterRecordArray\r\nupdateFilter\r\nupdateFilterRecordArray\r\nupdateRecordArrays\r\n\r\n",
+      "start": 0,
+      "end": 1905,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 61,
+          "column": 2
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "save\r\nupdate()\r\n\r\n\r\nAPI:\r\n *                  ->constructor(object)     : nothing\r\n *  \r\n *                  ->get_records()   \t\t  : array of Records objects\r\n *                  ->get_count()             : integer (records count)\r\n *  \r\n *                  ->new_record()            : \r\n *                  ->free_record()           : \r\n *                  \r\n *                  ->update_records_map()    : Reload all query model records\r\n *                  ->get_record_by_id(id)    : Lookup a record with its id\r\n *                  ->get_first_record_by_field(n,v): Lookup a record with a field name and a field value\r\n *                  ->get_first_record_by_object(o) : Lookup a record with its values\r\n *                  \r\n *                  ->load(datas)             : Fill the Recordset with given datas records\r\n *                  ->read()                  : Read records from the model with the owned query\r\n *                  ->read_all()              : Read all available records from the model\r\n *  \r\n *                  ->save()                  : Save all dirty records into the model\r\n *                  ->erase()                 : Remove all records and update the model\r\n * \r\n\r\n\r\n\r\nResultSet\r\n\r\n API:\r\n *                  ->constructor(object)     : nothing\r\n *  \t\t\t\t\r\n *                  ->get_records()     \t  : array\r\n *                  ->get_count()             : integer\r\n\r\n\r\n\r\n\r\nDS.RECORDARRAYMANAGER CLASS ADDON/-PRIVATE/SYSTEM/RECORD-ARRAY-MANAGER.JS:15\r\nPRIVATE\r\n\r\nEXTENDS: EMBER.OBJECT\r\nDEFINED IN: addon/-private/system/record-array-manager.js:15\r\nMODULE: ember-data\r\nIndex\r\nMethods\r\nShow:   Inherited   Protected   Private   Deprecated\r\nMETHODS\r\n\r\ncreateAdapterPopulatedRecordArray\r\ncreateFilteredRecordArray\r\ncreateRecordArray\r\nliveRecordArrayFor\r\nregisterFilteredRecordArray\r\nunregisterRecordArray\r\nupdateFilter\r\nupdateFilterRecordArray\r\nupdateRecordArrays\r\n\r\n",
+      "start": 0,
+      "end": 1905,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 61,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1905,
+      "end": 1905,
+      "loc": {
+        "start": {
+          "line": 61,
+          "column": 2
+        },
+        "end": {
+          "line": 61,
+          "column": 2
+        }
+      }
+    }
+  ]
+}

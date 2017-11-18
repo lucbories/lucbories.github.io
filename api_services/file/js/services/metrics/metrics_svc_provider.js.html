@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">js/services/metrics/metrics_svc_provider.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#default-plugins">default_plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/default_plugins/services_default_plugin.js~DefaultServicesPlugin.html">DefaultServicesPlugin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_route.js~ExecutableRoute.html">ExecutableRoute</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-assets">services/assets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/assets_svc_provider.js~AssetsSvcProvider.html">AssetsSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/executable_route_assets.js~ExecutableRouteAssets.html">ExecutableRouteAssets</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-logs">services/logs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/logs/logs_svc_provider.js~LogsSvcProvider.html">LogsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-messages">services/messages</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/messages/messages_svc_provider.js~MessagesSvcProvider.html">MessagesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-metrics">services/metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics/metrics_svc_provider.js~MetricsSvcProvider.html">MetricsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-middlewares">services/middlewares</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/executable_route_middleware.js~ExecutableRouteMiddleware.html">ExecutableRouteMiddleware</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/middlewares_svc_provider.js~MiddlewaresSvcProvider.html">MiddlewaresSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-ping">services/ping</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/ping/ping_svc_provider.js~PingSvcProvider.html">PingSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-resources">services/resources</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/executable_route_get_resource.js~ExecutableRouteGetResources.html">ExecutableRouteGetResources</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/resources_svc_provider.js~ResourcesSvcProvider.html">ResourcesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-security">services/security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_service.js~SecurityService.html">SecurityService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_consumer.js~SecuritySvcConsumer.html">SecuritySvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_provider.js~SecuritySvcProvider.html">SecuritySvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-todo-crud">services/todo_crud</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_service.js~CrudService.html">CrudService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_consumer.js~CrudSvcConsumer.html">CrudSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_provider.js~CrudSvcProvider.html">CrudSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/executable_route_model_crud.js~ExecutableRouteModelCrud.html">ExecutableRouteModelCrud</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-topology">services/topology</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_service.js~TopologyService.html">TopologyService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_consumer.js~TopologySvcHostConsumer.html">TopologySvcHostConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/services/metrics/metrics_svc_provider.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import {format} from &apos;util&apos;
+
+// COMMON IMPORTS
+import T                  from &apos;devapt-core-common/dist/js/utils/types&apos;
+import ServiceProvider    from &apos;devapt-core-common/dist/js/services/service_provider&apos;
+import ServiceResponse    from &apos;devapt-core-common/dist/js/services/service_response&apos;
+import {get_runtime}      from &apos;devapt-core-common/dist/js/base/runtime&apos;
+
+// SERVICES IMPORTS
+
+
+/**
+ * Runtime instance.
+ * @private
+ * @type {RuntimeBase}
+ */
+const runtime = get_runtime()
+
+/**
+ * Contextual constant for this file logs.
+ * @private
+ */
+const context = &apos;services/metrics/metrics_svc_provider&apos;
+
+
+
+/**
+ * Metrics service provider class.
+ * 
+ * @author Luc BORIES
+ * @license Apache-2.0
+ * 
+ */
+export default class MetricsSvcProvider extends ServiceProvider
+{
+	/**
+	 * Create a metrics service provider.
+	 * 
+	 * @param {string} arg_provider_name - consumer name.
+	 * @param {Service} arg_service_instance - service instance.
+	 * @param {string} arg_context - logging context label.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_provider_name, arg_service_instance, arg_context=context)
+	{
+		super(arg_provider_name, arg_service_instance, arg_context)
+
+		/**
+		 * Class test flag.
+		 * @type {boolean}
+		 */
+		this.is_metrics_svc_provider = true
+
+		// CREATE STREAMS
+		// this.metrics_streams = {
+		// 	&apos;http&apos;:new Stream(),
+		// 	&apos;bus&apos;:new Stream(),
+		// 	&apos;host&apos;:new Stream(),
+		// 	&apos;nodejs&apos;:new Stream()
+		// }
+
+		// GET NODE METRICS BUS
+		/**
+		 * Metrics bus stream.
+		 * @private
+		 * @type {Stream}
+		 */
+		this._metrics_bus_stream = runtime.node.get_metrics_bus().get_input_stream()
+		
+		/**
+		 * Metrics bus transformed stream.
+		 * @private
+		 * @type {Stream}
+		 */
+		this._metrics_bus_stream_transformed = undefined
+		
+		// DEBUG STREAM
+		// this._metrics_bus_streams.subscribe(
+		// 	(metrics_record) =&gt; {
+		// 		console.log(&apos;MetricsSvcProvider: new metrics record on the bus&apos;, metrics_record)
+		// 	}
+		// )
+
+
+		this.add_stream(&apos;http&apos;)
+		this.add_stream(&apos;bus&apos;)
+		this.add_stream(&apos;host&apos;)
+		this.add_stream(&apos;nodejs&apos;)
+
+		this.init_stream(&apos;http&apos;)
+		this.init_stream(&apos;bus&apos;)
+		this.init_stream(&apos;host&apos;)
+		this.init_stream(&apos;nodejs&apos;)
+	}
+
+
+
+	/**
+	 * Get provider operations names.
+	 * @abstract
+	 * 
+	 * @returns {array}
+	 */
+	get_operations_names()
+	{
+		return [
+			&apos;devapt-metrics-get&apos;,        &apos;devapt-metrics-list&apos;,
+			&apos;devapt-metrics-http-get&apos;,   &apos;devapt-metrics-http-list&apos;,   &apos;devapt-metrics-http-subscribe&apos;,
+			&apos;devapt-metrics-bus-get&apos;,    &apos;devapt-metrics-bus-list&apos;,    &apos;devapt-metrics-bus-subscribe&apos;,
+			&apos;devapt-metrics-host-get&apos;,   &apos;devapt-metrics-host-list&apos;,   &apos;devapt-metrics-host-subscribe&apos;,
+			&apos;devapt-metrics-nodejs-get&apos;, &apos;devapt-metrics-nodejs-list&apos;, &apos;devapt-metrics-nodejs-subscribe&apos;
+		].concat( super.get_operations_names() )
+	}
+
+
+	
+	/**
+	 * Produce service datas on request.
+	 * 
+	 * @param {ServiceRequest} arg_request - service request instance.
+	 * 
+	 * @returns {Promise} - promise of ServiceResponse instance.
+	 */
+	produce(arg_request)
+	{
+		this.enter_group(&apos;produce&apos;)
+
+		if ( ! T.isObject(arg_request) || ! arg_request.is_service_request)
+		{
+			this.leave_group(&apos;produce:error:bad request object.&apos;)
+			return Promise.resolve({error:&apos;bad request object&apos;})
+		}
+
+		const response = new ServiceResponse(arg_request)
+		const operation = arg_request.get_operation()
+		const operands = arg_request.get_operands()
+		let type = undefined
+		let op = &apos;undefined&apos;
+
+		switch(operation) {
+			case &apos;devapt-subscribe&apos;:
+				op = &apos;super&apos;
+				break
+			case &apos;devapt-unsubscribe&apos;:
+				op = &apos;super&apos;
+				break
+
+			case &apos;devapt-metrics-get&apos;:
+				op = &apos;get&apos;
+				break
+			case &apos;devapt-metrics-list&apos;:
+				op = &apos;list&apos;
+				break
+			
+			case &apos;devapt-metrics-http-get&apos;:
+				type = &apos;http&apos;
+				op = &apos;get&apos;
+				break
+			case &apos;devapt-metrics-http-list&apos;:
+				type = &apos;http&apos;
+				op = &apos;list&apos;
+				break
+			case &apos;devapt-metrics-http-subscribe&apos;:
+				type = &apos;http&apos;
+				op = &apos;subscribe&apos;
+				break
+			case &apos;devapt-metrics-http-unsubscribe&apos;:
+				type = &apos;http&apos;
+				op = &apos;unsubscribe&apos;
+				break
+			
+			case &apos;devapt-metrics-bus-get&apos;:
+				type = &apos;bus&apos;
+				op = &apos;get&apos;
+				break
+			case &apos;devapt-metrics-bus-list&apos;:
+				type = &apos;bus&apos;
+				op = &apos;list&apos;
+				break
+			case &apos;devapt-metrics-bus-subscribe&apos;:
+				type = &apos;bus&apos;
+				op = &apos;subscribe&apos;
+				break
+			case &apos;devapt-metrics-bus-unsubscribe&apos;:
+				type = &apos;bus&apos;
+				op = &apos;unsubscribe&apos;
+				break
+			
+			case &apos;devapt-metrics-host-get&apos;:
+				type = &apos;host&apos;
+				op = &apos;get&apos;
+				break
+			case &apos;devapt-metrics-host-list&apos;:
+				type = &apos;host&apos;
+				op = &apos;list&apos;
+				break
+			case &apos;devapt-metrics-host-subscribe&apos;:
+				type = &apos;host&apos;
+				op = &apos;subscribe&apos;
+				break
+			case &apos;devapt-metrics-host-unsubscribe&apos;:
+				type = &apos;host&apos;
+				op = &apos;unsubscribe&apos;
+				break
+			
+			case &apos;devapt-metrics-nodejs-get&apos;:
+				type = &apos;nodejs&apos;
+				op = &apos;get&apos;
+				break
+			case &apos;devapt-metrics-nodejs-list&apos;:
+				type = &apos;nodejs&apos;
+				op = &apos;list&apos;
+				break
+			case &apos;devapt-metrics-nodejs-subscribe&apos;:
+				type = &apos;nodejs&apos;
+				op = &apos;subscribe&apos;
+				break
+			case &apos;devapt-metrics-nodejs-unsubscribe&apos;:
+				type = &apos;nodejs&apos;
+				op = &apos;unsubscribe&apos;
+				break
+			
+		}
+
+		let operand_index = 0
+		if (! type &amp;&amp; operands.length &gt; 0 &amp;&amp; T.isNotEmptyString(operands[0]) )
+		{
+			type = operands[0]
+			++operand_index
+		}
+		
+		// DEBUG
+		const debug_msg = format(&apos;produce:service[%s] operation[%s] op[%s] type[%s] operands count[%d] opds index[%d]&apos;, response.get_service(), operation, op, type, operands.length, operand_index)
+		// console.log(context + debug_msg)
+		this.debug(debug_msg)
+
+		// CHECK OPERATION AND TYPE STRINGS
+		if (! T.isNotEmptyString(op) || ! T.isNotEmptyString(type) )
+		{
+			this.fill_error(response, operands, &apos;bad metrics operation and/or type string&apos;, op, type)
+			return Promise.resolve(response)
+		}
+
+		// GET METRICS SERVER
+		const metrics_server = runtime.node.get_metrics_server()
+		if (! metrics_server)
+		{
+			this.fill_error(response, operands, &apos;metrics server not found&apos;, op, type)
+			return Promise.resolve(response)
+		}
+
+		// OPERATION: GET CURRENT METRICS
+		if (op == &apos;get&apos;)
+		{
+			// GET WITH ONE OPERAND
+			const item = operands[operand_index]
+			if ( T.isNotEmptyString(item) )
+			{
+				this.debug(&apos;get with one not empty operand string:[&apos; + item + &apos;]&apos;)
+				const state_values = metrics_server.get_metrics_state_values(type, item)
+				
+				// console.log(context + debug_msg + &apos; item=[%s] state_values=&apos;, item, bus_state_values)
+				
+				response.set_results([state_values])
+
+				this.leave_group( debug_msg + format(&apos; metrics values keys[%s]&apos;, Object.keys(state_values) ) )
+				return Promise.resolve(response)
+			}
+			
+			// DEFAULT CASE
+			const state_values = metrics_server.get_metrics_state_values(type)
+
+			// console.log(context + debug_msg + &apos; state_values=&apos;, state_values)
+			this.debug(debug_msg + &apos; state_values=&apos;, state_values)
+			
+			response.set_results([state_values])
+
+			this.leave_group( debug_msg + format(&apos; metrics values keys[%s]&apos;, Object.keys(state_values) ) )
+			return Promise.resolve(response)
+		}
+		
+		// OPERATION: LIST METRICS ITEMS
+		if (op == &apos;list&apos;)
+		{
+			const state_items = metrics_server.get_metrics_state_values_items(type)
+
+			// console.log(context + debug_msg + &apos; state_items=&apos;, state_items)
+			this.debug(debug_msg + &apos; state_items=&apos;, state_items)
+			
+			const items = T.isArray(state_items) ? state_items : []
+			response.set_results(items)
+
+			this.leave_group( debug_msg + format(&apos; metrics items[%s]&apos;, items) )
+			return Promise.resolve(response)
+		}
+		
+		// OPERATION: SUBSCRIBE
+		if (op == &apos;subscribe&apos;)
+		{
+			const socket = arg_request.get_socket()
+			
+			if (socket)
+			{
+				const result = this.subscribe(type, socket)
+				if (! result)
+				{
+					response.set_results([ { error:&apos;subscribe failed&apos; } ].concat(operands) )
+					return Promise.resolve(response)
+				}
+
+				response.set_results( [&apos;done&apos;].concat(operands) )
+				return Promise.resolve(response)
+			}
+			
+			response.set_results([ { error:&apos;bad socket&apos; } ].concat(operands) )
+			return Promise.resolve(response)
+		}
+		
+		// OPERATION: UNSUBSCRIBE
+		if (op == &apos;unsubscribe&apos;)
+		{
+			const socket = arg_request.get_socket()
+			
+			if (socket)
+			{
+				const result = this.unsubscribe(type, socket)
+				if (! result)
+				{
+					response.set_results([ { error:&apos;subscribe failed&apos; } ].concat(operands) )
+					return Promise.resolve(response)
+				}
+
+				response.set_results( [&apos;done&apos;].concat(operands) )
+				return Promise.resolve(response)
+			}
+			
+			response.set_results([ { error:&apos;bad socket&apos; } ].concat(operands) )
+			return Promise.resolve(response)
+		}
+
+		this.leave_group(&apos;produce:super.&apos;)
+		return super.produce(arg_request)
+	}
+	
+
+
+	/**
+	 * Populate a response with error message.
+	 * 
+	 * @param {ServiceResponse} arg_response - response instance.
+	 * @param {array} arg_operands     - request operands.
+	 * @param {string} arg_error       - error text.
+	 * @param {string} arg_op          - metrics operation.
+	 * @param {string} arg_type        - metrics type.
+	 * 
+	 * @returns {nothing}
+	 */
+	fill_error(arg_response, arg_operands, arg_error, arg_op, arg_type)
+	{
+		const op = arg_response.get_operation()
+		const svc = arg_response.get_service()
+		const error_msg = format(&apos;produce:error=[%s] with svc=[%s] operation=[%s] op=[%s] type=[%s] operands count=[%i]&apos;, arg_error, svc, op, arg_op, arg_type, arg_operands.length)
+		
+		arg_response.set_has_error(true)
+		arg_response.set_error(error_msg)
+		arg_response.set_results(arg_operands)
+		
+		this.leave_group(error_msg)
+	}
+	
+	
+	
+	/**
+	 * Init output stream.
+	 * 
+	 * @param {string} arg_type - metrics type.
+	 * 
+	 * @returns {nothing}
+	 */
+	init_stream(arg_type)
+	{
+		const self = this
+		
+		// CHECK TYPE
+		if ( ! this.has_stream(arg_type) )
+		{
+			console.error(context + &apos;:init_stream:bad metrics type[&apos; + arg_type + &apos;]&apos;)
+			return
+		}
+
+		const max_metrics_per_msg = 10
+		const delay_per_metrics_msg = 100
+		const limit_cb = (grouped_stream/*, group_start_event*/) =&gt; {
+			const map_cb = (values) =&gt; {
+				// console.log(values, &apos;limit.map.values&apos;)
+				
+				let metrics_record = {
+					metric: undefined,
+					metrics:[]
+				}
+				
+				values.forEach(
+					(value) =&gt; {
+						metrics_record.metric = value.metric,
+						metrics_record.metrics = metrics_record.metrics.concat(value.metrics)
+					}
+				)
+				
+				// console.log(metrics_record, &apos;limit.map.metrics_record&apos;)
+				return metrics_record
+			}
+			
+			return grouped_stream.bufferWithTimeOrCount(delay_per_metrics_msg, max_metrics_per_msg).map(map_cb)
+		}
+		
+		
+		const key_cb = (value) =&gt; {
+			// console.log(value.metric, &apos;value.metric&apos;)
+			return value.metric
+		}
+		
+		
+		const flatmap_cb = (grouped_stream) =&gt; {
+			return grouped_stream
+		}
+		
+		const msg_filter_cb = (arg_msg) =&gt; {
+			if (arg_msg.payload.metric != arg_type)
+			{
+				console.warn(context + &apos;:init_stream:metrics filter blocks&apos;, arg_msg.payload.metric, arg_type)
+			}
+			return arg_msg.payload.metric == arg_type
+		}
+		
+		const msg_cb = (arg_msg) =&gt; {
+			const metric_type = arg_msg.payload.metric
+			const metrics_array = arg_msg.payload.metrics
+			const metrics_record = {
+				metric: metric_type,
+				metrics:metrics_array
+			}
+			
+			return metrics_record
+		}
+		
+		self._metrics_bus_stream_transformed = self._metrics_bus_stream.get_transformed_stream().filter(msg_filter_cb).map(msg_cb).groupBy(key_cb, limit_cb).flatMap(flatmap_cb)
+		
+		self._metrics_bus_stream_transformed.onValue(
+			(metrics_record) =&gt; {
+				console.log(context + &apos;:init_stream:new metrics record&apos;)
+				self.get_stream(arg_type).push(metrics_record)
+			}
+		)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

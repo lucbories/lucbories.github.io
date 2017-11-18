@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/components/table_tree.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/components/table_tree.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+
+// COMMON IMPORTS
+import T   from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+import uid from &apos;../../../node_modules/devapt-core-common/dist/js/utils/uid&apos;
+
+// BROWSER IMPORTS
+import Component from &apos;../base/component&apos;
+
+
+const context = &apos;browser/components/table_tree&apos;
+
+
+
+/**
+ * @file UI Tree component class.
+ * 
+ * @author Luc BORIES
+ * 
+ * @license Apache-2.0
+ */
+export default class TableTree extends Component
+{
+	
+	/**
+	 * Creates an instance of Component.
+	 * 
+	 * @param {object} arg_runtime - client runtime.
+	 * @param {object} arg_state - component state.
+	 * @param {string} arg_log_context - context of traces of this instance (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_state, arg_log_context)
+	{
+		const log_context = arg_log_context ? arg_log_context : context
+		super(arg_runtime, arg_state, log_context)
+		
+		this.is_table_tree_component = true
+		
+		this.init()
+	}
+	
+	
+	
+	/**
+	 * Get container items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_get_count()
+	{
+	}
+	
+	
+	
+	/**
+	 * Erase container items.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_clear()
+	{
+	}
+	
+	
+	
+	/**
+	 * Append rows to the container.
+	 * 
+	 * @param {array} arg_items_array - items array.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_append(/*arg_items_array*/)
+	{
+	}
+	
+	
+	
+	/**
+	 * Prepend a row.
+	 * 
+	 * @param {array} arg_items_array - rows array.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_prepend(/*arg_items_array*/)
+	{
+	}
+	
+	
+	
+	/**
+	 * Remove a row at given position.
+	 * 
+	 * @param {number} arg_index - row index.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_remove_at_index(arg_index)
+	{
+		assert( T.isNumber(arg_index), context + &apos;:ui_items_remove_at_index:bad index number&apos; )
+		
+	}
+	
+	
+	
+	/**
+	 * Remove a row at first position.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_remove_first()
+	{
+	}
+	
+	
+	
+	/**
+	 * Remove a row at last position.
+	 * 
+	 * @param {integer} arg_count - items count to remove.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_remove_last(/*arg_count*/)
+	{
+		// console.log(context + &apos;:ui_items_remove_last:arg_count&apos;, arg_count)
+		
+	}
+	
+	
+	
+	/**
+	 * Init view.
+	 * 
+	 * @returns {nothing}
+	 */
+	init()
+	{
+		let styles = &apos;&lt;style type=&quot;text/css&quot;&gt;\n&apos;
+		styles += &apos;#content      { margin-left: 50px; }\n&apos;
+		styles += &apos;.node_branch  { cursor: default; font-size: 0.8em; line-height:1em; }\n&apos;
+		styles += &apos;.node_a       { position: relative; cursor: pointer; }\n&apos;
+		styles += &apos;.node_content { cursor: default; margin-left: 10px; font-site:0,1em; font-size: 0.8em; line-height:1em; }\n&apos;
+		styles += &apos;&lt;/style&gt;\n&apos;
+		$(&apos;head&apos;).append(styles)
+	}
+	
+	
+	
+	/**
+	 * Update tree.
+	 * 
+	 * @param {object} arg_tree - tree nodes.
+	 * 
+	 * @returns {nothing}
+	 */
+	update_tree(arg_tree)
+	{
+		var self = this
+
+		if (! arg_tree)
+		{
+			arg_tree = this.get_state_value(&apos;tree&apos;, {})
+		}
+		if (arg_tree.datas)
+		{
+			arg_tree = arg_tree.datas
+		}
+
+		console.log(&apos;tree.update_tree&apos;, arg_tree)
+
+		const pollers = this.get_state_value([&apos;bindings&apos;, &apos;services&apos;, 0, &apos;options&apos;, &apos;method&apos;, &apos;pollers&apos;], undefined)
+		const svc_name = this.get_state_value([&apos;bindings&apos;, &apos;services&apos;, 0, &apos;service&apos;], undefined)
+		const method_name = this.get_state_value([&apos;bindings&apos;, &apos;services&apos;, 0, &apos;method&apos;], undefined)
+		if ( ! pollers &amp;&amp; svc_name &amp;&amp; method_name &amp;&amp; this.unbind &amp;&amp; this.unbind[svc_name] &amp;&amp; this.unbind[svc_name][method_name] )
+		{
+			this.unbind[svc_name][method_name]()
+		}
+
+		const tree_id = this.get_dom_id()
+		
+		if (! this.tree_jqo)
+		{
+			this.tree_jqo = $(&apos;#&apos; + tree_id)
+			this.tbody_jqo = $(&apos;tbody&apos;, this.tree_jqo)
+		} else {
+			$(&apos;tr&apos;, this.tbody_jqo).remove()
+		}
+
+		this.max_depth = this.get_state_value(&apos;max_depth&apos;, 20)
+		this.max_depth = T.isNumber(this.max_depth) ? this.max_depth : 20
+
+		var collapsed = this.get_state_value(&apos;collapsed&apos;, false)
+
+		const key = this.get_state_value([&apos;bindings&apos;, &apos;services&apos;, 0, &apos;transform&apos;, &apos;fields&apos;, 0, &apos;name&apos;], undefined)
+		const sub_tree = key ? arg_tree[key] : arg_tree
+		if (! sub_tree)
+		{
+			return
+		}
+		this.render_node(sub_tree, 1, this.get_state_value(label), ! collapsed)
+
+		if (collapsed)
+		{
+			$(&apos;.node_branch&apos;, this.tree_jqo).hide()
+			$(&apos;.node_content&apos;, this.tree_jqo).hide()
+			$(&apos;span.node_opened&apos;, this.tree_jqo).hide()
+			$(&apos;span.node_closed&apos;, this.tree_jqo).show()
+			
+			$(&apos;tr&apos;).removeClass(&apos;expanded&apos;).addClass(&apos;collapsed&apos;).hide()
+
+			$(&apos;tr&apos;).filter(
+				function () {
+					return $(this).data(&apos;depth&apos;) == 1
+				}
+			).show()
+		} else {
+			$(&apos;.node_branch&apos;, this.tree_jqo).show()
+			$(&apos;.node_content&apos;, this.tree_jqo).show()
+			$(&apos;span.node_opened&apos;, this.tree_jqo).show()
+			$(&apos;span.node_closed&apos;, this.tree_jqo).hide()
+			
+			$(&apos;tr&apos;).removeClass(&apos;collapsed&apos;).addClass(&apos;expanded&apos;).show()
+		}
+		
+		$(&apos;a.node_a&apos;, this.tbody_jqo).click(
+			function(ev)
+			{
+				// var el = $(ev.currentTarget)
+				// var tr = el.closest(&apos;tr&apos;)
+				var tr = $(ev.currentTarget).parent().parent()
+				
+				var children = self.find_children(tr)
+				// console.log(&apos;a.click:children=&apos;, children)
+
+
+				if ( tr.hasClass(&apos;collapsed&apos;) )
+				{
+					// BECOME EXPANDED
+					$(&apos;span.node_closed&apos;, tr).hide()
+					$(&apos;span.node_opened&apos;, tr).show()
+					tr.removeClass(&apos;collapsed&apos;).addClass(&apos;expanded&apos;)
+					children.removeClass(&apos;collapsed&apos;).addClass(&apos;expanded&apos;).show()
+					$(&apos;span.node_closed&apos;, children).hide()
+					$(&apos;span.node_opened&apos;, children).show()
+				} else {
+					// BECOME COLLAPSED
+					$(&apos;span.node_closed&apos;, tr).show()
+					$(&apos;span.node_opened&apos;, tr).hide()
+					tr.removeClass(&apos;expanded&apos;).addClass(&apos;collapsed&apos;)
+					children.removeClass(&apos;expanded&apos;).addClass(&apos;collapsed&apos;).hide()
+					$(&apos;span.node_closed&apos;, children).show()
+					$(&apos;span.node_opened&apos;, children).hide()
+				}
+			}
+		)
+	}
+
+
+
+	/**
+	 * 
+	 */
+	find_children(arg_tr)
+	{
+		var depth = arg_tr.data(&apos;depth&apos;)
+
+		return arg_tr.nextUntil(
+			$(&apos;tr&apos;).filter(
+				function () {
+					return $(this).data(&apos;depth&apos;) &lt;= depth
+				}
+			)
+		)
+	}
+
+
+
+	/**
+	 * Append a table row
+	 */
+	append_row(arg_key, arg_content, arg_depth, arg_expanded)
+	{
+		var id = &apos;tr_&apos; + uid()
+		var style = &apos;padding-left:&apos; + arg_depth * 20 + &apos;px&apos;
+		// var style = &apos;&apos;
+		var class_expanded = arg_expanded ? &apos;expanded&apos; : &apos;collapsed&apos;
+
+		var html_row = &apos;&lt;tr id=&quot;&apos; + id + &apos;&quot; class=&quot;node_content &apos; + class_expanded + &apos;&quot; data-depth=&quot;&apos; + arg_depth + &apos;&quot;&gt;&apos;
+		html_row += &apos;&lt;td style=&quot;&apos; + style + &apos;&quot;&gt;&apos; + arg_key + &apos;&lt;/td&gt;&apos;
+		html_row += &apos;&lt;td&gt;&apos; + arg_content + &apos;&lt;/td&gt;&apos;
+		html_row += &apos;&lt;/tr&gt;&apos;
+		
+		this.tbody_jqo.append(html_row)
+	}
+
+
+
+	/**
+	 * 
+	 */
+	render_expandable_node(arg_label, arg_depth, arg_expanded)
+	{
+		var id = &apos;tr_&apos; + uid()
+		var style = &apos;padding-left:&apos; + arg_depth * 20 + &apos;px&apos;
+		var class_expanded = arg_expanded ? &apos;expanded&apos; : &apos;collapsed&apos;
+
+		var str = &apos;&apos;
+		str += &apos;&lt;tr id=&quot;&apos; + id + &apos;&quot; class=&quot;node_branch &apos; + class_expanded + &apos;&quot; data-depth=&quot;&apos; + arg_depth + &apos;&quot;&gt;&lt;td style=&quot;&apos; + style + &apos;&quot;&gt;&apos;
+		str += &apos;&lt;a class=&quot;node_a&quot;&gt;&apos;
+		str += &apos;&lt;span class=&quot;node_closed&quot;&gt;\u25B9&lt;/span&gt;&apos;
+		str += &apos;&lt;span class=&quot;node_opened&quot;&gt;\u25BF&lt;/span&gt;&apos;
+		str += &apos;&lt;b&gt;&apos; + arg_label + &apos;&lt;/b&gt;&apos;
+		str += &apos;&lt;/a&gt;&apos;
+		str += &apos;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&apos;
+
+		this.tbody_jqo.append(str)
+	}
+
+
+
+	/**
+	 * 
+	 */
+	render_safe_string(arg_value)
+	{
+		// console.log(&apos;tree.render_safe_string&apos;, arg_value)
+		
+		// arg_value = arg_value.replace(&apos;&lt;script&gt;&apos;, &apos;AscriptB&apos;).replace(&apos;A/scriptB&apos;, &apos;\A/script\B&apos;)
+		if ( T.isString(arg_value) &amp;&amp; arg_value.indexOf(&apos;&lt;&apos;) &gt; -1)
+		{
+			// console.log(&apos;Tree:render_safe_string: value=%s&apos;, arg_value)
+			return &apos;&lt;code&gt;&apos; + arg_value.replace(&apos;&lt;&apos;, &apos;&amp;lt;&apos;).replace(&apos;&gt;&apos;, &apos;&amp;gt;&apos;) + &apos;&lt;/code&gt;&apos;
+		}
+
+		var translations = {
+			&apos;&lt;script&gt;&apos; :&apos;!scripta!&apos;,
+			&apos;&lt;/script&gt;&apos;:&apos;!scriptb!&apos;,
+			&apos;&lt;div&gt;&apos; :&apos;!diva!&apos;,
+			&apos;&lt;/div&gt;&apos;:&apos;!divb!&apos;,
+			&apos;&lt;li&gt;&apos;  :&apos;!lia!&apos;,
+			&apos;&lt;/li&gt;&apos; :&apos;!lib!&apos;,
+			&apos;&lt;ul&gt;&apos;  :&apos;!ula!&apos;,
+			&apos;&lt;/ul&gt;&apos; :&apos;!ulb!&apos;,
+			&apos;&lt;&apos;     :&apos;!aaa!&apos;,
+			&apos;&gt;&apos;     :&apos;!bbb!&apos;
+		}
+		// arg_value = arg_value ? arg_value.toString().replace(&apos;&lt;div&gt;&apos;, &apos;!diva!&apos;).replace(&apos;&lt;/div&gt;&apos;, &apos;!divb!&apos;) : arg_value
+		// return arg_value ? arg_value.toString().replace(&apos;&lt;li&gt;&apos;, &apos;!lia!&apos;).replace(&apos;&lt;/li&gt;&apos;, &apos;!lib!&apos;).replace(&apos;&lt;ul&gt;&apos;, &apos;!ula!&apos;).replace(&apos;&lt;/ul&gt;&apos;, &apos;!ulb!&apos;).replace(&apos;&lt;&apos;, &apos;!aaa!&apos;).replace(&apos;&gt;&apos;, &apos;!bbb!&apos;) : arg_value
+		
+		if ( T.isString(arg_value) )
+		{
+			var tr = &apos;&apos;
+			Object.keys(translations).forEach(
+				function(key)
+				{
+					tr = translations[key]
+					arg_value = arg_value.replace(key, tr)
+				}
+			)
+		} else {
+			console.error(&apos;tree.render_safe_string: value is not a string&apos;, arg_value)
+		}
+
+		return arg_value
+	}
+
+
+
+	/**
+	 * 
+	 */
+	render_node(arg_value, arg_depth, arg_label, arg_expanded)
+	{
+		// console.log(&apos;tree.render_node&apos;, arg_label)
+
+		var self = this
+
+		arg_depth = arg_depth ? arg_depth : 1
+		arg_label = arg_label == 0 ? &apos;0&apos; : arg_label
+		arg_label = arg_label ? arg_label : &apos;no name&apos;
+		arg_label = &apos;&apos; + arg_label
+		
+		if (arg_depth &gt; this.max_depth)
+		{
+			console.log(&apos;MAX DEPTH &apos; + this.max_depth + &apos; is reached&apos;)
+			return
+		}
+		
+		if (T.isString(arg_value))
+		{
+			// console.log(&apos;tree.render_node with string content&apos;, arg_label)
+			this.append_row(this.render_safe_string(arg_label), this.render_safe_string(arg_value), arg_depth, arg_expanded)
+			return
+		}
+		
+		if (T.isNumber(arg_value))
+		{
+			// console.log(&apos;tree.render_node with number content&apos;, arg_label)
+			this.append_row(this.render_safe_string(arg_label), arg_value, arg_depth, arg_expanded)
+			return
+		}
+		
+		if (T.isBoolean(arg_value))
+		{
+			// console.log(&apos;tree.render_node with boolean content&apos;, arg_label)
+			this.append_row(this.render_safe_string(arg_label), (arg_value ? &apos;true&apos; : &apos;false&apos;), arg_depth, arg_expanded)
+			return
+		}
+		
+		if (T.isArray(arg_value))
+		{
+			// console.log(&apos;tree.render_node with array content&apos;, arg_label)
+
+			if (arg_value.length == 0)
+			{
+				this.append_row(this.render_safe_string(arg_label), &apos;[]&apos;, arg_depth, arg_expanded)
+				return
+			}
+			
+			this.render_expandable_node(arg_label, arg_depth, arg_expanded)
+			
+			try
+			{
+				arg_value.forEach(
+					function(value, index) {
+						self.render_node(value, arg_depth + 1, index, arg_expanded)
+					}
+				)
+			}
+			catch(e)
+			{
+				// NOTHING TO DO
+				console.error(e)
+			}
+
+			return
+		}
+		
+		if (T.isObject(arg_value))
+		{
+			// console.log(&apos;tree.render_node with object content&apos;, arg_label)
+
+			this.render_expandable_node(arg_label, arg_depth, arg_expanded)
+
+			try
+			{
+				Object.keys(arg_value).forEach(
+					function(key)
+					{
+						self.render_node(arg_value[key], arg_depth + 1, key, arg_expanded)
+					}
+				)
+			}
+			catch(e)
+			{
+				// NOTHING TO DO
+				console.error(e)
+			}
+
+			return
+		}
+		
+		if ( T.isNull(arg_value))
+		{
+			// console.log(&apos;tree.render_node with null content&apos;, arg_label)
+			return
+		}
+
+		console.error(arg_value, &apos;value is unknow, unknow node of type [&apos; + (typeof arg_value) + &apos;]&apos;)
+		return
+	}
+
+
+
+	/**
+	 * On bindings refresh.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_refresh()
+	{
+		// console.log(&apos;new state&apos;, arg_operands)
+		// this.update_tree(arg_operands.datas)
+		this.load()
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

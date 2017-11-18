@@ -1,0 +1,490 @@
+[
+  {
+    "name": "ExecutableRoute#get_route_cb",
+    "filePath": "js/executables/executable_route.js",
+    "lines": [
+      {
+        "lineNumber": 209,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 210,
+        "line": "     * Callback for route handling.\r"
+      },
+      {
+        "lineNumber": 211,
+        "line": "     * @abstract\r"
+      },
+      {
+        "lineNumber": 212,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 213,
+        "line": "     * @param {TopologyDefineApplication} arg_application - Application instance.\r"
+      },
+      {
+        "lineNumber": 214,
+        "line": "     * @param {object} arg_cfg_route - plain object route configuration.\r"
+      },
+      {
+        "lineNumber": 215,
+        "line": "     * @param {object} arg_data - plain object contextual datas.\r"
+      },
+      {
+        "lineNumber": 216,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 217,
+        "line": "     * @param {function} route handler.\r"
+      },
+      {
+        "lineNumber": 218,
+        "line": "     */\r"
+      },
+      {
+        "lineNumber": 219,
+        "line": "\tget_route_cb(/*arg_application, arg_cfg_route, arg_data*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_application",
+      "arg_cfg_route",
+      "arg_data",
+      "route"
+    ]
+  },
+  {
+    "name": "ExecutableRoute#get_route_redirect_cb",
+    "filePath": "js/executables/executable_route.js",
+    "lines": [
+      {
+        "lineNumber": 226,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 227,
+        "line": "\t * Callback for redirect route handling.\r"
+      },
+      {
+        "lineNumber": 228,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 229,
+        "line": "\t * @param {TopologyDefineApplication} arg_application - Application instance.\r"
+      },
+      {
+        "lineNumber": 230,
+        "line": "\t * @param {object} arg_cfg_route - plain object route configuration.\r"
+      },
+      {
+        "lineNumber": 231,
+        "line": "\t * @param {object} arg_data - plain object contextual datas.\r"
+      },
+      {
+        "lineNumber": 232,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 233,
+        "line": "\t * @param {function} route handler.\r"
+      },
+      {
+        "lineNumber": 234,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 235,
+        "line": "\tget_route_redirect_cb(arg_application, arg_cfg_route/*, arg_data*/)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_application",
+      "arg_cfg_route"
+    ],
+    "docParams": [
+      "arg_application",
+      "arg_cfg_route",
+      "arg_data",
+      "route"
+    ]
+  },
+  {
+    "name": "ExecutableRouteAssets#get_route_directory_cb",
+    "filePath": "js/services/assets/executable_route_assets.js",
+    "lines": [
+      {
+        "lineNumber": 84,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 85,
+        "line": "\t * Callback for route handling.\r"
+      },
+      {
+        "lineNumber": 86,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 87,
+        "line": "\t * @param {object} arg_application - Application instance.\r"
+      },
+      {
+        "lineNumber": 88,
+        "line": "\t * @param {object} arg_cfg_route - plain object route configuration.\r"
+      },
+      {
+        "lineNumber": 89,
+        "line": "\t * @param {object} arg_data - plain object contextual datas.\r"
+      },
+      {
+        "lineNumber": 90,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 91,
+        "line": "\t * @returns {function} - route handler.\r"
+      },
+      {
+        "lineNumber": 92,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 93,
+        "line": "\tget_route_directory_cb(arg_application, arg_cfg_route/*, arg_data*/)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_application",
+      "arg_cfg_route"
+    ],
+    "docParams": [
+      "arg_application",
+      "arg_cfg_route",
+      "arg_data"
+    ]
+  },
+  {
+    "name": "ExecutableRouteAssets#get_route_plugins_cb",
+    "filePath": "js/services/assets/executable_route_assets.js",
+    "lines": [
+      {
+        "lineNumber": 109,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 110,
+        "line": "\t * Callback for route handling.\r"
+      },
+      {
+        "lineNumber": 111,
+        "line": "\t * @param {object} arg_application - Application instance.\r"
+      },
+      {
+        "lineNumber": 112,
+        "line": "\t * @param {object} arg_cfg_route - plain object route configuration.\r"
+      },
+      {
+        "lineNumber": 113,
+        "line": "\t * @param {object} arg_data - plain object contextual datas.\r"
+      },
+      {
+        "lineNumber": 114,
+        "line": "\t * @param {function} route handler.\r"
+      },
+      {
+        "lineNumber": 115,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 116,
+        "line": "\tget_route_plugins_cb(arg_application, arg_cfg_route/*, arg_data*/)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_application",
+      "arg_cfg_route"
+    ],
+    "docParams": [
+      "arg_application",
+      "arg_cfg_route",
+      "arg_data",
+      "route"
+    ]
+  },
+  {
+    "name": "ExecutableRouteMiddleware#get_route_cb",
+    "filePath": "js/services/middlewares/executable_route_middleware.js",
+    "lines": [
+      {
+        "lineNumber": 48,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 49,
+        "line": "     * Callback for route handling.\r"
+      },
+      {
+        "lineNumber": 50,
+        "line": "     * @override\r"
+      },
+      {
+        "lineNumber": 51,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 52,
+        "line": "     * @param {TopologyDefineApplication} arg_application - Application instance.\r"
+      },
+      {
+        "lineNumber": 53,
+        "line": "     * @param {object} arg_cfg_route - plain object route configuration.\r"
+      },
+      {
+        "lineNumber": 54,
+        "line": "     * @param {object} arg_data - plain object contextual datas.\r"
+      },
+      {
+        "lineNumber": 55,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 56,
+        "line": "     * @param {function} route handler.\r"
+      },
+      {
+        "lineNumber": 57,
+        "line": "     */\r"
+      },
+      {
+        "lineNumber": 58,
+        "line": "\tget_route_cb(arg_application, arg_cfg_route, arg_data)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_application",
+      "arg_cfg_route",
+      "arg_data"
+    ],
+    "docParams": [
+      "arg_application",
+      "arg_cfg_route",
+      "arg_data",
+      "route"
+    ]
+  },
+  {
+    "name": "ExecutableRouteGetResources#get_route_cb",
+    "filePath": "js/services/resources/executable_route_get_resource.js",
+    "lines": [
+      {
+        "lineNumber": 75,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 76,
+        "line": "     * Callback for route handling.\r"
+      },
+      {
+        "lineNumber": 77,
+        "line": "     * @override\r"
+      },
+      {
+        "lineNumber": 78,
+        "line": "     * @param {object} arg_application - Application instance.\r"
+      },
+      {
+        "lineNumber": 79,
+        "line": "     * @param {object} arg_cfg_route - plain object route configuration.\r"
+      },
+      {
+        "lineNumber": 80,
+        "line": "     * @param {object} arg_data - plain object contextual datas.\r"
+      },
+      {
+        "lineNumber": 81,
+        "line": "     * @param {function} route handler.\r"
+      },
+      {
+        "lineNumber": 82,
+        "line": "     */\r"
+      },
+      {
+        "lineNumber": 83,
+        "line": "\tget_route_cb(arg_application, arg_cfg_route, arg_data)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_application",
+      "arg_cfg_route",
+      "arg_data"
+    ],
+    "docParams": [
+      "arg_application",
+      "arg_cfg_route",
+      "arg_data",
+      "route"
+    ]
+  },
+  {
+    "name": "SecuritySvcConsumer#consume_local",
+    "filePath": "js/services/security/security_svc_consumer.js",
+    "lines": [
+      {
+        "lineNumber": 56,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 57,
+        "line": "\t * Consume a service on the same host.\r"
+      },
+      {
+        "lineNumber": 58,
+        "line": "\t * @param {object} arg_provider - service provider.\r"
+      },
+      {
+        "lineNumber": 59,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 60,
+        "line": "\t * @return {object} a promise of results.\r"
+      },
+      {
+        "lineNumber": 61,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 62,
+        "line": "\tconsume_local(/*arg_provider*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_provider"
+    ]
+  },
+  {
+    "name": "SecuritySvcConsumer#consume_remote",
+    "filePath": "js/services/security/security_svc_consumer.js",
+    "lines": [
+      {
+        "lineNumber": 69,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 70,
+        "line": "\t * Consume a service on a remote host.\r"
+      },
+      {
+        "lineNumber": 71,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 72,
+        "line": "\t * @param {object} arg_provider - service provider.\r"
+      },
+      {
+        "lineNumber": 73,
+        "line": "\t * @param {array} arg_routes - Routes to request.\r"
+      },
+      {
+        "lineNumber": 74,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 75,
+        "line": "\t * @return {object} a promise of results.\r"
+      },
+      {
+        "lineNumber": 76,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 77,
+        "line": "\tconsume_remote(/*arg_provider, arg_routes*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_provider",
+      "arg_routes"
+    ]
+  },
+  {
+    "name": "TopologySvcHostConsumer#consume_local",
+    "filePath": "js/services/topology/unused_topology_svc_consumer.js",
+    "lines": [
+      {
+        "lineNumber": 47,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 48,
+        "line": "\t * Consume a service on the same host.\r"
+      },
+      {
+        "lineNumber": 49,
+        "line": "\t * @param {object} arg_provider - service provider\r"
+      },
+      {
+        "lineNumber": 50,
+        "line": "\t * @return {object} a promise of results\r"
+      },
+      {
+        "lineNumber": 51,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 52,
+        "line": "\tconsume_local(/*arg_provider*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_provider"
+    ]
+  },
+  {
+    "name": "TopologySvcHostConsumer#consume_remote",
+    "filePath": "js/services/topology/unused_topology_svc_consumer.js",
+    "lines": [
+      {
+        "lineNumber": 58,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 59,
+        "line": "\t * Consume a service on a remote host\r"
+      },
+      {
+        "lineNumber": 60,
+        "line": "\t * @param {object} arg_provider - service provider\r"
+      },
+      {
+        "lineNumber": 61,
+        "line": "\t * @param {array} arg_routes - Routes to request\r"
+      },
+      {
+        "lineNumber": 62,
+        "line": "\t * @return {object} a promise of results\r"
+      },
+      {
+        "lineNumber": 63,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 64,
+        "line": "\tconsume_remote(/*arg_provider, arg_routes*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_provider",
+      "arg_routes"
+    ]
+  }
+]

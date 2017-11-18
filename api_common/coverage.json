@@ -1,0 +1,1462 @@
+{
+  "coverage": "64.26%",
+  "expectCount": 1623,
+  "actualCount": 1043,
+  "files": {
+    "js/base/collection.js": {
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
+    },
+    "js/base/collection_base.js": {
+      "expectCount": 39,
+      "actualCount": 39,
+      "undocumentLines": []
+    },
+    "js/base/collection_version.js": {
+      "expectCount": 17,
+      "actualCount": 17,
+      "undocumentLines": []
+    },
+    "js/base/context.js": {
+      "expectCount": 17,
+      "actualCount": 17,
+      "undocumentLines": []
+    },
+    "js/base/credentials.js": {
+      "expectCount": 26,
+      "actualCount": 26,
+      "undocumentLines": []
+    },
+    "js/base/distributed_instance.js": {
+      "expectCount": 25,
+      "actualCount": 25,
+      "undocumentLines": []
+    },
+    "js/base/distributed_logs.js": {
+      "expectCount": 9,
+      "actualCount": 9,
+      "undocumentLines": []
+    },
+    "js/base/distributed_message.js": {
+      "expectCount": 17,
+      "actualCount": 17,
+      "undocumentLines": []
+    },
+    "js/base/distributed_metrics.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "js/base/errorable.js": {
+      "expectCount": 9,
+      "actualCount": 9,
+      "undocumentLines": []
+    },
+    "js/base/executable.js": {
+      "expectCount": 10,
+      "actualCount": 10,
+      "undocumentLines": []
+    },
+    "js/base/instance.js": {
+      "expectCount": 19,
+      "actualCount": 19,
+      "undocumentLines": []
+    },
+    "js/base/introspectable.js": {
+      "expectCount": 20,
+      "actualCount": 20,
+      "undocumentLines": []
+    },
+    "js/base/loggable.js": {
+      "expectCount": 31,
+      "actualCount": 31,
+      "undocumentLines": []
+    },
+    "js/base/registered_service.js": {
+      "expectCount": 9,
+      "actualCount": 9,
+      "undocumentLines": []
+    },
+    "js/base/runtime.js": {
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
+    },
+    "js/base/runtime_base.js": {
+      "expectCount": 10,
+      "actualCount": 10,
+      "undocumentLines": []
+    },
+    "js/base/settingsable.js": {
+      "expectCount": 12,
+      "actualCount": 12,
+      "undocumentLines": []
+    },
+    "js/base/stateable.js": {
+      "expectCount": 20,
+      "actualCount": 20,
+      "undocumentLines": []
+    },
+    "js/cache/cache_adapter.js": {
+      "expectCount": 14,
+      "actualCount": 14,
+      "undocumentLines": []
+    },
+    "js/cache/cache_adapter_cache_manager.js": {
+      "expectCount": 17,
+      "actualCount": 17,
+      "undocumentLines": []
+    },
+    "js/cache/cache_adapter_node_cache.js": {
+      "expectCount": 14,
+      "actualCount": 14,
+      "undocumentLines": []
+    },
+    "js/cache/cache_manager.js": {
+      "expectCount": 16,
+      "actualCount": 16,
+      "undocumentLines": []
+    },
+    "js/datas/data_adapter.js": {
+      "expectCount": 32,
+      "actualCount": 32,
+      "undocumentLines": []
+    },
+    "js/datas/data_collection.js": {
+      "expectCount": 32,
+      "actualCount": 32,
+      "undocumentLines": []
+    },
+    "js/datas/data_model.js": {
+      "expectCount": 4,
+      "actualCount": 4,
+      "undocumentLines": []
+    },
+    "js/datas/data_record.js": {
+      "expectCount": 34,
+      "actualCount": 34,
+      "undocumentLines": []
+    },
+    "js/datas/data_store.js": {
+      "expectCount": 22,
+      "actualCount": 22,
+      "undocumentLines": []
+    },
+    "js/datas/providers/jsonfile_record_provider.js": {
+      "expectCount": 13,
+      "actualCount": 12,
+      "undocumentLines": [
+        84
+      ]
+    },
+    "js/datas/providers/json_provider.js": {
+      "expectCount": 16,
+      "actualCount": 16,
+      "undocumentLines": []
+    },
+    "js/datas/providers/record_provider.js": {
+      "expectCount": 8,
+      "actualCount": 8,
+      "undocumentLines": []
+    },
+    "js/datas/providers/sequelize_record_provider.js": {
+      "expectCount": 9,
+      "actualCount": 9,
+      "undocumentLines": []
+    },
+    "js/datas/todo/data_query.js": {
+      "expectCount": 24,
+      "actualCount": 13,
+      "undocumentLines": [
+        8,
+        68,
+        70,
+        71,
+        72,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    "js/default_plugins/rendering_default_plugin.js": {
+      "expectCount": 8,
+      "actualCount": 6,
+      "undocumentLines": [
+        35,
+        80
+      ]
+    },
+    "js/json_provider/file_json_provider.js": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        11
+      ]
+    },
+    "js/json_provider/json_provider.js": {
+      "expectCount": 7,
+      "actualCount": 4,
+      "undocumentLines": [
+        9,
+        38,
+        42
+      ]
+    },
+    "js/json_provider/json_provider_factory.js": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        12
+      ]
+    },
+    "js/json_provider/json_provider_sources.js": {
+      "expectCount": 8,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10
+      ]
+    },
+    "js/json_provider/master_json_provider.js": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        10
+      ]
+    },
+    "js/json_provider/redis_json_provider.js": {
+      "expectCount": 5,
+      "actualCount": 3,
+      "undocumentLines": [
+        11,
+        97
+      ]
+    },
+    "js/loggers/logger.js": {
+      "expectCount": 26,
+      "actualCount": 18,
+      "undocumentLines": [
+        23,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        34
+      ]
+    },
+    "js/loggers/logger_console.js": {
+      "expectCount": 7,
+      "actualCount": 6,
+      "undocumentLines": [
+        22
+      ]
+    },
+    "js/loggers/logger_console_standalone.js": {
+      "expectCount": 11,
+      "actualCount": 10,
+      "undocumentLines": [
+        23
+      ]
+    },
+    "js/loggers/logger_manager.js": {
+      "expectCount": 17,
+      "actualCount": 13,
+      "undocumentLines": [
+        27,
+        28,
+        29,
+        85
+      ]
+    },
+    "js/loggers/logger_msg_post.js": {
+      "expectCount": 9,
+      "actualCount": 7,
+      "undocumentLines": [
+        31,
+        33
+      ]
+    },
+    "js/loggers/logger_winston.js": {
+      "expectCount": 11,
+      "actualCount": 8,
+      "undocumentLines": [
+        14,
+        47,
+        102
+      ]
+    },
+    "js/messaging/bus_engine.js": {
+      "expectCount": 14,
+      "actualCount": 8,
+      "undocumentLines": [
+        9,
+        53,
+        54,
+        55,
+        56,
+        57
+      ]
+    },
+    "js/messaging/message_bus.js": {
+      "expectCount": 20,
+      "actualCount": 13,
+      "undocumentLines": [
+        14,
+        15,
+        16,
+        70,
+        72,
+        74,
+        75
+      ]
+    },
+    "js/messaging/socketio_bus_engine.js": {
+      "expectCount": 15,
+      "actualCount": 7,
+      "undocumentLines": [
+        13,
+        56,
+        68,
+        69,
+        232,
+        237,
+        242,
+        247
+      ]
+    },
+    "js/messaging/stream.js": {
+      "expectCount": 19,
+      "actualCount": 14,
+      "undocumentLines": [
+        8,
+        27,
+        29,
+        30,
+        32
+      ]
+    },
+    "js/messaging/streams_provider.js": {
+      "expectCount": 13,
+      "actualCount": 10,
+      "undocumentLines": [
+        11,
+        49,
+        51
+      ]
+    },
+    "js/messaging/stream_bus_engine.js": {
+      "expectCount": 9,
+      "actualCount": 6,
+      "undocumentLines": [
+        10,
+        47,
+        49
+      ]
+    },
+    "js/plugins/features_plugin.js": {
+      "expectCount": 9,
+      "actualCount": 7,
+      "undocumentLines": [
+        9,
+        49
+      ]
+    },
+    "js/plugins/plugin.js": {
+      "expectCount": 11,
+      "actualCount": 10,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "js/plugins/rendering_plugin.js": {
+      "expectCount": 15,
+      "actualCount": 13,
+      "undocumentLines": [
+        10,
+        38
+      ]
+    },
+    "js/plugins/services_plugin.js": {
+      "expectCount": 4,
+      "actualCount": 2,
+      "undocumentLines": [
+        9,
+        38
+      ]
+    },
+    "js/rendering/anchor.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        15,
+        21
+      ]
+    },
+    "js/rendering/button.js": {
+      "expectCount": 5,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        14,
+        19,
+        26
+      ]
+    },
+    "js/rendering/canvas.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        14,
+        19
+      ]
+    },
+    "js/rendering/component.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        14,
+        19
+      ]
+    },
+    "js/rendering/container.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        15,
+        20
+      ]
+    },
+    "js/rendering/dock.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        15,
+        21
+      ]
+    },
+    "js/rendering/hbox.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        17,
+        23
+      ]
+    },
+    "js/rendering/image.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        14,
+        19
+      ]
+    },
+    "js/rendering/input_field.js": {
+      "expectCount": 5,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        14,
+        20,
+        27
+      ]
+    },
+    "js/rendering/label.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        14,
+        19
+      ]
+    },
+    "js/rendering/list.js": {
+      "expectCount": 5,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        14,
+        20,
+        27
+      ]
+    },
+    "js/rendering/menubar.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        14,
+        19
+      ]
+    },
+    "js/rendering/page.js": {
+      "expectCount": 5,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        15,
+        37,
+        58
+      ]
+    },
+    "js/rendering/page_body.js": {
+      "expectCount": 5,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        14,
+        21,
+        32
+      ]
+    },
+    "js/rendering/page_content.js": {
+      "expectCount": 5,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        15,
+        20,
+        30
+      ]
+    },
+    "js/rendering/rendering_builder.js": {
+      "expectCount": 14,
+      "actualCount": 13,
+      "undocumentLines": [
+        13
+      ]
+    },
+    "js/rendering/rendering_builder_assets.js": {
+      "expectCount": 22,
+      "actualCount": 10,
+      "undocumentLines": [
+        10,
+        42,
+        44,
+        45,
+        64,
+        65,
+        66,
+        67,
+        69,
+        70,
+        71,
+        72
+      ]
+    },
+    "js/rendering/rendering_factory.js": {
+      "expectCount": 4,
+      "actualCount": 2,
+      "undocumentLines": [
+        10,
+        53
+      ]
+    },
+    "js/rendering/rendering_function.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "js/rendering/rendering_normalize.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "js/rendering/rendering_resolver.js": {
+      "expectCount": 11,
+      "actualCount": 7,
+      "undocumentLines": [
+        28,
+        29,
+        30,
+        76
+      ]
+    },
+    "js/rendering/rendering_result.js": {
+      "expectCount": 37,
+      "actualCount": 20,
+      "undocumentLines": [
+        9,
+        10,
+        18,
+        20,
+        72,
+        74,
+        75,
+        77,
+        79,
+        80,
+        81,
+        82,
+        84,
+        85,
+        86,
+        87,
+        89
+      ]
+    },
+    "js/rendering/script.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        14,
+        19
+      ]
+    },
+    "js/rendering/table.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        15,
+        23
+      ]
+    },
+    "js/rendering/tabs.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        14,
+        21
+      ]
+    },
+    "js/rendering/textarea.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        14,
+        20
+      ]
+    },
+    "js/rendering/vbox.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        14,
+        20
+      ]
+    },
+    "js/services/service.js": {
+      "expectCount": 34,
+      "actualCount": 15,
+      "undocumentLines": [
+        13,
+        19,
+        20,
+        21,
+        22,
+        23,
+        61,
+        62,
+        63,
+        64,
+        65,
+        82,
+        96,
+        97,
+        102,
+        103,
+        104,
+        105,
+        106
+      ]
+    },
+    "js/services/service_activator.js": {
+      "expectCount": 7,
+      "actualCount": 5,
+      "undocumentLines": [
+        45,
+        47
+      ]
+    },
+    "js/services/service_consumer.js": {
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
+    },
+    "js/services/service_consumer_base.js": {
+      "expectCount": 13,
+      "actualCount": 11,
+      "undocumentLines": [
+        61,
+        62
+      ]
+    },
+    "js/services/service_consumer_by_url.js": {
+      "expectCount": 14,
+      "actualCount": 13,
+      "undocumentLines": [
+        41
+      ]
+    },
+    "js/services/service_provider.js": {
+      "expectCount": 14,
+      "actualCount": 9,
+      "undocumentLines": [
+        56,
+        58,
+        59,
+        60,
+        61
+      ]
+    },
+    "js/services/service_request.js": {
+      "expectCount": 7,
+      "actualCount": 7,
+      "undocumentLines": []
+    },
+    "js/services/service_response.js": {
+      "expectCount": 6,
+      "actualCount": 6,
+      "undocumentLines": []
+    },
+    "js/state_store/map_store.js": {
+      "expectCount": 10,
+      "actualCount": 6,
+      "undocumentLines": [
+        8,
+        34,
+        35,
+        37
+      ]
+    },
+    "js/state_store/redux_store.js": {
+      "expectCount": 10,
+      "actualCount": 6,
+      "undocumentLines": [
+        9,
+        39,
+        40,
+        42
+      ]
+    },
+    "js/state_store/state_store.js": {
+      "expectCount": 10,
+      "actualCount": 7,
+      "undocumentLines": [
+        9,
+        34,
+        35
+      ]
+    },
+    "js/tasks/command_task.js": {
+      "expectCount": 6,
+      "actualCount": 3,
+      "undocumentLines": [
+        10,
+        39,
+        55
+      ]
+    },
+    "js/tasks/executable_task.js": {
+      "expectCount": 6,
+      "actualCount": 3,
+      "undocumentLines": [
+        9,
+        38,
+        55
+      ]
+    },
+    "js/tasks/task.js": {
+      "expectCount": 13,
+      "actualCount": 4,
+      "undocumentLines": [
+        7,
+        38,
+        41,
+        42,
+        43,
+        44,
+        47,
+        50,
+        51
+      ]
+    },
+    "js/tasks/task_manager.js": {
+      "expectCount": 6,
+      "actualCount": 3,
+      "undocumentLines": [
+        8,
+        37,
+        39
+      ]
+    },
+    "js/topology/define/topology_define_application.js": {
+      "expectCount": 24,
+      "actualCount": 7,
+      "undocumentLines": [
+        12,
+        56,
+        58,
+        60,
+        61,
+        62,
+        64,
+        65,
+        66,
+        67,
+        69,
+        70,
+        71,
+        72,
+        73,
+        75,
+        76
+      ]
+    },
+    "js/topology/define/topology_define_command.js": {
+      "expectCount": 11,
+      "actualCount": 2,
+      "undocumentLines": [
+        8,
+        46,
+        48,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ]
+    },
+    "js/topology/define/topology_define_datasource.js": {
+      "expectCount": 13,
+      "actualCount": 2,
+      "undocumentLines": [
+        5,
+        40,
+        42,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ]
+    },
+    "js/topology/define/topology_define_field.js": {
+      "expectCount": 22,
+      "actualCount": 3,
+      "undocumentLines": [
+        9,
+        64,
+        66,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        79,
+        80,
+        81,
+        82,
+        85,
+        86,
+        87,
+        88
+      ]
+    },
+    "js/topology/define/topology_define_item.js": {
+      "expectCount": 39,
+      "actualCount": 20,
+      "undocumentLines": [
+        9,
+        22,
+        83,
+        86,
+        87,
+        88,
+        89,
+        90,
+        93,
+        94,
+        95,
+        96,
+        98,
+        102,
+        104,
+        106,
+        107,
+        252,
+        256
+      ]
+    },
+    "js/topology/define/topology_define_menu.js": {
+      "expectCount": 5,
+      "actualCount": 2,
+      "undocumentLines": [
+        8,
+        37,
+        39
+      ]
+    },
+    "js/topology/define/topology_define_menubar.js": {
+      "expectCount": 5,
+      "actualCount": 2,
+      "undocumentLines": [
+        9,
+        40,
+        42
+      ]
+    },
+    "js/topology/define/topology_define_model.js": {
+      "expectCount": 15,
+      "actualCount": 10,
+      "undocumentLines": [
+        10,
+        126,
+        128,
+        228,
+        244
+      ]
+    },
+    "js/topology/define/topology_define_node.js": {
+      "expectCount": 5,
+      "actualCount": 2,
+      "undocumentLines": [
+        9,
+        43,
+        45
+      ]
+    },
+    "js/topology/define/topology_define_package.js": {
+      "expectCount": 7,
+      "actualCount": 4,
+      "undocumentLines": [
+        16,
+        58,
+        60
+      ]
+    },
+    "js/topology/define/topology_define_plugin.js": {
+      "expectCount": 14,
+      "actualCount": 7,
+      "undocumentLines": [
+        10,
+        46,
+        48,
+        50,
+        51,
+        52,
+        163
+      ]
+    },
+    "js/topology/define/topology_define_server.js": {
+      "expectCount": 10,
+      "actualCount": 2,
+      "undocumentLines": [
+        8,
+        53,
+        55,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
+    },
+    "js/topology/define/topology_define_service.js": {
+      "expectCount": 17,
+      "actualCount": 3,
+      "undocumentLines": [
+        9,
+        65,
+        67,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        80
+      ]
+    },
+    "js/topology/define/topology_define_tenant.js": {
+      "expectCount": 6,
+      "actualCount": 3,
+      "undocumentLines": [
+        10,
+        48,
+        50
+      ]
+    },
+    "js/topology/define/topology_define_view.js": {
+      "expectCount": 5,
+      "actualCount": 2,
+      "undocumentLines": [
+        8,
+        37,
+        39
+      ]
+    },
+    "js/topology/define/topology_define_world.js": {
+      "expectCount": 13,
+      "actualCount": 9,
+      "undocumentLines": [
+        12,
+        64,
+        66,
+        68
+      ]
+    },
+    "js/topology/deploy/topology_deploy_item.js": {
+      "expectCount": 26,
+      "actualCount": 19,
+      "undocumentLines": [
+        12,
+        59,
+        62,
+        63,
+        64,
+        223,
+        227
+      ]
+    },
+    "js/topology/deploy/topology_deploy_local_node.js": {
+      "expectCount": 20,
+      "actualCount": 15,
+      "undocumentLines": [
+        10,
+        60,
+        62,
+        64,
+        65
+      ]
+    },
+    "js/topology/registry/index.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        10,
+        11
+      ]
+    },
+    "js/topology/registry/loaders/default_config_app.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "js/topology/registry/loaders/load_application.js": {
+      "expectCount": 21,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        29,
+        30,
+        31,
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "js/topology/registry/loaders/load_applications.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "js/topology/registry/loaders/load_config.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        17
+      ]
+    },
+    "js/topology/registry/loaders/load_deployments.js": {
+      "expectCount": 11,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        97,
+        46
+      ]
+    },
+    "js/topology/registry/loaders/load_nodes.js": {
+      "expectCount": 11,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        12,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        72,
+        25
+      ]
+    },
+    "js/topology/registry/loaders/load_packages.js": {
+      "expectCount": 16,
+      "actualCount": 0,
+      "undocumentLines": [
+        12,
+        16,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        141,
+        329,
+        404,
+        33
+      ]
+    },
+    "js/topology/registry/loaders/load_plugins.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        12,
+        20
+      ]
+    },
+    "js/topology/registry/loaders/load_security.js": {
+      "expectCount": 9,
+      "actualCount": 0,
+      "undocumentLines": [
+        14,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        29
+      ]
+    },
+    "js/topology/registry/loaders/load_security_authentication.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        7
+      ]
+    },
+    "js/topology/registry/loaders/load_security_authorization.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        7
+      ]
+    },
+    "js/topology/registry/loaders/load_tenants.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        12,
+        15,
+        72,
+        18
+      ]
+    },
+    "js/topology/registry/registry_store.js": {
+      "expectCount": 24,
+      "actualCount": 4,
+      "undocumentLines": [
+        9,
+        37,
+        61,
+        78,
+        83,
+        89,
+        97,
+        104,
+        111,
+        125,
+        145,
+        149,
+        153,
+        158,
+        196,
+        209,
+        211,
+        220,
+        229,
+        238
+      ]
+    },
+    "js/topology/registry/topology_registry.js": {
+      "expectCount": 10,
+      "actualCount": 5,
+      "undocumentLines": [
+        9,
+        37,
+        38,
+        39,
+        70
+      ]
+    },
+    "js/utils/attributes_iterator.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "js/utils/diff.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "js/utils/digest.js": {
+      "expectCount": 10,
+      "actualCount": 8,
+      "undocumentLines": [
+        8,
+        17
+      ]
+    },
+    "js/utils/encode_decode.js": {
+      "expectCount": 6,
+      "actualCount": 4,
+      "undocumentLines": [
+        8,
+        17
+      ]
+    },
+    "js/utils/encrypt_decrypt.js": {
+      "expectCount": 7,
+      "actualCount": 5,
+      "undocumentLines": [
+        8,
+        17
+      ]
+    },
+    "js/utils/es5-compat.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        28
+      ]
+    },
+    "js/utils/html_entities.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "js/utils/is_browser.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4,
+        7,
+        9
+      ]
+    },
+    "js/utils/is_remote.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        11
+      ]
+    },
+    "js/utils/obj_diff.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "js/utils/old_logs.js": {
+      "expectCount": 12,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        15,
+        22,
+        29,
+        36,
+        43,
+        50,
+        58,
+        67,
+        76,
+        85,
+        11
+      ]
+    },
+    "js/utils/old_logs_console.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        6,
+        27,
+        33,
+        39,
+        45
+      ]
+    },
+    "js/utils/old_logs_winston.js": {
+      "expectCount": 9,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4,
+        19,
+        59,
+        62,
+        86,
+        93,
+        101,
+        108
+      ]
+    },
+    "js/utils/parser/load_file.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        10,
+        12,
+        13,
+        14,
+        15,
+        18
+      ]
+    },
+    "js/utils/parser/parser.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        7
+      ]
+    },
+    "js/utils/paths.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        12,
+        7
+      ]
+    },
+    "js/utils/to_boolean.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "js/utils/transform.js": {
+      "expectCount": 12,
+      "actualCount": 4,
+      "undocumentLines": [
+        10,
+        13,
+        15,
+        16,
+        17,
+        18,
+        21,
+        22
+      ]
+    },
+    "js/utils/tri_state.js": {
+      "expectCount": 14,
+      "actualCount": 0,
+      "undocumentLines": [
+        9,
+        10,
+        12,
+        13,
+        14,
+        16,
+        19,
+        21,
+        30,
+        37,
+        49,
+        55,
+        61,
+        67
+      ]
+    },
+    "js/utils/types.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        9,
+        5
+      ]
+    },
+    "js/utils/uid.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        3
+      ]
+    }
+  }
+}

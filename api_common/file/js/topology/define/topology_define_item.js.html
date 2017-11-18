@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">js/topology/define/topology_define_item.js | Devapt (Developper Application Toolkit) Core Common documentation</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Core features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common documentation"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common documentation"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Core features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common documentation"><meta property="twitter:description" content="Core features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/collection.js~Collection.html">Collection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/collection_base.js~CollectionBase.html">CollectionBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/collection_version.js~CollectionVersion.html">CollectionVersion</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/context.js~Context.html">Context</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/credentials.js~Credentials.html">Credentials</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/distributed_instance.js~DistributedInstance.html">DistributedInstance</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/distributed_logs.js~DistributedLogs.html">DistributedLogs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/distributed_message.js~DistributedMessage.html">DistributedMessage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/distributed_metrics.js~DistributedMetrics.html">DistributedMetrics</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/errorable.js~Errorable.html">Errorable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/executable.js~Executable.html">Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/instance.js~Instance.html">Instance</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/introspectable.js~Introspectable.html">Introspectable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/loggable.js~Loggable.html">Loggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/registered_service.js~RegisteredService.html">RegisteredService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/runtime_base.js~RuntimeBase.html">RuntimeBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/settingsable.js~Settingsable.html">Settingsable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/stateable.js~Stateable.html">Stateable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-get_runtime">get_runtime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-register_runtime">register_runtime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-_runtime_instance">_runtime_instance</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cache">cache</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/cache/cache_adapter.js~CacheAdapter.html">CacheAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/cache/cache_adapter_cache_manager.js~CacheAdapterCacheManager.html">CacheAdapterCacheManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/cache/cache_adapter_node_cache.js~CacheAdapterNodecache.html">CacheAdapterNodecache</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/cache/cache_manager.js~CacheManager.html">CacheManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#datas">datas</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/data_adapter.js~DataAdapter.html">DataAdapter</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/data_collection.js~DataCollection.html">DataCollection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/data_model.js~DataModel.html">DataModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/data_record.js~DataRecord.html">DataRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/data_store.js~DataStore.html">DataStore</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#datas-providers">datas/providers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/providers/json_provider.js~JsonProvider.html">JsonProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/providers/jsonfile_record_provider.js~JsonFileRecordProvider.html">JsonFileRecordProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/providers/record_provider.js~RecordProvider.html">RecordProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/providers/sequelize_record_provider.js~SequelizeRecordProvider.html">SequelizeRecordProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_LOCAL_FILE">SOURCE_LOCAL_FILE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_MASTER">SOURCE_MASTER</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_MSG_BUS">SOURCE_MSG_BUS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_NOSQL_DATABASE">SOURCE_NOSQL_DATABASE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_REMOTE_URL">SOURCE_REMOTE_URL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_SQL_DATABASE">SOURCE_SQL_DATABASE</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#datas-todo">datas/todo</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/datas/todo/data_query.js~DataQuery.html">DataQuery</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#default-plugins">default_plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/default_plugins/rendering_default_plugin.js~DefaultDefaultRendering.html">DefaultDefaultRendering</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#json-provider">json_provider</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/json_provider/file_json_provider.js~FileJsonProvider.html">FileJsonProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/json_provider/json_provider.js~JsonProvider.html">JsonProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/json_provider/json_provider_factory.js~JsonProviderFactory.html">JsonProviderFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/json_provider/master_json_provider.js~MasterJsonProvider.html">MasterJsonProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/json_provider/redis_json_provider.js~RedisJsonProvider.html">RedisJsonProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCES">SOURCES</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_LOCAL_FILE">SOURCE_LOCAL_FILE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_MASTER">SOURCE_MASTER</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_MONGODB_DATABASE">SOURCE_MONGODB_DATABASE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_MSG_BUS">SOURCE_MSG_BUS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_REDIS_DATABASE">SOURCE_REDIS_DATABASE</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_REMOTE_URL">SOURCE_REMOTE_URL</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-SOURCE_SQL_DATABASE">SOURCE_SQL_DATABASE</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/logger.js~Logger.html">Logger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/logger_console.js~LoggerConsole.html">LoggerConsole</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/logger_console_standalone.js~LoggerConsoleStandalone.html">LoggerConsoleStandalone</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/logger_manager.js~LoggerManager.html">LoggerManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/logger_msg_post.js~LoggerMessagePost.html">LoggerMessagePost</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/logger_winston.js~LoggerWinston.html">LoggerWinston</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#messaging">messaging</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/messaging/bus_engine.js~BusEngine.html">BusEngine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/messaging/message_bus.js~MessageBus.html">MessageBus</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/messaging/socketio_bus_engine.js~SocketIOBusEngine.html">SocketIOBusEngine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/messaging/stream.js~Stream.html">Stream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/messaging/stream_bus_engine.js~StreamBusEngine.html">StreamBusEngine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/messaging/streams_provider.js~SteamsProvider.html">SteamsProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#plugins">plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/features_plugin.js~FeaturesPlugin.html">FeaturesPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugin.js~Plugin.html">Plugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/rendering_plugin.js~RenderingPlugin.html">RenderingPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/services_plugin.js~ServicesPlugin.html">ServicesPlugin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#rendering">rendering</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/rendering/rendering_builder.js~RenderingBuilder.html">RenderingBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/rendering/rendering_builder_assets.js~RenderingBuilderAssets.html">RenderingBuilderAssets</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/rendering/rendering_resolver.js~RenderingResolverBuilder.html">RenderingResolverBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/rendering/rendering_result.js~RenderingResult.html">RenderingResult</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-anchor">anchor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-button">button</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-canvas">canvas</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-component">component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-container">container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dock">dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hbox">hbox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-image">image</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-input_field">input_field</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-label">label</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-list">list</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-menubar">menubar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-page">page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-page_body">page_body</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-page_content">page_content</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rendering_factory">rendering_factory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rendering_function">rendering_function</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-rendering_normalize">rendering_normalize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-script">script</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-table">table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tabs">tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-textarea">textarea</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-vbox">vbox</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">services</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_activator.js~ServiceActivator.html">ServiceActivator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_consumer.js~ServiceConsumer.html">ServiceConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_consumer_base.js~ServiceConsumerBase.html">ServiceConsumerBase</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_consumer_by_url.js~ServiceConsumerByUrl.html">ServiceConsumerByUrl</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_provider.js~ServiceProvider.html">ServiceProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_request.js~ServiceRequest.html">ServiceRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/service_response.js~ServiceResponse.html">ServiceResponse</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#state-store">state_store</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/state_store/map_store.js~MapStore.html">MapStore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/state_store/redux_store.js~ReduxStore.html">ReduxStore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/state_store/state_store.js~StateStore.html">StateStore</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#tasks">tasks</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/tasks/command_task.js~CommandTask.html">CommandTask</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/tasks/executable_task.js~ExecutableTask.html">ExecutableTask</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/tasks/task.js~Task.html">Task</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/tasks/task_manager.js~TaskManager.html">TaskManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#topology-define">topology/define</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_application.js~TopologyDefineApplication.html">TopologyDefineApplication</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_command.js~TopologyDefineCommand.html">TopologyDefineCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_datasource.js~TopologyDefineDatasource.html">TopologyDefineDatasource</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_field.js~TopologyDefineField.html">TopologyDefineField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_item.js~TopologyDefineItem.html">TopologyDefineItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_menu.js~TopologyDefineMenu.html">TopologyDefineMenu</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_menubar.js~TopologyDefineMenubar.html">TopologyDefineMenubar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_model.js~TopologyDefineModel.html">TopologyDefineModel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_node.js~TopologyDefineNode.html">TopologyDefineNode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_package.js~TopologyDefinePackage.html">TopologyDefinePackage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_plugin.js~TopologyDefinePlugin.html">TopologyDefinePlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_server.js~TopologyDefineServer.html">TopologyDefineServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_service.js~TopologyDefineService.html">TopologyDefineService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_tenant.js~TopologyDefineTenant.html">TopologyDefineTenant</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_view.js~TopologyDefineView.html">TopologyDefineView</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/define/topology_define_world.js~TopologyDefineWorld.html">TopologyDefineWorld</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#topology-deploy">topology/deploy</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/deploy/topology_deploy_item.js~TopologyDeployItem.html">TopologyDeployItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/deploy/topology_deploy_local_node.js~TopologyDeployLocalNode.html">TopologyDeployLocalNode</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#topology-registry">topology/registry</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/registry/registry_store.js~RegistryStore.html">RegistryStore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/topology/registry/topology_registry.js~TopologyRegistry.html">TopologyRegistry</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-store">store</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#topology-registry-loaders">topology/registry/loaders</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_application">load_application</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_applications">load_applications</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_config">load_config</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_deployments">load_deployments</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_nodes">load_nodes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_packages">load_packages</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_plugins">load_plugins</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_security">load_security</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_security_authentication">load_security_authentication</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_security_authorization">load_security_authorization</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-load_tenants">load_tenants</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-default_config">default_config</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/utils/digest.js~Digest.html">Digest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/utils/encode_decode.js~EncodeDecode.html">EncodeDecode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/utils/encrypt_decrypt.js~EncryptDecrypt.html">EncryptDecrypt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/utils/tri_state.js~TriState.html">TriState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-iterator_fn">iterator_fn</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-diff">diff</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-is_browser">is_browser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-is_server">is_server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-is_locale">is_locale</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-is_remote">is_remote</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-diff">diff</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-get_absolute_path">get_absolute_path</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-get_base_dir">get_base_dir</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-to_boolean">to_boolean</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-extract">extract</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-flat">flat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-out">out</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-transform">transform</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-uid">uid</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-API">API</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-types_fn">types_fn</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils-parser">utils/parser</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-parser">parser</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/topology/define/topology_define_item.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+
+// COMMON IMPORTS
+import T from &apos;../../utils/types&apos;
+import {is_browser} from &apos;../../utils/is_browser&apos;
+
+
+let  forge = undefined
+if ( is_browser() )
+{
+	forge = require(&apos;forge-browser&apos;).forge
+} else {
+	forge = require(&apos;node-forge&apos;)
+}
+
+// COMMON IMPORTS
+import CollectionVersion from &apos;../../base/collection_version&apos;
+import Instance from &apos;../../base/instance&apos;
+
+
+const context = &apos;common/topology/define/topology_define_item&apos;
+
+
+
+/**
+ * TopologyDefineItem class.
+ * 
+ * @author Luc BORIES
+ * @license Apache-2.0
+ * 
+ * @example
+* A Topology item is a runtime dynamic object corresponding to a static topology registry item.
+* Each item has a name, a tenant, a package, a version and initial settings.
+* Item sub class instances can have collections of children items.
+* 
+* Topology registry is shared and synchronized between all topology nodes with a master node to acknoledge changes.
+* Topology runtime is the dynamic corresponding part of a topology registry and is instancied on each node.
+* 
+* API:
+* 		-&gt;load():nothing - load Topology item settings.
+* 		-&gt;get_topology_info(arg_deep=true, arg_visited={}):object - get topology item informations.
+* 		-&gt;get_children():object - gt topology children items.
+* 		
+* 		-&gt;get_topology_type():string     - get resource topology type.
+* 		-&gt;get_topology_tenant():string   - get resource topology tenant.
+* 		-&gt;get_topology_package():string  - get resource topology package.
+* 		-&gt;get_topology_version():string  - get resource topology version.
+* 		-&gt;get_topology_uid_desc():string - get resource topology uid description.
+* 		-&gt;get_topology_uid():string      - get resource topology uid.
+* 		-&gt;get_topology_security():object - get resource topology security.
+* 
+* 
+ */
+export default class TopologyDefineItem extends Instance
+{
+	/**
+	 * Create a topology item instance.
+	 * 
+	 * @param {string} arg_name - instance name.
+	 * @param {object} arg_settings - instance settings map.
+	 * @param {string} arg_class - class name.
+	 * @param {string} arg_log_context - trace context string.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_name, arg_settings, arg_class, arg_log_context)
+	{
+		const log_context = arg_log_context ? arg_log_context : context
+		assert( T.isObject(arg_settings), log_context + &apos;:bad settings object&apos;)
+		
+		// DECORATE STATE WITH A VERSION
+		if ( (! arg_settings.get) &amp;&amp; arg_settings &amp;&amp; arg_settings.state &amp;&amp; !arg_settings.state.state_version)
+		{
+			arg_settings.state.state_version = 0
+		} else if ( arg_settings.setIn &amp;&amp; arg_settings.has(&apos;state&apos;) &amp;&amp; ! arg_settings.hasIn([&apos;state&apos;, &apos;state_version&apos;]) )
+		{
+			arg_settings = arg_settings.setIn([&apos;state&apos;, &apos;state_version&apos;], 0)
+		}
+
+		super(&apos;defined_topology&apos;, arg_class ? arg_class : &apos;TopologyDefineItem&apos;, arg_name, arg_settings, log_context)
+		
+		this.is_topology_define_item = true
+
+		// DEFINE DEFAULT ATTRIBUTES VALUES
+		this.DEFAULT_TYPE = &apos;item&apos;
+		this.DEFAULT_TENANT = &apos;default&apos;
+		this.DEFAULT_PACKAGE = &apos;default&apos;
+		this.DEFAULT_VERSION = &apos;0.0.0&apos;
+		this.DEFAULT_SECURITY = {}
+
+		// SET ATTRIBUTES VALUES
+		this.topology_type = this.get_setting(&apos;type&apos;, this.DEFAULT_TYPE)
+		this.topology_tenant = this.get_setting(&apos;tenant&apos;, this.DEFAULT_TENANT)
+		this.topology_package = this.get_setting(&apos;package&apos;, this.DEFAULT_PACKAGE)
+		this.topology_version = this.get_setting(&apos;version&apos;, this.DEFAULT_VERSION)
+
+		this.topology_uid_desc = &apos;uid:&apos; + this.topology_tenant + &apos;/&apos; + this.topology_package + &apos;/&apos; + this.get_name() + &apos;/&apos; + this.topology_version
+		
+		const md = forge.md.sha1.create()
+		md.update(this.topology_uid_desc)
+		this.topology_uid = md.digest().toHex()
+
+		this.topology_security = this.get_setting(&apos;security&apos;, this.DEFAULT_SECURITY)
+		
+		this.topology_children = {}
+		this.topology_owner = undefined
+
+		// console.log((arg_class ? arg_class : &apos;TopologyDefineItem&apos;) + &apos;:&apos; + arg_name, this.is_trace_enabled ? &apos;trace enabled&apos; : &apos;trace disabled&apos;)
+	}
+	
+	
+
+	/**
+	 * Load Topology item settings.
+	 * 
+	 * @returns {Promise} - Promise(boolean): true=success, false=failure
+	 */
+	load()
+	{
+		// this.enable_trace()
+		this.enter_group(&apos;load&apos;)
+		
+		super.load()
+		
+		const promises = []
+		const children_names = Object.keys(this.topology_children)
+		this.debug(&apos;load:children_names=&apos; + children_names)
+		children_names.forEach(
+			(child_name)=&gt;{
+				this.debug(&apos;load:child=&apos; + child_name)
+				const child_collection = this.topology_children[child_name]
+				const child_promise = this.load_collection(child_collection.plural, child_collection, child_collection.item_class, child_collection.item_init)
+				promises.push(child_promise)
+			}
+		)
+		
+		if (promises.length == 0)
+		{
+			this.leave_group(&apos;load:async is resolved without item children with success&apos;)
+			return Promise.resolve(true)
+		}
+		
+		this.leave_group(&apos;load:async wait&apos;)
+		return Promise.all(promises).then(
+			(result)=&gt;{
+				// this.disable_trace()
+				this.leave_group(&apos;load:async is resolved with &apos; + (result ? &apos;success&apos; : &apos;failure&apos;))
+				return result
+			}
+		)
+	}
+	
+
+
+	/**
+	 * Check functional format.
+	 * 
+	 * @returns {boolean}
+	 */
+	is_valid()
+	{
+		return true
+	}
+
+
+	
+	/**
+	 * Compare two versions.
+	 * @TODO: use node-semver
+	 * 
+	 * @param {string} arg_op - comparison operator (&lt;, &lt;=, =, &gt;=, &gt;).
+	 * @param {string} arg_version1 - left version.
+	 * @param {string} arg_version2 - right version.
+	 * 
+	 * @returns {boolean}
+	 */
+	compare_versions(arg_op, arg_version1, arg_version2)
+	{
+		switch(arg_op)
+		{
+			case &apos;&lt;&apos;:	return arg_version1 &lt;  arg_version2
+			case &apos;&lt;=&apos;:	return arg_version1 &lt;= arg_version2
+			case &apos;&gt;&apos;:	return arg_version1 &gt;  arg_version2
+			case &apos;&gt;=&apos;:	return arg_version1 &gt;= arg_version2
+			case &apos;=&apos;:	return arg_version1 == arg_version2
+		}
+		return false
+	}
+
+
+
+	/**
+	 * Load a collection of topology items.
+	 * 
+	 * @param {string} arg_plural_name - plural name of the collection.
+	 * @param {string} arg_single_name - single name of the collection item.
+	 * @param {class} arg_topology_class - item TopologyDefineItem child class.
+	 * @param {function} arg_init_cb - optional callback to complete item loading:(name,settings)=&gt;Promise(boolean).
+	 * 
+	 * @returns {nothing}
+	 */
+	declare_collection(arg_plural_name, arg_single_name, arg_topology_class, arg_init_cb)
+	{
+		this.enter_group(&apos;declare_collection of &apos; + arg_plural_name)
+
+		// CHECK ARGS
+		assert( T.isString(arg_plural_name) &amp;&amp; arg_plural_name.length &gt; 0, context + &apos;:declare_collection:bad plural name for plural=&apos; + arg_plural_name + &apos;,single=&apos; + arg_single_name)
+		assert( T.isString(arg_single_name) &amp;&amp; arg_single_name.length &gt; 0, context + &apos;:declare_collection:bad single string for plural=&apos; + arg_plural_name + &apos;,single=&apos; + arg_single_name)
+		assert( T.isFunction(arg_topology_class), context + &apos;:declare_collection:bad class object for plural=&apos; + arg_plural_name + &apos;,single=&apos; + arg_single_name)
+		
+		// DECLARE COLLECTION
+		// const filter_version = (arg_name, arg_version)=&gt;{
+		// 	return (arg_item)=&gt;{
+		// 		return arg_item.get_name() == arg_name &amp;&amp; arg_item.get_topology_version() == arg_version
+		// 	}
+		// }
+		this.topology_children[arg_plural_name] = {
+			is_versionned_collection: true,
+			plural:arg_plural_name,
+			single:arg_single_name,
+			item_class:arg_topology_class,
+			item_init:arg_init_cb,
+
+			collection:new CollectionVersion(),
+			
+			has:(arg_name, arg_version)=&gt;{
+				if (arg_version == &apos;latest&apos;)
+				{
+					return this.topology_children[arg_plural_name].collection.has(arg_name)
+				}
+				return this.topology_children[arg_plural_name].collection.has_version(arg_name, arg_version)
+			},
+			get:(arg_name, arg_version)=&gt;{
+				if (arg_version == &apos;latest&apos;)
+				{
+					return this.topology_children[arg_plural_name].collection.get_latest_item(arg_name)
+				}
+				return this.topology_children[arg_plural_name].collection.get_item_of_version(arg_name, arg_version)
+			},
+			add:(arg_item)=&gt;{
+				this.debug(&apos;collection[&apos; + arg_plural_name + &apos;].add item[&apos; + arg_item.get_name() + &apos;]&apos;)
+				this.topology_children[arg_plural_name].collection.add(arg_item)
+			},
+			remove:(arg_item)=&gt;{
+				this.debug(&apos;collection[&apos; + arg_plural_name + &apos;].remove item[&apos; + arg_item.get_name() + &apos;]&apos;)
+				this.topology_children[arg_plural_name].collection.remove(arg_item)
+			}
+		}
+
+		// DECLARE ACCESSORS
+		this[arg_plural_name] = ()=&gt;{
+			return this.topology_children[arg_plural_name].collection
+		}
+
+		this[arg_single_name] = (arg_name, arg_version=&apos;latest&apos;)=&gt;{
+			// console.log(&apos;find item [&apos; + arg_name + &apos;] of version [&apos; + arg_version + &apos;] of collection [&apos; + arg_plural_name + &apos;]&apos;)
+			if (arg_version == &apos;latest&apos;)
+			{
+				return this.topology_children[arg_plural_name].collection.get_latest_item(arg_name)
+			}
+			return this.topology_children[arg_plural_name].collection.get_item_of_version(arg_name, arg_version)
+		}
+
+		this.leave_group(&apos;declare_collection of &apos; + arg_plural_name)
+	}
+
+
+
+	/**
+	 * Load a collection of topology items.
+	 * 
+	 * @param {string} arg_collection_name - name of the collection in the item settings.
+	 * @param {object} arg_collection - child collection of items.
+	 * @param {class} arg_topology_class - item TopologyDefineItem child class.
+	 * @param {function} arg_init_cb - optional callback to complete item loading:(name,settings)=&gt;Promise(boolean).
+	 * 
+	 * @returns {Promise} - Promise(boolean): true=success, false=failure.
+	 */
+	load_collection(arg_collection_name, arg_collection, arg_topology_class, arg_init_cb)
+	{
+		this.enter_group(&apos;load_collection of &apos; + arg_collection_name)
+		// console.info(&apos;load_collection of &apos; + arg_collection_name)
+		
+		const runtime = this.get_runtime()
+		const logger_manager = this.get_logger_manager()
+		assert( T.isObject(runtime) &amp;&amp; runtime.is_server_runtime, context + &apos;:load_collection:bad runtime instance&apos;)
+		assert( T.isObject(logger_manager) &amp;&amp; logger_manager.is_logger_manager, context + &apos;:load_collection:bad logger_manager instance&apos;)
+
+		const promises = []
+		// TODO ???
+		const collection_settings = this.get_setting(arg_collection_name, this.get_setting([&apos;resources_by_type&apos;, arg_collection_name], undefined))
+		if (collection_settings)
+		{
+			const all_map = collection_settings.toMap()
+			all_map.forEach(
+				(settings, name) =&gt; {
+					this.info(&apos;Processing &apos; + arg_collection_name + &apos; item creation of:&apos; + name)
+					// console.log(settings, &apos;settings&apos;)
+					// console.log(name, &apos;name&apos;)
+					if (! settings.has(&apos;tenant&apos;))
+					{
+						settings = settings.set(&apos;tenant&apos;, this.get_topology_tenant())
+					}
+					if (! settings.has(&apos;package&apos;))
+					{
+						settings = settings.set(&apos;package&apos;, this.get_topology_package())
+					}
+
+					settings = settings.set(&apos;name&apos;, name)
+					settings = settings.set(&apos;runtime&apos;, runtime)
+					settings = settings.set(&apos;logger_manager&apos;, logger_manager)
+					
+					this.info(&apos;Creating &apos; + arg_collection_name + &apos; item &apos; + name)
+					const item = new arg_topology_class(name, settings)
+					item.topology_owner = this
+
+					arg_collection.add(item)
+
+					this.info(&apos;Loading &apos; + arg_collection_name + &apos; item &apos; + name)
+					let load_promise = item.load()
+
+					if ( T.isFunction(arg_init_cb) )
+					{
+						load_promise = load_promise.then(
+							(result)=&gt;{
+								if (result)
+								{
+									return arg_init_cb(item)
+								}
+								return false
+							}
+						)
+					}
+
+					load_promise = load_promise.then(
+						(result)=&gt;{
+							return result &amp;&amp; item.is_valid()
+						}
+					)
+
+					promises.push(load_promise)
+				}
+			)
+		}
+		
+		this.leave_group(&apos;load_collection of &apos; + arg_collection_name + &apos;:async wait&apos;)
+		return Promise.all(promises).then(
+			(result)=&gt;{
+				this.leave_group(&apos;load_collection of &apos; + arg_collection_name + &apos;:async is resolved with &apos; + (result ? &apos;success&apos; : &apos;failure&apos;))
+				return result
+			}
+		)
+	}
+
+
+
+	/**
+	 * Get exporting settings.
+	 * 
+	 * @returns {object} - exported settings for browser without sensitive values.
+	 */
+	export_settings()
+	{
+		const settings = this.get_settings_js()
+
+		return settings
+	}
+
+
+
+	/**
+	 * Get topology item informations.
+	 * 
+	 * @param {boolean} arg_deep - get deep sub items information on true (default:true).
+	 * @param {object} arg_visited - visited items plain object map (default:{}).
+	 * 
+	 * @returns {object} - topology informations (plain object).
+	 */
+	get_topology_info(arg_deep=true, arg_visited={})
+	{
+		const info = {
+			name:this.get_name(),
+			uid_desc:this.topology_uid_desc,
+			uid:this.topology_uid,
+
+			tenant:this.topology_tenant,
+			package:this.topology_package,
+			version:this.topology_version,
+			
+			type:this.topology_type,
+			security:this.topology_security,
+			
+			children:this.get_children_names()
+		}
+
+		if ( arg_visited &amp;&amp; (this.topology_uid in arg_visited) )
+		{
+			return Object.assign(info, { note:&apos;already dumped&apos; } )
+		}
+
+		arg_visited[this.topology_uid] = info
+
+		if (arg_deep)
+		{
+			const children_names = info.children
+			info.children = []
+			children_names.forEach(
+				(child_name) =&gt; {
+					let child = this.topology_children[child_name]
+
+					// CHILD IS NOT FOUND
+					if (! child)
+					{
+						console.error(context + &apos;:get_topology_info:child not found [&apos; + child_name + &apos;] for item [&apos; + info.name + &apos;]&apos;)
+						return
+					}
+
+					// CHILD IS A TOPOLOGY DEFINE ITEM
+					if ( child &amp;&amp; T.isFunction(child.get_topology_info) )
+					{
+						info.children.push( child.get_topology_info(arg_deep, arg_visited) )
+						return
+					}
+
+					// CHILD IS A VERSIONNED COLLECTION
+					if ( T.isObject(child) &amp;&amp; child.is_versionned_collection)
+					{
+						const all_versioned_items = child.collection.get_all()
+						all_versioned_items.forEach(
+							(item)=&gt;{
+								info.children.push( item.get_topology_info() )
+							}
+						)
+					}
+				}
+			)
+		}
+
+		return info
+	}
+
+
+
+	/**
+	 * Dump topology item informations.
+	 * 
+	 * @param {object}   arg_info  - topology info object.
+	 * @param {string}   arg_tabs  - separator.
+	 * @param {string}   arg_eol   - end of line char.
+	 * @param {function} arg_write - output function.
+	 * 
+	 * @returns {nothing}
+	 */
+	dump_topology_info(arg_info, arg_tabs=&apos; &apos;, arg_eol=&apos;\n&apos;, arg_write = console.info)
+	{
+		arg_write(arg_tabs + &apos;-------------------------------------&apos; + arg_eol)
+		arg_write(arg_tabs + &apos;name:&apos;		+ arg_info.name + arg_eol)
+		arg_write(arg_tabs + &apos;uid_desc:&apos;	+ arg_info.uid_desc + arg_eol)
+		arg_write(arg_tabs + &apos;uid:&apos;			+ arg_info.uid + arg_eol)
+		arg_write(arg_tabs + &apos;tenant:&apos;		+ arg_info.tenant + arg_eol)
+		arg_write(arg_tabs + &apos;package:&apos;		+ arg_info.package + arg_eol)
+		arg_write(arg_tabs + &apos;version:&apos;		+ arg_info.version + arg_eol)
+		arg_write(arg_tabs + &apos;type:&apos;		+ arg_info.type + arg_eol)
+		arg_write(arg_tabs + &apos;security:&apos;	+ arg_info.security + arg_eol)
+		
+		arg_write(arg_tabs + &apos;children: [&apos; + arg_eol)
+		arg_info.children.forEach(
+			(child_info)=&gt;{
+				this.dump_topology_info(child_info, arg_tabs + &apos; &apos;, arg_eol, arg_write)
+			}
+		)
+		arg_write(arg_tabs + &apos;]&apos; + arg_eol)
+	}
+
+
+
+	/**
+	 * Get children names.
+	 * 
+	 * @returns {array}
+	 */
+	get_children_names()
+	{
+		return Object.keys(this.topology_children)
+	}
+
+
+
+	/**
+	 * Get resource topology type.
+	 * 
+	 * @returns {string}
+	 */
+	get_topology_type()
+	{
+		return this.topology_type
+	}
+
+
+
+	/**
+	 * Get resource topology tenant.
+	 * 
+	 * @returns {string}
+	 */
+	get_topology_tenant()
+	{
+		return this.topology_tenant
+	}
+
+
+
+	/**
+	 * Get resource topology package.
+	 * 
+	 * @returns {string}
+	 */
+	get_topology_package()
+	{
+		return this.topology_package
+	}
+
+
+
+	/**
+	 * Get resource topology version.
+	 * 
+	 * @returns {string}
+	 */
+	get_topology_version()
+	{
+		return this.topology_version
+	}
+
+
+
+	/**
+	 * Get resource topology uid description.
+	 * 
+	 * @returns {string}
+	 */
+	get_topology_uid_desc()
+	{
+		return this.topology_uid_desc
+	}
+
+
+
+	/**
+	 * Get resource topology uid.
+	 * 
+	 * @returns {string}
+	 */
+	get_topology_uid()
+	{
+		return this.topology_uid
+	}
+
+
+
+	/**
+	 * Get resource topology security.
+	 * 
+	 * @returns {object}
+	 */
+	get_topology_security()
+	{
+		return this.topology_security
+	}
+
+
+
+	/**
+	 * Get topology children items.
+	 * 
+	 * @returns {object} - map of children items.
+	 */
+	get_children()
+	{
+		return this.topology_children
+	}
+
+
+
+	/**
+	 * Get topology owner.
+	 * 
+	 * @returns {string}
+	 */
+	get_topology_owner()
+	{
+		return this.topology_owner
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">js/services/uused_base/unused_socketio_service_provider.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/runtime.js~Runtime.html">Runtime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/security.js~Security.html">Security</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/transaction.js~Transaction.html">Transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-runtime_singleton">runtime_singleton</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics">metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/metric_duration.js~MetricDuration.html">MetricDuration</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-base">metrics/base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_collector.js~MetricsCollector.html">MetricsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_record.js~MetricsRecord.html">MetricsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_reducer.js~MetricsReducer.html">MetricsReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_state.js~MetricsState.html">MetricsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-bus">metrics/bus</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_collector.js~MetricsBusCollector.html">MetricsBusCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_record.js~MetricsBusRecord.html">MetricsBusRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_reducer.js~MetricsBusReducer.html">MetricsBusReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_state.js~MetricBusState.html">MetricBusState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-host">metrics/host</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_collector.js~MetricsHostCollector.html">MetricsHostCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_record.js~MetricsHostRecord.html">MetricsHostRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_reducer.js~MetricsHostReducer.html">MetricsHostReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_state.js~MetricHostState.html">MetricHostState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-http">metrics/http</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_collector.js~MetricsHttpCollector.html">MetricsHttpCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_record.js~MetricsHttpRecord.html">MetricsHttpRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_reducer.js~MetricHttpReducer.html">MetricHttpReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_state.js~MetricsHttpState.html">MetricsHttpState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-nodejs">metrics/nodejs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_collector.js~MetricsNodeJsCollector.html">MetricsNodeJsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_record.js~MetricsNodeJsRecord.html">MetricsNodeJsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_reducer.js~MetricsNodeReducer.html">MetricsNodeReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_state.js~MetricNodeJsState.html">MetricNodeJsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#nodes">nodes</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/bus_node_feature.js~BusNodeFeature.html">BusNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/metrics_node_feature.js~MetricsNodeFeature.html">MetricsNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node.js~Node.html">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_feature.js~NodeFeature.html">NodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_messaging.js~NodeMessaging.html">NodeMessaging</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/servers_node_feature.js~ServersNodeFeature.html">ServersNodeFeature</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#plugins">plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/features_manager.js~FeaturesManager.html">FeaturesManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_factory.js~PluginsFactory.html">PluginsFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_manager.js~PluginsManager.html">PluginsManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/rendering_manager.js~RenderingManager.html">RenderingManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_manager.js~ServersManager.html">ServersManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_plugin.js~ServersPlugin.html">ServersPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/services_manager.js~ServicesManager.html">ServicesManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/runtime_executable.js~RuntimeExecutable.html">RuntimeExecutable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage0_create_local_node_executable.js~RuntimeStage0Executable.html">RuntimeStage0Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage1_define_topology_executable.js~RuntimeStage1Executable.html">RuntimeStage1Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage2_load_local_topology_executable.js~RuntimeStage2Executable.html">RuntimeStage2Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage3_start_local_node_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage3_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage4_executable.js~RuntimeStage4Executable.html">RuntimeStage4Executable</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security">security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_manager.js~AuthenticationManager.html">AuthenticationManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin.js~AuthenticationPlugin.html">AuthenticationPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin_lowdb.js~AuthenticationLowDbPlugin.html">AuthenticationLowDbPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_wrapper.js~AuthenticationWrapper.html">AuthenticationWrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authorization_manager.js~AuthorizationManager.html">AuthorizationManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security-todo">security/todo</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport.js~AuthenticationPluginPassport.html">AuthenticationPluginPassport</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local.js~AuthenticationPluginPassportLocal.html">AuthenticationPluginPassportLocal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_db.js~AuthenticationPluginPassportLocalDb.html">AuthenticationPluginPassportLocalDb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_file.js~AuthenticationPluginPassportLocalFile.html">AuthenticationPluginPassportLocalFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#servers">servers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/express_server.js~ExpressServer.html">ExpressServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/logs_server.js~LogsServer.html">LogsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/metrics_server.js~MetricsServer.html">MetricsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/restify_server.js~RestifyServer.html">RestifyServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/routable_server.js~RoutableServer.html">RoutableServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/server.js~Server.html">Server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServerTypes">ServerTypes</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">services</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/routes_svc_consumer.js~RoutesSvcConsumer.html">RoutesSvcConsumer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-uused-base">services/uused_base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_service_exec_provider.js~ServiceExecProvider.html">ServiceExecProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_socketio_service_provider.js~SocketIOServiceProvider.html">SocketIOServiceProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/services/uused_base/unused_socketio_service_provider.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+import Baconjs from &apos;baconjs&apos;
+
+// COMMON IMPORTS
+import T           from &apos;devapt-core-common/dist/js/utils/types&apos;
+import Credentials from &apos;devapt-core-common/dist/js/base/credentials&apos;
+import ServiceProvider from &apos;devapt-core-common/dist/js/services/service_provider&apos;
+
+// SERVER IMPORTS
+import runtime from &apos;../../base/runtime&apos;
+
+
+let context = &apos;server/services/base/socketio_service_provider&apos;
+
+
+
+/**
+ * Service provider base class with SocketIO provider features.
+ * @abstract
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class SocketIOServiceProvider extends ServiceProvider
+{
+	/**
+	 * Create a service provider.
+	 * 
+	 * @param {string} arg_provider_name - consumer name.
+	 * @param {Service} arg_service_instance - service instance.
+	 * @param {string} arg_context - logging context label.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_provider_name, arg_service_instance, arg_context)
+	{
+		assert( T.isString(arg_provider_name), context + &apos;:bad provider name string&apos;)
+		assert( T.isObject(arg_service_instance) &amp;&amp; arg_service_instance.is_service, context + &apos;:bad service object&apos;)
+		
+		super(arg_provider_name, arg_service_instance, arg_context ? arg_context : context)
+		
+		this.is_socketio_service_provider = true
+		
+		this.subscribers_sockets = []
+		this.runtime = runtime
+		
+		// TRACE
+		// this.enable_trace()
+		
+		// ACTIVATE SERVICE ON SOCKETIO SERVER FOR BROWSER REQUEST
+		this.activate_on_socketio_servers()
+		
+		
+		// CREATE AN OUTPUT STREAM AND A TRANSFORMED OUTPUT STREAM
+		const self = this
+		self.provided_values_stream = new Baconjs.Bus()
+		if ( T.isFunction(this.init_provided_values_stream) )
+		{
+			this.init_provided_values_stream()
+		}
+		const post_cb = (v) =&gt; {
+			// console.log(context + &apos;:on stream value for provider %s&apos;,  arg_provider_name)
+			self.post_provided_values_to_subscribers(v)
+		}
+		self.provided_values_stream.onValue(post_cb)
+	}
+	
+	
+	
+	/**
+	 * Post a message on the bus.
+	 * 
+	 * @param {object} arg_msg - message payload.
+	 * 
+	 * @returns {nothing}
+	 */
+	post_provided_values_to_subscribers(arg_datas)
+	{
+		const svc_name = this.service.get_name()
+		// console.log(context + &apos;:post:emit datas for &apos; + svc_name + &apos; with subscribers:&apos; + this.subscribers_sockets.length)
+		this.subscribers_sockets.forEach(
+			(socket) =&gt; {
+				// console.log(context + &apos;:post:emit datas for &apos; + svc_name)
+				socket.emit(&apos;post&apos;, { service:svc_name, operation:&apos;post&apos;, result:&apos;done&apos;, datas:arg_datas })
+			}
+		)
+		
+	}
+	
+	
+	/**
+	 * Get service provider operations.
+	 * 
+	 * @param {object} arg_socket - client socket.
+	 * 
+	 * @returns {object} - plain object of operations as name:callback
+	 */
+	get_io_operations(arg_socket)
+	{
+		const self = this
+		const svc_name = self.service.get_name()
+		
+		return {
+			// SETTINGS
+			&apos;request_settings&apos;:
+				(data, credentials) =&gt; {
+					const defined_topology = runtime.get_defined_topology()
+					const defined_svc = defined_topology.find_service_with_credentials(credentials, svc_name, &apos;services&apos;)
+					const svc_settings_js = defined_svc ? defined_svc.export_settings() : {}
+					const svc_browser_settings_js = svc_settings_js.browser ? svc_settings_js.browser : {}
+					arg_socket.emit(&apos;reply_settings&apos;, { svc: svc_name, settings:svc_browser_settings_js })
+				},
+			
+			// SOCKET OPERATIONS
+			&apos;disconnect&apos;:
+				() =&gt; {
+					self.info(&apos;activate_on_socketio_server:socket disconnected from /&apos; + svc_name)
+					arg_socket.emit(&apos;bye bye from /&apos; + svc_name, { from: &apos;world&apos; })
+				},
+			&apos;end&apos;:
+				() =&gt; {
+					arg_socket.disconnect(0)
+				},
+			&apos;ping&apos;:
+				() =&gt; {
+					// console.info(context + &apos;:activate_on_socketio_server:socket get on /&apos; + svc_name, socket.id, data)
+					arg_socket.emit(&apos;pong&apos;, &apos;/&apos; + svc_name + &apos;/ping response&apos;)
+				},
+			
+			// SECURITY OPERATIONS
+			&apos;login&apos;:
+				(data, arg_credentials) =&gt; {
+					self.on_method(&apos;login&apos;, arg_socket, data, arg_credentials)
+				},
+			&apos;signup&apos;:
+				(data, arg_credentials) =&gt; {
+					self.on_method(&apos;signup&apos;, arg_socket, data, arg_credentials)
+				},
+			&apos;logout&apos;:
+				(data, arg_credentials) =&gt; {
+					self.on_method(&apos;logout&apos;, arg_socket, data, arg_credentials)
+				},
+			&apos;renew&apos;:
+				(data, arg_credentials) =&gt; {
+					self.on_method(&apos;renew&apos;, arg_socket, data, arg_credentials)
+				},
+			&apos;change_password&apos;:
+				(data, arg_credentials) =&gt; {
+					self.on_method(&apos;change_password&apos;, arg_socket, data, arg_credentials)
+				},
+			&apos;reset_password&apos;:
+				(data, arg_credentials) =&gt; {
+					self.on_method(&apos;reset_password&apos;, arg_socket, data, arg_credentials)
+				},
+				
+			// SUBSCRIPTION OPERATIONS
+			&apos;subscribe&apos;:
+				(data, arg_credentials) =&gt; {
+					self.subscribe(arg_socket, data, arg_credentials)
+				},
+			&apos;unsubscribe&apos;:
+				(data, arg_credentials) =&gt; {
+					self.unsubscribe(arg_socket, data, arg_credentials)
+				},
+			
+			// OTHERS OPERATIONS
+			&apos;get&apos;:
+				(data, arg_credentials) =&gt; {
+					self.on_method(&apos;get&apos;, arg_socket, data, arg_credentials)
+				},
+			&apos;render&apos;:
+				(data, arg_credentials) =&gt; {
+					self.on_method(&apos;render&apos;, arg_socket, data, arg_credentials)
+				},
+			&apos;list&apos;:
+				(data, arg_credentials) =&gt; {
+					self.on_method(&apos;list&apos;, arg_socket, data, arg_credentials)
+				},
+			&apos;push&apos;:
+				(data, arg_credentials) =&gt; {
+					self.on_method(&apos;push&apos;, arg_socket, data, arg_credentials)
+				}
+		}
+	}
+	
+	
+	/**
+	 * Activate service on socketio server for browser request with messages.
+	 * @returns {nothing}
+	 */
+	activate_on_socketio_servers()
+	{
+		const self = this
+		const svc_name = self.service.get_name()
+		
+		self.debug(&apos;activate_on_socketio_servers:svc=&apos; + svc_name)
+		
+		Object.keys(runtime.socketio_servers).forEach(
+			(server_name) =&gt; {
+				const socketio_server = runtime.socketio_servers[server_name]
+				
+				self.debug(&apos;activate_on_socketio_servers:svc=&apos; + svc_name + &apos;:server=&apos; + server_name)
+				
+				self.activate_on_socketio_server(socketio_server)
+			}
+		)
+		
+		if ( T.isFunction(self.activate_on_socketio_servers_self) )
+		{
+			self.activate_on_socketio_servers_self()
+		}
+	}
+	
+	
+	/**
+	 * Activate service on one socketio server for browser request with messages.
+	 * 
+	 * @param {object} arg_socketio - socketio server.
+	 * 
+	 * @returns {nothing}
+	 */
+	activate_on_socketio_server(arg_socketio)
+	{
+		const self = this
+		const svc_name = self.service.get_name()
+		const serverio_svc = arg_socketio.of(svc_name)
+		
+		// console.log(context + &apos;:activate_on_socketio_server:svc=&apos; + svc_name + &apos;:socket.id=&apos; + serverio_svc.id)
+		
+		serverio_svc.on(&apos;connection&apos;,
+			(socket) =&gt; {
+				self.info(&apos;activate_on_socketio_server:new connection on /&apos; + svc_name, socket.id)
+				
+				const ops = self.get_io_operations(socket)
+				Object.keys(ops).forEach(
+					(key) =&gt; {
+						const callback = ops[key]
+						const check_cb = (data) =&gt; {
+							// LOGIN SPECIAL CASE: NO CREDENTIALS YET!
+							const no_credentials_ops = [&apos;login&apos;, &apos;disconnect&apos;, &apos;end&apos;, &apos;ping&apos;]
+							if ( no_credentials_ops.indexOf(key) &gt; -1 )
+							{
+								// console.info(context + &apos;:activate_on_socketio_server:operation %s of svc %s without credentials with data:&apos;, key, svc_name, data)
+								callback(data, undefined)
+								return
+							}
+							
+							// console.info(context + &apos;:activate_on_socketio_server:operation %s indexOf:&apos;, key, no_credentials_ops.indexOf(key))
+							
+							// CHECK CREDENTIALS
+							if ( ! data || ! data.credentials )
+							{
+								socket.emit(key, { service:svc_name, operation:key, result:&apos;authorization failure&apos; })
+								self.error(&apos;bad credentials&apos;)
+								console.error(context + &apos;:activate_on_socketio_server:bad credentials for method %s of svc %s with data:&apos;, key, svc_name, data)
+								return
+							}
+							
+							// console.log(context + &apos;:on: svc=%s op=%s :arg_credentials&apos;, svc_name, key, data.credentials.username)
+							const credentials = new Credentials(data.credentials)
+							runtime.security().authenticate(credentials)
+							.then(
+								(authenticate_result) =&gt; {
+									if (authenticate_result)
+									{
+										self.debug(&apos;authentication success&apos;)
+										// console.log(context + &apos;authentication success&apos;)
+										
+										const permission = { resource:svc_name, operation:key }
+										let authorization_promise = runtime.security().authorize(permission, credentials)
+										return authorization_promise.then(
+											(authorize_result) =&gt; {
+												// console.log(context + &apos;:authorize_result&apos;, authorize_result)
+												if (authorize_result)
+												{
+													self.debug(&apos;authorization success&apos;)
+													// console.log(context + &apos;:authorization success&apos;)
+													callback(data, credentials)
+													return true
+												}
+												
+												self.debug(&apos;authorization failure&apos;)
+												console.log(context + &apos;:authorization failure&apos;)
+												socket.emit(key, { service:svc_name, operation:key, result:&apos;authorization failure&apos; })
+												return false
+											}
+										)
+										.catch(
+											(reason) =&gt; {
+												self.debug(&apos;authorization error:&apos; + reason)
+												console.error(context + &apos;:authorization error:&apos; + reason)
+												socket.emit(key, { service:svc_name, operation:key, result:&apos;authorization error&apos;} )
+											}
+										)
+									}
+									
+									self.debug(&apos;authentication failure&apos;)
+									console.log(context + &apos;authentication failure&apos;)
+									socket.emit(key, { service:svc_name, operation:key, result:&apos;authentication failure&apos; })
+									return
+								}
+							)
+							.catch(
+								(reason) =&gt; {
+									self.debug(&apos;authentication error:&apos; + reason) // TODO NOT ONLY AUTHORIZ. ERROR
+									console.log(context + &apos;authentication error:&apos; + reason)
+									socket.emit(key, { service:svc_name, operation:key, result:&apos;authentication error&apos;} )
+								}
+							)
+						}
+						
+						socket.on(key, check_cb)
+					}
+				)
+				
+				if ( T.isFunction(self.activate_on_socketio_server_self) )
+				{
+					self.activate_on_socketio_server_self(arg_socketio, socket)
+				}
+			}
+		)
+	}
+	
+	
+	
+	/**
+	 * Add a subscriber socket.
+	 * 
+	 * @param {object} arg_socket - subscribing socket.
+	 * @param {object} arg_data - subscribing filter or datas (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	subscribe(arg_socket/*, arg_data*/)
+	{
+		const svc_name = this.service.get_name()
+		// console.info(context + &apos;:subscribe:socket subscribe on /&apos; + svc_name, arg_socket.id)
+		
+		this.subscribers_sockets.push(arg_socket)
+		arg_socket.emit(&apos;subscribe&apos;, { service:svc_name, operation:&apos;subscribe&apos;, result:&apos;done&apos; })
+	}
+	
+	
+	
+	/**
+	 * Remove a subscriber socket.
+	 * 
+	 * @param {object} arg_socket - subscribing socket.
+	 * @param {object} arg_data - subscribing filter or datas (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	unsubscribe(arg_socket, arg_data)
+	{
+		const svc_name = this.service.get_name()
+		self.error(context + &apos;:unsubscribe:not yet implemented on /&apos; + svc_name, arg_socket.id, arg_data)
+		
+		arg_socket.emit(&apos;unsubscribe&apos;, { service:svc_name, operation:&apos;unsubscribe&apos;, result:&apos;not implemented&apos; })
+	}
+	
+	
+	
+	/**
+	 * Get operation handler on socket.
+	 * 
+	 * @param {string} arg_method - method name
+	 * @param {object} arg_socket - subscribing socket.
+	 * @param {object} arg_data - query filter or datas (optional).
+	 * @param {Credentials} arg_credentials - request credentials
+	 * 
+	 * @returns {nothing}
+	 */
+	on_method(arg_method, arg_socket, arg_data, arg_credentials)
+	{
+		const svc_name = this.service.get_name()
+		// console.info(context + &apos;:on_get:socket get on /&apos; + svc_name, arg_socket.id, arg_data)
+		
+		// CHECK REQUEST
+		if ( ! T.isObject(arg_data) || ! T.isObject(arg_data.request) || ! T.isArray(arg_data.request.operands))
+		{
+			return Promise.reject(&apos;bad data request&apos;)
+		}
+		
+		// PROCESS REQUEST
+		const datas_promise = this.process(arg_method, arg_data.request.operands, arg_credentials)
+		datas_promise.then(
+			(produced_datas) =&gt; {
+				arg_socket.emit(arg_method, { &apos;service&apos;:svc_name, &apos;operation&apos;:arg_method, &apos;result&apos;:&apos;done&apos;, &apos;datas&apos;:produced_datas })
+			},
+			
+			(reason) =&gt; {
+				arg_socket.emit(arg_method, { &apos;service&apos;:svc_name, &apos;operation&apos;:arg_method, &apos;result&apos;:&apos;error&apos;, &apos;datas&apos;:reason })
+			}
+		)
+	}
+	
+	
+	
+	/**
+	 * Process request and returns datas.
+	 * @abstract
+	 * 
+	 * @param {string} arg_method - method name
+	 * @param {array} arg_operands - request operands
+	 * @param {Credentials} arg_credentials - request credentials
+	 * 
+	 * @returns {Promise}
+	 */
+	process(/*arg_method, arg_operands, arg_credentials*/)
+	{
+		return Promise.reject(&apos;not yet implemented&apos;)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

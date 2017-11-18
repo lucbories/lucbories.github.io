@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/runtime/router_state.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/runtime/router_state.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+// import assert from &apos;assert&apos;
+import { fromJS } from &apos;immutable&apos;
+
+// COMMON IMPORTS
+import T         from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+import Stateable from &apos;../../../node_modules/devapt-core-common/dist/js/base/stateable&apos;
+
+// BROWSER IMPORTS
+import DisplayCommand from &apos;../commands/display_command&apos;
+
+
+const context = &apos;browser/runtime/router_state&apos;
+
+
+
+/**
+ * Initial route state
+ */
+const initial_state_js = {
+	history:{
+		items:[],
+		index:-1
+	}
+}
+
+
+
+/**
+ * @file Browser navigation router class.
+ * 
+ * @author Luc BORIES
+ * 
+ * @license Apache-2.0
+ */
+export default class RouterState extends Stateable
+{
+	/**
+	 * Create a RouterState instance.
+	 * @extends Stateable
+	 * @abstract
+	 * 
+	 * A RouterState instance manages a navigation history state and update the page on navigation change.
+	 * 
+	 * Navigation history is an array stored into the Redux store.
+	 * 
+	 * Actions are:
+	 * 		* display_content(view name, menubar name): update page content with given view and menubar.
+	 * 		* go_backward(): update page with history previous content if available.
+	 * 		* go_forward(): update page with history next content if available.
+	 * 		* update_history(arg_history_values): replace history array.
+	 * 		* clear_history(): reset history array.
+	 * 
+	 * Corresponding method to subclass are:
+	 * 		* display_content_self(view name, menubar name):Promise
+	 * 		* go_backward_self():Promise
+	 * 		* go_forward_self():Promise
+	 * 
+	 * @param {string} arg_log_context - context of traces of this instance (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_log_context)
+	{
+		const runtime = window.devapt().runtime()
+		const log_context = arg_log_context ? arg_log_context : context
+		const default_settings = {}
+		super(default_settings, runtime, initial_state_js, log_context)
+
+		this.is_router_state = true
+		this.state_path = [&apos;router&apos;]
+	}
+
+
+	/**
+	 * Get name.
+	 * 
+	 * @returns {string}
+	 */
+	get_name()
+	{
+		return &apos;router&apos;
+	}
+
+
+
+	/**
+	 * Load and apply a container component configuration.
+	 * 
+	 * @param {Immutable.Map|undefined} arg_state - component state to load (optional).
+	 * 
+	 * @returns {nothing} 
+	 */
+	load(arg_state)
+	{
+		const state = arg_state ? arg_state : this.get_state()
+		super.load(state)
+
+		// console.info(context + &apos;:load:loading &apos; + this.get_name())
+		
+		if (! state)
+		{
+			this.error(&apos;load:no available state&apos;)
+			return
+		}
+	}
+	
+	
+	
+	/**
+	 * Handle state changes.
+	 * 
+	 * @param {Immutable.Map} arg_previous_state - previous state map.
+	 * @param {Immutable.Map} arg_new_state - new state map.
+	 * 
+	 * @returns {nothing}
+	 */
+	handle_state_change(arg_previous_state, arg_new_state)
+	{
+		if (! arg_previous_state)
+		{
+			// console.info(context + &apos;:handle_state_change:update initial items&apos;)
+			this.do_action_clear_history()
+			return
+		}
+		
+		if ( arg_previous_state &amp;&amp; arg_new_state &amp;&amp; arg_previous_state.has(&apos;history&apos;) &amp;&amp; arg_new_state.has(&apos;history&apos;) )
+		{
+			if ( arg_previous_state.hasIn([&apos;history&apos;, &apos;items&apos;]) &amp;&amp; arg_new_state.hasIn([&apos;history&apos;, &apos;items&apos;] ) )
+			{
+				const previous_history_items = arg_previous_state.getIn([&apos;history&apos;, &apos;items&apos;])
+				const new_history_items = arg_new_state.getIn([&apos;history&apos;, &apos;items&apos;])
+				if ( ! previous_history_items.equals(new_history_items) )
+				{
+					const new_items = new_history_items.toArray().toJS()
+					
+					if (new_items.length == 0)
+					{
+						this.do_action_clear_history()
+						return
+					}
+
+					this.do_action_update_history(new_items)
+				}
+			}
+			
+			if ( arg_previous_state.hasIn([&apos;history&apos;, &apos;index&apos;]) &amp;&amp; arg_new_state.hasIn([&apos;history&apos;, &apos;index&apos;] ) )
+			{
+				const previous_history_index = arg_previous_state.getIn([&apos;history&apos;, &apos;index&apos;])
+				const new_history_index = arg_new_state.getIn([&apos;history&apos;, &apos;index&apos;])
+				// TODO CHECK IMMUTABLE RETURNS A NUMBER
+				if ( previous_history_index != new_history_index )
+				{
+					this.do_action_move_history(new_history_index)
+				}
+			}
+		}
+	}
+
+
+	
+	/**
+	 * Goto the page content with given view (update only the hash).
+	 * 	
+	 * @param {string} arg_view_name - view name.
+	 * @param {string} arg_menubar_name - menubar name.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_action_display_content(arg_view_name, arg_menubar_name)
+	{
+		this.enter_group(&apos;do_action_display_content&apos;)
+		
+		this.debug(&apos;arg_view_name:&apos;, arg_view_name)
+		this.debug(&apos;arg_menubar_name:&apos;, arg_menubar_name)
+		
+		if ( T.isString(arg_view_name) || T.isString(arg_menubar_name) )
+		{
+			this.dispatch_action(&apos;display_content&apos;, { view:arg_view_name, menubar:arg_menubar_name } )
+		}
+		
+		this.leave_group(&apos;do_action_display_content&apos;)
+	}
+
+
+
+	/**
+	 * Display history previous content if available.
+	 *
+	 * @returns {nothing}
+	 */
+	do_action_go_backward()
+	{
+		this.enter_group(&apos;do_action_go_backward&apos;)
+		
+		this.dispatch_action(&apos;go_backward&apos;, {} )
+		
+		this.leave_group(&apos;do_action_go_backward&apos;)
+	}
+
+
+
+	/**
+	 * Display history next content if available.
+	 *
+	 * @returns {nothing}
+	 */
+	do_action_go_forward()
+	{
+		this.enter_group(&apos;do_action_go_forward&apos;)
+		
+		this.dispatch_action(&apos;go_forward&apos;, {} )
+		
+		this.leave_group(&apos;do_action_go_forward&apos;)
+	}
+	
+
+
+	/**
+	 * Clear history.
+	 *
+	 * @returns {nothing}
+	 */
+	do_action_clear_history()
+	{
+		this.enter_group(&apos;do_action_go_forward&apos;)
+		
+		this.dispatch_action(&apos;clear_history&apos;, {} )
+		
+		this.leave_group(&apos;do_action_go_forward&apos;)
+	}
+
+
+
+	/**
+	 * Update history.
+	 *
+	 * @param {array} arg_new_items - history array items.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_action_update_history(arg_new_items)
+	{
+		this.enter_group(&apos;do_action_go_forward&apos;)
+		
+		this.debug(&apos;arg_new_items&apos;, arg_new_items)
+
+		this.dispatch_action(&apos;update_history&apos;, { values: arg_new_items } )
+		
+		this.leave_group(&apos;do_action_go_forward&apos;)
+	}
+
+
+
+	/**
+	 * Move history current position.
+	 *
+	 * @param{Number} arg_new_index - history position index.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_action_move_history(arg_new_index)
+	{
+		this.enter_group(&apos;do_action_move_history&apos;)
+		
+		this.debug(&apos;arg_new_index&apos;, arg_new_index)
+
+		this.dispatch_action(&apos;update_history&apos;, { index: arg_new_index } )
+		
+		this.leave_group(&apos;do_action_move_history&apos;)
+	}
+
+	
+	
+	/**
+	 * Store actions reducer pure function.
+	 * 
+	 * @param {object} arg_previous_state - previous state.
+	 * @param {object} arg_action - store action: { type:&apos;&apos;, component:&apos;&apos;, ...}
+	 * 
+	 * @returns {object} - new state
+	 */
+	reduce_action(arg_previous_state, arg_action)
+	{
+		const initial_state_js = {
+
+		}
+
+		if (! arg_previous_state)
+		{
+			arg_previous_state = fromJS(initial_state_js)
+		}
+
+		// console.log(context + &apos;:reduce_action:prev state&apos;, arg_previous_state.toJS())
+		
+		switch(arg_action.type)
+		{
+			case &apos;display_content&apos;: {
+				if ( ! T.isString(arg_action.view) || ! T.isString(arg_action.menubar) )
+				{
+					return arg_previous_state
+				}
+
+				// UPDATE PAGE URL
+				this.update_hash(arg_action.view, arg_action.menubar)
+				
+				// UPDATE ROUTER STORED STATE
+				const history = arg_previous_state.get(&apos;history&apos;)
+				let next_state = history.get(&apos;items&apos;).push( { view:arg_action.view_name, menubar:arg_action.menubar_name } )
+				next_state = history.set(&apos;index&apos;, history.get(&apos;index&apos;) )
+				
+				// UPDATE PAGE CONTENT
+				this.display_content(arg_action.view, arg_action.menubar)
+				
+				return next_state
+			}
+
+			case &apos;go_backward&apos;: {
+				const history = arg_previous_state.get(&apos;history&apos;)
+				const previous_index = history.get(&apos;index&apos;)
+				if (previous_index &gt; 0)
+				{
+					const new_index = previous_index - 1
+					const item = history.get(&apos;items&apos;).get(new_index, undefined)
+					if (item)
+					{
+						this.display_content(item.view, item.menubar)
+
+						const next_state = history.set(&apos;index&apos;, new_index)
+						return next_state
+					}
+				}
+				
+				return arg_previous_state
+			}
+
+			case &apos;go_forward&apos;: {
+				const history = arg_previous_state.get(&apos;history&apos;)
+				const previous_index = history.get(&apos;index&apos;)
+				if (previous_index + 1 &lt; history.get(&apos;items&apos;).count() )
+				{
+					const new_index = previous_index + 1
+					const item = history.get(&apos;items&apos;).get(new_index, undefined)
+					if (item)
+					{
+						this.display_content(item.view, item.menubar)
+
+						const next_state = history.set(&apos;index&apos;, new_index)
+						return next_state
+					}
+				}
+
+				return arg_previous_state
+			}
+
+			case &apos;clear_history&apos;: {
+				const next_state = arg_previous_state.set(&apos;history&apos;, fromJS([]) )
+				return next_state
+			}
+
+			case &apos;update_history&apos;: {
+				let items = arg_previous_state.get(&apos;history&apos;).concat(arg_action.values)
+				const next_state = arg_previous_state.set(&apos;history&apos;, items)
+				return next_state
+			}
+
+			case &apos;move_history&apos;: {
+				const history = arg_previous_state.get(&apos;history&apos;)
+				const new_index = arg_action.index
+				if (new_index &gt; 0 &amp;&amp; new_index &lt; history.get(&apos;items&apos;).count() )
+				{
+					const item = history.get(&apos;items&apos;).get(new_index, undefined)
+					if (item)
+					{
+						this.display_content(item.view, item.menubar)
+
+						const next_state = history.set(&apos;index&apos;, new_index)
+						return next_state
+					}
+				}
+			}
+		}
+
+		
+		return arg_previous_state
+	}
+	
+	
+	
+	/**
+	 * Display the page content with given view and menubar.
+	 * 
+	 * @param {string} arg_view_name - view name
+	 * @param {string} arg_menubar_name - menubar name
+	 * 
+	 * @returns {Promise} - Resolved result is a boolean: success or failure
+	 */
+	display_content(arg_view_name, arg_menubar_name, arg_breadcrumbs=undefined)
+	{
+		this.enter_group(&apos;display_content&apos;)
+		
+		this.debug(&apos;arg_view_name=&apos; + arg_view_name)
+		this.debug(&apos;arg_menubar_name=&apos; + arg_menubar_name)
+		this.debug(&apos;arg_breadcrumbs=&apos; + arg_breadcrumbs)
+		
+
+		let promise = null
+		try
+		{
+			const cmd_settings = {
+				name:&apos;router.display_content&apos;,
+				type:&apos;display&apos;,
+				view:arg_view_name,
+				menubar:arg_menubar_name,
+				breadcrumbs:arg_breadcrumbs
+			}
+			const cmd = new DisplayCommand(this._runtime, cmd_settings)
+
+			this.get_runtime().ui().pipe_display_command(cmd)
+		}
+		catch(e)
+		{
+			console.error(e, context)
+			promise = Promise.resolve(false)
+		}
+		
+
+		this.leave_group(&apos;display_content&apos;)
+		return promise
+	}
+	
+	
+
+	/**
+	 * Update page url with given view and menubar (update only the hash).
+	 * 
+	 * @param {string} arg_view_name - view name.
+	 * @param {string} arg_menubar_name - menubar name.
+	 * 
+	 * @returns {nothing}
+	 */
+	update_hash(arg_view_name, arg_menubar_name)
+	{
+		this.enter_group(&apos;update_hash&apos;)
+		
+		this.debug(&apos;arg_view_name&apos;, arg_view_name)
+		this.debug(&apos;arg_menubar_name&apos;, arg_menubar_name)
+		
+		try
+		{
+			if ( T.isFunction(this.update_hash_self) )
+			{
+				this.update_hash_self(arg_view_name, arg_menubar_name)
+			}
+		}
+		catch(e)
+		{
+			console.error(e, context)
+			this.error(e)
+		}
+		
+		this.leave_group(&apos;update_hash&apos;)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

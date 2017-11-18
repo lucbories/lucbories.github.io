@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">js/base/component/dom.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/base/component/dom.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+// import assert from &apos;assert&apos;
+// import _ from &apos;lodash&apos;
+
+// COMMON IMPORTS
+import T         from &apos;devapt-core-common/dist/js/utils/types&apos;
+import uid       from &apos;devapt-core-common/dist/js/utils/uid.js&apos;
+import Stateable from &apos;devapt-core-common/dist/js/base/stateable&apos;
+
+// BROWSER IMPORTS
+import Rendering from &apos;./rendering&apos;
+
+
+const context = &apos;browser/base/component/dom&apos;
+
+
+
+/**
+ * @file UI component class.
+ * 
+ * @author Luc BORIES
+ * 
+ * @license Apache-2.0
+ */
+export default class Dom extends Stateable
+{
+	/**
+	 * Creates an instance of Component.
+	 * @extends Stateable
+	 * 
+	 * 	API
+	 * 		-&gt;get_name():string - Get name.
+	 * 		-&gt;get_dom_id():string - Get DOM id.
+	 * 		
+	 * 		-&gt;has_dom_element():boolean - Test DOM Element instance.
+	 * 		-&gt;get_dom_element():Element - Get DOM element.
+	 * 		-&gt;set_dom_element(arg_element):nothing -Set DOM element.
+	 * 
+	 * 		-&gt;has_dom_parent(arg_element):boolean - Test if component element has given parent element.
+	 * 		-&gt;get_dom_parent():Element - Get parent element.
+	 * 		-&gt;set_dom_parent(arg_parent_element):nothing - Set given parent element.
+	 * 		-&gt;set_dom_parent_of(arg_component):nothing - Set given parent element.
+	 * 
+	 * 		-&gt;get_dom_attr(arg_attr_name):string - DOM element manipulation:get dom element attribute.
+	 * 		-&gt;set_dom_attr(arg_attr_name, arg_attr_value):nothing - DOM element manipulation:set dom element attribute value.
+	 * 
+	 * 		-&gt;get_dom_text():string - DOM element manipulation:get dom element text.
+	 * 		-&gt;set_dom_text(arg_text_value):nothing - DOM element manipulation:set dom element text value.
+	 * 		-&gt;clear_dom_text():nothing - DOM element manipulation:clear dom element text value.
+	 * 
+	 * 		-&gt;get_dom_value():string - DOM element manipulation:get dom element value.
+	 * 		-&gt;set_dom_value(arg_value):nothing - DOM element manipulation:set dom element value.
+	 * 		-&gt;clear_dom_value():nothing - DOM element manipulation:clear dom element value.
+	 * 
+	 * 		-&gt;on_dom_event(arg_dom_event, arg_dom_selector, arg_handler, arg_data=undefined, arg_debug=true):nothing - Mount dom event handler with delegator.
+	 * 		
+	 * 		-&gt;has_dom_vnode():boolean - Test DOM Virtual Node.
+	 * 		-&gt;get_dom_vnode():VNode - Get DOM Virtual Node.
+	 * 		-&gt;set_dom_vnode(arg_vnode):nothing - Set DOM Virtual Node.
+	 * 
+	 * 		-&gt;is_visible(arg_check=false):boolean - Get visibility.
+	 * 		-&gt;show():nothing - Show component.
+	 * 		-&gt;hide():nothing - Hide component.
+	 * 
+	 * @param {RuntimeBase} arg_runtime - client runtime.
+	 * @param {Immutable.Map} arg_state - component initial state.
+	 * @param {string} arg_log_context - context of traces of this instance (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_state, arg_log_context)
+	{
+		const log_context = arg_log_context ? arg_log_context : context
+		const default_settings = {}
+		super(default_settings, arg_runtime, arg_state, log_context, arg_runtime.get_logger_manager())
+		
+		this.is_dom   = true
+
+		// SET NAME
+		this._name = arg_state.get(&apos;name&apos;, undefined)
+		if (!this._name)
+		{
+			this._name = &apos;component_&apos; + uid()
+		}
+
+		this._is_visible = true
+		this._visiblility = undefined
+		
+		this._rendering = new Rendering(this, arg_state.get(&apos;dom_id&apos;, this._name))
+	}
+	
+	
+	
+	/**
+	 * Get name.
+	 * 
+	 * @returns {string} - component name.
+	 */
+	get_name()
+	{
+		return this._name
+	}
+	
+	
+	
+	/**
+	 * Get DOM id.
+	 * 
+	 * @returns {string} - component DOM id.
+	 */
+	get_dom_id()
+	{
+		return this._rendering.get_dom_id()
+	}
+	
+	
+	
+	/**
+	 * Test DOM Element instance.
+	 * 
+	 * @returns {boolean}
+	 */
+	has_dom_element()
+	{
+		return this._rendering.has_dom_element()
+	}
+	
+	
+	
+	/**
+	 * Get DOM element.
+	 * 
+	 * @returns {Element}
+	 */
+	get_dom_element()
+	{
+		return this._rendering.get_dom_element()
+	}
+	
+	
+	
+	/**
+	 * Set DOM element.
+	 * 
+	 * @param {Element} arg_element - element instance.
+	 * 
+	 * @returns {nothing}
+	 */
+	set_dom_element(arg_element)
+	{
+		this._rendering.set_dom_element(arg_element)
+	}
+
+
+
+	/**
+	 * Test if component element has given parent element.
+	 * 
+	 * @param {Element} arg_element - parent element to test.
+	 * 
+	 * @returns {boolean}
+	 */
+	has_dom_parent(arg_element)
+	{
+		const dom_elem = this.get_dom_element()
+		if (!arg_element)
+		{
+			return !! dom_elem.parentElement
+		}
+		return dom_elem &amp;&amp; dom_elem.parentElement == arg_element
+	}
+	
+
+
+	/**
+	 * Get parent element.
+	 * 
+	 * @returns {Element} - parent element.
+	 */
+	get_dom_parent()
+	{
+		const dom_elem = this.get_dom_element()
+		return dom_elem ? dom_elem.parentElement : undefined
+	}
+
+
+
+	/**
+	 * Set given parent element.
+	 * 
+	 * @param {Element} arg_parent_element - parent element.
+	 * 
+	 * @returns {nothing}
+	 */
+	set_dom_parent(arg_parent_element)
+	{
+		const dom_elem = this.get_dom_element()
+		if (dom_elem &amp;&amp; arg_parent_element)
+		{
+			arg_parent_element.appendChild(dom_elem)
+		}
+	}
+
+
+
+	/**
+	 * Set given parent element.
+	 * 
+	 * @param {Component} arg_component - parent element component.
+	 * 
+	 * @returns {nothing}
+	 */
+	set_dom_parent_of(arg_component)
+	{
+		const dom_elem = this.get_dom_element()
+		if (dom_elem &amp;&amp; arg_component &amp;&amp; arg_component.has_dom_parent())
+		{
+			arg_component.get_dom_parent().appendChild(dom_elem)
+		}
+	}
+
+
+
+	/**
+	 * DOM element manipulation:get dom element attribute.
+	 * 
+	 * @param {string} arg_attr_name - dom attribute name.
+	 * 
+	 * @returns {string}
+	 */
+	get_dom_attr(arg_attr_name)
+	{
+		const dom_elem = this.get_dom_vnode()
+		if (! dom_elem)
+		{
+			return undefined
+		}
+
+		return dom_elem.getAttribute ? dom_elem.getAttribute(arg_attr_name) : undefined
+	}
+
+
+
+	/**
+	 * DOM element manipulation:set dom element attribute value.
+	 * 
+	 * @param {string} arg_attr_name - dom attribute name.
+	 * @param {string} arg_attr_value - dom attribute value.
+	 * 
+	 * @returns {nothing}
+	 */
+	set_dom_attr(arg_attr_name, arg_attr_value)
+	{
+		const dom_elem = this.get_dom_vnode()
+		if (! dom_elem)
+		{
+			return
+		}
+
+		if (dom_elem.setAttribute)
+		{
+			dom_elem.setAttribute(arg_attr_name, arg_attr_value)
+		}
+	}
+
+
+
+	/**
+	 * DOM element manipulation:get dom element text.
+	 * 
+	 * @returns {string}
+	 */
+	get_dom_text()
+	{
+		const dom_elem = this.get_dom_element()
+		if (! dom_elem)
+		{
+			return undefined
+		}
+
+		return this._get_dom_text(dom_elem)
+	}
+
+
+
+	/**
+	 * DOM element manipulation:set dom element text value.
+	 * 
+	 * @param {string} arg_text_value - dom text value.
+	 * 
+	 * @returns {nothing}
+	 */
+	set_dom_text(arg_text_value)
+	{
+		const dom_elem = this.get_dom_element()
+		if (! dom_elem)
+		{
+			return
+		}
+
+		const node_type = dom_elem.nodeType
+
+		if ( node_type === 1 || node_type === 9 || node_type === 11 )
+		{
+			dom_elem.textContent = &apos;&apos; + arg_text_value
+		}
+	}
+
+
+
+	/**
+	 * DOM element manipulation:clear dom element text value.
+	 * 
+	 * @returns {nothing}
+	 */
+	clear_dom_text()
+	{
+		const dom_elem = this.get_dom_element()
+		if (! dom_elem)
+		{
+			return
+		}
+
+		const node_type = dom_elem.nodeType
+
+		if ( node_type === 1 || node_type === 9 || node_type === 11 )
+		{
+			dom_elem.textContent = &apos;&apos;
+		}
+	}
+
+
+
+	_get_dom_text(arg_element)
+	{
+		const node_type = arg_element.nodeType
+
+		if ( node_type === 1 || node_type === 9 || node_type === 11 )
+		{
+			if ( T.isString(arg_element.type) &amp;&amp; arg_element.type == &apos;textarea&apos; &amp;&amp; T.isString(arg_element.value) )
+			{
+				return arg_element.value
+			}
+			
+			if ( T.isString(arg_element.textContent) )
+			{
+				return arg_element.textContent
+			}
+
+			// LOOP ON CHILDREN
+			let child = arg_element.firstChild
+			let str = &apos;&apos;
+			while(child)
+			{
+				str += this._get_dom_text(child)
+				child = child.nextSibling
+			}
+
+			return str
+		}
+
+		if ( node_type === 3 || node_type === 4 )
+		{
+			return arg_element.node_value
+		}
+
+		return undefined
+	}
+
+
+
+	/**
+	 * DOM element manipulation:get dom element value.
+	 * 
+	 * @returns {string}
+	 */
+	get_dom_value()
+	{
+		const dom_elem = this.get_dom_element()
+		if (! dom_elem || ! (&apos;value&apos; in dom_elem) )
+		{
+			return undefined
+		}
+
+		return dom_elem.value
+	}
+
+
+
+	/**
+	 * DOM element manipulation:set dom element value.
+	 * 
+	 * @param {string} arg_value - dom value.
+	 * 
+	 * @returns {nothing}
+	 */
+	set_dom_value(arg_value)
+	{
+		const dom_elem = this.get_dom_element()
+		if (! dom_elem || ! (&apos;value&apos; in dom_elem) )
+		{
+			return
+		}
+
+		dom_elem.value = arg_value
+	}
+
+
+
+	/**
+	 * DOM element manipulation:clear dom element value.
+	 * 
+	 * @returns {nothing}
+	 */
+	clear_dom_value()
+	{
+		const dom_elem = this.get_dom_element()
+		if (! dom_elem || ! (&apos;value&apos; in dom_elem) )
+		{
+			return
+		}
+
+		dom_elem.value = &apos;&apos;
+	}
+	
+	
+	
+	/**
+	 * Mount dom event handler.
+	 * 
+	 * @{string}   arg_dom_event - dom event name.
+	 * @{string}   arg_dom_selector - dom selector string (&apos;tag_name.class1.class2&apos;).
+	 * @{function} arg_handler - handler function f(component, event name, selection, event, target).
+	 * @{any}      arg_data - handler datas, default undefined (optional).
+	 * @{boolean}  arg_debug - trace flag, default true (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	on_dom_event(arg_dom_event, arg_dom_selector, arg_handler, arg_data=undefined, arg_debug=true)
+	{
+		this._rendering.on_dom_event(arg_dom_event, arg_dom_selector, arg_handler, arg_data, arg_debug)
+	}
+	
+	
+	
+	/**
+	 * Test DOM Virtual Node.
+	 * 
+	 * @returns {boolean}
+	 */
+	has_dom_vnode()
+	{
+		return this._rendering.has_dom_vnode()
+	}
+	
+	
+	
+	/**
+	 * Get DOM Virtual Node.
+	 * 
+	 * @returns {VNode}
+	 */
+	get_dom_vnode()
+	{
+		return this._rendering.get_dom_vnode()
+	}
+	
+	
+	
+	/**
+	 * Set DOM Virtual Node.
+	 * 
+	 * @param {VNode} arg_vnode - VNode instance.
+	 * 
+	 * @returns {nothing}
+	 */
+	set_dom_vnode(arg_vnode)
+	{
+		this._rendering.set_dom_vnode(arg_vnode)
+	}
+
+
+
+	/**
+	 * Get visibility.
+	 * 
+	 * @param {boolean} arg_check - if true, check style display value.
+	 * 
+	 * @returns {boolean}
+	 */
+	is_visible(arg_check=false)
+	{
+		if (arg_check)
+		{
+			const dom_elem = this.get_dom_element()
+			this._is_visible = dom_elem &amp;&amp; dom_elem.style.display != &apos;none&apos;
+		}
+		return this._is_visible
+	}
+
+
+
+	/**
+	 * Show component.
+	 * 
+	 * @returns {nothing}
+	 */
+	show()
+	{
+		const dom_elem = this.get_dom_element()
+		if (dom_elem)
+		{
+			dom_elem.style.display = this._visiblility ? this._visiblility : &apos;block&apos;
+			
+			// console.log(context + &apos;:show:this._visiblility=%s, dom_elem.style.display=%s&apos;, this._visiblility, dom_elem.style.display)
+
+			this._is_visible = true
+		}
+	}
+
+
+
+	/**
+	 * Hide component.
+	 * 
+	 * @returns {nothing}
+	 */
+	hide()
+	{
+		const dom_elem = this.get_dom_element()
+		if (dom_elem)
+		{
+			this._visiblility = dom_elem.style.display == &apos;none&apos; ? undefined : dom_elem.style.display
+			dom_elem.style.display = &apos;none&apos;
+			this._is_visible = false
+		}
+	}
+
+
+
+	/**
+	 * Toggle component visbility.
+	 * 
+	 * @returns {nothing}
+	 */
+	toggle()
+	{
+		const dom_elem = this.get_dom_element()
+		if (dom_elem)
+		{
+			if (this._is_visible)
+			{
+				this.hide()
+			} else {
+				this.show()
+			}
+		}
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

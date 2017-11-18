@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="">
+  <title data-ice="title">Source | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/runtime.js~Runtime.html">Runtime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/security.js~Security.html">Security</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/transaction.js~Transaction.html">Transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-runtime_singleton">runtime_singleton</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics">metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/metric_duration.js~MetricDuration.html">MetricDuration</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-base">metrics/base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_collector.js~MetricsCollector.html">MetricsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_record.js~MetricsRecord.html">MetricsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_reducer.js~MetricsReducer.html">MetricsReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_state.js~MetricsState.html">MetricsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-bus">metrics/bus</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_collector.js~MetricsBusCollector.html">MetricsBusCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_record.js~MetricsBusRecord.html">MetricsBusRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_reducer.js~MetricsBusReducer.html">MetricsBusReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_state.js~MetricBusState.html">MetricBusState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-host">metrics/host</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_collector.js~MetricsHostCollector.html">MetricsHostCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_record.js~MetricsHostRecord.html">MetricsHostRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_reducer.js~MetricsHostReducer.html">MetricsHostReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_state.js~MetricHostState.html">MetricHostState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-http">metrics/http</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_collector.js~MetricsHttpCollector.html">MetricsHttpCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_record.js~MetricsHttpRecord.html">MetricsHttpRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_reducer.js~MetricHttpReducer.html">MetricHttpReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_state.js~MetricsHttpState.html">MetricsHttpState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-nodejs">metrics/nodejs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_collector.js~MetricsNodeJsCollector.html">MetricsNodeJsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_record.js~MetricsNodeJsRecord.html">MetricsNodeJsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_reducer.js~MetricsNodeReducer.html">MetricsNodeReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_state.js~MetricNodeJsState.html">MetricNodeJsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#nodes">nodes</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/bus_node_feature.js~BusNodeFeature.html">BusNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/metrics_node_feature.js~MetricsNodeFeature.html">MetricsNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node.js~Node.html">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_feature.js~NodeFeature.html">NodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_messaging.js~NodeMessaging.html">NodeMessaging</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/servers_node_feature.js~ServersNodeFeature.html">ServersNodeFeature</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#plugins">plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/features_manager.js~FeaturesManager.html">FeaturesManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_factory.js~PluginsFactory.html">PluginsFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_manager.js~PluginsManager.html">PluginsManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/rendering_manager.js~RenderingManager.html">RenderingManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_manager.js~ServersManager.html">ServersManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_plugin.js~ServersPlugin.html">ServersPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/services_manager.js~ServicesManager.html">ServicesManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/runtime_executable.js~RuntimeExecutable.html">RuntimeExecutable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage0_create_local_node_executable.js~RuntimeStage0Executable.html">RuntimeStage0Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage1_define_topology_executable.js~RuntimeStage1Executable.html">RuntimeStage1Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage2_load_local_topology_executable.js~RuntimeStage2Executable.html">RuntimeStage2Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage3_start_local_node_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage3_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage4_executable.js~RuntimeStage4Executable.html">RuntimeStage4Executable</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security">security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_manager.js~AuthenticationManager.html">AuthenticationManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin.js~AuthenticationPlugin.html">AuthenticationPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin_lowdb.js~AuthenticationLowDbPlugin.html">AuthenticationLowDbPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_wrapper.js~AuthenticationWrapper.html">AuthenticationWrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authorization_manager.js~AuthorizationManager.html">AuthorizationManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security-todo">security/todo</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport.js~AuthenticationPluginPassport.html">AuthenticationPluginPassport</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local.js~AuthenticationPluginPassportLocal.html">AuthenticationPluginPassportLocal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_db.js~AuthenticationPluginPassportLocalDb.html">AuthenticationPluginPassportLocalDb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_file.js~AuthenticationPluginPassportLocalFile.html">AuthenticationPluginPassportLocalFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#servers">servers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/express_server.js~ExpressServer.html">ExpressServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/logs_server.js~LogsServer.html">LogsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/metrics_server.js~MetricsServer.html">MetricsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/restify_server.js~RestifyServer.html">RestifyServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/routable_server.js~RoutableServer.html">RoutableServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/server.js~Server.html">Server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServerTypes">ServerTypes</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">services</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/routes_svc_consumer.js~RoutesSvcConsumer.html">RoutesSvcConsumer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-uused-base">services/uused_base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_service_exec_provider.js~ServiceExecProvider.html">ServiceExecProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_socketio_service_provider.js~SocketIOServiceProvider.html">SocketIOServiceProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1>Source <img data-ice="coverageBadge" src="./badge.svg"><span data-ice="totalCoverageCount" class="total-coverage-count">518/692</span></h1>
+
+<table class="files-summary" data-ice="files" data-use-coverage="true">
+  <thead>
+    <tr>
+      <td>File</td>
+      <td>Identifier</td>
+      <td class="coverage">Document</td>
+      <td style="display: none;">Size</td>
+      <td style="display: none;">Lines</td>
+      <td style="display: none;">Updated</td>
+    </tr>
+  </thead>
+  <tbody>
+    
+  <tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/base/runtime.js.html">js/base/runtime.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/base/runtime.js~Runtime.html">Runtime</a></span>
+<span><a href="variable/index.html#static-variable-runtime_singleton">runtime_singleton</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">31/31</span></td>
+      <td style="display: none;" data-ice="size">9476 byte</td>
+      <td style="display: none;" data-ice="lines">415</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 21:51:16 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/base/security.js.html">js/base/security.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/base/security.js~Security.html">Security</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">16/16</span></td>
+      <td style="display: none;" data-ice="size">7475 byte</td>
+      <td style="display: none;" data-ice="lines">340</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 21:38:40 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/base/transaction.js.html">js/base/transaction.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/base/transaction.js~Transaction.html">Transaction</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">32/32</span></td>
+      <td style="display: none;" data-ice="size">14113 byte</td>
+      <td style="display: none;" data-ice="lines">652</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 21:40:30 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/executables/executable_command.js.html">js/executables/executable_command.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">7/7</span></td>
+      <td style="display: none;" data-ice="size">2759 byte</td>
+      <td style="display: none;" data-ice="lines">101</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 21:50:01 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/index.js.html">js/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">1238 byte</td>
+      <td style="display: none;" data-ice="lines">37</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/base/metrics_collector.js.html">js/metrics/base/metrics_collector.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/base/metrics_collector.js~MetricsCollector.html">MetricsCollector</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">19/19</span></td>
+      <td style="display: none;" data-ice="size">4361 byte</td>
+      <td style="display: none;" data-ice="lines">216</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 21:49:30 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/base/metrics_record.js.html">js/metrics/base/metrics_record.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/base/metrics_record.js~MetricsRecord.html">MetricsRecord</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">10/10</span></td>
+      <td style="display: none;" data-ice="size">1430 byte</td>
+      <td style="display: none;" data-ice="lines">100</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 21:53:10 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/base/metrics_reducer.js.html">js/metrics/base/metrics_reducer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/base/metrics_reducer.js~MetricsReducer.html">MetricsReducer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">9/9</span></td>
+      <td style="display: none;" data-ice="size">3618 byte</td>
+      <td style="display: none;" data-ice="lines">142</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 21:54:48 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/base/metrics_state.js.html">js/metrics/base/metrics_state.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/base/metrics_state.js~MetricsState.html">MetricsState</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">8/8</span></td>
+      <td style="display: none;" data-ice="size">1278 byte</td>
+      <td style="display: none;" data-ice="lines">81</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 21:56:08 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/bus/metrics_bus_collector.js.html">js/metrics/bus/metrics_bus_collector.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/bus/metrics_bus_collector.js~MetricsBusCollector.html">MetricsBusCollector</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">13/13</span></td>
+      <td style="display: none;" data-ice="size">3501 byte</td>
+      <td style="display: none;" data-ice="lines">149</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 22:01:01 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/bus/metrics_bus_record.js.html">js/metrics/bus/metrics_bus_record.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/bus/metrics_bus_record.js~MetricsBusRecord.html">MetricsBusRecord</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">9/9</span></td>
+      <td style="display: none;" data-ice="size">2277 byte</td>
+      <td style="display: none;" data-ice="lines">120</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 23:57:35 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/bus/metrics_bus_reducer.js.html">js/metrics/bus/metrics_bus_reducer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/bus/metrics_bus_reducer.js~MetricsBusReducer.html">MetricsBusReducer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">4/4</span></td>
+      <td style="display: none;" data-ice="size">1817 byte</td>
+      <td style="display: none;" data-ice="lines">82</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/bus/metrics_bus_state.js.html">js/metrics/bus/metrics_bus_state.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/bus/metrics_bus_state.js~MetricBusState.html">MetricBusState</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">5/5</span></td>
+      <td style="display: none;" data-ice="size">1500 byte</td>
+      <td style="display: none;" data-ice="lines">82</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 23:48:56 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/host/metrics_host_collector.js.html">js/metrics/host/metrics_host_collector.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/host/metrics_host_collector.js~MetricsHostCollector.html">MetricsHostCollector</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">11/11</span></td>
+      <td style="display: none;" data-ice="size">2459 byte</td>
+      <td style="display: none;" data-ice="lines">121</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 23:59:40 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/host/metrics_host_record.js.html">js/metrics/host/metrics_host_record.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/host/metrics_host_record.js~MetricsHostRecord.html">MetricsHostRecord</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">7/7</span></td>
+      <td style="display: none;" data-ice="size">1999 byte</td>
+      <td style="display: none;" data-ice="lines">95</td>
+      <td style="display: none;" data-ice="updated">2017-11-01 00:00:09 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/host/metrics_host_reducer.js.html">js/metrics/host/metrics_host_reducer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/host/metrics_host_reducer.js~MetricsHostReducer.html">MetricsHostReducer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">4/4</span></td>
+      <td style="display: none;" data-ice="size">2664 byte</td>
+      <td style="display: none;" data-ice="lines">88</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 23:51:36 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/host/metrics_host_state.js.html">js/metrics/host/metrics_host_state.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/host/metrics_host_state.js~MetricHostState.html">MetricHostState</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">5/5</span></td>
+      <td style="display: none;" data-ice="size">1742 byte</td>
+      <td style="display: none;" data-ice="lines">91</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 23:52:51 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/http/metrics_http_collector.js.html">js/metrics/http/metrics_http_collector.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/http/metrics_http_collector.js~MetricsHttpCollector.html">MetricsHttpCollector</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">10/10</span></td>
+      <td style="display: none;" data-ice="size">3970 byte</td>
+      <td style="display: none;" data-ice="lines">175</td>
+      <td style="display: none;" data-ice="updated">2017-11-01 00:00:50 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/http/metrics_http_record.js.html">js/metrics/http/metrics_http_record.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/http/metrics_http_record.js~MetricsHttpRecord.html">MetricsHttpRecord</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">16/16</span></td>
+      <td style="display: none;" data-ice="size">5608 byte</td>
+      <td style="display: none;" data-ice="lines">263</td>
+      <td style="display: none;" data-ice="updated">2017-11-07 23:57:48 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/http/metrics_http_reducer.js.html">js/metrics/http/metrics_http_reducer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/http/metrics_http_reducer.js~MetricHttpReducer.html">MetricHttpReducer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">5/5</span></td>
+      <td style="display: none;" data-ice="size">3458 byte</td>
+      <td style="display: none;" data-ice="lines">101</td>
+      <td style="display: none;" data-ice="updated">2017-11-01 00:01:36 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/http/metrics_http_state.js.html">js/metrics/http/metrics_http_state.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/http/metrics_http_state.js~MetricsHttpState.html">MetricsHttpState</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">4/4</span></td>
+      <td style="display: none;" data-ice="size">1642 byte</td>
+      <td style="display: none;" data-ice="lines">72</td>
+      <td style="display: none;" data-ice="updated">2017-11-01 00:02:45 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/metric_duration.js.html#errorLines=48,59,71">js/metrics/metric_duration.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/metric_duration.js~MetricDuration.html">MetricDuration</a></span></td>
+      <td class="coverage"><span data-ice="coverage">66 %</span><span data-ice="coverageCount" class="coverage-count">6/9</span></td>
+      <td style="display: none;" data-ice="size">1571 byte</td>
+      <td style="display: none;" data-ice="lines">97</td>
+      <td style="display: none;" data-ice="updated">2017-11-01 00:08:38 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/nodejs/metrics_nodejs_collector.js.html">js/metrics/nodejs/metrics_nodejs_collector.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/nodejs/metrics_nodejs_collector.js~MetricsNodeJsCollector.html">MetricsNodeJsCollector</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">11/11</span></td>
+      <td style="display: none;" data-ice="size">2481 byte</td>
+      <td style="display: none;" data-ice="lines">120</td>
+      <td style="display: none;" data-ice="updated">2017-11-01 00:05:04 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/nodejs/metrics_nodejs_record.js.html#errorLines=48">js/metrics/nodejs/metrics_nodejs_record.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/nodejs/metrics_nodejs_record.js~MetricsNodeJsRecord.html">MetricsNodeJsRecord</a></span></td>
+      <td class="coverage"><span data-ice="coverage">85 %</span><span data-ice="coverageCount" class="coverage-count">6/7</span></td>
+      <td style="display: none;" data-ice="size">1526 byte</td>
+      <td style="display: none;" data-ice="lines">89</td>
+      <td style="display: none;" data-ice="updated">2017-11-01 00:05:32 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/nodejs/metrics_nodejs_reducer.js.html">js/metrics/nodejs/metrics_nodejs_reducer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/nodejs/metrics_nodejs_reducer.js~MetricsNodeReducer.html">MetricsNodeReducer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">5/5</span></td>
+      <td style="display: none;" data-ice="size">3072 byte</td>
+      <td style="display: none;" data-ice="lines">99</td>
+      <td style="display: none;" data-ice="updated">2017-11-01 00:09:18 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/metrics/nodejs/metrics_nodejs_state.js.html">js/metrics/nodejs/metrics_nodejs_state.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/metrics/nodejs/metrics_nodejs_state.js~MetricNodeJsState.html">MetricNodeJsState</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">6/6</span></td>
+      <td style="display: none;" data-ice="size">2051 byte</td>
+      <td style="display: none;" data-ice="lines">102</td>
+      <td style="display: none;" data-ice="updated">2017-11-01 00:03:41 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/nodes/bus_node_feature.js.html">js/nodes/bus_node_feature.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/nodes/bus_node_feature.js~BusNodeFeature.html">BusNodeFeature</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">11/11</span></td>
+      <td style="display: none;" data-ice="size">5439 byte</td>
+      <td style="display: none;" data-ice="lines">227</td>
+      <td style="display: none;" data-ice="updated">2017-11-01 00:11:08 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/nodes/metrics_node_feature.js.html">js/nodes/metrics_node_feature.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/nodes/metrics_node_feature.js~MetricsNodeFeature.html">MetricsNodeFeature</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">9/9</span></td>
+      <td style="display: none;" data-ice="size">3204 byte</td>
+      <td style="display: none;" data-ice="lines">136</td>
+      <td style="display: none;" data-ice="updated">2017-11-01 00:11:48 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/nodes/node.js.html#errorLines=100,128,141,17,20,23,24,242,25,26,27,28,64,65,66,67,68,70,73,98,99">js/nodes/node.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/nodes/node.js~Node.html">Node</a></span></td>
+      <td class="coverage"><span data-ice="coverage">41 %</span><span data-ice="coverageCount" class="coverage-count">15/36</span></td>
+      <td style="display: none;" data-ice="size">13038 byte</td>
+      <td style="display: none;" data-ice="lines">530</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/nodes/node_feature.js.html">js/nodes/node_feature.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/nodes/node_feature.js~NodeFeature.html">NodeFeature</a></span></td>
+      <td class="coverage"><span data-ice="coverage">100 %</span><span data-ice="coverageCount" class="coverage-count">10/10</span></td>
+      <td style="display: none;" data-ice="size">1542 byte</td>
+      <td style="display: none;" data-ice="lines">109</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/nodes/node_messaging.js.html#errorLines=124,18,19,20,27">js/nodes/node_messaging.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/nodes/node_messaging.js~NodeMessaging.html">NodeMessaging</a></span></td>
+      <td class="coverage"><span data-ice="coverage">76 %</span><span data-ice="coverageCount" class="coverage-count">16/21</span></td>
+      <td style="display: none;" data-ice="size">4541 byte</td>
+      <td style="display: none;" data-ice="lines">227</td>
+      <td style="display: none;" data-ice="updated">2017-11-01 00:12:26 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/nodes/servers_node_feature.js.html#errorLines=18">js/nodes/servers_node_feature.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/nodes/servers_node_feature.js~ServersNodeFeature.html">ServersNodeFeature</a></span></td>
+      <td class="coverage"><span data-ice="coverage">88 %</span><span data-ice="coverageCount" class="coverage-count">8/9</span></td>
+      <td style="display: none;" data-ice="size">4834 byte</td>
+      <td style="display: none;" data-ice="lines">194</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/plugins/features_manager.js.html#errorLines=11,35,37">js/plugins/features_manager.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/plugins/features_manager.js~FeaturesManager.html">FeaturesManager</a></span></td>
+      <td class="coverage"><span data-ice="coverage">76 %</span><span data-ice="coverageCount" class="coverage-count">10/13</span></td>
+      <td style="display: none;" data-ice="size">6680 byte</td>
+      <td style="display: none;" data-ice="lines">239</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/plugins/plugins_factory.js.html#errorLines=13,31,36,41">js/plugins/plugins_factory.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/plugins/plugins_factory.js~PluginsFactory.html">PluginsFactory</a></span></td>
+      <td class="coverage"><span data-ice="coverage">50 %</span><span data-ice="coverageCount" class="coverage-count">4/8</span></td>
+      <td style="display: none;" data-ice="size">1667 byte</td>
+      <td style="display: none;" data-ice="lines">66</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/plugins/plugins_manager.js.html#errorLines=13,37,39,40,41,56">js/plugins/plugins_manager.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/plugins/plugins_manager.js~PluginsManager.html">PluginsManager</a></span></td>
+      <td class="coverage"><span data-ice="coverage">70 %</span><span data-ice="coverageCount" class="coverage-count">14/20</span></td>
+      <td style="display: none;" data-ice="size">6932 byte</td>
+      <td style="display: none;" data-ice="lines">285</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/plugins/rendering_manager.js.html#errorLines=12,35">js/plugins/rendering_manager.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/plugins/rendering_manager.js~RenderingManager.html">RenderingManager</a></span></td>
+      <td class="coverage"><span data-ice="coverage">80 %</span><span data-ice="coverageCount" class="coverage-count">8/10</span></td>
+      <td style="display: none;" data-ice="size">2758 byte</td>
+      <td style="display: none;" data-ice="lines">117</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/plugins/servers_manager.js.html#errorLines=27,5">js/plugins/servers_manager.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/plugins/servers_manager.js~ServersManager.html">ServersManager</a></span></td>
+      <td class="coverage"><span data-ice="coverage">60 %</span><span data-ice="coverageCount" class="coverage-count">3/5</span></td>
+      <td style="display: none;" data-ice="size">998 byte</td>
+      <td style="display: none;" data-ice="lines">40</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/plugins/servers_plugin.js.html#errorLines=31,5">js/plugins/servers_plugin.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/plugins/servers_plugin.js~ServersPlugin.html">ServersPlugin</a></span></td>
+      <td class="coverage"><span data-ice="coverage">50 %</span><span data-ice="coverageCount" class="coverage-count">2/4</span></td>
+      <td style="display: none;" data-ice="size">855 byte</td>
+      <td style="display: none;" data-ice="lines">33</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/plugins/services_manager.js.html#errorLines=27,5">js/plugins/services_manager.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/plugins/services_manager.js~ServicesManager.html">ServicesManager</a></span></td>
+      <td class="coverage"><span data-ice="coverage">66 %</span><span data-ice="coverageCount" class="coverage-count">4/6</span></td>
+      <td style="display: none;" data-ice="size">1118 byte</td>
+      <td style="display: none;" data-ice="lines">51</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/runtime/index.js.html">js/runtime/index.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">-</span></td>
+      <td style="display: none;" data-ice="size">435 byte</td>
+      <td style="display: none;" data-ice="lines">14</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/runtime/runtime_executable.js.html#errorLines=31,44,9">js/runtime/runtime_executable.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/runtime/runtime_executable.js~RuntimeExecutable.html">RuntimeExecutable</a></span></td>
+      <td class="coverage"><span data-ice="coverage">57 %</span><span data-ice="coverageCount" class="coverage-count">4/7</span></td>
+      <td style="display: none;" data-ice="size">1582 byte</td>
+      <td style="display: none;" data-ice="lines">62</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/runtime/stage0_create_local_node_executable.js.html#errorLines=20,23,27,9">js/runtime/stage0_create_local_node_executable.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/runtime/stage0_create_local_node_executable.js~RuntimeStage0Executable.html">RuntimeStage0Executable</a></span></td>
+      <td class="coverage"><span data-ice="coverage">20 %</span><span data-ice="coverageCount" class="coverage-count">1/5</span></td>
+      <td style="display: none;" data-ice="size">1938 byte</td>
+      <td style="display: none;" data-ice="lines">82</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/runtime/stage1_define_topology_executable.js.html#errorLines=13,31,34,38">js/runtime/stage1_define_topology_executable.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/runtime/stage1_define_topology_executable.js~RuntimeStage1Executable.html">RuntimeStage1Executable</a></span></td>
+      <td class="coverage"><span data-ice="coverage">20 %</span><span data-ice="coverageCount" class="coverage-count">1/5</span></td>
+      <td style="display: none;" data-ice="size">5973 byte</td>
+      <td style="display: none;" data-ice="lines">204</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/runtime/stage2_load_local_topology_executable.js.html#errorLines=13,25,28,32">js/runtime/stage2_load_local_topology_executable.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/runtime/stage2_load_local_topology_executable.js~RuntimeStage2Executable.html">RuntimeStage2Executable</a></span></td>
+      <td class="coverage"><span data-ice="coverage">20 %</span><span data-ice="coverageCount" class="coverage-count">1/5</span></td>
+      <td style="display: none;" data-ice="size">4081 byte</td>
+      <td style="display: none;" data-ice="lines">121</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/runtime/stage3_start_local_node_executable.js.html#errorLines=11,21,24,29">js/runtime/stage3_start_local_node_executable.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/runtime/stage3_start_local_node_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></td>
+      <td class="coverage"><span data-ice="coverage">20 %</span><span data-ice="coverageCount" class="coverage-count">1/5</span></td>
+      <td style="display: none;" data-ice="size">1171 byte</td>
+      <td style="display: none;" data-ice="lines">61</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/runtime/unused_runtime_stage3_executable.js.html#errorLines=12,147,22,25,29,63">js/runtime/unused_runtime_stage3_executable.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/runtime/unused_runtime_stage3_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></td>
+      <td class="coverage"><span data-ice="coverage">14 %</span><span data-ice="coverageCount" class="coverage-count">1/7</span></td>
+      <td style="display: none;" data-ice="size">3883 byte</td>
+      <td style="display: none;" data-ice="lines">166</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/runtime/unused_runtime_stage4_executable.js.html#errorLines=18,21,25,8">js/runtime/unused_runtime_stage4_executable.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/runtime/unused_runtime_stage4_executable.js~RuntimeStage4Executable.html">RuntimeStage4Executable</a></span></td>
+      <td class="coverage"><span data-ice="coverage">20 %</span><span data-ice="coverageCount" class="coverage-count">1/5</span></td>
+      <td style="display: none;" data-ice="size">1621 byte</td>
+      <td style="display: none;" data-ice="lines">75</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/security/authentication_manager.js.html#errorLines=27,54,56,57,8,81,82">js/security/authentication_manager.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/security/authentication_manager.js~AuthenticationManager.html">AuthenticationManager</a></span></td>
+      <td class="coverage"><span data-ice="coverage">63 %</span><span data-ice="coverageCount" class="coverage-count">12/19</span></td>
+      <td style="display: none;" data-ice="size">15002 byte</td>
+      <td style="display: none;" data-ice="lines">535</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/security/authentication_plugin.js.html#errorLines=32,5">js/security/authentication_plugin.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/security/authentication_plugin.js~AuthenticationPlugin.html">AuthenticationPlugin</a></span></td>
+      <td class="coverage"><span data-ice="coverage">85 %</span><span data-ice="coverageCount" class="coverage-count">12/14</span></td>
+      <td style="display: none;" data-ice="size">3775 byte</td>
+      <td style="display: none;" data-ice="lines">178</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/security/authentication_plugin_lowdb.js.html#errorLines=100,104,111,15,39,70,76,82,88,94">js/security/authentication_plugin_lowdb.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/security/authentication_plugin_lowdb.js~AuthenticationLowDbPlugin.html">AuthenticationLowDbPlugin</a></span></td>
+      <td class="coverage"><span data-ice="coverage">44 %</span><span data-ice="coverageCount" class="coverage-count">8/18</span></td>
+      <td style="display: none;" data-ice="size">11351 byte</td>
+      <td style="display: none;" data-ice="lines">386</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/security/authentication_wrapper.js.html#errorLines=12,36,37,38">js/security/authentication_wrapper.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/security/authentication_wrapper.js~AuthenticationWrapper.html">AuthenticationWrapper</a></span></td>
+      <td class="coverage"><span data-ice="coverage">50 %</span><span data-ice="coverageCount" class="coverage-count">4/8</span></td>
+      <td style="display: none;" data-ice="size">4296 byte</td>
+      <td style="display: none;" data-ice="lines">151</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/security/authorization_manager.js.html#errorLines=11,35,37,38">js/security/authorization_manager.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/security/authorization_manager.js~AuthorizationManager.html">AuthorizationManager</a></span></td>
+      <td class="coverage"><span data-ice="coverage">60 %</span><span data-ice="coverageCount" class="coverage-count">6/10</span></td>
+      <td style="display: none;" data-ice="size">4003 byte</td>
+      <td style="display: none;" data-ice="lines">160</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/security/todo/authentication_plugin_passport.js.html#errorLines=14,196,37,39,40,41,57,63,69,75,81,87">js/security/todo/authentication_plugin_passport.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/security/todo/authentication_plugin_passport.js~AuthenticationPluginPassport.html">AuthenticationPluginPassport</a></span></td>
+      <td class="coverage"><span data-ice="coverage">40 %</span><span data-ice="coverageCount" class="coverage-count">8/20</span></td>
+      <td style="display: none;" data-ice="size">8149 byte</td>
+      <td style="display: none;" data-ice="lines">241</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/security/todo/authentication_plugin_passport_local.js.html#errorLines=13,33">js/security/todo/authentication_plugin_passport_local.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/security/todo/authentication_plugin_passport_local.js~AuthenticationPluginPassportLocal.html">AuthenticationPluginPassportLocal</a></span></td>
+      <td class="coverage"><span data-ice="coverage">66 %</span><span data-ice="coverageCount" class="coverage-count">4/6</span></td>
+      <td style="display: none;" data-ice="size">2720 byte</td>
+      <td style="display: none;" data-ice="lines">92</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/security/todo/authentication_plugin_passport_local_db.js.html#errorLines=12,32,46">js/security/todo/authentication_plugin_passport_local_db.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/security/todo/authentication_plugin_passport_local_db.js~AuthenticationPluginPassportLocalDb.html">AuthenticationPluginPassportLocalDb</a></span></td>
+      <td class="coverage"><span data-ice="coverage">57 %</span><span data-ice="coverageCount" class="coverage-count">4/7</span></td>
+      <td style="display: none;" data-ice="size">2679 byte</td>
+      <td style="display: none;" data-ice="lines">96</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/security/todo/authentication_plugin_passport_local_file.js.html#errorLines=16,36,73,80,95">js/security/todo/authentication_plugin_passport_local_file.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/security/todo/authentication_plugin_passport_local_file.js~AuthenticationPluginPassportLocalFile.html">AuthenticationPluginPassportLocalFile</a></span></td>
+      <td class="coverage"><span data-ice="coverage">54 %</span><span data-ice="coverageCount" class="coverage-count">6/11</span></td>
+      <td style="display: none;" data-ice="size">6099 byte</td>
+      <td style="display: none;" data-ice="lines">190</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/servers/express_server.js.html#errorLines=105,106,150,21,46,67">js/servers/express_server.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/servers/express_server.js~ExpressServer.html">ExpressServer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">45 %</span><span data-ice="coverageCount" class="coverage-count">5/11</span></td>
+      <td style="display: none;" data-ice="size">10390 byte</td>
+      <td style="display: none;" data-ice="lines">363</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/servers/logs_server.js.html#errorLines=13,38">js/servers/logs_server.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/servers/logs_server.js~LogsServer.html">LogsServer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">75 %</span><span data-ice="coverageCount" class="coverage-count">6/8</span></td>
+      <td style="display: none;" data-ice="size">4728 byte</td>
+      <td style="display: none;" data-ice="lines">167</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/servers/metrics_server.js.html#errorLines=16,64,66">js/servers/metrics_server.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/servers/metrics_server.js~MetricsServer.html">MetricsServer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">85 %</span><span data-ice="coverageCount" class="coverage-count">17/20</span></td>
+      <td style="display: none;" data-ice="size">9821 byte</td>
+      <td style="display: none;" data-ice="lines">364</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/servers/restify_server.js.html#errorLines=13,142,38,56">js/servers/restify_server.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/servers/restify_server.js~RestifyServer.html">RestifyServer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">55 %</span><span data-ice="coverageCount" class="coverage-count">5/9</span></td>
+      <td style="display: none;" data-ice="size">5875 byte</td>
+      <td style="display: none;" data-ice="lines">228</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/servers/routable_server.js.html#errorLines=12,50">js/servers/routable_server.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/servers/routable_server.js~RoutableServer.html">RoutableServer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">75 %</span><span data-ice="coverageCount" class="coverage-count">6/8</span></td>
+      <td style="display: none;" data-ice="size">2336 byte</td>
+      <td style="display: none;" data-ice="lines">106</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/servers/server.js.html#errorLines=14,79,80,82,83,84,85,87,88,89,91,92,94">js/servers/server.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/servers/server.js~Server.html">Server</a></span>
+<span><a href="variable/index.html#static-variable-ServerTypes">ServerTypes</a></span></td>
+      <td class="coverage"><span data-ice="coverage">45 %</span><span data-ice="coverageCount" class="coverage-count">11/24</span></td>
+      <td style="display: none;" data-ice="size">16390 byte</td>
+      <td style="display: none;" data-ice="lines">545</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/services/routes_svc_consumer.js.html#errorLines=12">js/services/routes_svc_consumer.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/services/routes_svc_consumer.js~RoutesSvcConsumer.html">RoutesSvcConsumer</a></span></td>
+      <td class="coverage"><span data-ice="coverage">83 %</span><span data-ice="coverageCount" class="coverage-count">5/6</span></td>
+      <td style="display: none;" data-ice="size">3931 byte</td>
+      <td style="display: none;" data-ice="lines">154</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/services/uused_base/unused_service_exec_provider.js.html#errorLines=11,35">js/services/uused_base/unused_service_exec_provider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/services/uused_base/unused_service_exec_provider.js~ServiceExecProvider.html">ServiceExecProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">60 %</span><span data-ice="coverageCount" class="coverage-count">3/5</span></td>
+      <td style="display: none;" data-ice="size">1651 byte</td>
+      <td style="display: none;" data-ice="lines">61</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/services/uused_base/unused_socketio_service_provider.js.html#errorLines=14,42,44,45">js/services/uused_base/unused_socketio_service_provider.js</a></span></td>
+      <td data-ice="identifier" class="identifiers"><span><a href="class/js/services/uused_base/unused_socketio_service_provider.js~SocketIOServiceProvider.html">SocketIOServiceProvider</a></span></td>
+      <td class="coverage"><span data-ice="coverage">71 %</span><span data-ice="coverageCount" class="coverage-count">10/14</span></td>
+      <td style="display: none;" data-ice="size">12903 byte</td>
+      <td style="display: none;" data-ice="lines">413</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+<tr data-ice="file">
+      <td data-ice="filePath"><span><a href="file/js/start_node.js.html#errorLines=19,35,36,39,40,62,97">js/start_node.js</a></span></td>
+      <td data-ice="identifier" class="identifiers">-</td>
+      <td class="coverage"><span data-ice="coverage">30 %</span><span data-ice="coverageCount" class="coverage-count">3/10</span></td>
+      <td style="display: none;" data-ice="size">5453 byte</td>
+      <td style="display: none;" data-ice="lines">230</td>
+      <td style="display: none;" data-ice="updated">2017-10-06 19:23:11 (UTC)</td>
+    </tr>
+</tbody>
+</table>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

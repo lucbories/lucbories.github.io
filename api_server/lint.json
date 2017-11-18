@@ -1,0 +1,567 @@
+[
+  {
+    "name": "MetricsReducer#reduce_one_record",
+    "filePath": "js/metrics/base/metrics_reducer.js",
+    "lines": [
+      {
+        "lineNumber": 88,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 89,
+        "line": "\t * Reduce metrics records into a state.\r"
+      },
+      {
+        "lineNumber": 90,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 91,
+        "line": "\t * @param {object} arg_state_values - metrics state values.\r"
+      },
+      {
+        "lineNumber": 92,
+        "line": "\t * @param {object} arg_metrics_values - metrics records values.\r"
+      },
+      {
+        "lineNumber": 93,
+        "line": "\t * @param {MetricsState} arg_state - metrics state.\r"
+      },
+      {
+        "lineNumber": 94,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 95,
+        "line": "\t * @returns {object} - metrics state values.\r"
+      },
+      {
+        "lineNumber": 96,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 97,
+        "line": "\treduce_one_record(arg_state_values/*, arg_metrics_values, arg_state*/)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_state_values"
+    ],
+    "docParams": [
+      "arg_state_values",
+      "arg_metrics_values",
+      "arg_state"
+    ]
+  },
+  {
+    "name": "MetricHttpReducer#reduce_one_record",
+    "filePath": "js/metrics/http/metrics_http_reducer.js",
+    "lines": [
+      {
+        "lineNumber": 40,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 41,
+        "line": "\t * Reduce metrics records into a state.\r"
+      },
+      {
+        "lineNumber": 42,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 43,
+        "line": "\t * @param {object} arg_state_values - metrics state values.\r"
+      },
+      {
+        "lineNumber": 44,
+        "line": "\t * @param {object} arg_metrics_values - metrics records values.\r"
+      },
+      {
+        "lineNumber": 45,
+        "line": "\t * @param {MetricsState} arg_state - metrics state.\r"
+      },
+      {
+        "lineNumber": 46,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 47,
+        "line": "\t * @returns {object} - metrics state values.\r"
+      },
+      {
+        "lineNumber": 48,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 49,
+        "line": "\treduce_one_record(arg_state_values, arg_metrics_values/*, arg_state*/)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_state_values",
+      "arg_metrics_values"
+    ],
+    "docParams": [
+      "arg_state_values",
+      "arg_metrics_values",
+      "arg_state"
+    ]
+  },
+  {
+    "name": "AuthenticationPlugin#apply_on_server",
+    "filePath": "js/security/authentication_plugin.js",
+    "lines": [
+      {
+        "lineNumber": 72,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 73,
+        "line": "\t * Apply authentication plugin io given server. Use a middleware.\r"
+      },
+      {
+        "lineNumber": 74,
+        "line": "\t * @abstract\r"
+      },
+      {
+        "lineNumber": 75,
+        "line": "\t * @param {object} arg_server - Runtime server (Express/Restify server for example)\r"
+      },
+      {
+        "lineNumber": 76,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 77,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 78,
+        "line": "\tapply_on_server(/*arg_server*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_server"
+    ]
+  },
+  {
+    "name": "AuthenticationPlugin#create_middleware",
+    "filePath": "js/security/authentication_plugin.js",
+    "lines": [
+      {
+        "lineNumber": 84,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 85,
+        "line": "\t * Get a authentication middleware to use on servers (see Connect/Express middleware signature).\r"
+      },
+      {
+        "lineNumber": 86,
+        "line": "\t * @abstract\r"
+      },
+      {
+        "lineNumber": 87,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 88,
+        "line": "\t * @param {boolean} arg_should_401 - should send an 401 error on authentication failure.\r"
+      },
+      {
+        "lineNumber": 89,
+        "line": "\t * @param {Function} arg_next_auth_mw - next authentication middleware.\r"
+      },
+      {
+        "lineNumber": 90,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 91,
+        "line": "\t * @returns {Function} - function(request,response,next){...}.\r"
+      },
+      {
+        "lineNumber": 92,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 93,
+        "line": "\tcreate_middleware(/*arg_should_401, arg_next_auth_mw*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_should_401",
+      "arg_next_auth_mw"
+    ]
+  },
+  {
+    "name": "AuthenticationPlugin#authenticate",
+    "filePath": "js/security/authentication_plugin.js",
+    "lines": [
+      {
+        "lineNumber": 100,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 101,
+        "line": "\t * Authenticate a user with request credentials.\r"
+      },
+      {
+        "lineNumber": 102,
+        "line": "\t * @abstract\r"
+      },
+      {
+        "lineNumber": 103,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 104,
+        "line": "\t * @param {Credentials|undefined} arg_credentials - request credentials object.\r"
+      },
+      {
+        "lineNumber": 105,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 106,
+        "line": "\t * @returns {object} - a promise of boolean.\r"
+      },
+      {
+        "lineNumber": 107,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 108,
+        "line": "\tauthenticate(/*arg_credentials*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_credentials"
+    ]
+  },
+  {
+    "name": "AuthorizationManager#authorize",
+    "filePath": "js/security/authorization_manager.js",
+    "lines": [
+      {
+        "lineNumber": 109,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 110,
+        "line": "\t * Chech permission authorization of a user.\r"
+      },
+      {
+        "lineNumber": 111,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 112,
+        "line": "\t * @param {object} arg_permission - permission plain object.\r"
+      },
+      {
+        "lineNumber": 113,
+        "line": "\t * @param {Credentials} arg_credentials - user credentials plain object.\r"
+      },
+      {
+        "lineNumber": 114,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 115,
+        "line": "\t * @returns {object} - a promise of boolean\r"
+      },
+      {
+        "lineNumber": 116,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 117,
+        "line": "\tauthorize(/*arg_permission, arg_credentials*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_permission",
+      "arg_credentials"
+    ]
+  },
+  {
+    "name": "RoutableServer#get_middleware_for_static_route",
+    "filePath": "js/servers/routable_server.js",
+    "lines": [
+      {
+        "lineNumber": 79,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 80,
+        "line": "\t * Get server middleware for static route.\r"
+      },
+      {
+        "lineNumber": 81,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 82,
+        "line": "     * @param {object} arg_cfg_route - plain object route configuration.\r"
+      },
+      {
+        "lineNumber": 83,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 84,
+        "line": "\t * @returns {middleware} - middleware function as f(req, res, next)\r"
+      },
+      {
+        "lineNumber": 85,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 86,
+        "line": "\tget_middleware_for_static_route()\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_cfg_route"
+    ]
+  },
+  {
+    "name": "RoutableServer#add_get_route",
+    "filePath": "js/servers/routable_server.js",
+    "lines": [
+      {
+        "lineNumber": 93,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 94,
+        "line": "\t * Get server middleware for directory route.\r"
+      },
+      {
+        "lineNumber": 95,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 96,
+        "line": "     * @param {object}   arg_cfg_route - plain object route configuration.\r"
+      },
+      {
+        "lineNumber": 97,
+        "line": "\t * @param {function} arg_callback - route handler callback.\r"
+      },
+      {
+        "lineNumber": 98,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 99,
+        "line": "\t * @returns {boolean} - success or failure.\r"
+      },
+      {
+        "lineNumber": 100,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 101,
+        "line": "\tadd_get_route(/*arg_cfg_route, arg_callback*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_cfg_route",
+      "arg_callback"
+    ]
+  },
+  {
+    "name": "SocketIOServiceProvider#post_provided_values_to_subscribers",
+    "filePath": "js/services/uused_base/unused_socketio_service_provider.js",
+    "lines": [
+      {
+        "lineNumber": 69,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 70,
+        "line": "\t * Post a message on the bus.\r"
+      },
+      {
+        "lineNumber": 71,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 72,
+        "line": "\t * @param {object} arg_msg - message payload.\r"
+      },
+      {
+        "lineNumber": 73,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 74,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 75,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 76,
+        "line": "\tpost_provided_values_to_subscribers(arg_datas)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_datas"
+    ],
+    "docParams": [
+      "arg_msg"
+    ]
+  },
+  {
+    "name": "SocketIOServiceProvider#subscribe",
+    "filePath": "js/services/uused_base/unused_socketio_service_provider.js",
+    "lines": [
+      {
+        "lineNumber": 325,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 326,
+        "line": "\t * Add a subscriber socket.\r"
+      },
+      {
+        "lineNumber": 327,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 328,
+        "line": "\t * @param {object} arg_socket - subscribing socket.\r"
+      },
+      {
+        "lineNumber": 329,
+        "line": "\t * @param {object} arg_data - subscribing filter or datas (optional).\r"
+      },
+      {
+        "lineNumber": 330,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 331,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 332,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 333,
+        "line": "\tsubscribe(arg_socket/*, arg_data*/)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_socket"
+    ],
+    "docParams": [
+      "arg_socket",
+      "arg_data"
+    ]
+  },
+  {
+    "name": "SocketIOServiceProvider#process",
+    "filePath": "js/services/uused_base/unused_socketio_service_provider.js",
+    "lines": [
+      {
+        "lineNumber": 398,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 399,
+        "line": "\t * Process request and returns datas.\r"
+      },
+      {
+        "lineNumber": 400,
+        "line": "\t * @abstract\r"
+      },
+      {
+        "lineNumber": 401,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 402,
+        "line": "\t * @param {string} arg_method - method name\r"
+      },
+      {
+        "lineNumber": 403,
+        "line": "\t * @param {array} arg_operands - request operands\r"
+      },
+      {
+        "lineNumber": 404,
+        "line": "\t * @param {Credentials} arg_credentials - request credentials\r"
+      },
+      {
+        "lineNumber": 405,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 406,
+        "line": "\t * @returns {Promise}\r"
+      },
+      {
+        "lineNumber": 407,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 408,
+        "line": "\tprocess(/*arg_method, arg_operands, arg_credentials*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_method",
+      "arg_operands",
+      "arg_credentials"
+    ]
+  },
+  {
+    "name": "unwatch",
+    "filePath": "js/start_node.js",
+    "lines": [
+      {
+        "lineNumber": 188,
+        "line": "/**\r"
+      },
+      {
+        "lineNumber": 189,
+        "line": " * Stop watching files.\r"
+      },
+      {
+        "lineNumber": 190,
+        "line": " * @param {object} - watcher object\r"
+      },
+      {
+        "lineNumber": 191,
+        "line": " * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 192,
+        "line": " */\r"
+      },
+      {
+        "lineNumber": 193,
+        "line": "function unwatch(arg_watcher)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_watcher"
+    ],
+    "docParams": [
+      "-"
+    ]
+  }
+]

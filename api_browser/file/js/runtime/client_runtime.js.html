@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/runtime/client_runtime.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/runtime/client_runtime.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+import uuid from &apos;uuid&apos;
+import { fromJS } from &apos;immutable&apos;
+
+// COMMON IMPORTS
+import Stream                 from &apos;../../../node_modules/devapt-core-common/dist/js/messaging/stream&apos;
+import T                      from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+import Credentials            from &apos;../../../node_modules/devapt-core-common/dist/js/base/credentials&apos;
+import ReduxStore             from &apos;../../../node_modules/devapt-core-common/dist/js/state_store/redux_store&apos;
+import RuntimeBase            from &apos;../../../node_modules/devapt-core-common/dist/js/base/runtime_base&apos;
+import {register_runtime}     from &apos;../../../node_modules/devapt-core-common/dist/js/base/runtime&apos;
+import DefaultRenderingPlugin from &apos;../../../node_modules/devapt-core-common/dist/js/default_plugins/rendering_default_plugin&apos;
+import RenderingPlugin        from &apos;../../../node_modules/devapt-core-common/dist/js/plugins/rendering_plugin&apos;
+
+// BROWSER IMPORTS
+import ConsoleLogger  from &apos;../loggers/console_logger&apos;
+import StreamLogger   from &apos;../loggers/stream_logger&apos;
+import Service        from &apos;./service&apos;
+import UI             from &apos;./ui&apos;
+import Router         from &apos;./router&apos;
+import DisplayCommand from &apos;../commands/display_command&apos;
+import Component      from &apos;../base/component&apos;
+
+
+let context = &apos;browser/runtime/client_runtime&apos;
+
+
+
+/**
+ * @file client runtime class - main library interface.
+ * 
+ * @author Luc BORIES
+ * 
+ * @license Apache-2.0
+ */
+export default class ClientRuntime extends RuntimeBase
+{
+	/**
+	 * Create a client Runtime instance.
+	 * @extends RuntimeBase
+	 * 
+	 * 	API:
+	 * 		-&gt;constructor()
+	 * 		
+	 * 		-&gt;get_session_uid():string - get unique session id.
+	 * 		-&gt;get_session_credentials():Credentials - get session credentials instance.
+	 * 
+	 * 		-&gt;load(arg_settings):nothing - Load runtime settings.
+	 * 
+	 * 		-&gt;register_service(arg_svc_name, arg_svc_settings):Promise(Service) - Register a remote service.
+	 * 		-&gt;service(arg_name):Service - Get a service by its name.
+	 * 
+	 * 		-&gt;command(arg_name):object - Get a command by its name.
+	 * 
+	 * 		-&gt;ping():nothing - Emit a ping request through SocketIO.
+	 * 
+	 * 		-&gt;get_state_store():object - Get state store, a Redux data store.(INHERITED)
+	 * 		-&gt;get_store_reducers():function - Get reducer pure function: (previous state, action) =&gt; new state.
+	 * 		-&gt;handle_store_change():nothing - Handle Redux store changes.
+	 * 		-&gt;create_store_observer(arg_component):unsubscribe function - Create a store change observer.
+	 * 
+	 * 		-&gt;router():Router - Get runtime router.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor()
+	{
+		super(context)
+
+		// INIT LOGGING FEATURE ON BROWSER
+		const console_logger = new ConsoleLogger(true)
+		this.get_logger_manager().loggers.push(console_logger)
+		
+		const stream_logger = new StreamLogger(undefined, true)
+		this.get_logger_manager().loggers.push(stream_logger)
+
+		stream_logger.get_stream().subscribe(
+			(arg_log)=&gt;{
+				// console.log(context + &apos;:stream_logger:logs&apos;, arg_log)
+				if (this._state_store)
+				{
+					const action = {
+						type:&apos;ADD_JSON_LOGS&apos;,
+						logs:arg_log.logs
+					}
+					this._state_store.dispatch(action)
+				}
+			}
+		)
+
+		this.logs_stream = stream_logger.get_stream()
+		
+		this.is_browser_runtime = true
+		
+		this.classes = {}
+		this.classes.T = T
+		this.classes.DefaultRenderingPlugin = DefaultRenderingPlugin
+		this.classes.Component = Component
+		this.classes.RenderingPlugin = RenderingPlugin
+
+		this._session_credentials = undefined
+		this._session_uid = uuid.v1()
+
+		this._services = {}
+		this._services_promises = {}
+		this._ui = undefined
+		this._router = undefined
+		this._commands = undefined
+		
+		this.info(&apos;Client Runtime is created&apos;)
+
+		// this.enable_trace()
+		this.disable_trace()
+		// this.update_trace_enabled()
+
+		register_runtime(this)
+	}
+
+
+
+	/**
+	 * Get session id.
+	 * 
+	 * @returns {string} - unique session id.
+	 */
+	get_session_uid()
+	{
+		return this._session_uid
+	}
+
+
+
+	/**
+	 * Get session credentials.
+	 * 
+	 * @returns {Credentials} - session credentials instance.
+	 */
+	get_session_credentials()
+	{
+		return this._session_credentials
+	}
+
+
+
+	/**
+	 * Get UI.
+	 */
+	ui()
+	{
+		return this._ui
+	}
+
+
+
+	/**
+	 * Get UI rendering helper.
+	 */
+	ui_rendering()
+	{
+		return this._ui._ui_rendering
+	}
+
+
+
+	/**
+	 * 
+	 */
+	shoud_log_bindingd_stream()
+	{
+		return false
+	}
+
+
+
+	/**
+	 * Get application initial state: from browser cache or from DOM script.
+	 * 	State strategy is {
+	 * 		source:&apos;browser&apos; or &apos;session&apos; or &apos;html&apos;,
+	 * 		save_period: 5000, milliseconds between two state saves, 0 to disable save
+	 * 		state_key: &apos;...&apos; name of the store key which corresponding value contains the key name of the application state.
+	 * 	}
+	 * 
+	 * @param {object} arg_app_state_strategy - strategy to manage application state.
+	 * 
+	 * @returns {object}
+	 */
+	get_app_initial_state(arg_app_state_strategy)
+	{
+		const browser_supports_storage = (typeof(Storage) !== &quot;undefined&quot;)
+		const source = ( T.isObject(arg_app_state_strategy) &amp;&amp; browser_supports_storage) ? arg_app_state_strategy.source : &apos;html&apos;
+		const app_state_key = T.isObject(arg_app_state_strategy) &amp;&amp; T.isString(arg_app_state_strategy.state_key) ? arg_app_state_strategy.state_key : &apos;__DEVAPT_APP_STATE_KEY__&apos;
+		
+		let state = undefined
+		const window_state = window ? window.__INITIAL_STATE__ : {error:&apos;no browser window object&apos;}
+		switch(source) {
+			case &apos;browser&apos;:{
+				const store_key = localStorage.getItem(app_state_key)
+				if (! T.isString(store_key) )
+				{
+					state = window_state
+					break
+				}
+				const state_str = localStorage.getItem(store_key)
+				// console.log(&apos;get_app_initial_state:state_str&apos;, typeof state_str)
+				state = T.isString(state_str) ? JSON.parse(state_str) : window_state
+				break
+			}
+			case &apos;session&apos;:{
+				const store_key = sessionStorage.getItem(app_state_key)
+				if (! T.isString(store_key) )
+				{
+					state = window_state
+					break
+				}
+				const state_str = sessionStorage.getItem(store_key)
+				// console.log(&apos;get_app_initial_state:state_str&apos;, typeof state_str)
+				state = T.isString(state_str)  ? JSON.parse(state_str) : window_state
+				break
+			}
+			case &apos;html&apos;:{
+				state = window_state
+				break
+			}
+		}
+
+		return state ? state : {error:&apos;no app state found&apos;}
+	}
+	
+
+
+	/**
+	 * Configure application state save: to browser local or session storage.
+	 * 	State strategy is {
+	 * 		source:&apos;browser&apos; or &apos;session&apos; or &apos;html&apos;,
+	 * 		save_period: 5000, milliseconds between two state saves, 0 to disable save
+	 * 		state_key: &apos;...&apos; name of the store key which corresponding value contains the key name of the application state.
+	 * 	}
+	 * 
+	 * @returns {nothing}
+	 */
+	init_app_state_save()
+	{
+		this.enter_group(&apos;init_app_state_save&apos;)
+		
+		// GET AND CHECK PERIOD
+		let period = this.app_state_strategy.save_period
+		if (period == 0 || ! T.isNumber(period) )
+		{
+			this.leave_group(&apos;init_app_state_save:disabled with not period &gt; 0&apos;)
+			return
+		}
+		if (period &lt; 3000)
+		{
+			period = 3000
+		}
+
+		// CHECK STORAGE BROWSER SUPPORT
+		const browser_supports_storage = (typeof(Storage) !== &quot;undefined&quot;)
+		if (! browser_supports_storage)
+		{
+			this.error(&apos;init_app_state_save:no storage support&apos;)
+			this.leave_group(&apos;init_app_state_save:error&apos;)
+			return
+		}
+
+		// CHECK STRATEGY
+		if (! T.isObject(this.app_state_strategy) )
+		{
+			this.error(&apos;init_app_state_save:no state save strategy&apos;)
+			this.leave_group(&apos;init_app_state_save:error&apos;)
+			return
+		}
+		
+		// GET ATTRIBUTES
+		const source = this.app_state_strategy.source
+		const app_state_key = T.isString(this.app_state_strategy.state_key) ? this.app_state_strategy.state_key : &apos;__DEVAPT_APP_STATE_KEY__&apos;
+		
+		const state = this._state_store.get_state()
+		const state_app = T.isObject(state) &amp;&amp; state.getIn ? state.getIn([&apos;credentials&apos;, &apos;application&apos;], undefined) : undefined
+		const app = T.isString(state_app) ? state_app.toLocaleUpperCase() : &apos;NO_APP_NAME&apos;
+		const default_store_key = &apos;__DEVAPT_APP_STATE_&apos; + app + &apos;__&apos;
+
+		// GET SAVE CALLBACK
+		let save_cb = undefined
+		switch(source) {
+			case &apos;browser&apos;:{
+				let store_key = localStorage.getItem(app_state_key)
+				if (! T.isString(store_key) )
+				{
+					store_key = default_store_key
+					localStorage.setItem(app_state_key, store_key)
+				}
+				save_cb = ()=&gt;{
+					const state_str = JSON.stringify(this._state_store.get_state().toJS())
+					localStorage.setItem(store_key, state_str)
+				}
+				break
+			}
+			case &apos;session&apos;:{
+				let store_key = sessionStorage.getItem(app_state_key)
+				if (! T.isString(store_key) )
+				{
+					store_key = default_store_key
+					sessionStorage.setItem(app_state_key, store_key)
+				}
+				save_cb = ()=&gt;{
+					const state_str = JSON.stringify(this._state_store.get_state().toJS())
+					sessionStorage.setItem(store_key, state_str)
+				}
+				break
+			}
+		}
+
+		// REGISTER PERIODICAL SAVES
+		if (save_cb)
+		{
+			this.info(&apos;init_app_state_save:register saves with period=%s&apos;, period)
+			setTimeout(save_cb, period)
+		}
+
+		this.leave_group(&apos;init_app_state_save&apos;)
+	}
+
+	
+	
+	/**
+	 * Load runtime settings.
+	 * 
+	 * @param {object} arg_settings - runtime settings.
+	 * 
+	 * @returns {nothing}
+	 */
+	load(arg_settings)
+	{
+		this.separate_level_1()
+		this.enter_group(&apos;load&apos;)
+
+		// SET DEFAULT REMOTE LOGGING
+		// const svc_logger_settings = (&apos;default&apos; in arg_settings) ? arg_settings[&apos;default&apos;] : {}
+		// this.loggers.push( new LoggerSvc(true, svc_logger_settings) )
+		
+		// GET INITIAL STATE
+		const initial_app_state = this.get_app_initial_state(arg_settings.app_state_strategy)
+		// this.debug(&apos;initialState&apos;, initial_app_state)
+		this.app_state_strategy = arg_settings.app_state_strategy
+		
+		// GET DEFAULT REDUCER
+		if ( T.isFunction(arg_settings.reducers) )
+		{
+			this.default_reducer = arg_settings.reducers
+		}
+		else
+		{
+			this.default_reducer = (arg_previous_state/*, arg_action*/) =&gt; {
+				return arg_previous_state
+			}
+		}
+		
+		// CREATE STATE STORE
+		const reducer = this.get_store_reducers()
+		const self = this
+		this._state_store = new ReduxStore(reducer, initial_app_state, context, this.get_logger_manager())
+		this._state_store_unsubscribe = this._state_store.subscribe( self.handle_store_change.bind(self) )
+		this._state_store.dispatch( {type:&apos;store_created&apos;} )
+		
+		// CREATE CREDENTIALS INSTANCE
+		const credentials_settings = this._state_store.get_state().get(&apos;credentials&apos;, undefined)
+		this.debug(&apos;credentials_settings&apos;, credentials_settings)
+
+		const credentials_update_handler = (arg_credentials_map)=&gt;{
+			this._state_store.dispatch( {type:&apos;SET_CREDENTIALS&apos;, credentials:arg_credentials_map } )
+		}
+		const credentials_datas = credentials_settings ? credentials_settings.toJS() : Credentials.get_empty_credentials()
+		this._session_credentials = new Credentials(credentials_datas, credentials_update_handler)
+
+		// CREATE UI WRAPPER
+		this._ui = new UI(this, this._state_store)
+
+		// CREATE NAVIGATION ROUTER
+		this._router = new Router()
+
+		this._ui.load()
+
+
+		// ADD COMMANDS ROUTE
+		const add_cmd_cb = ()=&gt;{
+			this._commands = this._state_store.get_state().get(&apos;commands&apos;, {}).toJS()
+			this._commands_instances = {}
+			Object.keys(this._commands).forEach(
+				(cmd_name)=&gt;{
+					const cmd = this._commands[cmd_name]
+
+					if (cmd.type != &apos;display&apos;)
+					{
+						console.warn(&apos;load:bad cmd [&apos; + cmd_name + &apos;] with type:&apos; + cmd.type)
+						return
+					}
+
+					cmd.name = cmd_name
+					if (! (cmd_name in this._commands_instances) )
+					{
+						this._commands_instances[cmd_name] = new DisplayCommand(this, cmd)
+					}
+
+					const display_command = this._commands_instances[cmd_name]
+					if (! display_command.is_valid())
+					{
+						this.error(&apos;load:no route handler for cmd [&apos; + cmd_name + &apos;]:no valid command settings&apos;)
+						console.error(&apos;load:no route handler for cmd [&apos; + cmd_name + &apos;]:no valid command settings&apos;)
+						return
+					}
+
+					const route = display_command.get_route()
+					this.debug(&apos;load:add route handler for cmd [&apos; + cmd_name + &apos;] with route:&apos; + route)
+					// console.debug(context + &apos;:load:add route handler for cmd [&apos; + cmd_name + &apos;] with route:&apos; + route)
+
+					this._router.add_handler(route,
+						()=&gt;{
+							// console.debug(context + &apos;:load:execute handler for cmd [&apos; + cmd_name + &apos;] with route:&apos; + route)
+							this._ui.pipe_display_command(display_command)
+						}
+					)
+				}
+			)
+		}
+		
+		add_cmd_cb()
+
+		// ENABLE HASH HANDLING
+		this._router.init()
+
+
+		this.leave_group(&apos;load&apos;)
+		this.separate_level_1()
+	}
+	
+	
+	
+	/**
+	 * Register a remote service.
+	 * 
+	 * @param {string} arg_svc_name - service name.
+	 * @param {object} arg_svc_settings - service settings.
+	 * 
+	 * @returns {Promise} - Promise(Service)
+	 */
+	register_service(arg_svc_name, arg_svc_settings)
+	{
+		// this.enable_trace()
+		const self = this
+		this.enter_group(&apos;register_service:&apos; + arg_svc_name)
+		
+		if (arg_svc_name in this._services_promises)
+		{
+			this.leave_group(&apos;register_service:svc promise found for &apos; + arg_svc_name)
+			return this._services_promises[arg_svc_name]
+		}
+
+		this.debug(&apos;register_service:create svc promise:&apos; + arg_svc_name)
+		this._services_promises[arg_svc_name] = new Promise(
+			function(resolve, reject)
+			{
+				self.register_service_self(resolve, reject, arg_svc_name, arg_svc_settings)
+			}
+		)
+		.then(
+			(service)=&gt;{
+				this.leave_group(&apos;register_service:svc promise created for &apos; + arg_svc_name)
+				return service
+			}
+		)
+		
+		this.info(&apos;Client Service is created (async):&apos; + arg_svc_name)
+		// console.info(&apos;Client Service is created (async):&apos; + arg_svc_name)
+	
+		this.leave_group(&apos;register_service:async&apos;)
+		return this._services_promises[arg_svc_name]
+	}
+
+	
+	
+	/**
+	 * Register a remote service (end of process).
+	 * 
+	 * @param {string} arg_svc_name - service name.
+	 * @param {object} arg_svc_settings - service settings.
+	 * @param {Function} arg_resolve_cb - function to call when promise is resolved.
+	 * @param {Function} arg_reject_cb - function to call when promise is rejected.
+	 * 
+	 * @returns {nothing}
+	 */
+	register_service_self(arg_resolve_cb, arg_reject_cb, arg_svc_name, arg_svc_settings)
+	{
+		const self = this
+
+		// this.enter_group(&apos;register_service_self&apos;)
+		
+
+		// const app_credentials = this._state_store.get_state().get(&apos;credentials&apos;)
+		const app_credentials = this._session_credentials.get_credentials()
+
+		// CHECK SERVICE NAME
+		if ( ! T.isString(arg_svc_name) )
+		{
+			this.error(&apos;register_service:svc promise rejected:&apos; + arg_svc_name)
+			arg_reject_cb(context + &apos;:register_service:bad service name string [&apos; + arg_svc_name + &apos;]&apos;)
+			return
+		}
+
+		// TEST IF SERVICE IS ALREADY REGISTERED
+		if (this._services &amp;&amp; (arg_svc_name in this._services) )
+		{
+			this.debug(&apos;register_service_self:SERVICE IS ALREADY REGISTERED for &apos; + arg_svc_name)
+
+			const svc = this._services[arg_svc_name]
+			
+			// console.log(context + &apos;:register_service_self:SERVICE IS ALREADY REGISTERED:svc&apos;, svc)
+			this.debug(&apos;register_service:svc promise resolved:&apos; + arg_svc_name)
+			
+			arg_resolve_cb(svc)
+			
+			// this.leave_group(&apos;register_service_self&apos;)
+			return
+		}
+
+		// GET SERVICE SETTINGS FROM GIVEN SETTINGS
+		if ( T.isObject(arg_svc_settings) )
+		{
+			this.debug(&apos;register_service_self:SERVICE FROM GIVEN SETTINGS for &apos; + arg_svc_name)
+			// console.log(context + &apos;:register_service_self:SERVICE FROM GIVEN SETTINGS:arg_svc_settings&apos;, arg_svc_settings)
+
+			// GET APPLICATION CREDENTIALS
+			// TODO CHECK CREDENTIAL FORMAT STRING -&gt; MAP ?
+			arg_svc_settings.credentials = app_credentials
+			arg_svc_settings.session_uid = this.get_session_uid()
+			
+			// console.log(context + &apos;:register_service_self:credentials&apos;, arg_svc_settings.credentials = app_credentials)
+			
+			if ( T.isString(arg_svc_settings.credentials ) )
+			{
+				arg_svc_settings.credentials = JSON.parse(arg_svc_settings.credentials)
+			}
+			const svc = new Service(arg_svc_name, arg_svc_settings)
+			
+			// console.log(context + &apos;:register_service_self:SERVICE FROM GIVEN SETTINGS:svc&apos;, svc)
+			
+			self._services[arg_svc_name] = svc
+			this.debug(&apos;register_service:svc promise resolved:&apos; + arg_svc_name)
+			arg_resolve_cb(svc)
+
+			// this.leave_group(&apos;register_service_self&apos;)
+			return
+		}
+
+		// GET SERVICE SETTINGS FROM SERVER SETTINGS: PROCESS RESPONSE
+		
+		const svc_path = &apos;/topology&apos;
+		const request_svc_settings = &apos;devapt-deployed-service-infos&apos;
+		const reply_svc_settings = &apos;devapt-deployed-service-infos&apos;
+		const svc_socket = window.io(svc_path)
+		const get_settings_stream = Stream.from_emitter_event(svc_socket, reply_svc_settings)
+		
+		
+		// GET SERVICE SETTINGS FROM SERVER SETTINGS: REQUEST SETTINGS
+		
+		// DEFINE REQUEST PAYLOAD
+		const request = {
+			session_uid:this.get_session_uid(),
+			service:&apos;topology&apos;,
+			operation:request_svc_settings,
+			operands: [app_credentials.tenant, arg_svc_name],
+			credentials:app_credentials
+		}
+		this.debug(&apos;register_service_self:emit with operation=&apos; + request_svc_settings + &apos; and operation=&apos;, request.operation, request.credentials)
+		svc_socket.emit(request_svc_settings, request)
+
+
+		this.debug(&apos;register_service_self:SERVICE FROM SERVER SETTINGS for &apos; + arg_svc_name)
+		get_settings_stream.subscribe(
+			(response) =&gt; {
+				// console.log(context + &apos;:register_service_self:SERVICE FROM SERVER SETTINGS:response&apos;, response)
+				
+				if (response.has_error)
+				{
+					arg_reject_cb(response.error)
+					self.debug(&apos;register_service:svc promise rejected:&apos; + arg_svc_name + &apos; with error=&apos; + response.error)
+					return
+				}
+
+				arg_svc_settings = response.results
+				assert( T.isObject(arg_svc_settings), context + &apos;:register_service:bad service settings object&apos;)
+				self.debug(&apos;register_service_self:SERVICE FROM SERVER SETTINGS:arg_svc_settings&apos;, arg_svc_settings)
+
+				// GET APPLICATION CREDENTIALS
+				// TODO CHECK CREDENTIAL FORMAT STRING -&gt; MAP ?
+				arg_svc_settings.credentials = app_credentials
+				arg_svc_settings.session_uid = this.get_session_uid()
+				if ( T.isString(arg_svc_settings.credentials ) )
+				{
+					arg_svc_settings.credentials = JSON.parse(arg_svc_settings.credentials)
+				}
+
+				const svc = new Service(arg_svc_name, arg_svc_settings)
+				self.debug(&apos;register_service_self:SERVICE FROM SERVER SETTINGS:svc&apos;, svc)
+
+				self._services[arg_svc_name] = svc
+				delete self._services_promises[arg_svc_name]
+
+				self.debug(&apos;register_service:svc promise resolved:&apos; + arg_svc_name)
+				arg_resolve_cb(svc)
+			}
+		)
+
+		get_settings_stream.on_error(
+			(error) =&gt; {
+				self.error(&apos;register_service:svc promise rejected:&apos; + arg_svc_name + &apos; with error:&apos; + error)
+				arg_reject_cb(context + &apos;:register_service:request error for  [&apos; + arg_svc_name + &apos;] error=&apos; + error)
+			}
+		)
+
+		
+
+		// this.leave_group(&apos;register_service_self&apos;)
+	}
+	
+	
+	
+	/**
+	 * Get a service by its name.
+	 * 
+	 * @param {string} arg_name - service name.
+	 * 
+	 * @returns {Service}
+	 */
+	service(arg_name)
+	{
+		// console.info(&apos;getting/creating service&apos;, arg_name)
+		return (arg_name in this._services) ? this._services[arg_name] : undefined
+	}
+	
+	
+	
+	/**
+	 * Get a command by its name.
+	 * 
+	 * @param {string} arg_name - command name.
+	 * 
+	 * @returns {object}
+	 */
+	command(arg_name)
+	{
+		// console.info(&apos;getting/creating service&apos;, arg_name)
+		return (arg_name in this._commands) ? this._commands[arg_name] : undefined
+	}
+	
+
+	
+	/**
+	 * Emit a ping request through SocketIO.
+	 * 
+	 * @returns {nothing}
+	 */
+	ping()
+	{
+		const socketio = window.io()
+		socketio.emit(&apos;ping&apos;)
+	}
+	
+	
+	
+	/**
+	 * Get store reducers.
+	 * 
+	 * !!! Do not trace with Loggable.* into reducers with an enabled StreamLogger instance
+	 *  because it dispatch its received trace to update app state.
+	 * 
+	 * @returns {function} - reducer pure function: (previous state, action) =&gt; new state
+	 */
+	get_store_reducers()
+	{
+		return (arg_previous_state, arg_action) =&gt; {
+			// console.info(&apos;reducer 1:type=&apos; + arg_action.type + &apos; for &apos; + arg_action.component)
+			
+			// ADD LOG RECORD
+			if ( T.isString(arg_action.type) &amp;&amp; arg_action.type == &apos;ADD_JSON_LOGS&apos; &amp;&amp; T.isArray(arg_action.logs) )
+			{
+				const path = [&apos;logs&apos;, &apos;state&apos;, &apos;items&apos;]
+				const logs = arg_previous_state.getIn(path, []).concat(arg_action.logs)
+				return arg_previous_state.setIn(path, logs)
+			}
+
+			// SET PAGE CONTENT
+			if (T.isString(arg_action.type) &amp;&amp; arg_action.type ==  &apos;SET_PAGE_CONTENT&apos; &amp;&amp; T.isString(arg_action.resource) &amp;&amp; arg_action.resource == &apos;content&apos;)
+			{
+				if ( T.isArray(arg_action.content_body) )
+				{
+					const body_contents_path = [&apos;views&apos;, &apos;content&apos;, &apos;state&apos;, &apos;body_contents&apos;]
+					return arg_previous_state.setIn(body_contents_path, fromJS(arg_action.content_body) )
+				}
+			}
+
+			// ADD JSON RESOURCE SETTINGS
+			if ( T.isString(arg_action.type) &amp;&amp; arg_action.type == &apos;ADD_JSON_RESOURCE&apos; &amp;&amp; T.isString(arg_action.resource) &amp;&amp; T.isObject(arg_action.json) )
+			{
+				// console.log(&apos;reducer:ADD_JSON_RESOURCE&apos;, arg_action.resource, arg_action.json)
+
+				if ( T.isString(arg_action.collection) )
+				{
+					if ( T.isArray(arg_action.path) )
+					{
+						return arg_previous_state.setIn([arg_action.collection, arg_action.resource].concat(arg_action.path), fromJS(arg_action.json) )
+					}
+
+					return arg_previous_state.setIn([arg_action.collection, arg_action.resource], fromJS(arg_action.json) )
+				}
+
+				if ( T.isArray(arg_action.path) )
+				{
+					return arg_previous_state.setIn(arg_action.path, fromJS(arg_action.json) )
+				}
+			}
+
+			// SET SESSION CREDENTIALS
+			if ( T.isString(arg_action.type) &amp;&amp; arg_action.type == &apos;SET_CREDENTIALS&apos; &amp;&amp; T.isObject(arg_action.credentials) )
+			{
+				// console.log(&apos;reducer:SET_CREDENTIALS&apos;, arg_action.credentials)
+				return arg_previous_state.set(&apos;credentials&apos;, arg_action.credentials)
+			}
+
+			// DISPATCH TO COMPONENTS REDUCERS
+			if ( T.isString(arg_action.component) )
+			{
+				// console.info(context + &apos;:reducer 2:type=&apos; + arg_action.type + &apos; for &apos; + arg_action.component)
+				const component = this._ui.get(arg_action.component)
+				
+				if ( T.isObject(component) &amp;&amp; component.is_component )
+				{
+					// console.info(context + &apos;:reducer 3:type=&apos; + arg_action.type + &apos; for &apos; + arg_action.component, component)
+					
+					if ( T.isFunction(component.reduce_action) )
+					{
+						// console.info(context + &apos;:reducer 4:type=&apos; + arg_action.type + &apos; for &apos; + arg_action.component)
+						
+						// console.log(context + &apos;:reducer 4:path&apos;, component.get_state_path())
+						// console.log(context + &apos;:reducer 4:arg_previous_state&apos;, arg_previous_state.toJS())
+						
+						const prev_component_state = arg_previous_state.getIn(component.get_state_path())
+						if (! prev_component_state)
+						{
+							console.log(context + &apos;:reducer:arg_previous_state&apos;, arg_previous_state.toJS())
+							console.log(context + &apos;:reducer:component.get_state_path()&apos;, component.get_state_path())
+							console.error(context + &apos;:reducer:bad prev_component_state&apos;, prev_component_state)
+							return fromJS( { error:&apos;no state&apos; } )
+						}
+
+						// console.log(context + &apos;:reducer 4:prev_component_state&apos;, prev_component_state.toJS())
+						
+						let new_component_state = component.reduce_action(prev_component_state, arg_action)
+						if (new_component_state &amp;&amp; new_component_state != prev_component_state)
+						{
+							const prev_state_version = prev_component_state.get(&apos;state_version&apos;, 0)
+							new_component_state = new_component_state.set(&apos;state_version&apos;, prev_state_version + 1)
+						}
+
+						// console.log(context + &apos;:reducer 4:new_component_state&apos;, new_component_state.toJS())
+						
+						let state = this._state_store.get_state()
+						state = state.setIn(component.get_state_path(), new_component_state)
+						// console.log(context + &apos;:reducer 4:state&apos;, state.toJS())
+						
+						return state
+					}
+				}
+			}
+			return this.default_reducer(arg_previous_state, arg_action)
+		}
+	}
+	
+	
+	
+	/**
+	 * Handle Redux store changes.
+	 * 
+	 * !! Do not trace with Loggable.* here.
+	 * 
+	 * @returns {nothing}
+	 */
+	handle_store_change()
+	{
+		// let previous_state = this.current_state
+		// this.current_state = this._state_store.get_state()
+		
+		/// TODO
+		
+		// this.info(&apos;handle_store_change:global&apos;, this._state_store.get_state())
+	}
+	
+	
+	
+	/**
+	 * Create a store change observer.
+	 * 
+	 * @param {Component} arg_component - component instance.
+	 * 
+	 * @returns {function} - store unsubscribe function.
+	 */
+	create_store_observer(arg_component)
+	{
+		assert( T.isObject(arg_component) &amp;&amp; arg_component.is_component, context + &apos;:create_store_observer:bas component object&apos;)
+		
+		let current_state = undefined
+		
+		const handle_change = () =&gt; {
+			let next_state = arg_component.get_state()
+			// console.log(context + &apos;:handle_change:arg_component&apos;, arg_component)
+			// console.log(context + &apos;:handle_change:next_state&apos;, next_state)
+
+			if ( next_state &amp;&amp; ! next_state.equals(current_state) )
+			{
+				// console.info(context + &apos;:create_store_observer:state changes for &apos; + arg_component.get_name())
+				
+				arg_component.handle_state_change(current_state, next_state)
+				current_state = next_state
+			}
+			// else
+			// {
+			// 	console.info(context + &apos;:create_store_observer:no state change for &apos; + arg_component.get_name())
+			// }
+		}
+		
+		let unsubscribe = this._state_store.subscribe(handle_change)
+		
+		handle_change()
+		
+		return unsubscribe
+	}
+
+
+
+	/**
+	 * Get runtime router.
+	 * 
+	 * @returns {Router}
+	 */
+	router()
+	{
+		assert( T.isObject(this._router), context + &apos;:router:bad router object&apos;)
+		return this._router
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

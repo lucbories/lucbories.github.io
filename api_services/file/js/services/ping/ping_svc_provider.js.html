@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">js/services/ping/ping_svc_provider.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#default-plugins">default_plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/default_plugins/services_default_plugin.js~DefaultServicesPlugin.html">DefaultServicesPlugin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_route.js~ExecutableRoute.html">ExecutableRoute</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-assets">services/assets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/assets_svc_provider.js~AssetsSvcProvider.html">AssetsSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/executable_route_assets.js~ExecutableRouteAssets.html">ExecutableRouteAssets</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-logs">services/logs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/logs/logs_svc_provider.js~LogsSvcProvider.html">LogsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-messages">services/messages</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/messages/messages_svc_provider.js~MessagesSvcProvider.html">MessagesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-metrics">services/metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics/metrics_svc_provider.js~MetricsSvcProvider.html">MetricsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-middlewares">services/middlewares</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/executable_route_middleware.js~ExecutableRouteMiddleware.html">ExecutableRouteMiddleware</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/middlewares_svc_provider.js~MiddlewaresSvcProvider.html">MiddlewaresSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-ping">services/ping</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/ping/ping_svc_provider.js~PingSvcProvider.html">PingSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-resources">services/resources</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/executable_route_get_resource.js~ExecutableRouteGetResources.html">ExecutableRouteGetResources</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/resources_svc_provider.js~ResourcesSvcProvider.html">ResourcesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-security">services/security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_service.js~SecurityService.html">SecurityService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_consumer.js~SecuritySvcConsumer.html">SecuritySvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_provider.js~SecuritySvcProvider.html">SecuritySvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-todo-crud">services/todo_crud</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_service.js~CrudService.html">CrudService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_consumer.js~CrudSvcConsumer.html">CrudSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_provider.js~CrudSvcProvider.html">CrudSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/executable_route_model_crud.js~ExecutableRouteModelCrud.html">ExecutableRouteModelCrud</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-topology">services/topology</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_service.js~TopologyService.html">TopologyService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_consumer.js~TopologySvcHostConsumer.html">TopologySvcHostConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/services/ping/ping_svc_provider.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import {format} from &apos;util&apos;
+
+// COMMON IMPORTS
+import T                  from &apos;devapt-core-common/dist/js/utils/types&apos;
+import ServiceProvider    from &apos;devapt-core-common/dist/js/services/service_provider&apos;
+import ServiceResponse    from &apos;devapt-core-common/dist/js/services/service_response&apos;
+import DistributedMessage from &apos;devapt-core-common/dist/js/base/distributed_message&apos;
+
+// SERVICES IMPORTS
+
+
+/**
+ * Contextual constant for this file logs.
+ * @private
+ */
+const context = &apos;services/ping/ping_svc_provider&apos;
+
+
+
+/**
+ * Ping service provider class.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class PingSvcProvider extends ServiceProvider
+{
+	/**
+	 * Create a ping service provider.
+	 * 
+	 * @param {string} arg_provider_name - consumer name.
+	 * @param {Service} arg_service_instance - service instance.
+	 * @param {string} arg_context - logging context label.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_provider_name, arg_service_instance, arg_context=context)
+	{
+		super(arg_provider_name, arg_service_instance, arg_context)
+
+		/**
+		 * Class test flag.
+		 * @type {boolean}
+		 */
+		this.is_ping_svc_provider = true
+	}
+
+
+
+	/**
+	 * Get provider operations names.
+	 * @abstract
+	 * 
+	 * @returns {array}
+	 */
+	get_operations_names()
+	{
+		return [&apos;devapt-ping&apos;].concat(super.get_operations_names())
+	}
+
+
+	
+	/**
+	 * Produce service datas on request.
+	 * 
+	 * @param {ServiceRequest} arg_request - service request instance.
+	 * 
+	 * @returns {Promise} - promise of ServiceResponse instance.
+	 */
+	produce(arg_request)
+	{
+		this.enter_group(&apos;produce&apos;)
+
+		if ( ! T.isObject(arg_request) || ! arg_request.is_service_request)
+		{
+			this.leave_group(&apos;produce:bad request object&apos;)
+
+			return Promise.resolve({error:&apos;bad request object&apos;})
+		}
+
+		const operation = arg_request.get_operation()
+		const operands  = arg_request.get_operands()
+		const target    = operands.length &gt; 0 &amp;&amp; T.isNotEmptyString(operands[0]) ? operands[0] : undefined
+
+		// DEBUG
+		this.debug(&apos;produce:request for service=&apos; + this.service.get_name() + &apos;:operation=&apos; + operation)
+		// console.log(context + &apos;:produce:request for service=&apos; + this.service.get_name() + &apos;:operation=&apos; + operation)
+
+		if (operation == &apos;devapt-ping&apos;)
+		{
+			// DEBUG
+			this.debug(&apos;produce:process for service=&apos; + this.service.get_name() + &apos;:operation=&apos; + operation)
+			// console.log(context + &apos;:produce:process for service=&apos; + this.service.get_name() + &apos;:operation=&apos; + operation)
+
+			if (! target/* || target == this.get_runtime().node.get_name()*/)
+			{
+				// DEBUG
+				this.debug(&apos;produce:reply for service=&apos; + this.service.get_name() + &apos;:operation=&apos; + operation, response.get_properties_values())
+				// console.log(context + &apos;:produce:reply for service=&apos; + this.service.get_name() + &apos;:operation=&apos; + operation, response.get_properties_values())
+				
+				const response  = new ServiceResponse(arg_request)
+				response.set_results([&apos;devapt-pong&apos;])
+
+				this.leave_group(&apos;produce:locally resolved&apos;)
+				return Promise.resolve(response)
+			}
+			
+			const work = (resolve/*, reject*/)=&gt;{
+				const response  = new ServiceResponse(arg_request)
+
+				// DEBUG
+				this.enter_group(&apos;produce:forward request for service=&apos; + this.service.get_name() + &apos;:operation=&apos; + operation, response.get_properties_values())
+				// console.log(context + &apos;:produce:forward request for service=&apos; + this.service.get_name() + &apos;:operation=&apos; + operation, response.get_properties_values())
+				
+				const plain_object_payload = arg_request.get_properties_values()
+				plain_object_payload.socket_id = arg_request.get_socket().id
+				
+				const msg = new DistributedMessage(arg_request.get_session_uid(), target, plain_object_payload)
+				const bool_result = this.get_runtime().node.get_msg_bus().msg_post(msg)
+				
+				if (! bool_result)
+				{
+					this.fill_error(response, operands, &apos;message forward failure&apos;, target)
+					resolve(response)
+				}
+			}
+			
+			this.leave_group(&apos;produce:forward request&apos;)
+			return new Promise(work)
+		}
+
+		this.leave_group(&apos;produce:super.&apos;)
+		return super.produce(arg_request)
+	}
+
+
+
+	/**
+	 * Populate a response with error message.
+	 * 
+	 * @param {ServiceResponse} arg_response - response instance.
+	 * @param {array} arg_operands     - request operands.
+	 * @param {string} arg_error       - error text.
+	 * @param {string} arg_target      - target name.
+	 * 
+	 * @returns {nothing}
+	 */
+	fill_error(arg_response, arg_operands, arg_error, arg_target=&apos;N/A&apos;)
+	{
+		const op = arg_response.get_operation()
+		const svc = arg_response.get_service()
+		const error_msg = format(&apos;produce:error=[%s] with svc=[%s] operation=[%s] target=[%s].&apos;, arg_error, svc, op, arg_target)
+		
+		arg_response.set_has_error(true)
+		arg_response.set_error(error_msg)
+		arg_response.set_results(arg_operands)
+		
+		this.leave_group(error_msg)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

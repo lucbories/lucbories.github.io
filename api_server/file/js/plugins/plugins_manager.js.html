@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/plugins/plugins_manager.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/runtime.js~Runtime.html">Runtime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/security.js~Security.html">Security</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/transaction.js~Transaction.html">Transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-runtime_singleton">runtime_singleton</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics">metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/metric_duration.js~MetricDuration.html">MetricDuration</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-base">metrics/base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_collector.js~MetricsCollector.html">MetricsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_record.js~MetricsRecord.html">MetricsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_reducer.js~MetricsReducer.html">MetricsReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_state.js~MetricsState.html">MetricsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-bus">metrics/bus</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_collector.js~MetricsBusCollector.html">MetricsBusCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_record.js~MetricsBusRecord.html">MetricsBusRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_reducer.js~MetricsBusReducer.html">MetricsBusReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_state.js~MetricBusState.html">MetricBusState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-host">metrics/host</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_collector.js~MetricsHostCollector.html">MetricsHostCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_record.js~MetricsHostRecord.html">MetricsHostRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_reducer.js~MetricsHostReducer.html">MetricsHostReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_state.js~MetricHostState.html">MetricHostState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-http">metrics/http</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_collector.js~MetricsHttpCollector.html">MetricsHttpCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_record.js~MetricsHttpRecord.html">MetricsHttpRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_reducer.js~MetricHttpReducer.html">MetricHttpReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_state.js~MetricsHttpState.html">MetricsHttpState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-nodejs">metrics/nodejs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_collector.js~MetricsNodeJsCollector.html">MetricsNodeJsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_record.js~MetricsNodeJsRecord.html">MetricsNodeJsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_reducer.js~MetricsNodeReducer.html">MetricsNodeReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_state.js~MetricNodeJsState.html">MetricNodeJsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#nodes">nodes</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/bus_node_feature.js~BusNodeFeature.html">BusNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/metrics_node_feature.js~MetricsNodeFeature.html">MetricsNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node.js~Node.html">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_feature.js~NodeFeature.html">NodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_messaging.js~NodeMessaging.html">NodeMessaging</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/servers_node_feature.js~ServersNodeFeature.html">ServersNodeFeature</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#plugins">plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/features_manager.js~FeaturesManager.html">FeaturesManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_factory.js~PluginsFactory.html">PluginsFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_manager.js~PluginsManager.html">PluginsManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/rendering_manager.js~RenderingManager.html">RenderingManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_manager.js~ServersManager.html">ServersManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_plugin.js~ServersPlugin.html">ServersPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/services_manager.js~ServicesManager.html">ServicesManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/runtime_executable.js~RuntimeExecutable.html">RuntimeExecutable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage0_create_local_node_executable.js~RuntimeStage0Executable.html">RuntimeStage0Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage1_define_topology_executable.js~RuntimeStage1Executable.html">RuntimeStage1Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage2_load_local_topology_executable.js~RuntimeStage2Executable.html">RuntimeStage2Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage3_start_local_node_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage3_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage4_executable.js~RuntimeStage4Executable.html">RuntimeStage4Executable</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security">security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_manager.js~AuthenticationManager.html">AuthenticationManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin.js~AuthenticationPlugin.html">AuthenticationPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin_lowdb.js~AuthenticationLowDbPlugin.html">AuthenticationLowDbPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_wrapper.js~AuthenticationWrapper.html">AuthenticationWrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authorization_manager.js~AuthorizationManager.html">AuthorizationManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security-todo">security/todo</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport.js~AuthenticationPluginPassport.html">AuthenticationPluginPassport</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local.js~AuthenticationPluginPassportLocal.html">AuthenticationPluginPassportLocal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_db.js~AuthenticationPluginPassportLocalDb.html">AuthenticationPluginPassportLocalDb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_file.js~AuthenticationPluginPassportLocalFile.html">AuthenticationPluginPassportLocalFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#servers">servers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/express_server.js~ExpressServer.html">ExpressServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/logs_server.js~LogsServer.html">LogsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/metrics_server.js~MetricsServer.html">MetricsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/restify_server.js~RestifyServer.html">RestifyServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/routable_server.js~RoutableServer.html">RoutableServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/server.js~Server.html">Server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServerTypes">ServerTypes</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">services</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/routes_svc_consumer.js~RoutesSvcConsumer.html">RoutesSvcConsumer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-uused-base">services/uused_base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_service_exec_provider.js~ServiceExecProvider.html">ServiceExecProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_socketio_service_provider.js~SocketIOServiceProvider.html">SocketIOServiceProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/plugins/plugins_manager.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+
+// COMMON IMPORTS
+import T          from &apos;devapt-core-common/dist/js/utils/types&apos;
+import Errorable  from &apos;devapt-core-common/dist/js/base/errorable&apos;
+import Collection from &apos;devapt-core-common/dist/js/base/collection&apos;
+
+// SERVER IMPORTS
+import runtime from &apos;../base/runtime&apos;
+
+
+let context = &apos;server/plugins/plugins_manager&apos;
+
+
+
+/**
+ * @file Plugins manager class.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class PluginsManager extends Errorable
+{
+	/**
+	 * Create a plugins manager instance.
+	 * @extends Errorable
+	 * 
+	 * @param {RuntimeBase} arg_runtime - runtime.
+	 * @param {string|undefined} arg_log_context - optional.
+	 * @param {LoggerManager} arg_logger_manager - logger manager object (optional).
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_log_context, arg_logger_manager)
+	{
+		super(arg_log_context ? arg_log_context : context, arg_logger_manager)
+		
+		this.is_plugins_manager = true
+		
+		this._runtime = arg_runtime
+		this.registered_plugins = new Collection()
+		this.enabled_plugins = new Collection()
+	}
+
+
+	/**
+	 * Get class name.
+	 * 
+	 * @return {string}
+	 */
+	get_class()
+	{
+		return &apos;PluginsManager&apos;
+	}
+
+
+	get_runtime()
+	{
+		return this._runtime
+	}
+	
+	
+    /**
+     * Load a map of plugins.
+     * @param {array} arg_plugins - plugins file name or class array.
+     * @returns {nothing}
+     */
+	load(arg_plugins)
+	{
+		this.update_trace_enabled()
+		
+		// console.log(arg_plugins, &apos;arg_plugins&apos;)
+		// const base_dir = get_base_dir()
+        
+		for(let plugin of arg_plugins)
+		{
+			// GIVEN PLUGIN IS A RELATIVE FILE PATH NAME
+			if ( T.isString(plugin) )
+			{
+				const file_path_name = runtime.context.get_absolute_plugin_path(plugin)
+
+				// DEBUG
+				// console.info(&apos;loading plugin [&apos; + plugin + &apos;] at [&apos; + (file_path_name == plugin ? &apos;same&apos; : file_path_name) + &apos;]&apos;)
+
+				try
+				{
+					const required = require(file_path_name)
+					const PluginClass = (&apos;default&apos; in required) ? required.default : required
+					// console.log(&apos;loading rendering plugin class&apos;, PluginClass)
+					
+					plugin = new PluginClass(this._runtime, this)
+				}
+				catch(e)
+				{
+					console.error(context + &apos;.load:&apos; + plugin + &apos;failed&apos;, e)
+				}
+			}
+
+			// GIVEN PLUGIN IS A PLUGIN CLASS INSTANCE
+			if ( T.isObject(plugin) &amp;&amp; this.plugin_is_valid(plugin) )
+			{
+				const plugin_name = plugin.get_name()
+				if ( T.isString(plugin_name) )
+				{
+					this.register_plugin(plugin)
+					continue
+				}
+			}
+
+			// UNKNOW PLUGIN TYPE
+			console.error(plugin, &apos;plugin&apos;)
+			assert(false, context + &apos;:bad plugin&apos;)
+		}
+	}
+	
+	
+	/**
+	 * Load plugin at first position
+	 * @param {Plugin} arg_plugin - plugin instance
+	 * @returns {nothing}
+	 */
+	load_at_first(arg_plugin)
+	{
+		assert( T.isObject(arg_plugin) &amp;&amp; this.plugin_is_valid(arg_plugin), context + &apos;:load_at_first:bad plugin object&apos;)
+		this.register_plugin(arg_plugin, 0)
+	}
+	
+	
+	/**
+	 * Test if plugin is valid.
+	 * @abstract
+	 * @method plugin_is_valid
+	 * @param {Plugin} arg_plugin - plugin instance.
+	 * @returns {boolean} - given plugin is valid for this manager.
+	 */
+	
+	
+	
+	/**
+	 * Get registered plugins list.
+	 * @returns {array} - plugins list 
+	 */
+	get_plugins()
+	{
+		return this.registered_plugins.get_all()
+	}
+	
+	
+	/**
+	 * Get registered plugins list with a filtered type.
+	 * @param {string|array} arg_type_or_types - type name or types names array
+	 * @returns {array} - plugins list 
+	 */
+	get_typed_plugins(arg_type_or_types)
+	{
+		return this.registered_plugins.get_all(arg_type_or_types)
+	}
+	
+	
+	/**
+	 * Register a plugin to be used later, do not active it now.
+	 * @param {object} arg_plugin - plugin instance.
+	 * @param {integer} arg_position - index in array (0:first or undefined)
+	 * @returns {object} - a promise object of a boolean result (success:true, failure:false)
+	 */
+	register_plugin(arg_plugin, arg_position)
+	{
+		assert( T.isObject(arg_plugin) &amp;&amp; arg_plugin.is_plugin, context + &apos;:bad plugin object&apos;)
+
+		const plugin_name = arg_plugin.get_name()
+		if (this.registered_plugins.find_by_name(plugin_name) )
+		{
+			// this.error_already_registered(plugin_name)
+			// return Promise.resolve(false)
+			return Promise.resolve(true)
+		}
+		
+		if (arg_position === 0)
+		{
+			this.registered_plugins.add_first(arg_plugin)
+		}
+		else
+		{
+			this.registered_plugins.add(arg_plugin)
+		}
+		// arg_plugin.manager = this
+
+		return Promise.resolve(true)
+	}
+	
+	
+	/**
+	 * Unregister a registered plugin and disble it before if needed.
+	 * @param {object} arg_plugin - plugin instance.
+	 * @returns {object} - a promise object of a boolean result (success:true, failure:false)
+	 */
+	unregister_plugin(arg_plugin)
+	{
+		assert( T.isObject(arg_plugin) &amp;&amp; arg_plugin.is_plugin, context + &apos;:bad plugin object&apos;)
+		
+		const plugin_name = arg_plugin.get_name()
+		
+		// PLUGIN IS REGISTERED ?
+		if ( ! this.registered_plugins.has(arg_plugin) )
+		{
+			this.error_not_registered(plugin_name)
+			return Promise.resolve(false)
+		}
+		
+		let disable_promise = Promise.resolve(true)
+		
+		// PLUGIN IS ENABLED ?
+		if (this.enabled_plugins.has(arg_plugin) )
+		{
+			this.enabled_plugins.remove(arg_plugin)
+			disable_promise = arg_plugin.disable()
+		}
+		
+		// UNREGISTER
+		this.registered_plugins.remove(arg_plugin)
+		arg_plugin.manager = null
+		delete arg_plugin.manager
+		
+		return disable_promise
+	}
+	
+	
+	/**
+	 * Get a registered plugin by its name and its enabled flag.
+	 * @param {string} arg_name - registered plugin name
+	 * @param {boolean} arg_enabled - plugin is enabled ?
+	 * @returns {Plugin}
+	 */
+	plugin(arg_name, arg_enabled)
+	{
+		if (arg_enabled)
+		{
+			return this.enabled_plugins.item(arg_name)
+		}
+		return this.registered_plugins.item(arg_name)
+	}
+	
+	
+	/**
+	 * Get a registered plugin by its name.
+	 * @param {string} arg_name - registered plugin name
+	 * @returns {Plugin}
+	 */
+	registered_plugin(arg_name)
+	{
+		return this.registered_plugins.item(arg_name)
+	}
+	
+	
+	/**
+	 * Get a enabled plugin by its name.
+	 * @param {string} arg_name - enabled plugin name
+	 * @returns {Plugin}
+	 */
+	enabled_plugin(arg_name)
+	{
+		return this.enabled_plugins.item(arg_name)
+	}
+	
+	
+	/**
+	 * Error wrapper - on registering an already registered plugin
+	 * @param {string} arg_plugin_name - plugin name
+	 * @returns {nothing}
+	 */
+	error_already_registered(arg_plugin_name)
+	{
+		this.error(&apos;plugin with name [&apos; + arg_plugin_name + &apos;] is already registered&apos;)
+	}
+	
+	
+	/**
+	 * Error wrapper - a plugin is not registered
+	 * @param {string} arg_plugin_name - plugin name
+	 * @returns {nothing}
+	 */
+	error_not_registered(arg_plugin_name)
+	{
+		this.error(&apos;plugin with name [&apos; + arg_plugin_name + &apos;] is not registered&apos;)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

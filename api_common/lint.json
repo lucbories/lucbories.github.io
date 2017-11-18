@@ -1,0 +1,836 @@
+[
+  {
+    "name": "DataRecord#fill",
+    "filePath": "js/datas/data_record.js",
+    "lines": [
+      {
+        "lineNumber": 468,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 469,
+        "line": "\t * Fill all attributes values with given datas.\r"
+      },
+      {
+        "lineNumber": 470,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 471,
+        "line": "\t * @param {arg_datas} - new attribute values.\r"
+      },
+      {
+        "lineNumber": 472,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 473,
+        "line": "\t * @returns {boolean} - success.\r"
+      },
+      {
+        "lineNumber": 474,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 475,
+        "line": "\tfill(arg_datas)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_datas"
+    ],
+    "docParams": [
+      "-"
+    ]
+  },
+  {
+    "name": "RecordProvider#find_all_records",
+    "filePath": "js/datas/providers/record_provider.js",
+    "lines": [
+      {
+        "lineNumber": 51,
+        "line": "    /**\r"
+      },
+      {
+        "lineNumber": 52,
+        "line": "     * Provide all datas records\r"
+      },
+      {
+        "lineNumber": 53,
+        "line": "     * @abstract\r"
+      },
+      {
+        "lineNumber": 54,
+        "line": "     * @param {object|undefined} arg_query - optional query context\r"
+      },
+      {
+        "lineNumber": 55,
+        "line": "     * @returns {Promise} datas record promise\r"
+      },
+      {
+        "lineNumber": 56,
+        "line": "     */\r"
+      },
+      {
+        "lineNumber": 57,
+        "line": "\tfind_all_records(/*arg_query*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_query"
+    ]
+  },
+  {
+    "name": "RecordProvider#find_records_by_values",
+    "filePath": "js/datas/providers/record_provider.js",
+    "lines": [
+      {
+        "lineNumber": 82,
+        "line": "    /**\r"
+      },
+      {
+        "lineNumber": 83,
+        "line": "     * Find a record with a set of values.\r"
+      },
+      {
+        "lineNumber": 84,
+        "line": "     * @abstract\r"
+      },
+      {
+        "lineNumber": 85,
+        "line": "     * @param {object} arg_values_map - values map\r"
+      },
+      {
+        "lineNumber": 86,
+        "line": "     * @param {object|undefined} arg_query - optional query context\r"
+      },
+      {
+        "lineNumber": 87,
+        "line": "     * @returns {Promise} - promise of found record or null\r"
+      },
+      {
+        "lineNumber": 88,
+        "line": "     */\r"
+      },
+      {
+        "lineNumber": 89,
+        "line": "\tfind_records_by_values(arg_values_map/*, arg_query*/)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_values_map"
+    ],
+    "docParams": [
+      "arg_values_map",
+      "arg_query"
+    ]
+  },
+  {
+    "name": "MasterJsonProvider#provide_json_self",
+    "filePath": "js/json_provider/master_json_provider.js",
+    "lines": [
+      {
+        "lineNumber": 36,
+        "line": "    /**\r"
+      },
+      {
+        "lineNumber": 37,
+        "line": "     * Provide JSON datas inside a promise.\r"
+      },
+      {
+        "lineNumber": 38,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 39,
+        "line": "     * @param {function} resolve - a promise should be resolved.\r"
+      },
+      {
+        "lineNumber": 40,
+        "line": "     * @param {function} reject - a promise should be rejected.\r"
+      },
+      {
+        "lineNumber": 41,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 42,
+        "line": "     * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 43,
+        "line": "     */\r"
+      },
+      {
+        "lineNumber": 44,
+        "line": "\tprovide_json_self(resolve/*, reject*/)\r"
+      }
+    ],
+    "codeParams": [
+      "resolve"
+    ],
+    "docParams": [
+      "resolve",
+      "reject"
+    ]
+  },
+  {
+    "name": "Stream#push",
+    "filePath": "js/messaging/stream.js",
+    "lines": [
+      {
+        "lineNumber": 171,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 172,
+        "line": "\t * Push a value into the stream.\r"
+      },
+      {
+        "lineNumber": 173,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 174,
+        "line": "\t * @param {any}\r"
+      },
+      {
+        "lineNumber": 175,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 176,
+        "line": "\t * @returns {Stream} - this.\r"
+      },
+      {
+        "lineNumber": 177,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 178,
+        "line": "\tpush(arg_value)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_value"
+    ],
+    "docParams": []
+  },
+  {
+    "name": "RenderingPlugin.find_rendering_function",
+    "filePath": "js/plugins/rendering_plugin.js",
+    "lines": [
+      {
+        "lineNumber": 175,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 176,
+        "line": "\t * Find a rendering function.\r"
+      },
+      {
+        "lineNumber": 177,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 178,
+        "line": "\t * @param {string} arg_type - rendering item type.\r"
+      },
+      {
+        "lineNumber": 179,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 180,
+        "line": "\t * @returns {Function} - rendering function.\r"
+      },
+      {
+        "lineNumber": 181,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 182,
+        "line": "\tstatic find_rendering_function(/*arg_type*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_type"
+    ]
+  },
+  {
+    "name": "RenderingResolver#find_rendering_function",
+    "filePath": "js/rendering/rendering_resolver.js",
+    "lines": [
+      {
+        "lineNumber": 60,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 61,
+        "line": "\t * Find a rendering function.\r"
+      },
+      {
+        "lineNumber": 62,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 63,
+        "line": "\t * @param {string} arg_type - resource type.\r"
+      },
+      {
+        "lineNumber": 64,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 65,
+        "line": "\t * @returns {function|undefined} - resource rendering function or undefined if not found.\r"
+      },
+      {
+        "lineNumber": 66,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 67,
+        "line": "\tfind_rendering_function(arg_name)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_name"
+    ],
+    "docParams": [
+      "arg_type"
+    ]
+  },
+  {
+    "name": "RenderingResult#get_vtree_json",
+    "filePath": "js/rendering/rendering_result.js",
+    "lines": [
+      {
+        "lineNumber": 216,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 217,
+        "line": "\t * Get an existing VTree as Json.\r"
+      },
+      {
+        "lineNumber": 218,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 219,
+        "line": "\t * @param {string} arg_tag_id - tag id string.\r"
+      },
+      {
+        "lineNumber": 220,
+        "line": "\t * @param {VNode} arg_vtree - virtual-dom virtual tree.\r"
+      },
+      {
+        "lineNumber": 221,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 222,
+        "line": "\t * @returns {nothing}.\r"
+      },
+      {
+        "lineNumber": 223,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 224,
+        "line": "\tget_vtree_json(arg_tag_id)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_tag_id"
+    ],
+    "docParams": [
+      "arg_tag_id",
+      "arg_vtree"
+    ]
+  },
+  {
+    "name": "RenderingResult#set_headers",
+    "filePath": "js/rendering/rendering_result.js",
+    "lines": [
+      {
+        "lineNumber": 352,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 353,
+        "line": "\t * Set headers.\r"
+      },
+      {
+        "lineNumber": 354,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 355,
+        "line": "\t * @param {array} set_headers - headers strings array.\r"
+      },
+      {
+        "lineNumber": 356,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 357,
+        "line": "\t * @returns {nothing}.\r"
+      },
+      {
+        "lineNumber": 358,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 359,
+        "line": "\tset_headers(arg_headers)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_headers"
+    ],
+    "docParams": [
+      "set_headers"
+    ]
+  },
+  {
+    "name": "ReduxStore#set_state",
+    "filePath": "js/state_store/redux_store.js",
+    "lines": [
+      {
+        "lineNumber": 58,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 59,
+        "line": "\t * Set/Replace current state.\r"
+      },
+      {
+        "lineNumber": 60,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 61,
+        "line": "\t * @param {object} arg_state - new state.\r"
+      },
+      {
+        "lineNumber": 62,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 63,
+        "line": "\t * @returns {Immutable}\r"
+      },
+      {
+        "lineNumber": 64,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 65,
+        "line": "\tset_state(/*arg_state*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_state"
+    ]
+  },
+  {
+    "name": "TaskManager#perform",
+    "filePath": "js/tasks/task_manager.js",
+    "lines": [
+      {
+        "lineNumber": 43,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 44,
+        "line": "\t * Run a task.\r"
+      },
+      {
+        "lineNumber": 45,
+        "line": "\t * @public\r"
+      },
+      {
+        "lineNumber": 46,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 47,
+        "line": "\t * @param {Task} arg_task - task instance.\r"
+      },
+      {
+        "lineNumber": 48,
+        "line": "\t * @param {any} args - variadic arguments.\r"
+      },
+      {
+        "lineNumber": 49,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 50,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 51,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 52,
+        "line": "\tperform(arg_taks, ...args)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_taks",
+      "args"
+    ],
+    "docParams": [
+      "arg_task",
+      "args"
+    ]
+  },
+  {
+    "name": "TopologyDefineModel#validate",
+    "filePath": "js/topology/define/topology_define_model.js",
+    "lines": [
+      {
+        "lineNumber": 156,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 157,
+        "line": "\t * Test given attributes against schema rules.\r"
+      },
+      {
+        "lineNumber": 158,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 159,
+        "line": "\t * @param {object} - fields values to check.\r"
+      },
+      {
+        "lineNumber": 160,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 161,
+        "line": "\t * @returns {Promise} - Promise of { is_valid:boolean, errors:{} }\r"
+      },
+      {
+        "lineNumber": 162,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 163,
+        "line": "\tvalidate(arg_attributes) // TODO check and load collection schema\r"
+      }
+    ],
+    "codeParams": [
+      "arg_attributes"
+    ],
+    "docParams": [
+      "-"
+    ]
+  },
+  {
+    "name": "TopologyDefinePlugin#create_plugin",
+    "filePath": "js/topology/define/topology_define_plugin.js",
+    "lines": [
+      {
+        "lineNumber": 142,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 143,
+        "line": "\t * Create plugins.\r"
+      },
+      {
+        "lineNumber": 144,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 145,
+        "line": "\t * @param {RuntimeBase} - arg_runtime - Runtime instance.\r"
+      },
+      {
+        "lineNumber": 146,
+        "line": "\t * @param {Class} - arg_plugin_class - Plugin class.\r"
+      },
+      {
+        "lineNumber": 147,
+        "line": "\t * @param {PluginsManager} - arg_plugins_manager - PluginsManager instance.\r"
+      },
+      {
+        "lineNumber": 148,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 149,
+        "line": "\t * @returns {Promise}\r"
+      },
+      {
+        "lineNumber": 150,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 151,
+        "line": "\tcreate_plugin(arg_runtime, arg_plugin_class, arg_plugins_manager)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_runtime",
+      "arg_plugin_class",
+      "arg_plugins_manager"
+    ],
+    "docParams": [
+      "-",
+      "-",
+      "-"
+    ]
+  },
+  {
+    "name": "TopologyDefinePlugin#load_rendering_plugin",
+    "filePath": "js/topology/define/topology_define_plugin.js",
+    "lines": [
+      {
+        "lineNumber": 177,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 178,
+        "line": "\t * Load rendering plugins.\r"
+      },
+      {
+        "lineNumber": 179,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 180,
+        "line": "\t * @param {RuntimeBase} - arg_runtime - Runtime instance.\r"
+      },
+      {
+        "lineNumber": 181,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 182,
+        "line": "\t * @returns {Promise} - Promise of Plugin instance.\r"
+      },
+      {
+        "lineNumber": 183,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 184,
+        "line": "\tload_rendering_plugin(arg_runtime)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_runtime"
+    ],
+    "docParams": [
+      "-"
+    ]
+  },
+  {
+    "name": "TopologyDefinePlugin#load_services_plugin",
+    "filePath": "js/topology/define/topology_define_plugin.js",
+    "lines": [
+      {
+        "lineNumber": 218,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 219,
+        "line": "\t * Load services plugins.\r"
+      },
+      {
+        "lineNumber": 220,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 221,
+        "line": "\t * @param {RuntimeBase} - arg_runtime - Runtime instance.\r"
+      },
+      {
+        "lineNumber": 222,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 223,
+        "line": "\t * @returns {Promise} - Promise of Plugin instance.\r"
+      },
+      {
+        "lineNumber": 224,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 225,
+        "line": "\tload_services_plugin(arg_runtime)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_runtime"
+    ],
+    "docParams": [
+      "-"
+    ]
+  },
+  {
+    "name": "TopologyDeployItem#dump_topology_info",
+    "filePath": "js/topology/deploy/topology_deploy_item.js",
+    "lines": [
+      {
+        "lineNumber": 387,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 388,
+        "line": "\t * Dump topology item informations.\r"
+      },
+      {
+        "lineNumber": 389,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 390,
+        "line": "\t * @param {object} arg_info - topology info object.\r"
+      },
+      {
+        "lineNumber": 391,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 392,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 393,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 394,
+        "line": "\tdump_topology_info(arg_info, arg_tabs=' ', arg_eol='\\n', arg_write = console.info)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_info",
+      "arg_tabs",
+      "arg_eol",
+      "arg_write"
+    ],
+    "docParams": [
+      "arg_info"
+    ]
+  },
+  {
+    "name": "RegistryStore#register_collection",
+    "filePath": "js/topology/registry/registry_store.js",
+    "lines": [
+      {
+        "lineNumber": 131,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 132,
+        "line": "\t * Register collection methods.\r"
+      },
+      {
+        "lineNumber": 133,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 134,
+        "line": "\t * @param {string} arg_collection_name - valid collection name.\r"
+      },
+      {
+        "lineNumber": 135,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 136,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 137,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 138,
+        "line": "\tregister_collection(arg_collection_name, arg_item_name)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_collection_name",
+      "arg_item_name"
+    ],
+    "docParams": [
+      "arg_collection_name"
+    ]
+  },
+  {
+    "name": "EncryptDecrypt.key",
+    "filePath": "js/utils/encrypt_decrypt.js",
+    "lines": [
+      {
+        "lineNumber": 43,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 44,
+        "line": "\t * Generate an encryption key from a secret.\r"
+      },
+      {
+        "lineNumber": 45,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 46,
+        "line": "\t * @param {string} arg_app_secret - application cryptographic secret.\r"
+      },
+      {
+        "lineNumber": 47,
+        "line": "\t * @param {number} arg_num_iterations - iterations count.\r"
+      },
+      {
+        "lineNumber": 48,
+        "line": "\t * @param {number} arg_key_length - key length.\r"
+      },
+      {
+        "lineNumber": 49,
+        "line": "\t * @param {number} arg_iv_length - iv length.\r"
+      },
+      {
+        "lineNumber": 50,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 51,
+        "line": "\t * @returns {string} - encrypted string.\r"
+      },
+      {
+        "lineNumber": 52,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 53,
+        "line": "\tstatic key(arg_app_secret, arg_num_iterations=10, arg_key_length=32)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_app_secret",
+      "arg_num_iterations",
+      "arg_key_length"
+    ],
+    "docParams": [
+      "arg_app_secret",
+      "arg_num_iterations",
+      "arg_key_length",
+      "arg_iv_length"
+    ]
+  }
+]

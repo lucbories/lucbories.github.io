@@ -1,0 +1,344 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 1114,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 30,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 1114,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 30,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ImportDeclaration",
+        "start": 19,
+        "end": 76,
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 0
+          },
+          "end": {
+            "line": 2,
+            "column": 57
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 26,
+            "end": 45,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 7
+              },
+              "end": {
+                "line": 2,
+                "column": 26
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 26,
+              "end": 45,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 7
+                },
+                "end": {
+                  "line": 2,
+                  "column": 26
+                },
+                "identifierName": "TopologyDefineWorld"
+              },
+              "name": "TopologyDefineWorld",
+              "leadingComments": null
+            },
+            "leadingComments": null
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 51,
+          "end": 76,
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 32
+            },
+            "end": {
+              "line": 2,
+              "column": 57
+            }
+          },
+          "extra": {
+            "rawValue": "./topology_define_world",
+            "raw": "'./topology_define_world'"
+          },
+          "value": "./topology_define_world",
+          "leadingComments": null,
+          "trailingComments": null
+        },
+        "leadingComments": [
+          {
+            "type": "CommentLine",
+            "value": " COMMON IMPORTS",
+            "start": 0,
+            "end": 17,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 1,
+                "column": 17
+              }
+            }
+          }
+        ],
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\r\n * A topology is a graph of items.\r\n * An item is owned by another item: owner is responsible to create or delete an children.\r\n * Items can be linked together: an item can use another item. \r\n * \r\n * Runtime topology ownership is:\r\n * \t\tworld                   (TopologyDefineWorld)\r\n * \t\t\ttenants             (TopologyDefineTenant)\r\n * \t\t\t\tapplications    (TopologyDefine)\r\n * \t\t\t\t\tsecurity    (TopologyDefineSecurity)\r\n * \t\t\t\tpackages        (TopologyDefinePackage)\r\n * \t\t\t\t\tcommands    (TopologyDefineCommand)\r\n * \t\t\t\t\tservices    (TopologyDefineService)\r\n * \t\t\t\t\tdatasources (TopologyDefineDatasource)\r\n * \t\t\t\t\tmodels      (TopologyDefineModel)\r\n * \t\t\t\t\tviews       (TopologyDefineView)\r\n * \t\t\t\t\tmenus       (TopologyDefineMenu)\r\n * \t\t\t\t\tmenubars    (TopologyDefineMenubar)\r\n * \t\t\t\tsecurity        (TopologyDefineSecurity)\r\n * \t\t\tnodes               (TopologyDefineNode)\r\n * \t\t\t\tservers         (TopologyDefineServer)\r\n * \t\t\tplugins\t\t\t\t(TopologyDefinePlugin)\r\n * \t\t\tsecurity            (TopologyDefineSecurity)\r\n * \r\n ",
+            "start": 82,
+            "end": 1112,
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 0
+              },
+              "end": {
+                "line": 29,
+                "column": 3
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentLine",
+      "value": " COMMON IMPORTS",
+      "start": 0,
+      "end": 17,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * A topology is a graph of items.\r\n * An item is owned by another item: owner is responsible to create or delete an children.\r\n * Items can be linked together: an item can use another item. \r\n * \r\n * Runtime topology ownership is:\r\n * \t\tworld                   (TopologyDefineWorld)\r\n * \t\t\ttenants             (TopologyDefineTenant)\r\n * \t\t\t\tapplications    (TopologyDefine)\r\n * \t\t\t\t\tsecurity    (TopologyDefineSecurity)\r\n * \t\t\t\tpackages        (TopologyDefinePackage)\r\n * \t\t\t\t\tcommands    (TopologyDefineCommand)\r\n * \t\t\t\t\tservices    (TopologyDefineService)\r\n * \t\t\t\t\tdatasources (TopologyDefineDatasource)\r\n * \t\t\t\t\tmodels      (TopologyDefineModel)\r\n * \t\t\t\t\tviews       (TopologyDefineView)\r\n * \t\t\t\t\tmenus       (TopologyDefineMenu)\r\n * \t\t\t\t\tmenubars    (TopologyDefineMenubar)\r\n * \t\t\t\tsecurity        (TopologyDefineSecurity)\r\n * \t\t\tnodes               (TopologyDefineNode)\r\n * \t\t\t\tservers         (TopologyDefineServer)\r\n * \t\t\tplugins\t\t\t\t(TopologyDefinePlugin)\r\n * \t\t\tsecurity            (TopologyDefineSecurity)\r\n * \r\n ",
+      "start": 82,
+      "end": 1112,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 29,
+          "column": 3
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentLine",
+      "value": " COMMON IMPORTS",
+      "start": 0,
+      "end": 17,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 19,
+      "end": 25,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "TopologyDefineWorld",
+      "start": 26,
+      "end": 45,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 7
+        },
+        "end": {
+          "line": 2,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 46,
+      "end": 50,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 27
+        },
+        "end": {
+          "line": 2,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./topology_define_world",
+      "start": 51,
+      "end": 76,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 32
+        },
+        "end": {
+          "line": 2,
+          "column": 57
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * A topology is a graph of items.\r\n * An item is owned by another item: owner is responsible to create or delete an children.\r\n * Items can be linked together: an item can use another item. \r\n * \r\n * Runtime topology ownership is:\r\n * \t\tworld                   (TopologyDefineWorld)\r\n * \t\t\ttenants             (TopologyDefineTenant)\r\n * \t\t\t\tapplications    (TopologyDefine)\r\n * \t\t\t\t\tsecurity    (TopologyDefineSecurity)\r\n * \t\t\t\tpackages        (TopologyDefinePackage)\r\n * \t\t\t\t\tcommands    (TopologyDefineCommand)\r\n * \t\t\t\t\tservices    (TopologyDefineService)\r\n * \t\t\t\t\tdatasources (TopologyDefineDatasource)\r\n * \t\t\t\t\tmodels      (TopologyDefineModel)\r\n * \t\t\t\t\tviews       (TopologyDefineView)\r\n * \t\t\t\t\tmenus       (TopologyDefineMenu)\r\n * \t\t\t\t\tmenubars    (TopologyDefineMenubar)\r\n * \t\t\t\tsecurity        (TopologyDefineSecurity)\r\n * \t\t\tnodes               (TopologyDefineNode)\r\n * \t\t\t\tservers         (TopologyDefineServer)\r\n * \t\t\tplugins\t\t\t\t(TopologyDefinePlugin)\r\n * \t\t\tsecurity            (TopologyDefineSecurity)\r\n * \r\n ",
+      "start": 82,
+      "end": 1112,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 29,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1114,
+      "end": 1114,
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 0
+        },
+        "end": {
+          "line": 30,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

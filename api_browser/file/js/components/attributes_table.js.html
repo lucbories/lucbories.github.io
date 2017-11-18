@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/components/attributes_table.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/components/attributes_table.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+// import assert from &apos;assert&apos;
+import _ from &apos;lodash&apos;
+
+// COMMON IMPORTS
+import T from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+
+// BROWSER IMPORTS
+import Table from &apos;./table&apos;
+
+
+const context = &apos;browser/components/attributes_table&apos;
+
+
+
+/**
+ * @file UI Attributes table component class.
+ * 
+ * @author Luc BORIES
+ * 
+ * @license Apache-2.0
+ */
+export default class AttributesTable extends Table
+{
+	
+	/**
+	 * Creates an instance of Component.
+	 * 
+	 * @param {object} arg_runtime - client runtime.
+	 * @param {object} arg_state - component state.
+	 * @param {string} arg_log_context - context of traces of this instance (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_state, arg_log_context)
+	{
+		const log_context = arg_log_context ? arg_log_context : context
+		super(arg_runtime, arg_state, log_context)
+		
+		this.is_attributes_table_component = true
+	}
+
+
+
+	/**
+	 * Set all object attributes.
+	 * 
+	 * @param {object}  arg_object - attributes object.
+	 * @param {integer} arg_max_depth - nested attributes max deep (TODO).
+	 * 
+	 * @returns {noting}
+	 */
+	set_view_attributes_by_name(arg_view_name, arg_max_depth)
+	{
+		console.log(context + &apos;:set_view_attributes_by_name:%s:view name=%s,max depth=%i&apos;, this.get_name(), arg_view_name, arg_max_depth)
+		
+		if ( ! T.isString(arg_view_name) )
+		{
+			console.warn(context + &apos;:set_view_attributes_by_name:%s:bad view name string=%s&apos;, this.get_name(), arg_view_name)
+			return
+		}
+
+		const view_desc = this.get_runtime().ui().get_resource_description_resolver()(arg_view_name)
+		if (! view_desc)
+		{
+			console.warn(context + &apos;:set_view_attributes_by_name:%s:view not found=%s&apos;, this.get_name(), arg_view_name)
+			return
+		}
+
+		this.set_object_attributes(view_desc, arg_max_depth)
+	}
+
+
+	parse_integer(arg_string)
+	{
+		let integer = 0
+		try{
+			integer = parseInt(arg_string)
+		}
+		catch(e){
+			console.warn(context + &apos;:build_row:click handler:bad integer for string&apos;, arg_string)
+			integer = 0
+		}
+		return integer
+	}
+
+
+
+	/**
+	 * Set all object attributes.
+	 * 
+	 * @param {object}  arg_object - attributes object.
+	 * @param {integer} arg_max_depth - nested attributes max deep (TODO).
+	 * 
+	 * @returns {noting}
+	 */
+	set_object_attributes(arg_object/*, arg_max_depth*/)
+	{
+		if ( ! T.isObject(arg_object) )
+		{
+			console.warn(context + &apos;:set_object_attributes:%s:bad object instance=&apos;, this.get_name(), arg_object)
+			return
+		}
+
+		const attributes = []
+		const attributes_exclude = this.get_state_value(&apos;attributes_exclude&apos;, undefined)
+		let attributes_path = this.get_state_value(&apos;attributes_path&apos;, undefined)
+
+		// DEBUG
+		// console.log(context + &apos;:set_object_attributes:%s:attributes_exclude=&apos;, this.get_name(), attributes_exclude)
+		// console.log(context + &apos;:set_object_attributes:%s:attributes_path=&apos;, this.get_name(), attributes_path)
+
+		if (attributes_path)
+		{
+			if (attributes_path.toJS)
+			{
+				attributes_path = attributes_path.toJS()
+			}
+			if ( T.isArray(attributes_path) &amp;&amp; attributes_path.length &gt; 0 )
+			{
+				// console.log(context + &apos;:set_object_attributes:%s:attributes_path is a non empty array=&apos;, this.get_name(), attributes_path)
+				
+				let key = attributes_path.shift()
+				while(key)
+				{
+					if (key in arg_object)
+					{
+						// console.log(context + &apos;:set_object_attributes:%s:attributes_path:loop on key=%s (found, go inside)&apos;, this.get_name(), key)
+						arg_object = arg_object[key]
+					} else {
+						// console.warn(context + &apos;:set_object_attributes:%s:attributes_path:loop on key=%s (not found in current object)&apos;, this.get_name(), key)
+						this.do_action_clear_items()
+						return
+					}
+					key = attributes_path.shift()
+				}
+			}
+		}
+
+		const keys = Object.keys(arg_object)
+		// console.log(context + &apos;:set_object_attributes:%s:keys=&apos;, this.get_name(), keys)
+		keys.forEach(
+			(key/*, index*/)=&gt;{
+				if (attributes_exclude)
+				{
+					if (attributes_exclude.indexOf(key) &gt; -1)
+					{
+						// console.log(context + &apos;:set_object_attributes:%s:skip key=%s&apos;, this.get_name(), key)
+						return
+					}
+				}
+				
+				const value = arg_object[key] ? arg_object[key] : &apos;undefined&apos;
+				// console.log(context + &apos;:set_object_attributes:%s:key=%s,value=%s&apos;, this.get_name(), key, value)
+
+				// const formated_value = (T.isString(value) || T.isNumber(value) || T.isBoolean(value)) ? value : ( T.isFunction(value) ? &apos;Function&apos; : value.toString())
+				const formated_value = value
+				attributes.push( [key, formated_value] )
+			}
+		)
+
+		// console.log(context + &apos;:set_object_attributes:%s:object&amp;attributes=&apos;, this.get_name(), arg_object, attributes)
+
+		this.do_action_replace(attributes, attributes.length)
+
+		// COLLAPSE / EXPAND CLICK HANDLER
+		// handler signature: f(component, event name, selection, event, target)
+		const handler = (component, event_name, selection, event, target)=&gt;{
+			if (! target || ! component)
+			{
+				console.warn(context + &apos;:build_row:click handler:bad target or component&apos;)
+				return
+			}
+
+			const parent_tr_elem = target.parentNode
+			const collapsed = target.getAttribute(&apos;devapt-collapsed&apos;) == &apos;true&apos; ? true : false
+			const css_display = collapsed ? &apos;table-row&apos; : &apos;none&apos;
+			let parent_depth = parent_tr_elem ? this.parse_integer( parent_tr_elem.getAttribute(&apos;devapt-depth&apos;) ) : 0
+
+			// DEBUG
+			// console.log(context + &apos;:build_row:click handler:parent_tr_elem=&apos;, parent_tr_elem)
+			// console.log(context + &apos;:build_row:click handler:collapsed=%b&apos;, collapsed)
+			// console.log(context + &apos;:build_row:click handler:css_display=%s&apos;, css_display)
+			// console.log(context + &apos;:build_row:click handler:parent_depth=%i&apos;, parent_depth)
+
+			let tr_elem = parent_tr_elem ? parent_tr_elem.nextSibling : undefined
+			let elem_depth = tr_elem ? this.parse_integer( tr_elem.getAttribute(&apos;devapt-depth&apos;) ) : 0
+			while(tr_elem &amp;&amp; elem_depth &gt; parent_depth)
+			{
+				// console.log(context + &apos;:build_row:click handler:loop on elem&apos;, tr_elem)
+
+				tr_elem.style.display = css_display
+				tr_elem = tr_elem.nextSibling
+			}
+			target.setAttribute(&apos;devapt-collapsed&apos;, !collapsed)
+			target.firstChild.textContent = (! collapsed) ? &apos;\u25B9&apos; : &apos;\u25BF&apos;
+		}
+		this.on_dom_event(&apos;click&apos;, &apos;td.devapt-collapsable-row&apos;, handler, undefined, false)
+	}
+
+
+
+	/**
+	 * Get object from attributes.
+	 * 
+	 * @returns {object}
+	 */
+	get_object_attributes()// TODO
+	{
+		const result_object = {}
+		const table_elem = this.get_dom_element()
+		const table_body_elem = table_elem.getElementsByTagName( &quot;tbody&quot; )[0]
+		const tr_elems = table_body_elem.children
+
+		let row_index = 0
+		// let previous_index = undefined
+		for( ; row_index &lt; tr_elems.length ; row_index++)
+		{
+			const tr_elem  = tr_elems[row_index]
+			const tr_index = tr_elem.getAttribute(&apos;devapt-row-index&apos;)
+			const td_key_elem   = tr_elem.firstChild
+			const td_value_elem = td_key_elem.nextSibling
+			const value_type = td_value_elem.getAttribute(&apos;devapt-data-type&apos;)
+			const key = td_key_elem.textContent
+			const value = td_value_elem.textContent
+
+			switch(value_type) {
+				case &apos;string&apos;:  result_object[key] = value ; break
+				case &apos;number&apos;:  result_object[key] = new Number(value) ; break
+				case &apos;boolean&apos;: result_object[key] = (value == &apos;true&apos;) ? true : false ; break
+				// case &apos;array&apos;: 
+				// case &apos;object&apos;:
+			}
+
+			// previous_index = tr_index
+		}
+
+		return result_object
+	}
+
+	
+	
+	/**
+	 * Build a row cell DOM element.
+	 *
+	 * @param {any}      arg_cell_value   - cell value.
+	 * @param {integer}  arg_row_index    - row index.
+	 * @param {integer}  arg_column_index - column index.
+	 * @param {Document} arg_document     - DOM document.
+	 * 
+	 * @returns {Element} - TD DOM Element.
+	 */
+	build_cell(arg_cell_value, arg_row_index, arg_column_index, arg_document)
+	{
+		const td_elem = arg_document.createElement(&apos;td&apos;)
+		td_elem.setAttribute(&apos;devapt-column-index&apos;, arg_column_index)
+
+		if ( T.isString(arg_cell_value) )
+		{
+			// console.log(context + &apos;:build_cell:%s:string:at row %i:value=%s&apos;, this.get_name(), arg_row_index, arg_cell_value)
+
+			td_elem.innerText = arg_cell_value
+			td_elem.setAttribute(&apos;devapt-data-type&apos;, &apos;string&apos;)
+			return td_elem
+		}
+		else if ( T.isNumber(arg_cell_value) )
+		{
+			// console.log(context + &apos;:build_cell:%s:number:at row %i:value=%s&apos;, this.get_name(), arg_row_index, arg_cell_value)
+
+			td_elem.innerText = arg_cell_value
+			td_elem.setAttribute(&apos;devapt-data-type&apos;, &apos;number&apos;)
+		}
+		else if ( T.isBoolean(arg_cell_value) )
+		{
+			// console.log(context + &apos;:build_cell:%s:boolean:at row %i:value=%s&apos;, this.get_name(), arg_row_index, arg_cell_value)
+
+			td_elem.innerText = arg_cell_value ? &apos;true&apos; : &apos;false&apos;
+			td_elem.setAttribute(&apos;devapt-data-type&apos;, &apos;boolean&apos;)
+		}
+		else if ( T.isFunction(arg_cell_value) )
+		{
+			// console.log(context + &apos;:build_cell:%s:function:at row %i:value=%s&apos;, this.get_name(), arg_row_index, &apos;Function&apos;)
+
+			td_elem.innerText = &apos;Function&apos;
+			td_elem.setAttribute(&apos;devapt-data-type&apos;, &apos;function&apos;)
+		} else {
+			// console.log(context + &apos;:build_cell:%s:array:at row %i:unknow=%s&apos;, this.get_name(), arg_row_index, arg_cell_value)
+
+			td_elem.innerText = &apos;unknow&apos;
+			td_elem.setAttribute(&apos;devapt-data-type&apos;, &apos;unknow&apos;)
+		}
+		
+		return td_elem
+	}
+	
+	
+	
+	/**
+	 * Build a table row DOM element.
+	 *
+	 * @param {array} arg_row_array   - row values array.
+	 * @param {integer} arg_row_index - row index.
+	 * @param {integer} arg_max_cols  - max columns number.
+	 * @param {integer} arg_depth     - path depth.
+	 * 
+	 * @returns {Element} - TD DOM Element.
+	 */
+	build_row(arg_row_array, arg_row_index, arg_max_cols, arg_depth=0)
+	{
+		const this_document = this.get_dom_element().ownerDocument
+		const row_elem = this_document.createElement(&apos;tr&apos;)
+		row_elem.setAttribute(&apos;devapt-row-index&apos;, arg_row_index)
+		row_elem.setAttribute(&apos;devapt-depth&apos;, arg_depth)
+
+		// console.log(context + &apos;:build_row:rows_index=%i row_array max_cols&apos;, arg_row_index, arg_row_array, arg_max_cols)
+		
+		if( ! T.isArray(arg_row_array) || arg_row_array.length != 2 )
+		{
+			console.warn(context + &apos;:build_row:row_array is not an array of size 2 at rows_index=%i&apos;, arg_row_index, arg_row_array)
+			return undefined
+		}
+
+		const attribute_name  = arg_row_array[0]
+		const attribute_value = arg_row_array[1]
+		const pad_left = 10
+		
+		const td_name_elem = this_document.createElement(&apos;td&apos;)
+		td_name_elem.setAttribute(&apos;devapt-column-index&apos;, 0)
+		td_name_elem.style.paddingLeft = td_name_elem.style.paddingLeft ? td_name_elem.style.paddingLeft + arg_depth * pad_left : arg_depth * pad_left
+		td_name_elem.innerText = attribute_name
+		row_elem.appendChild(td_name_elem)
+
+		const td_value_elem = this.build_cell(attribute_value, arg_row_index, 1, this_document, arg_depth)
+		row_elem.appendChild(td_value_elem)
+		
+		return row_elem
+	}
+	
+	
+	
+	/**
+	 * Build a table row DOM element.
+	 *
+	 * @param {array} arg_row_array   - row values array.
+	 * @param {integer} arg_row_index - row index.
+	 * @param {integer} arg_max_cols  - max columns number.
+	 * @param {integer} arg_depth     - path depth.
+	 * 
+	 * @returns {Element} - TD DOM Element.
+	 */
+	build_row_collapsed(arg_row_array, arg_row_index, arg_max_cols, arg_depth=0)
+	{
+		const this_document = this.get_dom_element().ownerDocument
+		const row_elem = this_document.createElement(&apos;tr&apos;)
+		row_elem.setAttribute(&apos;devapt-row-index&apos;, arg_row_index)
+		row_elem.setAttribute(&apos;devapt-depth&apos;, arg_depth)
+
+		// console.log(context + &apos;:build_row:rows_index=%i row_array max_cols&apos;, arg_row_index, arg_row_array, arg_max_cols)
+		
+		if( ! T.isArray(arg_row_array) || arg_row_array.length != 2 )
+		{
+			console.warn(context + &apos;:build_row:row_array is not an array of size 2 at rows_index=%i&apos;, arg_row_index, arg_row_array)
+			return undefined
+		}
+
+		const attribute_name  = arg_row_array[0]
+		const attribute_value = arg_row_array[1]
+		const pad_left = 10
+		
+		const td_name_elem = this_document.createElement(&apos;td&apos;)
+		td_name_elem.setAttribute(&apos;devapt-column-index&apos;, 0)
+		td_name_elem.setAttribute(&apos;devapt-collapsed&apos;, false)
+		td_name_elem.className = &apos;devapt-collapsable-row&apos;
+		td_name_elem.style.paddingLeft = td_name_elem.style.paddingLeft ? td_name_elem.style.paddingLeft + arg_depth * pad_left : arg_depth * pad_left
+		// td_name_elem.innerText = attribute_name
+		row_elem.appendChild(td_name_elem)
+
+		const span_elem = this_document.createElement(&apos;span&apos;)
+		span_elem.textContent = &apos;\u25BF&apos;
+		td_name_elem.appendChild(span_elem)
+
+		const text_elem = this_document.createElement(&apos;span&apos;)
+		text_elem.textContent = attribute_name
+		td_name_elem.appendChild(text_elem)
+		
+
+		const td_value_elem = this.build_cell(attribute_value, arg_row_index, 1, this_document, arg_depth)
+		row_elem.appendChild(td_value_elem)
+		
+		return row_elem
+	}
+
+	
+	
+	/**
+	 * Build a table row DOM element.
+	 *
+	 * @param {Element} arg_body_element - table body element.
+	 * @param {array}   arg_row_array    - row values array.
+	 * @param {integer} arg_row_index    - row index.
+	 * @param {integer} arg_max_rows     - max rows number.
+	 * @param {integer} arg_max_cols     - max columns number.
+	 * @param {string}  arg_mode         - fill mode:append/prepend
+	 * @param {string}  arg_max_rows_action - action on max rows.
+	 * @param {integer} arg_depth        - path depth.
+	 * 
+	 * @returns {nothing}
+	 */
+	process_row_array(arg_body_element, arg_row_array, arg_row_index, arg_max_rows, arg_max_cols, arg_mode, arg_max_rows_action, arg_depth=0)
+	{
+		// console.log(context + &apos;:process_row_array:%s:at %i:max cols=%i:depth=%i:row array=&apos;, this.get_name(), arg_row_index, 2, arg_depth, arg_row_array)
+
+		const attribute_name  = arg_row_array[0]
+		const attribute_value = arg_row_array[1]
+		const pad_left = 10
+
+		if ( T.isArray(attribute_value) )
+		{
+			// console.log(context + &apos;:process_row_array:%s:array:at row %i:depth=%i&apos;, this.get_name(), arg_row_index, arg_depth )
+
+			/*
+			TODO EXPANDABLE ICONS:
+				&apos;&lt;span class=&quot;node_closed&quot;&gt;\u25B9&lt;/span&gt;&apos;
+				&apos;&lt;span class=&quot;node_opened&quot;&gt;\u25BF&lt;/span&gt;&apos;
+			*/
+			const first_row_elem = this.build_row_collapsed([attribute_name, &apos;&apos;], arg_row_index, 2, arg_depth)
+			if (! first_row_elem)
+			{
+				console.warn(context + &apos;:process_row_array:%s:at %i:max cols=%i:array:bad row element for &apos;, this.get_name(), arg_row_index, 2, arg_row_array)
+				return
+			}
+			first_row_elem.setAttribute(&apos;devapt-data-type&apos;, &apos;array&apos;)
+			arg_body_element.appendChild(first_row_elem)
+
+			_.forEach(attribute_value,
+				(item, index)=&gt;{
+					this.process_row_array(arg_body_element, [index, item], arg_row_index, arg_max_rows, arg_max_cols, arg_mode, arg_max_rows_action, arg_depth + 1)
+				}
+			)
+			return
+		}
+		else if ( T.isObject(attribute_value) )
+		{
+			// console.log(context + &apos;:process_row_array:%s:object:at row %i:depth=%i&apos;, this.get_name(), arg_row_index, arg_depth )
+
+			// OPEN=\u25BF CLOSE=\u25B9
+			const first_row_elem = this.build_row_collapsed([attribute_name, &apos;&apos;], arg_row_index, 2, arg_depth)
+			if (! first_row_elem)
+			{
+				console.warn(context + &apos;:process_row_array:%s:at %i:max cols=%i:object:bad row element for &apos;, this.get_name(), arg_row_index, 2, arg_row_array)
+				return
+			}
+			first_row_elem.setAttribute(&apos;devapt-data-type&apos;, &apos;object&apos;)
+			arg_body_element.appendChild(first_row_elem)
+
+			_.forEach(attribute_value,
+				(item, key)=&gt;{
+					this.process_row_array(arg_body_element, [key, item], arg_row_index, arg_max_rows, arg_max_cols, arg_mode, arg_max_rows_action, arg_depth + 1)
+				}
+			)
+			return
+		}
+
+		// DEFAULT CASE
+		// console.log(context + &apos;:process_row_array:%s:default:at row %i:depth=%i&apos;, this.get_name(), arg_row_index, arg_depth )
+		
+		const row_elem = this.build_row(arg_row_array, arg_row_index, 2, arg_depth)
+		if (! row_elem)
+		{
+			console.warn(context + &apos;:process_row_array:%s:at %i:max cols=%i:default:bad row element for &apos;, this.get_name(), arg_row_index, 2, arg_row_array)
+			return
+		}
+		row_elem.style.paddingLeft = row_elem.style.paddingLeft ? row_elem.style.paddingLeft + (arg_depth + 1) * pad_left : (arg_depth + 1) * pad_left
+		arg_body_element.appendChild(row_elem)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

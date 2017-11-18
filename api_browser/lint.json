@@ -1,0 +1,1169 @@
+[
+  {
+    "name": "BindingLoader.normalize_objects",
+    "filePath": "js/base/binding/bindings_loader.js",
+    "lines": [
+      {
+        "lineNumber": 39,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 40,
+        "line": "\t * Normalize an array of objects selectors in an array of objects.\r"
+      },
+      {
+        "lineNumber": 41,
+        "line": "\t * @static\r"
+      },
+      {
+        "lineNumber": 42,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 43,
+        "line": "\t * @param {RuntimeBase} arg_runtime - client runtime.\r"
+      },
+      {
+        "lineNumber": 44,
+        "line": "\t * @param {Component} arg_component - component instance.\r"
+      },
+      {
+        "lineNumber": 45,
+        "line": "\t * @param {array} arg_selectors - selectors strings array.\r"
+      },
+      {
+        "lineNumber": 46,
+        "line": "\t * @param {array|string} arg_dom_types - selected items types strings array or single string (default \"dom\").\r"
+      },
+      {
+        "lineNumber": 47,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 48,
+        "line": "\t * @returns {array} - objects|strings array.\r"
+      },
+      {
+        "lineNumber": 49,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 50,
+        "line": "\tstatic normalize_objects(arg_runtime, arg_component, arg_selectors, arg_types = 'dom')\r"
+      }
+    ],
+    "codeParams": [
+      "arg_runtime",
+      "arg_component",
+      "arg_selectors",
+      "arg_types"
+    ],
+    "docParams": [
+      "arg_runtime",
+      "arg_component",
+      "arg_selectors",
+      "arg_dom_types"
+    ]
+  },
+  {
+    "name": "LayoutSimple#process_rendering_result",
+    "filePath": "js/base/layout/layout_simple.js",
+    "lines": [
+      {
+        "lineNumber": 448,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 449,
+        "line": "\t * Process a RenderingResult instance.\r"
+      },
+      {
+        "lineNumber": 450,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 451,
+        "line": "\t * @param {RenderingResult} arg_rendering_result - rendering result.\r"
+      },
+      {
+        "lineNumber": 452,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 453,
+        "line": "\t * @param {array} - rendered components.\r"
+      },
+      {
+        "lineNumber": 454,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 455,
+        "line": "\tprocess_rendering_result(arg_rendering_result)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_rendering_result"
+    ],
+    "docParams": [
+      "arg_rendering_result",
+      "-"
+    ]
+  },
+  {
+    "name": "AttributesTable#set_view_attributes_by_name",
+    "filePath": "js/components/attributes_table.js",
+    "lines": [
+      {
+        "lineNumber": 44,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 45,
+        "line": "\t * Set all object attributes.\r"
+      },
+      {
+        "lineNumber": 46,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 47,
+        "line": "\t * @param {object}  arg_object - attributes object.\r"
+      },
+      {
+        "lineNumber": 48,
+        "line": "\t * @param {integer} arg_max_depth - nested attributes max deep (TODO).\r"
+      },
+      {
+        "lineNumber": 49,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 50,
+        "line": "\t * @returns {noting}\r"
+      },
+      {
+        "lineNumber": 51,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 52,
+        "line": "\tset_view_attributes_by_name(arg_view_name, arg_max_depth)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_view_name",
+      "arg_max_depth"
+    ],
+    "docParams": [
+      "arg_object",
+      "arg_max_depth"
+    ]
+  },
+  {
+    "name": "AttributesTable#set_object_attributes",
+    "filePath": "js/components/attributes_table.js",
+    "lines": [
+      {
+        "lineNumber": 88,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 89,
+        "line": "\t * Set all object attributes.\r"
+      },
+      {
+        "lineNumber": 90,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 91,
+        "line": "\t * @param {object}  arg_object - attributes object.\r"
+      },
+      {
+        "lineNumber": 92,
+        "line": "\t * @param {integer} arg_max_depth - nested attributes max deep (TODO).\r"
+      },
+      {
+        "lineNumber": 93,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 94,
+        "line": "\t * @returns {noting}\r"
+      },
+      {
+        "lineNumber": 95,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 96,
+        "line": "\tset_object_attributes(arg_object/*, arg_max_depth*/)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_object"
+    ],
+    "docParams": [
+      "arg_object",
+      "arg_max_depth"
+    ]
+  },
+  {
+    "name": "LogsTable#do_action_filter_column",
+    "filePath": "js/components/logs_table.js",
+    "lines": [
+      {
+        "lineNumber": 161,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 162,
+        "line": "\t * Filter a column.\r"
+      },
+      {
+        "lineNumber": 163,
+        "line": "\t *\r"
+      },
+      {
+        "lineNumber": 164,
+        "line": "\t * @param {array} arg_row_array - row values array.\r"
+      },
+      {
+        "lineNumber": 165,
+        "line": "\t * @param {integer} arg_row_index - row index.\r"
+      },
+      {
+        "lineNumber": 166,
+        "line": "\t * @param {integer} arg_max_cols - max columns number.\r"
+      },
+      {
+        "lineNumber": 167,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 168,
+        "line": "\t * @returns {string} - HTML TR string\r"
+      },
+      {
+        "lineNumber": 169,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 170,
+        "line": "\tdo_action_filter_column(arg_column_name, arg_filter_value)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_column_name",
+      "arg_filter_value"
+    ],
+    "docParams": [
+      "arg_row_array",
+      "arg_row_index",
+      "arg_max_cols"
+    ]
+  },
+  {
+    "name": "Table#ui_items_replace",
+    "filePath": "js/components/table.js",
+    "lines": [
+      {
+        "lineNumber": 249,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 250,
+        "line": "\t * Replace container items.\r"
+      },
+      {
+        "lineNumber": 251,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 252,
+        "line": "\t * @param {array} arg_items_array - items array.\r"
+      },
+      {
+        "lineNumber": 253,
+        "line": "\t * @param {intege} arg_items_count - items count.\r"
+      },
+      {
+        "lineNumber": 254,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 255,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 256,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 257,
+        "line": "\tui_items_replace(arg_items_array/*, arg_items_count*/)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_items_array"
+    ],
+    "docParams": [
+      "arg_items_array",
+      "arg_items_count"
+    ]
+  },
+  {
+    "name": "Table#delete_row_elem",
+    "filePath": "js/components/table.js",
+    "lines": [
+      {
+        "lineNumber": 362,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 363,
+        "line": "\t * Delete table rows DOM elements.\r"
+      },
+      {
+        "lineNumber": 364,
+        "line": "\t *\r"
+      },
+      {
+        "lineNumber": 365,
+        "line": "\t * @param {array} arg_rows_array - rows Element array.\r"
+      },
+      {
+        "lineNumber": 366,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 367,
+        "line": "\t * @returns {Element} - TD DOM Element.\r"
+      },
+      {
+        "lineNumber": 368,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 369,
+        "line": "\tdelete_row_elem(arg_row_elem)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_row_elem"
+    ],
+    "docParams": [
+      "arg_rows_array"
+    ]
+  },
+  {
+    "name": "Table#build_row",
+    "filePath": "js/components/table.js",
+    "lines": [
+      {
+        "lineNumber": 397,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 398,
+        "line": "\t * Build a table row DOM element.\r"
+      },
+      {
+        "lineNumber": 399,
+        "line": "\t *\r"
+      },
+      {
+        "lineNumber": 400,
+        "line": "\t * @param {array} arg_row_array - row values array.\r"
+      },
+      {
+        "lineNumber": 401,
+        "line": "\t * @param {integer} arg_row_index - row index.\r"
+      },
+      {
+        "lineNumber": 402,
+        "line": "\t * @param {integer} arg_max_cols - max columns number.\r"
+      },
+      {
+        "lineNumber": 403,
+        "line": "\t * @param {integer} arg_depth        - path depth.\r"
+      },
+      {
+        "lineNumber": 404,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 405,
+        "line": "\t * @returns {Element} - TD DOM Element.\r"
+      },
+      {
+        "lineNumber": 406,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 407,
+        "line": "\tbuild_row(arg_row_array, arg_row_index, arg_max_cols/*, arg_depth*/)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_row_array",
+      "arg_row_index",
+      "arg_max_cols"
+    ],
+    "docParams": [
+      "arg_row_array",
+      "arg_row_index",
+      "arg_max_cols",
+      "arg_depth"
+    ]
+  },
+  {
+    "name": "TableTree#ui_items_append",
+    "filePath": "js/components/table_tree.js",
+    "lines": [
+      {
+        "lineNumber": 68,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 69,
+        "line": "\t * Append rows to the container.\r"
+      },
+      {
+        "lineNumber": 70,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 71,
+        "line": "\t * @param {array} arg_items_array - items array.\r"
+      },
+      {
+        "lineNumber": 72,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 73,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 74,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 75,
+        "line": "\tui_items_append(/*arg_items_array*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_items_array"
+    ]
+  },
+  {
+    "name": "TableTree#ui_items_prepend",
+    "filePath": "js/components/table_tree.js",
+    "lines": [
+      {
+        "lineNumber": 81,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 82,
+        "line": "\t * Prepend a row.\r"
+      },
+      {
+        "lineNumber": 83,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 84,
+        "line": "\t * @param {array} arg_items_array - rows array.\r"
+      },
+      {
+        "lineNumber": 85,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 86,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 87,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 88,
+        "line": "\tui_items_prepend(/*arg_items_array*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_items_array"
+    ]
+  },
+  {
+    "name": "TableTree#ui_items_remove_last",
+    "filePath": "js/components/table_tree.js",
+    "lines": [
+      {
+        "lineNumber": 120,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 121,
+        "line": "\t * Remove a row at last position.\r"
+      },
+      {
+        "lineNumber": 122,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 123,
+        "line": "\t * @param {integer} arg_count - items count to remove.\r"
+      },
+      {
+        "lineNumber": 124,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 125,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 126,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 127,
+        "line": "\tui_items_remove_last(/*arg_count*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_count"
+    ]
+  },
+  {
+    "name": "Topology#ui_items_append",
+    "filePath": "js/components/topology.js",
+    "lines": [
+      {
+        "lineNumber": 67,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 68,
+        "line": "\t * Append rows to the container.\r"
+      },
+      {
+        "lineNumber": 69,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 70,
+        "line": "\t * @param {array} arg_items_array - items array.\r"
+      },
+      {
+        "lineNumber": 71,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 72,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 73,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 74,
+        "line": "\tui_items_append(/*arg_items_array*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_items_array"
+    ]
+  },
+  {
+    "name": "Topology#ui_items_prepend",
+    "filePath": "js/components/topology.js",
+    "lines": [
+      {
+        "lineNumber": 80,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 81,
+        "line": "\t * Prepend a row.\r"
+      },
+      {
+        "lineNumber": 82,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 83,
+        "line": "\t * @param {array} arg_items_array - rows array.\r"
+      },
+      {
+        "lineNumber": 84,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 85,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 86,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 87,
+        "line": "\tui_items_prepend(/*arg_items_array*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_items_array"
+    ]
+  },
+  {
+    "name": "Topology#ui_items_remove_last",
+    "filePath": "js/components/topology.js",
+    "lines": [
+      {
+        "lineNumber": 119,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 120,
+        "line": "\t * Remove a row at last position.\r"
+      },
+      {
+        "lineNumber": 121,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 122,
+        "line": "\t * @param {integer} arg_count - items count to remove.\r"
+      },
+      {
+        "lineNumber": 123,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 124,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 125,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 126,
+        "line": "\tui_items_remove_last(/*arg_count*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_count"
+    ]
+  },
+  {
+    "name": "Tree#ui_items_append",
+    "filePath": "js/components/tree.js",
+    "lines": [
+      {
+        "lineNumber": 65,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 66,
+        "line": "\t * Append rows to the container.\r"
+      },
+      {
+        "lineNumber": 67,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 68,
+        "line": "\t * @param {array} arg_items_array - items array.\r"
+      },
+      {
+        "lineNumber": 69,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 70,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 71,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 72,
+        "line": "\tui_items_append(/*arg_items_array*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_items_array"
+    ]
+  },
+  {
+    "name": "Tree#ui_items_prepend",
+    "filePath": "js/components/tree.js",
+    "lines": [
+      {
+        "lineNumber": 78,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 79,
+        "line": "\t * Prepend a row.\r"
+      },
+      {
+        "lineNumber": 80,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 81,
+        "line": "\t * @param {array} arg_items_array - rows array.\r"
+      },
+      {
+        "lineNumber": 82,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 83,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 84,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 85,
+        "line": "\tui_items_prepend(/*arg_items_array*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_items_array"
+    ]
+  },
+  {
+    "name": "Tree#ui_items_remove_last",
+    "filePath": "js/components/tree.js",
+    "lines": [
+      {
+        "lineNumber": 117,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 118,
+        "line": "\t * Remove a row at last position.\r"
+      },
+      {
+        "lineNumber": 119,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 120,
+        "line": "\t * @param {integer} arg_count - items count to remove.\r"
+      },
+      {
+        "lineNumber": 121,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 122,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 123,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 124,
+        "line": "\tui_items_remove_last(/*arg_count*/)\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_count"
+    ]
+  },
+  {
+    "name": "StreamLogger#convert_array_to_object",
+    "filePath": "js/loggers/stream_logger.js",
+    "lines": [
+      {
+        "lineNumber": 94,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 95,
+        "line": "\t * Convert log array to log object.\r"
+      },
+      {
+        "lineNumber": 96,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 97,
+        "line": "\t * @param {array} arg_log_array - log record array (length= )\r"
+      },
+      {
+        "lineNumber": 98,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 99,
+        "line": "\t * @returns {object} - log record object { ts, level, source, context, instance, group, action, text }\r"
+      },
+      {
+        "lineNumber": 100,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 101,
+        "line": "\tconvert_array_to_object(arg_log_array, arg_level, arg_source)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_log_array",
+      "arg_level",
+      "arg_source"
+    ],
+    "docParams": [
+      "arg_log_array"
+    ]
+  },
+  {
+    "name": "ClientRuntime#register_service_self",
+    "filePath": "js/runtime/client_runtime.js",
+    "lines": [
+      {
+        "lineNumber": 482,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 483,
+        "line": "\t * Register a remote service (end of process).\r"
+      },
+      {
+        "lineNumber": 484,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 485,
+        "line": "\t * @param {string} arg_svc_name - service name.\r"
+      },
+      {
+        "lineNumber": 486,
+        "line": "\t * @param {object} arg_svc_settings - service settings.\r"
+      },
+      {
+        "lineNumber": 487,
+        "line": "\t * @param {Function} arg_resolve_cb - function to call when promise is resolved.\r"
+      },
+      {
+        "lineNumber": 488,
+        "line": "\t * @param {Function} arg_reject_cb - function to call when promise is rejected.\r"
+      },
+      {
+        "lineNumber": 489,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 490,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 491,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 492,
+        "line": "\tregister_service_self(arg_resolve_cb, arg_reject_cb, arg_svc_name, arg_svc_settings)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_resolve_cb",
+      "arg_reject_cb",
+      "arg_svc_name",
+      "arg_svc_settings"
+    ],
+    "docParams": [
+      "arg_svc_name",
+      "arg_svc_settings",
+      "arg_resolve_cb",
+      "arg_reject_cb"
+    ]
+  },
+  {
+    "name": "Router#set_hash_if_empty",
+    "filePath": "js/runtime/router.js",
+    "lines": [
+      {
+        "lineNumber": 186,
+        "line": "\t// }\r"
+      },
+      {
+        "lineNumber": 187,
+        "line": "\r"
+      },
+      {
+        "lineNumber": 188,
+        "line": "\r"
+      },
+      {
+        "lineNumber": 189,
+        "line": "\r"
+      },
+      {
+        "lineNumber": 190,
+        "line": "\tset_hash_if_empty(arg_hash)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_hash"
+    ],
+    "docParams": [
+      "arg_view_name",
+      "arg_menubar_name"
+    ]
+  },
+  {
+    "name": "RouterState#display_content",
+    "filePath": "js/runtime/router_state.js",
+    "lines": [
+      {
+        "lineNumber": 389,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 390,
+        "line": "\t * Display the page content with given view and menubar.\r"
+      },
+      {
+        "lineNumber": 391,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 392,
+        "line": "\t * @param {string} arg_view_name - view name\r"
+      },
+      {
+        "lineNumber": 393,
+        "line": "\t * @param {string} arg_menubar_name - menubar name\r"
+      },
+      {
+        "lineNumber": 394,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 395,
+        "line": "\t * @returns {Promise} - Resolved result is a boolean: success or failure\r"
+      },
+      {
+        "lineNumber": 396,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 397,
+        "line": "\tdisplay_content(arg_view_name, arg_menubar_name, arg_breadcrumbs=undefined)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_view_name",
+      "arg_menubar_name",
+      "arg_breadcrumbs"
+    ],
+    "docParams": [
+      "arg_view_name",
+      "arg_menubar_name"
+    ]
+  },
+  {
+    "name": "Service#delete_timer",
+    "filePath": "js/runtime/service.js",
+    "lines": [
+      {
+        "lineNumber": 227,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 228,
+        "line": "\t * Delete a timer.\r"
+      },
+      {
+        "lineNumber": 229,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 230,
+        "line": "\t * @param {any}\targ_timer_id.\r"
+      },
+      {
+        "lineNumber": 231,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 232,
+        "line": "\t * @returns {nothing}\r"
+      },
+      {
+        "lineNumber": 233,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 234,
+        "line": "\tdelete_timer(arg_timer_id)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_timer_id"
+    ],
+    "docParams": []
+  },
+  {
+    "name": "ServiceOperation#execute_on_browser",
+    "filePath": "js/runtime/service_operation.js",
+    "lines": [
+      {
+        "lineNumber": 48,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 49,
+        "line": "\t * Execute operation on browser.\r"
+      },
+      {
+        "lineNumber": 50,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 51,
+        "line": "\t * @param {any}    arg_operands    - operation operands.\r"
+      },
+      {
+        "lineNumber": 52,
+        "line": "\t * @param {object} arg_credentials - session credentials.\r"
+      },
+      {
+        "lineNumber": 53,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 54,
+        "line": "\t * @returns {Stream} - service results stream.\r"
+      },
+      {
+        "lineNumber": 55,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 56,
+        "line": "\texecute_on_browser()\r"
+      }
+    ],
+    "codeParams": [],
+    "docParams": [
+      "arg_operands",
+      "arg_credentials"
+    ]
+  },
+  {
+    "name": "UIFactory#create",
+    "filePath": "js/runtime/ui_factory.js",
+    "lines": [
+      {
+        "lineNumber": 265,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 266,
+        "line": "\t * Create a UI component.\r"
+      },
+      {
+        "lineNumber": 267,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 268,
+        "line": "\t * @param {string} arg_component_name - component name.\r"
+      },
+      {
+        "lineNumber": 269,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 270,
+        "line": "\t * @returns {Promise} - promise of Component instance\r"
+      },
+      {
+        "lineNumber": 271,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 272,
+        "line": "\tcreate(arg_component_name, arg_component_desc=undefined)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_component_name",
+      "arg_component_desc"
+    ],
+    "docParams": [
+      "arg_component_name"
+    ]
+  },
+  {
+    "name": "UIFactory#get_component_class",
+    "filePath": "js/runtime/ui_factory.js",
+    "lines": [
+      {
+        "lineNumber": 329,
+        "line": "\t/**\r"
+      },
+      {
+        "lineNumber": 330,
+        "line": "\t * Create a UI component.\r"
+      },
+      {
+        "lineNumber": 331,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 332,
+        "line": "\t * @param {string} arg_name - component name.\r"
+      },
+      {
+        "lineNumber": 333,
+        "line": "\t * \r"
+      },
+      {
+        "lineNumber": 334,
+        "line": "\t * @returns {Component}\r"
+      },
+      {
+        "lineNumber": 335,
+        "line": "\t */\r"
+      },
+      {
+        "lineNumber": 336,
+        "line": "\tget_component_class(arg_type)\r"
+      }
+    ],
+    "codeParams": [
+      "arg_type"
+    ],
+    "docParams": [
+      "arg_name"
+    ]
+  }
+]

@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Reference | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#default-plugins">default_plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/default_plugins/services_default_plugin.js~DefaultServicesPlugin.html">DefaultServicesPlugin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_route.js~ExecutableRoute.html">ExecutableRoute</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-assets">services/assets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/assets_svc_provider.js~AssetsSvcProvider.html">AssetsSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/executable_route_assets.js~ExecutableRouteAssets.html">ExecutableRouteAssets</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-logs">services/logs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/logs/logs_svc_provider.js~LogsSvcProvider.html">LogsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-messages">services/messages</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/messages/messages_svc_provider.js~MessagesSvcProvider.html">MessagesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-metrics">services/metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics/metrics_svc_provider.js~MetricsSvcProvider.html">MetricsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-middlewares">services/middlewares</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/executable_route_middleware.js~ExecutableRouteMiddleware.html">ExecutableRouteMiddleware</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/middlewares_svc_provider.js~MiddlewaresSvcProvider.html">MiddlewaresSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-ping">services/ping</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/ping/ping_svc_provider.js~PingSvcProvider.html">PingSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-resources">services/resources</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/executable_route_get_resource.js~ExecutableRouteGetResources.html">ExecutableRouteGetResources</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/resources_svc_provider.js~ResourcesSvcProvider.html">ResourcesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-security">services/security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_service.js~SecurityService.html">SecurityService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_consumer.js~SecuritySvcConsumer.html">SecuritySvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_provider.js~SecuritySvcProvider.html">SecuritySvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-todo-crud">services/todo_crud</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_service.js~CrudService.html">CrudService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_consumer.js~CrudSvcConsumer.html">CrudSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_provider.js~CrudSvcProvider.html">CrudSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/executable_route_model_crud.js~ExecutableRouteModelCrud.html">ExecutableRouteModelCrud</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-topology">services/topology</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_service.js~TopologyService.html">TopologyService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_consumer.js~TopologySvcHostConsumer.html">TopologySvcHostConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1>References</h1>
+
+<div class="identifiers-wrap">
+  <div>
+    
+  <div data-ice="dirSummaryWrap">
+      <h2 data-ice="dirPath" id="default-plugins">default_plugins</h2>
+      <div data-ice="dirSummary"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/default_plugins/services_default_plugin.js~DefaultServicesPlugin.html">DefaultServicesPlugin</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Plugin class for default services.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+    </div>
+<div data-ice="dirSummaryWrap">
+      <h2 data-ice="dirPath" id="executables">executables</h2>
+      <div data-ice="dirSummary"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/executables/executable_route.js~ExecutableRoute.html">ExecutableRoute</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+    </div>
+<div data-ice="dirSummaryWrap">
+      <h2 data-ice="dirPath" id="services-assets">services/assets</h2>
+      <div data-ice="dirSummary"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/assets/assets_svc_provider.js~AssetsSvcProvider.html">AssetsSvcProvider</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Assets service provider class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/assets/executable_route_assets.js~ExecutableRouteAssets.html">ExecutableRouteAssets</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+    </div>
+<div data-ice="dirSummaryWrap">
+      <h2 data-ice="dirPath" id="services-logs">services/logs</h2>
+      <div data-ice="dirSummary"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/logs/logs_svc_provider.js~LogsSvcProvider.html">LogsSvcProvider</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Logs service provider class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+    </div>
+<div data-ice="dirSummaryWrap">
+      <h2 data-ice="dirPath" id="services-messages">services/messages</h2>
+      <div data-ice="dirSummary"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/messages/messages_svc_provider.js~MessagesSvcProvider.html">MessagesSvcProvider</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Messages service provider class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+    </div>
+<div data-ice="dirSummaryWrap">
+      <h2 data-ice="dirPath" id="services-metrics">services/metrics</h2>
+      <div data-ice="dirSummary"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/metrics/metrics_svc_provider.js~MetricsSvcProvider.html">MetricsSvcProvider</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Metrics service provider class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+    </div>
+<div data-ice="dirSummaryWrap">
+      <h2 data-ice="dirPath" id="services-middlewares">services/middlewares</h2>
+      <div data-ice="dirSummary"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/middlewares/executable_route_middleware.js~ExecutableRouteMiddleware.html">ExecutableRouteMiddleware</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/middlewares/middlewares_svc_provider.js~MiddlewaresSvcProvider.html">MiddlewaresSvcProvider</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Middlewares service provider class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+    </div>
+<div data-ice="dirSummaryWrap">
+      <h2 data-ice="dirPath" id="services-ping">services/ping</h2>
+      <div data-ice="dirSummary"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/ping/ping_svc_provider.js~PingSvcProvider.html">PingSvcProvider</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Ping service provider class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+    </div>
+<div data-ice="dirSummaryWrap">
+      <h2 data-ice="dirPath" id="services-resources">services/resources</h2>
+      <div data-ice="dirSummary"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/resources/executable_route_get_resource.js~ExecutableRouteGetResources.html">ExecutableRouteGetResources</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/resources/resources_svc_provider.js~ResourcesSvcProvider.html">ResourcesSvcProvider</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Resources service provider class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+    </div>
+<div data-ice="dirSummaryWrap">
+      <h2 data-ice="dirPath" id="services-security">services/security</h2>
+      <div data-ice="dirSummary"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/security/security_service.js~SecurityService.html">SecurityService</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Service class for security access:login, logout, renew.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/security/security_svc_consumer.js~SecuritySvcConsumer.html">SecuritySvcConsumer</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Security service consumer class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/security/security_svc_provider.js~SecuritySvcProvider.html">SecuritySvcProvider</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Security service provider class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+    </div>
+<div data-ice="dirSummaryWrap">
+      <h2 data-ice="dirPath" id="services-todo-crud">services/todo_crud</h2>
+      <div data-ice="dirSummary"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/todo_crud/crud_service.js~CrudService.html">CrudService</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Crud service class for CRUD routes.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_consumer.js~CrudSvcConsumer.html">CrudSvcConsumer</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Service consumer class for CRUD routes.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_provider.js~CrudSvcProvider.html">CrudSvcProvider</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Crud service provider class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/todo_crud/executable_route_model_crud.js~ExecutableRouteModelCrud.html">ExecutableRouteModelCrud</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+    </div>
+<div data-ice="dirSummaryWrap">
+      <h2 data-ice="dirPath" id="services-topology">services/topology</h2>
+      <div data-ice="dirSummary"><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">summary</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/topology/topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Topology service provider class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/topology/unused_topology_service.js~TopologyService.html">TopologyService</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Service class for topology datas.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_consumer.js~TopologySvcHostConsumer.html">TopologySvcHostConsumer</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Service consumer class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="kind-icon" class="kind-class">C</span>
+          
+          
+          <span class="code" data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>Topology service provider class.</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+    </div>
+</div>
+
+  <div class="identifier-dir-tree" data-ice="dirTreeWrap">
+    <div class="identifier-dir-tree-header">Directories</div>
+    <div class="identifier-dir-tree-content" data-ice="dirTree"><div style="padding-left: 0em"><a href="#default-plugins">default_plugins</a></div>
+<div style="padding-left: 0em"><a href="#executables">executables</a></div>
+<div style="padding-left: 1em"><a href="#services-assets">assets</a></div>
+<div style="padding-left: 1em"><a href="#services-logs">logs</a></div>
+<div style="padding-left: 1em"><a href="#services-messages">messages</a></div>
+<div style="padding-left: 1em"><a href="#services-metrics">metrics</a></div>
+<div style="padding-left: 1em"><a href="#services-middlewares">middlewares</a></div>
+<div style="padding-left: 1em"><a href="#services-ping">ping</a></div>
+<div style="padding-left: 1em"><a href="#services-resources">resources</a></div>
+<div style="padding-left: 1em"><a href="#services-security">security</a></div>
+<div style="padding-left: 1em"><a href="#services-todo-crud">todo_crud</a></div>
+<div style="padding-left: 1em"><a href="#services-topology">topology</a></div></div>
+  </div>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

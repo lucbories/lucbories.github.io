@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/base/container.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/base/container.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+import { fromJS } from &apos;immutable&apos;
+import _ from &apos;lodash&apos;
+
+// COMMON IMPORTS
+import T from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+
+// BROWSER IMPORTS
+import Component from &apos;./component&apos;
+
+
+const context = &apos;browser/base/container&apos;
+
+
+
+/**
+ * @file UI component class.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class Container extends Component
+{
+	
+	/**
+	 * Creates an instance of Container. A Container contains other Components through the &apos;children&apos; property.
+	 * @extends Component
+	 * 
+	 * Container state attributes:
+	 * 	- strategy: Immutable.Map (how to manage UI updates with items changes)
+	 * 		- update_mode: &apos;append&apos; | &apos;prepend&apos; | &apos;replace&apos; | &apos;insert at&apos;
+	 * 		- update_index: integer (position for &apos;insert at&apos; mode)
+	 * 		- resize_mode: &apos;remove_last&apos; | &apos;remove_first&apos;
+	 * 		- resize_max: integer (max items count)
+	 * 
+	 * 	API
+	 * 		-&gt;load(arg_state):nothing - load configuration
+	 * 
+	 * 	API: DEFINE ACTION WRAPPERS (only dispatch an action to update the state)
+	 * 		-&gt;do_action_set_resize_max(arg_value):nothing - Set max items value for the container.
+	 * 		-&gt;do_action_clear_items():nothing - Clear container items.
+	 * 
+	 * 		-&gt;do_action_append(arg_items_array, arg_items_count):nothing  - Append items to the container (an item can be a string or an array or an object or ...).
+	 * 		-&gt;do_action_prepend(arg_items_array, arg_items_count):nothing - Prepend an item (an item can be a string or an array or an object or ...).
+	 * 		-&gt;do_action_replace(arg_items_array, arg_items_count):nothing - Replace items to the container (an item can be a string or an array or an object or ...).
+	 * 		-&gt;do_action_insert_at(arg_index, arg_items_array, arg_items_count):nothing - Insert items at container position index (an item can be a string or an array or an object or ...).
+	 * 
+	 * 		-&gt;do_action_remove_at_index(arg_index):nothing - Remove an item at given position.
+	 * 		-&gt;do_action_remove_first():nothing             - Remove an item at first position.
+	 * 		-&gt;do_action_remove_last(arg_count):nothing     - Remove an item at last position.
+	 * 
+	 * 		-&gt;reduce_action(arg_previous_state, arg_action):Immutable.Map    - Store actions reducer pure function.
+	 * 		-&gt;handle_state_change(arg_previous_state, arg_new_state):nothing - Handle component state changes.
+	 * 
+	 * 
+	 * API: DEFINE UI HANDLERS FOR STATE UPDATE (only update UI)
+	 * 		-&gt;ui_items_get_count():nothing - Get container items count.
+	 * 		-&gt;ui_items_clear():nothing     - Erase container items.
+	 * 
+	 * 		-&gt;ui_items_append(arg_items_array):nothing  - Append tems to the container.
+	 * 		-&gt;ui_items_prepend(arg_items_array):nothing - Prepend tems to the container.
+	 * 		-&gt;ui_items_replace(arg_items_array, arg_items_count):nothing - Replace container items.
+	 * 		-&gt;ui_items_insert_at(arg_index, arg_items_array, arg_items_count):nothing - Insert items at container position index.
+	 * 
+	 * 		-&gt;ui_items_remove_at_index(arg_index):nothing - Remove an item at given position.
+	 * 		-&gt;ui_items_remove_first():nothing             - Remove a item at first position.
+	 * 		-&gt;ui_items_remove_last():nothing              - Remove an item at last position.
+	 * 
+	 * API: state store actions
+	 * 		* &apos;set_resize_max&apos;
+	 * 		* &apos;clear_items&apos;
+	 * 
+	 * 		* &apos;append&apos;
+	 * 		* &apos;prepend&apos;
+	 * 		* &apos;replace&apos;
+	 * 		* &apos;insert_at&apos;
+	 * 
+	 * 		* &apos;remove_at_index&apos;
+	 * 		* &apos;remove_first&apos;
+	 * 		* &apos;remove_last&apos;
+	 * 
+	 * @param {object} arg_runtime - client runtime.
+	 * @param {object} arg_state - component state.
+	 * @param {string} arg_log_context - context of traces of this instance (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_state, arg_log_context)
+	{
+		const log_context = arg_log_context ? arg_log_context : context
+		super(arg_runtime, arg_state, log_context)
+		
+		this.is_container = true
+		
+		this.strategy = undefined
+		
+		this.strategy_update = undefined
+		this.strategy_resize_ui = undefined
+		this.strategy_resize_state = undefined
+		this.max_size = undefined
+
+		this._state_action_index = 0
+	}
+	
+	
+	
+	/**
+	 * Load and apply a container component configuration.
+	 * 
+	 * @param {Immutable.Map|undefined} arg_state - component state to load (optional).
+	 * 
+	 * @returns {nothing} 
+	 */
+	load(arg_state)
+	{
+		this.enter_group(&apos;load&apos;)
+
+		const state = arg_state ? arg_state : this.get_state()
+		
+		// console.info(context + &apos;:load:loading &apos; + this.get_name())
+		
+		if (! state)
+		{
+			return
+		}
+		
+		if (this.is_loaded)
+		{
+			// console.info(context + &apos;:load:already loaded component &apos; + this.get_name())
+			this.leave_group(&apos;load:already loaded&apos;)
+			return
+		}
+
+		if (! this.store_unsubscribe)
+		{
+			this.store_unsubscribe = this.get_runtime().create_store_observer(this)
+		}
+
+
+		// GET CONTAINER STRATEGY: HOW TO UPDATE UI
+		if (state.has(&apos;strategy&apos;))
+		{
+			this.strategy = state.get(&apos;strategy&apos;)
+			
+			
+			// DEFINE UPDATE FUNCTION
+			
+			this.strategy_update = undefined
+			
+			if (this.strategy.has(&apos;update_mode&apos;))
+			{
+				const mode = this.strategy.get(&apos;update_mode&apos;)
+				if (mode == &apos;append&apos;)
+				{
+					this.strategy_update = this.ui_items_append
+				}
+				else if (mode == &apos;prepend&apos;)
+				{
+					this.strategy_update = this.ui_items_prepend
+				}
+				else if (mode == &apos;replace&apos;)
+				{
+					this.strategy_update = this.ui_items_replace
+				}
+				else if (mode == &apos;insert at&apos;)
+				{
+					if ( this.strategy.has(&apos;update_index&apos;) )
+					{
+						const index = this.strategy.get(&apos;update_index&apos;)
+						this.strategy_update = () =&gt; { this.ui_items_insert_at_index(index) }
+					}
+				}
+			}
+			
+			if ( ! T.isFunction(this.strategy_update) )
+			{
+				this.strategy_update = this.ui_items_replace
+			}
+			
+			
+			// DEFINE RESIZE FUNCTION
+			
+			this.strategy_resize_ui = undefined
+			this.strategy_resize_state = undefined
+			this.max_size = undefined
+			
+			if (this.strategy.has(&apos;resize_mode&apos;))
+			{
+				const mode = this.strategy.get(&apos;resize_mode&apos;)
+				
+				this.max_size = 100
+				if ( this.strategy.has(&apos;resize_max&apos;) )
+				{
+					this.max_size = this.strategy.get(&apos;resize_max&apos;)
+				}
+				
+				if (mode == &apos;remove_last&apos;)
+				{
+					this.strategy_resize_ui = () =&gt; {
+						const count = this.ui_items_get_count() - this.max_size
+						if (count &gt; 0)
+						{
+							this.ui_items_remove_last(count)
+						}
+					}
+				}
+				else /*if (mode == &apos;remove_first&apos;)*/
+				{
+					this.strategy_resize_ui = () =&gt; {
+						const count = this.ui_items_get_count() - this.max_size
+						this.ui_items_remove_first(count)
+					}
+				}
+					
+				this.strategy_resize_state = (arg_items, arg_next_state) =&gt; {
+					if (arg_items &amp;&amp; arg_items.count &amp;&amp; this.max_size)
+					{
+						const count = arg_items.count() -  this.max_size
+						if (count &gt; 0)
+						{
+							const action = { type:mode, count:count }
+							return this.reduce_action(arg_next_state, action)
+						}
+					}
+					return arg_next_state
+				}
+				
+				// console.log(context + &apos;:load:resize_mode&apos;, mode)
+				// console.log(context + &apos;:load:resize_max&apos;, max_size)
+			}
+		}
+
+		// SET DEFAULT METHOD
+		if (! this.strategy_resize_state)
+		{
+			this.strategy_resize_state = (items, next_state) =&gt; next_state
+		}
+		if (! this.strategy_resize_ui)
+		{
+			this.strategy_resize_ui = () =&gt; {}
+		}
+
+		// this.init_bindings()
+
+		// this.update()
+		
+		this.is_loaded = true
+		this.leave_group(&apos;load&apos;)
+	}
+	
+	
+	// -----------------------------------------------------------------------------------------------------
+	// DEFINE ACTION WRAPPERS (only dispatch an action to update the state)
+	// -----------------------------------------------------------------------------------------------------
+	
+	/**
+	 * Set max items value for the container.
+	 * 
+	 * @param {integer} arg_value - max items value.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_action_set_resize_max(arg_value)
+	{
+		let value = T.isNumber(arg_value) ? arg_value : undefined
+		if (!value)
+		{
+			if ( T.isObject(arg_value) )
+			{
+				if ( T.isNumber(arg_value.resize_max) )
+				{
+					value = arg_value.resize_max
+				}
+				else if ( T.isString(arg_value.resize_max) )
+				{
+					try {
+						value = parseInt(arg_value.resize_max)
+					}
+					catch(e)
+					{
+						console.error(context + &apos;:do_action_set_resize_max:bad integer value from string&apos;, arg_value)
+					}
+				}
+			}
+		}
+		
+		assert( T.isNumber(value), context + &apos;:do_action_set_resize_max:bad value number&apos;)
+		
+		this.dispatch_action(&apos;set_resize_max&apos;, {resize_max:value})
+	}
+	
+	
+	
+	/**
+	 * Clear container items.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_action_clear_items()
+	{
+		this.dispatch_action(&apos;clear_items&apos;)
+	}
+	
+	
+	
+	/**
+	 * Append items to the container (an item can be a string or an array or an object or ...).
+	 * 
+	 * @param {array}  arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_action_append(arg_items_array, arg_items_count)
+	{
+		if (! arg_items_array)
+		{
+			console.warn(context + &apos;:do_action_append:%s:bad arguments&apos;, this.get_name())
+			return
+		}
+
+		if ( arguments.length == 2 &amp;&amp; T.isNumber(arg_items_array) )
+		{
+			const tmp = arg_items_array
+			arg_items_array = arg_items_count
+			arg_items_count = tmp
+		}
+		if (! arg_items_count &amp;&amp; T.isArray(arg_items_array) )
+		{
+			arg_items_count = arg_items_array.length
+		}
+		
+		// DEBUG
+		// console.log(context + &apos;:do_action_append:%s:items,count:&apos;, this.get_name(), arg_items_array, arg_items_count)
+		
+		assert( T.isNumber(arg_items_count), context + &apos;:do_action_append:bad items count&apos;)
+		assert( T.isArray(arg_items_array), context + &apos;:do_action_append:bad items array&apos;)
+
+		this.dispatch_action(&apos;append&apos;, {values:arg_items_array, count:arg_items_count } )
+	}
+	
+	
+	
+	/**
+	 * Prepend items to the container (an item can be a string or an array or an object or ...).
+	 * 
+	 * @param {array}  arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_action_prepend(arg_items_array, arg_items_count)
+	{
+		if (! arg_items_array)
+		{
+			console.warn(context + &apos;:do_action_prepend:%s:bad arguments&apos;, this.get_name())
+			return
+		}
+
+		if ( arguments.length == 2 &amp;&amp; T.isNumber(arg_items_array) )
+		{
+			const tmp = arg_items_array
+			arg_items_array = arg_items_count
+			arg_items_count = tmp
+		}
+		if (! arg_items_count &amp;&amp; T.isArray(arg_items_array))
+		{
+			arg_items_count = arg_items_array.length
+		}
+
+		// DEBUG
+		// console.log(context + &apos;:do_action_prepend:%s:items,count:&apos;, this.get_name(), arg_items_array, arg_items_count)
+
+		assert( T.isNumber(arg_items_count), context + &apos;:do_action_prepend:bad items count&apos;)
+		assert( T.isArray(arg_items_array), context + &apos;:do_action_prepend:bad items array&apos;)
+		
+		// DEBUG
+		// console.log(context + &apos;:do_action_prepend:arg_items_array&apos;, arg_items_array)
+
+		this.dispatch_action(&apos;prepend&apos;, { values:arg_items_array, count:arg_items_count } )
+	}
+	
+	
+	
+	/**
+	 * Replace items to the container (an item can be a string or an array or an object or ...).
+	 * 
+	 * @param {array}  arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_action_replace(arg_items_array, arg_items_count)
+	{
+		if (! arg_items_array)
+		{
+			console.warn(context + &apos;:do_action_replace:%s:bad arguments&apos;, this.get_name())
+			return
+		}
+
+		if ( arguments.length == 2 &amp;&amp; T.isNumber(arg_items_array) )
+		{
+			const tmp = arg_items_array
+			arg_items_array = arg_items_count
+			arg_items_count = tmp
+		}
+		
+		// DEBUG
+		// console.log(context + &apos;:do_action_replace:%s:items,count:&apos;, this.get_name(), arg_items_array, arg_items_count)
+		
+		assert( T.isNumber(arg_items_count), context + &apos;:do_action_replace:bad items count&apos;)
+		assert( T.isArray(arg_items_array), context + &apos;:do_action_replace:bad items array&apos;)
+
+		this.dispatch_action(&apos;replace&apos;, {values:arg_items_array, count:arg_items_count } )
+	}
+	
+	
+	
+	/**
+	 * Insert items at container position index (an item can be a string or an array or an object or ...).
+	 * 
+	 * @param {intege} arg_index       - position index.
+	 * @param {array}  arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_action_insert_at(arg_index, arg_items_array, arg_items_count)
+	{
+		assert( T.isNumber(arg_index), context + &apos;:do_action_insert_at:bad index number&apos;)
+		assert( T.isNumber(arg_items_count), context + &apos;:do_action_insert_at:bad items count&apos;)
+		
+		if (arg_items_count == 1)
+		{
+			arg_items_array = [arg_items_array]
+		}
+		assert( T.isArray(arg_items_array), context + &apos;:do_action_insert_at:bad items array&apos;)
+
+		this.dispatch_action(&apos;insert_at&apos;, {index:arg_index, values:arg_items_array, count:arg_items_count } )
+	}
+	
+	
+	
+	/**
+	 * Remove an item at given position.
+	 * 
+	 * @param {number} arg_index - item index.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_action_remove_at_index(arg_index)
+	{
+		assert( T.isNumber(arg_index), context + &apos;:remove_at_index:bad index number&apos; )
+		
+		this.dispatch_action( { type:&apos;remove_at_index&apos;, index:arg_index } )
+	}
+	
+	
+	
+	/**
+	 * Remove an item at first position.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_action_remove_first()
+	{
+		this.dispatch_action(&apos;remove_first&apos;)
+	}
+	
+	
+	
+	/**
+	 * Remove an item at last position.
+	 *
+	 * @param {number} arg_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_action_remove_last(arg_count)
+	{
+		this.dispatch_action(&apos;remove_last&apos;, { count:arg_count })
+	}
+	
+	
+	
+	/**
+	 * Store actions reducer pure function.
+	 * 
+	 * @param {Immutable.Map} arg_previous_state - previous state.
+	 * @param {object} arg_action - store action: { type:&apos;&apos;, component:&apos;&apos;, ...}
+	 * 
+	 * @returns {Immutable.Map} - new state
+	 */
+	reduce_action(arg_previous_state, arg_action)
+	{
+		// console.log(context + &apos;:reduce_action:prev state&apos;, arg_previous_state.toJS())
+		
+		if (! arg_previous_state)
+		{
+			console.error(context + &apos;:reduce_action:%s:bad previous state for action=&apos;, this.get_name(), arg_action)
+			return undefined
+		}
+
+		// PUSH ACTION ON UI ACTIONS STACK
+		let stack =  arg_previous_state.get(&apos;ui_actions_stack&apos;)
+		stack = stack ? stack.push(arg_action) : fromJS([arg_action])
+
+		if (this._state_action_index &gt;= stack.size - 1)
+		{
+			this._state_action_index = 0
+			stack = fromJS([arg_action])
+			// console.log(context + &apos;:reduce_action:this._state_action_index(%s) &gt;= stack.size(%s)&apos;, this._state_action_index, stack.size - 1)
+		}
+		
+		let next_state = arg_previous_state.set(&apos;ui_actions_stack&apos;, stack)
+		// console.log(context + &apos;:reduce_action:stack&apos;, stack)
+
+		switch(arg_action.type)
+		{
+			case &apos;set_resize_max&apos;: {
+				if ( ! T.isNumber(arg_action.resize_max) &amp;&amp; arg_action.resize_max &gt; 0 )
+				{
+					return arg_previous_state
+				}
+				
+				this.max_size = arg_action.resize_max
+				const items = arg_previous_state.get(&apos;items&apos;)
+				next_state = next_state.setIn([&apos;strategy&apos;, &apos;resize_max&apos;], arg_action.resize_max)
+				return this.strategy_resize_state(items, next_state)
+			}
+			
+			case &apos;clear_items&apos;: {
+				next_state = next_state.set(&apos;items&apos;, fromJS([]))
+				return next_state
+			}
+			
+			case &apos;append&apos;: {
+				const values = arg_action.values
+
+				// DEBUG
+				// console.log(&apos;container:reduce_action:append:values&apos;, values)
+				// console.log(&apos;container:reduce_action:append:prev items&apos;, arg_previous_state.get(&apos;items&apos;).toJS())
+				
+				// NOTHING TO APPEND
+				if (values.length == 0)
+				{
+					return arg_previous_state
+				}
+
+				let items = arg_previous_state.get(&apos;items&apos;).concat(values)
+				next_state = next_state.set(&apos;items&apos;, items)
+				
+				return this.strategy_resize_state(items, next_state)
+			}
+			
+			case &apos;prepend&apos;: {
+				const values = arg_action.values
+				// console.log(context + &apos;:reduce_action:prepend:values&apos;, values)
+				
+				let items = arg_previous_state.get(&apos;items&apos;)
+				values.forEach(
+					(value) =&gt; items = items.splice(0, 0, value)
+				)
+				next_state = next_state.set(&apos;items&apos;, items)
+				
+				return this.strategy_resize_state(items, next_state)
+			}
+			
+			case &apos;replace&apos;: {
+				const values = arg_action.values
+				console.log(context + &apos;:reduce_action:replace:values&apos;, values)
+				
+				next_state = next_state.set(&apos;items&apos;, fromJS(values))
+				
+				return this.strategy_resize_state(fromJS(values), next_state)
+			}
+			
+			case &apos;insert_at&apos;: {
+				const index = arg_action.index
+				const value = arg_action.value
+				
+				const items = arg_previous_state.get(&apos;items&apos;).insert(index, value)
+				next_state = next_state.set(&apos;items&apos;, items)
+				
+				return this.strategy_resize_state(items, next_state)
+			}
+			
+			case &apos;remove_at_index&apos;: {
+				const index = arg_action.index
+				const items = arg_previous_state.get(&apos;items&apos;).delete(index)
+				next_state = next_state.set(&apos;items&apos;, items)
+				return next_state
+			}
+			
+			case &apos;remove_first&apos;: {
+				const items = arg_previous_state.get(&apos;items&apos;).delete(0)
+				next_state = next_state.set(&apos;items&apos;, items)
+				return next_state
+			}
+			
+			case &apos;remove_last&apos;: {
+				if ( T.isNumber(arg_action.count) )
+				{
+					const count = arg_action.count
+					
+					if (count &lt;= 0)
+					{
+						return arg_previous_state
+					}
+					
+					if ( ! arg_previous_state.has(&apos;items&apos;) )
+					{
+						return arg_previous_state
+					}
+					
+					let items = arg_previous_state.get(&apos;items&apos;)
+					const last = items.size
+					if ( (last - count) &lt; 0 )
+					{
+						return arg_previous_state.clear()
+					}
+					
+					items = items.splice(last - count, count)
+					return next_state.set(&apos;items&apos;, items)
+				}
+				
+				let items = arg_previous_state.get(&apos;items&apos;)
+				const index = items.size
+				items = items.delete(index)
+				
+				next_state = next_state.set(&apos;items&apos;, items)
+				return next_state
+			}
+		}
+		
+		return arg_previous_state
+	}
+	
+	
+	
+	/**
+	 * Handle component state changes.
+	 * 
+	 * @param {Immutable.Map} arg_previous_state - previous state map.
+	 * @param {Immutable.Map} arg_new_state - new state map.
+	 * 
+	 * @returns {nothing}
+	 */
+	handle_state_change(arg_previous_state, arg_new_state)
+	{
+		// console.log(context + &apos;:handle_state_change&apos;)
+
+		// GET WAITING UI STATE CHANGE ACTIONS
+		let ui_actions_stack = arg_new_state.get(&apos;ui_actions_stack&apos;, [])
+		ui_actions_stack = ui_actions_stack.toJS ? ui_actions_stack.toJS() : ui_actions_stack
+		
+		// LOOP ON WAITING ACTIONS
+		let action = undefined
+		while(this._state_action_index &lt; ui_actions_stack.length)
+		{
+			action = ui_actions_stack[this._state_action_index]
+			// console.log(context + &apos;:handle_state_change:action&apos;, action, ui_actions_stack)
+			this._state_action_index++
+
+			this.handle_state_change_action(action, arg_previous_state, arg_new_state)
+		}
+	}
+
+
+
+	/**
+	 * Handle component state changes action.
+	 * 
+	 * @param {object}        arg_action         - state change action
+	 * @param {Immutable.Map} arg_previous_state - previous state map.
+	 * @param {Immutable.Map} arg_new_state      - new state map.
+	 * 
+	 * @returns {nothing}
+	 */
+	handle_state_change_action(arg_action, arg_previous_state, arg_new_state)
+	{
+		// console.log(context + &apos;:handle_state_change_action:action&apos;, arg_action)
+
+		switch(arg_action.type)
+		{
+			case &apos;clear_items&apos;: {
+				this.ui_items_clear()
+				break
+			}
+			
+			case &apos;append&apos;: {
+				this.ui_items_append(arg_action.values, arg_action.count)
+				break
+			}
+			
+			case &apos;prepend&apos;: {
+				this.ui_items_prepend(arg_action.values, arg_action.count)
+				return
+			}
+			
+			case &apos;replace&apos;: {
+				this.ui_items_replace(arg_action.values, arg_action.count)
+				break
+			}
+			
+			case &apos;insert_at&apos;: {
+				this.ui_items_insert_at(arg_action.index, arg_action.values, arg_action.count)
+				break
+			}
+			
+			case &apos;remove_at_index&apos;: {
+				this.ui_items_remove_at(arg_action.index)
+				break
+			}
+			
+			case &apos;remove_first&apos;: {
+				this.ui_items_remove_first()
+				break
+			}
+			
+			case &apos;remove_last&apos;: {
+				this.ui_items_remove_last(arg_action.count)
+				break
+			}
+		}
+
+		if ( T.isFunction(this.strategy_resize_ui) )
+		{
+			this.strategy_resize_ui()
+		}
+	}
+	
+	
+	
+	// -----------------------------------------------------------------------------------------------------
+	// DEFINE UI HANDLERS FOR STATE UPDATE
+	// -----------------------------------------------------------------------------------------------------
+	
+	
+	
+	
+	/**
+	 * Get container items count.
+	 * 
+	 * @returns {integer}
+	 */
+	ui_items_get_count()
+	{
+		const dom_elem = this.get_dom_element()
+		return dom_elem.children.length
+	}
+	
+	
+	
+	/**
+	 * Erase container items.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_clear()
+	{
+		const dom_elem = this.get_dom_element()
+
+		while(dom_elem.hasChildNodes())
+		{
+			const child_elem = dom_elem.lastChild
+			dom_elem.removeChild(child_elem)
+		}
+	}
+	
+	
+	
+	/**
+	 * Append items to the container.
+	 * 
+	 * @param {array} arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_append(arg_items_array, arg_items_count)
+	{
+		assert( T.isArray(arg_items_array), context + &apos;:ui_items_append:bad items array&apos;)
+		assert( T.isNumber(arg_items_count), context + &apos;:ui_items_append:bad items count&apos;)
+		
+		// NOT YET IMPLEMENTED
+
+		const force_rendering = true
+		this.render(force_rendering)
+	}
+	
+	
+	
+	/**
+	 * Prepend items to the container.
+	 * 
+	 * @param {array} arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_prepend(arg_items_array, arg_items_count)
+	{
+		assert( T.isArray(arg_items_array), context + &apos;:ui_items_prepend:bad items array&apos;)
+		assert( T.isNumber(arg_items_count), context + &apos;:ui_items_prepend:bad items count&apos;)
+		
+		// NOT YET IMPLEMENTED
+
+		const force_rendering = true
+		this.render(force_rendering)
+	}
+	
+	
+	
+	/**
+	 * Replace container items.
+	 * 
+	 * @param {array} arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_replace(arg_items_array, arg_items_count)
+	{
+		assert( T.isArray(arg_items_array), context + &apos;:ui_items_replace:bad items array&apos;)
+		assert( T.isNumber(arg_items_count), context + &apos;:ui_items_replace:bad items count&apos;)
+		
+		// NOT YET IMPLEMENTED
+
+		const force_rendering = true
+		this.render(force_rendering)
+	}
+	
+	
+	
+	/**
+	 * Insert items at container position index.
+	 * 
+	 * @param {intege} arg_index - position index.
+	 * @param {array} arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_insert_at(arg_index, arg_items_array, arg_items_count)
+	{
+		assert( T.isArray(arg_items_array), context + &apos;:ui_items_replace:bad items array&apos;)
+		assert( T.isNumber(arg_items_count), context + &apos;:ui_items_replace:bad items count&apos;)
+		
+		// NOT YET IMPLEMENTED
+	}
+	
+	
+	
+	/**
+	 * Remove an item at given position.
+	 * 
+	 * @param {number} arg_index - item index.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_remove_at_index(arg_index)
+	{
+		assert( T.isNumber(arg_index), context + &apos;:ui_items_remove_at_index:bad index number&apos;)
+		
+		// NOT YET IMPLEMENTED
+	}
+	
+	
+	
+	/**
+	 * Remove a item at first position.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_remove_first()
+	{
+		// NOT YET IMPLEMENTED
+	}
+	
+	
+	
+	/**
+	 * Remove an item at last position.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_remove_last()
+	{
+		// NOT YET IMPLEMENTED
+	}
+
+
+
+	/**
+	 * Hide an element.
+	 * 
+	 * @param {Element} arg_element - DOM element to hide.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_hide_item(arg_element)
+	{
+		arg_element.style.display = &apos;none&apos;
+	}
+
+
+
+	/**
+	 * Show an element.
+	 * 
+	 * @param {Element} arg_element - DOM element to hide.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_show_item(arg_element)
+	{
+		arg_element.style.display = &apos;block&apos;
+	}
+
+
+
+	/**
+	 * Toggle items visibility belonging a given filter.
+	 * 
+	 * @param {string} arg_selector - items selector.
+	 * @param {string} arg_filter_text - filter string.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_filter(arg_selector, arg_filter_text)
+	{
+		console.log(context + &apos;:ui_items_filter:selector=%s:filter=%s&apos;,arg_selector, arg_filter_text)
+
+		const dom_element = this.get_dom_element()
+		const selected_elements = dom_element.querySelectorAll(arg_selector)
+		if ( ! T.isNodeList(selected_elements) || selected_elements.length == 0)
+		{
+			return
+		}
+
+		_.forEach(selected_elements,
+			(element)=&gt;{
+				const text = &apos;&apos; + this._get_dom_text(element)
+				if ( text.search(arg_filter_text) &gt;= 0 )
+				{
+					this.ui_items_show_item(element)
+				} else {
+					this.ui_items_hide_item(element)
+				}
+			}
+		)
+	}
+
+
+
+	/**
+	 * Show component.
+	 * 
+	 * @returns {nothing}
+	 */
+	show()
+	{
+		super.show()
+
+		const children = this.get_children_component()
+		_.forEach(children,
+			(child)=&gt;{
+				child.show()
+			}
+		)
+	}
+
+
+
+	/**
+	 * Hide component.
+	 * 
+	 * @returns {nothing}
+	 */
+	hide()
+	{
+		super.hide()
+
+		const children = this.get_children_component()
+		_.forEach(children,
+			(child)=&gt;{
+				child.hide()
+			}
+		)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

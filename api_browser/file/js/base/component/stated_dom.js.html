@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">js/base/component/stated_dom.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/base/component/stated_dom.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+import _ from &apos;lodash&apos;
+
+// COMMON IMPORTS
+import T   from &apos;devapt-core-common/dist/js/utils/types&apos;
+import uid from &apos;devapt-core-common/dist/js/utils/uid.js&apos;
+
+// BROWSER IMPORTS
+import BoundDom       from &apos;./bound_dom&apos;
+
+
+const context = &apos;browser/base/component/stated_dom&apos;
+
+
+
+/**
+ * @file UI stated dom class.
+ * 
+ * @author Luc BORIES
+ * @license Apache-2.0
+ * 
+ * @example:
+ * 	API
+ * 		-&gt;update():Promise - Update view with current state.
+ * 		-&gt;update_children():Promise - Update view with current state.
+ * 
+ * 		-&gt;clear():Promise - Clear component to initial values.
+ * 
+ *		-&gt;dispatch_update_state_action(arg_new_state):nothing - Dispatch update state action.
+ * 		-&gt;dispatch_update_state_value_action(arg_path, arg_value):nothing - Dispatch update state action.
+ * 
+ * 		-&gt;get_children_component():array - Get view children components.
+ * 
+ */
+export default class StatedDom extends BoundDom
+{
+	/**
+	 * Creates an instance of StatedDom.
+	 * 
+	 * @param {RuntimeBase}   arg_runtime     - client runtime.
+	 * @param {Immutable.Map} arg_state       - component initial state.
+	 * @param {string}        arg_log_context - context of traces of this instance (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_state, arg_log_context)
+	{
+		const log_context = arg_log_context ? arg_log_context : context
+		super(arg_runtime, arg_state, log_context)
+		
+		this.is_stated_dom   = true
+
+		// CHILDREN COMPONENTS
+		this._children_components = undefined
+
+		// DEBUG
+		// console.info(context + &apos;:constructor:creating component &apos; + this.get_name())
+		// this.enable_trace()
+	}
+
+
+
+	/**
+	 * Update view with current state.
+	 * 
+	 * @returns {Promise}
+	 */
+	update()
+	{
+		this.enter_group(&apos;update&apos;)
+
+		console.info(context + &apos;:update:%s&apos;, this.get_name())
+
+		this._ready_promise = this._ready_promise.then(
+			()=&gt;{
+				return this._update()
+			}
+		)
+
+		this.leave_group(&apos;update:async&apos;)
+		return this._ready_promise
+	}
+
+
+	_update()
+	{
+		this.debug(&apos;update:name=&apos; + this.get_name() + &apos;,dom_id=&apos; + this.get_dom_id() )
+
+		const new_elm = document.getElementById(this.get_dom_id())
+		const prev_elm = this.get_dom_element()
+		// console.log(prev_elm, context + &apos;:update:prev_elm&apos;)
+		// console.log(new_elm,  context + &apos;:update:new_elm&apos;)
+
+		if (!new_elm)
+		{
+			// this.leave_group(&apos;update&apos;)
+			return Promise.resolve()
+		}
+
+		if (prev_elm != new_elm)
+		{
+			this.debug(&apos;:update:prev_elm &lt;&gt; new_elm&apos;)
+			if (prev_elm.parentNode)
+			{
+				prev_elm.parentNode.removeChild(prev_elm)
+			}
+			this._dom_element = new_elm
+		}
+		
+		let promise = Promise.resolve()
+		if ( T.isFunction(this._update_self) )
+		{
+			this.debug(&apos;:update:call _update_self (async)&apos;)
+
+			promise = promise.then(
+				()=&gt;{
+					this._update_self(prev_elm, new_elm)
+				}
+			)
+		}
+
+		promise = promise.then(
+			()=&gt;
+			{
+				this.update_children()
+			}
+		)
+
+		return promise
+	}
+
+
+
+	/**
+	 * Update view with current state.
+	 * 
+	 * @returns {Promise}
+	 */
+	update_children()
+	{
+		this.enter_group(&apos;update_children&apos;)
+
+		this.get_children_component().forEach(
+			(component)=&gt;{
+				this.debug(&apos;:update_children:component=&apos; + component.get_name())
+				component.update()
+			}
+		)
+
+		this.leave_group(&apos;update_children&apos;)
+	}
+
+
+
+	/**
+	 * Clear component to initial values.
+	 * 
+	 * @returns {Promise}
+	 */
+	clear()
+	{
+		// TO OVERWRITE
+	}
+
+
+
+	/**
+	 * Get a named stream.
+	 * 
+	 * @param {string} arg_stream_name - stream name.
+	 * 
+	 * @returns {Stream|undefined} - found stream.
+	 */
+	get_named_stream(arg_stream_name)
+	{
+		switch(arg_stream_name.toLocaleLowerCase()) {
+			case &apos;runtime_logs&apos;: return this._runtime.logs_stream
+		}
+		
+		console.warn(context + &apos;:get_named_stream:%s:unknow named stream&apos;, this.get_name(), arg_stream_name.toLocaleLowerCase())
+		return undefined
+	}
+
+
+
+	/**
+	 * Dispatch update state action.
+	 * 
+	 * @param {Immutable.Map} arg_new_state - new state Immutable Map.
+	 * 
+	 * @returns {nothing}
+	 */
+	dispatch_update_state_action(arg_new_state)
+	{
+		if ( ! T.isObject(arg_new_state) )
+		{
+			return
+		}
+
+		const new_state = arg_new_state.toJS ? arg_new_state.toJS() : arg_new_state
+		// console.log(context + &apos;:dispatch_update_state_action:new state:&apos;, new_state)
+
+		const action = { type:&apos;ADD_JSON_RESOURCE&apos;, resource:this.get_name(), path:this.get_state_path(), json:new_state }
+		window.devapt().ui().store.dispatch(action)
+	}
+
+
+
+	/**
+	 * Dispatch update state action.
+	 * 
+	 * @param {array|string} arg_path - component state path.
+	 * @param {any} arg_value - component state value.
+	 * 
+	 * @returns {nothing}
+	 */
+	dispatch_update_state_value_action(arg_path, arg_value)
+	{
+		if (! T.isArray(arg_path) )
+		{
+			console.error(context + &apos;:dispatch_update_state_value_action:bad path array:path,value:&apos;, arg_path, arg_value)
+			return
+		}
+		// console.log(context + &apos;:dispatch_update_state_value_action:path,value:&apos;, arg_path, arg_value)
+		
+		const new_state = this.get_state().setIn(arg_path, arg_value)
+		this.dispatch_update_state_action(new_state)
+	}
+
+
+
+	/**
+	 * Get view children components.
+	 * 
+	 * @returns {array} - list of Component.
+	 */
+	get_children_component()
+	{
+		// SKIP FOR MENUBAR
+		if (this.is_menubar)
+		{
+			return []
+		}
+		
+		if ( ! this._children_components)
+		{
+			this._children_components = []
+
+			// GET APPLICATION STATE AND INIT APPLICATION STATE PATH
+			const ui = window.devapt().ui()
+			const current_app_state = ui.store.get_state()
+			const state_path = [&apos;views&apos;]
+
+			// GET COMPONENT DESCRIPTION AND CHILDREN
+			const component_desc = ui._ui_factory.find_component_desc(current_app_state, this.get_name(), state_path)
+			const children = component_desc ? component_desc.get(&apos;children&apos;, undefined) : undefined
+			const children_names = children ? Object.keys( children.toJS() ) : []
+			this.debug(&apos;:get_children_component:init with children_names:&apos;, children_names)
+
+			// GET COMPONENT ITEMS
+			const items = this.get_state_value(&apos;items&apos;, [])
+			this.debug(&apos;:get_children_component:init with items:&apos;, JSON.stringify(items))
+
+			const all_children = _.concat(children_names, items)
+			// console.info(context + &apos;:get_children_component:all_children:%s:&apos;, this.get_name(), all_children)
+
+			const unique_children = {}
+			all_children.forEach(
+				(item)=&gt;{
+					if ( T.isObject(item) )
+					{
+						this.debug(&apos;:get_children_component:loop on item object&apos;)
+						
+						if ( T.isString(item.view) )
+						{
+							if (item.viewitem in unique_children)
+							{
+								return
+							}
+
+							this.debug(&apos;:get_children_component:loop on item string:&apos;, item.view)
+							
+							const component = window.devapt().ui(item.view)
+							if (component &amp;&amp; component.is_component)
+							{
+								this._children_components.push(component)
+								unique_children[component.get_name()] = true
+								return
+							}
+
+							this.warn(&apos;:get_children_component:bad item component for:&apos;, item.view)
+							return
+						}
+
+						this.warn(&apos;:get_children_component:bad item object for:&apos;, JSON.stringify(item))
+						return
+					}
+					
+					if ( T.isString(item) )
+					{
+						if (item in unique_children)
+						{
+							return
+						}
+
+						this.debug(&apos;:get_children_component:loop on item string:&apos;, item)
+						const component = window.devapt().ui(item)
+						if (component &amp;&amp; component.is_component)
+						{
+							this._children_components.push(component)
+							unique_children[component.get_name()] = true
+							return
+						}
+
+						this.warn(&apos;:get_children_component:bad item component for:&apos;, item)
+						return
+					}
+
+					this.warn(&apos;:get_children_component:bad item type for:&apos;, item.toString())
+				}
+			)
+		}
+
+		
+		this.debug(&apos;:get_children_component:&apos;, this._children_components)
+		return this._children_components
+	}
+
+
+
+	/**
+	 * Render a component inside this element from a json description.
+	 * 
+	 * @param {object} arg_options - json source configuration.
+	 * 
+	 * @returns {nothing}
+	 */
+	register_and_render_inside_from_json(arg_options)
+	{
+		this.enter_group(&apos;register_and_render_inside_from_json&apos;)
+
+		const json = this.register_from_json(arg_options)
+
+		if (! T.isObject(json) )
+		{
+			this.leave_group(&apos;register_and_render_inside_from_json:error:bad json object&apos;)
+			return
+		}
+
+		this.render_inside_from_json(json.name, json)
+
+		this.leave_group(&apos;register_and_render_inside_from_json&apos;)
+	}
+
+
+
+	/**
+	 * Register a component description from a json content.
+	 * 
+	 * @param {object} arg_options - json source configuration.
+	 * 
+	 * @returns {nothing}
+	 */
+	register_from_json(arg_options)
+	{
+		this.enter_group(&apos;register_from_json&apos;)
+		
+		console.log(context + &apos;:register_from_json:options=&apos;, arg_options)
+		
+		if (arg_options.is_event_handler)
+		{
+			arg_options = arg_options.data
+		}
+
+		// CHECK CONFIGURATION
+		if ( ! T.isObject(arg_options) )
+		{
+			console.warn(context + &apos;:register_from_json:bad options object&apos;)
+			this.leave_group(&apos;register_from_json:error:bad options object&apos;)
+			return
+		}
+		if ( ! T.isString(arg_options.json_source_view) )
+		{
+			console.warn(context + &apos;:register_from_json:bad options.json_source_view string&apos;)
+			this.leave_group(&apos;register_from_json:error:bad options.json_source_view string&apos;)
+			return
+		}
+		if ( ! T.isString(arg_options.json_source_getter) )
+		{
+			console.warn(context + &apos;:register_from_json:bad options.json_source_getter string&apos;)
+			this.leave_group(&apos;register_from_json:error:bad options.json_source_getter string&apos;)
+			return
+		}
+		const source_object = this.get_runtime().ui().get(arg_options.json_source_view)
+		if ( ! T.isObject(source_object) || ! source_object.is_component )
+		{
+			console.warn(context + &apos;:register_from_json:%s:view=%s:bad json source component&apos;, this.get_name(), arg_options.json_source_view, source_object)
+			this.leave_group(&apos;register_from_json:error:bad json source component&apos;)
+			return
+		}
+		if ( ! (arg_options.json_source_getter in source_object) )
+		{
+			console.warn(context + &apos;:register_from_json:bad json source method for component&apos;)
+			this.leave_group(&apos;register_from_json:error:bad json source method for component&apos;)
+			return
+		}
+		if ( ! ( T.isFunction( source_object[arg_options.json_source_getter] )) )
+		{
+			console.warn(context + &apos;:register_from_json:bad json source method for component&apos;)
+			this.leave_group(&apos;register_from_json:error:bad json source method for component&apos;)
+			return
+		}
+
+		// GET JSON FROM SOURCE
+		try{
+			const json = source_object[arg_options.json_source_getter]()
+
+			// DEBUG
+			console.log(context + &apos;:register_from_json:json=&apos;, json)
+
+			// CHECK COMPONENT NAME
+			if ( ! T.isString(json.name) )
+			{
+				console.warn(context + &apos;:register_from_json:bad json.name string&apos;)
+				this.leave_group(&apos;register_from_json:error:bad json.name string&apos;)
+				return
+			}
+
+			// STORE COMPONENT DESCRIPTION
+			const action = { type:&apos;ADD_JSON_RESOURCE&apos;, resource:json.name, collection:&apos;views&apos;, json:json }
+			this.get_runtime().get_state_store().dispatch(action)
+
+			this.leave_group(&apos;register_from_json&apos;)
+			return json
+		}
+		catch(e) {
+			console.warn(context + &apos;:register_from_json:error %s&apos;, e)
+
+			this.leave_group(&apos;register_from_json:error:&apos; + e)
+			return undefined
+		}
+	}
+
+
+
+	/**
+	 * Render a component inside this element from a json description.
+	 * 
+	 * @param {string} arg_name - component name.
+	 * @param {object} arg_json_desc - component description.
+	 * 
+	 * @returns {nothing}
+	 */
+	render_inside_from_json(arg_name, arg_json_desc)
+	{
+		this.enter_group(&apos;render_inside_from_json&apos;)
+		
+		console.log(context + &apos;:render_inside_from_json:name and description:&apos;, arg_name, arg_json_desc)
+		
+		try{
+			// CREATE COMPONENT ELEMENT
+			const this_element = this.get_dom_element()
+			if ( ! this_element)
+			{
+				console.warn(context + &apos;:render_inside_from_json:bad dom element&apos;)
+				this.leave_group(&apos;render_inside_from_json:error:bad dom element&apos;)
+				return
+			}
+
+			const this_document = this_element.ownerDocument
+			const existing_element = this_document.getElementById(arg_name)
+			let sub_element = undefined
+			if (existing_element)
+			{
+				if (existing_element.parentElement == this_element)
+				{
+					sub_element = existing_element
+				} else {
+					console.warn(context + &apos;:render_inside_from_json:a previous element exist with given name=%s&apos;, arg_name)
+					this.leave_group(&apos;render_inside_from_json:error:bad dom element&apos;)
+					return
+				}
+			} else {
+				sub_element = this_element.ownerDocument.createElement(&apos;div&apos;)
+				sub_element.setAttribute(&apos;id&apos;, arg_name)
+				this_element.appendChild(sub_element)
+			}
+
+			const component = this.get_runtime().ui().create_local(arg_name, arg_json_desc)
+			component.render(true)
+			.then(
+				()=&gt;{
+					window.devapt().content_rendered()
+				}
+			)
+		} catch(e){
+			console.warn(context + &apos;:render_inside_from_json:error %s&apos;, e)
+			return
+		}
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

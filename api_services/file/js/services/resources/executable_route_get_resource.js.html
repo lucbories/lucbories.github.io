@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">js/services/resources/executable_route_get_resource.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#default-plugins">default_plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/default_plugins/services_default_plugin.js~DefaultServicesPlugin.html">DefaultServicesPlugin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_route.js~ExecutableRoute.html">ExecutableRoute</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-assets">services/assets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/assets_svc_provider.js~AssetsSvcProvider.html">AssetsSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/executable_route_assets.js~ExecutableRouteAssets.html">ExecutableRouteAssets</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-logs">services/logs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/logs/logs_svc_provider.js~LogsSvcProvider.html">LogsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-messages">services/messages</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/messages/messages_svc_provider.js~MessagesSvcProvider.html">MessagesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-metrics">services/metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics/metrics_svc_provider.js~MetricsSvcProvider.html">MetricsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-middlewares">services/middlewares</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/executable_route_middleware.js~ExecutableRouteMiddleware.html">ExecutableRouteMiddleware</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/middlewares_svc_provider.js~MiddlewaresSvcProvider.html">MiddlewaresSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-ping">services/ping</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/ping/ping_svc_provider.js~PingSvcProvider.html">PingSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-resources">services/resources</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/executable_route_get_resource.js~ExecutableRouteGetResources.html">ExecutableRouteGetResources</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/resources_svc_provider.js~ResourcesSvcProvider.html">ResourcesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-security">services/security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_service.js~SecurityService.html">SecurityService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_consumer.js~SecuritySvcConsumer.html">SecuritySvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_provider.js~SecuritySvcProvider.html">SecuritySvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-todo-crud">services/todo_crud</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_service.js~CrudService.html">CrudService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_consumer.js~CrudSvcConsumer.html">CrudSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_provider.js~CrudSvcProvider.html">CrudSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/executable_route_model_crud.js~ExecutableRouteModelCrud.html">ExecutableRouteModelCrud</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-topology">services/topology</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_service.js~TopologyService.html">TopologyService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_consumer.js~TopologySvcHostConsumer.html">TopologySvcHostConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/services/resources/executable_route_get_resource.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+import fs from &apos;fs&apos;
+
+// COMMON IMPORTS
+import T             from &apos;devapt-core-common/dist/js/utils/types&apos;
+import {get_runtime} from &apos;devapt-core-common/dist/js/base/runtime&apos;
+
+// SERVICES IMPORTS
+import ExecutableRoute from &apos;../../executables/executable_route&apos;
+
+
+/**
+ * Runtime instance.
+ * @private
+ * @type {RuntimeBase}
+ */
+const runtime = get_runtime()
+
+
+/**
+ * Contextual constant for this file logs.
+ * @private
+ */
+const context = &apos;server/services/base/executable_route_get_resources&apos;
+
+
+
+/**
+ * @file Get resource route registering class.
+ * @todo check resources accesses
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class ExecutableRouteGetResources extends ExecutableRoute
+{
+    /**
+     * Create a ExecutableRouteGetResources instance.
+	 * @extends ExecutableRoute
+	 * 
+	 * @param {ServiceProvider} arg_provider - service provider.
+	 * 
+	 * @returns {nothing}
+     */
+	constructor(arg_provider)
+	{
+		super(context)
+
+		// this.provider = arg_provider
+	}
+	
+	
+	
+    /**
+     * Get a collection resources list.
+	 * 
+     * @param {object} res - response instance
+     * @param {object} arg_application - Application instance.
+     * @param {object} arg_cfg_route - plain object route configuration.
+	 * 
+     * @returns {nothing}
+     */
+	send_resources_list(res, arg_application, arg_cfg_route)
+	{
+		this.info(&apos;LIST resources&apos;)
+				
+		// GET RESOURCES LIST
+		const resources_list = arg_application.get_resources_names(arg_cfg_route.collection)
+		
+		// SEND OUTPUT
+		res.contentType = &apos;json&apos;;
+		res.send({ resources: resources_list });
+	}
+	
+	
+	/**
+     * Callback for route handling.
+     * @override
+     * @param {object} arg_application - Application instance.
+     * @param {object} arg_cfg_route - plain object route configuration.
+     * @param {object} arg_data - plain object contextual datas.
+     * @param {function} route handler.
+     */
+	get_route_cb(arg_application, arg_cfg_route, arg_data)
+	{
+		let self = this
+		
+		return function exec_http(req, res, next)
+		{
+			// self.enable_trace()
+			
+			self.enter_group(&apos;ExecutableRouteGetResources.exec_http&apos;)
+			
+			// CHECK ARGS
+			assert(T.isString(arg_cfg_route.collection), context + &apos;:bad collection name&apos;)
+			// console.log(arg_cfg_route, &apos;arg_cfg_route&apos;)
+			
+			
+			// TODO: CHECK ACCESS TO RESOURCE FROM USER
+			
+			
+			
+			// LIST RESOURCES
+			if (! arg_cfg_route.item)
+			{
+				self.send_resources_list(res, arg_application, arg_cfg_route)
+				
+				self.leave_group(&apos;ExecutableRouteGetResources.exec_http&apos;)
+				return
+			}
+			assert( T.isString(arg_cfg_route.item), context + &apos;:bad collection item string&apos;)
+			
+			
+			// GET RESOURCE NAME
+			let resource = null
+			let resource_name = req.params[arg_cfg_route.item];
+			assert( T.isString(resource_name), context + &apos;:bad resource name [%s]&apos;, resource_name)
+			
+			if (resource_name.length == 0)
+			{
+				self.send_resources_list(res, arg_application, arg_cfg_route)
+				
+				self.leave_group(&apos;ExecutableRouteGetResources.exec_http&apos;)
+				return
+			}
+			
+			
+			// GET ONE RESOURCE
+			self.info(&apos;GET one resource&apos;)
+			if (arg_cfg_route.collection === &apos;*&apos;)
+			{
+				self.info(&apos;GET one resource [&apos; + resource_name + &apos;] of any collection&apos;)
+				
+				resource = arg_application.find_resource(resource_name)
+			}
+			else
+			{
+				self.info(&apos;GET one resource [&apos; + resource_name + &apos;] of one collection [&apos; + arg_cfg_route.collection + &apos;]&apos;)
+				
+				// LOOKUP RESOURCE
+				resource = arg_application.find_resource(resource_name, arg_cfg_route.collection)
+				if ( ! resource)
+				{
+					self.debug(&apos;resource not found [&apos; + resource_name + &apos;]&apos;)
+					console.error(&apos;bad resource type&apos;)
+					console.log(resource.$type, &apos;resource.$type&apos;)
+					console.log(arg_cfg_route.collection, &apos;arg_cfg_route.collection&apos;)
+					resource = null
+				}
+				
+				// CHECK RESOURCE TYPE
+				// if (resource &amp;&amp; resource.$type != arg_cfg_route.collection)
+				// {
+				// }
+			}
+			
+			// RESOURCE NOT FOUND ?
+			if ( ! T.isObject(resource) )
+			{
+				// SEND OUTPUT
+				res.status(404)
+				res.contentType = &apos;json&apos;
+				res.send({ error: &apos;Resource not found [&apos; + resource_name + &apos;]&apos; })
+				
+				// next( new Error(&apos;Resource not found [&apos; + resource_name + &apos;]&apos;) )
+				return
+			}
+			
+			
+			// TODO: SANITY CHECK OF RESOURCE CONFIG (connections...)
+			
+			
+			
+			// WRAP INCLUDED FILE
+			if ( resource.has_setting(&apos;include_file_path_name&apos;) )
+			{
+				self.debug(&apos;Process resource.include_file_path_name [%s]&apos;, resource.include_file_path_name)
+				
+				const file_path = resource.get_setting(&apos;include_file_path_name&apos;)
+				if ( T.isString(file_path) )
+				{
+					try
+					{
+						const file_content = self.include_file(self, resource_name, file_path)
+						resource.set_setting(&apos;include_file_content&apos;, file_content)
+					}
+					catch(e)
+					{
+						const error_msg = &apos;an error occures when loading file [&apos; + e.toString() + &apos;]&apos;
+						resource.set_setting(&apos;include_file_content&apos;, error_msg)
+						self.error(error_msg)
+						console.error(error_msg)
+					}
+				}
+			}
+			
+			
+			// SEND OUTPUT
+			res.contentType = &apos;json&apos;
+			res.send({ resource: resource.export_settings() })
+			
+			self.leave_group(&apos;ExecutableRouteGetResources.exec_http&apos;)
+			return
+		}
+	}
+	
+	
+    /**
+     * Load an asset file for a resource
+     * @param {object} self - this class instance
+     * @param {string} arg_resource_name - resource name
+     * @param {string} arg_file_path_name - file path name
+     * @returns {string} file content
+     */
+	include_file(self, arg_resource_name, arg_file_path_name)
+	{
+		const file_path = runtime.context.get_absolute_path(arg_file_path_name)
+		self.debug(&apos;Process file_path [%s]&apos;, file_path)
+		
+		
+		let content = fs.readFileSync(file_path, {encoding: &apos;utf-8&apos;} )
+		
+		if (! content)
+		{
+			var error_msg = context + &apos;:resource include file not found [&apos; + arg_resource_name + &apos;] for resource [&apos; + file_path + &apos;]&apos;
+			console.error(&apos;loading resource include file&apos;)
+			throw new Error(error_msg);
+		}
+		
+		
+		console.log(&apos;loading resource include file: return&apos;)
+		return content
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

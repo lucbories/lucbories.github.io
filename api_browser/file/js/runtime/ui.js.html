@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/runtime/ui.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/runtime/ui.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+// import assert from &apos;assert&apos;
+import _ from &apos;lodash&apos;
+import { fromJS } from &apos;immutable&apos;
+
+// COMMON IMPORTS
+import T                      from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+import Loggable               from &apos;../../../node_modules/devapt-core-common/dist/js/base/loggable&apos;
+import DefaultRenderingPlugin from &apos;../../../node_modules/devapt-core-common/dist/js/default_plugins/rendering_default_plugin&apos;
+import RenderingBuilder       from &apos;../../../node_modules/devapt-core-common/dist/js/rendering/rendering_builder&apos;
+import RenderingPlugin        from &apos;../../../node_modules/devapt-core-common/dist/js/plugins/rendering_plugin&apos;
+import Stream                 from &apos;../../../node_modules/devapt-core-common/dist/js/messaging/stream&apos;
+
+// BROWSER IMPORTS
+import UIFactory      from &apos;./ui_factory&apos;
+import UIRendering    from &apos;./ui_rendering&apos;
+import Page           from &apos;../components/page&apos;
+import LayoutSimple   from &apos;../base/layout_simple&apos;
+import DisplayCommand from &apos;../commands/display_command&apos;
+
+
+const context = &apos;browser/runtime/ui&apos;
+
+
+
+/**
+ * @file UI interaction class.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class UI extends Loggable
+{
+	/**
+	 * Create a UI instance.
+	 * 
+	 * 	API:
+	 * 		-&gt;constructor(arg_runtime, arg_store)
+	 * 
+	 * 		-&gt;is_loaded():boolean - Test if UI is loaded and is ready to process display commands.
+	 * 		
+	 * 		-&gt;create_display_command(arg_cmd_settings):DisplayCommand - Create a DisplayCommand instance.
+	 * 		-&gt;pipe_display_command(arg_display_command):nothing - Append a display command to the UI commands pipe.
+	 * 
+	 * 		-&gt;get_current_layout():Layout - Get current application layout.
+	 * 		-&gt;get_resource_description_resolver():function - Get a resolver function to find UI component description.
+	 * 		-&gt;get_rendering_function_resolver():function - Get a resolver function to find UI rendering function.
+	 * 		-&gt;get_rendering_class_resolver():Class - Get a resolver function to find UI component class.
+	 * 		
+	 * 		-&gt;load():nothing - Load plugins.
+	 * 
+	 * 		-&gt;get(arg_name):Component - Get a UI component by its name.
+	 * 		-&gt;create(arg_name):Promise - Create a UI component.
+	 * 		-&gt;create_local(arg_name, arg_component_desc):Component - Create a UI component.
+	 * 		
+	 * 		-&gt;register_rendering_plugin(arg_plugin_class):nothing - Register a browser rendering plugin.
+	 * 		-&gt;request_middleware(arg_middleware, arg_svc_route):Promise - Request server about middleware rendering.
+	 * 
+	 * @param {object} arg_runtime - client runtime.
+	 * @param {object} arg_store - UI components state store.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_store)
+	{
+		super(context, arg_runtime.get_logger_manager())
+
+		this.is_ui = true
+
+		this._runtime = arg_runtime
+		this.store = arg_store
+
+		this.classes = {}
+		this.classes.RenderingPlugin = RenderingPlugin
+		this.classes.DefaultRenderingPlugin = DefaultRenderingPlugin
+		
+		this._ui_factory = new UIFactory(arg_runtime, arg_store)
+		this._ui_rendering = new UIRendering(arg_runtime, this)
+		this._ui_builder = new RenderingBuilder(arg_runtime, this._ui_rendering._assets_urls_templates, undefined)
+		// this._ui_layout = undefined
+		this._ui_layout = new LayoutSimple(this._runtime, {name:&apos;main layout&apos;, type:&apos;simple&apos;})
+		this._ui_layout._ui = this
+
+		this._rendering_plugins = []
+		this._rendering_plugins_counter = 0
+		this._rendering_plugins_map = {}
+		this._ordered_used_plugins_name = []
+
+		this.page = {
+			menubar:undefined,
+			header:undefined,
+			breadcrumbs:undefined,
+			content:undefined,
+			footer:undefined
+		}
+
+		this.body_page = new Page()
+
+		this._display_command_waiting = []
+		this._display_command_timer = undefined
+		this._display_commands_pipe = new Stream()
+		this._display_commands_pipe.subscribe(
+			(cmd)=&gt;{
+				console.log(context + &apos;:pipe_display_command.subscribe:do&apos;, cmd.get_name(), cmd)
+				cmd.do()
+			}
+		)
+
+		// this.enable_trace()
+	}
+
+
+
+	/**
+	 * Test if UI is loaded and is ready to process display commands.
+	 * 
+	 * @returns {boolean} - true:UI is ready to process display commands,false:UI isn&apos;t ready.
+	 */
+	is_loaded()
+	{
+		return this._rendering_plugins_counter &gt; 0 &amp;&amp; this._rendering_plugins_counter == this._rendering_plugins.length
+	}
+
+
+	/**
+	 * Create a DisplayCommand instance.
+	 * 
+	 * @param {object} arg_cmd_settings - command settings.
+	 * 
+	 * @returns {DisplayCommand}
+	 */
+	create_display_command(arg_cmd_settings)
+	{
+		return new DisplayCommand(this._runtime, arg_cmd_settings)
+	}
+
+
+
+	/**
+	 * Append a display command to the UI commands pipe.
+	 * If UI isn&apos;t ready to process display command, delay append.
+	 * Commands are pushed into a stream.
+	 * 
+	 * @param {DisplayCommand} arg_display_command - display command to pipe.
+	 * 
+	 * @returns {nothing}
+	 */
+	pipe_display_command(arg_display_command)
+	{
+		if ( ! (T.isObject(arg_display_command) &amp;&amp; arg_display_command.is_display_command) )
+		{
+			console.warn(context + &apos;:pipe_display_command:bad display command&apos;, arg_display_command)
+			return
+		}
+
+		if ( ! this.is_loaded() )
+		{
+			console.log(context + &apos;:pipe_display_command:UI is not loaded&apos;)
+
+			this._display_command_waiting.push(arg_display_command)
+
+			if (! this._display_command_timer)
+			{
+				console.log(context + &apos;:pipe_display_command:create a timer&apos;)
+
+				const max_loops = 100
+				let loop_counter = 0
+				const finished_cb = ()=&gt;{
+					++loop_counter
+					if (loop_counter &gt; max_loops)
+					{
+						console.log(context + &apos;:pipe_display_command:UI is not loaded, delay of 50ms, max loops is reached=&apos;, max_loops)
+						return
+					}
+
+					if (! this.is_loaded())
+					{
+						console.log(context + &apos;:pipe_display_command:UI is not loaded, delay of 50ms&apos;)
+
+						this._display_command_timer = setTimeout(finished_cb, 50)
+						return
+					}
+
+					console.log(context + &apos;:pipe_display_command:UI is loaded&apos;)
+					this._display_command_timer = undefined
+					let cmd = this._display_command_waiting.shift()
+					while(cmd)
+					{
+						console.log(context + &apos;:pipe_display_command:shift cmd=&apos;, cmd.get_name(), cmd)
+						this._display_commands_pipe.push(cmd)
+						cmd = this._display_command_waiting.shift()
+					}
+				}
+
+				this._display_command_timer = setTimeout(finished_cb, 50)
+			}
+			return
+		}
+
+		console.log(context + &apos;:pipe_display_command:UI is already loaded&apos;, arg_display_command.get_name(), arg_display_command)
+		this._display_commands_pipe.push(arg_display_command)
+	}
+
+
+
+	/**
+	 * Get current application layout.
+	 * 
+	 * @returns {Layout}
+	 */
+	get_current_layout()
+	{
+		return this._ui_layout
+	}
+
+	
+	
+	/**
+	 * Get a resolver function to find UI component description.
+	 * 
+	 * @returns {function} - (string)=&gt;Immutable.Map|undefined.
+	 */
+	get_resource_description_resolver()
+	{
+		return (arg_name, arg_collection=undefined)=&gt;{
+			if ( T.isString(arg_collection) )
+			{
+				const result = this._ui_factory.find_component_desc(this.store.get_state(), arg_name, [arg_collection])
+				// console.log(&apos;get_resource_description_resolver:name=%s,collection=%s&apos;, arg_name, arg_collection, result)
+				return result.toJS()
+			}
+
+			const collections = [&apos;views&apos;, &apos;menubars&apos;]
+			let index = 0
+			while(collections.length &gt; index)
+			{
+				const result = this._ui_factory.find_component_desc(this.store.get_state(), arg_name, [collections[index]])
+				if (result)
+				{
+					// console.log(&apos;get_resource_description_resolver:name=%s,collection=%s&apos;, arg_name, collections[index], result)
+					return result.toJS()
+				}
+				index++
+			}
+			return undefined
+		}
+	}
+
+	
+	
+	/**
+	 * Get a resolver function to find UI rendering function.
+	 * 
+	 * @returns {function} - (string)=&gt;function.
+	 */
+	get_rendering_function_resolver()
+	{
+		return (arg_type)=&gt;{
+			// console.log(context + &apos;:get_rendering_function_resolver():type=&apos; + arg_type, this._ordered_used_plugins_name, this._rendering_plugins_map)
+
+			let not_found = true
+			let index = 0
+			let plugin = undefined
+			let f = undefined
+			while(this._ordered_used_plugins_name.length &gt; index &amp;&amp; not_found)
+			{
+				const plugin_name = this._ordered_used_plugins_name[index]
+				if (plugin_name in this._rendering_plugins_map)
+				{
+					plugin = this._rendering_plugins_map[plugin_name]
+					
+					f = plugin.find_rendering_function(arg_type)
+					if ( T.isFunction(f) )
+					{
+						not_found = false
+					}
+
+					// console.log(context + &apos;:get_rendering_function_resolver():type=&apos; + arg_type + &apos; iterate on plugin=%s, found=%b, function=&apos;, plugin.get_name(), not_found, f)
+				}
+				index++
+			}
+
+			if (! f)
+			{
+				console.warn(context + &apos;:get_rendering_function_resolver:resolver:type not found for [%s] in plugins [%s]&apos;, arg_type, this._ordered_used_plugins_name.toString())
+			}
+
+			return f
+		}
+	}
+
+	
+	
+	/**
+	 * Get a resolver function to find UI component class.
+	 * 
+	 * @returns {Class} - (string)=&gt;Class.
+	 */
+	get_rendering_class_resolver()
+	{
+		return (arg_type)=&gt;{
+			// console.log(context + &apos;:get_rendering_class_resolver():type=&apos; + arg_type, this._ordered_used_plugins_name, this._rendering_plugins_map)
+			
+			let not_found = true
+			let index = 0
+			let plugin = undefined
+			let c = undefined
+			while(this._ordered_used_plugins_name.length &gt; index &amp;&amp; not_found)
+			{
+				const plugin_name = this._ordered_used_plugins_name[index]
+				if (plugin_name in this._rendering_plugins_map)
+				{
+					plugin = this._rendering_plugins_map[plugin_name]
+
+					c = plugin.get_feature_class(arg_type)
+					if ( T.isFunction(c) )
+					{
+						not_found = false
+					}
+					
+					// console.log(context + &apos;:get_rendering_class_resolver():type=&apos; + arg_type + &apos; iterate on plugin=%s, found=%b, class=&apos;, plugin.get_name(), not_found, c)
+				}
+				index++
+			}
+			return c
+		}
+	}
+
+
+	/**
+	 * Load plugins.
+	 * 
+	 * @returns {nothing}
+	 */
+	load()
+	{
+		// this._ui_layout = new LayoutSimple(this._runtime, {name:&apos;main layout&apos;, type:&apos;simple&apos;})
+
+		// LOAD PLUGINS CLASSES
+		// console.log(&apos;LOAD PLUGINS CLASSES:name=DefaultRenderingPlugin&apos;)
+		this.register_rendering_plugin(DefaultRenderingPlugin)
+		this._rendering_plugins_counter += 1
+
+		const plugins_urls = this.store.get_state().get(&apos;plugins_urls&apos;, fromJS({})).toJS()
+		const ordered_plugins = this.store.get_state().get(&apos;used_plugins&apos;, fromJS([])).toJS()
+		this._ordered_used_plugins_name = ordered_plugins
+
+		_.forEach(ordered_plugins,
+			(plugin_name)=&gt;{
+				if (plugin_name in plugins_urls)
+				{
+					this._rendering_plugins_counter += 1
+
+					const url = plugins_urls[plugin_name]
+					const url_src = this._ui_rendering.get_asset_url(&apos;plugins/&apos; + url, &apos;script&apos;, this._runtime.get_session_credentials())
+					
+					// console.log(&apos;LOAD PLUGINS CLASSES:name=%s,url=%s&apos;, plugin_name, url_src)
+
+					this._ui_rendering.create_dom_url_element(document.body, &apos;script&apos;, &apos;js-&apos; + plugin_name, url_src, &apos;text/javascript&apos;)
+				}
+			}
+		)
+	}
+	
+	
+	
+	/**
+	 * Get a UI component by its name.
+	 * 
+	 * @param {string} arg_name - component name.
+	 * 
+	 * @returns {Component}
+	 */
+	get(arg_name)
+	{
+		return this._ui_factory.get(arg_name)
+	}
+	
+	
+	
+	/**
+	 * Test a UI component by its name.
+	 * 
+	 * @param {string} arg_name - component name.
+	 * 
+	 * @returns {boolean}
+	 */
+	has(arg_name)
+	{
+		return this._ui_factory.has(arg_name)
+	}
+	
+	
+	
+	/**
+	 * Create a UI component.
+	 * 
+	 * @param {string} arg_name - component name.
+	 * 
+	 * @returns {Promise} - Promise of a Component instance.
+	 */
+	create(arg_name)
+	{
+		const component_promise = this._ui_factory.create(arg_name)
+		return component_promise
+	}
+	
+	
+	
+	/**
+	 * Create a UI component.
+	 * 
+	 * @param {string} arg_name - component name.
+	 * @param {object} arg_component_desc - component description.
+	 * 
+	 * @returns {Component} - Component instance.
+	 */
+	create_local(arg_name, arg_component_desc)
+	{
+		const component = this._ui_factory.create_local(arg_name, arg_component_desc)
+		return component
+	}
+
+
+
+	/**
+	 * Register a browser rendering plugin.
+	 * 
+	 * @param{RenderingPlugin} arg_plugin - rendering plugin.
+	 * 
+	 * @returns {nothing}
+	 */
+	register_rendering_plugin(arg_plugin_class)
+	{
+		if ( ! arg_plugin_class)
+		{
+			console.warn(context + &apos;:register_rendering_browser:bad plugin class&apos;, arg_plugin_class)
+			return
+		}
+
+		const manager= {
+			is_plugins_manager:true
+		}
+		const plugin = new arg_plugin_class(this._runtime, manager)
+		plugin.find_rendering_function = (type)=&gt;{
+			const f =  arg_plugin_class.find_rendering_function(type)
+			return f
+		}
+
+		console.log(context + &apos;:register_rendering_browser:plugin=&apos; + plugin.get_name())
+		
+		this._rendering_plugins.push(plugin)
+		this._rendering_plugins_map[plugin.get_name()] = plugin
+	}
+
+
+
+	/**
+	 * Request server about middleware rendering.
+	 * 
+	 * @param {string} arg_middleware - middleware name.
+	 * @param {string} arg_svc_route  - requested route.
+	 * 
+	 * @returns {Promise} - Promise of a RenderingResult instance.
+	 */
+	request_middleware(arg_middleware, arg_svc_route)
+	{
+		this.enter_group(&apos;request_middleware:middleware=&apos; + arg_middleware + &apos; route=&apos; + arg_svc_route)
+
+		const promise = this._runtime.register_service(arg_middleware)
+		.then(
+			(service)=&gt;{
+				// console.log(context + &apos;:render_with_middleware:get rendering for &apos; + arg_cmd.url)
+				return service.get( { route:arg_svc_route } )
+			},
+			
+			(reason)=&gt;{
+				console.error(context + &apos;:render_with_middleware:error 0&apos;, reason)
+			}
+		)
+		.then(
+			(stream)=&gt;{
+				// console.log(context + &apos;:render_with_middleware:get listen stream for &apos; + arg_cmd.url)
+				return new Promise(
+					function(resolve, reject)
+					{
+						stream.subscribe(
+							(response)=&gt;{
+								resolve(response.datas)
+							}
+						)
+						stream.on_error(
+							(reason)=&gt;{
+								reject(reason)
+							}
+						)
+					}
+				)
+			},
+
+			(reason)=&gt;{
+				console.error(context + &apos;:render_with_middleware:error 1 for &apos; + arg_svc_route, reason)
+			}
+		)
+		.catch(
+			(reason)=&gt;{
+				console.error(context + &apos;:render_with_middleware:error for &apos; + arg_svc_route, reason)
+			}
+		)
+
+		this.leave_group(&apos;request_middleware:async&apos;)
+		return promise
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

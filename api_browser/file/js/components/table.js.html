@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/components/table.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/components/table.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+
+// COMMON IMPORTS
+import T             from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+import html_entities from &apos;../../../node_modules/devapt-core-common/dist/js/utils/html_entities&apos;
+
+// BROWSER IMPORTS
+import Container from &apos;../base/container&apos;
+
+
+const context = &apos;browser/components/table&apos;
+
+
+
+/**
+ * @file UI component class.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class Table extends Container
+{
+	
+	/**
+	 * Creates an instance of Table.
+	 * 
+	 * @param {object} arg_runtime - client runtime.
+	 * @param {object} arg_state - component state.
+	 * @param {string} arg_log_context - context of traces of this instance (optional).
+	 * 
+	 * API:
+	 * 		-&gt;get_children_component():array - Get view children components.
+	 * 
+	 * 		-&gt;ui_items_get_count():integer - Get container items count.
+	 * 
+	 * 		-&gt;ui_items_append(arg_items_array, arg_items_count):nothing  - Append tems to the container.
+	 * 		-&gt;ui_items_prepend(arg_items_array, arg_items_count):nothing - Prepend tems to the container.
+	 * 		-&gt;ui_items_insert_at(arg_index, arg_items_array, arg_items_count):nothing - Insert items at container position index.
+	 * 		-&gt;ui_items_replace(arg_items_array, arg_items_count):nothing - Replace container items.
+	 * 
+	 * 		-&gt;ui_items_remove_at_index(arg_index):nothing - Remove a row at given position.
+	 * 		-&gt;ui_items_remove_first():nothing - Remove a row at first position.
+	 * 		-&gt;ui_items_remove_last(arg_count):nothing - Remove a row at last position.
+	 * 
+	 * 		-&gt;build_row(arg_row_array, arg_row_index, arg_max_cols):string - Build a table row html tag.
+	 * 		-&gt;update_rows(arg_rows_array, arg_options):nothing - Append or prepend a row.
+	 * 		-&gt;update_section_collection(arg_collection_def, arg_collection_values):nothing - Update values on a table part.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_state, arg_log_context)
+	{
+		const log_context = arg_log_context ? arg_log_context : context
+		super(arg_runtime, arg_state, log_context)
+		
+		this.is_table_component = true
+		
+		// DEBUG
+		// this.enable_trace()
+	}
+
+
+
+	/**
+	 * Get view children components.
+	 * 
+	 * @returns {array} - list of Component.
+	 */
+	get_children_component()
+	{
+		if ( ! this._children_component)
+		{
+			this._children_component = []
+
+			const items = this.get_state_value(&apos;items&apos;, [])
+			const headers = this.get_state_value(&apos;headers&apos;, [])
+			const footers = this.get_state_value(&apos;headers&apos;, [])
+			// console.log(context + &apos;:get_children_component:init with items:&apos;, items)
+
+			headers.forEach(
+				(row)=&gt;{
+					if ( T.isArray(row) )
+					{
+						row.forEach(
+							(cell)=&gt;{
+								if ( T.isObject(cell) )
+								{
+									if (cell.is_component)
+									{
+										this._children_component.push(cell)
+										return
+									}
+
+									if ( T.isString(cell.view) )
+									{
+										const component = window.devapt().ui(cell.view)
+										if (component &amp;&amp; component.is_component)
+										{
+											this._children_component.push(component)
+										}
+									}
+								}
+							}
+						)
+				
+					}
+				}
+			)
+
+			footers.forEach(
+				(row)=&gt;{
+					if ( T.isArray(row) )
+					{
+						row.forEach(
+							(cell)=&gt;{
+								if ( T.isObject(cell) )
+								{
+									if (cell.is_component)
+									{
+										this._children_component.push(cell)
+										return
+									}
+
+									if ( T.isString(cell.view) )
+									{
+										const component = window.devapt().ui(cell.view)
+										if (component &amp;&amp; component.is_component)
+										{
+											this._children_component.push(component)
+										}
+									}
+								}
+							}
+						)
+				
+					}
+				}
+			)
+
+			items.forEach(
+				(row)=&gt;{
+					if ( T.isArray(row) )
+					{
+						row.forEach(
+							(cell)=&gt;{
+								if ( T.isObject(cell) )
+								{
+									if (cell.is_component)
+									{
+										this._children_component.push(cell)
+										return
+									}
+									if ( T.isString(cell.key) )
+									{
+										if ( T.isString(cell.view) )
+										{
+											const component = window.devapt().ui(cell.view)
+											if (component &amp;&amp; component.is_component)
+											{
+												this._children_component.push(component)
+											}
+										}
+									}
+								}
+							}
+						)
+				
+					}
+				}
+			)
+		}
+
+		return this._children_component
+	}
+	
+	
+	
+	/**
+	 * Get container items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_get_count()
+	{
+		const table_body_elem = document.getElementById(this.get_dom_id())
+		const tr_elems = table_body_elem.children
+		return tr_elems.length
+	}
+	
+	
+	
+	/**
+	 * Erase container items.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_clear()
+	{
+		const table_elem = this.get_dom_element()
+		const table_body_elem = table_elem.getElementsByTagName( &quot;tbody&quot; )[0]
+
+		while(table_body_elem.hasChildNodes())
+		{
+			const tr_elem = table_body_elem.lastChild
+			this.delete_row_elem(tr_elem)
+			table_body_elem.removeChild(tr_elem)
+		}
+	}
+	
+	
+	
+	/**
+	 * Append items to the container.
+	 * 
+	 * @param {array} arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_append(arg_items_array, arg_items_count)
+	{
+		// console.log(context + &apos;:ui_items_append:arg_items_array&apos;, arg_items_array, arg_items_count)
+
+		let arg_options = arg_options ? arg_options : {}
+		arg_options.mode = &apos;append&apos;
+		this.update_rows(arg_items_array, arg_options)
+	}
+	
+	
+	
+	/**
+	 * Prepend items to the container.
+	 * 
+	 * @param {array} arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_prepend(arg_items_array, arg_items_count)
+	{
+		// console.log(context + &apos;:ui_items_prepend:%s:count=%s:arg_items_array&apos;, this.get_name(), arg_items_count, arg_items_array)
+		
+		let arg_options = arg_options ? arg_options : {}
+		arg_options.mode = &apos;prepend&apos;
+		this.update_rows(arg_items_array, arg_options)
+	}
+	
+	
+	
+	/**
+	 * Replace container items.
+	 * 
+	 * @param {array} arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_replace(arg_items_array/*, arg_items_count*/)
+	{
+		// console.log(context + &apos;:ui_items_replace:arg_items_array&apos;, arg_items_array.length)
+		
+		// REMOVE ALL EXISTING ROWS
+		this.ui_items_clear()
+		
+		let arg_options = arg_options ? arg_options : {}
+		arg_options.mode = &apos;replace&apos;
+		this.update_rows(arg_items_array, arg_options)
+	}
+	
+	
+	
+	/**
+	 * Insert items at container position index.
+	 * 
+	 * @param {intege} arg_index - position index.
+	 * @param {array} arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_insert_at(arg_index, arg_items_array, arg_items_count)
+	{
+		assert( T.isArray(arg_items_array), context + &apos;:ui_items_replace:bad items array&apos;)
+		assert( T.isNumber(arg_items_count), context + &apos;:ui_items_replace:bad items count&apos;)
+		
+		// NOT YET IMPLEMENTED
+	}
+	
+	
+	
+	/**
+	 * Remove a row at given position.
+	 * 
+	 * @param {number} arg_index - row index.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_remove_at_index(arg_index)
+	{
+		assert( T.isNumber(arg_index), context + &apos;:ui_items_remove_at_index:bad index number&apos;)
+
+		const table_elem = this.get_dom_element()
+		const table_body_elem = table_elem.getElementsByTagName( &quot;tbody&quot; )[0]
+		if (arg_index &lt; 0 || arg_index &gt;= table_body_elem.children.length)
+		{
+			console.warn(context + &apos;:ui_items_remove_at_index:%s:bad item index=%s&apos;, this.get_name(), arg_index)
+			return
+		}
+		const tr_elem = table_body_elem.children[arg_index]
+		this.delete_row_elem(tr_elem)
+		table_body_elem.removeChild(tr_elem)
+	}
+	
+	
+	
+	/**
+	 * Remove a row at first position.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_remove_first()
+	{
+		const table_elem = this.get_dom_element()
+		const table_body_elem = table_elem.getElementsByTagName( &quot;tbody&quot; )[0]
+		const tr_elem = table_body_elem.firstElementChild()
+		this.delete_row_elem(tr_elem)
+		table_body_elem.removeChild(tr_elem)
+	}
+	
+	
+	
+	/**
+	 * Remove a row at last position.
+	 * 
+	 * @param {integer} arg_count - items count to remove.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_remove_last(arg_count=1)
+	{
+		// console.log(context + &apos;:ui_items_remove_last:arg_count&apos;, arg_count)
+		
+		if (arg_count &lt;= 0)
+		{
+			return
+		}
+		
+		const table_elem = this.get_dom_element()
+		const table_body_elem = table_elem.getElementsByTagName( &quot;tbody&quot; )[0]
+		const tr_elems = table_body_elem.children
+		const last_index = tr_elems.length - arg_count - 1
+		let row_index = last_index - 1 &gt;= 0 ? last_index - 1 : 0
+		for( ; row_index &lt; tr_elems.length ; row_index++)
+		{
+			const tr_elem = tr_elems[row_index]
+			this.delete_row_elem(tr_elem)
+			table_body_elem.removeChild(tr_elem)
+		}
+	}
+	
+	
+	
+	/**
+	 * Delete table rows DOM elements.
+	 *
+	 * @param {array} arg_rows_array - rows Element array.
+	 * 
+	 * @returns {Element} - TD DOM Element.
+	 */
+	delete_row_elem(arg_row_elem)
+	{
+	}
+	
+	
+	
+	/**
+	 * Build a row cell DOM element.
+	 *
+	 * @param {any}      arg_cell_value   - cell value.
+	 * @param {integer}  arg_row_index    - row index.
+	 * @param {integer}  arg_column_index - column index.
+	 * @param {Document} arg_document     - DOM document.
+	 * 
+	 * @returns {Element} - TD DOM Element.
+	 */
+	build_cell(arg_cell_value, arg_row_index, arg_column_index, arg_document)
+	{
+		const td_elem = arg_document.createElement(&apos;td&apos;)
+
+		td_elem.setAttribute(&apos;data-column-index&apos;, arg_column_index)
+		td_elem.innerText = arg_cell_value
+
+		return td_elem
+	}
+
+	
+	
+	/**
+	 * Build a table row DOM element.
+	 *
+	 * @param {array} arg_row_array - row values array.
+	 * @param {integer} arg_row_index - row index.
+	 * @param {integer} arg_max_cols - max columns number.
+	 * @param {integer} arg_depth        - path depth.
+	 * 
+	 * @returns {Element} - TD DOM Element.
+	 */
+	build_row(arg_row_array, arg_row_index, arg_max_cols/*, arg_depth*/)
+	{
+		const this_document = this.get_dom_element().ownerDocument
+		const row_elem = this_document.createElement(&apos;tr&apos;)
+		row_elem.setAttribute(&apos;data-row-index&apos;, arg_row_index)
+
+		// DEBUG
+		// console.log(context + &apos;:build_row:rows_index=%i row_array max_cols&apos;, arg_row_index, arg_row_array, arg_max_cols)
+		
+		if( ! T.isArray(arg_row_array) )
+		{
+			console.warn(context + &apos;:build_row:row_array is not an array at rows_index=%i&apos;, arg_row_index, arg_row_array)
+			return undefined
+		}
+
+		arg_row_array.forEach(
+			(cell, index) =&gt; {
+				if (arg_max_cols &amp;&amp; index &gt; arg_max_cols)
+				{
+					return
+				}
+
+				const td_elem = this.build_cell(cell, arg_row_index, index, this_document)
+				if (! td_elem)
+				{
+					console.warn(context + &apos;:build_row:bad cell element at rows_index=%i at column_index=%i&apos;, arg_row_index, index)
+					return
+				}
+
+				row_elem.appendChild(td_elem)
+			}
+		)
+		
+		return row_elem
+	}
+
+	
+	
+	/**
+	 * Build a table row DOM element.
+	 *
+	 * @param {Element} arg_body_element - table body element.
+	 * @param {array}   arg_row_array    - row values array.
+	 * @param {integer} arg_row_index    - row index.
+	 * @param {integer} arg_max_rows     - max rows number.
+	 * @param {integer} arg_max_cols     - max columns number.
+	 * @param {string}  arg_mode         - fill mode:append/prepend
+	 * @param {string}  arg_max_rows_action - action on max rows.
+	 * @param {integer} arg_depth        - path depth.
+	 * 
+	 * @returns {Element} - TD DOM Element.
+	 */
+	process_row_array(arg_body_element, arg_row_array, arg_row_index, arg_max_rows, arg_max_cols, arg_mode, arg_max_rows_action, arg_depth=0)
+	{
+		const rows_count = arg_body_element.children.length
+		const row_elem = this.build_row(arg_row_array, arg_row_index, arg_max_cols, arg_depth)
+		if (! row_elem)
+		{
+			console.warn(context + &apos;:update_rows:%s:at %i:max cols=%i:bad row element for &apos;, this.get_name(), arg_row_index, arg_max_cols, arg_row_array)
+			return
+		}
+
+		if (arg_max_rows &amp;&amp; (rows_count + arg_row_index) &gt; arg_max_rows)
+		{
+			if (arg_max_rows_action == &apos;remove_bottom&apos;)
+			{
+				// TODO
+				console.warn(&apos;TODO remove_bottom&apos;)
+			}
+			else if (arg_max_rows_action == &apos;remove_top&apos;)
+			{
+				// TODO
+				console.warn(&apos;TODO remove_top&apos;)
+			}
+			else
+			{
+				return
+			}
+			
+		}
+
+		// console.log(context + &apos;:update_rows:rows_index=%i mode=%s&apos;, row_index, arg_options.mode)
+		if (arg_mode == &apos;prepend&apos;)
+		{
+			arg_body_element.insertBefore(row_elem, arg_body_element.firstChild )
+		}
+		else
+		{
+			arg_body_element.appendChild(row_elem)
+		}
+	}
+	
+	
+	
+	/**
+	 * Append or prepend a row.
+	 *
+	 * @param {array} arg_rows_array - rows array.
+	 * @param {object} arg_options - operation settigs (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	update_rows(arg_rows_array, arg_options)
+	{
+		const arg_table_id = this.get_dom_id()
+		assert( T.isString(arg_table_id), context + &apos;:update_rows:bad table id string:&apos; + arg_table_id)
+		assert( T.isArray(arg_rows_array), context + &apos;:update_rows:bad rows array&apos;)
+		
+		const state = this.get_state()
+		
+		arg_options = arg_options ? arg_options : {}
+		arg_options.mode = arg_options.mode ? arg_options.mode : &apos;append&apos;
+		
+		const table_elem = this.get_dom_element()
+		const table_body_elem = table_elem.getElementsByTagName( &quot;tbody&quot; )[0]
+
+		const max_cols = T.isNumber(state.max_columns) ? state.max_columns : undefined
+		const max_rows = T.isNumber(state.max_rows) ? state.max_rows : undefined
+		const max_rows_action = T.isString(state.max_rows_action) ? state.max_rows_action : undefined
+
+		let fields_count = this.get_state_value(&apos;fields_count&apos;, 0)
+		if (fields_count == 0)
+		{
+			const headers = this.get_state_value(&apos;headers&apos;, [])
+			if ( T.isArray(headers) &amp;&amp; headers.length &gt; 0 )
+			{
+				const last_headers = headers[headers.length - 1]
+				if ( T.isArray(last_headers) )
+				{
+					fields_count = last_headers.length
+				}
+			}
+		}
+
+		// DEBUG
+		// console.log( context + &apos;:update_rows:arg_rows_array=&apos;, arg_rows_array)
+		// console.log( context + &apos;:update_rows:rows_count=%i&apos;, rows_count)
+		
+		arg_rows_array.forEach(
+			(arg_row_array, row_index) =&gt; {
+
+				const row_array = T.isArray(arg_row_array) ? arg_row_array : (fields_count == 1 ? [arg_row_array] : undefined)
+				if (! row_array)
+				{
+					console.warn(context + &apos;:update_rows:%s:at %i:fields_count=%i:bad row array for &apos;, this.get_name(), row_index, fields_count, arg_row_array)
+					return
+				}
+
+				this.process_row_array(table_body_elem, row_array, row_index, max_rows, max_cols, arg_options.mode, max_rows_action)
+			}
+		)
+	}
+
+
+	
+	/**
+	 * Update values on a table part.
+	 * 
+	 * @param {object} arg_collection_def - plain object map of collection definition ({collection_name:&quot;&quot;, collection_dom_id:&quot;&quot;}.
+	 * @param {object} arg_collection_values - plain object map of collection key/value pairs.
+	 * 
+	 * @returns {nothing}
+	 */
+	update_section_collection(arg_collection_def, arg_collection_values)
+	{
+		const table_id = this.get_dom_id()
+
+		// console.log(context + &apos;:update_section_collection:%s:def= values=&apos;, this.get_name(), arg_collection_def, arg_collection_values)
+
+		if (arg_collection_def &amp;&amp; arg_collection_def.collection_name &amp;&amp; arg_collection_def.collection_dom_id &amp;&amp; arg_collection_values)
+		{
+			const arg_collection_name = arg_collection_def.collection_name
+			
+			const collection_elem = document.getElementById(arg_collection_def.collection_dom_id)
+			if (!collection_elem)
+			{
+				// CALLED BY BINDING ON A VIEW WHICH IS NOT VISIBLE
+				// console.log(context + &apos;:update_section_collection:&apos; + this.get_name() + &apos;:collection element not found for id [&apos; + arg_collection_def.collection_dom_id + &apos;]&apos;)
+				return
+			}
+
+			var collection_dom_template_default = &quot;&lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;td&gt; {collection_key} &lt;/td&gt; &lt;td id=&apos;{collection_id}&apos;&gt;{collection_value}&lt;/td&gt; &lt;/tr&gt;&quot;
+			var collection_dom_template = arg_collection_def.collection_dom_template ? html_entities.decode(arg_collection_def.collection_dom_template) : collection_dom_template_default
+			
+			// DEBUG
+			// console.log(context + &apos;:update_section_collection:arg_collection_def.collection_dom_template=%s&apos;, arg_collection_def.collection_dom_template)
+			// console.log(context + &apos;:update_section_collection:collection_dom_template=%s&apos;, collection_dom_template)
+
+			var collection_key_safe = undefined
+			var collection_value = undefined
+			var collection_id = undefined
+			var collection_value_elem = undefined
+			var collection_value_html = undefined
+			var collection_keys = Object.keys(arg_collection_values)
+			var re = /[^a-zA-Z0-9]/gi
+
+			// console.log(&apos;update_metric_collection2:collection=%s keys= jqo=&apos;, arg_collection_name, collection_keys, arg_collection_jqo)
+			
+			collection_keys.forEach(
+				function(collection_key)
+				{
+					collection_key_safe = collection_key.replace(re, &apos;_&apos;)
+					// console.log(&apos;update_metric_collection2:collection=%s loop on key=&apos;, arg_collection_name, collection_key)
+
+					collection_value = arg_collection_values[collection_key]
+					collection_id = table_id + &quot;_&quot; + arg_collection_name + &quot;_&quot; + collection_key_safe
+					collection_value_elem = document.getElementById(collection_id)
+
+					if (! collection_value_elem )
+					{
+						// console.log(&apos;update_metric_collection2:collection=%s loop on key=&apos;, collection_key)
+
+						collection_value_html = collection_dom_template.replace(&apos;{collection_key}&apos;, collection_key).replace(&apos;{collection_id}&apos;, collection_id).replace(&apos;{collection_value}&apos;, collection_value)
+						
+						// console.log(context + &apos;:update_section_collection:html&apos;, collection_value_html)
+			
+						const tr_elem = document.createElement(&apos;tr&apos;)
+						tr_elem.innerHTML = collection_value_html
+						collection_elem.parentNode.insertBefore(tr_elem, collection_elem.nextSibling)
+						collection_value_elem = document.getElementById(collection_id)
+					}
+					
+					collection_value_elem.textContent = collection_value
+				}
+			)
+		}
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

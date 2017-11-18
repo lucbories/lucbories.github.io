@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/base/runtime.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/runtime.js~Runtime.html">Runtime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/security.js~Security.html">Security</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/transaction.js~Transaction.html">Transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-runtime_singleton">runtime_singleton</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics">metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/metric_duration.js~MetricDuration.html">MetricDuration</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-base">metrics/base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_collector.js~MetricsCollector.html">MetricsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_record.js~MetricsRecord.html">MetricsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_reducer.js~MetricsReducer.html">MetricsReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_state.js~MetricsState.html">MetricsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-bus">metrics/bus</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_collector.js~MetricsBusCollector.html">MetricsBusCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_record.js~MetricsBusRecord.html">MetricsBusRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_reducer.js~MetricsBusReducer.html">MetricsBusReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_state.js~MetricBusState.html">MetricBusState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-host">metrics/host</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_collector.js~MetricsHostCollector.html">MetricsHostCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_record.js~MetricsHostRecord.html">MetricsHostRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_reducer.js~MetricsHostReducer.html">MetricsHostReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_state.js~MetricHostState.html">MetricHostState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-http">metrics/http</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_collector.js~MetricsHttpCollector.html">MetricsHttpCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_record.js~MetricsHttpRecord.html">MetricsHttpRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_reducer.js~MetricHttpReducer.html">MetricHttpReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_state.js~MetricsHttpState.html">MetricsHttpState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-nodejs">metrics/nodejs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_collector.js~MetricsNodeJsCollector.html">MetricsNodeJsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_record.js~MetricsNodeJsRecord.html">MetricsNodeJsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_reducer.js~MetricsNodeReducer.html">MetricsNodeReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_state.js~MetricNodeJsState.html">MetricNodeJsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#nodes">nodes</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/bus_node_feature.js~BusNodeFeature.html">BusNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/metrics_node_feature.js~MetricsNodeFeature.html">MetricsNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node.js~Node.html">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_feature.js~NodeFeature.html">NodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_messaging.js~NodeMessaging.html">NodeMessaging</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/servers_node_feature.js~ServersNodeFeature.html">ServersNodeFeature</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#plugins">plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/features_manager.js~FeaturesManager.html">FeaturesManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_factory.js~PluginsFactory.html">PluginsFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_manager.js~PluginsManager.html">PluginsManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/rendering_manager.js~RenderingManager.html">RenderingManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_manager.js~ServersManager.html">ServersManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_plugin.js~ServersPlugin.html">ServersPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/services_manager.js~ServicesManager.html">ServicesManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/runtime_executable.js~RuntimeExecutable.html">RuntimeExecutable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage0_create_local_node_executable.js~RuntimeStage0Executable.html">RuntimeStage0Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage1_define_topology_executable.js~RuntimeStage1Executable.html">RuntimeStage1Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage2_load_local_topology_executable.js~RuntimeStage2Executable.html">RuntimeStage2Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage3_start_local_node_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage3_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage4_executable.js~RuntimeStage4Executable.html">RuntimeStage4Executable</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security">security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_manager.js~AuthenticationManager.html">AuthenticationManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin.js~AuthenticationPlugin.html">AuthenticationPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin_lowdb.js~AuthenticationLowDbPlugin.html">AuthenticationLowDbPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_wrapper.js~AuthenticationWrapper.html">AuthenticationWrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authorization_manager.js~AuthorizationManager.html">AuthorizationManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security-todo">security/todo</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport.js~AuthenticationPluginPassport.html">AuthenticationPluginPassport</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local.js~AuthenticationPluginPassportLocal.html">AuthenticationPluginPassportLocal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_db.js~AuthenticationPluginPassportLocalDb.html">AuthenticationPluginPassportLocalDb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_file.js~AuthenticationPluginPassportLocalFile.html">AuthenticationPluginPassportLocalFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#servers">servers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/express_server.js~ExpressServer.html">ExpressServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/logs_server.js~LogsServer.html">LogsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/metrics_server.js~MetricsServer.html">MetricsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/restify_server.js~RestifyServer.html">RestifyServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/routable_server.js~RoutableServer.html">RoutableServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/server.js~Server.html">Server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServerTypes">ServerTypes</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">services</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/routes_svc_consumer.js~RoutesSvcConsumer.html">RoutesSvcConsumer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-uused-base">services/uused_base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_service_exec_provider.js~ServiceExecProvider.html">ServiceExecProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_socketio_service_provider.js~SocketIOServiceProvider.html">SocketIOServiceProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/base/runtime.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+import { fromJS } from &apos;immutable&apos;
+import os from &apos;os&apos;
+
+// COMMON IMPORTS
+import T                   from &apos;devapt-core-common/dist/js/utils/types&apos;
+import {SOURCE_LOCAL_FILE} from &apos;devapt-core-common/dist/js/datas/providers/json_provider&apos;
+import Context             from &apos;devapt-core-common/dist/js/base/context&apos;
+import RuntimeBase         from &apos;devapt-core-common/dist/js/base/runtime_base&apos;
+import topology_registry   from &apos;devapt-core-common/dist/js/topology/registry/index&apos;
+import {register_runtime}  from &apos;devapt-core-common/dist/js/base/runtime&apos;
+
+// SERVER IMPORTS
+import Transaction         from &apos;./transaction&apos;
+import Security from &apos;./security&apos;
+import * as exec from &apos;../runtime/index&apos;
+
+
+/**
+ * Contextual constant for this file logs.
+ * @private
+ * @type {string}
+ */
+const context = &apos;server/base/runtime&apos;
+
+
+/**
+ * Console logger class path file.
+ * @type {string}
+ */
+const logger_console_file = &apos;devapt-core-common/dist/js/loggers/logger_console&apos;
+
+
+/**
+ * Default runtime settings.
+ * @type {object}
+ */
+const default_settings = {
+	&apos;is_master&apos;:false,
+	&apos;name&apos;: null,
+
+	&apos;master&apos;:{
+		&apos;name&apos;: null,
+		&apos;host&apos;:&apos;localhost&apos;,
+		&apos;port&apos;:5000
+	},
+	
+	&apos;settings_provider&apos;: {
+		&apos;source&apos;:SOURCE_LOCAL_FILE,
+		&apos;relative_path&apos;:&apos;apps/world.json&apos;
+	}
+}
+
+
+
+/**
+ * @file Runtime class - main library interface.
+ * 
+ * @author Luc BORIES
+ * 
+ * @license Apache-2.0
+ */
+class Runtime extends RuntimeBase
+{
+	/**
+	 * Create a Runtime instance.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor()
+	{
+		super(context)
+		
+		// SET DEFAULT ATTRIBUTES VALUES
+		
+		/**
+		 * Class test flag.
+		 * @type {boolean}
+		 */
+		this.is_server_runtime = true
+		
+		/**
+		 * Is master node flag.
+		 * @type {boolean}
+		 */
+		this.is_master = false
+		
+		/**
+		 * Unique node id.
+		 * @type {string}
+		 */
+		this.uid = os.hostname() + &apos;_&apos; + process.pid
+		
+		/**
+		 * Runtime settings.
+		 * @private
+		 * @type {Immutable.Map}
+		 */
+		this.$settings = undefined
+		
+		/**
+		 * Runtime node.
+		 * @type {Node}
+		 */
+		this.node = null
+		
+		/**
+		 * Plugins factory instance.
+		 * @type {PluginsFactory}
+		 */
+		this.plugins_factory = undefined
+
+		/**
+		 * Runtime context instance.
+		 * @type {Context}
+		 */
+		this.context = new Context(this)
+
+		/**
+		 * Security manager instance.
+		 * @type {SecurityManager}
+		 */
+		this.security_mgr = new Security(this, context, { &apos;logger_manager&apos;:this.get_logger_manager() } )
+		
+		/**
+		 * Topology state registry.
+		 * @private
+		 * @type {TopologyRegistry}
+		 */
+		this._state_store = topology_registry
+
+		/**
+		 * Topology state registry.
+		 * @type {TopologyRegistry}
+		 */
+		this.topology_registry = topology_registry
+
+		/**
+		 * Topology world definition instance.
+		 * @type {TopologyDefineWorld}
+		 */
+		this.defined_world_topology = undefined
+		
+		/**
+		 * Topology world deployment instance.
+		 * @type {TopologyDeploymentWorld}
+		 */
+		this.deployed_local_topology= undefined
+
+		/**
+		 * Servers using socketio.
+		 * @type {object}
+		 */
+		this.socketio_servers = {}
+		
+		this.info(&apos;Runtime is created&apos;)
+	}
+	
+	
+	
+	/**
+	 * Get runtime context.
+	 * 
+	 * @returns {Context}
+	 */
+	get_context()
+	{
+		return this.context
+	}
+	
+	
+	
+	/**
+	 * Get runtime node.
+	 * 
+	 * @returns {Node}
+	 */
+	get_node()
+	{
+		return this.node
+	}
+	
+	
+	
+	/**
+	 * Get runtime unique identifier.
+	 * 
+	 * @returns {string}
+	 */
+	get_uid()
+	{
+		return this.uid
+	}
+	
+	
+	
+	/**
+	 * Get topology runtime singleton.
+	 * 
+	 * @returns {object}
+	 */
+	get_registry()
+	{
+		return this.topology_registry
+	}
+	
+	
+	
+	/**
+	 * Get defined topology runtime singleton.
+	 * 
+	 * @returns {TopologyDefineWorld} - defined world topology.
+	 */
+	get_defined_topology()
+	{
+		return this.defined_world_topology
+	}
+	
+	
+	
+	/**
+	 * Get deployed topology runtime singleton.
+	 * 
+	 * @returns {TopologyDeployLocalNode} - deployed local node topology.
+	 */
+	get_deployed_topology()
+	{
+		return this.deployed_local_topology
+	}
+	
+	
+	
+	/**
+	 * Load runtime settings.
+	 * 
+	 * @param {object} arg_settings - runtime settings.
+	 * 
+	 * @returns {object} promise
+	 */
+	load(arg_settings)
+	{
+		const self = this
+
+		// MERGE DEFAULT AND RUNTIME SETTINGS
+		default_settings.runtime = this
+		arg_settings.runtime = this
+		this.$settings = fromJS( Object.assign(default_settings, arg_settings) )
+		// console.log(context + &apos;:load:runtime.$settings&apos;, this.$settings)
+
+		// SET DEFAULT LOGGER
+		const trace_stages_enabled = this.$settings.getIn([&apos;trace&apos;, &apos;stages&apos;, &apos;enabled&apos;], false)
+		let console_logger_index = undefined
+		let console_logger_uid = undefined
+		if ( trace_stages_enabled )
+		{
+			const LoggerConsole = require(logger_console_file).default
+
+			// console.log(context + &apos;:load:add console logger&apos;)
+			
+			const console_settings = {
+				enabled:true
+			}
+			const logger = new LoggerConsole(true, console_settings)
+			console_logger_uid = logger.uid
+			this._logger_manager.loggers.push(logger)
+			console_logger_index = this._logger_manager.loggers.length - 1
+			// console.log(context + &apos;:load:add console logger index=&apos; + console_logger_index)
+
+			this.enable_trace()
+		}
+
+		// TRACES ARE ACTIVE IF ENABLED
+		this.separate_level_1()
+		this.enter_group(&apos;load&apos;)
+		
+		this.is_master = this.get_setting(&apos;is_master&apos;, false)
+		// console.log(context + &apos;:load:is_master&apos;, this.is_master, this.get_settings_js())
+		
+		const stage0 = new exec.RuntimeStage0Executable(this._logger_manager)
+		const stage1 = new exec.RuntimeStage1Executable(this._logger_manager)
+		const stage2 = new exec.RuntimeStage2Executable(this._logger_manager)
+		const stage3 = new exec.RuntimeStage3Executable(this._logger_manager)
+		const execs = [stage0, stage1, stage2, stage3]
+
+		const tx = new Transaction(&apos;runtime&apos;, &apos;startup&apos;, &apos;loading&apos;, { runtime:this, logger_manager:this._logger_manager }, execs, Transaction.SEQUENCE)
+		// console.log(context + &apos;:load:before tx new&apos;)
+
+		tx.prepare({runtime:this, logger_manager:this._logger_manager})
+		// console.log(context + &apos;:load:after tx prepare&apos;)
+
+		const tx_promise = tx.execute(null)
+		// console.log(context + &apos;:load:after tx execute&apos;)
+
+		if (console_logger_index &gt;= 0)
+		{
+			// console.log(context + &apos;:load:remove runtime loading console logger&apos;)
+			tx_promise.then(
+				() =&gt; {
+					if (self.get_logger_manager().loggers.length &gt; console_logger_index &amp;&amp; self.get_logger_manager().loggers[console_logger_index].get_uid() == console_logger_uid)
+					{
+						console.log(context + &apos;:load:remove console logger at &apos; + console_logger_index)
+						self.get_logger_manager().loggers.splice(console_logger_index, 1)
+					}
+				}
+			)
+		}
+
+		this.leave_group(&apos;load&apos;)
+		this.separate_level_1()
+		return tx_promise
+	}
+
+	
+	
+	/**
+	 * Get security object.
+	 * @returns {Security}
+	 */
+	security()
+	{
+		assert( T.isObject(this.security_mgr) &amp;&amp; this.security_mgr.is_security, context + &apos;:bad security object&apos;)
+		return this.security_mgr
+	}
+	
+	
+	/**
+	 * Get plugins factory object.
+	 * @returns {PluginsFactory}
+	 */
+	get_plugins_factory()
+	{
+		assert( T.isObject(this.plugins_factory) &amp;&amp; this.plugins_factory.is_plugins_factory, context + &apos;:bad plugins factory object&apos;)
+		return this.plugins_factory
+	}
+	
+	
+	
+	/**
+	 * Register and configure a socketio server.
+	 * 
+	 * @param {string} arg_server_name - bound server name.
+	 * @param {object} arg_socketio - socketio server.
+	 * 
+	 * @returns {nothing}
+	 */
+	add_socketio(arg_server_name, arg_socketio)
+	{
+		const self = this
+		assert( T.isString(arg_server_name), context + &apos;:add_socketio:bad server name&apos;)
+		assert( T.isObject(arg_socketio) &amp;&amp; arg_socketio.emit &amp;&amp; arg_socketio.on, context + &apos;:add_socketio:bad socketio server&apos;)
+		
+		self.socketio_servers[arg_server_name] = arg_socketio
+		
+		arg_socketio.on(&apos;connection&apos;,
+			function (socket)
+			{
+				console.info(context + &apos;:add_socketio:new connection on /&apos;)
+				
+				// ROOT
+				socket.on(&apos;disconnect&apos;,
+					function()
+					{
+						console.info(context + &apos;:add_socketio:new disconnection on /&apos;)
+						self.on_socketio_disconnect()
+					}
+				)
+				
+				self.on_socketio_connect(arg_socketio, socket)
+			}
+		)
+	}
+	
+	
+	/**
+	 * On socketio server connect event.
+	 * @param {object} arg_socketio - socketio server.
+	 * @param {object} arg_socket - client socket.
+	 * @returns {nothing}
+	 */
+	on_socketio_connect(arg_socketio, arg_socket)
+	{
+		assert( T.isObject(arg_socketio) &amp;&amp; arg_socketio.emit &amp;&amp; arg_socketio.on, context + &apos;:on_socketio_connect:bad socketio server&apos;)
+		assert( T.isObject(arg_socket) &amp;&amp; arg_socket.emit &amp;&amp; arg_socket.on, context + &apos;:on_socketio_connect:bad socketio socket client&apos;)
+
+		console.info(context + &apos;:on_socketio_connect:socket connected&apos;)
+		
+		arg_socket.emit(&apos;welcome on /&apos;, { from: &apos;server runtime&apos; })
+	}
+	
+	
+	/**
+	 * On socketio server disconnect event.
+	 * @returns {nothing}
+	 */
+	on_socketio_disconnect()
+	{
+		console.info(context + &apos;:on_socketio_disconnect:socket disconnected&apos;)
+	}
+}
+
+
+/**
+ * Runtime singleton instance.
+ * @private
+ * @type {Runtime}
+ */
+const runtime_singleton = new Runtime()
+register_runtime(runtime_singleton)
+
+/**
+ * Runtime singleton instance.
+ * @type {Runtime}
+ */
+export default runtime_singleton
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/runtime/service.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/runtime/service.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+
+// COMMON IMPORTS
+import T             from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+import { transform } from &apos;../../../node_modules/devapt-core-common/dist/js/utils/transform&apos;
+import Stream        from &apos;../../../node_modules/devapt-core-common/dist/js/messaging/stream&apos;
+
+// BROWSER IMPORT
+import ServiceOperation from &apos;./service_operation&apos;
+import DEFAULT_OPS      from &apos;./service_default_ops&apos;
+
+
+const context = &apos;browser/runtime/service&apos;
+
+
+
+
+/**
+ * @file client Service class.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class Service
+{
+	/**
+	 * Create a service wrapper instance.
+	 * 
+	 * @param {string} arg_svc_name - service name.
+	 * @param {object} arg_svc_settings - service settiings.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_svc_name, arg_svc_settings)
+	{
+		this.$name = arg_svc_name
+		this.is_service = true
+		this.execute_on_browser = false
+		
+		// MAP OF POLLING TIMERS: name =&gt; timer id
+		this.timers = {}
+		
+		this.load(arg_svc_settings)
+	}
+
+
+
+	/**
+	 * Get service name.
+	 * 
+	 * @returns {string}
+	 */
+	get_name()
+	{
+		return this.$name
+	}
+	
+	
+	
+	/**
+	 * Load service settings.
+	 * 
+	 * @param {object} arg_settings - runtime settings.
+	 * 
+	 * @returns {nothing}
+	 */
+	load(arg_settings)
+	{
+		const self = this
+		// console.log(context + &apos;:load: name=&apos; + this.$name + &apos; settings=&apos;, arg_settings)
+		
+		// SERVICE EXECUTION IS BROWSER OR SERVER (default)
+		if (&apos;execution&apos; in arg_settings)
+		{
+			if (arg_settings.execution == &apos;browser&apos;)
+			{
+				this.execute_on_browser = true
+			}
+		}
+		
+		// GET SERVICES OPERATIONS
+		let ops = DEFAULT_OPS
+		if (&apos;operations&apos; in arg_settings)
+		{
+			ops = arg_settings[&apos;operations&apos;]
+		}
+		// console.log(context + &apos;:load: name=&apos; + this.$name + &apos; ops=&apos;, ops)
+		
+		// GET POLLERS AND TIMELINE SETTINGS
+		const pollers_settings = (&apos;pollers&apos; in arg_settings) ? arg_settings.pollers : undefined
+		const timeline_settings = (&apos;timeline&apos; in arg_settings) ? arg_settings.timeline : undefined
+		// console.log(context + &apos;:load:settings.pollers=&apos;, pollers_settings)
+
+		// CONFIGURE OPERATIONS
+		this.$ops = ops
+		const svc_path = &apos;/&apos; + this.$name
+		const svc_socket = window.io(svc_path)
+		self.socket = svc_socket
+		
+		this.$ops.forEach(
+			(operation) =&gt; {
+				const op_name = operation
+				// console.log(context + &apos;:load:svc=%s:op=%s&apos;, this.get_name(), op_name)
+				
+				// OPERATION POLLER: REPEAT EVERY xxx MILLISECONDS FOR GLOBAL SETTINGS
+				if (! this.execute_on_browser &amp;&amp; pollers_settings &amp;&amp; (op_name in pollers_settings))
+				{
+					const pollers_op_settings = pollers_settings[op_name]
+					// console.log(&apos;service has poller for operation:&apos; + op_name, pollers_op_settings)
+
+					this.create_poller(pollers_op_settings, op_name, arg_settings.credentials, svc_socket, [])
+				}
+
+				// OPERATION EXECUTION
+				const svc_operation = new ServiceOperation(op_name, {service:this})
+				self[op_name] = (arg_operands) =&gt; {
+					// console.log(context + &apos;:op:%s:%s:cfg=&apos;, this.get_name(), op_name, arg_operands)
+
+					if (this.execute_on_browser)
+					{
+						return svc_operation.execute_on_browser(arg_operands, arg_settings.credentials)
+					}
+
+					return svc_operation.execute_on_server(svc_socket, svc_path, arg_operands, arg_settings.credentials, arg_settings.session_uid)
+				}
+				self[op_name].operation = svc_operation
+
+				// OPERATION TIMELINE: HAS HISTORY?
+				self[op_name].timelines = {}
+				if (! this.execute_on_browser &amp;&amp; timeline_settings &amp;&amp; (op_name in timeline_settings))
+				{
+					this.create_timeline(op_name, svc_socket, timeline_settings)
+				}
+			}
+		)
+	}
+
+
+	
+	/**
+	 * Create a timer.
+	 * 
+	 * @param {string}	arg_timer_name - timer unique name.
+	 * @param {function} arg_timer_cb - timer callback function.
+	 * @param {integer} arg_delay - timer interval integer in milliseconds.
+	 * @param {boolean} arg_force_create - if true delete existing timer and recreate it (default=false).
+	 * 
+	 * @returns {nothing}
+	 */
+	create_timer(arg_timer_name, arg_timer_cb, arg_delay, arg_force_create = false)
+	{
+		assert( T.isString(arg_timer_name), context + &apos;:create_timer:bad timer name string&apos;)
+		assert( T.isFunction(arg_timer_cb), context + &apos;:create_timer:bad timer callback function&apos;)
+		assert( T.isNumber(arg_delay), context + &apos;:create_timer:bad timer delay integer&apos;)
+		assert( T.isBoolean(arg_force_create), context + &apos;:create_timer:bad force create boolean&apos;)
+		
+		// console.log(&apos;create_timer&apos;, arg_timer_name, this.timers)
+		
+		if (arg_timer_name in this.timers)
+		{
+			// console.log(context + &apos;:create_timer:timer exists name=&apos; + arg_timer_name)
+			if (! arg_force_create)
+			{
+				return
+			}
+
+			// DELETE EXISTING TIMER
+			// console.log(context + &apos;:create_timer:delete existing timer name=&apos; + arg_timer_name)
+			this.delete_timer( this.timers[arg_timer_name] )
+			delete this.timers[arg_timer_name]
+		}
+		
+		// CREATE TIMER
+		// console.log(context + &apos;:create_timer:create timer name=&apos; + arg_timer_name)
+		this.timers[arg_timer_name] = setInterval(
+			arg_timer_cb,
+			arg_delay
+		)
+	}
+	
+	
+
+	/**
+	 * Create a poller for the given socket operation.
+	 * 
+	 * @param {object} arg_poller_settings - poller settings { name:&apos;...&apos;, interval_seconds|interval_milliseconds:number }.
+	 * @param {object} arg_op_name - service operation name.
+	 * @param {object} arg_credentials - session credentials.
+	 * @param {object} arg_socket - service socket.
+	 * @param {array} arg_op_opds - operation operands (optional)(default=[]).
+	 * 
+	 * @returns {nothing}
+	 */
+	create_poller(arg_poller_settings, arg_op_name, arg_credentials, arg_socket, arg_op_opds=[])
+	{
+		const self = this
+
+		if ( T.isObject(arg_poller_settings) )
+		{
+			const interval_ms = T.isNumber(arg_poller_settings.interval_seconds) ? arg_poller_settings.interval_seconds * 1000 : arg_poller_settings.interval_milliseconds
+			if ( T.isNumber(interval_ms) &amp;&amp; T.isString(arg_poller_settings.name) )
+			{
+				console.log(&apos;create poller for operation:&apos; + arg_op_name, arg_poller_settings.name, interval_ms)
+				
+				const request = {
+					session_uid:arg_session_uid,
+					service:self.get_name(),
+					operation:arg_op_name,
+					operands:arg_op_opds,
+					credentials:arg_credentials
+				}
+
+				self.create_timer(
+					arg_poller_settings.name,
+					() =&gt; {
+						// console.log(&apos;GLOBAL SETTINGS:create_timer svc_socket.emit&apos;, svc_path, op_name)
+						arg_socket.emit(arg_op_name, request)
+					},
+					interval_ms,
+					false
+				)
+			}
+		}
+	}
+	
+
+
+	/**
+	 * Delete a timer.
+	 * 
+	 * @param {any}	arg_timer_id.
+	 * 
+	 * @returns {nothing}
+	 */
+	delete_timer(arg_timer_id)
+	{
+		clearInterval(arg_timer_id)
+	}
+
+
+	create_timeline(op_name, svc_socket, timeline_settings)
+	{
+		console.log(&apos;service has timeline for operation:&apos; + op_name, timeline_settings)
+
+		let timeline_op_settings_array = timeline_settings[op_name]
+		if( T.isObject(timeline_op_settings_array) )
+		{
+			timeline_op_settings_array = [timeline_op_settings_array]
+		}
+		
+		let stream = Stream.from_emitter_event(svc_socket, op_name)
+
+		timeline_op_settings_array.forEach(
+			(timeline_op_settings) =&gt; {
+				if ( T.isObject(timeline_op_settings) &amp;&amp; timeline_op_settings.transform &amp;&amp; T.isNumber(timeline_op_settings.max) &amp;&amp; T.isString(timeline_op_settings.name) &amp;&amp; T.isNumber(timeline_op_settings.interval_seconds))
+				{
+					self[op_name].timelines[timeline_op_settings.name] = {
+						values:[],
+						previous_ts:undefined,
+						stream:new Stream.Bus()
+					}
+					stream.subscribe(
+						(value) =&gt; {
+							value = value.datas ? value.datas : value
+
+							if ( T.isString( timeline_op_settings.transform ) || T.isNumber( timeline_op_settings.transform ) )
+							{
+								const field_name = timeline_op_settings.transform
+								timeline_op_settings.transform = {
+									&quot;result_type&quot;:&quot;single&quot;,
+									&quot;fields&quot;:[
+										{
+											&quot;name&quot;:field_name,
+											&quot;path&quot;:field_name
+										}
+									]
+								}
+							}
+
+							const extracted_value = transform(timeline_op_settings.transform)(value)
+							// console.log(context + &apos;:load:timeline extracted_value=&apos;, extracted_value)
+							
+							const timeline = self[op_name].timelines[timeline_op_settings.name]
+							const ts = Date.now()
+							const prev_ts = timeline.previous_ts
+							
+							if (!prev_ts)
+							{
+								timeline.previous_ts = ts
+								timeline.values = [{ts:ts, value:extracted_value}]
+								timeline.stream.push(timeline.values)
+							}
+							else if ( (ts - prev_ts) &gt; (timeline_op_settings.interval_seconds * 1000) )
+							{
+								timeline.values.push({ts:ts, value:extracted_value})
+								timeline.previous_ts = ts
+								
+								if (timeline.values.length &gt; timeline_op_settings.max)
+								{
+									const too_many = timeline.values.length - timeline_op_settings.max
+									timeline.values = timeline.values.slice(too_many)
+								}
+
+								timeline.stream.push(timeline.values)
+							}
+						}
+					)
+				}
+			}
+		)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/base/transaction.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/runtime.js~Runtime.html">Runtime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/security.js~Security.html">Security</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/transaction.js~Transaction.html">Transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-runtime_singleton">runtime_singleton</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics">metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/metric_duration.js~MetricDuration.html">MetricDuration</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-base">metrics/base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_collector.js~MetricsCollector.html">MetricsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_record.js~MetricsRecord.html">MetricsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_reducer.js~MetricsReducer.html">MetricsReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_state.js~MetricsState.html">MetricsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-bus">metrics/bus</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_collector.js~MetricsBusCollector.html">MetricsBusCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_record.js~MetricsBusRecord.html">MetricsBusRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_reducer.js~MetricsBusReducer.html">MetricsBusReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_state.js~MetricBusState.html">MetricBusState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-host">metrics/host</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_collector.js~MetricsHostCollector.html">MetricsHostCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_record.js~MetricsHostRecord.html">MetricsHostRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_reducer.js~MetricsHostReducer.html">MetricsHostReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_state.js~MetricHostState.html">MetricHostState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-http">metrics/http</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_collector.js~MetricsHttpCollector.html">MetricsHttpCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_record.js~MetricsHttpRecord.html">MetricsHttpRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_reducer.js~MetricHttpReducer.html">MetricHttpReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_state.js~MetricsHttpState.html">MetricsHttpState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-nodejs">metrics/nodejs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_collector.js~MetricsNodeJsCollector.html">MetricsNodeJsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_record.js~MetricsNodeJsRecord.html">MetricsNodeJsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_reducer.js~MetricsNodeReducer.html">MetricsNodeReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_state.js~MetricNodeJsState.html">MetricNodeJsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#nodes">nodes</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/bus_node_feature.js~BusNodeFeature.html">BusNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/metrics_node_feature.js~MetricsNodeFeature.html">MetricsNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node.js~Node.html">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_feature.js~NodeFeature.html">NodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_messaging.js~NodeMessaging.html">NodeMessaging</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/servers_node_feature.js~ServersNodeFeature.html">ServersNodeFeature</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#plugins">plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/features_manager.js~FeaturesManager.html">FeaturesManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_factory.js~PluginsFactory.html">PluginsFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_manager.js~PluginsManager.html">PluginsManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/rendering_manager.js~RenderingManager.html">RenderingManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_manager.js~ServersManager.html">ServersManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_plugin.js~ServersPlugin.html">ServersPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/services_manager.js~ServicesManager.html">ServicesManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/runtime_executable.js~RuntimeExecutable.html">RuntimeExecutable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage0_create_local_node_executable.js~RuntimeStage0Executable.html">RuntimeStage0Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage1_define_topology_executable.js~RuntimeStage1Executable.html">RuntimeStage1Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage2_load_local_topology_executable.js~RuntimeStage2Executable.html">RuntimeStage2Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage3_start_local_node_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage3_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage4_executable.js~RuntimeStage4Executable.html">RuntimeStage4Executable</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security">security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_manager.js~AuthenticationManager.html">AuthenticationManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin.js~AuthenticationPlugin.html">AuthenticationPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin_lowdb.js~AuthenticationLowDbPlugin.html">AuthenticationLowDbPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_wrapper.js~AuthenticationWrapper.html">AuthenticationWrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authorization_manager.js~AuthorizationManager.html">AuthorizationManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security-todo">security/todo</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport.js~AuthenticationPluginPassport.html">AuthenticationPluginPassport</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local.js~AuthenticationPluginPassportLocal.html">AuthenticationPluginPassportLocal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_db.js~AuthenticationPluginPassportLocalDb.html">AuthenticationPluginPassportLocalDb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_file.js~AuthenticationPluginPassportLocalFile.html">AuthenticationPluginPassportLocalFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#servers">servers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/express_server.js~ExpressServer.html">ExpressServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/logs_server.js~LogsServer.html">LogsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/metrics_server.js~MetricsServer.html">MetricsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/restify_server.js~RestifyServer.html">RestifyServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/routable_server.js~RoutableServer.html">RoutableServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/server.js~Server.html">Server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServerTypes">ServerTypes</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">services</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/routes_svc_consumer.js~RoutesSvcConsumer.html">RoutesSvcConsumer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-uused-base">services/uused_base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_service_exec_provider.js~ServiceExecProvider.html">ServiceExecProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_socketio_service_provider.js~SocketIOServiceProvider.html">SocketIOServiceProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/base/transaction.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+
+// COMMON IMPORTS
+import T         from &apos;devapt-core-common/dist/js/utils/types&apos;
+import Instance  from &apos;devapt-core-common/dist/js/base/instance&apos;
+
+// SERVER INSTANCE
+import MetricDuration from &apos;../metrics/metric_duration&apos;
+
+
+/**
+ * Contextual constant for this file logs.
+ * @private
+ * @type {string}
+ */
+const context = &apos;common/base/transaction&apos;
+
+
+
+/**
+ * Transaction type:Sequence.
+ * @private
+ * @type {string}
+ */
+const TYPE_SEQUENCE  = &apos;SEQUENCE&apos;
+
+/**
+ * Transaction type:Every.
+ * @private
+ * @type {string}
+ */
+const TYPE_EVERY  = &apos;EVERY&apos;
+
+/**
+ * Transaction type:Only one.
+ * @private
+ * @type {string}
+ */
+const TYPE_ONE  = &apos;ONE&apos;
+
+/**
+ * Transaction status:Is created.
+ * @private
+ * @type {string}
+ */
+const STATUS_CREATED  = &apos;CREATED&apos;
+
+/**
+ * Transaction status:Is prepared.
+ * @private
+ * @type {string}
+ */
+const STATUS_PREPARED = &apos;PREPARED&apos;
+
+/**
+ * Transaction status:Execution is OK.
+ * @private
+ * @type {string}
+ */
+const STATUS_EXEC_OK  = &apos;EXEC_OK&apos;
+
+/**
+ * Transaction status:Execution has failed.
+ * @private
+ * @type {string}
+ */
+const STATUS_EXEC_KO  = &apos;EXEC_KO&apos;
+
+
+
+/**
+ * @file Transaction class to manage grouped executions with commit/rollback features.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class Transaction extends Instance
+{
+	/**
+	 * Create a Transaction. Set status to CREATED.
+	 * 
+	 * @param {string} arg_app_name - application name.
+	 * @param {string} arg_svc_name - service name.
+	 * @param {string} arg_tx_name - transaction name.
+	 * @param {object} arg_settings - settings
+	 * @param {Array} arg_executables - executables array (optional)
+	 * @param {string} arg_type - transaction type (optional)
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_app_name, arg_svc_name, arg_tx_name, arg_settings, arg_executables, arg_type)
+	{
+		super(&apos;transactions&apos;, &apos;Transaction&apos;, arg_tx_name, arg_settings, context)
+		
+		/**
+		 * Class test flag.
+		 * @type {boolean}
+		 */
+		this.is_transaction = true
+		
+		if (arg_executables)
+		{
+			this.set_executables(arg_executables)
+		}
+		
+		this.set_type(arg_type)
+		
+		/**
+		 * Duration metric instance.
+		 * @type {MetricDuration}
+		 */
+		this.metric_duration = new MetricDuration()
+
+		/**
+		 * Metrics array.
+		 * @type {Array}
+		 */
+		this.metrics = [this.metric_duration]
+		
+		/**
+		 * Executables array.
+		 * @type {array}
+		 */
+		this.executables = []
+		
+		/**
+		 * Results array.
+		 * @type {array}
+		 */
+		this.results = []
+
+		/**
+		 * Transaction type.
+		 * @type {string}
+		 */
+		this.tx_type = undefined
+
+		/**
+		 * Transaction status.
+		 * @type {string}
+		 */
+		this.status = STATUS_CREATED
+	}
+	
+	
+	/**
+	 * Set transaction executables.
+	 * @param {Array} arg_executables - executables instances array.
+	 * @returns {nothing}
+	 */
+	set_executables(arg_executables)
+	{
+		// ASSUME AN ARRAY
+		this.executables = T.isArray(arg_executables) ? arg_executables : [arg_executables]
+		
+		// CHECK ARRAY ITEMS
+		this.executables.forEach(
+			(executable, index) =&gt; {
+				assert( T.isObject(executable) &amp;&amp; executable.is_executable, context + &apos;:bad executable type at [&apos; + index + &apos;]&apos;)
+			}
+		)
+	}
+	
+	
+	/**
+	 * Set the transaction type. Value should be choosen from the list:EVERY,SEQUENCE,ONE
+	 *	  * EVERY: transaction is finished when all executables are finished without order.
+	 *	  * SEQUENCE: transaction is finished when all executables are finished in a ordered sequence.
+	 *	  * ONE: transaction is finished when an executable finished without waiting other executables.
+	 * @param {string} arg_type - transaction type value.
+	 * @returns {nothing}
+	 */
+	set_type(arg_type)
+	{
+		if ( ! T.isString(arg_type) )
+		{
+			arg_type = TYPE_EVERY
+		}
+		
+		switch(arg_type)
+		{
+			case TYPE_EVERY:	this.tx_type = TYPE_EVERY; return
+			case TYPE_ONE:	    this.tx_type = TYPE_ONE; return
+			case TYPE_SEQUENCE: this.tx_type = TYPE_SEQUENCE; return
+		}
+		
+		this.tx_type = TYPE_EVERY
+	}
+	
+	
+	/**
+	 * Prepare transaction executables. Change status to PREPARED.
+	 * @param {object} arg_context - executables context.
+	 * @returns {nothing}
+	 */
+	prepare(arg_context)
+	{
+		this.metrics.forEach( (metric)=&gt;{ metric.before() } )
+		
+		this.executables.forEach(
+			(executable) =&gt; {
+				executable.prepare(arg_context)
+			}
+		)
+		
+		this.results = []
+		this.status = STATUS_PREPARED
+	}
+	
+	
+	/**
+	 * Execute all executables regarding the transaction type.
+	 * @param {anything} arg_data - any parameter
+	 * @returns {Promise} - a promise of executables results array
+	 */
+	execute(arg_data)
+	{
+		switch(this.tx_type)
+		{
+			case TYPE_EVERY: {
+				return this.execute_every(arg_data)
+			}
+			case TYPE_ONE: {
+				return this.execute_one(arg_data)
+			}
+			case TYPE_SEQUENCE: {
+				return this.execute_sequence(arg_data)
+			}
+		}
+		
+		return Promise.resolve(false)
+		// return Promise.reject(&apos;bad transaction type&apos;)
+	}
+	
+	
+	/**
+	 * Execute every executables without order and fails if one failure appears.
+	 * @param {anything} arg_data - any parameter
+	 * @returns {Promise} - a promise of executables results array
+	 */
+	execute_every(arg_data)
+	{
+		const self = this
+		let index = 0
+		this.metric_duration.before()
+		
+		try
+		{
+			let tx_promises = []
+			this.executables.forEach(
+				(executable) =&gt; {
+					let exec_promise = executable.execute(arg_data)
+					tx_promises.push(exec_promise)
+					
+					exec_promise.then(
+						function(value)
+						{
+							let has_error = executable.has_error()
+							
+							this.results.push(
+								{
+									index:index,
+									result:value,
+									has_error:has_error,
+									error_msg:executable.get_error_msg()
+								}
+							)
+							
+							this.metrics.forEach( (metric)=&gt;{ metric.iteration() } )
+							
+							if (has_error)
+							{
+								return false
+							}
+							
+							return true
+						}
+					)
+					
+					index++
+				}
+			)
+			
+			let all_promise = Promise.all(tx_promises).then(
+				function(results)
+				{
+					let all_result = true
+					results.forEach(
+						function(value/*, index, arr*/)
+						{
+							if (! value)
+							{
+								all_result = false
+							}
+						}
+					)
+					
+					this.metric_duration.after()
+					
+					if (! all_result)
+					{
+						self.rollback()
+						return false
+					}
+					
+					self.commit()
+					return true
+				}
+			)
+			
+			return all_promise
+		}
+		catch(e)
+		{
+			this.rollback()
+		}
+		
+		return Promise.resolve(false)
+	}
+	
+	
+	/**
+	 * Execute every executables without order and fulfill on first resolved, fails if one failure appears.
+	 * @param {anything} arg_data - any parameter
+	 * @returns {Promise} - a promise of executables results array
+	 */
+	execute_one(arg_data)
+	{
+		const self = this
+		let index = 0
+		this.metric_duration.before()
+		
+		try
+		{
+			let tx_promises = []
+			this.executables.forEach(
+				(executable) =&gt; {
+					let exec_promise = executable.execute(arg_data)
+					tx_promises.push(exec_promise)
+					
+					exec_promise.then(
+						function(value)
+						{
+							let has_error = executable.has_error()
+							
+							this.results.push(
+								{
+									index:index,
+									result:value,
+									has_error:has_error,
+									error_msg:executable.get_error_msg()
+								}
+							)
+							
+							this.metrics.forEach( (metric)=&gt;{ metric.iteration() } )
+							
+							if (has_error)
+							{
+								return false
+							}
+							
+							return true
+						}
+					)
+					
+					index++
+				}
+			)
+			
+			let all_promise = Promise.race(tx_promises).then(
+				function(result)
+				{
+					this.metric_duration.after()
+					
+					if (! result)
+					{
+						self.rollback()
+						return false
+					}
+					
+					self.commit()
+					return true
+				}
+			)
+			
+			return all_promise
+		}
+		catch(e)
+		{
+			this.rollback()
+		}
+		
+		return Promise.resolve(false)
+	}
+	
+	
+	/**
+	 * Execute every executables in a fixed order and stop on failure.
+	 * @param {anything} arg_data - any parameter
+	 * @returns {Promise} - a promise of executables results array
+	 */
+	execute_sequence(arg_data)
+	{
+		this.enter_group(&apos;execute a sequence of executables&apos;)
+		
+		const self = this
+		this.metric_duration.before()
+		try
+		{
+			let tx_promise = Promise.resolve(true)
+			this.executables.forEach(
+				(executable, index) =&gt; {
+					// console.log(&apos;loop on executable&apos;, index, executable.$name)
+					
+					if ( tx_promise &amp;&amp; tx_promise.then )
+					{
+						// console.log(&apos;promise exists&apos;)
+						tx_promise = tx_promise.then(
+							function(value)
+							{
+								// console.log(&apos;previous is resolved&apos;)
+								if(!value)
+								{
+									console.log(&apos;previous executable error&apos;, index, executable.$name)
+									return false
+								}
+								
+								let exec_promise = executable.execute(arg_data)
+								
+								// EXECUTION WITHOUT EXCEPTION
+								exec_promise = exec_promise.then(
+									function(exec_value)
+									{
+										let has_error = executable.has_error()
+										
+										console.info(&apos;current executable [%s] [%s] without exception&apos;, index, executable.$name)
+										if (has_error)
+										{
+											console.error(&apos;current executable [%s] [%s] with error&apos;, index, executable.$name)
+										}
+										
+										self.results.push(
+											{
+												index:index,
+												result:exec_value,
+												has_error:has_error,
+												error_msg:executable.get_error_msg()
+											}
+										)
+										self.metrics.forEach( (metric)=&gt;{ metric.iteration() } )
+										
+										return ! has_error
+									}
+								)
+								
+								// EXECUTION FAILURE WITH AN EXCEPTION
+								exec_promise.catch(
+									(reason)=&gt;{
+										console.log(&apos;current executable exception&apos;, index, executable.$name)
+										self.results.push(
+											{
+												index:index,
+												result:null,
+												has_error:true,
+												error_msg:reason
+											}
+										)
+									}
+								)
+								
+								return exec_promise
+							}
+						)
+					}
+				}
+			)
+			
+			// TRANSACTION WITHOUT EXCEPTION
+			tx_promise = tx_promise.then(
+				function(result)
+				{
+					console.log(&apos;executable success&apos;)
+					
+					self.metric_duration.after()
+					
+					if (! result)
+					{
+						self.rollback()
+						return false
+					}
+					
+					console.log(&apos;runtime loading parts duration&apos;, self.metric_duration.get_values().iterations)
+					
+					self.commit()
+					return true
+				}
+			)
+			
+			// TRANSACTION FAILURE WITH EXCEPTION
+			tx_promise = tx_promise.catch(
+				(reason)=&gt;{
+					console.log(&apos;executable failure&apos;)
+					self.metric_duration.after()
+					
+					console.error(context + &apos;:exception:tx failure&apos;, reason)
+					self.rollback()
+					return false
+				}
+			)
+			
+			this.leave_group(&apos;execute a sequence of executables (OK) (async)&apos;)
+			return tx_promise
+		}
+		catch(e)
+		{
+			console.error(context + &apos;:exception:&apos; + e)
+			this.rollback()
+		}
+		
+		this.leave_group(&apos;execute a sequence of executables (KO) (async)&apos;)
+		return Promise.resolve(false)
+	}
+	
+	
+	/**
+	 * Commit transaction execution on executables success. Change status to EXEC_OK.
+	 * @returns {nothing}
+	 */
+	commit()
+	{
+		this.executables.forEach(
+			(executable) =&gt; {
+				executable.exec_ack()
+			}
+		)
+		this.status = STATUS_EXEC_OK
+	}
+	
+	
+	/**
+	 * Rollback transaction execution on executables failure. Change status to EXEC_KO.
+	 * @returns {nothing}
+	 */
+	rollback()
+	{
+		this.executables.forEach(
+			(executable) =&gt; {
+				executable.exec_fail()
+			}
+		)
+		
+		this.status = STATUS_EXEC_KO
+		
+		this.results.forEach(
+			(value, index)=&gt;console.log(&apos;result at executable [&apos; + index + &apos;]&apos;, value)
+		)
+	}
+	
+	
+	/**
+	 * Finish all executables.
+	 * @returns {nothing}
+	 */
+	finish()
+	{
+		this.executables.forEach(
+			(executable) =&gt; {
+				executable.finish()
+			}
+		)
+		
+		this.metrics.forEach( (metric)=&gt;{ metric.after() } )
+	}
+	
+	
+	/**
+	 * Get instance description: {$type:..., $class:..., $id:..., $name:...}.
+	 * @returns {object} - instance object description
+	 */
+	get_descriptor()
+	{
+		// TODO: delete this method ? Same as its parent!
+		let parent_desc = super.get_descriptor()
+		return parent_desc
+	}
+	
+	
+	/**
+	 * Get transaction metrics: {id:..., status:..., metrics:...}.
+	 * @returns {object} - transaction metrics plain object
+	 */
+	get_metrics()
+	{
+		let values = []
+		this.metrics.forEach( (metric)=&gt;{ values.push( metric.getvalues() ) } )
+		return { $id:this.$id, $status:this.status, metrics:values }
+	}
+	
+	
+	/**
+	 * Get executables results array: {index:..., result:..., has_error:..., error_msg:...}.
+	 * @returns {Array} - all executed executables results.
+	 */
+	get_results()
+	{
+		return this.results
+	}
+	
+	
+	/**
+	 * Get result of the first ended executable.
+	 * @returns {object} - result object.
+	 */
+	get_first_result()
+	{
+		return this.results &amp;&amp; this.results.length &gt; 0 ? this.results[0] : null
+	}
+	
+	
+	/**
+	 * Get result of the first ended executable which failed.
+	 * @returns {object} - error object.
+	 */
+	get_first_error()
+	{
+		if ( this.results &amp;&amp; this.results.length &gt; 0 )
+		{
+			return this.results.find( (result) =&gt; { return result.has_error } )
+		}
+		
+		return undefined
+	}
+}
+
+
+/**
+ * Transaction type SEQUENCE: all executables are run one at a time in the registered order.
+ * @type {string}
+ */
+Transaction.SEQUENCE = TYPE_SEQUENCE
+
+/**
+ * Transaction type ONE: all executables are run at the same time without order and transaction ends when a run finish.
+ * @type {string}
+ */
+Transaction.ONE = TYPE_ONE
+
+/**
+ * Transaction type EVERY: all executables are run at the same time without order.
+ * @type {string}
+ */
+Transaction.EVERY = TYPE_EVERY
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

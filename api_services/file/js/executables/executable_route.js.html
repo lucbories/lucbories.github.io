@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/executables/executable_route.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#default-plugins">default_plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/default_plugins/services_default_plugin.js~DefaultServicesPlugin.html">DefaultServicesPlugin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_route.js~ExecutableRoute.html">ExecutableRoute</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-assets">services/assets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/assets_svc_provider.js~AssetsSvcProvider.html">AssetsSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/executable_route_assets.js~ExecutableRouteAssets.html">ExecutableRouteAssets</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-logs">services/logs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/logs/logs_svc_provider.js~LogsSvcProvider.html">LogsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-messages">services/messages</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/messages/messages_svc_provider.js~MessagesSvcProvider.html">MessagesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-metrics">services/metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics/metrics_svc_provider.js~MetricsSvcProvider.html">MetricsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-middlewares">services/middlewares</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/executable_route_middleware.js~ExecutableRouteMiddleware.html">ExecutableRouteMiddleware</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/middlewares_svc_provider.js~MiddlewaresSvcProvider.html">MiddlewaresSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-ping">services/ping</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/ping/ping_svc_provider.js~PingSvcProvider.html">PingSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-resources">services/resources</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/executable_route_get_resource.js~ExecutableRouteGetResources.html">ExecutableRouteGetResources</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/resources_svc_provider.js~ResourcesSvcProvider.html">ResourcesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-security">services/security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_service.js~SecurityService.html">SecurityService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_consumer.js~SecuritySvcConsumer.html">SecuritySvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_provider.js~SecuritySvcProvider.html">SecuritySvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-todo-crud">services/todo_crud</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_service.js~CrudService.html">CrudService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_consumer.js~CrudSvcConsumer.html">CrudSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_provider.js~CrudSvcProvider.html">CrudSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/executable_route_model_crud.js~ExecutableRouteModelCrud.html">ExecutableRouteModelCrud</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-topology">services/topology</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_service.js~TopologyService.html">TopologyService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_consumer.js~TopologySvcHostConsumer.html">TopologySvcHostConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/executables/executable_route.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+
+// COMMON IMPORTS
+import T             from &apos;devapt-core-common/dist/js/utils/types&apos;
+import Executable    from &apos;devapt-core-common/dist/js/base/executable&apos;
+import {get_runtime} from &apos;devapt-core-common/dist/js/base/runtime&apos;
+
+
+// SERVER IMPORTS
+
+
+/**
+ * Runtime instance.
+ * @private
+ * @type {RuntimeBase}
+ */
+const runtime = get_runtime()
+
+/**
+ * Contextual constant for this file logs.
+ * @private
+ */
+const context = &apos;services/executables/executable_route&apos;
+
+
+
+/**
+ * @file Route registering base class.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class ExecutableRoute extends Executable
+{
+    /**
+     * Create a ExecutableRoute instance.
+     * @abstract
+     */
+	constructor()
+	{
+		super(context, runtime.get_logger_manager())
+		
+		/**
+		 * Executable settings.
+		 * @protected
+		 * @type {object}
+		 */
+		this.store_config = undefined
+		
+		/**
+		 * Executable server.
+		 * @protected
+		 * @type {object}
+		 */
+		this.server = undefined
+	}
+	
+	
+    
+	/**
+     * Prepare an execution with contextual informations.
+     * @override
+	 * 
+     * @param {object} arg_settings - execution settings.
+	 * 
+     * @returns {nothing}
+     */
+	prepare(arg_settings)
+	{
+		// console.log(context + &apos;:prepare:arg_settings&apos;, arg_settings)
+		
+		assert( T.isObject(arg_settings), context + &apos;:no given config&apos;)
+		this.store_config = arg_settings
+		
+		assert(T.isObject(this.store_config), context + &apos;:bad config object&apos;)
+		
+		assert(T.isObject(this.store_config.server), context + &apos;:bad server object&apos;)
+		assert(this.store_config.server.is_server, context + &apos;:bad server instance&apos;)
+		
+		this.server = this.store_config.server
+	}
+    
+	
+
+	/**
+     * Execution with contextual informations.
+     * @override
+	 * 
+     * @param {object} arg_data - Application instance.
+	 * 
+     * @returns {object} promise.
+     */
+	execute(arg_data)
+	{
+		// console.log(context + &apos;:execute:store_config&apos;, this.store_config)
+		
+		// CHECK APPLICATION
+		assert(T.isObject(arg_data), context + &apos;:bad application object&apos;)
+		assert(arg_data.is_topology_define_application, context + &apos;:bad application instance&apos;)
+		const application = arg_data
+		
+		this.info(&apos;Execute: add server route for &apos; + application.get_name())
+		
+		
+		// CHECK SERVER
+		const server_instance = this.server
+		assert(T.isString(server_instance.server_type), context + &apos;:bad server_instance.server_type string&apos;)
+		assert(T.isObject(server_instance.server) || T.isFunction(server_instance.server), context + &apos;:bad server_instance.server object or function&apos;)
+		
+
+		// LOOP ON ROUTES
+		this.debug(&apos;this.store_config.routes&apos;, this.store_config.routes)
+		let routes_registering_promises = []
+		assert(T.isArray(this.store_config.routes), context + &apos;:bad store_config.routes object&apos;)
+		const cfg_routes = this.store_config.routes
+
+		// PROBLEM WITH NODEJS 0.10
+		// for(let cfg_route of cfg_routes)
+		// {
+		for(let cfg_route_index = 0 ; cfg_route_index &lt; cfg_routes.length ; cfg_route_index++)
+		{
+			// GET ROUTE CONFIG
+			let cfg_route = cfg_routes[cfg_route_index]
+			this.debug(&apos;loop on cfg_route&apos;, cfg_route)
+			assert(T.isObject(cfg_route), context + &apos;:bad cfg_route object&apos;)
+			assert(T.isString(cfg_route.route), context + &apos;:bad route string&apos;)
+			
+			// GET APPLICATION URL
+			const app_url = T.isString(application.app_url) ? application.app_url : &apos;&apos;
+			this.debug(&apos;app_route&apos;, app_url)
+			
+			// GET ROUTE IS GLOBAL (HAS FULL ROUTE INSIDE)
+			const route_is_global = (T.isBoolean(cfg_route.is_global) &amp;&amp; cfg_route.is_global == true)
+
+			// GET APPLICATION ROUTE
+			let app_route = route_is_global ? cfg_route.route : app_url + cfg_route.route
+			app_route = (app_route[0] == &apos;/&apos; ? &apos;&apos; : &apos;/&apos;) + app_route
+			cfg_route.full_route = app_route
+
+			// DEBUG
+			// console.log(&apos;route=%s, app_route=%s, cfg.route=%s, is_global=%s, cond=%s&apos;, route, app_route, cfg_route.route, cfg_route.is_global, (cfg_route.is_global &amp;&amp; cfg_route.is_global == true))
+			
+			// GET REGEXP
+			cfg_route.route_regexp = undefined
+			if ( app_route.indexOf(&apos;.*&apos;) &gt; -1 || app_route.indexOf(&apos;$&apos;) &gt; -1 || app_route.indexOf(&apos;^&apos;) &gt; -1 )
+			{
+				cfg_route.route_regexp = new RegExp( app_route.replace(&apos;/&apos;, &apos;\/&apos;) )
+			}
+			
+			this.debug(&apos;route&apos;, cfg_route.full_route.toString())
+			this.debug(&apos;directory&apos;, cfg_route.directory)
+			
+			const route_resistering_promise = this.process_route(server_instance, application, cfg_route, arg_data)
+			routes_registering_promises.push(route_resistering_promise)
+            
+			this.info(&apos;registering route [&apos; + app_route + &apos;] for application [&apos; + application.$name + &apos;]&apos;)
+		}
+        
+		return Promise.all(routes_registering_promises)
+	}
+
+	
+    
+	/**
+     * Process a route registering.
+	 * 
+     * @param {Server} arg_server - Server instance.
+     * @param {TopologyDefineApplication} arg_application - Application instance.
+     * @param {object} arg_cfg_route - plain object route configuration.
+     * @param {object} arg_data - plain object contextual datas.
+	 * 
+     * @returns {Promise} - Promise(boolean) with (true:success, false: failure).
+     */
+	process_route(arg_server, arg_application, arg_cfg_route, arg_data)
+	{
+		// DEBUG
+		// console.log(arg_cfg_route, &apos;arg_cfg_route&apos;)
+		
+		// GET ROUTE CALLBACK
+		const route_cb = this.get_route_cb(arg_application, arg_cfg_route, arg_data)
+		if (!route_cb)
+		{
+			console.error(&apos;bad route callback&apos;, context)
+			return Promise.reject(context + &apos;:process_route:bad route callback&apos;)
+		}
+
+		// CHECK SERVER
+		if ( ! T.isObject(arg_server) || ! arg_server.is_server || ! arg_server.is_routable_server )
+		{
+			return Promise.reject(context + &apos;:process_route:bad server type&apos;)
+		}
+        
+		// ADD ROUTE HANDLER
+		try
+		{
+			arg_server.add_get_route(arg_cfg_route, route_cb)
+
+			return Promise.resolve(true)
+		}
+		catch(e)
+		{
+			console.error(e, context)
+			const cfg_route_str = JSON.stringify(arg_cfg_route)
+			return Promise.reject(context + &apos;:process_route:&apos; + e.toString() + &apos; for route config=[&apos; + cfg_route_str + &apos;]&apos;)
+		}
+	}
+    
+
+	
+	/**
+     * Callback for route handling.
+     * @abstract
+	 * 
+     * @param {TopologyDefineApplication} arg_application - Application instance.
+     * @param {object} arg_cfg_route - plain object route configuration.
+     * @param {object} arg_data - plain object contextual datas.
+	 * 
+     * @param {function} route handler.
+     */
+	get_route_cb(/*arg_application, arg_cfg_route, arg_data*/)
+	{
+		assert(false, context + &apos;:get_route_cb(cfg_route) should be implemented&apos;)
+	}
+	
+	
+	
+	/**
+	 * Callback for redirect route handling.
+	 * 
+	 * @param {TopologyDefineApplication} arg_application - Application instance.
+	 * @param {object} arg_cfg_route - plain object route configuration.
+	 * @param {object} arg_data - plain object contextual datas.
+	 * 
+	 * @param {function} route handler.
+	 */
+	get_route_redirect_cb(arg_application, arg_cfg_route/*, arg_data*/)
+	{
+		assert(T.isString(arg_cfg_route.redirect), context + &apos;:bad redirect route string&apos;)
+		
+		return (req, res/*, next*/) =&gt; {
+			const url = runtime.context.get_url_with_credentials(arg_cfg_route.redirect, req)
+			res.redirect(url)
+		}
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

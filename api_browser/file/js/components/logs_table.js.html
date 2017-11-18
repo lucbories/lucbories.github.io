@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/components/logs_table.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/components/logs_table.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+// import assert from &apos;assert&apos;
+import _ from &apos;lodash&apos;
+import Immutable from &apos;immutable&apos;
+
+// COMMON IMPORTS
+import T   from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+import uid from &apos;../../../node_modules/devapt-core-common/dist/js/utils/uid&apos;
+
+// BROWSER IMPORTS
+import Table from &apos;./table&apos;
+
+
+const context = &apos;browser/components/logs_table&apos;
+
+
+
+/**
+ * @file UI component class.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class LogsTable extends Table
+{
+	
+	/**
+	 * Creates an instance of LogsTable.
+	 * 
+	 * @param {object} arg_runtime - client runtime.
+	 * @param {object} arg_state - component state.
+	 * @param {string} arg_log_context - context of traces of this instance (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_state, arg_log_context)
+	{
+		const log_context = arg_log_context ? arg_log_context : context
+		super(arg_runtime, arg_state, log_context)
+		
+		this.is_logs_table_component = true
+
+		this.register_state_value_change_handle([&apos;selected_column&apos;], &apos;handle_selected_column_change&apos;)
+
+		this._elements_cache = {}
+		this._filters = {}
+
+		// DEBUG
+		// this.enable_trace()
+	}
+	
+	
+	
+	/**
+	 * Build a table row DOM element.
+	 *
+	 * @param {array} arg_row_array - row values array.
+	 * @param {integer} arg_row_index - row index.
+	 * @param {integer} arg_max_cols - max columns number.
+	 * 
+	 * @returns {Element} - TD DOM Element.
+	 */
+	build_row(arg_row_array, arg_row_index, arg_max_cols)
+	{
+		const td_elem = super.build_row(arg_row_array, arg_row_index, arg_max_cols)
+		
+		const log_uid = &apos;log_&apos; + uid()
+		arg_row_array.push(log_uid)
+		td_elem.setAttribute(&apos;data-devapt-log_uid&apos;, log_uid)
+
+		const row_record = {
+			elem:td_elem,
+			log:arg_row_array,
+			log_uid:log_uid,
+			row_index:arg_row_index
+		}
+		this._elements_cache[log_uid] = row_record
+
+		this.apply_filter_on_row_record(row_record)
+
+		return td_elem
+	}
+	
+	
+	
+	/**
+	 * Get column index from its name.
+	 *
+	 * @param {string} arg_column_name - column name.
+	 * 
+	 * @returns {integer} - column index
+	 */
+	get_column_index(arg_column_name)
+	{
+		switch(arg_column_name){
+			case &apos;ts&apos;:       return 0
+			case &apos;level&apos;:    return 1
+			case &apos;source&apos;:   return 2
+			case &apos;context&apos;:  return 3
+			case &apos;instance&apos;: return 4
+			case &apos;group&apos;:    return 5
+			case &apos;action&apos;:   return 6
+			case &apos;text&apos;:     return 7
+		}
+
+		return 0
+	}
+	
+	
+	
+	/**
+	 * Delete table row DOM element.
+	 *
+	 * @param {Element} arg_row_elem - row TR Element.
+	 * 
+	 * @returns {nothing}
+	 */
+	delete_row_elem(arg_row_elem)
+	{
+		const log_uid = arg_row_elem.getAttribute(&apos;data-devapt-log_uid&apos;)
+		delete this._elements_cache[log_uid]
+	}
+
+
+	apply_filter(arg_filter_value, arg_cell_value)
+	{
+		const filter_mode_not = (&apos;&apos; + arg_filter_value).startsWith(&apos;NOT &apos;) ? true : false
+		if (filter_mode_not)
+		{
+			return (&apos;&apos; + arg_cell_value).search(arg_filter_value.substr(4)) &lt; 0
+		}
+		return (&apos;&apos; + arg_cell_value).search(arg_filter_value) &gt;= 0
+	}
+
+
+	apply_filter_on_row_record(arg_row_record)
+	{
+		let match = true
+		_.forEach(this._filters,
+			(filter)=&gt;{
+				if (match &amp;&amp; arg_row_record.log.length &gt; filter.index)
+				{
+					const column_value = arg_row_record.log[filter.index]
+					const cell_match = this.apply_filter(filter.value, column_value)
+
+					match = filter.value == &apos;&apos; || cell_match
+				}
+			}
+		)
+				
+		// console.log(&apos;apply_filter_on_row_record:match %b&apos;, match, this._filters, row_record.elem.style.display)
+		
+		if (match)
+		{
+			arg_row_record.elem.style.display = &apos;table-row&apos;
+		} else {
+			arg_row_record.elem.style.display = &apos;none&apos;
+		}
+	}
+	
+	
+	
+	/**
+	 * Filter a column.
+	 *
+	 * @param {array} arg_row_array - row values array.
+	 * @param {integer} arg_row_index - row index.
+	 * @param {integer} arg_max_cols - max columns number.
+	 * 
+	 * @returns {string} - HTML TR string
+	 */
+	do_action_filter_column(arg_column_name, arg_filter_value)
+	{
+		// console.log(context + &apos;:do_action_filter_column:column=%s, filter=%s&apos;,arg_column_name, arg_filter_value, this._elements_cache)
+
+		const column_index = this.get_column_index(arg_column_name)
+		this._filters[arg_column_name] = { value:arg_filter_value, index:column_index }
+
+		_.forEach(this._elements_cache,
+			(row_record)=&gt;{
+				this.apply_filter_on_row_record(row_record)
+			}
+		)
+	}
+
+
+
+	/**
+	 * Handle click on TH tags.
+	 * 
+	 * @param {any} arg_stream_data - object record: { component_name:string,  event_name:string, dom_selector:string, target:object, data:any }.
+	 * 
+	 * @returns {nothing}
+	 */
+	do_click_th(arg_stream_data)
+	{
+		this.dispatch_update_state_value_action([&apos;selected_column&apos;], arg_stream_data.target.id)
+	}
+
+
+
+	/**
+	 * Handle selected_column state change.
+	 * 
+	 * @param {array}       arg_path           - value state path.
+	 * @param {Immutable.*} arg_previous_value - previous state value.
+	 * @param {Immutable.*} arg_new_value      - new state value.
+	 * 
+	 * @returns {nothing}
+	 */
+	handle_selected_column_change(arg_path, arg_previous_value, arg_new_value)
+	{
+		console.log(context + &apos;:handle_selected_column_change&apos;, arg_path, arg_previous_value, arg_new_value)
+		
+		if (! arg_previous_value &amp;&amp; ! arg_new_value)
+		{
+			console.log(context + &apos;:handle_selected_column_change:no previous and no new values&apos;, arg_path, arg_previous_value, arg_new_value)
+			return
+		}
+
+		if ( Immutable.is(arg_previous_value, arg_new_value) )
+		{
+			console.log(context + &apos;:handle_selected_column_change:previous value = new value&apos;, arg_path, arg_previous_value, arg_new_value)
+			return
+		}
+
+		const new_value = arg_new_value &amp;&amp; arg_new_value.toJS() ? arg_new_value.toJS() : undefined
+		if ( ! T.isString(new_value) )
+		{
+			console.warn(context + &apos;:handle_selected_column_change:bad new value string&apos;, arg_path, arg_previous_value, arg_new_value)
+			return
+		}
+
+		// TODO
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

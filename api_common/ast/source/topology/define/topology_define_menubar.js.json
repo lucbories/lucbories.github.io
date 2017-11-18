@@ -1,0 +1,3165 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 1254,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 47,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 1254,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 47,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ImportDeclaration",
+        "start": 69,
+        "end": 124,
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 5,
+            "column": 55
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 76,
+            "end": 94,
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 7
+              },
+              "end": {
+                "line": 5,
+                "column": 25
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 76,
+              "end": 94,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 7
+                },
+                "end": {
+                  "line": 5,
+                  "column": 25
+                },
+                "identifierName": "TopologyDefineItem"
+              },
+              "name": "TopologyDefineItem",
+              "leadingComments": null
+            },
+            "leadingComments": null
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 100,
+          "end": 124,
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 31
+            },
+            "end": {
+              "line": 5,
+              "column": 55
+            }
+          },
+          "extra": {
+            "rawValue": "./topology_define_item",
+            "raw": "'./topology_define_item'"
+          },
+          "value": "./topology_define_item"
+        },
+        "leadingComments": [
+          {
+            "type": "CommentLine",
+            "value": " NPM IMPORTS",
+            "start": 0,
+            "end": 14,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0
+              },
+              "end": {
+                "line": 1,
+                "column": 14
+              }
+            }
+          },
+          {
+            "type": "CommentLine",
+            "value": " import assert from 'assert'",
+            "start": 16,
+            "end": 46,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 0
+              },
+              "end": {
+                "line": 2,
+                "column": 30
+              }
+            }
+          },
+          {
+            "type": "CommentLine",
+            "value": " COMMON IMPORTS",
+            "start": 50,
+            "end": 67,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 0
+              },
+              "end": {
+                "line": 4,
+                "column": 17
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ImportDeclaration",
+        "start": 126,
+        "end": 181,
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 0
+          },
+          "end": {
+            "line": 6,
+            "column": 55
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportDefaultSpecifier",
+            "start": 133,
+            "end": 151,
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 7
+              },
+              "end": {
+                "line": 6,
+                "column": 25
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 133,
+              "end": 151,
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 7
+                },
+                "end": {
+                  "line": 6,
+                  "column": 25
+                },
+                "identifierName": "TopologyDefineMenu"
+              },
+              "name": "TopologyDefineMenu"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 157,
+          "end": 181,
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 31
+            },
+            "end": {
+              "line": 6,
+              "column": 55
+            }
+          },
+          "extra": {
+            "rawValue": "./topology_define_menu",
+            "raw": "'./topology_define_menu'"
+          },
+          "value": "./topology_define_menu"
+        }
+      },
+      {
+        "type": "VariableDeclaration",
+        "start": 187,
+        "end": 249,
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 0
+          },
+          "end": {
+            "line": 9,
+            "column": 62
+          }
+        },
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 191,
+            "end": 249,
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 4
+              },
+              "end": {
+                "line": 9,
+                "column": 62
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 191,
+              "end": 198,
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 4
+                },
+                "end": {
+                  "line": 9,
+                  "column": 11
+                },
+                "identifierName": "context"
+              },
+              "name": "context"
+            },
+            "init": {
+              "type": "StringLiteral",
+              "start": 201,
+              "end": 249,
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 14
+                },
+                "end": {
+                  "line": 9,
+                  "column": 62
+                }
+              },
+              "extra": {
+                "rawValue": "common/topology/define/topology_define_menubar",
+                "raw": "'common/topology/define/topology_define_menubar'"
+              },
+              "value": "common/topology/define/topology_define_menubar",
+              "leadingComments": null,
+              "trailingComments": null
+            },
+            "trailingComments": null
+          }
+        ],
+        "kind": "let",
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\r\n * @file Menubar class: describe a Menubar topology item.\r\n * \r\n * @author Luc BORIES\r\n * \r\n * @license Apache-2.0\r\n ",
+            "start": 257,
+            "end": 381,
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 0
+              },
+              "end": {
+                "line": 19,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 383,
+        "end": 1252,
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 0
+          },
+          "end": {
+            "line": 46,
+            "column": 1
+          }
+        },
+        "declaration": {
+          "type": "ClassDeclaration",
+          "start": 398,
+          "end": 1252,
+          "loc": {
+            "start": {
+              "line": 20,
+              "column": 15
+            },
+            "end": {
+              "line": 46,
+              "column": 1
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 404,
+            "end": 425,
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 21
+              },
+              "end": {
+                "line": 20,
+                "column": 42
+              },
+              "identifierName": "TopologyDefineMenubar"
+            },
+            "name": "TopologyDefineMenubar",
+            "leadingComments": null
+          },
+          "superClass": {
+            "type": "Identifier",
+            "start": 434,
+            "end": 452,
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 51
+              },
+              "end": {
+                "line": 20,
+                "column": 69
+              },
+              "identifierName": "TopologyDefineItem"
+            },
+            "name": "TopologyDefineItem"
+          },
+          "body": {
+            "type": "ClassBody",
+            "start": 454,
+            "end": 1252,
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 0
+              },
+              "end": {
+                "line": 46,
+                "column": 1
+              }
+            },
+            "body": [
+              {
+                "type": "ClassMethod",
+                "start": 786,
+                "end": 1249,
+                "loc": {
+                  "start": {
+                    "line": 33,
+                    "column": 1
+                  },
+                  "end": {
+                    "line": 45,
+                    "column": 2
+                  }
+                },
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 786,
+                  "end": 797,
+                  "loc": {
+                    "start": {
+                      "line": 33,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 33,
+                      "column": 12
+                    },
+                    "identifierName": "constructor"
+                  },
+                  "name": "constructor",
+                  "leadingComments": null
+                },
+                "static": false,
+                "kind": "constructor",
+                "id": null,
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "start": 798,
+                    "end": 806,
+                    "loc": {
+                      "start": {
+                        "line": 33,
+                        "column": 13
+                      },
+                      "end": {
+                        "line": 33,
+                        "column": 21
+                      },
+                      "identifierName": "arg_name"
+                    },
+                    "name": "arg_name"
+                  },
+                  {
+                    "type": "Identifier",
+                    "start": 808,
+                    "end": 820,
+                    "loc": {
+                      "start": {
+                        "line": 33,
+                        "column": 23
+                      },
+                      "end": {
+                        "line": 33,
+                        "column": 35
+                      },
+                      "identifierName": "arg_settings"
+                    },
+                    "name": "arg_settings"
+                  },
+                  {
+                    "type": "Identifier",
+                    "start": 822,
+                    "end": 837,
+                    "loc": {
+                      "start": {
+                        "line": 33,
+                        "column": 37
+                      },
+                      "end": {
+                        "line": 33,
+                        "column": 52
+                      },
+                      "identifierName": "arg_log_context"
+                    },
+                    "name": "arg_log_context"
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "start": 841,
+                  "end": 1249,
+                  "loc": {
+                    "start": {
+                      "line": 34,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 45,
+                      "column": 2
+                    }
+                  },
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "start": 960,
+                      "end": 1023,
+                      "loc": {
+                        "start": {
+                          "line": 37,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 37,
+                          "column": 65
+                        }
+                      },
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "start": 966,
+                          "end": 1023,
+                          "loc": {
+                            "start": {
+                              "line": 37,
+                              "column": 8
+                            },
+                            "end": {
+                              "line": 37,
+                              "column": 65
+                            }
+                          },
+                          "id": {
+                            "type": "Identifier",
+                            "start": 966,
+                            "end": 977,
+                            "loc": {
+                              "start": {
+                                "line": 37,
+                                "column": 8
+                              },
+                              "end": {
+                                "line": 37,
+                                "column": 19
+                              },
+                              "identifierName": "log_context"
+                            },
+                            "name": "log_context",
+                            "leadingComments": null
+                          },
+                          "init": {
+                            "type": "ConditionalExpression",
+                            "start": 980,
+                            "end": 1023,
+                            "loc": {
+                              "start": {
+                                "line": 37,
+                                "column": 22
+                              },
+                              "end": {
+                                "line": 37,
+                                "column": 65
+                              }
+                            },
+                            "test": {
+                              "type": "Identifier",
+                              "start": 980,
+                              "end": 995,
+                              "loc": {
+                                "start": {
+                                  "line": 37,
+                                  "column": 22
+                                },
+                                "end": {
+                                  "line": 37,
+                                  "column": 37
+                                },
+                                "identifierName": "arg_log_context"
+                              },
+                              "name": "arg_log_context"
+                            },
+                            "consequent": {
+                              "type": "Identifier",
+                              "start": 998,
+                              "end": 1013,
+                              "loc": {
+                                "start": {
+                                  "line": 37,
+                                  "column": 40
+                                },
+                                "end": {
+                                  "line": 37,
+                                  "column": 55
+                                },
+                                "identifierName": "arg_log_context"
+                              },
+                              "name": "arg_log_context"
+                            },
+                            "alternate": {
+                              "type": "Identifier",
+                              "start": 1016,
+                              "end": 1023,
+                              "loc": {
+                                "start": {
+                                  "line": 37,
+                                  "column": 58
+                                },
+                                "end": {
+                                  "line": 37,
+                                  "column": 65
+                                },
+                                "identifierName": "context"
+                              },
+                              "name": "context"
+                            }
+                          },
+                          "leadingComments": null
+                        }
+                      ],
+                      "kind": "const",
+                      "leadingComments": [
+                        {
+                          "type": "CommentLine",
+                          "value": " console.log('TopologyDefineMenubar.arg_settings', arg_settings.toJS ? arg_settings.toJS() : arg_settings)",
+                          "start": 846,
+                          "end": 954,
+                          "loc": {
+                            "start": {
+                              "line": 35,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 35,
+                              "column": 110
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 1027,
+                      "end": 1094,
+                      "loc": {
+                        "start": {
+                          "line": 38,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 38,
+                          "column": 69
+                        }
+                      },
+                      "expression": {
+                        "type": "CallExpression",
+                        "start": 1027,
+                        "end": 1094,
+                        "loc": {
+                          "start": {
+                            "line": 38,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 38,
+                            "column": 69
+                          }
+                        },
+                        "callee": {
+                          "type": "Super",
+                          "start": 1027,
+                          "end": 1032,
+                          "loc": {
+                            "start": {
+                              "line": 38,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 38,
+                              "column": 7
+                            }
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "start": 1033,
+                            "end": 1041,
+                            "loc": {
+                              "start": {
+                                "line": 38,
+                                "column": 8
+                              },
+                              "end": {
+                                "line": 38,
+                                "column": 16
+                              },
+                              "identifierName": "arg_name"
+                            },
+                            "name": "arg_name"
+                          },
+                          {
+                            "type": "Identifier",
+                            "start": 1043,
+                            "end": 1055,
+                            "loc": {
+                              "start": {
+                                "line": 38,
+                                "column": 18
+                              },
+                              "end": {
+                                "line": 38,
+                                "column": 30
+                              },
+                              "identifierName": "arg_settings"
+                            },
+                            "name": "arg_settings"
+                          },
+                          {
+                            "type": "StringLiteral",
+                            "start": 1057,
+                            "end": 1080,
+                            "loc": {
+                              "start": {
+                                "line": 38,
+                                "column": 32
+                              },
+                              "end": {
+                                "line": 38,
+                                "column": 55
+                              }
+                            },
+                            "extra": {
+                              "rawValue": "TopologyDefineMenubar",
+                              "raw": "'TopologyDefineMenubar'"
+                            },
+                            "value": "TopologyDefineMenubar"
+                          },
+                          {
+                            "type": "Identifier",
+                            "start": 1082,
+                            "end": 1093,
+                            "loc": {
+                              "start": {
+                                "line": 38,
+                                "column": 57
+                              },
+                              "end": {
+                                "line": 38,
+                                "column": 68
+                              },
+                              "identifierName": "log_context"
+                            },
+                            "name": "log_context"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 1102,
+                      "end": 1140,
+                      "loc": {
+                        "start": {
+                          "line": 40,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 40,
+                          "column": 40
+                        }
+                      },
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "start": 1102,
+                        "end": 1140,
+                        "loc": {
+                          "start": {
+                            "line": 40,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 40,
+                            "column": 40
+                          }
+                        },
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "start": 1102,
+                          "end": 1133,
+                          "loc": {
+                            "start": {
+                              "line": 40,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 40,
+                              "column": 33
+                            }
+                          },
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 1102,
+                            "end": 1106,
+                            "loc": {
+                              "start": {
+                                "line": 40,
+                                "column": 2
+                              },
+                              "end": {
+                                "line": 40,
+                                "column": 6
+                              }
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 1107,
+                            "end": 1133,
+                            "loc": {
+                              "start": {
+                                "line": 40,
+                                "column": 7
+                              },
+                              "end": {
+                                "line": 40,
+                                "column": 33
+                              },
+                              "identifierName": "is_topology_define_menubar"
+                            },
+                            "name": "is_topology_define_menubar"
+                          },
+                          "computed": false
+                        },
+                        "right": {
+                          "type": "BooleanLiteral",
+                          "start": 1136,
+                          "end": 1140,
+                          "loc": {
+                            "start": {
+                              "line": 40,
+                              "column": 36
+                            },
+                            "end": {
+                              "line": 40,
+                              "column": 40
+                            }
+                          },
+                          "value": true
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 1146,
+                      "end": 1177,
+                      "loc": {
+                        "start": {
+                          "line": 42,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 42,
+                          "column": 33
+                        }
+                      },
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "start": 1146,
+                        "end": 1177,
+                        "loc": {
+                          "start": {
+                            "line": 42,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 42,
+                            "column": 33
+                          }
+                        },
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "start": 1146,
+                          "end": 1164,
+                          "loc": {
+                            "start": {
+                              "line": 42,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 42,
+                              "column": 20
+                            }
+                          },
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 1146,
+                            "end": 1150,
+                            "loc": {
+                              "start": {
+                                "line": 42,
+                                "column": 2
+                              },
+                              "end": {
+                                "line": 42,
+                                "column": 6
+                              }
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 1151,
+                            "end": 1164,
+                            "loc": {
+                              "start": {
+                                "line": 42,
+                                "column": 7
+                              },
+                              "end": {
+                                "line": 42,
+                                "column": 20
+                              },
+                              "identifierName": "topology_type"
+                            },
+                            "name": "topology_type"
+                          },
+                          "computed": false
+                        },
+                        "right": {
+                          "type": "StringLiteral",
+                          "start": 1167,
+                          "end": 1177,
+                          "loc": {
+                            "start": {
+                              "line": 42,
+                              "column": 23
+                            },
+                            "end": {
+                              "line": 42,
+                              "column": 33
+                            }
+                          },
+                          "extra": {
+                            "rawValue": "menubars",
+                            "raw": "'menubars'"
+                          },
+                          "value": "menubars"
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 1185,
+                      "end": 1245,
+                      "loc": {
+                        "start": {
+                          "line": 44,
+                          "column": 2
+                        },
+                        "end": {
+                          "line": 44,
+                          "column": 62
+                        }
+                      },
+                      "expression": {
+                        "type": "CallExpression",
+                        "start": 1185,
+                        "end": 1245,
+                        "loc": {
+                          "start": {
+                            "line": 44,
+                            "column": 2
+                          },
+                          "end": {
+                            "line": 44,
+                            "column": 62
+                          }
+                        },
+                        "callee": {
+                          "type": "MemberExpression",
+                          "start": 1185,
+                          "end": 1208,
+                          "loc": {
+                            "start": {
+                              "line": 44,
+                              "column": 2
+                            },
+                            "end": {
+                              "line": 44,
+                              "column": 25
+                            }
+                          },
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 1185,
+                            "end": 1189,
+                            "loc": {
+                              "start": {
+                                "line": 44,
+                                "column": 2
+                              },
+                              "end": {
+                                "line": 44,
+                                "column": 6
+                              }
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 1190,
+                            "end": 1208,
+                            "loc": {
+                              "start": {
+                                "line": 44,
+                                "column": 7
+                              },
+                              "end": {
+                                "line": 44,
+                                "column": 25
+                              },
+                              "identifierName": "declare_collection"
+                            },
+                            "name": "declare_collection"
+                          },
+                          "computed": false
+                        },
+                        "arguments": [
+                          {
+                            "type": "StringLiteral",
+                            "start": 1209,
+                            "end": 1216,
+                            "loc": {
+                              "start": {
+                                "line": 44,
+                                "column": 26
+                              },
+                              "end": {
+                                "line": 44,
+                                "column": 33
+                              }
+                            },
+                            "extra": {
+                              "rawValue": "menus",
+                              "raw": "'menus'"
+                            },
+                            "value": "menus"
+                          },
+                          {
+                            "type": "StringLiteral",
+                            "start": 1218,
+                            "end": 1224,
+                            "loc": {
+                              "start": {
+                                "line": 44,
+                                "column": 35
+                              },
+                              "end": {
+                                "line": 44,
+                                "column": 41
+                              }
+                            },
+                            "extra": {
+                              "rawValue": "menu",
+                              "raw": "'menu'"
+                            },
+                            "value": "menu"
+                          },
+                          {
+                            "type": "Identifier",
+                            "start": 1226,
+                            "end": 1244,
+                            "loc": {
+                              "start": {
+                                "line": 44,
+                                "column": 43
+                              },
+                              "end": {
+                                "line": 44,
+                                "column": 61
+                              },
+                              "identifierName": "TopologyDefineMenu"
+                            },
+                            "name": "TopologyDefineMenu"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "directives": []
+                },
+                "leadingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\r\n\t * Create a TopologyDefineMenubar instance.\r\n\t * @class TopologyDefineMenubar\r\n\t * @extends TopologyDefineItem\r\n\t * \r\n\t * @param {string} arg_name - instance name.\r\n\t * @param {object} arg_settings - instance settings map.\r\n\t * @param {string} arg_log_context - trace context string.\r\n\t * \r\n\t * @returns {nothing}\r\n\t ",
+                    "start": 458,
+                    "end": 783,
+                    "loc": {
+                      "start": {
+                        "line": 22,
+                        "column": 1
+                      },
+                      "end": {
+                        "line": 32,
+                        "column": 4
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\r\n * @file Menubar class: describe a Menubar topology item.\r\n * \r\n * @author Luc BORIES\r\n * \r\n * @license Apache-2.0\r\n ",
+              "start": 257,
+              "end": 381,
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 0
+                },
+                "end": {
+                  "line": 19,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "trailingComments": []
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\r\n * @file Menubar class: describe a Menubar topology item.\r\n * \r\n * @author Luc BORIES\r\n * \r\n * @license Apache-2.0\r\n ",
+            "start": 257,
+            "end": 381,
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 0
+              },
+              "end": {
+                "line": 19,
+                "column": 3
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentLine",
+      "value": " NPM IMPORTS",
+      "start": 0,
+      "end": 14,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " import assert from 'assert'",
+      "start": 16,
+      "end": 46,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " COMMON IMPORTS",
+      "start": 50,
+      "end": 67,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * @file Menubar class: describe a Menubar topology item.\r\n * \r\n * @author Luc BORIES\r\n * \r\n * @license Apache-2.0\r\n ",
+      "start": 257,
+      "end": 381,
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n\t * Create a TopologyDefineMenubar instance.\r\n\t * @class TopologyDefineMenubar\r\n\t * @extends TopologyDefineItem\r\n\t * \r\n\t * @param {string} arg_name - instance name.\r\n\t * @param {object} arg_settings - instance settings map.\r\n\t * @param {string} arg_log_context - trace context string.\r\n\t * \r\n\t * @returns {nothing}\r\n\t ",
+      "start": 458,
+      "end": 783,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 1
+        },
+        "end": {
+          "line": 32,
+          "column": 4
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " console.log('TopologyDefineMenubar.arg_settings', arg_settings.toJS ? arg_settings.toJS() : arg_settings)",
+      "start": 846,
+      "end": 954,
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 2
+        },
+        "end": {
+          "line": 35,
+          "column": 110
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentLine",
+      "value": " NPM IMPORTS",
+      "start": 0,
+      "end": 14,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " import assert from 'assert'",
+      "start": 16,
+      "end": 46,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " COMMON IMPORTS",
+      "start": 50,
+      "end": 67,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 69,
+      "end": 75,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "TopologyDefineItem",
+      "start": 76,
+      "end": 94,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 7
+        },
+        "end": {
+          "line": 5,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 95,
+      "end": 99,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 26
+        },
+        "end": {
+          "line": 5,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./topology_define_item",
+      "start": 100,
+      "end": 124,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 31
+        },
+        "end": {
+          "line": 5,
+          "column": 55
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 126,
+      "end": 132,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "TopologyDefineMenu",
+      "start": 133,
+      "end": 151,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 7
+        },
+        "end": {
+          "line": 6,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 152,
+      "end": 156,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 26
+        },
+        "end": {
+          "line": 6,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./topology_define_menu",
+      "start": 157,
+      "end": 181,
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 31
+        },
+        "end": {
+          "line": 6,
+          "column": 55
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "let",
+        "keyword": "let",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "let",
+      "start": 187,
+      "end": 190,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 9,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "context",
+      "start": 191,
+      "end": 198,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 4
+        },
+        "end": {
+          "line": 9,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 199,
+      "end": 200,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 12
+        },
+        "end": {
+          "line": 9,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "common/topology/define/topology_define_menubar",
+      "start": 201,
+      "end": 249,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 14
+        },
+        "end": {
+          "line": 9,
+          "column": 62
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n * @file Menubar class: describe a Menubar topology item.\r\n * \r\n * @author Luc BORIES\r\n * \r\n * @license Apache-2.0\r\n ",
+      "start": 257,
+      "end": 381,
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 19,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 383,
+      "end": 389,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 0
+        },
+        "end": {
+          "line": 20,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "default",
+      "start": 390,
+      "end": 397,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 7
+        },
+        "end": {
+          "line": 20,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "class",
+        "keyword": "class",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "class",
+      "start": 398,
+      "end": 403,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 15
+        },
+        "end": {
+          "line": 20,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "TopologyDefineMenubar",
+      "start": 404,
+      "end": 425,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 21
+        },
+        "end": {
+          "line": 20,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "extends",
+        "keyword": "extends",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "extends",
+      "start": 426,
+      "end": 433,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 43
+        },
+        "end": {
+          "line": 20,
+          "column": 50
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "TopologyDefineItem",
+      "start": 434,
+      "end": 452,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 51
+        },
+        "end": {
+          "line": 20,
+          "column": 69
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 454,
+      "end": 455,
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\r\n\t * Create a TopologyDefineMenubar instance.\r\n\t * @class TopologyDefineMenubar\r\n\t * @extends TopologyDefineItem\r\n\t * \r\n\t * @param {string} arg_name - instance name.\r\n\t * @param {object} arg_settings - instance settings map.\r\n\t * @param {string} arg_log_context - trace context string.\r\n\t * \r\n\t * @returns {nothing}\r\n\t ",
+      "start": 458,
+      "end": 783,
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 1
+        },
+        "end": {
+          "line": 32,
+          "column": 4
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "constructor",
+      "start": 786,
+      "end": 797,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 1
+        },
+        "end": {
+          "line": 33,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 797,
+      "end": 798,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 12
+        },
+        "end": {
+          "line": 33,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "arg_name",
+      "start": 798,
+      "end": 806,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 13
+        },
+        "end": {
+          "line": 33,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 806,
+      "end": 807,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 21
+        },
+        "end": {
+          "line": 33,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "arg_settings",
+      "start": 808,
+      "end": 820,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 23
+        },
+        "end": {
+          "line": 33,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 820,
+      "end": 821,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 35
+        },
+        "end": {
+          "line": 33,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "arg_log_context",
+      "start": 822,
+      "end": 837,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 37
+        },
+        "end": {
+          "line": 33,
+          "column": 52
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 837,
+      "end": 838,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 52
+        },
+        "end": {
+          "line": 33,
+          "column": 53
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 841,
+      "end": 842,
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 1
+        },
+        "end": {
+          "line": 34,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " console.log('TopologyDefineMenubar.arg_settings', arg_settings.toJS ? arg_settings.toJS() : arg_settings)",
+      "start": 846,
+      "end": 954,
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 2
+        },
+        "end": {
+          "line": 35,
+          "column": 110
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "const",
+        "keyword": "const",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "const",
+      "start": 960,
+      "end": 965,
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 2
+        },
+        "end": {
+          "line": 37,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "log_context",
+      "start": 966,
+      "end": 977,
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 8
+        },
+        "end": {
+          "line": 37,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 978,
+      "end": 979,
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 20
+        },
+        "end": {
+          "line": 37,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "arg_log_context",
+      "start": 980,
+      "end": 995,
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 22
+        },
+        "end": {
+          "line": 37,
+          "column": 37
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "?",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 996,
+      "end": 997,
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 38
+        },
+        "end": {
+          "line": 37,
+          "column": 39
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "arg_log_context",
+      "start": 998,
+      "end": 1013,
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 40
+        },
+        "end": {
+          "line": 37,
+          "column": 55
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1014,
+      "end": 1015,
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 56
+        },
+        "end": {
+          "line": 37,
+          "column": 57
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "context",
+      "start": 1016,
+      "end": 1023,
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 58
+        },
+        "end": {
+          "line": 37,
+          "column": 65
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "super",
+        "keyword": "super",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "super",
+      "start": 1027,
+      "end": 1032,
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 2
+        },
+        "end": {
+          "line": 38,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1032,
+      "end": 1033,
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 7
+        },
+        "end": {
+          "line": 38,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "arg_name",
+      "start": 1033,
+      "end": 1041,
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 8
+        },
+        "end": {
+          "line": 38,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1041,
+      "end": 1042,
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 16
+        },
+        "end": {
+          "line": 38,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "arg_settings",
+      "start": 1043,
+      "end": 1055,
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 18
+        },
+        "end": {
+          "line": 38,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1055,
+      "end": 1056,
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 30
+        },
+        "end": {
+          "line": 38,
+          "column": 31
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "TopologyDefineMenubar",
+      "start": 1057,
+      "end": 1080,
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 32
+        },
+        "end": {
+          "line": 38,
+          "column": 55
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1080,
+      "end": 1081,
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 55
+        },
+        "end": {
+          "line": 38,
+          "column": 56
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "log_context",
+      "start": 1082,
+      "end": 1093,
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 57
+        },
+        "end": {
+          "line": 38,
+          "column": 68
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1093,
+      "end": 1094,
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 68
+        },
+        "end": {
+          "line": 38,
+          "column": 69
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 1102,
+      "end": 1106,
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 2
+        },
+        "end": {
+          "line": 40,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1106,
+      "end": 1107,
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 6
+        },
+        "end": {
+          "line": 40,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "is_topology_define_menubar",
+      "start": 1107,
+      "end": 1133,
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 7
+        },
+        "end": {
+          "line": 40,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 1134,
+      "end": 1135,
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 34
+        },
+        "end": {
+          "line": 40,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "true",
+        "keyword": "true",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "true",
+      "start": 1136,
+      "end": 1140,
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 36
+        },
+        "end": {
+          "line": 40,
+          "column": 40
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 1146,
+      "end": 1150,
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 2
+        },
+        "end": {
+          "line": 42,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1150,
+      "end": 1151,
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 6
+        },
+        "end": {
+          "line": 42,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "topology_type",
+      "start": 1151,
+      "end": 1164,
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 7
+        },
+        "end": {
+          "line": 42,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 1165,
+      "end": 1166,
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 21
+        },
+        "end": {
+          "line": 42,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "menubars",
+      "start": 1167,
+      "end": 1177,
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 23
+        },
+        "end": {
+          "line": 42,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 1185,
+      "end": 1189,
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 2
+        },
+        "end": {
+          "line": 44,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1189,
+      "end": 1190,
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 6
+        },
+        "end": {
+          "line": 44,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "declare_collection",
+      "start": 1190,
+      "end": 1208,
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 7
+        },
+        "end": {
+          "line": 44,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1208,
+      "end": 1209,
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 25
+        },
+        "end": {
+          "line": 44,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "menus",
+      "start": 1209,
+      "end": 1216,
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 26
+        },
+        "end": {
+          "line": 44,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1216,
+      "end": 1217,
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 33
+        },
+        "end": {
+          "line": 44,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "menu",
+      "start": 1218,
+      "end": 1224,
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 35
+        },
+        "end": {
+          "line": 44,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1224,
+      "end": 1225,
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 41
+        },
+        "end": {
+          "line": 44,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "TopologyDefineMenu",
+      "start": 1226,
+      "end": 1244,
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 43
+        },
+        "end": {
+          "line": 44,
+          "column": 61
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1244,
+      "end": 1245,
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 61
+        },
+        "end": {
+          "line": 44,
+          "column": 62
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1248,
+      "end": 1249,
+      "loc": {
+        "start": {
+          "line": 45,
+          "column": 1
+        },
+        "end": {
+          "line": 45,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1251,
+      "end": 1252,
+      "loc": {
+        "start": {
+          "line": 46,
+          "column": 0
+        },
+        "end": {
+          "line": 46,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1254,
+      "end": 1254,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 0
+        },
+        "end": {
+          "line": 47,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/servers/metrics_server.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/runtime.js~Runtime.html">Runtime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/security.js~Security.html">Security</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/transaction.js~Transaction.html">Transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-runtime_singleton">runtime_singleton</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics">metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/metric_duration.js~MetricDuration.html">MetricDuration</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-base">metrics/base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_collector.js~MetricsCollector.html">MetricsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_record.js~MetricsRecord.html">MetricsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_reducer.js~MetricsReducer.html">MetricsReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_state.js~MetricsState.html">MetricsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-bus">metrics/bus</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_collector.js~MetricsBusCollector.html">MetricsBusCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_record.js~MetricsBusRecord.html">MetricsBusRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_reducer.js~MetricsBusReducer.html">MetricsBusReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_state.js~MetricBusState.html">MetricBusState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-host">metrics/host</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_collector.js~MetricsHostCollector.html">MetricsHostCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_record.js~MetricsHostRecord.html">MetricsHostRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_reducer.js~MetricsHostReducer.html">MetricsHostReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_state.js~MetricHostState.html">MetricHostState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-http">metrics/http</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_collector.js~MetricsHttpCollector.html">MetricsHttpCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_record.js~MetricsHttpRecord.html">MetricsHttpRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_reducer.js~MetricHttpReducer.html">MetricHttpReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_state.js~MetricsHttpState.html">MetricsHttpState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-nodejs">metrics/nodejs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_collector.js~MetricsNodeJsCollector.html">MetricsNodeJsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_record.js~MetricsNodeJsRecord.html">MetricsNodeJsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_reducer.js~MetricsNodeReducer.html">MetricsNodeReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_state.js~MetricNodeJsState.html">MetricNodeJsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#nodes">nodes</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/bus_node_feature.js~BusNodeFeature.html">BusNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/metrics_node_feature.js~MetricsNodeFeature.html">MetricsNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node.js~Node.html">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_feature.js~NodeFeature.html">NodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_messaging.js~NodeMessaging.html">NodeMessaging</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/servers_node_feature.js~ServersNodeFeature.html">ServersNodeFeature</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#plugins">plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/features_manager.js~FeaturesManager.html">FeaturesManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_factory.js~PluginsFactory.html">PluginsFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_manager.js~PluginsManager.html">PluginsManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/rendering_manager.js~RenderingManager.html">RenderingManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_manager.js~ServersManager.html">ServersManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_plugin.js~ServersPlugin.html">ServersPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/services_manager.js~ServicesManager.html">ServicesManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/runtime_executable.js~RuntimeExecutable.html">RuntimeExecutable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage0_create_local_node_executable.js~RuntimeStage0Executable.html">RuntimeStage0Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage1_define_topology_executable.js~RuntimeStage1Executable.html">RuntimeStage1Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage2_load_local_topology_executable.js~RuntimeStage2Executable.html">RuntimeStage2Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage3_start_local_node_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage3_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage4_executable.js~RuntimeStage4Executable.html">RuntimeStage4Executable</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security">security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_manager.js~AuthenticationManager.html">AuthenticationManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin.js~AuthenticationPlugin.html">AuthenticationPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin_lowdb.js~AuthenticationLowDbPlugin.html">AuthenticationLowDbPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_wrapper.js~AuthenticationWrapper.html">AuthenticationWrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authorization_manager.js~AuthorizationManager.html">AuthorizationManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security-todo">security/todo</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport.js~AuthenticationPluginPassport.html">AuthenticationPluginPassport</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local.js~AuthenticationPluginPassportLocal.html">AuthenticationPluginPassportLocal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_db.js~AuthenticationPluginPassportLocalDb.html">AuthenticationPluginPassportLocalDb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_file.js~AuthenticationPluginPassportLocalFile.html">AuthenticationPluginPassportLocalFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#servers">servers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/express_server.js~ExpressServer.html">ExpressServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/logs_server.js~LogsServer.html">LogsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/metrics_server.js~MetricsServer.html">MetricsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/restify_server.js~RestifyServer.html">RestifyServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/routable_server.js~RoutableServer.html">RoutableServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/server.js~Server.html">Server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServerTypes">ServerTypes</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">services</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/routes_svc_consumer.js~RoutesSvcConsumer.html">RoutesSvcConsumer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-uused-base">services/uused_base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_service_exec_provider.js~ServiceExecProvider.html">ServiceExecProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_socketio_service_provider.js~SocketIOServiceProvider.html">SocketIOServiceProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/servers/metrics_server.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+
+// COMMON IMPORTS
+import T from &apos;devapt-core-common/dist/js/utils/types&apos;
+
+// SERVER IMPORTS
+// import runtime from &apos;../base/runtime&apos;
+import Server from &apos;./server&apos;
+import MetricsHostCollector from &apos;../metrics/host/metrics_host_collector&apos;
+import MetricsNodeJsCollector from &apos;../metrics/nodejs/metrics_nodejs_collector&apos;
+import MetricsHttpCollector from &apos;../metrics/http/metrics_http_collector&apos;
+import MetricsBusCollector from &apos;../metrics/bus/metrics_bus_collector&apos;
+
+
+const context = &apos;server/servers/metrics_server&apos;
+
+
+
+/**
+ * Metrics server class.
+ * 
+ * @author Luc BORIES
+ * @license Apache-2.0
+ * 
+ * @example
+ * 	API:
+ * 		-&gt;build_server()
+ * 
+ * 		-&gt;receive_metrics(arg_msg)
+ * 		-&gt;process_metric(arg_metric_type, arg_metrics)
+ * 
+ * 		-&gt;get_metrics_state_values(arg_type)
+ * 
+ * 		-&gt;get_http_metrics_state_values()
+ * 
+ * 		-&gt;get_host_metrics_state_values()
+ * 		-&gt;get_host_metrics_state_values_items()
+ * 		-&gt;get_host_metrics_state_values_for(arg_hostname)
+ * 
+ * 		-&gt;get_bus_metrics_state_values()
+ * 		-&gt;get_bus_metrics_state_values_items()
+ * 		-&gt;get_bus_metrics_state_values_for(arg_busname)
+ * 
+ * 		-&gt;get_nodejs_metrics_state_values()
+ * 		-&gt;get_nodejs_metrics_state_values_items()
+ * 		-&gt;get_nodejs_metrics_state_values_for(arg_runtime_uid)
+ */
+export default class MetricsServer extends Server
+{
+	/**
+	 * Create MetricsServer instance to process metrics records.
+	 * 
+	 * @param {string} arg_name - server instance name
+	 * @param {Immutable.Map} arg_settings - server instance settings
+	 * @param {string} arg_context - logging context
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_name, arg_settings, arg_log_context=context)
+	{
+		super(arg_name, &apos;MetricsServer&apos;, arg_settings, arg_log_context)
+		
+		this.is_metric_server = true
+        
+		this.metrics_collectors = {}
+		
+		this.metrics_collectors[&apos;host&apos;] = new MetricsHostCollector({}) // TODO find settings from parent settings
+		this.metrics_collectors[&apos;nodejs&apos;] = new MetricsNodeJsCollector({}) // TODO find settings from parent settings
+		this.metrics_collectors[&apos;http&apos;] = new MetricsHttpCollector({}) // TODO find settings from parent settings
+		this.metrics_collectors[&apos;bus&apos;] = new MetricsBusCollector({}) // TODO find settings from parent settings
+		
+		this.metrics_collectors[&apos;host&apos;].init()
+		this.metrics_collectors[&apos;nodejs&apos;].init()
+		this.metrics_collectors[&apos;http&apos;].init()
+		this.metrics_collectors[&apos;bus&apos;].init()
+	}
+	
+	
+	
+	/**
+	 * Build server.
+	 * 
+	 * @returns {nothing}
+	 */
+	build_server()
+	{
+		this.enter_group(&apos;build_server&apos;)
+		
+		assert( this.server_protocole == &apos;bus&apos;, context + &apos;:bad protocole for metric server [&apos; + this.server_protocole + &apos;]&apos;)
+		
+		// runtime.node.metrics_bus.msg_register(this, &apos;metrics&apos;, &apos;receive_metrics&apos;)
+
+		this.leave_group(&apos;build_server&apos;)
+	}
+
+
+
+	/**
+	 * Process received metrics message (to override in sub classes).
+	 * 
+	 * @param {DistributedMetrics} arg_msg - metrics message instance.
+	 * 
+	 * @returns {nothing}
+	 */
+	receive_metrics(arg_msg)
+	{
+		this.enter_group(&apos;receive_metrics&apos;)
+
+		// console.log(context + &apos;:receive_metrics:from=%s type=%s&apos;, arg_msg.sender, arg_msg.payload.metric)
+
+		// DO NOT PROCESS MESSAGES FROM SELF
+		if (arg_msg.sender == this.get_name())
+		{
+			this.leave_group(&apos;receive_metrics:ignore message from itself&apos;)
+			return
+		}
+
+		this.process_metric(arg_msg.get_metrics_type(), arg_msg.get_metrics_values())
+
+		this.leave_group(&apos;receive_metrics&apos;)
+	}
+    
+	
+    
+    /**
+     * Process metrics records.
+	 * 
+	 * {string} arg_metric_type - metrics type (host, http...)
+     * {array} arg_metrics - Array of metrics plain objects
+	 * 
+	 * @returns {nothing}
+     */
+	process_metric(arg_metric_type, arg_metrics)
+	{
+		this.enter_group(&apos;process_metric&apos;)
+		this.debug(&apos;metric type:&apos; + arg_metric_type)
+		
+		// console.log(arg_metrics, context + &apos;:process_metric:arg_metrics for &apos; + arg_metric_type)
+		
+		assert( T.isString(arg_metric_type), context + &apos;:process_metric:bad metrics type&apos;)
+		assert( T.isArray(arg_metrics) &amp;&amp; arg_metrics.length &gt; 0, context + &apos;:process_metric:bad metrics array&apos;)
+		assert( T.isObject(arg_metrics[0]) &amp;&amp; T.isString(arg_metrics[0].metric) &amp;&amp; arg_metrics[0].metric == arg_metric_type, context + &apos;:process_metric:bad metrics[0] object&apos;)
+		
+		if (arg_metric_type in this.metrics_collectors)
+		{
+			this.debug(&apos;metrics collector found for &apos; + arg_metric_type)
+			this.metrics_collectors[arg_metric_type].process_values(arg_metrics)
+		}
+
+		this.leave_group(&apos;process_metric&apos;)
+	}
+	
+	
+	
+	/**
+	 * Get metrics state values.
+	 * 
+	 * @param {string} arg_type - metrics type.
+	 * @param {string} arg_key  - metrics key.
+	 * 
+	 * @returns {object} - metrics collector state values object.
+	 */
+	get_metrics_state_values(arg_type, arg_key=undefined)
+	{
+		if (arg_type in this.metrics_collectors)
+		{
+			const metrics_collector = this.metrics_collectors[arg_type]
+			assert( T.isObject(metrics_collector) &amp;&amp; metrics_collector.is_metrics_collector, context + &apos;:get_metrics_state_values:bad metrics collector object for &apos; + arg_type)
+			
+			if (! T.isNotEmptyString(arg_key) )
+			{
+				return metrics_collector.get_state_values()
+			}
+
+			const state_values = metrics_collector.get_state_values()
+			if (arg_key in state_values)
+			{
+				return state_values[arg_key]
+			}
+		}
+		
+		return undefined
+	}
+	
+	
+	
+	/**
+	 * Get metrics state values keys.
+	 * 
+	 * @param {string} arg_type - metrics type.
+	 * 
+	 * @returns {array} - state values keys.
+	 */
+	get_metrics_state_values_items(arg_type)
+	{
+		const state_values = this.get_metrics_state_values(arg_type)
+		let keys = Object.keys(state_values)
+		
+		const metric_index = keys.indexOf(&apos;metric&apos;)
+		keys.splice(metric_index, 1)
+		
+		return keys
+	}
+	
+	
+	
+	// *************************************************** HTTP METRICS ***************************************************
+	
+	/**
+	 * Get http metrics state values.
+	 * 
+	 * @returns {Object} - http state values object.
+	 */
+	get_http_metrics_state_values()
+	{
+		return this.get_metrics_state_values(&apos;http&apos;)
+	}
+	
+	
+	
+	// *************************************************** HOST METRICS ***************************************************
+	
+	/**
+	 * Get host metrics state values.
+	 * 
+	 * @returns {Object} - host state values object.
+	 */
+	get_host_metrics_state_values()
+	{
+		return this.get_metrics_state_values(&apos;host&apos;)
+	}
+	
+	
+	
+	/**
+	 * Get host metrics state values.
+	 * 
+	 * @returns {Object} - host state values object.
+	 */
+	get_host_metrics_state_values_items()
+	{
+		const state_values = this.get_metrics_state_values(&apos;host&apos;)
+		let keys = Object.keys(state_values)
+		
+		const metric_index = keys.indexOf(&apos;metric&apos;)
+		keys.splice(metric_index, 1)
+		
+		return { items:keys }
+	}
+	
+	
+	
+	/**
+	 * Get host metrics state values for an hostname.
+	 * 
+	 * @param {string} arg_hostname - hostname.
+	 * 
+	 * @returns {Object} - host state values object.
+	 */
+	get_host_metrics_state_values_for(arg_hostname)
+	{
+		const state_values = this.get_metrics_state_values(&apos;host&apos;)
+		return (arg_hostname in state_values) ? state_values[arg_hostname] : { hostname:arg_hostname }
+	}
+	
+	
+	
+	// *************************************************** BUS METRICS ***************************************************
+	
+	/**
+	 * Get bus metrics state values.
+	 * 
+	 * @returns {Object} - bus state values object.
+	 */
+	get_bus_metrics_state_values()
+	{
+		return this.get_metrics_state_values(&apos;bus&apos;)
+	}
+	
+	
+	
+	/**
+	 * Get bus metrics state values.
+	 * 
+	 * @returns {Object} - bus state values object.
+	 */
+	get_bus_metrics_state_values_items()
+	{
+		const state_values = this.get_metrics_state_values(&apos;bus&apos;)
+		let keys = Object.keys(state_values)
+		
+		const metric_index = keys.indexOf(&apos;metric&apos;)
+		keys.splice(metric_index, 1)
+		
+		return { items:keys }
+	}
+	
+	
+	
+	/**
+	 * Get bus metrics state values for a bus name.
+	 * 
+	 * @param {string} arg_bus_name - bus name.
+	 * 
+	 * @returns {Object} - bus state values object.
+	 */
+	get_bus_metrics_state_values_for(arg_bus_name)
+	{
+		const state_values = this.get_metrics_state_values(&apos;bus&apos;)
+		return (arg_bus_name in state_values) ? state_values[arg_bus_name] : { bus_name:arg_bus_name }
+	}
+	
+	
+	
+	// *************************************************** NODEJS METRICS ***************************************************
+	
+	/**
+	 * Get nodejs metrics state values.
+	 * 
+	 * @returns {Object} - nodejs state values object.
+	 */
+	get_nodejs_metrics_state_values()
+	{
+		const state_values = this.get_metrics_state_values(&apos;nodejs&apos;)
+		// console.log(state_values, &apos;get_nodejs_metrics_state_values&apos;)
+		return state_values
+	}
+	
+	
+	
+	/**
+	 * Get host metrics state values.
+	 * 
+	 * @returns {Object} - host state values object.
+	 */
+	get_nodejs_metrics_state_values_items()
+	{
+		const state_values = this.get_metrics_state_values(&apos;nodejs&apos;)
+		let keys = Object.keys(state_values)
+		
+		const metric_index = keys.indexOf(&apos;metric&apos;)
+		keys.splice(metric_index, 1)
+		
+		return { items:keys }
+	}
+	
+	
+	
+	/**
+	 * Get nodejs metrics state values for a nodejs instance.
+	 * 
+	 * @param {string} arg_runtime_uid - nodejs runtime uid.
+	 * 
+	 * @returns {Object} - nodejs state values object.
+	 */
+	get_nodejs_metrics_state_values_for(arg_runtime_uid)
+	{
+		const state_values = this.get_metrics_state_values(&apos;nodejs&apos;)
+		const state_rt_values = (arg_runtime_uid in state_values) ? state_values[arg_runtime_uid] : { runtime_uid:arg_runtime_uid }
+		// console.log(state_rt_values, &apos;get_nodejs_metrics_state_values_for&apos;, arg_runtime_uid)
+		return state_rt_values
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

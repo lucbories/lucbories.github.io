@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/default_plugins/services_default_plugin.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#default-plugins">default_plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/default_plugins/services_default_plugin.js~DefaultServicesPlugin.html">DefaultServicesPlugin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_route.js~ExecutableRoute.html">ExecutableRoute</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-assets">services/assets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/assets_svc_provider.js~AssetsSvcProvider.html">AssetsSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/executable_route_assets.js~ExecutableRouteAssets.html">ExecutableRouteAssets</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-logs">services/logs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/logs/logs_svc_provider.js~LogsSvcProvider.html">LogsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-messages">services/messages</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/messages/messages_svc_provider.js~MessagesSvcProvider.html">MessagesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-metrics">services/metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics/metrics_svc_provider.js~MetricsSvcProvider.html">MetricsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-middlewares">services/middlewares</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/executable_route_middleware.js~ExecutableRouteMiddleware.html">ExecutableRouteMiddleware</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/middlewares_svc_provider.js~MiddlewaresSvcProvider.html">MiddlewaresSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-ping">services/ping</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/ping/ping_svc_provider.js~PingSvcProvider.html">PingSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-resources">services/resources</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/executable_route_get_resource.js~ExecutableRouteGetResources.html">ExecutableRouteGetResources</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/resources_svc_provider.js~ResourcesSvcProvider.html">ResourcesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-security">services/security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_service.js~SecurityService.html">SecurityService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_consumer.js~SecuritySvcConsumer.html">SecuritySvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_provider.js~SecuritySvcProvider.html">SecuritySvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-todo-crud">services/todo_crud</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_service.js~CrudService.html">CrudService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_consumer.js~CrudSvcConsumer.html">CrudSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_provider.js~CrudSvcProvider.html">CrudSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/executable_route_model_crud.js~ExecutableRouteModelCrud.html">ExecutableRouteModelCrud</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-topology">services/topology</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_service.js~TopologyService.html">TopologyService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_consumer.js~TopologySvcHostConsumer.html">TopologySvcHostConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/default_plugins/services_default_plugin.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+import _      from &apos;lodash&apos;
+
+// SERVER IMPORTS
+import T               from &apos;devapt-core-common/dist/js/utils/types&apos;
+import ServicesPlugin  from &apos;devapt-core-common/dist/js/plugins/services_plugin&apos;
+import Service         from &apos;devapt-core-common/dist/js/services/service&apos;
+import ServiceProvider from &apos;devapt-core-common/dist/js/services/service_provider&apos;
+import ServiceConsumer from &apos;devapt-core-common/dist/js/services/service_consumer_by_url&apos;
+
+
+/**
+ * Default plugins name/class path map.
+ * @private
+ * @type {object}
+ */
+const default_plugins_map = {
+	&apos;ping_svc&apos;:{
+		&apos;provider&apos;:&apos;devapt-core-services/dist/js/services/ping/ping_svc_provider&apos;
+	},
+	&apos;html_assets_svc&apos;:{
+		&apos;provider&apos;:&apos;devapt-core-services/dist/js/services/assets/assets_svc_provider&apos;
+	},
+	&apos;logs_svc&apos;:{
+		&apos;provider&apos;:&apos;devapt-core-services/dist/js/services/logs/logs_svc_provider&apos;
+	},
+	&apos;topology_svc&apos;:{
+		&apos;provider&apos;:&apos;devapt-core-services/dist/js/services/topology/topology_svc_provider&apos;
+	},
+	&apos;messages_svc&apos;:{
+		&apos;provider&apos;:&apos;devapt-core-services/dist/js/services/messages/messages_svc_provider&apos;
+	},
+	&apos;resources_svc&apos;:{
+		&apos;provider&apos;:&apos;devapt-core-services/dist/js/services/resources/resources_svc_provider&apos;
+	},
+	&apos;metrics_svc&apos;:{
+		&apos;provider&apos;:&apos;devapt-core-services/dist/js/services/metrics/metrics_svc_provider&apos;
+	},
+	&apos;middlewares_svc&apos;:{
+		&apos;provider&apos;:&apos;devapt-core-services/dist/js/services/middlewares/middlewares_svc_provider&apos;
+	}
+}
+// &apos;rest_api_models_query&apos;:    &apos;devapt-core-services/dist/js/services/crud/crud_service&apos;,
+// &apos;rest_api_models_modifier&apos;: &apos;devapt-core-services/dist/js/services/crud/crud_service&apos;,
+// &apos;rest_api_resources_query&apos;: &apos;devapt-core-services/dist/js/services/resource/resources_service&apos;,
+// &apos;security&apos;:                 &apos;devapt-core-services/dist/js/services/security/security_service&apos;
+
+/**
+ * Contextual constant for this file logs.
+ * @private
+ */
+const context = &apos;services/default_plugins/services_default_plugin&apos;
+
+
+
+/**
+ * Plugin class for default services.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class DefaultServicesPlugin extends ServicesPlugin
+{
+	/**
+     * Create a DefaultServicesPlugin instance.
+	 * 
+	 * @param {RuntimeBase} arg_runtime - runtime instance.
+	 * @param {PluginsManager} arg_manager - plugins manager.
+	 * 
+	 * @returns {nothing}
+     */
+	constructor(arg_runtime, arg_manager)
+	{
+		assert( T.isObject(arg_runtime) &amp;&amp; arg_runtime.is_base_runtime, context + &apos;:constructor:bad runtime instance&apos; )
+		assert( T.isObject(arg_manager), context + &apos;:constructor:bad plugins manager instance&apos; )
+
+		super(arg_runtime, arg_manager, &apos;DefaultServices&apos;, &apos;1.0.0&apos;)
+
+		/**
+		 * Services classes.
+		 * @private
+		 * @type {object}
+		 */
+		this._services_classes = {}
+
+		// FILL SERVICES CLASSES
+		_.forEach(
+			default_plugins_map,
+			(value, svc_name)=&gt;{
+				console.log(&apos;service [&apos; + svc_name + &apos;] configuration=&apos;, value)
+
+				// TEMPORARY DEFAULT CLASSES
+				let provider_class = ServiceProvider
+				let consumer_class = ServiceConsumer
+				let service_class  = Service
+				
+				// GET SERVICE CLASS
+				if ( T.isClass(value) )
+				{
+					service_class = value
+				}
+
+				// GET SERVICE CLASS FILE
+				if ( T.isString(value) )
+				{
+					service_class = this.load_feature_class(value)
+				}
+
+				// GET SERVICE CONFIGURATION
+				if ( T.isObject(value) )
+				{
+					// GET SERVICE PROVIDER CLASS FILE
+					if ( T.isString(value.provider) )
+					{
+						console.log(&apos;service [&apos; + svc_name + &apos;] configuration:value.provider&apos;, value.provider)
+						provider_class = this.load_feature_class(value.provider)
+					}
+
+					// GET SERVICE CONSUMER CLASS FILE
+					if ( T.isString(value.consumer) )
+					{
+						console.log(&apos;service [&apos; + svc_name + &apos;] configuration:value.consumer&apos;, value.consumer)
+						consumer_class = this.load_feature_class(value.consumer)
+					}
+
+					// GET SERVICE CLASS FILE
+					if ( T.isString(value.service) )
+					{
+						console.log(&apos;service [&apos; + svc_name + &apos;] configuration:value.service&apos;, value.service)
+						service_class = this.load_feature_class(value.service)
+					}
+				}
+
+				// CHECK SERVICES CLASSES
+				if ( ! T.isClass(service_class) || ! T.isClass(provider_class) || ! T.isClass(consumer_class) )
+				{
+					console.log(&apos;service [&apos; + svc_name + &apos;] service_class&apos;, service_class)
+					console.log(&apos;service [&apos; + svc_name + &apos;] provider_class&apos;, provider_class)
+					console.log(&apos;service [&apos; + svc_name + &apos;] consumer_class&apos;, consumer_class)
+					console.error(context + &apos;:constructor:bad classes for service=&apos; + svc_name)
+					return
+				}
+
+				// REGISTER SERVICES CLASSES
+				console.log(context + &apos;:constructor:register classes for service=&apos; + svc_name)
+				this._services_classes[svc_name] = {
+					service:service_class,
+					provider:provider_class,
+					consumer:consumer_class
+				}
+			}
+		)
+	}
+	
+
+
+	/**
+     * Test if a feature class is known into self contained plugins.
+	 * 
+     * @param {string} arg_class_name - feature class name.
+	 * 
+     * @returns {boolean} feature class found or not.
+     */
+	has(arg_class_name)
+	{
+		return (arg_class_name in this._services_classes)
+	}
+	
+	
+    
+	/**
+     * Create a component instance.
+	 * 
+     * @param {string} arg_class_name - type or class feature name.
+     * @param {string} arg_name - feature name.
+     * @param {object} arg_settings - feature settings plain object.
+     * @param {object} arg_state - feature initial state plain object (optional).
+	 * 
+     * @returns {object} feature instance.
+     */
+	create(arg_class_name, arg_name, arg_settings, arg_state)
+	{
+		assert( T.isString(arg_class_name), context + &apos;:bad class string&apos;)
+		assert( T.isString(arg_name), context + &apos;:bad name string&apos;)
+		assert( T.isObject(arg_settings), context + &apos;:bad settings object&apos;)
+		
+		const found = (arg_class_name in this._services_classes)
+		assert( found, context + &apos;:create:feature name not found&apos;)
+		
+		const service_classes = this._services_classes[arg_class_name]
+
+		if ( T.isFunction(arg_settings.has) )
+		{
+			arg_settings = arg_settings.set(&apos;provider_class&apos;, service_classes.provider)
+			arg_settings = arg_settings.set(&apos;consumer_class&apos;, service_classes.consumer)
+		} else {
+			arg_settings.provider_class = service_classes.provider
+			arg_settings.consumer_class = service_classes.consumer
+		}
+		
+		return super.create(arg_class_name, arg_name, arg_settings, arg_state)
+	}
+
+
+
+	/**
+     * Get a feature class.
+	 * 
+     * @param {string} arg_class_name - feature class name.
+	 * 
+     * @returns {object} feature class.
+     */
+	get_feature_class(arg_class_name)
+	{
+		assert( T.isString(arg_class_name), context + &apos;:create:bad name string&apos;)
+		
+		const found = (arg_class_name in this._services_classes)
+		assert( found, context + &apos;:create:feature name not found&apos;)
+		
+		const service_classes = this._services_classes[arg_class_name]
+		
+		return service_classes.service
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/servers/express_server.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/runtime.js~Runtime.html">Runtime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/security.js~Security.html">Security</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/transaction.js~Transaction.html">Transaction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-runtime_singleton">runtime_singleton</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics">metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/metric_duration.js~MetricDuration.html">MetricDuration</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-base">metrics/base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_collector.js~MetricsCollector.html">MetricsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_record.js~MetricsRecord.html">MetricsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_reducer.js~MetricsReducer.html">MetricsReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/base/metrics_state.js~MetricsState.html">MetricsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-bus">metrics/bus</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_collector.js~MetricsBusCollector.html">MetricsBusCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_record.js~MetricsBusRecord.html">MetricsBusRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_reducer.js~MetricsBusReducer.html">MetricsBusReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/bus/metrics_bus_state.js~MetricBusState.html">MetricBusState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-host">metrics/host</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_collector.js~MetricsHostCollector.html">MetricsHostCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_record.js~MetricsHostRecord.html">MetricsHostRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_reducer.js~MetricsHostReducer.html">MetricsHostReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/host/metrics_host_state.js~MetricHostState.html">MetricHostState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-http">metrics/http</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_collector.js~MetricsHttpCollector.html">MetricsHttpCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_record.js~MetricsHttpRecord.html">MetricsHttpRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_reducer.js~MetricHttpReducer.html">MetricHttpReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/http/metrics_http_state.js~MetricsHttpState.html">MetricsHttpState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#metrics-nodejs">metrics/nodejs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_collector.js~MetricsNodeJsCollector.html">MetricsNodeJsCollector</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_record.js~MetricsNodeJsRecord.html">MetricsNodeJsRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_reducer.js~MetricsNodeReducer.html">MetricsNodeReducer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/metrics/nodejs/metrics_nodejs_state.js~MetricNodeJsState.html">MetricNodeJsState</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#nodes">nodes</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/bus_node_feature.js~BusNodeFeature.html">BusNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/metrics_node_feature.js~MetricsNodeFeature.html">MetricsNodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node.js~Node.html">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_feature.js~NodeFeature.html">NodeFeature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/node_messaging.js~NodeMessaging.html">NodeMessaging</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/nodes/servers_node_feature.js~ServersNodeFeature.html">ServersNodeFeature</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#plugins">plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/features_manager.js~FeaturesManager.html">FeaturesManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_factory.js~PluginsFactory.html">PluginsFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/plugins_manager.js~PluginsManager.html">PluginsManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/rendering_manager.js~RenderingManager.html">RenderingManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_manager.js~ServersManager.html">ServersManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/servers_plugin.js~ServersPlugin.html">ServersPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/plugins/services_manager.js~ServicesManager.html">ServicesManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/runtime_executable.js~RuntimeExecutable.html">RuntimeExecutable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage0_create_local_node_executable.js~RuntimeStage0Executable.html">RuntimeStage0Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage1_define_topology_executable.js~RuntimeStage1Executable.html">RuntimeStage1Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage2_load_local_topology_executable.js~RuntimeStage2Executable.html">RuntimeStage2Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/stage3_start_local_node_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage3_executable.js~RuntimeStage3Executable.html">RuntimeStage3Executable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/unused_runtime_stage4_executable.js~RuntimeStage4Executable.html">RuntimeStage4Executable</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security">security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_manager.js~AuthenticationManager.html">AuthenticationManager</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin.js~AuthenticationPlugin.html">AuthenticationPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_plugin_lowdb.js~AuthenticationLowDbPlugin.html">AuthenticationLowDbPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authentication_wrapper.js~AuthenticationWrapper.html">AuthenticationWrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/authorization_manager.js~AuthorizationManager.html">AuthorizationManager</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#security-todo">security/todo</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport.js~AuthenticationPluginPassport.html">AuthenticationPluginPassport</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local.js~AuthenticationPluginPassportLocal.html">AuthenticationPluginPassportLocal</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_db.js~AuthenticationPluginPassportLocalDb.html">AuthenticationPluginPassportLocalDb</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/security/todo/authentication_plugin_passport_local_file.js~AuthenticationPluginPassportLocalFile.html">AuthenticationPluginPassportLocalFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#servers">servers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/express_server.js~ExpressServer.html">ExpressServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/logs_server.js~LogsServer.html">LogsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/metrics_server.js~MetricsServer.html">MetricsServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/restify_server.js~RestifyServer.html">RestifyServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/routable_server.js~RoutableServer.html">RoutableServer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/servers/server.js~Server.html">Server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ServerTypes">ServerTypes</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services">services</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/routes_svc_consumer.js~RoutesSvcConsumer.html">RoutesSvcConsumer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-uused-base">services/uused_base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_service_exec_provider.js~ServiceExecProvider.html">ServiceExecProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/uused_base/unused_socketio_service_provider.js~SocketIOServiceProvider.html">SocketIOServiceProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/servers/express_server.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+import _ from &apos;lodash&apos;
+import express from &apos;express&apos;
+import http from &apos;http&apos;
+import socketio from &apos;socket.io&apos;
+import compression from &apos;compression&apos;
+// import helmet from &apos;helmet&apos;
+import favicon from &apos;express-favicon&apos;
+import path from &apos;path&apos;
+
+// COMMON IMPORTS
+import T from &apos;devapt-core-common/dist/js/utils/types&apos;
+
+// SERVER IMPORTS
+import runtime from &apos;../base/runtime&apos;
+import RoutableServer from &apos;./routable_server&apos;
+import MetricsMiddleware from &apos;../metrics/http/metrics_http_collector&apos;
+
+
+const context = &apos;server/servers/express_server&apos;
+
+
+
+/**
+ * @file Express server class.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class ExpressServer extends RoutableServer
+{
+	/**
+	 * Create Express server instance.
+	 * @extends RoutableServer
+	 * 
+	 * @param {string} arg_name - server name.
+	 * @param {object} arg_settings - plugin settings map.
+	 * @param {string} arg_log_context - trace context string.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_name, arg_settings, arg_log_context=context)
+	{
+		super(arg_name, &apos;ExpressServer&apos;, arg_settings, arg_log_context)
+		
+		this.is_express_server = true
+	}
+	
+
+	
+	/**
+	 * Build private server instance.
+	 * 
+	 * @returns {nothing}
+	 */
+	build_server()
+	{
+		this.enter_group(&apos;build_server&apos;)
+		
+		// DEBUG
+		// debugger
+		
+		assert( this.server_protocole == &apos;http&apos; || this.server_protocole == &apos;https&apos;, context + &apos;:bad protocole for express [&apos; + this.server_protocole + &apos;]&apos;)
+		
+		// CREATE SERVER
+		this.info(&apos;build_server:create Express server&apos;)
+		this.server = express()
+		
+		// USE COMPRESSED RESPONSE WITH GZIP
+		this.info(&apos;build_server:use compression&apos;)
+		this.server.use(compression())
+		
+		// USE SECURITY MIDDLEWARE (https://www.npmjs.com/package/helmet)
+		this.info(&apos;build_server:use security&apos;)
+		// this.server.use(helmet)
+		this.server.disable(&apos;x-powered-by&apos;)
+		
+		
+		// USE METRICS MIDDLEWARE
+		this.info(&apos;build_server:use metrics&apos;)
+		this.server.use( MetricsMiddleware.create_middleware(this) )
+		
+		
+		// USE FAVICON MIDDLEWARE
+		this.info(&apos;build_server:use favicon&apos;)
+		const favicon_path = runtime.context.get_absolute_path(&apos;../../../public/favico.png&apos;)
+		// console.log(favicon_path, &apos;favicon_path&apos;)
+		this.server.use( favicon(favicon_path) )
+		
+		
+		// BUILD SOCKETIO
+		this.info(&apos;build_server:use socketio&apos;)
+		const use_socketio = this.get_setting(&apos;use_socketio&apos;, false)
+
+		// DEBUG
+		this.debug(&apos;build_server:use socket io?&apos;, use_socketio)
+		console.log(context + &apos;:build_server:use socket io?&apos;, use_socketio)
+		
+		if (use_socketio)
+		{
+			// DEBUG
+			this.debug(&apos;build_server:creating Express socket io&apos;)
+			console.log(context + &apos;:build_server:creating Express socket io&apos;)
+			
+			this.server_http = http.Server(this.server)
+			this.serverio = socketio(this.server_http)
+			
+			runtime.add_socketio(this.get_name(), this.serverio)
+		}
+
+		
+		// USE ALL MIDDLEWARES WITHOUT SECURITY
+		this.info(&apos;build_server:use all middleware without security&apos;)
+		this.services_without_security.forEach(
+			(arg_record) =&gt; {
+				this.info(&apos;build_server:activate service=&apos; + arg_record.svc.get_name())
+				arg_record.svc.activate_on_server(arg_record.app, this, arg_record.cfg)
+			}
+		)
+
+
+		// USE AUTHENTICATION MIDDLEWARES
+		this.info(&apos;build_server:apply authentication middlewares&apos;)
+		this.authentication.apply_middlewares(this)
+		
+		
+		// TODO: USE AUTHORIZATION MIDDLEWARE
+		// this.server.use( this.authorization.create_middleware() )
+		
+
+		// USE ALL MIDDLEWARES WITH SECURITY
+		this.info(&apos;build_server:use all middleware with security&apos;)
+		this.services_with_security.forEach(
+			(arg_record) =&gt; {
+				arg_record.svc.activate_on_server(arg_record.app, this, arg_record.cfg)
+			}
+		)
+
+		
+		// DEFAULT VIEW ENGINE
+		// this.server.use( express.bodyParser() )
+		// this.server.set(&apos;views&apos;, runtime.context.get_absolute_path(&apos;jade&apos;))
+		this.server.set(&apos;views&apos;, path.join(runtime.context.get_base_dir(), &apos;../../dist/jade&apos;) )
+		this.server.set(&apos;view engine&apos;, &apos;jade&apos;)
+		
+		
+		this.leave_group(&apos;build_server&apos;)
+	}
+	
+	finaly()
+	{
+		// USE FILE NOT FOUND MIDDLEWARE
+		this.server.use(
+			function(req, res/*, next*/)
+			{
+				console.log(&apos;EXPRESS: FILE NOT FOUND&apos;, req.url)
+				
+				res.status(404)
+
+				// SEND HTML RESPONSE
+				if (req.accepts(&apos;html&apos;))
+				{
+					res.render(&apos;404&apos;, { url: req.url })
+					return
+				}
+
+				// SEND JSON RESPONSE
+				if (req.accepts(&apos;json&apos;))
+				{
+					res.send({ error: &apos;Not found&apos; })
+					return
+				}
+
+				// SEND PLAIN TEXT RESPONSE
+				res.type(&apos;txt&apos;).send(&apos;URL Not found (no routes)&apos;)
+			}
+		)
+		
+		
+		// USE BAD REQUEST MIDDLEWARE
+		this.server.use(
+			function(err, req, res, next)
+			{
+				// !!! RES COULD BE A http.ServerResponse AND NOT A Express.Response INSTANCE
+				if (req.xhr)
+				{
+					res.status(500).send( { error: &apos;Something failed!&apos; } )
+				}
+				else
+				{
+					next(err)
+				}
+			}
+		)
+		
+		
+		// USE ERROR MIDDLEWARE
+		this.server.use(
+			function(err, req, res/*, next*/)
+			{
+				console.log(req.url, &apos;request.url&apos;)
+				console.error(err.stack)
+				res.status(500)
+				res.render(&apos;error&apos;, { error: err } )
+			}
+		)
+		
+	}
+	
+	
+	
+	/**
+	 * Get server middleware for static route.
+	 * 
+     * @param {object} arg_cfg_route - plain object route configuration.
+	 * 
+	 * @returns {middleware} - middleware function as f(req, res, next)
+	 */
+	get_middleware_for_static_route(arg_cfg_route)
+	{
+		const self = this
+
+		// SEARCH ASSETS DIRECTORY
+		let dir_path = undefined
+		if ( path.isAbsolute(arg_cfg_route.directory) )
+		{
+			dir_path = arg_cfg_route.directory
+		}
+		if ( ! dir_path &amp;&amp; T.isNotEmptyString(arg_cfg_route.pkg_base_dir) )
+		{
+			dir_path = runtime.context.get_absolute_path(arg_cfg_route.pkg_base_dir, arg_cfg_route.directory)
+		}
+		if ( ! dir_path &amp;&amp; T.isNotEmptyString(arg_cfg_route.app_base_dir) )
+		{
+			dir_path = runtime.context.get_absolute_path(arg_cfg_route.app_base_dir, &apos;../public&apos;, arg_cfg_route.directory)
+		}
+		if ( ! dir_path )
+		{
+			dir_path = runtime.context.get_absolute_public_path(arg_cfg_route.directory)
+		}
+
+		// DEBUG
+		// console.log(context + &apos;:get_middleware_for_static_route:express static route&apos;, arg_cfg_route)
+		// console.log(context + &apos;:ROUTE FOR ASSETS IN DIRECTORY MODE =&gt; dir_path=&apos;, dir_path)
+
+		// STATIC OPTIONS
+		const one_day = 86400000
+		const static_cfg = {
+			maxAge:one_day,
+			redirect:false,
+			fallthrough:true, // TRUE to run next middlewares to search not found fil on another route or to call call an error handler.
+			setHeaders:undefined, // function
+			extensions:T.isNotEmptyArray(arg_cfg_route.extensions) ? arg_cfg_route.extensions : false,
+			index:arg_cfg_route.default
+		}
+
+		this.debug(&apos;get_middleware_for_static_route:route [&apos; + arg_cfg_route.directory + &apos;]&apos;)
+		this.debug(&apos;get_middleware_for_static_route:dir_path [&apos; + dir_path + &apos;]&apos;)
+		this.debug(&apos;get_middleware_for_static_route:route cfg [&apos; + JSON.stringify(arg_cfg_route) + &apos;]&apos;)
+
+		return (req, res, next)=&gt;{
+			const asset_path = req._parsedUrl.pathname
+
+			// DEBUG
+			self.debug(&apos;get_middleware_for_static_route:mw callback:asset_path=[&apos; + asset_path + &apos;] directory=[&apos; + arg_cfg_route.directory + &apos;]&apos;)
+			// console.log(context + &apos;:get_middleware_for_static_route:express static middleware&apos;, arg_cfg_route.directory, req._parsedUrl, dir_path, asset_path)
+			// debugger
+			
+			// TEST REQUIRED PREFIXES
+			if ( T.isNotEmptyArray(arg_cfg_route.required_prefixes) )
+			{
+				let match = false
+				_.forEach(arg_cfg_route.required_prefixes,
+					(value)=&gt;{
+						if ( asset_path.startsWith(value) )
+						{
+							match = true
+						}
+					}
+				)
+
+				if (! match)
+				{
+					this.warn(&apos;get_middleware_for_static_route:not matching route prefix for &apos; + asset_path)
+					console.warn(context + &apos;:get_middleware_for_static_route:not matching route prefix for &apos; + asset_path)
+
+					return next()
+				}
+			}
+			
+			// TEST REQUIRED SUFFIXES
+			if ( T.isNotEmptyArray(arg_cfg_route.required_suffixes) )
+			{
+				let match = false
+				_.forEach(arg_cfg_route.required_suffixes,
+					(value)=&gt;{
+						if ( asset_path.endsWith(value) )
+						{
+							match = true
+						}
+					}
+				)
+
+				if (! match)
+				{
+					this.warn(&apos;get_middleware_for_static_route:not matching route suffix for &apos; + asset_path)
+					console.warn(context + &apos;:get_middleware_for_static_route:not matching route suffix for &apos; + asset_path)
+
+					return next()
+				}
+			}
+
+			req.url = req.url == &apos;/&apos; ? req.baseUrl : req.url
+			
+			return express.static(dir_path, static_cfg)(req, res, next)
+		}
+	}
+	
+	
+	
+	/**
+	 * Get server middleware for directory route.
+	 * 
+     * @param {object}   arg_cfg_route - plain object route configuration.
+	 * @param {function} arg_callback - route handler callback.
+	 * 
+	 * @returns {boolean} - success or failure.
+	 */
+	add_get_route(arg_cfg_route, arg_callback)
+	{
+		this.enter_group(&apos;add_get_route&apos;)
+
+		const route = arg_cfg_route.route_regexp ? arg_cfg_route.route_regexp : arg_cfg_route.full_route
+		this.debug(&apos;add_get_route:route [&apos; + route + &apos;]&apos;)
+
+		assert( T.isObject(arg_cfg_route),  this.get_context() + &apos;:add_get_route:bad route config object&apos;)
+		assert( T.isFunction(arg_callback), this.get_context() + &apos;:add_get_route:bad callback function for route [&apos; + route + &apos;]&apos;)
+		assert( T.isString(route) || T.isRegExp(route), this.get_context() + &apos;:add_get_route:bad route string|RegExp for config [&apos; + JSON.stringify(arg_cfg_route) + &apos;]&apos;)
+
+		// CHECK EXPRESS SERVER
+		if ( ! this.server || ! T.isFunction(this.server.use) )
+		{
+			this.leave_group(&apos;add_get_route:bad server error for route config [&apos; + JSON.stringify(arg_cfg_route) + &apos;]&apos;)
+			return false
+		}
+		
+		const safe_callback = (req, res, next)=&gt;{
+			try{
+				console.log(this.get_context() + &apos;:add_get_route:route cfg=&apos; + JSON.stringify(arg_cfg_route))
+				return arg_callback(req, res, next)
+			}
+			catch(err)
+			{
+				console.error(this.get_context() + &apos;:add_get_route:error=&apos; + err + &apos;:route cfg=&apos; + JSON.stringify(arg_cfg_route))
+				return next(err)
+			}
+		}
+		this.server.use(route, safe_callback)
+
+		this.leave_group(&apos;add_get_route:[&apos; + route + &apos;]&apos;)
+		return true
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

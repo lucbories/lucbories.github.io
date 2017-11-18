@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/components/dock.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/components/dock.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import _ from &apos;lodash&apos;
+import assert from &apos;assert&apos;
+import { fromJS } from &apos;immutable&apos;
+
+// COMMON IMPORTS
+import T from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+
+// BROWSER IMPORTS
+import Container from &apos;../base/container&apos;
+import DockItem  from &apos;./dock_item&apos;
+
+
+const context = &apos;browser/components/dock&apos;
+
+
+
+export default class Dock extends Container
+{
+	/**
+	 * Creates an instance of Component.
+	 * @extends Component
+	 * 
+	 * @param {object} arg_runtime - client runtime.
+	 * @param {object} arg_state - component state.
+	 * @param {string} arg_log_context - context of traces of this instance (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_state, arg_log_context)
+	{	
+		super(arg_runtime, arg_state, arg_log_context ? arg_log_context : context)
+
+		this.is_dock_component = true
+
+		this._dock_item_components = []
+	}
+	
+	
+	
+	_update_self(arg_prev_element, arg_new_element)
+	{
+		// console.log(context + &apos;:_update_self&apos;, arg_prev_element, arg_new_element)
+	}
+
+
+	/**
+	 * Get a component instance from a name, a description...
+	 * 
+	 * @param {any} arg_value - string or object value.
+	 * 
+	 * @returns {undefined|Component}
+	 */
+	get_component(arg_value)
+	{
+		if ( T.isString(arg_value) )
+		{
+			return window.devapt().ui(arg_value)
+		}
+
+		if ( T.isObject(arg_value) )
+		{
+			if (arg_value.is_component)
+			{
+				return arg_value
+			}
+
+			if ( T.isNotEmptyString(arg_value.type) &amp;&amp; T.isNotEmptyString(arg_value.name) )
+			{
+				return  window.devapt().ui().create_local(arg_value.name, arg_value)
+			}
+
+			if ( T.isNotEmptyString(arg_value.view) )
+			{
+				return  window.devapt().ui(arg_value.view)
+			}
+
+			return undefined
+		}
+
+		return undefined
+	}
+
+
+
+	/**
+	 * Get view children components.
+	 * 
+	 * @returns {array} - list of Component.
+	 */
+	get_children_component()
+	{
+		if ( ! this._children_components)
+		{
+			this._dock_item_components = []
+		}
+		return this._dock_item_components
+	}
+
+	
+	
+	/**
+	 * Append items to the container.
+	 * 
+	 * @param {array} arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_append(arg_items_array, arg_items_count)
+	{
+		// console.log(context + &apos;:ui_items_append:arg_items_array&apos;, arg_items_array, arg_items_count)
+		
+		const dom_elem = this.get_dom_element()
+
+		if (arg_items_count &gt; arg_items_array.length)
+		{
+			arg_items_array.splice(arg_items_count)
+		}
+		
+		const runtime = this.get_runtime()
+		_.forEach(arg_items_array,
+			(item, index)=&gt;{
+				const component = this.get_component(item)
+
+				if (! component)
+				{
+					console.warn(context + &apos;:ui_items_append:bad item component at %i for &apos;, index, item)
+					return
+				}
+
+				const name = component.get_name() + &apos;_dock_item&apos;
+				const state = {
+					&quot;name&quot;:name,
+					&quot;state&quot;:{
+						&quot;items&quot;:[component]
+					}
+				}
+				const dock_item = new DockItem(runtime, fromJS(state), context + &apos;:add item:item name=&apos; + name)
+				dock_item.set_dom_parent(dom_elem)
+				this._dock_item_components.push(dock_item)
+			}
+		)
+	}
+	
+	
+	
+	/**
+	 * Prepend items to the container.
+	 * 
+	 * @param {array} arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	// ui_items_prepend(arg_items_array, arg_items_count)
+	// {
+	// 	// console.log(context + &apos;:ui_items_prepend:%s:count=%s:arg_items_array&apos;, this.get_name(), arg_items_count, arg_items_array)
+		
+	// }
+	
+	
+	
+	/**
+	 * Replace container items.
+	 * 
+	 * @param {array} arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	// ui_items_replace(arg_items_array/*, arg_items_count*/)
+	// {
+	// 	// console.log(context + &apos;:ui_items_replace:arg_items_array&apos;, arg_items_array.length)
+		
+	// 	// REMOVE ALL EXISTING ROWS
+	// 	this.ui_items_clear()
+		
+	// }
+	
+	
+	
+	/**
+	 * Insert items at container position index.
+	 * 
+	 * @param {intege} arg_index - position index.
+	 * @param {array} arg_items_array - items array.
+	 * @param {intege} arg_items_count - items count.
+	 * 
+	 * @returns {nothing}
+	 */
+	// ui_items_insert_at(arg_index, arg_items_array, arg_items_count)
+	// {
+	// 	assert( T.isArray(arg_items_array), context + &apos;:ui_items_replace:bad items array&apos;)
+	// 	assert( T.isNumber(arg_items_count), context + &apos;:ui_items_replace:bad items count&apos;)
+		
+	// 	// NOT YET IMPLEMENTED
+	// }
+	
+	
+	
+	/**
+	 * Remove a row at given position.
+	 * 
+	 * @param {number} arg_index - row index.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_remove_at_index(arg_index)
+	{
+		assert( T.isNumber(arg_index), context + &apos;:ui_items_remove_at_index:bad index number&apos;)
+
+		const dom_elem = this.get_dom_element()
+		if (arg_index &lt; 0 || arg_index &gt;= dom_elem.children.length)
+		{
+			console.warn(context + &apos;:ui_items_remove_at_index:%s:bad item index=%s&apos;, this.get_name(), arg_index)
+			return
+		}
+		const child_elem = dom_elem.children[arg_index]
+		dom_elem.removeChild(child_elem)
+	}
+	
+	
+	
+	/**
+	 * Remove a row at first position.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_remove_first()
+	{
+		const dom_elem = this.get_dom_element()
+		const first_elem = dom_elem.firstElementChild()
+		dom_elem.removeChild(first_elem)
+	}
+	
+	
+	
+	/**
+	 * Remove a row at last position.
+	 * 
+	 * @param {integer} arg_count - items count to remove.
+	 * 
+	 * @returns {nothing}
+	 */
+	ui_items_remove_last(arg_count=1)
+	{
+		// console.log(context + &apos;:ui_items_remove_last:arg_count&apos;, arg_count)
+		
+		if (arg_count &lt;= 0)
+		{
+			return
+		}
+		
+		const dom_elem = this.get_dom_element()
+		const children_elems = dom_elem.children
+		const last_index = children_elems.length - arg_count - 1
+		let row_index = last_index - 1 &gt;= 0 ? last_index - 1 : 0
+		for( ; row_index &lt; children_elems.length ; row_index++)
+		{
+			const child_elem = children_elems[row_index]
+			dom_elem.removeChild(child_elem)
+		}
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

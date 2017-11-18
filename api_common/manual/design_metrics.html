@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../">
+  <title data-ice="title">Manual | Devapt (Developper Application Toolkit) Core Common documentation</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Core features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common documentation"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common documentation"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Core features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common documentation"><meta property="twitter:description" content="Core features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container manual-root" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div class="manual-toc-root">
+  
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/overview.html"><a href="manual/overview.html" data-ice="link">Overview</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/overview.html"><a href="manual/overview.html#projects-structure" data-ice="link">Projects structure</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/overview.html"><a href="manual/overview.html#development" data-ice="link">Development</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/overview.html"><a href="manual/overview.html#contribution" data-ice="link">Contribution</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/installation.html"><a href="manual/installation.html" data-ice="link">Installation</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/usage.html"><a href="manual/usage.html" data-ice="link">Usage</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/design.html"><a href="manual/design.html" data-ice="link">Design</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/design.html"><a href="manual/design.html#main-devapt-concepts-are-" data-ice="link">Main devapt concepts are:</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/design.html"><a href="manual/design.html#how-an-application-work" data-ice="link">How an application work</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/design.html"><a href="manual/design.html#features" data-ice="link">Features</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#design---configurable-without-code-feature" data-ice="link">Design - Configurable without code feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#source" data-ice="link">Source</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#fisrt-level-format-" data-ice="link">Fisrt level format:</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_configurable.html"><a href="manual/design_configurable.html#second-level-settings-" data-ice="link">Second level settings:</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_deployments.html"><a href="manual/design_configuration_for_deployments.html#design---configuration-for-deployments" data-ice="link">Design - Configuration for Deployments</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_deployments.html"><a href="manual/design_configuration_for_deployments.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_deployments.html"><a href="manual/design_configuration_for_deployments.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_deployments.html"><a href="manual/design_configuration_for_deployments.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_loggers.html"><a href="manual/design_configuration_for_loggers.html#design---configuration-for-loggers" data-ice="link">Design - Configuration for Loggers</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_loggers.html"><a href="manual/design_configuration_for_loggers.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_loggers.html"><a href="manual/design_configuration_for_loggers.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_loggers.html"><a href="manual/design_configuration_for_loggers.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_nodes.html"><a href="manual/design_configuration_for_nodes.html#design---configuration-for-nodes" data-ice="link">Design - Configuration for Nodes</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_nodes.html"><a href="manual/design_configuration_for_nodes.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_nodes.html"><a href="manual/design_configuration_for_nodes.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_nodes.html"><a href="manual/design_configuration_for_nodes.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_plugins.html"><a href="manual/design_configuration_for_plugins.html#design---configuration-for-plugins" data-ice="link">Design - Configuration for Plugins</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_plugins.html"><a href="manual/design_configuration_for_plugins.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_plugins.html"><a href="manual/design_configuration_for_plugins.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_plugins.html"><a href="manual/design_configuration_for_plugins.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_security.html"><a href="manual/design_configuration_for_security.html#design---configuration-for-security" data-ice="link">Design - Configuration for Security</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_security.html"><a href="manual/design_configuration_for_security.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_security.html"><a href="manual/design_configuration_for_security.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_security.html"><a href="manual/design_configuration_for_security.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_tenants.html"><a href="manual/design_configuration_for_tenants.html#design---configuration-for-tenants" data-ice="link">Design - Configuration for Tenants</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_tenants.html"><a href="manual/design_configuration_for_tenants.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_tenants.html"><a href="manual/design_configuration_for_tenants.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_tenants.html"><a href="manual/design_configuration_for_tenants.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_configuration_for_traces.html"><a href="manual/design_configuration_for_traces.html#design---configuration-for-traces" data-ice="link">Design - Configuration for Traces</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_traces.html"><a href="manual/design_configuration_for_traces.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_traces.html"><a href="manual/design_configuration_for_traces.html#format" data-ice="link">Format</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_configuration_for_traces.html"><a href="manual/design_configuration_for_traces.html#example" data-ice="link">Example</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_distributed.html"><a href="manual/design_distributed.html#design---distributed-feature" data-ice="link">Design - Distributed feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_distributed.html"><a href="manual/design_distributed.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_distributed.html"><a href="manual/design_distributed.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_distributed.html"><a href="manual/design_distributed.html#for-devapt-users-" data-ice="link">For Devapt users:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_distributed.html"><a href="manual/design_distributed.html#for-devapt-contributers-" data-ice="link">For Devapt contributers:</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#design---messaging-feature" data-ice="link">Design - Messaging feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#for-devapt-users-" data-ice="link">For Devapt users:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#for-devapt-contributers-" data-ice="link">For Devapt contributers:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#thanks" data-ice="link">Thanks</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_messaging.html"><a href="manual/design_messaging.html#simplebus" data-ice="link">SimpleBus</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_metrics.html"><a href="manual/design_metrics.html#design---metrics-feature" data-ice="link">Design - Metrics feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_metrics.html"><a href="manual/design_metrics.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_metrics.html"><a href="manual/design_metrics.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_metrics.html"><a href="manual/design_metrics.html#for-devapt-users-" data-ice="link">For Devapt users:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_metrics.html"><a href="manual/design_metrics.html#for-devapt-contributers-" data-ice="link">For Devapt contributers:</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#design---rendering-feature" data-ice="link">Design - Rendering feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#at-startup" data-ice="link">At startup</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#rendering-result-process" data-ice="link">Rendering result process</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#rendering-component" data-ice="link">Rendering component</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#example" data-ice="link">Example</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#for-devapt-users-" data-ice="link">For Devapt users:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_rendering.html"><a href="manual/design_rendering.html#for-devapt-contributers-" data-ice="link">For Devapt contributers:</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_security.html"><a href="manual/design_security.html#design---security-feature" data-ice="link">Design - Security feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_security.html"><a href="manual/design_security.html#description" data-ice="link">Description</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_servers.html"><a href="manual/design_servers.html#design---servers-feature" data-ice="link">Design - Servers feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_servers.html"><a href="manual/design_servers.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_servers.html"><a href="manual/design_servers.html#status" data-ice="link">Status</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_servers.html"><a href="manual/design_servers.html#builtin-servers" data-ice="link">Builtin servers</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_servers.html"><a href="manual/design_servers.html#express" data-ice="link">EXPRESS</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_servers.html"><a href="manual/design_servers.html#restify" data-ice="link">RESTIFY</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_servers.html"><a href="manual/design_servers.html#for-devapt-users-" data-ice="link">For Devapt users:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_servers.html"><a href="manual/design_servers.html#for-devapt-contributers-" data-ice="link">For Devapt contributers:</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_servers.html"><a href="manual/design_servers.html#thanks" data-ice="link">Thanks</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_servers.html"><a href="manual/design_servers.html#express" data-ice="link">Express</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_servers.html"><a href="manual/design_servers.html#restify" data-ice="link">Restify</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_services.html"><a href="manual/design_services.html#design---services-feature" data-ice="link">Design - Services feature</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_services.html"><a href="manual/design_services.html#description" data-ice="link">Description</a></li>
+<li data-ice="manualNav" class="indent-h1" data-link="manual/design_services.html"><a href="manual/design_services.html" data-ice="link">Examples</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h2" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#design---runtime-starting-process" data-ice="link">Design - runtime starting process</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#starting-code" data-ice="link">Starting code</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#starting-sequence-brief" data-ice="link">Starting sequence brief</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#import-runtime-from---39-devapt-base-runtime--39-" data-ice="link">import runtime from &apos;devapt/base/runtime&apos;</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-load" data-ice="link">runtime.load</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#starting-sequence-details" data-ice="link">Starting sequence details</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-loading-stage-0---runtimestage0executable" data-ice="link">Runtime loading stage 0 - RuntimeStage0Executable</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-loading-stage-1---runtimestage1executable" data-ice="link">Runtime loading stage 1 - RuntimeStage1Executable</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-loading-stage-2---runtimestage2executable" data-ice="link">Runtime loading stage 2 - RuntimeStage2Executable</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-loading-stage-3---runtimestage3executable" data-ice="link">Runtime loading stage 3 - RuntimeStage3Executable</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-loading-stage-4---runtimestage4executable" data-ice="link">Runtime loading stage 4 - RuntimeStage4Executable</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/design_starting_process.html"><a href="manual/design_starting_process.html#runtime-loading-stage-5---runtimestage5executable" data-ice="link">Runtime loading stage 5 - RuntimeStage5Executable</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/tutorials.html"><a href="manual/tutorials.html" data-ice="link">Tutorials</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/projects.html"><a href="manual/projects.html" data-ice="link">Projects map</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#development-map" data-ice="link">Development Map</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/projects.html"><a href="manual/projects.html#projects-core-dependencies--package-json-" data-ice="link">Projects core dependencies (package.json)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/projects.html"><a href="manual/projects.html#projects-features-dependencies--package-json-" data-ice="link">Projects features dependencies (package.json)</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-core-doc" data-ice="link">devapt-core-doc</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-core-common" data-ice="link">devapt-core-common</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-core-services" data-ice="link">devapt-core-services</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-core-server" data-ice="link">devapt-core-server</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-core-browser" data-ice="link">devapt-core-browser</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-app-testbus" data-ice="link">devapt-app-testbus</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-app-testui" data-ice="link">devapt-app-testui</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-features-foundation6" data-ice="link">devapt-features-foundation6</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-features-cytoscape" data-ice="link">devapt-features-cytoscape</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-features-sparklines" data-ice="link">devapt-features-sparklines</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-features-labs" data-ice="link">devapt-features-labs</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-app-labs" data-ice="link">devapt-app-labs</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-devtools" data-ice="link">devapt-devtools</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/projects.html"><a href="manual/projects.html#devapt-app-devtools" data-ice="link">devapt-app-devtools</a></li>
+</ul>
+  </div>
+<div data-ice="manual">
+    <ul class="manual-toc">
+      
+    <li data-ice="manualNav" class="indent-h1" data-link="manual/roadmap.html"><a href="manual/roadmap.html" data-ice="link">Roadmap</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/roadmap.html"><a href="manual/roadmap.html#2-0-x---breaking-changes-and-new-features--current-" data-ice="link">2.0.x   breaking changes and new features (CURRENT)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#main-goals" data-ice="link">MAIN GOALS</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#enhance-core-features--architecture-and-stability--previous-1-1-x-" data-ice="link">enhance core features, architecture and stability (previous 1.1.x)</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/roadmap.html"><a href="manual/roadmap.html#project" data-ice="link">PROJECT</a></li>
+<li data-ice="manualNav" class="indent-h4" data-link="manual/roadmap.html"><a href="manual/roadmap.html#features" data-ice="link">FEATURES</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#enhance-datas-access-features--previous-1-3-x-" data-ice="link">enhance datas access features (previous 1.3.x)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#project" data-ice="link">PROJECT</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#features" data-ice="link">FEATURES</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/roadmap.html"><a href="manual/roadmap.html#2-1-x----enhance-distributed-features-and-documentatioon--later-" data-ice="link">2.1.x    enhance distributed features and documentatioon (LATER)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#project" data-ice="link">PROJECT</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#features" data-ice="link">FEATURES</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/roadmap.html"><a href="manual/roadmap.html#2-2-x----enhance-security-features--later-" data-ice="link">2.2.x    enhance security features (LATER)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#project" data-ice="link">PROJECT</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#features" data-ice="link">FEATURES</a></li>
+<li data-ice="manualNav" class="indent-h2" data-link="manual/roadmap.html"><a href="manual/roadmap.html#2-3-x----implement-cloud-features--later-" data-ice="link">2.3.x    implement Cloud features (LATER)</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#project" data-ice="link">PROJECT</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/roadmap.html"><a href="manual/roadmap.html#features" data-ice="link">FEATURES</a></li>
+</ul>
+  </div>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h2 id="design---metrics-feature">Design - Metrics feature</h2><p>Applications optimization and analyze need some metrics.</p>
+<p>Usefull libraries offer builin metrics support but each one with its own format.</p>
+<p>Devapt provides a unique metrics format per server domain: http request, messaging request...</p>
+<h3 id="description">Description</h3><p>Applications optimization and analyze need some metrics.</p>
+<p>Usefull libraries offer builin metrics support but each one with its own format.</p>
+<p>Devapt provides a unique metrics format per domain: http request, messaging, host, nodejs...</p>
+<p>Metrics architecture consist of 4 main base classes and one bus per topology, on the master node:</p>
+<ul>
+<li>MetricsCollector: update MetricsRecord values, use MetricsReducer to consolidate values and post a message onto the metrics bus.</li>
+<li>MetricsRecord: a snapshot of a set of values</li>
+<li>MetricsReducer: reduce a list of MetricsRecord values</li>
+<li>MetricsState: MetricsReducer result
+Each of this 4 classes should be subclassed to create a new metrics feature.</li>
+</ul>
+<p>For instance, available metrics are:</p>
+<ul>
+<li>Bus metrics: collect master node buses counters (messages count, messages size, errors count, subscribers count)</li>
+<li>Host metrics: collect NodeJs host metrics (CPUs count, CPUs architecture, CPUs usage...)</li>
+<li>NodeJs metrics: collect NodeJs process metrics (pid, version, plateform, uptime, memory)</li>
+<li>Http metrics: for Restify and Express, collect request metrics (id, method, status, referer, url, service, latency, browser...)</li>
+</ul>
+<p>How it runs:</p>
+<p>The MetricsServer owns collectors instance and listen the metrics bus and call a MetricsCollector method to process new metrics values.
+A MetricsCollector owns one MetricsReducer, one MetricsState and one MetricsRecord.
+The MetricsServer provides metrics reduced values to metrics services.
+Each metrics feature has its corresponding metrics service to publish metrics outside the node:</p>
+<ul>
+<li>MetricsBusService</li>
+<li>MetricsHostService</li>
+<li>MetricsNodeJsService</li>
+<li>MetricsHttpService</li>
+</ul>
+<h3 id="status">Status</h3><p>Features are finished for Bus, Host, NodeJs and Http metrics.</p>
+<p>The metrics server is operational.</p>
+<p>See devapt-devtools project for a full example of metrics services usage.</p>
+<p><a href="https://github.com/lucbories/devapt-devtools/">DEVTOOLS Project</a></p>
+<h3 id="for-devapt-users-">For Devapt users:</h3><pre><code><code class="source-code prettyprint">    // GET NODE
+    let node = ...
+
+    // GET HTTP METRICS STATISTICS VALUES
+    const http_metrics = node.get_metrics_server().get_http_metrics().get_values()
+
+    /*
+        HTTP METRICS STATISTICS FORMAT:
+
+        // REQUEST VERSIONS
+        http_metrics.version_counters: a map of Devapt versions counters (plain object)
+
+        // REQUEST UUID
+        http_metrics.id_counters: a map of requests ids counters { id1:counter1, id2:counter2 } (plain object)
+        http_metrics.pid_counters: a map of process ids counters { pid1:counter1, pid2:counter2 } (plain object)
+
+        // DURATIONS
+        http_metrics.latency_min: the minimal latencies value (integer)
+        http_metrics.latency_counter: the counter latencies values (integer)
+        http_metrics.latency_sum: the sum of latencies values (integer)
+        http_metrics.latency_mean: the sum divided by the count of latencies values (integer)
+        http_metrics.latency_max: the maximal latencies value (integer)
+
+        // SERVICE IDENTIFICATION
+        http_metrics.service_name_counters: a map of service name counters (plain object)
+        http_metrics.service_url_counters: a map of service url counters (plain object)
+        http_metrics.service_method_counters: a map of service method counters (plain object)
+        http_metrics.service_http_version_counters: a map of service http counters (plain object)
+        http_metrics.service_route_counters: a map of service route counters (plain object)
+
+        // SERVER IDENTIFICATION
+        http_metrics.server_node_name_counters: a map of Devapt versions counters (plain object)
+        http_metrics.server_server_name_counters: a map of Devapt versions counters (plain object)
+
+        // CLIENT IDENTIFICATION
+        http_metrics.client_user_name_counters: a map of user name counters (plain object)
+        http_metrics.client_user_id_counters: a map of user id counters (plain object)
+        http_metrics.client_browser_counters: a map of client browser type counters (plain object)
+        http_metrics.client_referrer_counters: a map of client referrer counters (plain object)
+
+        // RESPONSE
+        http_metrics.response_status_counters: a map of response status counters (plain object)
+    */</code>
+</code></pre><h3 id="for-devapt-contributers-">For Devapt contributers:</h3><p>Metrics classes are:
+| Class file | Class name and description |
+|:-----------|:--------------------------:|
+| /metric_duration.js | MetricDuration: metrics values collector for a simple time interval.|
+| | |
+| /base/metrics_collector.js | MetricsCollector: metrics values collector base class.|
+| /base/metrics_record.js | MetricsRecord: metrics values snapshot base class.|
+| /base/metrics_reducer.js | MetricsHost: metrics values reducer base class.|
+| /base/metrics_state.js | MetricsState: metrics values persistent state base class.|
+| | |
+| /bus/metrics_bus_collector.js | MetricsBusCollector: metrics values collector class for bus metrics feature.|
+| /bus/metrics_bus_record.js | MetricsBusRecord: metrics values snapshot class for bus metrics feature.|
+| /bus/metrics_bus_reducer.js | MetricsBusHost: metrics values reducer class for bus metrics feature.|
+| /bus/metrics_bus_state.js | MetricsBusState: metrics values persistent state class for bus metrics feature.|
+| | |
+| /host/metrics_host_collector.js | MetricsCollector: metrics values collector class for host metrics feature.|
+| /host/metrics_host_record.js | MetricsRecord: metrics values snapshot class for host metrics feature.|
+| /host/metrics_host_reducer.js | MetricsHost: metrics values reducer class for host metrics feature.|
+| /host/metrics_host_state.js | MetricsState: metrics values persistent state class for host metrics feature.|
+| | |
+| /http/metrics_http_collector.js | MetricsHttpCollector: metrics values collector class for Http metrics feature.|
+| /http/metrics_http_record.js | MetricsHttpRecord: metrics values snapshot class for Http metrics feature.|
+| /http/metrics_http_reducer.js | MetricsHttpHost: metrics values reducer class for Http metrics feature.|
+| /http/metrics_http_state.js | MetricsHttpState: metrics values persistent state class for Http metrics feature.|
+| | |
+| /nodejs/metrics_nodejs_collector.js | MetricsNodeJsCollector: metrics values collector class for NodeJs metrics feature.|
+| /nodejs/metrics_nodejs_record.js | MetricsNodeJsRecord: metrics values snapshot class for NodeJs metrics feature.|
+| /nodejs/metrics_nodejs_reducer.js | MetricsNodeJsHost: metrics values reducer class for NodeJs metrics feature.|
+| /nodejs/metrics_nodejs_state.js | MetricsNodeJsState: metrics values persistent state class for NodeJs metrics feature.|
+| | |
+| common/servers/metric_server.js | MetricsServer: server which reveive metrics message and call a reducer to update statistics|</p>
+<p>Metrics bus message format:</p>
+<pre><code><code class="source-code prettyprint">{
+   &quot;target&quot;:&quot;metrics_server&quot;, // Fixed name: see node.metrics_server.get_name()
+   &quot;sender&quot;:&quot;...&quot;, // fill by BusClient.send_msg(target,payload)
+   &quot;payload&quot;:{
+       &quot;is_metrics_message&quot;:true,
+       &quot;metric&quot;:&quot;...&quot;, // metrics collector type: http/message/...
+       &quot;metrics&quot;:[
+           {
+                // metrics values
+           }
+       ],
+       &quot;metrics_count&quot;:999 // count of metrics
+    }
+}</code>
+</code></pre></div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

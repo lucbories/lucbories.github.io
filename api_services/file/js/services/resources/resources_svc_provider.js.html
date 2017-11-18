@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">js/services/resources/resources_svc_provider.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#default-plugins">default_plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/default_plugins/services_default_plugin.js~DefaultServicesPlugin.html">DefaultServicesPlugin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#executables">executables</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_command.js~ExecutableCommand.html">ExecutableCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/executables/executable_route.js~ExecutableRoute.html">ExecutableRoute</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-assets">services/assets</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/assets_svc_provider.js~AssetsSvcProvider.html">AssetsSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/assets/executable_route_assets.js~ExecutableRouteAssets.html">ExecutableRouteAssets</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-logs">services/logs</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/logs/logs_svc_provider.js~LogsSvcProvider.html">LogsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-messages">services/messages</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/messages/messages_svc_provider.js~MessagesSvcProvider.html">MessagesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-metrics">services/metrics</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/metrics/metrics_svc_provider.js~MetricsSvcProvider.html">MetricsSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-middlewares">services/middlewares</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/executable_route_middleware.js~ExecutableRouteMiddleware.html">ExecutableRouteMiddleware</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/middlewares/middlewares_svc_provider.js~MiddlewaresSvcProvider.html">MiddlewaresSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-ping">services/ping</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/ping/ping_svc_provider.js~PingSvcProvider.html">PingSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-resources">services/resources</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/executable_route_get_resource.js~ExecutableRouteGetResources.html">ExecutableRouteGetResources</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/resources/resources_svc_provider.js~ResourcesSvcProvider.html">ResourcesSvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-security">services/security</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_service.js~SecurityService.html">SecurityService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_consumer.js~SecuritySvcConsumer.html">SecuritySvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/security/security_svc_provider.js~SecuritySvcProvider.html">SecuritySvcProvider</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-todo-crud">services/todo_crud</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_service.js~CrudService.html">CrudService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_consumer.js~CrudSvcConsumer.html">CrudSvcConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/crud_svc_provider.js~CrudSvcProvider.html">CrudSvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/todo_crud/executable_route_model_crud.js~ExecutableRouteModelCrud.html">ExecutableRouteModelCrud</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#services-topology">services/topology</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_service.js~TopologyService.html">TopologyService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_consumer.js~TopologySvcHostConsumer.html">TopologySvcHostConsumer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/services/topology/unused_topology_svc_provider.js~TopologySvcProvider.html">TopologySvcProvider</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/services/resources/resources_svc_provider.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import {format} from &apos;util&apos;
+
+// COMMON IMPORTS
+import T                  from &apos;devapt-core-common/dist/js/utils/types&apos;
+import ServiceProvider    from &apos;devapt-core-common/dist/js/services/service_provider&apos;
+import ServiceResponse    from &apos;devapt-core-common/dist/js/services/service_response&apos;
+
+// SERVICES IMPORTS
+import ExecutableRouteResources from &apos;./executable_route_get_resource&apos;
+
+
+/**
+ * Contextual constant for this file logs.
+ * @private
+ */
+const context = &apos;services/resources/resources_svc_provider&apos;
+
+
+
+/**
+ * Resources service provider class.
+ * 
+ * @author Luc BORIES
+ * @license Apache-2.0
+ * 
+ */
+export default class ResourcesSvcProvider extends ServiceProvider
+{
+	/**
+	 * Create a resources gateway service provider.
+	 * 
+	 * @param {string} arg_provider_name - consumer name.
+	 * @param {Service} arg_service_instance - service instance.
+	 * @param {string} arg_context - logging context label.
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_provider_name, arg_service_instance, arg_context=context)
+	{
+		super(arg_provider_name, arg_service_instance, arg_context)
+
+		/**
+		 * Class test flag.
+		 * @type {boolean}
+		 */
+		this.is_resources_svc_provider = true
+		
+		/**
+		 * Service executable instance.
+		 * @type {Executable}
+		 */
+		this.exec = new ExecutableRouteResources(this)
+	}
+
+
+
+	/**
+	 * Get provider operations names.
+	 * @abstract
+	 * 
+	 * @returns {array}
+	 */
+	get_operations_names()
+	{
+		return [
+			&apos;devapt-res-get&apos;, &apos;devapt-res-list&apos;
+		]
+	}
+
+
+	
+	/**
+	 * Produce service datas on request.
+	 * 
+	 * @param {ServiceRequest} arg_request - service request instance.
+	 * 
+	 * @returns {Promise} - promise of ServiceResponse instance.
+	 */
+	produce(arg_request)
+	{
+		this.enter_group(&apos;produce&apos;)
+
+		if ( ! T.isObject(arg_request) || ! arg_request.is_service_request)
+		{
+			this.leave_group(&apos;produce:error:bad request object.&apos;)
+			return Promise.resolve({error:&apos;bad request object&apos;})
+		}
+
+		const response = new ServiceResponse(arg_request)
+		const operation = arg_request.get_operation()
+		const operands = arg_request.get_operands()
+		const credentials = arg_request.get_credentials()
+
+		// GET TENANT NAME
+		const tenant_name = T.isObject(credentials) ? credentials.tenant : undefined
+		const check_tenant_name = T.isNotEmptyString(tenant_name)
+		if (! check_tenant_name)
+		{
+			this.fill_error(response, operands, &apos;bad credentials tenant name&apos;, tenant_name, application_name, undefined, undefined)
+			return Promise.resolve(response)
+		}
+
+		// GET APPLICATION NAME
+		const application_name = T.isObject(credentials) ? credentials.application : undefined
+		this.debug(&apos;application_name&apos;, application_name)
+		// console.log(&apos;application_name&apos;, application_name)
+		const check_app_name = T.isNotEmptyString(application_name)
+		if (! check_app_name)
+		{
+			this.fill_error(response, operands, &apos;bad credentials application name&apos;, tenant_name, application_name, undefined, undefined)
+			return Promise.resolve(response)
+		}
+		
+		// DEBUG
+		// this.debug(&apos;tenant_name&apos;, tenant_name)
+		// console.log(&apos;tenant_name&apos;, tenant_name)
+		console.log(context + &apos;:produce:request for operation=%s tenant=%s and app=%s&apos;, operation, tenant_name, application_name)
+
+		// GET DEFINED TENANT
+		const defined_tenant = this.get_runtime().defined_world_topology.tenant(tenant_name)
+		const check_tenant = T.isObject(defined_tenant) &amp;&amp; defined_tenant.is_topology_define_tenant
+		if (! check_tenant)
+		{
+			this.fill_error(response, operands, &apos;bad credentials tenant object&apos;, tenant_name, application_name, undefined, undefined)
+			return Promise.resolve(response)
+		}
+
+		// GET DEFINED APPLICATION
+		const application = defined_tenant.application(application_name)
+		const check_app = T.isObject(application) &amp;&amp; application.is_topology_define_application
+		if (! check_app)
+		{
+			this.fill_error(response, operands, &apos;bad credentials application object&apos;, tenant_name, application_name, undefined, undefined)
+			return Promise.resolve(response)
+		}
+
+		// GET COLLECTION NAME
+		const opd_1 = T.isNotEmptyArray(operands) ? operands[0] : ( T.isObject(operands) ? operands.collection : undefined)
+		const collection = T.isNotEmptyString(opd_1) ? opd_1 : undefined
+		if (! collection)
+		{
+			this.fill_error(response, operands, &apos;bad collection name&apos;, tenant_name, application_name, undefined, undefined)
+			return Promise.resolve(response)
+		}
+
+		// OPERATION: LIST ALL APPLICATION RESOURCES
+		if (operation == &apos;devapt-res-list&apos;)
+		{
+			const res_list = application.get_resources_names(collection)
+			const results = [ { resources_names:res_list } ]
+
+			response.set_results(results)
+
+			this.leave_group( format(&apos;produce:service[%s] operation[%s] resources count[%n]&apos;, response.get_service(), operation, res_list.length) )
+			return Promise.resolve(response)
+		}
+
+		// GET RESOURCE NAME
+		const opd_2 = T.isNotEmptyArray(operands) ? operands[1] : ( T.isObject(operands) ? operands.resource : undefined)
+		const res_name = T.isNotEmptyString(opd_2) ? opd_2 : undefined
+		if (! res_name)
+		{
+			this.fill_error(response, operands, &apos;bad resource name&apos;, tenant_name, application_name, collection, undefined)
+			return Promise.resolve(response)
+		}
+		
+		// OPERATION: GET RESOURCES
+		if (operation == &apos;devapt-res-get&apos;)
+		{
+			const type = (collection &amp;&amp; collection != &apos;*&apos;) ? collection : undefined
+			const resource_instance = application.find_resource(res_name, type)
+
+			if (! T.isObject(resource_instance) )
+			{
+				this.fill_error(response, operands, &apos;resource not found&apos;, tenant_name, application_name, collection, res_name)
+				return Promise.resolve(response)
+			}
+
+			if (collection !== &apos;*&apos; &amp;&amp; (resource_instance.topology_type != collection) )
+			{
+				this.fill_error(response, operands, &apos;resource found but bad collection&apos;, tenant_name, application_name, collection, res_name)
+				return Promise.resolve(response)
+			}
+			
+			const res_settings = this.get_resource_json(resource_instance)
+			const results = [res_settings]
+			if (res_settings.error)
+			{
+				this.fill_error(response, operands, res_settings.error, tenant_name, application_name, collection, res_name)
+				return Promise.resolve(response)
+			}
+
+			response.set_results(results)
+			this.leave_group( format(&apos;produce:service[%s] operation[%s] resources count[%n]&apos;, response.get_service(), operation, results.length) )
+			return Promise.resolve(response)
+		}
+			
+		this.fill_error(response, operands, &apos;bad operation&apos;, tenant_name, application_name, collection, res_name)
+		return Promise.resolve(response)
+
+		// this.leave_group(&apos;produce:super.&apos;)
+		// return super.produce(arg_request)
+	}
+
+
+
+	/**
+	 * Populate a response with error message.
+	 * 
+	 * @param {ServiceResponse} arg_response - response instance.
+	 * @param {array} arg_operands     - request operands.
+	 * @param {string} arg_error       - error text.
+	 * @param {string} arg_tenant      - tenant name.
+	 * @param {string} arg_application - application name.
+	 * @param {string} arg_collection  - collection name.
+	 * @param {string} arg_resource    - resource name.
+	 * 
+	 * @returns {nothing}
+	 */
+	fill_error(arg_response, arg_operands, arg_error, arg_tenant=&apos;N/A&apos;, arg_application=&apos;N/A&apos;, arg_collection=&apos;N/A&apos;, arg_resource=&apos;N/A&apos;)
+	{
+		const op = arg_response.get_operation()
+		const svc = arg_response.get_service()
+		const error_msg = format(&apos;produce:error=[%s] with svc=[%s] operation=[%s] tenant=[%s] app=[%s] collection=[%s] resource=[%s].&apos;, arg_error, svc, op, arg_tenant, arg_application, arg_collection, arg_resource)
+		
+		arg_response.set_has_error(true)
+		arg_response.set_error(error_msg)
+		arg_response.set_results(arg_operands)
+		
+		this.leave_group(error_msg)
+	}
+	
+
+
+	/**
+	 * Get resource settings.
+	 * 
+	 * @param {Instance} arg_resource - resource instance.
+	 * 
+	 * @returns {object}
+	 */
+	get_resource_json(arg_resource)
+	{
+		// WRAP INCLUDED FILE
+		if ( arg_resource.has_setting(&apos;include_file_path_name&apos;) )
+		{
+			self.debug(&apos;Process resource.include_file_path_name [%s]&apos;, arg_resource.include_file_path_name)
+			
+			const file_path = arg_resource.get_setting(&apos;include_file_path_name&apos;)
+			if ( T.isString(file_path) )
+			{
+				try
+				{
+					const file_content = self.include_file(self, arg_resource, file_path)
+					arg_resource.set_setting(&apos;include_file_content&apos;, file_content)
+				}
+				catch(e)
+				{
+					const error_msg = &apos;an error occures when loading file [&apos; + e.toString() + &apos;]&apos;
+					arg_resource.set_setting(&apos;include_file_content&apos;, error_msg)
+					
+					console.error(context, error_msg)
+
+					return { error:error_msg }
+				}
+			}
+		}
+		
+		return arg_resource.export_settings()
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

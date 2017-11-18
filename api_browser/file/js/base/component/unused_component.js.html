@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">js/base/component/unused_component.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/base/component/unused_component.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+import assert from &apos;assert&apos;
+import _ from &apos;lodash&apos;
+
+// COMMON IMPORTS
+import T   from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+import uid from &apos;../../../node_modules/devapt-core-common/dist/js/utils/uid.js&apos;
+
+// BROWSER IMPORTS
+import BindingsLoader from &apos;./bindings_loader&apos;
+import Dom            from &apos;./dom&apos;
+
+
+const context = &apos;browser/base/component&apos;
+
+
+
+/**
+ * @file UI component class.
+ * 
+ * @author Luc BORIES
+ * 
+ * @license Apache-2.0
+ */
+export default class Component extends Dom
+{
+	/**
+	 * Creates an instance of Component.
+	 * @extends Dom
+	 * 
+	 * 	API
+	 * 		-&gt;render():Promise - Render component DOM element.
+	 * 		-&gt;process_rendering_vnode(arg_rendering_result, arg_credentials):nothing - Process rendering VNode: create or update DOM element.
+	 * 		-&gt;save_rendering():nothing - Save rendering virtul node. Update component VNode with current component HTML.
+	 * 
+	 * 		-&gt;update():Promise - Update view with current state.
+	 * 		-&gt;update_children():Promise - Update view with current state.
+	 * 
+	 * 		-&gt;clear():Promise - Clear component to initial values.
+	 * 		-&gt;destroy():Promise - Destroy component DOM element.
+	 * 
+	 * 		-&gt;load(arg_state):nothing - Load and apply a component configuration.
+	 * 		-&gt;init_bindings():nothing - Init bindings.
+	 * 		-&gt;unload():nothing - Unload a component configuration.
+	 * 
+	 *		-&gt;dispatch_update_state_action(arg_new_state):nothing - Dispatch update state action.
+	 * 		-&gt;dispatch_update_state_value_action(arg_path, arg_value):nothing - Dispatch update state action.
+	 * 
+	 * 		-&gt;get_children_component():array - Get view children components.
+	 * 
+	 * 		-&gt;get_text_value():string - Get component content value string.
+	 * 		-&gt;set_text_value(arg_value):nothing - Set component content value string.
+	 * 
+	 * 		-&gt;get_object_value():object - Get component content value object.
+	 * 		-&gt;set_object_value(arg_value):nothing - Set component content value object.
+	 * 
+	 * @param {RuntimeBase} arg_runtime - client runtime.
+	 * @param {Immutable.Map} arg_state - component initial state.
+	 * @param {string} arg_log_context - context of traces of this instance (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_state, arg_log_context)
+	{
+		const log_context = arg_log_context ? arg_log_context : context
+		super(arg_runtime, arg_state, log_context)
+		
+		this.is_component   = true
+		this.is_menubar     = false
+		this.is_breadcrumbs = false
+
+		// CHILDREN COMPONENTS
+		this._children_components = undefined
+
+		this._is_loaded = false
+		this._bindings = {}
+
+		this._ready_promise = Promise.resolve()
+		this._assets_dependancies = []
+		this._assets_promise = undefined
+
+		// console.info(context + &apos;:constructor:creating component &apos; + this.get_name())
+
+		// this.enable_trace()
+	}
+
+
+
+	/**
+	 * Render component DOM element.
+	 * 
+	 * @param {boolean} arg_force - should force creation of a new VNode if a previous rendering exists.
+	 * 
+	 * @returns {Promise} - Promise of this to chain promises.
+	 */
+	render(arg_force)
+	{
+		this.enter_group(&apos;render&apos;)
+
+		this._ready_promise = this._ready_promise.then(
+			()=&gt;{
+				return this._render(arg_force)
+			}
+		)
+
+		this.leave_group(&apos;render:async&apos;)
+		return this._ready_promise
+	}
+
+	_render(arg_force)
+	{
+		// const is_rendered = this.get_state_value(&apos;is_rendered&apos;, false)
+		// if (! arg_force &amp;&amp; this._is_rendered)
+		// {
+		// 	this.leave_group(&apos;render:already rendered&apos;)
+		// 	return Promise.resolve()
+		// }
+		
+		let promise = Promise.resolve()
+		if (arg_force)
+		{
+			this.debug(&apos;render:force rendering&apos;)
+			promise = this._rendering.render()
+		}
+
+		promise = promise.then(
+			()=&gt;{
+				// SHOULD RENDER VNODE
+				if ( ! this.has_dom_vnode())
+				{
+					this.debug(&apos;render:should create vnode&apos;)
+					const p = this._rendering.render()
+					this.leave_group(&apos;render:vnode is created&apos;)
+					return p
+				}
+				
+				// DISPLAY VNODE
+				if ( this.has_dom_vnode())
+				{
+					const vnode = this.get_dom_vnode()
+					const p = this.process_rendering_vnode(vnode)
+					this.leave_group(&apos;render:vnode is rendered&apos;)
+					return p
+				}
+
+				// RENDERING FAILED
+				this.error(&apos;render:render:no vnode to render&apos;)
+				this.leave_group(&apos;render:no vnode to render&apos;)
+				return Promise.reject(context + &apos;:render:no dom vnode to render for &apos; + this.get_name())
+			}
+		)
+
+		return promise
+	}
+	
+	
+	
+	/**
+	 * PROCESS RENDERING VNODE: CREATE OR UPDATE DOM ELEMENT.
+	 */
+	process_rendering_vnode(arg_rendering_result, arg_credentials)
+	{
+		this._rendering.process_rendering_vnode(arg_rendering_result, arg_credentials)
+
+		this._is_visible = true
+		// PROCESS CHILDREN
+		// ...
+	}
+
+
+
+	/**
+	 * Save rendering virtul node. Update component VNode with current component HTML.
+	 * 
+	 * @returns {nothing}
+	 */
+	save_rendering()
+	{
+		this._rendering.save_rendering()
+	}
+
+
+
+	/**
+	 * Update view with current state.
+	 * 
+	 * @returns {Promise}
+	 */
+	update()
+	{
+		this.enter_group(&apos;update&apos;)
+
+		console.info(context + &apos;:update:%s&apos;, this.get_name())
+
+		this._ready_promise = this._ready_promise.then(
+			()=&gt;{
+				return this._update()
+			}
+		)
+
+		this.leave_group(&apos;update:async&apos;)
+		return this._ready_promise
+	}
+
+
+	_update()
+	{
+		this.debug(&apos;update:name=&apos; + this.get_name() + &apos;,dom_id=&apos; + this.get_dom_id() )
+
+		const new_elm = document.getElementById(this.get_dom_id())
+		const prev_elm = this.get_dom_element()
+		// console.log(prev_elm, context + &apos;:update:prev_elm&apos;)
+		// console.log(new_elm,  context + &apos;:update:new_elm&apos;)
+
+		if (!new_elm)
+		{
+			// this.leave_group(&apos;update&apos;)
+			return Promise.resolve()
+		}
+
+		if (prev_elm != new_elm)
+		{
+			this.debug(&apos;:update:prev_elm &lt;&gt; new_elm&apos;)
+			if (prev_elm.parentNode)
+			{
+				prev_elm.parentNode.removeChild(prev_elm)
+			}
+			this._dom_element = new_elm
+		}
+		
+		let promise = Promise.resolve()
+		if ( T.isFunction(this._update_self) )
+		{
+			this.debug(&apos;:update:call _update_self (async)&apos;)
+
+			promise = promise.then(
+				()=&gt;{
+					this._update_self(prev_elm, new_elm)
+				}
+			)
+		}
+
+		promise = promise.then(
+			()=&gt;
+			{
+				this.update_children()
+			}
+		)
+
+		return promise
+	}
+
+
+
+	/**
+	 * Update view with current state.
+	 * 
+	 * @returns {Promise}
+	 */
+	update_children()
+	{
+		this.enter_group(&apos;update_children&apos;)
+
+		this.get_children_component().forEach(
+			(component)=&gt;{
+				this.debug(&apos;:update_children:component=&apos; + component.get_name())
+				component.update()
+			}
+		)
+
+		this.leave_group(&apos;update_children&apos;)
+	}
+
+
+
+	/**
+	 * Clear component to initial values.
+	 * 
+	 * @returns {Promise}
+	 */
+	clear()
+	{
+		// TO OVERWRITE
+	}
+
+
+
+	/**
+	 * Destroy component DOM element.
+	 * 
+	 * @returns {Promise}
+	 */
+	destroy()
+	{
+		this.enter_group(&apos;destroy&apos;)
+
+		if (this._dom_element)
+		{
+			this._dom_element.parentNode.removeChild(this._dom_element)
+		}
+		
+		this.leave_group(&apos;destroy&apos;)
+	}
+	
+	
+	
+	/**
+	 * Load and apply a component configuration.
+	 * 
+	 * @param {Immutable.Map|undefined} arg_state - component state to load (optional).
+	 * 
+	 * @returns {nothing|Promise} 
+	 */
+	load(arg_state)
+	{
+		this.enter_group(&apos;load&apos;)
+
+		if (this._is_loaded)
+		{
+			// console.info(context + &apos;:load:already loaded component &apos; + this.get_name())
+			this.leave_group(&apos;load:already loaded&apos;)
+			return
+		}
+
+		// const self = this
+		// console.info(context + &apos;:load:loading component &apos; + this.get_name())
+		
+		if (! this.store_unsubscribe)
+		{
+			this.store_unsubscribe = this.get_runtime().create_store_observer(this)
+		}
+		
+		const state = arg_state ? arg_state : this.get_state()
+		// console.log(state, &apos;load bindinds&apos;)
+		
+		if (! state)
+		{
+			this.leave_group(&apos;load:no state found&apos;)
+			return
+		}
+
+		this.init_assets()
+
+		// this.update()
+
+		this._is_loaded = true
+		this.leave_group(&apos;load&apos;)
+	}
+	
+
+
+	/**
+	 * Get assets promises.
+	 * 
+	 * @returns {Promise}
+	 */
+	get_assets_promise()
+	{
+		return this._assets_promise
+	}
+	
+
+
+	/**
+	 * Get assets dependancies.
+	 * 
+	 * @returns {array}
+	 */
+	get_assets_dependancies()
+	{
+		return this._assets_dependancies
+	}
+	
+
+
+	/**
+	 * Add assets dependancy.
+	 * 
+	 * @param {string} arg_asset_id - asset element id.
+	 * 
+	 * @returns {nothing}
+	 */
+	add_assets_dependancy(arg_asset_id)
+	{
+		return this._assets_dependancies.push(arg_asset_id)
+	}
+
+
+
+	/**
+	 * Init assets promises.
+	 * 
+	 * @returns {nothing}
+	 */
+	init_assets()
+	{
+		this.enter_group(&apos;init_assets&apos;)
+
+		const assets_promises = []
+		this._assets_dependancies.forEach(
+			(asset_id)=&gt;{
+				assets_promises.push( window.devapt().asset_promise(asset_id) )
+			}
+		)
+		// console.log(context + &apos;:init:%s:assets:&apos;, this.get_name(), this._assets_dependancies)
+
+		this._assets_promise = Promise.all(assets_promises)
+
+		this.leave_group(&apos;init_assets&apos;)
+	}
+	
+	
+	/**
+	 * Init bindings.
+	 * 
+	 * @returns {nothing} 
+	 */
+	init_bindings()
+	{
+		this.enter_group(&apos;init_bindings&apos;)
+
+		const state = this.get_state()
+		const bindings = state.has(&apos;bindings&apos;) ? state.get(&apos;bindings&apos;).toJS() : undefined
+		if ( T.isObject(bindings) )
+		{
+			if ( T.isArray(bindings.services) )
+			{
+				bindings.services.forEach(
+					(bind_cfg) =&gt; {
+						bind_cfg.type = bind_cfg.timeline ? &apos;timeline&apos; : (bind_cfg.dom_event ? &apos;emitter_jquery&apos; : &apos;service&apos;)
+						const id = &apos;binding_&apos; + uid()
+						this._bindings[id] = BindingsLoader.load(id, this._runtime, this, bind_cfg)
+					}
+				)
+			}
+
+			if ( T.isArray(bindings.streams) )
+			{
+				bindings.streams.forEach(
+					(bind_cfg) =&gt; {
+						// console.log(context + &apos;:load:stream binding:&apos;, bind_cfg)
+						let stream = bind_cfg.source_stream ? bind_cfg.source_stream : undefined
+						
+						if ( T.isString(stream) )
+						{
+							let source_component = this
+							if ( bind_cfg.source_type == &apos;views&apos; &amp;&amp; T.isNotEmptyString(bind_cfg.source_selector) )
+							{
+								source_component = window.devapt().ui(bind_cfg.source_selector)
+							}
+							stream = source_component.get_named_stream(stream)
+						}
+
+						if ( T.isObject(stream) &amp;&amp; stream.is_stream )
+						{
+							bind_cfg.type = &apos;stream&apos;
+							bind_cfg.source_stream = stream
+							const id = &apos;binding_&apos; + uid()
+							this._bindings[id] = BindingsLoader.load(id, this._runtime, this, bind_cfg)
+
+							// console.log(context + &apos;:load:stream bound:&apos;, id, bind_cfg)
+						}
+					}
+				)
+			}
+			
+			if ( T.isArray(bindings.emitter_jquery) )
+			{
+				bindings.emitter_jquery.forEach(
+					(bind_cfg) =&gt; {
+						bind_cfg.type = &apos;emitter_jquery&apos;
+						const id = &apos;binding_&apos; + uid()
+						const binding_streams = BindingsLoader.load(id, this._runtime, this, bind_cfg)
+						if ( T.isArray(binding_streams) )
+						{
+							_.forEach(binding_streams,
+								(binding, index)=&gt;{
+									this._bindings[id + &apos;_&apos; + index] = binding
+								}
+							)
+						} else {
+							this._bindings[id] = binding_streams
+						}
+					}
+				)
+			}
+			
+			if ( T.isArray(bindings.emitter_dom) )
+			{
+				bindings.emitter_dom.forEach(
+					(bind_cfg) =&gt; {
+						bind_cfg.type = &apos;emitter_dom&apos;
+						const id = &apos;binding_&apos; + uid()
+						const binding_streams = BindingsLoader.load(id, this._runtime, this, bind_cfg)
+						if ( T.isArray(binding_streams) )
+						{
+							_.forEach(binding_streams,
+								(binding, index)=&gt;{
+									this._bindings[id + &apos;_&apos; + index] = binding
+								}
+							)
+						} else {
+							this._bindings[id] = binding_streams
+						}
+					}
+				)
+			}
+		}
+
+		this.leave_group(&apos;init_bindings&apos;)
+	}
+	
+	
+	
+	/**
+	 * Unload a component configuration.
+	 * 
+	 * @returns {nothing} 
+	 */
+	unload()
+	{
+		this.enter_group(&apos;unload&apos;)
+
+		assert( T.isFunction(this.store_unsubscribe), context + &apos;:unload:bad store_unsubscribe function&apos;)
+		
+		// UNBIND ALL BINDINGS
+		_.forEach(this._bindings,
+			(binding/*, id*/)=&gt;{
+				binding._unsubscribe()
+				if (binding._unsubscribe_state_update)
+				{
+					binding._unsubscribe_state_update()
+				}
+			}
+		)
+
+		// DETACH STORE CHANGE LISTENER
+		this.store_unsubscribe()
+
+		this.leave_group(&apos;unload&apos;)
+	}
+
+
+
+	/**
+	 * Get a named stream.
+	 * 
+	 * @param {string} arg_stream_name - stream name.
+	 * 
+	 * @returns {Stream|undefined} - found stream.
+	 */
+	get_named_stream(arg_stream_name)
+	{
+		switch(arg_stream_name.toLocaleLowerCase()) {
+			case &apos;runtime_logs&apos;: return this._runtime.logs_stream
+		}
+		
+		console.warn(context + &apos;:get_named_stream:%s:unknow named stream&apos;, this.get_name(), arg_stream_name.toLocaleLowerCase())
+		return undefined
+	}
+
+
+
+	/**
+	 * Dispatch update state action.
+	 * 
+	 * @param {Immutable.Map} arg_new_state - new state Immutable Map.
+	 * 
+	 * @returns {nothing}
+	 */
+	dispatch_update_state_action(arg_new_state)
+	{
+		if ( ! T.isObject(arg_new_state) )
+		{
+			return
+		}
+
+		const new_state = arg_new_state.toJS ? arg_new_state.toJS() : arg_new_state
+		// console.log(context + &apos;:dispatch_update_state_action:new state:&apos;, new_state)
+
+		const action = { type:&apos;ADD_JSON_RESOURCE&apos;, resource:this.get_name(), path:this.get_state_path(), json:new_state }
+		window.devapt().ui().store.dispatch(action)
+	}
+
+
+
+	/**
+	 * Dispatch update state action.
+	 * 
+	 * @param {array|string} arg_path - component state path.
+	 * @param {any} arg_value - component state value.
+	 * 
+	 * @returns {nothing}
+	 */
+	dispatch_update_state_value_action(arg_path, arg_value)
+	{
+		if (! T.isArray(arg_path) )
+		{
+			console.error(context + &apos;:dispatch_update_state_value_action:bad path array:path,value:&apos;, arg_path, arg_value)
+			return
+		}
+		// console.log(context + &apos;:dispatch_update_state_value_action:path,value:&apos;, arg_path, arg_value)
+		
+		const new_state = this.get_state().setIn(arg_path, arg_value)
+		this.dispatch_update_state_action(new_state)
+	}
+
+
+
+	/**
+	 * Get view children components.
+	 * 
+	 * @returns {array} - list of Component.
+	 */
+	get_children_component()
+	{
+		// SKIP FOR MENUBAR
+		if (this.is_menubar)
+		{
+			return []
+		}
+		
+		if ( ! this._children_components)
+		{
+			this._children_components = []
+
+			// GET APPLICATION STATE AND INIT APPLICATION STATE PATH
+			const ui = window.devapt().ui()
+			const current_app_state = ui.store.get_state()
+			const state_path = [&apos;views&apos;]
+
+			// GET COMPONENT DESCRIPTION AND CHILDREN
+			const component_desc = ui._ui_factory.find_component_desc(current_app_state, this.get_name(), state_path)
+			const children = component_desc ? component_desc.get(&apos;children&apos;, undefined) : undefined
+			const children_names = children ? Object.keys( children.toJS() ) : []
+			this.debug(&apos;:get_children_component:init with children_names:&apos;, children_names)
+
+			// GET COMPONENT ITEMS
+			const items = this.get_state_value(&apos;items&apos;, [])
+			this.debug(&apos;:get_children_component:init with items:&apos;, JSON.stringify(items))
+
+			const all_children = _.concat(children_names, items)
+			// console.info(context + &apos;:get_children_component:all_children:%s:&apos;, this.get_name(), all_children)
+
+			const unique_children = {}
+			all_children.forEach(
+				(item)=&gt;{
+					if ( T.isObject(item) )
+					{
+						this.debug(&apos;:get_children_component:loop on item object&apos;)
+						
+						if ( T.isString(item.view) )
+						{
+							if (item.viewitem in unique_children)
+							{
+								return
+							}
+
+							this.debug(&apos;:get_children_component:loop on item string:&apos;, item.view)
+							
+							const component = window.devapt().ui(item.view)
+							if (component &amp;&amp; component.is_component)
+							{
+								this._children_components.push(component)
+								unique_children[component.get_name()] = true
+								return
+							}
+
+							this.warn(&apos;:get_children_component:bad item component for:&apos;, item.view)
+							return
+						}
+
+						this.warn(&apos;:get_children_component:bad item object for:&apos;, JSON.stringify(item))
+						return
+					}
+					
+					if ( T.isString(item) )
+					{
+						if (item in unique_children)
+						{
+							return
+						}
+
+						this.debug(&apos;:get_children_component:loop on item string:&apos;, item)
+						const component = window.devapt().ui(item)
+						if (component &amp;&amp; component.is_component)
+						{
+							this._children_components.push(component)
+							unique_children[component.get_name()] = true
+							return
+						}
+
+						this.warn(&apos;:get_children_component:bad item component for:&apos;, item)
+						return
+					}
+
+					this.warn(&apos;:get_children_component:bad item type for:&apos;, item.toString())
+				}
+			)
+		}
+
+		
+		this.debug(&apos;:get_children_component:&apos;, this._children_components)
+		return this._children_components
+	}
+
+
+	
+	/**
+	 * Get component content value string.
+	 * 
+	 * @returns {string}
+	 */
+	get_text_value()
+	{
+		return this.get_dom_text()
+	}
+	
+
+
+	/**
+	 * Set component content value string.
+	 * 
+	 * @param {string} arg_value - component values string.
+	 * 
+	 * @returns {nothing}
+	 */
+	set_text_value(arg_value)
+	{
+		this.set_dom_text(&apos;&apos; + arg_value)
+	}
+
+
+
+	/**
+	 * Get component content value object.
+	 * 
+	 * @returns {object}
+	 */
+	get_object_value()
+	{
+		let json = undefined
+		
+		const str = this.get_dom_text()
+
+		try {
+			json = JSON.parse(str)
+		}
+		catch(e){
+			console.warn(context + &apos;:get_object_value:error %s:bad json string=%s:&apos;, e, str)
+		}
+
+		return json
+	}
+	
+
+
+	/**
+	 * Set component content value object
+	 * 
+	 * @param {object} arg_value - component values object.
+	 * 
+	 * @returns {nothing}
+	 */
+	set_object_value(arg_value)
+	{
+		try {
+			const str = JSON.stringify(arg_value)
+			this.set_dom_text(str)
+		}
+		catch(e){
+			console.warn(context + &apos;:set_object_value:error %s:bad object=:&apos;, e, arg_value)
+		}
+	}
+
+
+
+	/**
+	 * Render a component inside this element from a json description.
+	 * 
+	 * @param {object} arg_options - json source configuration.
+	 * 
+	 * @returns {nothing}
+	 */
+	register_and_render_inside_from_json(arg_options)
+	{
+		this.enter_group(&apos;register_and_render_inside_from_json&apos;)
+
+		const json = this.register_from_json(arg_options)
+
+		if (! T.isObject(json) )
+		{
+			this.leave_group(&apos;register_and_render_inside_from_json:error:bad json object&apos;)
+			return
+		}
+
+		this.render_inside_from_json(json.name, json)
+
+		this.leave_group(&apos;register_and_render_inside_from_json&apos;)
+	}
+
+
+
+	/**
+	 * Register a component description from a json content.
+	 * 
+	 * @param {object} arg_options - json source configuration.
+	 * 
+	 * @returns {nothing}
+	 */
+	register_from_json(arg_options)
+	{
+		this.enter_group(&apos;register_from_json&apos;)
+		
+		console.log(context + &apos;:register_from_json:options=&apos;, arg_options)
+		
+		if (arg_options.is_event_handler)
+		{
+			arg_options = arg_options.data
+		}
+
+		// CHECK CONFIGURATION
+		if ( ! T.isObject(arg_options) )
+		{
+			console.warn(context + &apos;:register_from_json:bad options object&apos;)
+			this.leave_group(&apos;register_from_json:error:bad options object&apos;)
+			return
+		}
+		if ( ! T.isString(arg_options.json_source_view) )
+		{
+			console.warn(context + &apos;:register_from_json:bad options.json_source_view string&apos;)
+			this.leave_group(&apos;register_from_json:error:bad options.json_source_view string&apos;)
+			return
+		}
+		if ( ! T.isString(arg_options.json_source_getter) )
+		{
+			console.warn(context + &apos;:register_from_json:bad options.json_source_getter string&apos;)
+			this.leave_group(&apos;register_from_json:error:bad options.json_source_getter string&apos;)
+			return
+		}
+		const source_object = this.get_runtime().ui().get(arg_options.json_source_view)
+		if ( ! T.isObject(source_object) || ! source_object.is_component )
+		{
+			console.warn(context + &apos;:register_from_json:%s:view=%s:bad json source component&apos;, this.get_name(), arg_options.json_source_view, source_object)
+			this.leave_group(&apos;register_from_json:error:bad json source component&apos;)
+			return
+		}
+		if ( ! (arg_options.json_source_getter in source_object) )
+		{
+			console.warn(context + &apos;:register_from_json:bad json source method for component&apos;)
+			this.leave_group(&apos;register_from_json:error:bad json source method for component&apos;)
+			return
+		}
+		if ( ! ( T.isFunction( source_object[arg_options.json_source_getter] )) )
+		{
+			console.warn(context + &apos;:register_from_json:bad json source method for component&apos;)
+			this.leave_group(&apos;register_from_json:error:bad json source method for component&apos;)
+			return
+		}
+
+		// GET JSON FROM SOURCE
+		try{
+			const json = source_object[arg_options.json_source_getter]()
+
+			// DEBUG
+			console.log(context + &apos;:register_from_json:json=&apos;, json)
+
+			// CHECK COMPONENT NAME
+			if ( ! T.isString(json.name) )
+			{
+				console.warn(context + &apos;:register_from_json:bad json.name string&apos;)
+				this.leave_group(&apos;register_from_json:error:bad json.name string&apos;)
+				return
+			}
+
+			// STORE COMPONENT DESCRIPTION
+			const action = { type:&apos;ADD_JSON_RESOURCE&apos;, resource:json.name, collection:&apos;views&apos;, json:json }
+			this.get_runtime().get_state_store().dispatch(action)
+
+			this.leave_group(&apos;register_from_json&apos;)
+			return json
+		}
+		catch(e) {
+			console.warn(context + &apos;:register_from_json:error %s&apos;, e)
+
+			this.leave_group(&apos;register_from_json:error:&apos; + e)
+			return undefined
+		}
+	}
+
+
+
+	/**
+	 * Render a component inside this element from a json description.
+	 * 
+	 * @param {string} arg_name - component name.
+	 * @param {object} arg_json_desc - component description.
+	 * 
+	 * @returns {nothing}
+	 */
+	render_inside_from_json(arg_name, arg_json_desc)
+	{
+		this.enter_group(&apos;render_inside_from_json&apos;)
+		
+		console.log(context + &apos;:render_inside_from_json:name and description:&apos;, arg_name, arg_json_desc)
+		
+		try{
+			// CREATE COMPONENT ELEMENT
+			const this_element = this.get_dom_element()
+			if ( ! this_element)
+			{
+				console.warn(context + &apos;:render_inside_from_json:bad dom element&apos;)
+				this.leave_group(&apos;render_inside_from_json:error:bad dom element&apos;)
+				return
+			}
+
+			const this_document = this_element.ownerDocument
+			const existing_element = this_document.getElementById(arg_name)
+			let sub_element = undefined
+			if (existing_element)
+			{
+				if (existing_element.parentElement == this_element)
+				{
+					sub_element = existing_element
+				} else {
+					console.warn(context + &apos;:render_inside_from_json:a previous element exist with given name=%s&apos;, arg_name)
+					this.leave_group(&apos;render_inside_from_json:error:bad dom element&apos;)
+					return
+				}
+			} else {
+				sub_element = this_element.ownerDocument.createElement(&apos;div&apos;)
+				sub_element.setAttribute(&apos;id&apos;, arg_name)
+				this_element.appendChild(sub_element)
+			}
+
+			const component = this.get_runtime().ui().create_local(arg_name, arg_json_desc)
+			component.render(true)
+			.then(
+				()=&gt;{
+					window.devapt().content_rendered()
+				}
+			)
+		} catch(e){
+			console.warn(context + &apos;:render_inside_from_json:error %s&apos;, e)
+			return
+		}
+	}
+
+
+
+	/**
+	 * Expand component to fullscreen (inside browser window).
+	 * 
+	 * @returns {nothing}
+	 */
+	expand_to_fullscreen()
+	{
+		console.log(context + &apos;:expand_to_fullscreen&apos;)
+
+		let dom_elem = this.get_dom_element()
+		const bcolor = &apos;background-color&apos;
+		const lmargin = &apos;margin-left&apos;
+
+		if (dom_elem.parentNode &amp;&amp; dom_elem.parentNode.className.indexOf(&apos;devapt-dock-item&apos;) &gt; -1)
+		{
+			dom_elem = dom_elem.parentNode
+		}
+
+		dom_elem.className = dom_elem.className ? dom_elem.className : &apos;&apos;
+
+		if ( dom_elem.className.indexOf(&apos;devapt-fullscreen&apos;) &lt; 0 )
+		{
+			this.saved_dom = {
+				body_overflow:document.body.style.overflow,
+				className:dom_elem.className,
+				style:{
+					position:dom_elem.style.position,
+					left:    dom_elem.style.left,
+					top:     dom_elem.style.top,
+					height:  dom_elem.style.height,
+					width:   dom_elem.style.width,
+					bcolor:  dom_elem.style[bcolor],
+					lmargin: dom_elem.style[lmargin],
+					zindex:  dom_elem.style[&apos;z-index&apos;]
+				}
+			}
+
+			document.body.style.overflow = &apos;hidden&apos;
+
+			dom_elem.style.position   = &apos;fixed&apos;
+			dom_elem.style.left       = &apos;20px&apos;
+			dom_elem.style.top        = &apos;20px&apos;
+			dom_elem.style.height     = &apos;100%&apos;
+			dom_elem.style.width      = &apos;100%&apos;
+			dom_elem.style[bcolor]    = &apos;white&apos;
+			dom_elem.style[lmargin]   = &apos;0px&apos;
+			dom_elem.style[&apos;z-index&apos;] = 999
+			dom_elem.className       += &apos; devapt-fullscreen&apos;
+
+			this.resize(dom_elem.offsetWidth, dom_elem.offsetHeight)
+		}
+	}
+
+
+
+	/**
+	 * Collapse component from fullscreen to original size.
+	 * 
+	 * @returns {nothing}
+	 */
+	collapse_from_fullscreen()
+	{
+		// console.log(context + &apos;:collapse_from_fullscreen&apos;)
+
+		let dom_elem = this.get_dom_element()
+		const bcolor = &apos;background-color&apos;
+		const lmargin = &apos;margin-left&apos;
+
+		if (dom_elem.parentNode &amp;&amp; dom_elem.parentNode.className.indexOf(&apos;devapt-dock-item&apos;) &gt; -1)
+		{
+			dom_elem = dom_elem.parentNode
+		}
+
+		dom_elem.className = dom_elem.className ? dom_elem.className : &apos;&apos;
+
+		if ( dom_elem.className.indexOf(&apos;devapt-fullscreen&apos;) &gt; -1 &amp;&amp; T.isObject(this.saved_dom) &amp;&amp; T.isObject(this.saved_dom.style) )
+		{
+			document.body.style.overflow = this.saved_dom.body_overflow
+
+			dom_elem.style.position   = this.saved_dom.style.position
+			dom_elem.style.left       = this.saved_dom.style.left
+			dom_elem.style.top        = this.saved_dom.style.top
+			dom_elem.style.height     = this.saved_dom.style.height
+			dom_elem.style.width      = this.saved_dom.style.width
+			dom_elem.style[bcolor]    = this.saved_dom.style.bcolor
+			dom_elem.style[lmargin]   = this.saved_dom.style.lmargin
+			dom_elem.style[&apos;z-index&apos;] = this.saved_dom.style.zindex
+
+			dom_elem.className = this.saved_dom.className
+
+			this.saved_dom = {}
+
+			this.resize(dom_elem.offsetWidth, dom_elem.offsetHeight)
+		}
+	}
+
+
+
+	/**
+	 * Toggle component fullscreen mode.
+	 * 
+	 * @returns {nothing}
+	 */
+	toggle_from_fullscreen()
+	{
+		let dom_elem = this.get_dom_element()
+
+		if (dom_elem.parentNode &amp;&amp; dom_elem.parentNode.className.indexOf(&apos;devapt-dock-item&apos;) &gt; -1)
+		{
+			dom_elem = dom_elem.parentNode
+		}
+
+		dom_elem.className = dom_elem.className ? dom_elem.className : &apos;&apos;
+
+		if ( dom_elem.className.indexOf(&apos;devapt-fullscreen&apos;) &gt; -1 )
+		{
+			this.collapse_from_fullscreen()
+			return
+		}
+
+		this.expand_to_fullscreen()
+	}
+
+
+
+	/**
+	 * Toggle component fullscreen mode.
+	 * 
+	 * @returns {nothing}
+	 */
+	save_()
+	{
+
+	}
+
+
+
+	/**
+	 * Toggle component fullscreen mode.
+	 * 
+	 * @returns {nothing}
+	 */
+	restore_()
+	{
+
+	}
+
+
+
+	/**
+	 * Resize component.
+	 * 
+	 * @param {any} arg_width - css width value.
+	 * @param {any} arg_height - css height value.
+	 * 
+	 * @returns {nothing}
+	 */
+	resize(arg_width, arg_height)
+	{
+		console.log(context + &apos;:resize:width=%s height:%s&apos;, arg_width, arg_height)
+
+		// TODO
+		const dom_elem = this.get_dom_element()
+		if (! T.isNumber(arg_width))
+		{
+			arg_width = dom_elem.offsetWidth
+		}
+		if (! T.isNumber(arg_height))
+		{
+			arg_height = dom_elem.offsetHeight
+		}
+		console.log(context + &apos;:resize:num width=%s num height:%s&apos;, arg_width, arg_height)
+
+		this.get_children_component().forEach(
+			(component)=&gt;{
+				this.debug(&apos;:resize:component=&apos; + component.get_name())
+				component.resize(arg_width, arg_height)
+			}
+		)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

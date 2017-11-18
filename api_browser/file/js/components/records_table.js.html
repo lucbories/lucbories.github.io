@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">js/components/records_table.js | Devapt (Developper Application Toolkit) Core Common</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Common features for Devapt libraries and applications."><meta property="og:type" content="website"><meta property="og:url" content="http://www.devapt.org"><meta property="og:site_name" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="og:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"><meta property="og:description" content="Common features for Devapt libraries and applications."><meta property="og:author" content="https://github.com/lucbories"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="Devapt (Developper Application Toolkit) Core Common"><meta property="twitter:description" content="Common features for Devapt libraries and applications."><meta property="twitter:image" content="https://avatars3.githubusercontent.com/u/21240408?v=4&amp;s=200"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./" style="display: flex; align-items: center;"><img src="./image/brand_logo.png" style="width:34px;"></a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/lucbories/devapt-core-common"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base">base</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/container.js~Container.html">Container</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/feature.js~Feature.html">Feature</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/name_type_settings_loggable.js~NameTypeSettingsLoggable.html">NameTypeSettingsLoggable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/web_worker.js~WebWorker.html">WebWorker</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-binding">base/binding</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service.js~BindingService.html">BindingService</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_service_timeline.js~BindingServiceTimeline.html">BindingServiceTimeline</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/binding_stream.js~BindingStream.html">BindingStream</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/binding/bindings_loader.js~BindingLoader.html">BindingLoader</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-component">base/component</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/bound_dom.js~BoundDom.html">BoundDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/dom.js~Dom.html">Dom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendered_dom.js~RenderedDDom.html">RenderedDDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/rendering.js~Rendering.html">Rendering</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/stated_dom.js~StatedDom.html">StatedDom</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/component/unused_component.js~Component.html">Component</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#base-layout">base/layout</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout.js~Layout.html">Layout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/base/layout/layout_simple.js~LayoutSimple.html">LayoutSimple</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#commands">commands</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/command.js~Command.html">Command</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/display_command.js~DisplayCommand.html">DisplayCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/commands/worker_command.js~WorkerCommand.html">WorkerCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/attributes_table.js~AttributesTable.html">AttributesTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock.js~Dock.html">Dock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/dock_item.js~DockItem.html">DockItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/input-field.js~InputField.html">InputField</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/logs_table.js~LogsTable.html">LogsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/page.js~Page.html">Page</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/records_table.js~RecordsTable.html">RecordsTable</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table.js~Table.html">Table</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/table_tree.js~TableTree.html">TableTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tabs.js~Tabs.html">Tabs</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/topology.js~Topology.html">Topology</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/components/tree.js~Tree.html">Tree</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#loggers">loggers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/console_logger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/loggers/stream_logger.js~StreamLogger.html">StreamLogger</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#runtime">runtime</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/client_runtime.js~ClientRuntime.html">ClientRuntime</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/router_state.js~RouterState.html">RouterState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service.js~Service.html">Service</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/service_operation.js~ServiceOperation.html">ServiceOperation</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui.js~UI.html">UI</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_factory.js~UIFactory.html">UIFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/js/runtime/ui_rendering.js~UIRendering.html">UIRendering</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">js/components/records_table.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">// NPM IMPORTS
+// import assert from &apos;assert&apos;
+
+// COMMON IMPORTS
+import T from &apos;../../../node_modules/devapt-core-common/dist/js/utils/types&apos;
+
+// BROWSER IMPORTS
+import Table from &apos;./table&apos;
+
+
+const context = &apos;browser/components/records_table&apos;
+
+
+
+/**
+ * @file UI component class.
+ * @author Luc BORIES
+ * @license Apache-2.0
+ */
+export default class RecordsTable extends Table
+{
+	
+	/**
+	 * Creates an instance of Component.
+	 * @extends Table
+	 * 
+	 * @param {object} arg_runtime - client runtime.
+	 * @param {object} arg_state - component state.
+	 * @param {string} arg_log_context - context of traces of this instance (optional).
+	 * 
+	 * @returns {nothing}
+	 */
+	constructor(arg_runtime, arg_state, arg_log_context)
+	{
+		const log_context = arg_log_context ? arg_log_context : context
+		super(arg_runtime, arg_state, log_context)
+		
+		this.is_one_record_table_component = true
+		
+		// this.table_jqo = $(&quot;#&quot; + this.get_dom_id())
+		this.records = {}
+		
+		const state = this.get_state_js()
+		this.fields = (&apos;fields&apos; in state) ? state.fields : []
+		this.labels = (&apos;labels&apos; in state) ? state.labels : []
+		this.records_key = (&apos;records_key&apos; in state) ? state.records_key : &apos;records&apos;
+		this.record_key  = (&apos;record_key&apos; in state) ? state.record_key : &apos;record_key&apos;
+	}
+	
+	
+	
+	/**
+	 * Update the table with records.
+	 * 
+	 * @param {objetc} arg_records - datas records, plain object.
+	 * 
+	 * @returns {nothing}
+	 */
+	update_records(arg_records)
+	{
+		// console.log(arg_records, &apos;table.update_records:arg_records&apos;)
+		
+		var self = this
+		
+		if (typeof arg_records != &quot;object&quot;)
+		{
+			return
+		}
+		
+		if ( ! (this.records_key in arg_records) )
+		{
+			return
+		}
+		
+		const records_of_key = arg_records[this.records_key]
+		if ( T.isArray(records_of_key) )
+		{
+			records_of_key.forEach(
+				function(record)
+				{
+					if ( T.isString(record) || T.isNumber(record) )
+					{
+						self.add_record_string(record)
+					}
+				}
+			)
+		}
+	}
+	
+	
+	
+	/**
+	 * Add one record to the table.
+	 * 
+	 * @param {string} arg_record_str - datas with one record string.
+	 * 
+	 * @returns {nothing}
+	 */
+	add_record_string(arg_record_str)
+	{
+		// console.log(arg_record, &apos;table.add_record:arg_record&apos;)
+		
+		var self = this
+		
+		if (arg_record_str in this.records)
+		{
+			return
+		}
+		
+		var row_id = this.get_dom_id() + &apos;_&apos; + arg_record_str
+		// var html = &apos;&lt;tr colspan=&quot;3&quot; id=&quot;&apos; + row_id + &apos;&quot;&gt;&lt;td&gt;&apos; + arg_record_str + &apos;&lt;/td&gt;&lt;/tr&gt;&apos;
+		
+		const table_elem = this.get_dom_element()
+		const table_body_elem = table_elem.getElementsByTagName( &quot;tbody&quot; )[0]
+
+		// APPEND FIRST ROW
+		let tr_element = document.createElement(&apos;tr&apos;)
+		tr_element.setAttribute(&apos;colspan&apos;, &apos;3&apos;)
+		tr_element.setAttribute(&apos;id&apos;, row_id)
+		table_body_elem.appendChild(tr_element)
+		
+		let td_element = document.createElement(&apos;td&apos;)
+		td_element.innerHTML = arg_record_str
+		tr_element.appendChild(td_element)
+
+		// APPEND FIELDS ROWS
+		this.fields.forEach(
+			function(field, index)
+			{
+				tr_element = document.createElement(&apos;tr&apos;)
+				table_body_elem.appendChild(tr_element)
+
+				td_element = document.createElement(&apos;td&apos;)
+				td_element.innerHTML = &apos;&apos;
+				tr_element.appendChild(td_element)
+				
+				td_element = document.createElement(&apos;td&apos;)
+				td_element.innerHTML = index &lt; self.labels.length ? self.labels[index] : &apos;&apos;
+				tr_element.appendChild(td_element)
+
+				td_element = document.createElement(&apos;td&apos;)
+				td_element.innerHTML = &apos;0&apos;
+				td_element.setAttribute(&apos;id&apos;, row_id + &apos;_&apos; + field)
+				tr_element.appendChild(td_element)
+
+				// html += &apos;&lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;td&gt;&apos; + self.labels[index] + &apos;&lt;/td&gt; &lt;td id=&quot;&apos; + row_id + &apos;_&apos; + field + &apos;&quot;&gt;0&lt;/td&gt; &lt;/tr&gt;&apos;
+			}
+		)
+		
+		// $(&apos;tbody&apos;, this.table_jqo).append(html)
+
+		this.records[arg_record_str] = row_id
+	}
+	
+	
+	
+	/**
+	 * Update table with records values.
+	 * 
+	 * @param {array} arg_values - datas values, plain objects array.
+	 * 
+	 * @returns {nothing}
+	 */
+	update_values(arg_values)
+	{
+		// console.log(arg_values, &apos;table.update_values&apos;)
+		
+		var self = this
+		
+		if (! arg_values)
+		{
+			console.log(table_id, &apos;no values&apos;, &apos;table.update_values&apos;)
+			return
+		}
+		
+		const table_id = this.get_dom_id()
+		
+		// console.log(arg_values, &apos;table.update_values&apos;)
+		
+		arg_values = Array.isArray(arg_values) ? arg_values : [arg_values]
+		
+		arg_values.forEach(
+			function(values)
+			{
+				if (values)
+				{
+					self.update_record_values(values)
+				}
+			}
+		)
+	}
+	
+	
+	
+	/**
+	 * Update table with one record values.
+	 * 
+	 * @param {object} arg_record_values - datas values, plain objects.
+	 * 
+	 * @returns {nothing}
+	 */
+	update_record_values(arg_record_values)
+	{
+		// console.log(context + &apos;:update_record_values:values&apos;, arg_record_values)
+		
+		var self = this
+		
+		if (! arg_record_values || ! arg_record_values[this.record_key] )
+		{
+			return
+		}
+		
+		const values_key = arg_record_values[this.record_key]
+		if (! (values_key in self.records) )
+		{
+			return
+		}
+		
+		var row_id = self.records[values_key]
+		// console.log(row_id, &apos;table.update_record_values:row_id&apos;)
+		
+		this.fields.forEach(
+			function(field)
+			{
+				if (field in arg_record_values)
+				{
+					var value = arg_record_values[field]
+					if (typeof value == &apos;number&apos;)
+					{
+						value = value.toFixed()
+					}
+					
+					var field_id = row_id + &apos;_&apos; + field
+					// $(&quot;#&quot; + field_id).text(value)
+					const element = document.getElementById(field_id)
+					element.textContent = value
+				}
+				else
+				{
+					console.log(&apos;field not found in record&apos;, field, arg_record_values)
+				}
+			}
+		)
+	}
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.3)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
